@@ -37,7 +37,7 @@ It:
 
 - identifies small businesses with weak or missing web presence
 - researches public-facing business facts
-- checks whether the business already has a functional website
+- checks whether the business already has a functional official website
 - organizes findings into a clean, reusable website brief
 - prepares a tailored business improvement plan
 - prepares an outreach-ready value proposition
@@ -49,7 +49,7 @@ It:
 ## Qualification Standard
 A business is a good fit if most of the following are true:
 
-- no dedicated website exists, or the current website is outdated or low quality
+- no dedicated **official** website exists, or the current website is outdated or low quality
 - the business appears active and legitimate
 - public information exists to build a strong starter draft
 - the business would benefit from stronger credibility, discoverability, or online conversion
@@ -57,10 +57,26 @@ A business is a good fit if most of the following are true:
 
 A business is a weak fit if any of the following are true:
 
-- it already has a polished, modern, well-functioning website
+- it already has a polished, modern, well-functioning **official** website
 - the business appears inactive or permanently closed
 - there is not enough public information to build a useful starter pack
 - the site opportunity is too large or complex for a lean local-first service offer
+
+### Official Website Rule
+For entry-level targeting, only count a business as having a real website if it appears to control or clearly own the site.
+
+Do **not** automatically disqualify a target just because it appears on:
+
+- Yelp
+- Tripadvisor
+- Restaurantji
+- DoorDash
+- Facebook
+- community-generated pages
+- directory pages
+- placeholder or auto-generated local listing sites
+
+Those channels can still indicate that the business lacks a strong owned web presence.
 
 ---
 
@@ -76,11 +92,11 @@ For each business, confirm:
 - location
 - hours
 - phone/contact info if public
-- whether a website already exists
+- whether an official website already exists
 - whether their digital presence appears weak enough to improve
 
 ### Phase 3 — Filter
-Remove businesses that already have a strong website unless there is a clear redesign opportunity.
+For the immediate entry-level pipeline, remove businesses that already have a strong official website or that only make sense as an upgrade/redesign play.
 
 ### Phase 4 — Build Business Pack
 Create a structured documentation pack for each qualified business.
@@ -119,7 +135,7 @@ Each business should eventually have its own folder or repo containing the same 
 - likely conversion opportunities
 
 ### 3. Competitive / Digital Presence Snapshot
-- whether they have a website
+- whether they have an official website
 - whether they use Facebook, Instagram, Google Business Profile, Yelp, etc.
 - quality of their current digital presence
 - what appears missing
@@ -202,4 +218,5 @@ I help small local businesses with weak or missing websites get online fast by r
 1. Add reusable templates for qualification and business packs.
 2. Start a `businesses/` directory for real candidate targets.
 3. Standardize one repeatable outreach and action-plan format.
-4. Use the same structure every time so each lead becomes a clean, sellable asset.
+4. Focus the immediate pipeline on entry-level wins, not redesign-only opportunities.
+5. Use the same structure every time so each lead becomes a clean, sellable asset.
