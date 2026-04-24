@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rob's Lawn Care | Lawn Mowing & Yard Maintenance</title>
+  <meta name="description" content="Concept demo website for Rob's Lawn Care, a small home lawn mowing and yard maintenance business." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Rob's Lawn Care home">
+      <img src="../../../photos%20for%20robslawncare/grass%20guy%20pic.jpeg" alt="Rob's Lawn Care grass guy logo" class="brand-logo" />
+      <span>
+        <strong>Rob's Lawn Care</strong>
+        <small>Reliable mowing & yard maintenance</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#quote">Request Quote</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Small home business demo</p>
+        <h1>Clean cuts, dependable service, and yards that look cared for.</h1>
+        <p class="lead">A simple, professional website concept for Rob's lawn mowing and maintenance business — built to turn local visitors into phone calls and quote requests.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#quote">Request a Quote</a>
+          <a class="btn secondary" href="tel:+10000000000">Call Rob</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Business highlights">
+        <img src="../../../photos%20for%20robslawncare/grass%20guy%20pic.jpeg" alt="Grass guy logo for Rob's Lawn Care" />
+        <h2>Local lawn help made simple</h2>
+        <ul>
+          <li>Residential mowing</li>
+          <li>Yard cleanup</li>
+          <li>Basic maintenance</li>
+          <li>Seasonal support</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Trust highlights">
+      <div><strong>Fast quotes</strong><span>Easy request form</span></div>
+      <div><strong>Local service</strong><span>Neighborhood-focused</span></div>
+      <div><strong>Clean presentation</strong><span>Mobile-first demo</span></div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>What Rob can offer</h2>
+        <p>This keeps the site simple and clear for homeowners who just want dependable lawn help.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Lawn Mowing</h3>
+          <p>Routine mowing for homeowners who want their yard kept clean without chasing callbacks.</p>
+        </article>
+        <article class="service-card">
+          <h3>Trimming & Edging</h3>
+          <p>Cleaner borders around walkways, driveways, fences, and landscape areas.</p>
+        </article>
+        <article class="service-card">
+          <h3>Yard Cleanup</h3>
+          <p>Light cleanup for overgrowth, seasonal mess, and basic property touch-ups.</p>
+        </article>
+        <article class="service-card">
+          <h3>Maintenance Visits</h3>
+          <p>Simple recurring service for customers who want the yard handled on a schedule.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section photo-section">
+      <div class="section-heading">
+        <p class="eyebrow">Photo proof</p>
+        <h2>Real work photos can sell the service fast</h2>
+        <p>These are wired to the photos already pushed into the repo. Replace labels after reviewing each exact image.</p>
+      </div>
+      <div class="photo-grid">
+        <figure><img src="../../../photos%20for%20robslawncare/0416742a-5483-4e0b-bd18-77a4a6b1b567.jpeg" alt="Rob's Lawn Care work photo 1" /><figcaption>Recent lawn work</figcaption></figure>
+        <figure><img src="../../../photos%20for%20robslawncare/1a51c66e-1822-47cb-ac68-016854fa895c.jpeg" alt="Rob's Lawn Care work photo 2" /><figcaption>Yard maintenance</figcaption></figure>
+        <figure><img src="../../../photos%20for%20robslawncare/59df44f7-7717-4ff1-9e2c-e05c328379f9.jpeg" alt="Rob's Lawn Care work photo 3" /><figcaption>Clean mowing finish</figcaption></figure>
+        <figure><img src="../../../photos%20for%20robslawncare/d0a4a339-43e9-4d40-aeba-eb817af69b04.jpeg" alt="Rob's Lawn Care work photo 4" /><figcaption>Outdoor maintenance</figcaption></figure>
+        <figure><img src="../../../photos%20for%20robslawncare/e2d64e18-f87f-4689-a568-30550a8080c2.jpeg" alt="Rob's Lawn Care work photo 5" /><figcaption>Property care</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Why this works</p>
+        <h2>A homeowner should know what Rob does in five seconds.</h2>
+      </div>
+      <div class="pitch-box">
+        <p>This template is intentionally direct: logo, services, photos, quote CTA, and contact. For a small lawn business, that is better than a complicated site.</p>
+        <p class="note">Before pitching, add Rob's real phone number, service area, price range if he wants it shown, and any customer reviews.</p>
+      </div>
+    </section>
+
+    <section id="quote" class="quote-section">
+      <div>
+        <p class="eyebrow">Request a quote</p>
+        <h2>Need your yard cleaned up?</h2>
+        <p>Tell Rob what you need and include your address or neighborhood for a faster quote.</p>
+      </div>
+      <form class="quote-form" action="mailto:rob@example.com" method="post" enctype="text/plain">
+        <label>Name<input name="name" type="text" placeholder="Your name" /></label>
+        <label>Phone<input name="phone" type="tel" placeholder="Your phone number" /></label>
+        <label>What do you need?<textarea name="message" rows="4" placeholder="Mowing, cleanup, trimming, one-time visit, recurring service..."></textarea></label>
+        <button type="submit">Send Quote Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Rob's Lawn Care. Concept demo by Website LLC / Y.O.U. — Your Own Vision.</p>
+    <p class="footer-note">Replace demo contact details before public outreach.</p>
+  </footer>
+</body>
+</html>
