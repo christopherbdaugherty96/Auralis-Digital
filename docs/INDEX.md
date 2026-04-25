@@ -1,0 +1,35 @@
+# Documentation Index
+
+Date: 2026-04-24
+
+## Core Business Docs
+- AUDIT_REPORT_2026-04-24.md
+- REPO_CLEANUP_PLAN_2026-04-24.md
+- LLC_WEBSITE_NEXT_STEPS_TOOLKIT_2026-04-24.md
+
+## Sales System Docs
+- FIRST_CLIENT_SYSTEM.md
+- LEAD_TRACKER_TEMPLATE.csv
+- LEADS_ACTIVE_OUTREACH.csv
+- OUTREACH_SCRIPTS.md
+- PERSONALIZED_OUTREACH_TOP5_2026-04-24.md
+- PERSONALIZED_OUTREACH_EXPANSION_2026-04-24.md
+- RESPONSE_SCRIPTS_WHEN_LEADS_REPLY_2026-04-24.md
+- FOLLOW_UP_SYSTEM.md
+- DAILY_SCORECARD.md
+- CLOSE_FIRST_CLIENT_PLAN.md
+- OBJECTION_HANDLING.md
+- PROPOSAL_TEMPLATE.md
+- CLIENT_ONBOARDING.md
+
+## Lead Lists
+- PROSPECTS_BELLEVILLE_VETTED_2026-04-24.md
+- EXPANSION_LEADS_VETTED_2026-04-24.md
+
+## Offer / Positioning Docs
+- NICHE_OFFERS.md
+
+## Recommended Next Cleanup
+- Archive duplicate or outdated docs
+- Keep only actively used files in main docs flow
+- Update this index when new docs are added
