@@ -19,7 +19,6 @@ Current focus:
 - Local business positioning
 - Conversion-focused design
 - Lead capture and quote-request flows
-- Future Nova-powered business tools when the offer is ready and stable
 
 ## Starting Pricing
 
@@ -34,13 +33,12 @@ Pricing is a starting framework. Final scope, timeline, revisions, and add-ons s
 
 Auralis starts with websites first. The next step is stronger lead capture through real forms, cleaner inquiry flows, and better follow-up structure.
 
-Longer term, Auralis may offer Nova-powered business tools for lead summaries, draft replies, metrics, and simple workflow support. Those features should remain staged and clearly labeled until they are stable enough to sell.
+Longer term, optional Nova-powered business tools may be explored for lead summaries, draft replies, metrics, and simple workflow support. Those features are not the current core offer and should remain clearly separated until fully ready.
 
 ## 3-Pass Upgrade Completed (2026-04-25)
 
 - Stronger messaging and positioning
 - Improved conversion flow and CTA coverage
-- Added future-ready Nova services section
 - Refined trust language
 - Updated documentation
 
@@ -64,7 +62,7 @@ Recommended options:
 2. Add Search Console.
 3. Add real testimonials.
 4. Add Google Business Profile.
-5. Add dedicated Nova services page only when the offer is ready and grounded in working capability.
+5. Add dedicated future tools page only when the offer is ready and grounded in working capability.
 6. Add service/package documentation inside `docs/`.
 7. Add lead-capture and client-funnel documentation.
 
