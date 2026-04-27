@@ -76,6 +76,15 @@ Use these when prospecting, following up, handling objections, pricing, and clos
 
 ---
 
+# Proof / Reputation Docs
+
+Use these after real client delivery to turn completed work into proof assets.
+
+- `docs/CASE_STUDY_TEMPLATE.md`
+- `docs/CLIENT_PROOF_WORKFLOW.md`
+
+---
+
 # Lead Lists / Prospecting Assets
 
 Use these for real outreach targeting and pipeline tracking.
@@ -120,7 +129,8 @@ These remain approved references and reasoning history.
 5. Use conversion docs when improving the website
 6. Use sales docs when prospecting
 7. Use proposal/onboarding docs when a lead is interested
-8. Update roadmap when priorities truly change
+8. Use proof docs after successful delivery
+9. Update roadmap when priorities truly change
 
 ---
 
