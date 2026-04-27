@@ -3,7 +3,8 @@
 Last updated: 2026-04-26
 
 ## Purpose
-nUse this to give fast, grounded starting ranges during early conversations without promising a final quote before scope is clear.
+
+Use this to give fast, grounded starting ranges during early conversations without promising a final quote before scope is clear.
 
 Final pricing depends on scope, content readiness, timeline, and requested features.
 
