@@ -61,7 +61,7 @@ Completed messaging/conversion improvement pass.
 
 # Sales Execution Docs
 
-Use these when prospecting, following up, handling objections, pricing, and closing work.
+Use these when prospecting, following up, handling objections, pricing, closing work, and managing the first delivery.
 
 - `FIRST_CLIENT_SYSTEM.md`
 - `DAILY_SCORECARD.md`
@@ -73,6 +73,7 @@ Use these when prospecting, following up, handling objections, pricing, and clos
 - `PROPOSAL_TEMPLATE.md`
 - `CLIENT_ONBOARDING.md`
 - `OUTREACH_PACKET.md`
+- `FIRST_CLIENT_DELIVERY_CHECKLIST.md`
 
 ---
 
@@ -127,8 +128,8 @@ These remain approved references and reasoning history.
 3. Use `docs/REGRESSION_CHECKLIST_2026-04-25.md` before/after website edits
 4. Use `docs/PUBLIC_LAUNCH_CHECKLIST.md` before outreach
 5. Use conversion docs when improving the website
-6. Use sales docs when prospecting
-7. Use proposal/onboarding docs when a lead is interested
+6. Use sales docs when prospecting and closing
+7. Use delivery checklist when first client says yes
 8. Use proof docs after successful delivery
 9. Update roadmap when priorities truly change
 
