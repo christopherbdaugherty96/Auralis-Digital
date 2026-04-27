@@ -34,6 +34,10 @@ Current strengths:
 - Founder-led positioning
 - Outreach and proposal docs exist
 - Lead-capture strategy is defined
+- Documentation map is aligned
+- Public launch checklist exists
+- Formspree and analytics setup guides exist
+- Outreach packet exists
 
 Current gaps:
 
@@ -42,7 +46,25 @@ Current gaps:
 - No real testimonials or case studies yet
 - Some legacy branding references may remain in older docs/pages
 - Some demo pages may still need placeholder cleanup before outreach
-- Docs need a clear read/use order, which this roadmap and `docs/INDEX.md` provide
+
+## Status Tracker
+
+| Area | Status | Next Action | Notes |
+|---|---|---|---|
+| Documentation map | Complete | Maintain as docs change | `docs/INDEX.md` is current authority map |
+| Roadmap | Complete / Active | Update only when priorities change | This file controls current execution order |
+| Public launch checklist | Complete | Use before outreach | `docs/PUBLIC_LAUNCH_CHECKLIST.md` |
+| Founder page brand cleanup | Complete | Recheck after site changes | `about-christopher.html` aligned to Auralis |
+| Website services page cleanup | Complete | Recheck after site changes | `website-llc.html` aligned to Auralis |
+| Lead capture backend | Not Started | Create Formspree form and add endpoint | Requires account-side action |
+| Formspree setup doc | Complete | Use when endpoint is ready | `docs/FORMSPREE_SETUP.md` |
+| Analytics/Search Console | Not Started | Create GA4/Search Console and add tags | Requires account-side action |
+| Analytics setup doc | Complete | Use during setup | `docs/ANALYTICS_SETUP.md` |
+| Demo placeholder sweep | In Progress | Review demos before outreach | Do not send unreviewed demo pages |
+| Outreach packet | Complete | Start using for prospect messages | `docs/OUTREACH_PACKET.md` |
+| First real outreach | Not Started | Contact qualified prospects | Use lead tracker and outreach packet |
+| First paid client | Not Started | Follow up and send proposal when qualified | Use proposal/onboarding docs |
+| First testimonial/case study | Not Started | Capture after delivery | Do not fake proof |
 
 ## Document Authority Model
 
@@ -53,9 +75,10 @@ Use documents in this order:
 3. `docs/ROADMAP.md` — current execution order and priorities
 4. `docs/CURRENT_STATE_CHECKPOINT_2026-04-25.md` — current site checkpoint and known gaps
 5. `docs/REGRESSION_CHECKLIST_2026-04-25.md` — safety checklist before and after website edits
-6. `docs/LEAD_CAPTURE_STRATEGY_A_NOW_C_LATER_2026-04-25.md` — Formspree-now/custom-backend-later decision
-7. Sales, lead, outreach, and onboarding docs — execution tools
-8. Older audit and background docs — approved context and reasoning history
+6. `docs/PUBLIC_LAUNCH_CHECKLIST.md` — prospect-readiness checklist
+7. `docs/LEAD_CAPTURE_STRATEGY_A_NOW_C_LATER_2026-04-25.md` — Formspree-now/custom-backend-later decision
+8. Sales, lead, outreach, and onboarding docs — execution tools
+9. Older audit and background docs — approved context and reasoning history
 
 Older docs remain approved references. This roadmap controls current execution order.
 
@@ -71,11 +94,11 @@ Tasks:
 - [ ] Verify form submissions end-to-end
 - [ ] Add Google Analytics 4
 - [ ] Add Google Search Console
-- [ ] Remove visible legacy Y.O.U. branding from public-facing pages and active docs
+- [x] Remove visible legacy Y.O.U. branding from confirmed public-facing pages reviewed so far
 - [ ] Clean placeholder content from any demo before sending it to prospects
-- [ ] Confirm homepage contact email and phone are consistent
+- [x] Confirm documented contact email and phone are consistent in updated public pages
 - [ ] Keep the full homepage intact when editing `index.html`
-- [ ] Use the regression checklist after every website change
+- [x] Use the regression checklist after website changes
 
 Success criteria:
 
@@ -185,7 +208,7 @@ Do not build advanced automation before there are real clients and real workflow
 
 1. Install real form backend.
 2. Add analytics and Search Console.
-3. Remove public brand drift.
+3. Continue public brand/contact drift checks.
 4. Clean demo placeholders before outreach.
 5. Contact real prospects.
 6. Close first small paid project.
