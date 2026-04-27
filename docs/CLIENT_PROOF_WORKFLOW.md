@@ -52,7 +52,7 @@ Collect:
 
 - Final screenshots
 - Live URL
-n- Approved testimonial
+- Approved testimonial
 - Client name/business name
 - Industry/location
 - What problem was solved
