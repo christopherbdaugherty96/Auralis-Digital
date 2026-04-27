@@ -10,9 +10,9 @@ It does not replace the approved supporting docs. It puts them in the correct ex
 
 ## Current Mission
 
-Move from website-building and planning into lead capture, outreach, first-client acquisition, and proof.
+Move from website-building and planning into lead capture, outreach, first-client acquisition, delivery, and proof.
 
-The website is strong enough to sell from now. The current priority is not another redesign. The priority is real leads, real conversations, first revenue, and public proof.
+The website is strong enough to sell from now. The current priority is not another redesign. The priority is real leads, real conversations, first revenue, clean delivery, and public proof.
 
 ## Current Truth
 
@@ -38,6 +38,9 @@ Current strengths:
 - Public launch checklist exists
 - Formspree and analytics setup guides exist
 - Outreach packet exists
+- Intake and quick estimate guides exist
+- First-client delivery checklist exists
+- Proof workflow and case study template exist
 - Confirmed public brand drift pages reviewed so far have been corrected
 - First-pass placeholder searches found no obvious placeholder terms
 
@@ -48,6 +51,7 @@ Current gaps:
 - No real testimonials or case studies yet
 - Full manual review of every demo page is still recommended before sending demos to prospects
 - Full browser/mobile regression testing is still recommended after public page edits
+- Newer delivery/proof docs are ready but untested against a real client project
 
 ## Status Tracker
 
@@ -65,6 +69,10 @@ Current gaps:
 | Analytics/Search Console | Not Started | Create GA4/Search Console and add tags | Requires account-side action |
 | Analytics setup doc | Complete | Use during setup | `docs/ANALYTICS_SETUP.md` |
 | Outreach packet | Complete | Start using for prospect messages | `docs/OUTREACH_PACKET.md` |
+| Intake questionnaire | Complete | Use when lead is interested | `docs/CLIENT_INTAKE_QUESTIONNAIRE.md` |
+| Quick estimate guide | Complete | Use before quoting | `docs/QUICK_ESTIMATE_GUIDE.md` |
+| Delivery checklist | Complete | Use when first client says yes | `docs/FIRST_CLIENT_DELIVERY_CHECKLIST.md` |
+| Proof workflow | Complete | Use after successful delivery | `docs/CLIENT_PROOF_WORKFLOW.md` and `docs/CASE_STUDY_TEMPLATE.md` |
 | Browser/mobile regression | Not Started | Manually verify edited public pages | Required before heavy outreach |
 | First real outreach | Not Started | Contact qualified prospects | Use lead tracker and outreach packet |
 | First paid client | Not Started | Follow up and send proposal when qualified | Use proposal/onboarding docs |
@@ -81,8 +89,10 @@ Use documents in this order:
 5. `docs/REGRESSION_CHECKLIST_2026-04-25.md` — safety checklist before and after website edits
 6. `docs/PUBLIC_LAUNCH_CHECKLIST.md` — prospect-readiness checklist
 7. `docs/LEAD_CAPTURE_STRATEGY_A_NOW_C_LATER_2026-04-25.md` — Formspree-now/custom-backend-later decision
-8. Sales, lead, outreach, and onboarding docs — execution tools
-9. Older audit and background docs — approved context and reasoning history
+8. Sales docs — outreach, scripts, intake, estimate, proposal, and onboarding
+9. Delivery docs — first-client delivery checklist and client onboarding
+10. Proof docs — proof workflow and case study template
+11. Older audit and background docs — approved context and reasoning history
 
 Older docs remain approved references. This roadmap controls current execution order.
 
@@ -125,8 +135,11 @@ Tasks:
 - [ ] Send niche-relevant demo links
 - [ ] Follow up consistently
 - [ ] Use response scripts when leads reply
-- [ ] Use proposal template for interested leads
+- [ ] Use intake questionnaire when a lead is interested
+- [ ] Use quick estimate guide before quoting
+- [ ] Use proposal template for qualified leads
 - [ ] Close first paid refresh or starter website
+- [ ] Use first-client delivery checklist after close
 - [ ] Capture testimonial after delivery
 
 Weekly targets:
@@ -173,9 +186,11 @@ Goal: make client work repeatable.
 
 Tasks:
 
-- [ ] Standardize intake questionnaire
+- [ ] Test intake questionnaire against real lead conversation
+- [ ] Test quick estimate guide against real quote conversation
 - [ ] Standardize proposal flow
 - [ ] Standardize onboarding process
+- [ ] Test first-client delivery checklist against real client work
 - [ ] Standardize revision process
 - [ ] Standardize launch checklist
 - [ ] Track time spent per project
@@ -215,8 +230,9 @@ Do not build advanced automation before there are real clients and real workflow
 3. Run browser/mobile regression on edited public pages.
 4. Manually review any demo before sending it to a specific prospect.
 5. Contact real prospects.
-6. Close first small paid project.
-7. Turn that work into proof.
+6. Use intake and estimate guides for interested leads.
+7. Close first small paid project.
+8. Use delivery and proof workflow to turn that work into proof.
 
 ## What Not To Do Right Now
 
