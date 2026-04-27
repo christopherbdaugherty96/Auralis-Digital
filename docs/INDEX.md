@@ -1,73 +1,118 @@
-# Documentation Index
+# Auralis Digital Documentation Index
 
-Date: 2026-04-24
+Last updated: 2026-04-26
 
 ## Purpose
-This is the master navigation file for the Y.O.U. website business repo. It exists to prevent the docs from becoming scattered or repetitive.
 
-Use this file first when looking for the current business plan, sales system, lead lists, outreach scripts, or next actions.
+This is the master document map for Auralis Digital.
 
----
+It keeps approved work in the correct order so the repo is easy to operate without losing prior progress.
 
-## Root-Level Business Docs
-- `README.md` — public-facing repo overview and business positioning
-- `NEXT_STEPS_TODO.md` — operating roadmap and execution plan
+Use this file first when you need to know what to read, what controls current execution, and where supporting material lives.
 
 ---
 
-## Current State / Audit Docs
-- `CURRENT_BUSINESS_STATE_2026-04-24.md` — current operating snapshot
-- `AUDIT_REPORT_2026-04-24.md` — deep audit findings and corrective plan
-- `REPO_CLEANUP_PLAN_2026-04-24.md` — repo structure cleanup plan
-- `LLC_WEBSITE_NEXT_STEPS_TOOLKIT_2026-04-24.md` — tool stack and website-building next steps
+# Core Authority Docs
+
+## 1. `README.md`
+Public-facing repo overview, offer summary, pricing, and business direction.
+
+## 2. `docs/INDEX.md`
+This file. Master navigation map.
+
+## 3. `docs/ROADMAP.md`
+Current execution roadmap and priority order.
+
+If two docs conflict, use `docs/ROADMAP.md` for current direction.
 
 ---
 
-## Sales System Docs
-- `FIRST_CLIENT_SYSTEM.md` — first-client pipeline overview
-- `DAILY_SCORECARD.md` — daily sales activity targets
-- `FOLLOW_UP_SYSTEM.md` — follow-up cadence
-- `CLOSE_FIRST_CLIENT_PLAN.md` — 3-week first-client action plan
-- `OBJECTION_HANDLING.md` — responses to common objections
-- `RESPONSE_SCRIPTS_WHEN_LEADS_REPLY_2026-04-24.md` — copy/paste replies for interested leads
-- `OUTREACH_SCRIPTS.md` — general cold outreach and follow-up scripts
-- `PROPOSAL_TEMPLATE.md` — simple website proposal template
-- `CLIENT_ONBOARDING.md` — client onboarding and launch checklist
+# Current Truth / Safety Docs
+
+## 4. `docs/CURRENT_STATE_CHECKPOINT_2026-04-25.md`
+Current confirmed website state, known gaps, asset notes, and safe next steps.
+
+## 5. `docs/REGRESSION_CHECKLIST_2026-04-25.md`
+Use after every website change to ensure nothing important broke.
 
 ---
 
-## Lead Lists / Trackers
-- `LEAD_TRACKER_TEMPLATE.csv` — blank lead tracker template
-- `LEADS_ACTIVE_OUTREACH.csv` — active Belleville outreach tracker
-- `PROSPECTS_BELLEVILLE_VETTED_2026-04-24.md` — vetted Belleville prospects
-- `EXPANSION_LEADS_VETTED_2026-04-24.md` — vetted expansion prospects with city labels
+# Website Conversion / Lead Capture Docs
+
+## 6. `docs/NEXT_STEPS_EXECUTION_PLAN_2026-04-26.md`
+Execution dashboard focused on lead generation, trust cleanup, and first-client progress.
+
+## 7. `docs/LEAD_CAPTURE_STRATEGY_A_NOW_C_LATER_2026-04-25.md`
+Phased decision: Formspree now, custom backend later.
+
+## 8. `docs/WEBSITE_RECOMMENDATIONS_AND_3_PASS_COMPLETION_2026-04-25.md`
+Completed messaging/conversion improvement pass.
 
 ---
 
-## Personalized Outreach Docs
-- `PERSONALIZED_OUTREACH_TOP5_2026-04-24.md` — top 5 Belleville outreach messages
-- `PERSONALIZED_OUTREACH_EXPANSION_2026-04-24.md` — expansion lead outreach messages
+# Sales Execution Docs
+
+Use these when prospecting, following up, handling objections, pricing, and closing work.
+
+- `FIRST_CLIENT_SYSTEM.md`
+- `DAILY_SCORECARD.md`
+- `FOLLOW_UP_SYSTEM.md`
+- `CLOSE_FIRST_CLIENT_PLAN.md`
+- `OBJECTION_HANDLING.md`
+- `RESPONSE_SCRIPTS_WHEN_LEADS_REPLY_2026-04-24.md`
+- `OUTREACH_SCRIPTS.md`
+- `PROPOSAL_TEMPLATE.md`
+- `CLIENT_ONBOARDING.md`
 
 ---
 
-## Offer / Positioning Docs
-- `NICHE_OFFERS.md` — niche-specific offer angles
-- `SALES_AND_REFERRAL_PROGRAM.md` — sales partner and referral compensation rules
-- `RESTAURANT_WEBSITE_BUSINESS_PLAN.md` — restaurant-specific strategy lane
+# Lead Lists / Prospecting Assets
+
+Use these for real outreach targeting and pipeline tracking.
+
+- `LEAD_TRACKER_TEMPLATE.csv`
+- `LEADS_ACTIVE_OUTREACH.csv`
+- `PROSPECTS_BELLEVILLE_VETTED_2026-04-24.md`
+- `EXPANSION_LEADS_VETTED_2026-04-24.md`
+- `PERSONALIZED_OUTREACH_TOP5_2026-04-24.md`
+- `PERSONALIZED_OUTREACH_EXPANSION_2026-04-24.md`
 
 ---
 
-## Recommended Use Flow
-1. Read `CURRENT_BUSINESS_STATE_2026-04-24.md`
-2. Open `LEADS_ACTIVE_OUTREACH.csv`
-3. Use `PERSONALIZED_OUTREACH_TOP5_2026-04-24.md`
-4. Use `RESPONSE_SCRIPTS_WHEN_LEADS_REPLY_2026-04-24.md` when someone responds
-5. Use `PROPOSAL_TEMPLATE.md` when a lead is interested
-6. Use `CLIENT_ONBOARDING.md` after a client agrees
+# Offer / Positioning Docs
+
+Use these when refining niches, offers, and partnerships.
+
+- `NICHE_OFFERS.md`
+- `SALES_AND_REFERRAL_PROGRAM.md`
+- `RESTAURANT_WEBSITE_BUSINESS_PLAN.md`
 
 ---
 
-## Cleanup Guidance
-- Do not keep creating new planning docs unless they support outreach, conversion, delivery, or closing.
-- Archive duplicate or outdated docs instead of deleting useful work.
-- Keep this index updated whenever new docs are added.
+# Audit / Background Docs
+
+These remain approved references and reasoning history.
+
+- `CURRENT_BUSINESS_STATE_2026-04-24.md`
+- `AUDIT_REPORT_2026-04-24.md`
+- `REPO_CLEANUP_PLAN_2026-04-24.md`
+- `LLC_WEBSITE_NEXT_STEPS_TOOLKIT_2026-04-24.md`
+- Other dated review/checkpoint docs
+
+---
+
+# Recommended Working Flow
+
+1. Read `docs/ROADMAP.md`
+2. Review `docs/CURRENT_STATE_CHECKPOINT_2026-04-25.md`
+3. Use `docs/REGRESSION_CHECKLIST_2026-04-25.md` before/after website edits
+4. Use conversion docs when improving the website
+5. Use sales docs when prospecting
+6. Use proposal/onboarding docs when a lead is interested
+7. Update roadmap when priorities truly change
+
+---
+
+# Rule
+
+Do not create new planning docs unless they add a missing function or replace an older file with a clearly better version.
