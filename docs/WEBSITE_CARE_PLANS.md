@@ -6,6 +6,12 @@ Auralis Digital may offer optional monthly website care plans for clients who wa
 
 The purpose of a care plan is to keep the website current, useful, and accurate without requiring the client to make every update themselves.
 
+## Default Maintenance Scope
+
+Website care plans are primarily intended for websites built or significantly rebuilt by Auralis Digital.
+
+Support for third-party websites may require a paid audit, rebuild, migration, or custom quote before any ongoing maintenance plan is offered.
+
 ---
 
 ## Default Ownership Rule
