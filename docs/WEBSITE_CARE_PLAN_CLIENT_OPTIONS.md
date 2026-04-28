@@ -4,6 +4,10 @@ Status: client-facing service draft
 
 Auralis Digital offers optional monthly website care plans for businesses that want help keeping their website current after launch.
 
+These plans are primarily for websites built or significantly rebuilt by Auralis Digital.
+
+If a business already has a third-party website, Auralis Digital may recommend an audit, rebuild, migration, or custom quote before offering ongoing maintenance.
+
 These plans are useful for businesses that regularly update hours, specials, services, menus, photos, events, promotions, or seasonal information.
 
 ---
