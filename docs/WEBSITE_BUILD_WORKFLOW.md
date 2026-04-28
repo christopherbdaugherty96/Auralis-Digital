@@ -12,7 +12,7 @@ The goal is to lock down website creation first: consistent structure, strong vi
 
 Do not start every website from scratch.
 
-Auralis Digital should use a repeatable production system:
+Use a repeatable production system:
 
 - same intake flow
 - reusable layouts
@@ -28,71 +28,57 @@ Creativity should happen inside a reliable system, not replace the system.
 
 Install the tools that support the workflow. Do not try to master everything at once.
 
-## Core Build Tools
+### Core Build Tools
 
-### Framer
-Best fast path for modern, animated, premium-looking websites.
+**Framer** — Fast path for modern, animated, premium-looking websites.
 
-### Figma
-Best for layout planning, wireframes, design systems, and mockups.
+**Figma** — Best for wireframes, layout planning, design systems, and mockups.
 
-### Visual Studio Code
-Best free code editor.
+**Visual Studio Code** — Best free code editor for custom website work.
 
-## Optional Code Stack (Long-Term)
+### Optional Code Stack (Long-Term)
 
-### Node.js
-Needed for modern web development tools.
+**Node.js** — Needed for modern web development tools.
 
-### GitHub Desktop
-Easy version control and backups.
+**GitHub Desktop** — Easy version control and backups.
 
-### Next.js
-For premium custom coded websites.
+**Next.js** — Premium custom coded websites.
 
-### Tailwind CSS
-Fast styling system for modern sites.
+**Tailwind CSS** — Fast styling system for modern sites.
 
-## Graphics and Assets
+### Graphics and Assets
 
-### Canva
-Quick graphics, social banners, simple brand assets, and presentations.
+**Canva** — Quick graphics, social banners, simple brand assets, presentations.
 
-### Photopea
-Free browser-based Photoshop alternative.
+**Photopea** — Free browser-based Photoshop alternative.
 
-## Content and Copy Support
+### Content and Copy Support
 
-### ChatGPT / AI Assistant
-Use for copy, ideas, proposals, SEO drafts, and refinement.
+**ChatGPT / AI Assistant** — Copy, ideas, proposals, SEO drafts, refinement.
 
-### Codex
-Use for code generation, layout implementation, debugging, and rapid website drafts inside a repo.
+**Codex** — Code generation, layout implementation, debugging, rapid drafts inside a repo.
 
 Best use case:
 - you provide client info + style direction + assets
-- Codex builds the first website draft
+- Codex builds the first draft
 - you review and polish the final result
 
-## Operations Tools
+### Operations Tools
 
-### Google Drive or Dropbox
-Store client assets and backups.
+**Google Drive / Dropbox** — Client assets and backups.
 
-### Google Sheets / Notion
-Track leads, clients, tasks, and workflows.
+**Google Sheets / Notion** — Leads, clients, tasks, workflows.
 
-### Google Meet / Zoom
-Client calls and reviews.
+**Google Meet / Zoom** — Client calls and reviews.
 
-## Phone Apps
+### Phone Workflow
 
 Use your work phone for:
 - photos
 - videos
 - client communication
 - quick edits
-- social uploads
+- uploads
 - maps and local visits
 
 ---
@@ -101,7 +87,7 @@ Use your work phone for:
 
 Use Codex as a production helper, not a replacement for judgment.
 
-### Best Process
+### Process
 
 1. Collect client intake.
 2. Gather photos, logo, and references.
@@ -112,7 +98,7 @@ Use Codex as a production helper, not a replacement for judgment.
 7. Improve visuals manually.
 8. Deliver polished final version.
 
-### Codex Prompt Template
+### Prompt Template
 
 ```text
 Build a professional, mobile-first website for this business.
@@ -145,13 +131,13 @@ Inspect the project first, then implement cleanly.
 
 ### Rule
 
-Codex should accelerate production. Final quality control remains human.
+Codex accelerates production. Final quality control remains human.
 
 ---
 
 ## Website-Only Focus
 
-For this workflow, ignore broader automation, passive income, social channels, and unrelated future tools.
+Ignore broader automation, passive income ideas, and unrelated tools.
 
 The current mission is simple:
 
@@ -182,9 +168,17 @@ Additional sections when needed:
 
 ## Core Template Types
 
-### Template A — Local Service Business
-### Template B — Premium Brand
-### Template C — Visual / Hospitality
+**Template A — Local Service Business**
+
+Barbers, lawn care, detailing, contractors, cleaning, pressure washing.
+
+**Template B — Premium Brand**
+
+Consultants, agencies, luxury services, personal brands, high-ticket offers.
+
+**Template C — Visual / Hospitality**
+
+Restaurants, bars, mobile bartending, salons, event businesses.
 
 Reuse templates and customize them instead of rebuilding everything.
 
