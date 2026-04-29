@@ -470,31 +470,6 @@ export default function AuralisHomepage() {
           </div>
         </section>
 
-        {/* ── Industry concepts ───────────────────────────── */}
-        <section className="section-band">
-          <div className="site-shell">
-            <Reveal className="section-heading">
-              <span className="section-label">Industry website ideas</span>
-              <h2>Example concepts shaped around real local business needs.</h2>
-            </Reveal>
-            <div className="concept-grid">
-              {concepts.map((concept) => {
-                const Icon = concept.icon;
-                return (
-                  <Reveal key={concept.name} className="concept-card">
-                    <div className="concept-header">
-                      <Icon aria-hidden="true" />
-                      <span>Example concept</span>
-                    </div>
-                    <h3>{concept.name}</h3>
-                    <p>{concept.note}</p>
-                  </Reveal>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         {/* ── Pricing ─────────────────────────────────────── */}
         <section id="pricing" className="content-section">
           <div className="site-shell">
