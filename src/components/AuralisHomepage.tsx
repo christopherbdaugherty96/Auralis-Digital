@@ -28,6 +28,7 @@ const PHONE = "734-444-8558";
 const PHONE_HREF = "tel:+17344448558";
 const EMAIL = "auralisdigitaleco@gmail.com";
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Website Project Request")}`;
+const FORMSPREE_ENDPOINT = ""; // Set to your Formspree endpoint, e.g. "https://formspree.io/f/xxxxabcd"
 
 const services = [
   { title: "Website design", copy: "Clean, credible websites shaped around what local customers need to see first.", icon: Paintbrush },
@@ -80,6 +81,7 @@ const pricing = [
     note: "Focused cleanup for a better first impression.",
     items: ["Improve clarity", "Tighten calls to action", "Mobile polish"],
     featured: false,
+    retainer: false,
   },
   {
     label: "Best start",
@@ -88,6 +90,7 @@ const pricing = [
     note: "Professional starter site for a real business presence.",
     items: ["Launch-ready structure", "Mobile-friendly layout", "Contact path"],
     featured: true,
+    retainer: false,
   },
   {
     label: "Best for polish",
@@ -96,6 +99,16 @@ const pricing = [
     note: "More sections, stronger layout, trust signals, and conversion flow.",
     items: ["More trust sections", "Stronger customer flow", "Local SEO setup"],
     featured: false,
+    retainer: false,
+  },
+  {
+    label: "Keep it current",
+    title: "Monthly Care Plan",
+    price: "$250/mo",
+    note: "Ongoing updates, hosting coordination, and priority support so your site never falls behind.",
+    items: ["Monthly content updates", "Hosting coordination", "Priority support", "Light optimization"],
+    featured: false,
+    retainer: true,
   },
 ];
 
@@ -246,36 +259,64 @@ function HeroMockup() {
   );
 }
 
+type FormStatus = "idle" | "submitting" | "success" | "error";
+
 function ContactForm() {
   const [form, setForm] = useState({
     name: "", business: "", phone: "", email: "",
     budget: "Not sure yet", timeline: "Not sure yet", details: "",
   });
+  const [status, setStatus] = useState<FormStatus>("idle");
 
   const set = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
     setForm((prev) => ({ ...prev, [field]: e.target.value }));
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const subject = "Website Project Inquiry";
-    const body = [
-      "Hi Auralis Digital,",
-      "",
-      "I am interested in a website project.",
-      "",
-      `Name: ${form.name}`,
-      `Business: ${form.business}`,
-      `Phone: ${form.phone}`,
-      `Email: ${form.email}`,
-      `Budget: ${form.budget}`,
-      `Timeline: ${form.timeline}`,
-      `Details: ${form.details}`,
-    ].join("\n");
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (FORMSPREE_ENDPOINT) {
+      setStatus("submitting");
+      try {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(form),
+        });
+        setStatus(res.ok ? "success" : "error");
+      } catch {
+        setStatus("error");
+      }
+    } else {
+      const subject = "Website Project Inquiry";
+      const body = [
+        "Hi Auralis Digital,",
+        "",
+        "I am interested in a website project.",
+        "",
+        `Name: ${form.name}`,
+        `Business: ${form.business}`,
+        `Phone: ${form.phone}`,
+        `Email: ${form.email}`,
+        `Budget: ${form.budget}`,
+        `Timeline: ${form.timeline}`,
+        `Details: ${form.details}`,
+      ].join("\n");
+      window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
   };
 
   const inputCls = "mt-1 mb-4 block w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40";
   const labelCls = "block text-sm font-bold text-foreground";
+
+  if (status === "success") {
+    return (
+      <div className="flex flex-col items-center gap-4 py-10 text-center">
+        <CheckCircle2 className="size-12 text-primary" aria-hidden="true" />
+        <h3 className="text-xl font-black">Message received.</h3>
+        <p className="text-muted-foreground">Auralis Digital will review your request and follow up shortly.</p>
+        <Button variant="conversionOutline" size="sm" onClick={() => setStatus("idle")}>Send another</Button>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-1">
@@ -314,10 +355,17 @@ function ContactForm() {
       <label className={labelCls}>Project details
         <textarea className={inputCls} rows={4} value={form.details} onChange={set("details")} placeholder="What do you need?" />
       </label>
-      <Button type="submit" variant="conversion" size="xl" className="w-full">
-        Prepare Project Email <ArrowRight aria-hidden="true" />
+      {status === "error" && (
+        <p className="text-sm text-red-500">Something went wrong. Please try again or email directly.</p>
+      )}
+      <Button type="submit" variant="conversion" size="xl" className="w-full" disabled={status === "submitting"}>
+        {status === "submitting" ? "Sending…" : FORMSPREE_ENDPOINT ? <>Send Request <ArrowRight aria-hidden="true" /></> : <>Prepare Project Email <ArrowRight aria-hidden="true" /></>}
       </Button>
-      <p className="pt-2 text-xs text-muted-foreground">Opens a prepared email you can review before sending.</p>
+      <p className="pt-2 text-xs text-muted-foreground">
+        {FORMSPREE_ENDPOINT
+          ? "Your information goes directly to Auralis Digital."
+          : "Opens a prepared email you can review before sending."}
+      </p>
     </form>
   );
 }
@@ -481,7 +529,7 @@ export default function AuralisHomepage() {
               </p>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-3">
-              {pricing.map((tier) => (
+              {pricing.filter((t) => !t.retainer).map((tier) => (
                 <Reveal key={tier.title}>
                   <div className={cn(
                     "service-card flex flex-col gap-4 h-full",
@@ -511,6 +559,59 @@ export default function AuralisHomepage() {
             <p className="mt-6 text-center text-sm text-muted-foreground">
               Final pricing depends on page count, content needs, photos, features, and launch support.
             </p>
+
+            {/* Care plan / retainer */}
+            {pricing.filter((t) => t.retainer).map((tier) => (
+              <Reveal key={tier.title} className="mt-8">
+                <div className="service-card flex flex-col gap-4 border-primary/30 bg-primary/5 md:flex-row md:items-center md:gap-10">
+                  <div className="shrink-0">
+                    <span className="inline-block rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
+                      {tier.label}
+                    </span>
+                    <h3 className="mb-0 mt-3">{tier.title}</h3>
+                    <p className="text-4xl font-black text-foreground">{tier.price}</p>
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4">
+                    <p className="text-muted-foreground">{tier.note}</p>
+                    <ul className="grid gap-2 sm:grid-cols-2">
+                      {tier.items.map((item) => (
+                        <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="size-4 shrink-0 text-primary" aria-hidden="true" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="shrink-0">
+                    <Button variant="conversionOutline" size="lg" className="w-full md:w-auto" asChild>
+                      <a href="#contact">Ask about care plan</a>
+                    </Button>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Who this is for ─────────────────────────────── */}
+        <section className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <span className="section-label">Who this is for</span>
+              <h2>Built for the kind of businesses that need to look real online.</h2>
+            </Reveal>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {concepts.map((c) => {
+                const Icon = c.icon;
+                return (
+                  <Reveal key={c.name} className="service-card">
+                    <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                    <h3>{c.name}</h3>
+                    <p>{c.note}</p>
+                  </Reveal>
+                );
+              })}
+            </div>
           </div>
         </section>
 
