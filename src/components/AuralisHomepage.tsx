@@ -5,7 +5,6 @@ import {
   CalendarCheck,
   CheckCircle2,
   ClipboardList,
-  ExternalLink,
   Hammer,
   Leaf,
   MapPin,
@@ -44,29 +43,7 @@ const services = [
 
 const process = ["Discover", "Structure", "Design", "Review", "Launch"];
 
-const demos = [
-  {
-    label: "Restaurant",
-    title: "Restaurant Website Example",
-    note: "Menu, hours, location, trust signals, and quick calls from mobile visitors.",
-    href: "projects/bryans-neighborhood-coney-final-demo/index.html",
-    external: false,
-  },
-  {
-    label: "Lawn care",
-    title: "Lawn Care Website Example",
-    note: "Service details, credibility, quote requests, and phone-first inquiry flow.",
-    href: "https://christopherbdaugherty96.github.io/RobsLawnCare/",
-    external: true,
-  },
-  {
-    label: "Demo library",
-    title: "Industry Demo Library",
-    note: "Browse niche examples for restaurants, barbershops, painters, roofers, cleaners, salons, and more.",
-    href: "projects/demo-index.html",
-    external: false,
-  },
-];
+const DEMO_LIBRARY_HREF = "projects/demo-index.html";
 
 const concepts = [
   { name: "Barbershop", note: "Booking-forward pages with services, location, and social proof sections.", icon: Scissors },
@@ -540,28 +517,22 @@ export default function AuralisHomepage() {
                 These are example builds, not inflated claims. They show the kind of practical structure local businesses can use to get more calls and inquiries.
               </p>
             </Reveal>
-            <div className="grid gap-5 md:grid-cols-3">
-              {demos.map((demo) => (
-                <Reveal key={demo.title}>
-                  <a
-                    href={demo.href}
-                    target={demo.external ? "_blank" : undefined}
-                    rel={demo.external ? "noopener noreferrer" : undefined}
-                    className="service-card flex flex-col gap-3 no-underline"
-                  >
-                    <span className="inline-flex items-center gap-1 rounded-full border border-primary/25 bg-primary/8 px-3 py-1 text-xs font-bold text-primary">
-                      {demo.label}
-                      {demo.external && <ExternalLink className="size-3" aria-hidden="true" />}
-                    </span>
-                    <h3 className="mb-0">{demo.title}</h3>
-                    <p>{demo.note}</p>
-                    <span className="mt-auto inline-flex items-center gap-1 text-sm font-bold text-primary">
-                      View example <ArrowRight className="size-4" aria-hidden="true" />
-                    </span>
-                  </a>
-                </Reveal>
-              ))}
-            </div>
+            <Reveal>
+              <a
+                href={DEMO_LIBRARY_HREF}
+                className="service-card flex flex-col gap-4 no-underline sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div className="flex flex-col gap-2">
+                  <h3 className="mb-0">Industry Demo Library</h3>
+                  <p className="text-muted-foreground">
+                    Browse niche examples for restaurants, barbershops, painters, roofers, cleaners, salons, and more.
+                  </p>
+                </div>
+                <span className="inline-flex shrink-0 items-center gap-1 text-sm font-bold text-primary">
+                  Browse all examples <ArrowRight className="size-4" aria-hidden="true" />
+                </span>
+              </a>
+            </Reveal>
           </div>
         </section>
 
