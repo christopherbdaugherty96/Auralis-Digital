@@ -22,15 +22,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Generate og-image PNG
+        run: npm install --no-save sharp && node scripts/generate-og-image.mjs
+
       - name: Build
         run: npm run build
 
       - name: Copy static pages to dist
         run: |
-          cp -f about-christopher.html dist/ 2>/dev/null || true
-          cp -f website-llc.html dist/ 2>/dev/null || true
-          cp -f restaurant-demo.html dist/ 2>/dev/null || true
+          cp -f website/about-christopher.html dist/ 2>/dev/null || true
+          cp -f clients/website-llc/website-llc.html dist/ 2>/dev/null || true
+          cp -f projects/restaurant-demo.html dist/ 2>/dev/null || true
           cp -f sitemap.xml dist/ 2>/dev/null || true
+          cp -r projects dist/projects 2>/dev/null || true
+          cp -r service-areas dist/service-areas 2>/dev/null || true
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
