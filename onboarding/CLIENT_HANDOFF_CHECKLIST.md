@@ -2,45 +2,63 @@
 
 Status: operating checklist
 
-Use this when a project is ready to launch or transfer.
+Use this before considering a website project complete. The goal is to make sure the client knows what was delivered, who owns what, and how future updates will be handled.
 
-## Website Final Review
+## Final Review
 
-- Mobile checked
-- Desktop checked
-- Links tested
-- Buttons tested
-- Contact flow tested
-- Spelling checked
-- Images optimized
-- SEO title/description reviewed
+- Website reviewed on desktop
+- Website reviewed on mobile
+- Primary call-to-action tested
+- Contact form tested
+- Phone number tested
+- Email link tested
+- Social links tested
+- Service area/location information checked
+- Spelling and business details reviewed
+
+## Client Approval
+
+- Client reviewed final version
+- Requested revisions completed
+- Final approval received
+- Launch date confirmed
 
 ## Ownership and Access
 
-- Domain owner confirmed
-- Hosting owner confirmed
-- Client has login access
-- Billing ownership confirmed
-- Recovery email documented
+- Domain ownership confirmed
+- Hosting ownership confirmed
+- Website/admin access explained
+- Login credentials transferred or documented where appropriate
+- Client understands which accounts they own
+- Client understands which accounts Auralis manages, if any
 
-## Assets Delivered
+## Files and Assets
 
-- Logo files
-- Photos used
-- Brand colors/fonts
-- Copy/content files
-- Social links
+- Logo files returned/provided if needed
+- Photos/assets organized
+- Final website copy available if requested
+- Any source files or exports provided if included in scope
 
-## Client Training
+## Payment and Scope Closure
 
-- How to request changes
-- How to access hosting/dashboard
-- How leads are received
-- How renewals work
+- Final invoice sent
+- Final payment received or payment arrangement confirmed
+- Scope marked complete
+- Any out-of-scope requests moved to a new quote/change request
 
-## Post Launch
+## Post-Launch Notes
 
-- Launch date recorded
-- Backup available
-- Support window explained
-- Optional care plan offered
+- Client knows how to request updates
+- Client knows what is included or not included after launch
+- Care plan option offered, if appropriate
+- Hosting/domain renewal responsibility explained
+- Backup/export expectations explained, if applicable
+
+## Internal Closeout
+
+- Project folder organized
+- Client notes updated
+- Quote/scope saved
+- Final approval saved
+- Final invoice/payment status recorded
+- Future follow-up date set, if needed

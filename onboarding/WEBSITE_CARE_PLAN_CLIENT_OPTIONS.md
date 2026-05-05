@@ -1,111 +1,121 @@
-# Website Care Plan Options
+# Website Care Plan Client Options
 
-Status: client-facing service draft
+Status: client-facing option guide
 
-Auralis Digital offers an optional monthly website retainer for businesses that want help keeping their website current after launch.
+This document explains the care plan options that may be offered after a website build or refresh.
 
-This retainer is primarily for websites built or significantly rebuilt by Auralis Digital.
+A care plan is optional. It is separate from the one-time website build price.
 
-If a business already has a third-party website, Auralis Digital may recommend an audit, rebuild, migration, or custom quote before offering ongoing maintenance.
+## Default Option: Client-Owned Website
 
-This retainer is useful for businesses that regularly update hours, specials, services, menus, photos, events, promotions, or seasonal information.
+Most clients should own their domain, hosting, and business accounts.
 
----
+Auralis can help set things up and explain how to manage them, but the client remains the owner.
 
-## Ownership Reminder
+Best for:
 
-By default, the client owns and pays for their domain and hosting accounts.
+- businesses that want control
+- clients who already have hosting/domain accounts
+- clients who only need occasional help
 
-Auralis Digital can help connect, configure, and maintain the website, but the domain should remain in the client's name whenever possible.
+Client is responsible for:
 
-If a client wants Auralis Digital to manage hosting or hold website access on their behalf, that arrangement must be written clearly in the quote or retainer agreement.
+- domain renewal
+- hosting billing
+- keeping account access safe
+- requesting updates when needed
 
----
+## Option 1: No Monthly Care Plan
 
-## Monthly Website Retainer
+The client receives the completed website and is responsible for future updates.
 
-Price: $250/month
+Good fit when:
 
-Best for businesses that want their website actively maintained without having to manage updates themselves.
+- the site is simple
+- updates are rare
+- the client is comfortable managing accounts
+- budget is limited
 
-Includes:
+Future changes can still be quoted separately.
 
-- up to 8 small update requests per month
-- specials or promotion updates
-- service/menu updates
-- content refreshes
-- photo swaps
-- lead-flow checks
-- basic performance and mobile checks
-- hosting coordination
-- priority support
+## Option 2: Basic Care Plan
 
-Typical response time:
+A lightweight monthly plan for simple peace of mind.
 
-- Most updates are usually completed within 1-2 business days.
+May include:
+
+- monthly website check
+- contact form test
+- broken link spot check
+- one small update per month
+- basic reminder support for hosting/domain renewals
 
 Good fit for:
 
-- restaurants
-- barbershops
-- salons
-- contractors
-- lawn care companies
-- mobile bartending businesses
-- local service businesses with regular changes
+- small local businesses
+- simple brochure websites
+- clients who want occasional help
 
----
+## Option 3: Standard Care Plan
+
+A more active support plan for clients who expect regular updates.
+
+May include:
+
+- everything in Basic Care
+- multiple small updates per month
+- basic content refreshes
+- simple monthly visibility notes
+- priority response window
+
+Good fit for:
+
+- businesses with changing services
+- restaurants, events, seasonal businesses
+- local companies that want ongoing support
+
+## Option 4: Managed Website Arrangement
+
+A higher-support arrangement where Auralis stays more involved.
+
+May include:
+
+- ongoing support
+- deeper monthly review
+- landing page or campaign support
+- more frequent updates
+- reporting and recommendations
+
+This option needs clear boundaries because it can become open-ended work.
 
 ## What Counts as a Small Update
 
-Small updates usually include:
+Examples:
 
-- changing business hours
-- updating phone or email details
-- posting a monthly special
-- changing pricing text
-- swapping a few photos
-- updating service descriptions
-- updating menu/service details
-- changing a call-to-action link
+- changing hours
+- swapping an image
+- updating a phone number
+- adding a testimonial
+- minor service text change
+- updating a small section of copy
 
----
+Not usually included as a small update:
 
-## Work Quoted Separately
+- new page design
+- e-commerce setup
+- booking system setup
+- major redesign
+- new integrations
+- large copywriting work
 
-The following work is not included by default in the monthly retainer unless specifically written into the agreement:
+## How to Explain It to Clients
 
-- full redesigns
-- new multi-section pages
-- custom booking systems
-- online payments
-- e-commerce
-- advanced automation
-- large copy rewrites
-- logo design
-- branding packages
-- professional photography
-- paid ad management
-- social media management
-- emergency same-day support
+Simple explanation:
 
----
+A website build gets the site created and launched. A care plan keeps Auralis available after launch for support, small updates, and basic checks.
 
-## Cancellation
+If a client does not want a care plan, they can still request future updates as separate quoted work.
 
-The monthly retainer is optional and can be canceled according to the written agreement.
+## Internal Note
 
-Recommended default:
-
-- unpaid future work stops after cancellation
-- the client keeps access to accounts they own
-- transfer or export help may be billed separately if not included
-- any unpaid balances should be resolved before additional work is performed
-
----
-
-## Simple Client Explanation
-
-The monthly retainer is for businesses that want their website to stay active after launch.
-
-Instead of rebuilding the site every time something changes, Auralis Digital helps keep the site updated with current specials, services, photos, hours, contact information, and seasonal details.
+Do not pressure clients into a care plan. Offer it as an optional support path, especially when the client wants ongoing help or does not want to think about website upkeep.
