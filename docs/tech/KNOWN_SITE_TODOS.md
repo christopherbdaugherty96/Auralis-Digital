@@ -1,63 +1,37 @@
 # Known Site TODOs
 
-Last updated: 2026-04-26
+Status: active site TODO reference
+
+This file tracks website-specific issues and improvements.
 
 ## Purpose
 
-Single source of truth for remaining public-site tasks that still matter.
+Use this for:
 
-Use this instead of scattering small TODO notes across multiple docs.
+- website fixes
+- technical cleanup
+- launch readiness checks
 
----
+Do not use this for:
 
-# Critical
+- full business roadmap
+- sales tasks
+- client delivery tasks
 
-## 1. Remove Duplicate Homepage Demo Cards
-Status: Open
-Reference: GitHub Issue #2
+## Current Focus
 
-Keep only the Demo Library card in the homepage Example Work section.
+- confirm live deployment source: `main`, `gh-pages`, static HTML, or external platform
+- verify homepage call-to-action flow
+- test contact form and lead path
+- verify service-area pages still match the current offer
+- check mobile layout
+- verify metadata, title tags, and social preview tags
+- confirm analytics and search-console setup status
+- confirm form backend status
+- review visual consistency and brand alignment
 
-## 2. Replace Mailto Contact Flow
-Status: Open
+## Rule
 
-Install Formspree or equivalent real lead capture form.
+Only keep active, relevant site tasks here.
 
-## 3. Browser / Mobile QA Pass
-Status: Open
-
-Manually test key public pages on phone and desktop.
-
----
-
-# Important
-
-## 4. Analytics + Search Console
-Status: Open
-
-Install GA4 and verify Search Console.
-
-## 5. Demo Manual Review
-Status: Open
-
-Open each demo before sending to prospects and verify professionalism.
-
-## 6. Service Area Page Review
-Status: Open
-
-Improve local trust, clarity, and uniqueness where needed.
-
----
-
-# Growth
-
-## 7. First Client Proof Assets
-Status: Pending first client
-
-After delivery: testimonial, screenshots, case study, referral ask.
-
----
-
-# Rule
-
-Prioritize real conversion and real trust improvements over cosmetic changes.
+Move outdated tasks into `docs/archive/` instead of mixing stale work with current site truth.
