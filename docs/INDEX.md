@@ -1,125 +1,117 @@
-# Auralis Digital — Document Index
+# Auralis Digital Document Index
 
-Last updated: 2026-04-30
+Last updated: 2026-05-06
 
-## How to navigate this
+This is the navigation layer for the repo. Use it to find the current source of truth before creating or editing another document.
 
-Four folders plus four root-level files. Start at root, go deeper as needed.
-
----
-
-## Root (start here)
+## Start Here
 
 | File | Purpose |
 |---|---|
-| `ROADMAP.md` | Phase-by-phase execution plan. Current priority order. |
-| `STATUS.md` | Current business state snapshot. |
-| `SPRINT_EXECUTION_48HR.md` | Hour-by-hour checklist for the active client acquisition sprint. |
-| `INDEX.md` | This file. |
+| `docs/AURALIS_CURRENT_STATUS.md` | Canonical truth doc: what is real, what is missing, and what to do next. |
+| `docs/STATUS.md` | Short operational status snapshot. |
+| `docs/ROADMAP.md` | Execution roadmap and priority order. |
+| `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
+| `docs/INDEX.md` | This map. |
 
----
+## Sales and Lead Generation
 
-## sales/
+Folder: `leads/`
 
-Everything needed to find, qualify, and close clients.
-
-| File | Purpose |
-|---|---|
-| `LEADS_ACTIVE_OUTREACH.csv` | Live lead tracker — update after every contact |
-| `LEAD_TRACKER_TEMPLATE.csv` | Blank template for new lead lists |
-| `OUTREACH_SCRIPTS.md` | Niche-specific cold messages (barbershop, salon, restaurant, lawn care, cleaning, contractor) |
-| `OUTREACH_PACKET.md` | Fast-use outreach guide with core rules |
-| `OUTREACH_EXECUTION_PACK.md` | Execution-focused outreach reference |
-| `FOLLOW_UP_SYSTEM.md` | Follow-up cadence after initial contact |
-| `RESPONSE_SCRIPTS_WHEN_LEADS_REPLY_2026-04-24.md` | What to say when leads reply |
-| `OBJECTION_HANDLING.md` | Common objections and responses |
-| `CLOSE_FIRST_CLIENT_PLAN.md` | Plan for closing the first paid client |
-| `PRICING_GUIDE.md` | Full pricing structure with value framing |
-| `QUICK_ESTIMATE_GUIDE.md` | Fast estimate guide for sales calls |
-| `QUOTE_AND_SCOPE_TEMPLATE.md` | Formal quote and scope document |
-| `PROPOSAL_TEMPLATE.md` | Proposal template for qualified leads |
-| `NICHE_OFFERS.md` | Niche-specific offer framing |
-| `SALES_AND_REFERRAL_PROGRAM.md` | Referral program structure |
-| `RESTAURANT_WEBSITE_BUSINESS_PLAN.md` | Restaurant niche business plan |
-| `EXPANSION_LEADS_VETTED_2026-04-24.md` | Vetted expansion lead list |
-| `PERSONALIZED_OUTREACH_TOP5_2026-04-24.md` | Top 5 personalized outreach targets |
-| `PERSONALIZED_OUTREACH_EXPANSION_2026-04-24.md` | Expanded personalized outreach list |
-| `PROSPECTS_BELLEVILLE_VETTED_2026-04-24.md` | Vetted Belleville prospect list |
-
----
-
-## client-ops/
-
-Everything needed to onboard, deliver, and retain clients.
+Use these files to find, qualify, contact, follow up with, and close prospects.
 
 | File | Purpose |
 |---|---|
-| `CLIENT_INTAKE_QUESTIONNAIRE.md` | Questions to ask when a lead is interested |
-| `CLIENT_INTAKE_TEMPLATE.md` | Intake form template |
-| `CLIENT_ONBOARDING.md` | Onboarding process after close |
-| `FIRST_CLIENT_FLOW.md` | Quick reference: lead → close → deliver |
-| `FIRST_CLIENT_SYSTEM.md` | Full first client system |
-| `FIRST_CLIENT_DELIVERY_CHECKLIST.md` | Step-by-step delivery checklist |
-| `CLIENT_HANDOFF_CHECKLIST.md` | Checklist for handing off the finished site |
-| `CLIENT_PROOF_WORKFLOW.md` | How to capture proof after delivery |
-| `CASE_STUDY_TEMPLATE.md` | Template for writing case studies |
-| `REVISION_POLICY.md` | Revision limits and rules |
-| `HOSTING_AND_DOMAIN_CHECKLIST.md` | Hosting and domain setup steps |
-| `WEBSITE_CARE_PLANS.md` | Care plan / retainer policy |
-| `WEBSITE_CARE_PLAN_CLIENT_OPTIONS.md` | Client-facing care plan options |
-| `DAILY_SCORECARD.md` | Daily minimum activity targets |
+| `leads/LEADS_ACTIVE_OUTREACH.csv` | Live outreach tracker. Update after every contact. |
+| `leads/LEAD_TRACKER_TEMPLATE.csv` | Blank tracker template. |
+| `leads/OUTREACH_SCRIPTS.md` | Niche-specific outreach scripts. |
+| `leads/OUTREACH_PACKET.md` | Fast-use outreach guide. |
+| `leads/OUTREACH_EXECUTION_PACK.md` | Execution-focused outreach reference. |
+| `leads/FOLLOW_UP_SYSTEM.md` | Follow-up cadence and rules. |
+| `leads/RESPONSE_SCRIPTS_WHEN_LEADS_REPLY_2026-04-24.md` | Reply handling scripts. |
+| `leads/OBJECTION_HANDLING.md` | Common objections and responses. |
+| `leads/CLOSE_FIRST_CLIENT_PLAN.md` | First-client closing plan. |
+| `leads/PRICING_GUIDE.md` | Pricing structure and value framing. |
+| `leads/QUICK_ESTIMATE_GUIDE.md` | Fast estimates before formal quoting. |
+| `leads/QUOTE_AND_SCOPE_TEMPLATE.md` | Formal quote and scope template. |
+| `leads/PROPOSAL_TEMPLATE.md` | Proposal template for qualified leads. |
+| `leads/NICHE_OFFERS.md` | Niche-specific offer framing. |
+| `leads/SALES_AND_REFERRAL_PROGRAM.md` | Referral program structure. |
 
----
+## Client Operations and Delivery
 
-## tech/
+Folder: `onboarding/`
 
-Everything needed to build, deploy, and maintain the website.
+Use these files after a lead is interested, once a project is quoted, and during delivery, handoff, and retention.
 
 | File | Purpose |
 |---|---|
-| `WEBSITE_BUILD_WORKFLOW.md` | Step-by-step site build process |
-| `PUBLIC_LAUNCH_CHECKLIST.md` | Pre-launch readiness checklist |
-| `REGRESSION_CHECKLIST_2026-04-25.md` | Safety checklist before/after site edits |
-| `FORMSPREE_SETUP.md` | How to connect the Formspree form backend |
-| `NEXT_STEP_FORM_BACKEND.md` | Form backend next action |
-| `FORM_BACKEND_OPTIONS.md` | Comparison of form backend options |
-| `ANALYTICS_SETUP.md` | GA4 and Search Console setup guide |
-| `LEAD_CAPTURE_STRATEGY_A_NOW_C_LATER_2026-04-25.md` | Formspree-now / custom-later decision |
-| `KNOWN_SITE_TODOS.md` | Known remaining site issues |
-| `TODO_BRANDING_METADATA_FIX.md` | Branding metadata fix record (completed) |
-| `TODO_HOSTING_PLATFORM.md` | Hosting platform decision record |
-| `ASSET_MANIFEST.md` | Site asset inventory |
-| `HOMEPAGE_DEMO_SECTION_INTENT.md` | Demo section design intent |
-| `HOMEPAGE_VISUAL_INTEGRATION_PATCH.md` | Visual integration patch notes |
-| `MASSIVE_VISUAL_DESIGN_DIRECTION_2026-04-25.md` | Visual design direction doc |
-| `VISUAL_REALISM_UPGRADE_PLAN.md` | Visual realism upgrade plan |
+| `onboarding/CLIENT_INTAKE_QUESTIONNAIRE.md` | Discovery questions for interested leads. |
+| `onboarding/CLIENT_INTAKE_TEMPLATE.md` | Intake form template. |
+| `onboarding/CLIENT_ONBOARDING.md` | Onboarding process after close. |
+| `onboarding/FIRST_CLIENT_FLOW.md` | Quick reference: lead to close to delivery. |
+| `onboarding/FIRST_CLIENT_SYSTEM.md` | Full first-client system. |
+| `onboarding/FIRST_CLIENT_DELIVERY_CHECKLIST.md` | Delivery checklist. |
+| `onboarding/CLIENT_HANDOFF_CHECKLIST.md` | Finished-site handoff checklist. |
+| `onboarding/CLIENT_PROOF_WORKFLOW.md` | How to capture proof after delivery. |
+| `onboarding/CASE_STUDY_TEMPLATE.md` | Case study template. |
+| `onboarding/REVISION_POLICY.md` | Revision limits and rules. |
+| `onboarding/HOSTING_AND_DOMAIN_CHECKLIST.md` | Hosting and domain setup steps. |
+| `onboarding/WEBSITE_CARE_PLANS.md` | Internal care plan / retainer policy. |
+| `onboarding/WEBSITE_CARE_PLAN_CLIENT_OPTIONS.md` | Client-facing care plan options. |
+| `onboarding/DAILY_SCORECARD.md` | Daily activity targets. |
 
----
+## Website and Technical Work
 
-## archive/
+Folder: `docs/tech/`
 
-Historical context. Read-only reference. Do not use for current decisions.
+Use these files for website edits, launch readiness, form/backend setup, deployment notes, and technical tracking.
 
-These docs were accurate at the time they were written. Current state is controlled by `ROADMAP.md` and `STATUS.md`.
-
-| File | Notes |
+| File | Purpose |
 |---|---|
-| `AUDIT_REPORT_2026-04-24.md` | April 24 audit |
-| `AURALIS_BRAND_GUIDE_2026-04-24.md` | Brand guide snapshot |
-| `AURALIS_DIGITAL_AD_CAMPAIGN_2026-04-24.md` | Ad campaign draft |
-| `CURRENT_BUSINESS_STATE_2026-04-24.md` | State snapshot April 24 |
-| `CURRENT_STATE_CHECKPOINT_2026-04-25.md` | State checkpoint April 25 |
-| `FINDINGS_TODO_ROADMAP_2026-04-25.md` | April 25 findings |
-| `LEGACY_STATIC_SITE_NOTE.md` | Notes on old static site |
-| `LLC_WEBSITE_NEXT_STEPS_TOOLKIT_2026-04-24.md` | Early next steps doc |
-| `NEXT_STEPS_EXECUTION_PLAN_2026-04-26.md` | April 26 execution plan |
-| `NEXT_STEPS_IMPLEMENTATION_PLAN_2026-04-25.md` | April 25 implementation plan |
-| `REPO_CLEANUP_PLAN_2026-04-24.md` | Repo cleanup plan |
-| `WEBSITE_RECOMMENDATIONS_AND_3_PASS_COMPLETION_2026-04-25.md` | 3-pass completion notes |
-| `session-audit-2026-04-25.md` | April 25 session audit |
+| `docs/tech/WEBSITE_BUILD_WORKFLOW.md` | Site build workflow. |
+| `docs/tech/PUBLIC_LAUNCH_CHECKLIST.md` | Public launch readiness checklist. |
+| `docs/tech/REGRESSION_CHECKLIST_2026-04-25.md` | Site regression checklist. |
+| `docs/tech/FORMSPREE_SETUP.md` | Formspree setup instructions. |
+| `docs/tech/NEXT_STEP_FORM_BACKEND.md` | Form backend next action. |
+| `docs/tech/FORM_BACKEND_OPTIONS.md` | Form backend comparison. |
+| `docs/tech/ANALYTICS_SETUP.md` | GA4 and Search Console setup guide. |
+| `docs/tech/KNOWN_SITE_TODOS.md` | Active website TODOs only. |
+| `docs/tech/TODO_HOSTING_PLATFORM.md` | Hosting platform decision record. |
+| `docs/tech/LEGACY_STATIC_SITE_NOTE.md` | Static site history and caution notes. |
+| `docs/tech/ASSET_MANIFEST.md` | Site asset inventory. |
 
----
+## Internal Build System
 
-## FOUNDATION/
+Folder: `docs/internal/`
 
-Original business foundation documents. Background context only.
+| File | Purpose |
+|---|---|
+| `docs/internal/AURALIS_SITE_STUDIO.md` | Internal coworker workflow for building client sites. |
+
+## Active Work Areas
+
+| Folder | Purpose |
+|---|---|
+| `active/` | Current active business/project work. |
+| `clients/` | Client-specific materials. |
+| `projects/` | Project work and examples. |
+| `website/` | Website-related source or static materials outside the Vite app. |
+| `src/` | Vite/React website source. |
+| `public/` | Public static assets. |
+| `scripts/` | Build/deploy helper scripts. |
+
+## Archive
+
+Folder: `docs/archive/`
+
+Historical documents live here. They may explain past decisions, but they do not override:
+
+1. `docs/AURALIS_CURRENT_STATUS.md`
+2. `docs/STATUS.md`
+3. `docs/ROADMAP.md`
+4. Active files in `leads/`, `onboarding/`, `docs/tech/`, and `docs/internal/`
+
+## Rule
+
+Do not create new overlapping roadmap, status, or current-state documents. Update the canonical files above, or archive old notes with a date.

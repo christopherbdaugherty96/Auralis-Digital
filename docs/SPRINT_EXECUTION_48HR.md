@@ -26,7 +26,7 @@ This is not a planning document. It is a checklist.
 
 ## Hour 2–4: Formspree (lead capture backend)
 
-See: docs/NEXT_STEP_FORM_BACKEND.md for detailed setup
+See: docs/tech/NEXT_STEP_FORM_BACKEND.md for detailed setup
 
 - [ ] Create account
 - [ ] Copy endpoint
@@ -37,4 +37,4 @@ See: docs/NEXT_STEP_FORM_BACKEND.md for detailed setup
 
 ## Hour 4–8: Outreach
 
-Use docs/LEADS_ACTIVE_OUTREACH.csv + docs/OUTREACH_SCRIPTS.md
+Use leads/LEADS_ACTIVE_OUTREACH.csv + leads/OUTREACH_SCRIPTS.md

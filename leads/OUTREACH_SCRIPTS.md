@@ -4,7 +4,7 @@ Last updated: 2026-04-30
 
 ## How to Use This
 
-1. Open docs/LEADS_ACTIVE_OUTREACH.csv
+1. Open leads/LEADS_ACTIVE_OUTREACH.csv
 2. Pick a business
 3. Identify niche
 4. Use matching script

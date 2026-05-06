@@ -31,9 +31,10 @@ The next step is turning the site into a working lead system and starting outrea
 
 See:
 - docs/SPRINT_EXECUTION_48HR.md
-- docs/NEXT_STEP_FORM_BACKEND.md
-- docs/OUTREACH_SCRIPTS.md
-- docs/LEADS_ACTIVE_OUTREACH.csv
+- docs/AURALIS_CURRENT_STATUS.md
+- docs/tech/NEXT_STEP_FORM_BACKEND.md
+- leads/OUTREACH_SCRIPTS.md
+- leads/LEADS_ACTIVE_OUTREACH.csv
 
 Best-fit businesses:
 
@@ -68,6 +69,15 @@ Third-party websites may require a paid audit, rebuild, migration, or custom quo
 ## Operating System
 
 The repo now includes internal operating documents for selling, building, launching, and supporting websites.
+
+Start with:
+
+- docs/AURALIS_CURRENT_STATUS.md
+- docs/INDEX.md
+- docs/ROADMAP.md
+- leads/
+- onboarding/
+- docs/tech/
 
 ## Contact
 

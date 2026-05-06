@@ -120,8 +120,8 @@ After the client is happy:
 - [ ] Ask for testimonial
 - [ ] Ask for portfolio permission
 - [ ] Capture screenshots
-- [ ] Fill out `docs/CASE_STUDY_TEMPLATE.md`
-- [ ] Follow `docs/CLIENT_PROOF_WORKFLOW.md`
+- [ ] Fill out `onboarding/CASE_STUDY_TEMPLATE.md`
+- [ ] Follow `onboarding/CLIENT_PROOF_WORKFLOW.md`
 
 ---
 

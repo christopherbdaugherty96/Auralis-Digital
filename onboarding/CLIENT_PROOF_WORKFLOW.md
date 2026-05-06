@@ -63,7 +63,7 @@ Collect:
 
 Use:
 
-- `docs/CASE_STUDY_TEMPLATE.md`
+- `onboarding/CASE_STUDY_TEMPLATE.md`
 - Homepage proof section
 - Portfolio/demo area
 - Future sales material
