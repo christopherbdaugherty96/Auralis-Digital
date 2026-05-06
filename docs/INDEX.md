@@ -77,6 +77,7 @@ Use these files for website edits, launch readiness, form/backend setup, deploym
 | `docs/tech/FORM_BACKEND_OPTIONS.md` | Form backend comparison. |
 | `docs/tech/ANALYTICS_SETUP.md` | GA4 and Search Console setup guide. |
 | `docs/tech/KNOWN_SITE_TODOS.md` | Active website TODOs only. |
+| `docs/tech/DEPLOYMENT_TRUTH.md` | Current deployment boundary and branch rules. |
 | `docs/tech/TODO_HOSTING_PLATFORM.md` | Hosting platform decision record. |
 | `docs/tech/LEGACY_STATIC_SITE_NOTE.md` | Static site history and caution notes. |
 | `docs/tech/ASSET_MANIFEST.md` | Site asset inventory. |

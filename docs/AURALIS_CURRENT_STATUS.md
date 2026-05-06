@@ -60,16 +60,17 @@ This is the canonical truth layer for Auralis Digital. If another document disag
 - Do not keep creating overlapping status documents.
 - Do not prioritize visual polish over legal setup, domain email, payment flow, outreach, and first delivery.
 - Do not merge `gh-pages` into `main`; treat it as a special deployment branch until deployment truth is confirmed.
-- Do not mine `claude/final-pass-cleanup-APsU0` until static HTML changes and audit TODO removal impact are reviewed.
+- Do not apply static HTML edits to `main` unless deployment truth confirms those files are active.
 
-## Current Branch Cleanup Truth
+## Current Repo and Deployment Truth
 
 - `main` is current.
 - PR #7 has been merged into `main`.
-- The reconciliation branch can be deleted after confirming `origin/main` has the merge.
+- The reconciliation and delayed cleanup branches have been mined and deleted.
 - `gh-pages` should remain.
-- `claude/final-pass-cleanup-APsU0` should remain for delayed review.
-- Already-mined feature branches can stay deleted.
+- `main` is the source of truth for code and documentation.
+- `gh-pages` is preserved as the deployment branch until proven otherwise.
+- See `docs/tech/DEPLOYMENT_TRUTH.md` before changing hosting, deployment, or static HTML files.
 
 ## Next Concrete Action
 

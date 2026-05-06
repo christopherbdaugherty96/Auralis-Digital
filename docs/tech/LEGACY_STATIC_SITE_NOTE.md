@@ -4,6 +4,15 @@ Status: reference
 
 This project may include legacy static HTML sites or older deployment patterns.
 
+Current deployment boundary: see `docs/tech/DEPLOYMENT_TRUTH.md`.
+
+For Auralis Digital itself:
+
+- `main` is the source of truth for code and documentation.
+- `gh-pages` is preserved as the deployment branch until proven otherwise.
+- Do not merge `gh-pages` into `main`.
+- Do not apply static HTML changes to `main` unless deployment truth confirms those files are active.
+
 If a client already has a static site:
 
 - Determine how it is hosted

@@ -2,6 +2,8 @@
 
 Status: pending
 
+Current deployment boundary: see `docs/tech/DEPLOYMENT_TRUTH.md`.
+
 Auralis Digital should choose one simple GitHub-connected hosting platform for deploying the upgraded website and future client sites.
 
 ## Best options
@@ -35,4 +37,12 @@ Using exported code from Lovable means the website does not need to stay hosted 
 
 ## Current recommendation
 
-Use Vercel or Netlify instead of relying on a Lovable published app URL. This keeps ownership of the code, allows individual changes through GitHub, and supports a cleaner client-work workflow.
+Do not change hosting strategy until deployment is actively broken or first-client execution requires it.
+
+Later, use Vercel or Netlify instead of relying on a Lovable published app URL. This keeps ownership of the code, allows individual changes through GitHub, and supports a cleaner client-work workflow.
+
+Until reviewed:
+
+- `main` is the source of truth for code and documentation.
+- `gh-pages` is preserved as the deployment branch until proven otherwise.
+- Do not merge `gh-pages` into `main`.
