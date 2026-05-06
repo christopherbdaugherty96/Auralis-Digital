@@ -93,6 +93,7 @@ Folder: `docs/internal/`
 | File | Purpose |
 |---|---|
 | `docs/internal/AURALIS_CLIENT_INTAKE_OS.md` | Internal operating design for the robust Auralis intake widget, lead qualification, CRM/backlog flow, and future Nova-assisted review layer. |
+| `docs/internal/AURALIS_CLIENT_INTAKE_OS_SECOND_PASS.md` | Second-pass tightening note: form-first MVP, current repo fit, implementation checklist, and guardrails against overbuilding the intake system. |
 | `docs/internal/AURALIS_SITE_STUDIO.md` | Internal coworker workflow for building client sites. |
 | `docs/internal/REFERENCE_MINING_GUIDE.md` | Rules for mining competitor/reference sites without copying them. |
 
