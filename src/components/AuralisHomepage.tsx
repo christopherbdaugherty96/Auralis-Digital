@@ -28,9 +28,9 @@ import { cn } from "@/lib/utils";
 
 const PHONE = "734-444-8558";
 const PHONE_HREF = "tel:+17344448558";
-const EMAIL = "auralisdigitaleco@gmail.com";
+const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com";
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Website Project Request")}`;
-const FORMSPREE_ENDPOINT = ""; // Set to your Formspree endpoint, e.g. "https://formspree.io/f/xxxxabcd"
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 
 const services = [
   { title: "Website design", copy: "Clean, credible websites shaped around what local customers need to see first.", icon: Paintbrush },
@@ -461,7 +461,7 @@ export default function AuralisHomepage() {
                 <Button variant="conversion" size="xl" asChild>
                   <a href="#contact">Get a Free Website Review <ArrowRight aria-hidden="true" /></a>
                 </Button>
-                <Button variant="conversionOutline" size="xl" asChild>
+                <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
                   <a href={PHONE_HREF}>Call {PHONE}</a>
                 </Button>
               </div>
