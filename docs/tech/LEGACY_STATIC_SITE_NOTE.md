@@ -9,9 +9,11 @@ Current deployment boundary: see `docs/tech/DEPLOYMENT_TRUTH.md`.
 For Auralis Digital itself:
 
 - `main` is the source of truth for code and documentation.
-- `gh-pages` is preserved as the deployment branch until proven otherwise.
-- Do not merge `gh-pages` into `main`.
-- Do not apply static HTML changes to `main` unless deployment truth confirms those files are active.
+- GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
+- `gh-pages` is generated deployment output.
+- Do not edit `gh-pages` manually or merge it into `main`.
+- Static HTML under copied folders such as `website/`, `projects/`, and `service-areas/` is active deployment input.
+- Do not treat copied static HTML as stale until the deployment workflow says it is no longer shipped.
 
 If a client already has a static site:
 

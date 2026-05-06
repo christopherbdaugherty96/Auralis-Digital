@@ -44,5 +44,7 @@ Later, use Vercel or Netlify instead of relying on a Lovable published app URL. 
 Until reviewed:
 
 - `main` is the source of truth for code and documentation.
-- `gh-pages` is preserved as the deployment branch until proven otherwise.
-- Do not merge `gh-pages` into `main`.
+- GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
+- `gh-pages` is generated deployment output.
+- Do not edit `gh-pages` manually or merge it into `main`.
+- Static HTML under copied folders is active deployment input.
