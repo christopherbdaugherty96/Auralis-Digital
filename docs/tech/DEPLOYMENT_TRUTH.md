@@ -21,6 +21,7 @@ Last updated: 2026-05-06
 The GitHub Pages workflow currently:
 
 - runs on pushes to `main`
+- maps production contact config into the Vite build from GitHub Actions variables/secrets
 - builds the Vite app into `dist/`
 - copies selected static pages from `website/`, `projects/`, and `service-areas/` into `dist/`
 - publishes `dist/` to `gh-pages`

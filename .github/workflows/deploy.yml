@@ -26,6 +26,9 @@ jobs:
         run: npm install --no-save sharp && node scripts/generate-og-image.mjs
 
       - name: Build
+        env:
+          VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}
+          VITE_FORMSPREE_ENDPOINT: ${{ secrets.VITE_FORMSPREE_ENDPOINT }}
         run: npm run build
 
       - name: Copy static pages to dist

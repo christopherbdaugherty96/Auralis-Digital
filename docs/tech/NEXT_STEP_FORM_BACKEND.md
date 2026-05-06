@@ -16,10 +16,15 @@ Configure production contact environment variables and verify live form submissi
 
 Set these in the production deployment environment:
 
-- `VITE_CONTACT_EMAIL`
-- `VITE_FORMSPREE_ENDPOINT`
+- `VITE_CONTACT_EMAIL` as a GitHub Actions variable
+- `VITE_FORMSPREE_ENDPOINT` as a GitHub Actions secret
 
 Example values live in `.env.example`.
+
+The deploy workflow maps these values into the Vite build step:
+
+- `${{ vars.VITE_CONTACT_EMAIL }}`
+- `${{ secrets.VITE_FORMSPREE_ENDPOINT }}`
 
 ## Formspree Setup
 
@@ -31,6 +36,21 @@ Example values live in `.env.example`.
 6. Add the domain email as `VITE_CONTACT_EMAIL`.
 
 Do not hardcode the endpoint in `src/components/AuralisHomepage.tsx`.
+
+## GitHub Configuration
+
+Use these commands from the repo once the real values exist:
+
+```powershell
+gh variable set VITE_CONTACT_EMAIL --body "hello@auralisdigital.net"
+gh secret set VITE_FORMSPREE_ENDPOINT --body "https://formspree.io/f/xxxxabcd"
+```
+
+Then trigger a deploy:
+
+```powershell
+gh workflow run "Deploy to GitHub Pages"
+```
 
 ## Deploy
 
