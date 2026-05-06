@@ -34,6 +34,7 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Payment/deposit handled
 - [ ] Revision limits explained
 - [ ] Out-of-scope/change-request rule explained
+- [ ] Definition of done agreed before build starts
 
 ## 2. Brand and Trust
 
@@ -120,6 +121,7 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Success message appears
 - [ ] Error state works or is acceptable
 - [ ] No console/network errors during submit
+- [ ] Client knows where leads will arrive and who must respond
 
 ## 7. Mobile and Responsive QA
 
@@ -209,6 +211,7 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Cache-sensitive assets tested with query string if needed
 - [ ] Deployment docs updated if anything changed
 - [ ] Rollback path known or previous version preserved
+- [ ] Pre-launch backup/export/snapshot completed if replacing an existing site
 
 ## 13. Technical Checks
 
@@ -244,6 +247,7 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Domain, hosting, analytics, form, and email account ownership documented
 - [ ] Admin access and recovery email ownership confirmed
 - [ ] No client passwords are stored insecurely in the repo or docs
+- [ ] Contract, quote, invoice, and approval records saved in the client folder
 
 ## 16. Client Review
 
@@ -266,6 +270,8 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Domain/hosting ownership documented
 - [ ] Login/access notes delivered if applicable
 - [ ] Client knows how to request updates
+- [ ] Client knows where leads arrive and how to respond
+- [ ] Client receives basic training or walkthrough if included in scope
 - [ ] Final invoice/payment status handled
 - [ ] Handoff checklist completed
 - [ ] Care plan accepted or declined
@@ -273,7 +279,16 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Backup/export or repo handoff completed if included in scope
 - [ ] Client receives summary of what was delivered
 
-## 18. Proof After Launch
+## 18. Post-Launch Monitoring
+
+- [ ] Monitor the live site during the agreed post-launch window
+- [ ] Re-test contact form after DNS/cache settles
+- [ ] Re-check favicon/mobile icon after cache-sensitive changes
+- [ ] Confirm analytics/Search Console begin receiving data if configured
+- [ ] Capture any launch issues in the client record
+- [ ] Close the launch window or convert remaining items into a care plan/change request
+
+## 19. Proof After Launch
 
 - [ ] Ask for testimonial
 - [ ] Ask for review if appropriate
@@ -288,4 +303,4 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 
 Do not treat a site as complete because it looks good locally.
 
-A client website is complete only after the live site, contact path, mobile view, metadata, favicon/icon surfaces, deployment output, accessibility basics, performance basics, ownership boundaries, and handoff expectations have all been checked.
+A client website is complete only after the live site, contact path, mobile view, metadata, favicon/icon surfaces, deployment output, accessibility basics, performance basics, ownership boundaries, post-launch monitoring, and handoff expectations have all been checked.
