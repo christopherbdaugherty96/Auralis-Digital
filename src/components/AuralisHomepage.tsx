@@ -55,10 +55,10 @@ const concepts = [
 
 const pricing = [
   {
-    label: "Best for cleanup",
+    label: "For Auralis-built sites",
     title: "Website Refresh",
     price: "$250",
-    note: "Focused cleanup for a better first impression.",
+    note: "Focused cleanup for websites originally built by Auralis Digital.",
     items: ["Improve clarity", "Tighten calls to action", "Mobile polish"],
     featured: false,
     retainer: false,
@@ -83,10 +83,10 @@ const pricing = [
   },
   {
     label: "Keep it current",
-    title: "Monthly Care Plan",
+    title: "Managed Hosting and Care",
     price: "$250/mo",
-    note: "Ongoing updates, hosting coordination, and priority support so your site never falls behind.",
-    items: ["Monthly content updates", "Hosting coordination", "Priority support", "Light optimization"],
+    note: "Stress-free website management, hosting/deployment coordination, small updates, and priority support.",
+    items: ["Routine upkeep", "Hosting coordination", "Small content updates", "Priority support"],
     featured: false,
     retainer: true,
   },
@@ -110,12 +110,12 @@ const faqs = [
     a: "Photos help, but the first version can start with strong layout, clean copy, and placeholder visuals while real photos are gathered.",
   },
   {
-    q: "Can you improve an existing site?",
-    a: "Yes. A refresh can improve wording, layout, calls to action, mobile readability, and trust signals without starting from zero.",
+    q: "Can you refresh an existing site?",
+    a: "Website Refresh is for sites originally built by Auralis Digital. Third-party sites usually need an audit, rebuild, migration, or custom quote before improvement work begins.",
   },
   {
-    q: "What does the $250 monthly retainer include?",
-    a: "Ongoing updates, specials, service or menu changes, light optimization, hosting coordination, and priority support. Primarily for sites built or significantly rebuilt by Auralis Digital.",
+    q: "What does the $250 managed hosting and care plan include?",
+    a: "Stress-free website management, hosting/deployment coordination, routine upkeep, small content updates, and priority support. It is not unlimited redesign or development work.",
   },
   {
     q: "Do I need to handle my own hosting?",
@@ -633,7 +633,7 @@ export default function AuralisHomepage() {
               Final pricing depends on page count, content needs, photos, features, and launch support.
             </p>
 
-            {/* Care plan / retainer */}
+            {/* Care plan */}
             {pricing.filter((t) => t.retainer).map((tier) => (
               <Reveal key={tier.title} className="mt-8">
                 <div className="service-card flex flex-col gap-4 border-primary/30 bg-primary/5 md:flex-row md:items-center md:gap-10">

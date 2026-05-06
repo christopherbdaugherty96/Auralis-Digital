@@ -15,13 +15,13 @@ Auralis Digital builds clean, practical, mobile-ready websites for local busines
 
 Core services:
 
-- Website refreshes
+- Website refreshes for Auralis-built sites
 - Basic business websites
 - Standard growth websites
 - Local business positioning
 - Conversion-focused design
 - Lead capture and quote-request flows
-- Monthly website retainer support
+- Managed hosting and care support
 
 ## Immediate Next Step (Current Focus)
 
@@ -51,7 +51,7 @@ Best-fit businesses:
 
 ### Website Builds
 
-- Website Refresh — $250
+- Website Refresh for Auralis-built sites — $250
 - Basic Website — $500+
 - Standard Website — $1,000+
 - Premium / Custom — quote based
@@ -60,11 +60,11 @@ Pricing is a starting framework. Final scope, timeline, revisions, add-ons, inte
 
 ### Ongoing Support
 
-- Monthly Website Retainer — $250/month
+- Managed Hosting and Care Plan — $250/month
 
-The retainer is primarily for websites built or significantly rebuilt by Auralis Digital. It is for businesses that want ongoing updates, specials, service/menu changes, light optimization, hosting coordination, and priority support after launch.
+The managed hosting and care plan is primarily for websites built or significantly rebuilt by Auralis Digital. It is for businesses that want stress-free website management, hosting/deployment coordination, routine upkeep, small updates, and priority support after launch.
 
-Third-party websites may require a paid audit, rebuild, migration, or custom quote before ongoing maintenance is offered.
+Third-party websites are not eligible for the $250 Website Refresh by default. They may require a paid audit, rebuild, migration, or custom quote before refresh or ongoing maintenance work is offered.
 
 ## Operating System
 

@@ -59,7 +59,7 @@ Use these files after a lead is interested, once a project is quoted, and during
 | `onboarding/CASE_STUDY_TEMPLATE.md` | Case study template. |
 | `onboarding/REVISION_POLICY.md` | Revision limits and rules. |
 | `onboarding/HOSTING_AND_DOMAIN_CHECKLIST.md` | Hosting and domain setup steps. |
-| `onboarding/WEBSITE_CARE_PLANS.md` | Internal care plan / retainer policy. |
+| `onboarding/WEBSITE_CARE_PLANS.md` | Internal managed hosting and care plan policy. |
 | `onboarding/WEBSITE_CARE_PLAN_CLIENT_OPTIONS.md` | Client-facing care plan options. |
 | `onboarding/DAILY_SCORECARD.md` | Daily activity targets. |
 

@@ -7,8 +7,8 @@ This is the canonical truth layer for Auralis Digital. If another document disag
 ## What Is Real Right Now
 
 - Auralis Digital has a live public website.
-- The service offer is defined: local business websites, refreshes, lead capture, and ongoing website care.
-- Starting pricing exists: $250 refresh, $500+ basic website, $1,000+ standard website, custom quote for larger work, and $250/month care plan.
+- The service offer is defined: local business websites, refreshes for Auralis-built sites, lead capture, and ongoing website care.
+- Starting pricing exists: $250 refresh for Auralis-built sites, $500+ basic website, $1,000+ standard website, custom quote for larger or third-party site work, and $250/month managed hosting and care.
 - The repo contains a usable business operating system:
   - lead tracking and outreach in `leads/`
   - intake, delivery, handoff, proof, and care plan docs in `onboarding/`
@@ -61,6 +61,7 @@ This is the canonical truth layer for Auralis Digital. If another document disag
 - Do not prioritize visual polish over legal setup, domain email, payment flow, outreach, and first delivery.
 - Do not edit `gh-pages` manually or merge it into `main`.
 - Do not treat copied static HTML as stale without checking the deployment workflow.
+- Do not offer the standard Website Refresh for websites Auralis did not originally build. Third-party sites should start with an audit, rebuild, migration, or custom quote.
 
 ## Current Repo and Deployment Truth
 

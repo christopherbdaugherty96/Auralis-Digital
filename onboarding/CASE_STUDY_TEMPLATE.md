@@ -1,6 +1,6 @@
 # Case Study Template
 
-Last updated: 2026-04-26
+Last updated: 2026-05-06
 
 ## Purpose
 
@@ -39,7 +39,7 @@ Examples:
 
 What did Auralis Digital actually do?
 
-- Website refresh / new website / landing page / other
+- Website refresh for Auralis-built site / new website / rebuild / migration / landing page / other
 - Pages built:
 - Key sections added:
 - Contact or lead capture improvements:
@@ -84,7 +84,7 @@ Examples:
 - Client approved launch
 - Inquiry flow was tested
 
-Avoid claims like “doubled leads” unless tracked.
+Avoid claims like "doubled leads" unless tracked.
 
 ---
 

@@ -1,6 +1,6 @@
 # Client Intake Questionnaire
 
-Last updated: 2026-04-26
+Last updated: 2026-05-06
 
 ## Purpose
 
@@ -16,13 +16,16 @@ Use this after a lead becomes interested and before quoting or building. The goa
 - Phone:
 - City/service area:
 - Current website:
+- Was the current website built by Auralis Digital? Yes / No / Not sure
 - Current social links:
 
 ---
 
 # What They Need
 
-- Do you need a brand new website or a refresh of an existing one?
+- Do you need a brand new website?
+- If you already have a website, what platform is it on if you know?
+- If the current site was not built by Auralis Digital, should this start with an audit, rebuild, migration, or custom quote?
 - What is the main reason you want to improve your website now?
 - What do you want customers to do most?
   - Call
@@ -84,6 +87,7 @@ Clarify early if they ask for:
 - e-commerce
 - complex automations
 - ongoing content writing
+- third-party website cleanup
 - advanced SEO guarantees
 
 These may require a custom quote or later phase.

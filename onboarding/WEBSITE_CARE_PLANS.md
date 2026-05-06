@@ -10,6 +10,8 @@ The purpose of a care plan is to keep the website current, useful, and accurate 
 
 Website care plans are primarily intended for websites built or significantly rebuilt by Auralis Digital.
 
+Website Refresh work is only for websites originally built by Auralis Digital by default.
+
 Support for third-party websites may require a paid audit, rebuild, migration, or custom quote before any ongoing maintenance plan is offered.
 
 ---
@@ -29,7 +31,7 @@ This protects both sides:
 
 ---
 
-## Optional Managed Website Arrangement
+## Optional Managed Hosting Arrangement
 
 If a client wants Auralis Digital to manage or hold possession of the website setup, that must be documented in writing before launch.
 
@@ -84,7 +86,7 @@ Possible inclusions:
 
 Suggested price: $250/month
 
-Best for clients who want a stress-free website arrangement where Auralis Digital hosts or coordinates the site and handles routine updates as needed.
+Best for clients who want a stress-free website arrangement where Auralis Digital hosts or coordinates the site, manages deployments, handles routine upkeep, and completes reasonable small updates as needed.
 
 This plan is positioned as the easiest option for clients who do not want to manage hosting, deployments, form checks, small edits, or routine website upkeep themselves.
 
@@ -92,20 +94,23 @@ Possible inclusions:
 
 - website hosting or hosting coordination
 - deployment management
+- routine website upkeep
 - uptime/basic live-site checks
 - contact form and lead-flow checks
+- link and basic error checks
 - small text updates as needed
 - phone/email/hour/service updates
 - minor photo swaps
 - light content refreshes
 - basic mobile and performance checks
 - favicon/metadata/technical polish when needed
+- hosting/domain renewal reminders when the client owns the accounts
 - priority support over non-retainer clients
 - handoff/transfer support if the plan is cancelled, according to written terms
 
 Recommended boundary language:
 
-> Managed Hosting and Care includes hosting coordination and reasonable small updates needed to keep the site accurate and useful. Larger redesigns, new pages, advanced integrations, booking systems, e-commerce, advertising campaigns, custom automation, major SEO campaigns, or large copy rewrites are quoted separately.
+> Managed Hosting and Care includes hosting coordination and reasonable small updates needed to keep the site accurate and useful. Larger redesigns, new pages, advanced integrations, booking systems, e-commerce, advertising campaigns, custom automation, major SEO campaigns, large copy rewrites, third-party platform repair, or large gallery rebuilds are quoted separately.
 
 Internal note:
 
@@ -119,7 +124,7 @@ Avoid promising unlimited updates unless the plan truly supports it.
 
 Recommended language:
 
-> Includes up to a reasonable number of small update requests per month. Larger redesigns, new pages, custom integrations, e-commerce, booking systems, or major copy rewrites are quoted separately.
+> Includes a reasonable number of small update requests per month. Larger redesigns, new pages, custom integrations, e-commerce, booking systems, or major copy rewrites are quoted separately.
 
 Examples of small updates:
 

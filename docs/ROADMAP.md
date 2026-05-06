@@ -19,7 +19,7 @@ Reference: `docs/AURALIS_CURRENT_STATUS.md`
 7. Start focused local outreach.
 8. Close and deliver one real client.
 9. Capture testimonial, live URL, and case study.
-10. Offer the $250/month care plan at handoff.
+10. Offer the $250/month managed hosting and care plan at handoff.
 
 ## Phase 1 - Business Foundation
 
@@ -117,6 +117,7 @@ Tasks:
 - [ ] Publish case study.
 - [ ] Add live client URL where allowed.
 - [ ] Offer care plan at handoff.
+- [ ] Keep Website Refresh limited to Auralis-built sites; quote third-party sites as audits, rebuilds, migrations, or custom work.
 - [ ] Record lessons from the first delivery.
 
 Success criteria: the website has real proof, and the sales process becomes easier for the next client.

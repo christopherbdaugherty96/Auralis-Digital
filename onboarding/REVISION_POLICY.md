@@ -12,7 +12,7 @@ Each website project should state how many revision rounds are included before w
 
 Suggested default:
 
-- Website Refresh: 1 round
+- Website Refresh for Auralis-built sites: 1 round
 - Basic Website: 2 rounds
 - Standard Website: 2-3 rounds
 - Custom Projects: defined in quote

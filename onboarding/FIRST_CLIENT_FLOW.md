@@ -8,4 +8,4 @@
 6. Get approval
 7. Build site
 8. Deliver
-9. Offer $250/month retainer
+9. Offer $250/month managed hosting and care plan if appropriate

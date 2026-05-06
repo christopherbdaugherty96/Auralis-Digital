@@ -88,4 +88,4 @@ Default recommendation:
 - Leads route correctly
 - Ownership confirmed
 - Access credentials stored safely
-- Support plan chosen (none / one-time / monthly care plan)
+- Support plan chosen (none / one-time / managed hosting and care plan)

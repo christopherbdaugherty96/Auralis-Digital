@@ -25,6 +25,12 @@ Client is responsible for:
 - keeping account access safe
 - requesting updates when needed
 
+## Refresh Boundary
+
+Website Refresh is only for websites originally built by Auralis Digital.
+
+If a business has a third-party website, the next step is usually an audit, rebuild, migration, or custom quote before refresh or care work is offered.
+
 ## Option 1: No Monthly Care Plan
 
 The client receives the completed website and is responsible for future updates.
@@ -78,33 +84,37 @@ Good fit for:
 
 Suggested price: $250/month
 
-A stress-free option where Auralis Digital manages the hosting environment, deployments, routine upkeep, and small website updates for the client.
+A stress-free option where Auralis Digital manages or coordinates hosting, deployments, routine upkeep, and small website updates for the client.
 
-This option is designed for business owners who do not want to think about website maintenance, technical updates, hosting coordination, or small ongoing edits.
+This option is designed for business owners who do not want to think about website maintenance, technical updates, hosting coordination, deployment checks, or small ongoing edits.
 
 May include:
 
 - hosting or hosting coordination
 - website deployment management
+- routine website upkeep
 - contact form checks
+- link and basic error checks
 - small content updates as needed
 - phone/email/hour updates
 - minor image swaps
 - basic mobile and performance checks
+- hosting/domain renewal reminders when the client owns the accounts
 - priority support
 
 Good fit for:
 
 - busy local business owners
 - service businesses
-- companies without internal technical staff
+- clients without technical staff
+- owners who do not want to manage hosting or updates
 - businesses that want ongoing support instead of managing the website themselves
 
 Important:
 
 This is not unlimited custom development.
 
-Larger redesigns, advanced integrations, booking systems, e-commerce, advertising management, major SEO campaigns, or large copywriting projects are quoted separately.
+Larger redesigns, new pages, advanced integrations, booking systems, e-commerce, advertising management, major SEO campaigns, large copywriting projects, and third-party platform repair are quoted separately.
 
 ## What Counts as a Small Update
 
@@ -125,6 +135,7 @@ Not usually included as a small update:
 - major redesign
 - new integrations
 - large copywriting work
+- third-party platform repair
 
 ## How to Explain It to Clients
 
@@ -132,7 +143,7 @@ Simple explanation:
 
 A website build gets the site created and launched. A care plan keeps Auralis available after launch for support, small updates, and basic checks.
 
-The Managed Hosting and Care Plan is the most hands-off option. Auralis handles the technical upkeep so the client can stay focused on running their business.
+The Managed Hosting and Care Plan is the most hands-off option. Auralis handles technical upkeep, hosting/deployment coordination, routine checks, small updates, and priority support so the client can stay focused on running their business.
 
 If a client does not want a care plan, they can still request future updates as separate quoted work.
 

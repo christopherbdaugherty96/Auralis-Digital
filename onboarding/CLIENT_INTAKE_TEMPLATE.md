@@ -1,6 +1,6 @@
 # Client Intake Template
 
-Status: operating template  
+Status: operating template
 Audience: internal use before quoting or building
 
 Use this before quoting or starting any website project. The goal is to collect enough information to define scope, avoid guessing, and make the first draft useful.
@@ -16,6 +16,7 @@ Do not skip intake. Missing details usually turn into unclear pricing, weak copy
 - Phone:
 - Email:
 - Existing website, if any:
+- Was the existing website built by Auralis Digital? Yes / No / Unknown
 - Facebook / Instagram / TikTok:
 - Google Business Profile link:
 - Business address or service area:
@@ -104,7 +105,8 @@ Initial recommended scope:
 - One-page site
 - Multi-section homepage
 - Multi-page website
-- Refresh of existing site
+- Refresh of Auralis-built site
+- Audit / rebuild / migration of third-party site
 - Landing page only
 
 ## 8. Contact Flow
@@ -151,14 +153,16 @@ Flag anything that could affect price, timeline, or delivery:
 - Client wants custom automation
 - Client does not own domain access
 - Client does not know hosting situation
+- Client has a third-party website with unknown platform/access/plugin issues
 
 ## 11. Next Step
 
 After intake, prepare one of the following:
 
-- Website Refresh quote
+- Website Refresh quote for Auralis-built site
 - Basic Website quote
 - Standard Website quote
+- Audit / rebuild / migration quote for third-party site
 - Custom quote
 - Not a fit / needs more discovery
 
