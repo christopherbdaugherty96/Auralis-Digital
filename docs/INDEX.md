@@ -53,6 +53,7 @@ Use these files after a lead is interested, once a project is quoted, and during
 | `onboarding/FIRST_CLIENT_FLOW.md` | Quick reference: lead to close to delivery. |
 | `onboarding/FIRST_CLIENT_SYSTEM.md` | Full first-client system. |
 | `onboarding/FIRST_CLIENT_DELIVERY_CHECKLIST.md` | Delivery checklist. |
+| `onboarding/CLIENT_WEBSITE_DELIVERY_MASTER_CHECKLIST.md` | Full reusable website delivery and launch checklist. |
 | `onboarding/CLIENT_HANDOFF_CHECKLIST.md` | Finished-site handoff checklist. |
 | `onboarding/CLIENT_PROOF_WORKFLOW.md` | How to capture proof after delivery. |
 | `onboarding/CASE_STUDY_TEMPLATE.md` | Case study template. |
