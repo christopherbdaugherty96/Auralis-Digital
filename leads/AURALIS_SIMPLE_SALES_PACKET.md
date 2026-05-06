@@ -82,7 +82,26 @@ Good fit when an existing Auralis-built site needs:
 - refreshed photos or small content changes
 - minor trust/clarity improvements
 
-Third-party websites are not eligible for the $250 refresh by default. They should be handled through an audit, rebuild, migration, or custom quote.
+Third-party websites are not eligible for the $250 refresh by default. They should be handled through the Website Audit / Rebuild Consultation, a rebuild, a migration, or a custom quote.
+
+### Website Audit / Rebuild Consultation
+
+Starting at $150-$300
+
+For prospects who already have a website that Auralis Digital did not build.
+
+Good fit when the client needs:
+
+- review of an existing third-party website
+- clarity on whether to keep, rebuild, or migrate the site
+- help understanding platform, hosting, access, form, or mobile issues
+- a written recommendation before quoting larger work
+
+Deliverable:
+
+- short written recommendation: keep and improve, rebuild, migrate, or quote custom work
+
+This is not a full redesign, guaranteed fix, SEO campaign, or unlimited troubleshooting.
 
 ### Managed Hosting and Care
 
@@ -108,9 +127,10 @@ If the client already has a website that Auralis did not build, do not promise a
 
 Recommended path:
 
-1. review the existing site
-2. identify platform, hosting, access, and technical risks
-3. recommend audit, rebuild, migration, or custom quote
+1. offer the Website Audit / Rebuild Consultation when appropriate
+2. review the existing site
+3. identify platform, hosting, access, and technical risks
+4. recommend keep, rebuild, migrate, or custom quote
 
 Reason:
 
@@ -185,7 +205,7 @@ Simple version:
 
 If they already have a site:
 
-> If it is a site I built, I can usually refresh smaller things starting at $250. If it was built somewhere else, I would need to review it first because every platform and hosting setup is different. From there I can recommend an audit, rebuild, migration, or custom quote.
+> If it is a site I built, I can usually refresh smaller things starting at $250. If it was built somewhere else, I usually start with a Website Audit / Rebuild Consultation so I can review the setup first and give you a clear recommendation before quoting cleanup, rebuild, migration, or support.
 
 If they ask about monthly support:
 

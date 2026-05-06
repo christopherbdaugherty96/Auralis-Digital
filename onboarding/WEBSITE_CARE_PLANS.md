@@ -12,7 +12,9 @@ Website care plans are primarily intended for websites built or significantly re
 
 Website Refresh work is only for websites originally built by Auralis Digital by default.
 
-Support for third-party websites may require a paid audit, rebuild, migration, or custom quote before any ongoing maintenance plan is offered.
+Support for third-party websites may require a paid Website Audit / Rebuild Consultation, rebuild, migration, or custom quote before any ongoing maintenance plan is offered.
+
+Do not move a third-party website into a care plan until the current setup, access, hosting, platform, and maintenance risks have been reviewed.
 
 ---
 

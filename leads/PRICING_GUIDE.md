@@ -10,7 +10,17 @@ Use clear value-based language when discussing pricing.
 
 Best for websites originally built by Auralis Digital that need cleaner wording, better trust, updated content, or an easier customer action path after launch.
 
-Third-party websites are not eligible for the standard refresh offer by default. Quote those as an audit, rebuild, migration, or custom project because the technical setup, access, platform quality, and hidden issues are unknown.
+Third-party websites are not eligible for the standard refresh offer by default. Start those with the Website Audit / Rebuild Consultation, a rebuild, a migration, or a custom project because the technical setup, access, platform quality, and hidden issues are unknown.
+
+### Website Audit / Rebuild Consultation - Starting at $150-$300
+
+Best for prospects who already have a website that Auralis Digital did not build.
+
+Purpose: review the existing site before quoting cleanup, rebuild, migration, or ongoing support.
+
+Deliverable: a short written recommendation to keep and improve, rebuild, migrate, or quote custom work.
+
+This is not a full redesign, guaranteed fix, SEO campaign, or unlimited troubleshooting.
 
 ### Starter Website - Starting at $500
 
@@ -28,7 +38,7 @@ This is not unlimited redesign, unlimited development, new page creation, e-comm
 
 ### Custom Quote
 
-For unique scopes, advanced features, larger builds, third-party website cleanup, rebuilds, migrations, or unclear technical situations.
+For unique scopes, advanced features, larger builds, third-party website cleanup, rebuilds, migrations, or unclear technical situations after review.
 
 ## Rule
 

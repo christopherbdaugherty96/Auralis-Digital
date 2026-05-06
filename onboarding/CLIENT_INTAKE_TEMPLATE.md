@@ -106,6 +106,7 @@ Initial recommended scope:
 - Multi-section homepage
 - Multi-page website
 - Refresh of Auralis-built site
+- Website Audit / Rebuild Consultation for third-party site
 - Audit / rebuild / migration of third-party site
 - Landing page only
 
@@ -154,12 +155,14 @@ Flag anything that could affect price, timeline, or delivery:
 - Client does not own domain access
 - Client does not know hosting situation
 - Client has a third-party website with unknown platform/access/plugin issues
+- Client needs paid audit/rebuild consultation before third-party cleanup can be quoted
 
 ## 11. Next Step
 
 After intake, prepare one of the following:
 
 - Website Refresh quote for Auralis-built site
+- Website Audit / Rebuild Consultation quote for third-party site
 - Basic Website quote
 - Standard Website quote
 - Audit / rebuild / migration quote for third-party site

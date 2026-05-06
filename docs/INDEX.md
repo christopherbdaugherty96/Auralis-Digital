@@ -35,6 +35,7 @@ Use these files to find, qualify, contact, follow up with, and close prospects.
 | `leads/CLOSE_FIRST_CLIENT_PLAN.md` | First-client closing plan. |
 | `leads/PRICING_GUIDE.md` | Pricing structure and value framing. |
 | `leads/QUICK_ESTIMATE_GUIDE.md` | Fast estimates before formal quoting. |
+| `leads/WEBSITE_AUDIT_REBUILD_CONSULTATION.md` | Paid audit/rebuild consultation offer for third-party websites. |
 | `leads/QUOTE_AND_SCOPE_TEMPLATE.md` | Formal quote and scope template. |
 | `leads/PROPOSAL_TEMPLATE.md` | Proposal template for qualified leads. |
 | `leads/NICHE_OFFERS.md` | Niche-specific offer framing. |

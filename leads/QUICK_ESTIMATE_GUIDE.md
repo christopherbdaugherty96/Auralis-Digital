@@ -16,11 +16,27 @@ Final pricing depends on scope, content readiness, timeline, ownership/access, p
 
 Good for websites originally built by Auralis Digital that need clearer messaging, updated content, stronger trust, and easier contact paths.
 
-Third-party websites do not qualify for this standard refresh by default. Start those with an audit, rebuild, migration, or custom quote.
+Third-party websites do not qualify for this standard refresh by default. Start those with the Website Audit / Rebuild Consultation, a rebuild, a migration, or a custom quote.
 
 Typical range:
 
 - $250 to $600+
+
+## Website Audit / Rebuild Consultation
+
+Good for prospects with an existing website Auralis did not build.
+
+Use this before promising cleanup, rebuild, migration, or support for a third-party site.
+
+Typical range:
+
+- $150 to $300
+
+Deliverable:
+
+- short written recommendation to keep and improve, rebuild, migrate, or quote custom work
+
+This is not a full redesign, guaranteed fix, SEO campaign, or unlimited troubleshooting.
 
 ## Basic Website
 
@@ -80,6 +96,10 @@ For third-party websites:
 
 "Because I did not build the current site, I would need to review the setup before promising a refresh. That may become an audit, rebuild, migration, or custom quote depending on what is there."
 
+For paid audit/rebuild consultation:
+
+"For third-party sites, I usually start with a paid audit/rebuild consultation. That gives you a clear written recommendation before we decide whether the right move is to keep, rebuild, migrate, or quote custom work."
+
 ---
 
 # Avoid
@@ -87,5 +107,6 @@ For third-party websites:
 - Guaranteeing a final price too early
 - Offering the $250 refresh for sites Auralis did not build
 - Underpricing difficult third-party cleanup to win the deal
+- Treating an audit as a full redesign or guaranteed fix
 - Promising advanced features inside a basic package
 - Confusing the client with too many options

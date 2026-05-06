@@ -29,7 +29,9 @@ Client is responsible for:
 
 Website Refresh is only for websites originally built by Auralis Digital.
 
-If a business has a third-party website, the next step is usually an audit, rebuild, migration, or custom quote before refresh or care work is offered.
+If a business has a third-party website, the next step is usually a Website Audit / Rebuild Consultation, rebuild, migration, or custom quote before refresh or care work is offered.
+
+The audit/rebuild consultation gives the client a short written recommendation before Auralis promises cleanup, migration, support, or ongoing care for an unknown setup.
 
 ## Option 1: No Monthly Care Plan
 
