@@ -23,6 +23,7 @@ Use these files to find, qualify, contact, follow up with, and close prospects.
 
 | File | Purpose |
 |---|---|
+| `leads/AURALIS_SIMPLE_SALES_PACKET.md` | Simple prospect-facing explanation of services, pricing, process, and care plans. |
 | `leads/LEADS_ACTIVE_OUTREACH.csv` | Live outreach tracker. Update after every contact. |
 | `leads/LEAD_TRACKER_TEMPLATE.csv` | Blank tracker template. |
 | `leads/OUTREACH_SCRIPTS.md` | Niche-specific outreach scripts. |
