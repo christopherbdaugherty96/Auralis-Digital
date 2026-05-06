@@ -80,21 +80,36 @@ Possible inclusions:
 - contact-flow checks
 - priority response over non-retainer clients
 
-### Managed Website Plan
+### Managed Hosting and Care Plan
 
-Suggested range: $200+/month
+Suggested price: $250/month
 
-Best for clients who want Auralis Digital to actively maintain the site and coordinate hosting/domain details.
+Best for clients who want a stress-free website arrangement where Auralis Digital hosts or coordinates the site and handles routine updates as needed.
+
+This plan is positioned as the easiest option for clients who do not want to manage hosting, deployments, form checks, small edits, or routine website upkeep themselves.
 
 Possible inclusions:
 
-- hosting coordination
-- frequent website updates
-- lead-flow checks
-- small landing page or seasonal section updates
-- content refreshes
-- priority support
-- basic performance and mobile checks
+- website hosting or hosting coordination
+- deployment management
+- uptime/basic live-site checks
+- contact form and lead-flow checks
+- small text updates as needed
+- phone/email/hour/service updates
+- minor photo swaps
+- light content refreshes
+- basic mobile and performance checks
+- favicon/metadata/technical polish when needed
+- priority support over non-retainer clients
+- handoff/transfer support if the plan is cancelled, according to written terms
+
+Recommended boundary language:
+
+> Managed Hosting and Care includes hosting coordination and reasonable small updates needed to keep the site accurate and useful. Larger redesigns, new pages, advanced integrations, booking systems, e-commerce, advertising campaigns, custom automation, major SEO campaigns, or large copy rewrites are quoted separately.
+
+Internal note:
+
+At $250/month, this plan should not become unlimited labor. Track update requests and convert larger work into a separate quote.
 
 ---
 
@@ -145,7 +160,7 @@ If Auralis owns or controls hosting on behalf of the client, the cancellation te
 
 ## Internal Rule
 
-Auralis Digital can sell maintenance, updates, and managed support.
+Auralis Digital can sell maintenance, updates, managed hosting, and managed support.
 
 Do not blur the difference between:
 
