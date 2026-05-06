@@ -32,7 +32,8 @@ Do not use this for:
 
 ## Active Site Execution Tasks
 
-- Replace any mailto-only contact flow with a real form backend.
+- Configure production contact env: `VITE_CONTACT_EMAIL` and `VITE_FORMSPREE_ENDPOINT`.
+- Verify live form submission on phone and desktop.
 - Run a manual phone and desktop QA pass before outreach.
 - Manually review each demo before sending it to prospects.
 - Confirm analytics and Search Console setup.

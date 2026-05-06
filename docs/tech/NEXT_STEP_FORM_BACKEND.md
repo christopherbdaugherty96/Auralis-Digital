@@ -1,78 +1,58 @@
-# NEXT STEP: Form Backend (Formspree)
+# NEXT STEP: Form Backend
 
-Status: immediate next action
+Status: immediate next technical action
 
-## Why this matters
+## Why This Matters
 
-The current site is live and functional, but lead capture still relies on mailto links. This is unreliable and reduces conversions.
+The site can render a contact form, but lead capture is only production-ready after the deployed environment has a real contact email and form endpoint configured.
 
-A real form backend turns the website into a working lead system.
-
----
+Without those values, the form falls back to a prepared email flow. That is acceptable as a temporary backup, but it is not the final lead system.
 
 ## Goal
 
-Replace mailto-based contact flow with a real form submission system using Formspree.
+Configure production contact environment variables and verify live form submission.
 
----
+## Required Values
 
-## What Formspree Does
+Set these in the production deployment environment:
 
-User fills out form → clicks submit → Formspree processes submission → sends to Auralis email.
+- `VITE_CONTACT_EMAIL`
+- `VITE_FORMSPREE_ENDPOINT`
 
-No backend or server setup required.
+Example values live in `.env.example`.
 
----
+## Formspree Setup
 
-## Steps
+1. Go to `https://formspree.io`.
+2. Create or log into the Auralis Digital account.
+3. Create a new form.
+4. Copy the endpoint URL.
+5. Add it as `VITE_FORMSPREE_ENDPOINT` in the deployment environment.
+6. Add the domain email as `VITE_CONTACT_EMAIL`.
 
-1. Go to https://formspree.io
-2. Create a free account
-3. Create a new form
-4. Copy the endpoint URL (example: https://formspree.io/f/xxxxabcd)
-
----
-
-## Code Update
-
-Open:
-
-src/components/AuralisHomepage.tsx
-
-Find:
-
-const FORMSPREE_ENDPOINT = "";
-
-Replace with:
-
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xxxxabcd";
-
----
+Do not hardcode the endpoint in `src/components/AuralisHomepage.tsx`.
 
 ## Deploy
 
-Commit and push to main.
+Commit and push any config/documentation changes to `main`.
 
-GitHub Actions will rebuild and deploy automatically.
-
----
+GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 
 ## Test
 
-- Submit form on live site
-- Confirm email is received
-- Confirm no errors on submission
-
----
+- Submit the form on the live site from desktop.
+- Submit the form on the live site from phone.
+- Confirm both submissions arrive in the expected inbox.
+- Confirm the success state appears after submission.
+- Confirm no mail app opens when the Formspree endpoint is configured.
 
 ## Success Criteria
 
-- Form submits without opening email app
-- Submission arrives in inbox
-- Contact flow feels immediate and reliable
-
----
+- Public site uses the domain email value.
+- Form submits without opening an email app.
+- Submission arrives in the correct inbox.
+- Contact flow feels immediate and reliable.
 
 ## Internal Note
 
-This is the final step required to turn the site from a static presentation into an actual lead-generation tool.
+This is the final technical step required to turn the site from a static presentation into a working lead-generation path.
