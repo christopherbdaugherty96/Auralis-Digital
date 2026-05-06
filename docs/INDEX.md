@@ -92,6 +92,7 @@ Folder: `docs/internal/`
 | File | Purpose |
 |---|---|
 | `docs/internal/AURALIS_SITE_STUDIO.md` | Internal coworker workflow for building client sites. |
+| `docs/internal/REFERENCE_MINING_GUIDE.md` | Rules for mining competitor/reference sites without copying them. |
 
 ## Active Work Areas
 

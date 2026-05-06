@@ -23,16 +23,16 @@ The purpose of Auralis Site Studio is to create a repeatable process for:
 
 ```text
 Lead or client request
-→ intake
-→ scope and quote
-→ asset collection
-→ website build
-→ internal review
-→ client review
-→ revisions
-→ launch
-→ handoff
-→ optional care plan
+-> intake
+-> scope and quote
+-> asset collection
+-> website build
+-> internal review
+-> client review
+-> revisions
+-> launch
+-> handoff
+-> optional care plan
 ```
 
 ## Inputs
