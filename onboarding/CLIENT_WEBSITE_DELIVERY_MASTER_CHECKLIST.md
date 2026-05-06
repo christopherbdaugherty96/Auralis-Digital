@@ -6,6 +6,17 @@ Use this for every client website before launch and handoff.
 
 This checklist turns the lessons from the Auralis Digital site build, cleanup, deployment, favicon, mobile polish, form setup, and launch-readiness pass into a repeatable client delivery standard.
 
+## How to Use This Checklist
+
+Copy this checklist into the client project folder at the start of each website project. Mark items as done, not applicable, or moved to a quoted change request. Do not treat the original template as the project record.
+
+Use this alongside:
+
+- `onboarding/CLIENT_INTAKE_TEMPLATE.md`
+- `leads/QUOTE_AND_SCOPE_TEMPLATE.md`
+- `onboarding/CLIENT_HANDOFF_CHECKLIST.md`
+- `onboarding/CLIENT_PROOF_WORKFLOW.md`
+
 ---
 
 ## 1. Intake and Scope
@@ -299,7 +310,7 @@ This checklist turns the lessons from the Auralis Digital site build, cleanup, d
 - [ ] Ask for referral after successful delivery if appropriate
 - [ ] Record before/after notes if available
 
-## Rule
+## Completion Rule
 
 Do not treat a site as complete because it looks good locally.
 
