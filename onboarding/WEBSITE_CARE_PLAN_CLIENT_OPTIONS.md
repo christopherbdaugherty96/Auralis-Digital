@@ -74,19 +74,37 @@ Good fit for:
 - restaurants, events, seasonal businesses
 - local companies that want ongoing support
 
-## Option 4: Managed Website Arrangement
+## Option 4: Managed Hosting and Care Plan
 
-A higher-support arrangement where Auralis stays more involved.
+Suggested price: $250/month
+
+A stress-free option where Auralis Digital manages the hosting environment, deployments, routine upkeep, and small website updates for the client.
+
+This option is designed for business owners who do not want to think about website maintenance, technical updates, hosting coordination, or small ongoing edits.
 
 May include:
 
-- ongoing support
-- deeper monthly review
-- landing page or campaign support
-- more frequent updates
-- reporting and recommendations
+- hosting or hosting coordination
+- website deployment management
+- contact form checks
+- small content updates as needed
+- phone/email/hour updates
+- minor image swaps
+- basic mobile and performance checks
+- priority support
 
-This option needs clear boundaries because it can become open-ended work.
+Good fit for:
+
+- busy local business owners
+- service businesses
+- companies without internal technical staff
+- businesses that want ongoing support instead of managing the website themselves
+
+Important:
+
+This is not unlimited custom development.
+
+Larger redesigns, advanced integrations, booking systems, e-commerce, advertising management, major SEO campaigns, or large copywriting projects are quoted separately.
 
 ## What Counts as a Small Update
 
@@ -113,6 +131,8 @@ Not usually included as a small update:
 Simple explanation:
 
 A website build gets the site created and launched. A care plan keeps Auralis available after launch for support, small updates, and basic checks.
+
+The Managed Hosting and Care Plan is the most hands-off option. Auralis handles the technical upkeep so the client can stay focused on running their business.
 
 If a client does not want a care plan, they can still request future updates as separate quoted work.
 
