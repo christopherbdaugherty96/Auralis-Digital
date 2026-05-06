@@ -74,6 +74,8 @@ This is the canonical truth layer for Auralis Digital. If another document disag
 
 ## Next Concrete Action
 
+Use `active/NEXT_STEPS_TODO.md` as the active execution checklist.
+
 Set up the real-world business foundation first:
 
 1. file or confirm the LLC

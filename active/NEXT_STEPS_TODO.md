@@ -1,181 +1,98 @@
-# Y.O.U. — Next Steps & Operating Roadmap
+# Auralis Digital Active Execution
 
-## Mission Right Now
-Move from building assets to producing revenue.
-The website is live. The next phase is proof, pipeline, and client acquisition.
+Last updated: 2026-05-06
 
----
-# Phase 1 — Portfolio Depth (Immediate)
-## Objective
-Create enough examples that prospects instantly understand the value.
+## Current Mode
 
-## Priority Order
-1. Barber Shop Demo
-2. Salon Demo
-3. Roofing / Contractor Demo
-4. Cleaning Service Demo
-5. Landscaping Demo
+Repo cleanup is complete. Do not restart cleanup unless something is actively broken.
 
-## Personalization Standard (CRITICAL)
-Every project must feel like it was built specifically for that business.
+Current sequence:
 
-### Do NOT:
-- reuse generic wording
-- copy/paste layouts blindly
-- make every site look the same
+1. business setup
+2. trust setup
+3. outreach
+4. first client
+5. proof
 
-### DO:
-- reflect how that business actually operates
-- match tone (casual, premium, fast, family, etc.)
-- highlight what makes that business unique
-- design around real customer actions (call, book, visit, order)
+## Phase 1 - Business Setup
 
----
-# Restaurant-Specific Strategy (High Value Niche)
-## Why Restaurants Matter
-Restaurants are one of the easiest niches to sell because:
-- customers search quickly ("food near me")
-- decisions are visual and fast
-- owners immediately understand value
+Goal: make Auralis ready to accept money cleanly and credibly.
 
-## What Strong Restaurant Sites Do
-- Show real food clearly
-- Make menu easy to access
-- Highlight atmosphere (family, upscale, fast, local)
-- Provide instant actions (call, directions)
+- [ ] Confirm Michigan LLC filing.
+- [ ] Obtain EIN.
+- [ ] Open business bank account.
+- [ ] Decide public business address or service-area policy.
+- [ ] Set up payment processing or invoicing.
+- [ ] Confirm contract/payment terms before first paid engagement.
 
-## Unique Restaurant Angles (Examples)
-### Hawaiian / Island-Style Restaurants
-- Emphasize culture and atmosphere
-- Showcase signature dishes and ingredients
-- Use warmer, visual-first layouts
-- Highlight experience (not just menu)
+## Phase 2 - Trust Setup
 
-### Diners
-- Focus on familiarity and comfort
-- Highlight regular customers and local feel
-- Show breakfast/lunch staples clearly
+Goal: reduce new-business trust friction before outreach.
 
-### Upscale Restaurants
-- Emphasize presentation and brand feel
-- Strong typography and minimal layout
-- Reservation-focused flow
+- [ ] Set up domain email such as `hello@auralisdigital.net`.
+- [ ] Replace public Gmail references where appropriate.
+- [ ] Create or complete Google Business Profile.
+- [ ] Confirm public phone/contact path.
+- [ ] Keep sample builds labeled as sample/demo work.
+- [ ] Do not add testimonials until a real client approves one.
 
-### Fast Casual
-- Speed and convenience
-- Simple menu navigation
-- Quick order or visit actions
+## Phase 3 - Outreach
 
----
-# Definition of Done
-Every portfolio project should include:
-- mobile-friendly homepage
-- clear call to action
-- contact path
-- trust-building visuals
-- niche-specific messaging
-- personalization based on business type
-- added to main homepage portfolio section
+Goal: generate real conversations.
 
-## KPI Target
-- 1 new portfolio project per week minimum
+Use:
 
----
-# Phase 2 — Outreach Engine
-## Objective
-Turn portfolio proof into conversations.
+- `leads/LEADS_ACTIVE_OUTREACH.csv`
+- `leads/OUTREACH_SCRIPTS.md`
+- `leads/OUTREACH_PACKET.md`
+- `leads/FOLLOW_UP_SYSTEM.md`
 
-## Weekly Targets
-- Research 25 businesses
-- Contact 10 businesses
-- Send 5 preview links
-- Book 2 conversations
-- Close first client
+Weekly targets:
 
-## Best Outreach Channels (in order)
-1. Facebook Messenger
-2. Phone Call
-3. Email
-4. In-person local visit
+- [ ] 25 prospects researched
+- [ ] 10 outreach messages sent
+- [ ] 5 follow-ups sent
+- [ ] 2 real conversations started
+- [ ] 1 proposal sent
 
-## Core Offer Language
-"I help local businesses get seen online and make it easier for customers to contact them."
+## Phase 4 - First Client
 
-## Rule
-Do outreach daily, even while portfolio is still growing.
+Goal: deliver one real engagement end to end.
 
-## KPI Target
-- Minimum 2 outreach attempts per day
+Use:
 
----
-# Phase 3 — Sales Assets
-## Objective
-Remove friction when someone shows interest.
+- `onboarding/CLIENT_INTAKE_QUESTIONNAIRE.md`
+- `leads/QUOTE_AND_SCOPE_TEMPLATE.md`
+- `leads/PROPOSAL_TEMPLATE.md`
+- `onboarding/FIRST_CLIENT_DELIVERY_CHECKLIST.md`
+- `onboarding/CLIENT_HANDOFF_CHECKLIST.md`
 
-## Build Next
-- Pricing Sheet PDF
-- Before / After Redesign Examples
-- FAQ for Prospects
-- Intake Form
-- Proposal Template
-- Testimonial Section (after first wins)
+- [ ] Complete intake.
+- [ ] Confirm scope, timeline, price, payment, and revision limits.
+- [ ] Get written approval or signed agreement.
+- [ ] Collect payment or deposit.
+- [ ] Build and review.
+- [ ] Launch or hand off.
 
-## KPI Target
-- Complete 1 sales asset per week until finished
+## Phase 5 - Proof
 
----
-# Phase 4 — Operations System
-## Lead Tracker Fields
-- Business Name
-- Niche
-- Phone
-- Email
-- Website Status
-- Opportunity Score
-- Last Contact Date
-- Next Follow-Up
-- Status
-- Notes
+Goal: turn delivery into credibility.
 
-## Pipeline Statuses
-- New Lead
-- Researched
-- Contacted
-- Interested
-- Follow Up
-- Proposal Sent
-- Won
-- Lost
+Use:
 
-## Rule
-No lead should disappear without a next action.
+- `onboarding/CLIENT_PROOF_WORKFLOW.md`
+- `onboarding/CASE_STUDY_TEMPLATE.md`
+- `onboarding/WEBSITE_CARE_PLAN_CLIENT_OPTIONS.md`
 
----
-# Daily Execution Block (3 Hours)
-## Hour 1 — Build
-Portfolio projects / site upgrades
+- [ ] Ask for testimonial.
+- [ ] Ask for portfolio permission.
+- [ ] Capture screenshots.
+- [ ] Publish live URL where allowed.
+- [ ] Write case study.
+- [ ] Offer the care plan.
 
-## Hour 2 — Research
-Find qualified businesses
+## Anti-Stall Rule
 
-## Hour 3 — Outreach
-Calls, messages, follow-up
+Do not confuse planning with progress. Revenue comes from conversations, delivery, and proof.
 
----
-# 30-Day Targets
-- 5 portfolio demos live
-- 100 businesses contacted
-- 10 real conversations
-- First paying client closed
-- First referral opportunity created
-
----
-# Anti-Stall Rules
-- Do not endlessly redesign your own site.
-- Do not wait until portfolio is perfect.
-- Do not confuse planning with progress.
-- Revenue comes from conversations + consistency.
-
----
-# Core Reminder
-A good business with weak visibility is your opportunity.
+If a task does not support business setup, trust setup, outreach, first-client delivery, proof, or retention, defer it.

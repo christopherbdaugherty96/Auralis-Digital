@@ -9,6 +9,7 @@ This is the navigation layer for the repo. Use it to find the current source of 
 | File | Purpose |
 |---|---|
 | `docs/AURALIS_CURRENT_STATUS.md` | Canonical truth doc: what is real, what is missing, and what to do next. |
+| `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof. |
 | `docs/STATUS.md` | Short operational status snapshot. |
 | `docs/ROADMAP.md` | Execution roadmap and priority order. |
 | `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
