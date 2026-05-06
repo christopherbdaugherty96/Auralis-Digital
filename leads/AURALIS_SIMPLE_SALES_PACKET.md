@@ -22,6 +22,22 @@ Best fit:
 
 ---
 
+## Quick Qualification
+
+Before quoting, confirm:
+
+- what kind of business it is
+- whether they already have a website
+- whether Auralis built the current site
+- what they want the website to help with
+- whether they need a new build, rebuild, migration, or ongoing care
+- whether they have photos, logo, domain, and hosting access
+- whether they are ready to pay a deposit if the quote makes sense
+
+Do not quote a third-party website refresh before reviewing the existing site and access situation.
+
+---
+
 ## Core Offers
 
 ### Basic Website
@@ -114,6 +130,24 @@ Existing third-party websites may include unknown hosting setups, plugins, build
 8. Launch
 9. Handoff
 10. Optional managed hosting and care plan
+
+---
+
+## Next Step After Interest
+
+If a prospect is interested, do not keep selling in circles.
+
+Move to:
+
+1. intake questions
+2. review of current website or business needs
+3. quote and scope
+4. deposit/payment step
+5. scheduled build start
+
+Recommended close:
+
+> If you want, I can ask a few quick intake questions and turn this into a clear quote so you know exactly what would be included.
 
 ---
 
