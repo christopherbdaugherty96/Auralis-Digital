@@ -52,6 +52,17 @@ Then trigger a deploy:
 gh workflow run "Deploy to GitHub Pages"
 ```
 
+## Blocked Until
+
+This cannot be fully verified until these real production values exist:
+
+```text
+VITE_CONTACT_EMAIL=...
+VITE_FORMSPREE_ENDPOINT=...
+```
+
+The repo/deploy plumbing is ready. The remaining work is real-world configuration.
+
 ## Deploy
 
 Commit and push any config/documentation changes to `main`.
@@ -60,11 +71,14 @@ GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 
 ## Test
 
+- Open the live Auralis site on desktop.
 - Submit the form on the live site from desktop.
+- Open the live Auralis site on phone.
 - Submit the form on the live site from phone.
+- Confirm no `mailto:` window opens.
 - Confirm both submissions arrive in the expected inbox.
 - Confirm the success state appears after submission.
-- Confirm no mail app opens when the Formspree endpoint is configured.
+- Confirm no console or network errors appear.
 
 ## Success Criteria
 

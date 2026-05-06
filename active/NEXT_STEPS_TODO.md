@@ -31,9 +31,14 @@ Goal: reduce new-business trust friction before outreach.
 
 - [ ] Set up domain email such as `hello@auralisdigital.net`.
 - [ ] Replace public Gmail references where appropriate.
-- [ ] Configure production contact env: `VITE_CONTACT_EMAIL` and `VITE_FORMSPREE_ENDPOINT`.
+- [ ] Create Formspree form and copy endpoint.
+- [ ] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
+- [ ] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
 - [ ] Trigger GitHub Pages deploy after contact env is configured.
-- [ ] Verify live form submission on phone and desktop.
+- [ ] Submit test form from desktop on the live site.
+- [ ] Submit test form from phone on the live site.
+- [ ] Confirm no mailto window opens.
+- [ ] Confirm submission arrives in Formspree/inbox.
 - [ ] Create or complete Google Business Profile.
 - [ ] Confirm public phone/contact path.
 - [ ] Keep sample builds labeled as sample/demo work.
