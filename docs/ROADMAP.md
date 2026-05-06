@@ -164,3 +164,18 @@ Every task should support at least one of these outcomes:
 - delivery
 - proof
 - retention
+
+## Execution Filter
+
+Every active task must support one of:
+
+1. lead capture
+2. outreach
+3. closing
+4. delivery
+5. proof
+6. retention
+
+If it does not support one of those, defer it.
+
+Manual process comes before automation. Do not build advanced automation until the manual workflow has produced real clients, real delivery, and real proof.

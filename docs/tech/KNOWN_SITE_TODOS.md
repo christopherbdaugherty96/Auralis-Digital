@@ -30,6 +30,15 @@ Do not use this for:
 - confirm form backend status
 - review visual consistency and brand alignment
 
+## Active Site Execution Tasks
+
+- Replace any mailto-only contact flow with a real form backend.
+- Run a manual phone and desktop QA pass before outreach.
+- Manually review each demo before sending it to prospects.
+- Confirm analytics and Search Console setup.
+- Confirm service-area pages match the current offer.
+- Capture first-client proof assets after delivery.
+
 ## Rule
 
 Only keep active, relevant site tasks here.
