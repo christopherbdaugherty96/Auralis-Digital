@@ -1,12 +1,34 @@
 # Auralis Digital Roadmap
 
-Last updated: 2026-05-06
+Last updated: 2026-05-13
 
 ## Current Truth
 
-The docs and website foundation are strong enough to sell from. The next phase is not more planning. The next phase is business execution.
+The docs and website foundation are strong enough to sell from.
 
-Reference: `docs/AURALIS_CURRENT_STATUS.md`
+Auralis Digital currently contains two related public surfaces:
+
+1. website services for local businesses
+2. an Auralis Design product/shop surface with Shopify checkout routing
+
+Current execution priority remains:
+
+```text
+website services
+trust setup
+lead capture
+outreach
+first client delivery
+real proof
+```
+
+The product/shop surface exists publicly, but it should not replace the active execution priority unless the business focus intentionally changes.
+
+Reference:
+
+- `docs/AURALIS_CURRENT_STATUS.md`
+- `docs/STATUS.md`
+- `docs/tech/NEXT_STEP_FORM_BACKEND.md`
 
 ## Priority Order
 
@@ -14,12 +36,14 @@ Reference: `docs/AURALIS_CURRENT_STATUS.md`
 2. Obtain EIN.
 3. Open a business bank account.
 4. Set up domain email, preferably `hello@auralisdigital.net`.
-5. Set up payment processing or invoicing.
-6. Create or complete Google Business Profile.
-7. Start focused local outreach.
-8. Close and deliver one real client.
-9. Capture testimonial, live URL, and case study.
-10. Offer the $250/month managed hosting and care plan at handoff.
+5. Configure and verify the production contact-form backend.
+6. Set up payment processing or invoicing.
+7. Create or complete Google Business Profile.
+8. Start focused local outreach.
+9. Close and deliver one real client.
+10. Capture testimonial, live URL, and case study.
+11. Offer the $250/month managed hosting and care plan at handoff.
+12. Separately verify Shopify/Printify commerce readiness if the product surface remains public-facing.
 
 ## Phase 1 - Business Foundation
 
@@ -32,10 +56,16 @@ Tasks:
 - [ ] Open business bank account.
 - [ ] Decide public business address/service-area policy.
 - [ ] Set up domain email.
+- [ ] Configure and verify live contact-form backend.
 - [ ] Set up invoicing/payment processing.
 - [ ] Confirm contract template and payment terms before first paid engagement.
 
-Success criteria: Auralis can accept money cleanly under the business identity.
+Success criteria:
+
+```text
+Auralis can accept money cleanly under the business identity.
+Lead capture works reliably on the public site.
+```
 
 ## Phase 2 - Public Trust Setup
 
@@ -49,8 +79,14 @@ Tasks:
 - [ ] Keep sample builds clearly labeled as examples or demos.
 - [ ] Add real testimonials only after real delivery.
 - [ ] Confirm HTTPS and deployment source.
+- [ ] Clarify the relationship between Auralis Digital and Auralis Design in public copy.
 
-Success criteria: a cautious local business owner can understand who Auralis is, how to contact it, and why it is safe to start a conversation.
+Success criteria:
+
+```text
+A cautious local business owner can understand who Auralis is,
+how to contact it, and why it is safe to start a conversation.
+```
 
 ## Phase 3 - Lead Capture and Outreach
 
@@ -73,7 +109,11 @@ Tasks:
 - [ ] Move interested leads into intake.
 - [ ] Send quote/scope or proposal when qualified.
 
-Success criteria: at least two real prospect conversations and one proposal sent.
+Success criteria:
+
+```text
+At least two real prospect conversations and one proposal sent.
+```
 
 ## Phase 4 - First Client Delivery
 
@@ -98,7 +138,11 @@ Tasks:
 - [ ] Launch or hand off.
 - [ ] Capture proof.
 
-Success criteria: one real client has a delivered website and a documented outcome.
+Success criteria:
+
+```text
+One real client has a delivered website and a documented outcome.
+```
 
 ## Phase 5 - Proof and Retention
 
@@ -120,9 +164,36 @@ Tasks:
 - [ ] Keep Website Refresh limited to Auralis-built sites; quote third-party sites as audits, rebuilds, migrations, or custom work.
 - [ ] Record lessons from the first delivery.
 
-Success criteria: the website has real proof, and the sales process becomes easier for the next client.
+Success criteria:
 
-## Phase 6 - Deployment Maturity
+```text
+The website has real proof, and the sales process becomes easier for the next client.
+```
+
+## Phase 6 - Commerce Readiness (Only If Shop Surface Remains Active)
+
+Goal: verify the Shopify/Printify product surface before treating it as a mature public commerce operation.
+
+Tasks:
+
+- [ ] Verify Shopify checkout flow.
+- [ ] Verify policy-page links.
+- [ ] Run a real test order.
+- [ ] Verify Printify fulfillment flow.
+- [ ] Verify payment/tax/shipping settings.
+- [ ] Review product margins.
+- [ ] Confirm support-email workflow.
+- [ ] Confirm artwork/product-rights ownership.
+- [ ] Keep product and website-service branding relationship clear.
+
+Success criteria:
+
+```text
+The product/shop surface has verified checkout, fulfillment, support,
+and policy readiness.
+```
+
+## Phase 7 - Deployment Maturity
 
 Goal: improve technical operations only after the business flow has proof.
 
@@ -140,7 +211,11 @@ Tasks:
 - [ ] Add preview deployment if useful.
 - [ ] Keep deployment changes small and verified.
 
-Success criteria: website updates are predictable and easy to validate.
+Success criteria:
+
+```text
+Website updates are predictable and easy to validate.
+```
 
 ## Document Authority
 
