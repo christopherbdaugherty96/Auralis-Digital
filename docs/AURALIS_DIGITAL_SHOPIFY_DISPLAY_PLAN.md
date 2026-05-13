@@ -20,7 +20,7 @@ https://auralis-design.myshopify.com
 Current active product example:
 
 ```text
-Tan Sherpa Blanket
+Zeus Blanket
 https://auralis-design.myshopify.com/products/tan-sherpa-blanket
 ```
 
@@ -201,21 +201,60 @@ Minimum product data fields:
 title
 price
 shortDescription
+detailDescription
 imageUrl
 shopifyProductUrl
 altText
+highlights
+specs
+mockups
 ```
 
-For the current product:
+Current active Shopify products:
 
 ```text
-title: Tan Sherpa Blanket
-price: $48.85
-shortDescription: Soft sherpa blanket for cozy home decor.
-imageUrl: https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778647384
-shopifyProductUrl: https://auralis-design.myshopify.com/products/tan-sherpa-blanket
-altText: Tan Sherpa Blanket
+- Zeus Blanket | $60.99 | Printify | Home Decor | 60" x 50" | /products/tan-sherpa-blanket
+- Zeus Woven Blanket | $47.10 | Printify | Home Decor | Artwork or Photo / 52'' x 37'' | /products/zeus-woven-blanket
+- Zeus Journal Matte | $18.99 | Printify | Paper products | Journal | /products/zeus-journal-matte
+- Zeus Mug 11oz | $17.99 | Printify | Mug | 11oz | /products/zeus-mug-11oz
+- Zeus Matte Vertical Posters | $22.99 | Printify | Poster | 8" x 10" / Matte | /products/zeus-matte-vertical-posters
 ```
+
+Current featured product:
+
+```text
+title: Zeus Blanket
+price: $60.99
+shortDescription: Super-soft sherpa blanket with a tan sherpa backing.
+imageUrl: https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778650633
+shopifyProductUrl: https://auralis-design.myshopify.com/products/tan-sherpa-blanket
+altText: Zeus Blanket
+```
+
+## Sales And Marketing Requirements
+
+The shop page should sell the product honestly without pretending Auralis Digital is the checkout system.
+
+Include:
+
+- Product positioning for the Auralis Design Zeus collection
+- A "Why you'll like it" section
+- A "Good for" section
+- A trust/reassurance strip
+- A clear customer flow: Browse here. Buy through Shopify. Fulfilled through Printify.
+- SEO-friendly visible copy using terms such as Auralis Design blanket, sherpa blanket, home decor, cozy blanket, and gift idea
+- Category-ready shop sections for Blankets, Journals, Coffee Mugs, Posters, Hats, Shirts, and Canvas
+- Honest review labeling that distinguishes product-base/material feedback from reviews of exact Auralis Design artwork
+
+Do not add fake reviews, fake urgency, fake discounts, or limited-stock language unless Shopify truth supports it.
+
+Review language should stay precise:
+
+```text
+Reviews below refer to the product base/material unless a review names this exact Auralis Design artwork.
+```
+
+The main product gallery should keep customers browsing on Auralis Digital. Use explicit buttons or product cards for outbound Shopify clicks.
 
 ## Implementation Non-Goals
 
@@ -241,6 +280,14 @@ The website navigation should make the distinction clear:
 ```text
 Shop = product browsing and Shopify product links
 Website Services = separate service inquiry page
+```
+
+Brand split:
+
+```text
+Auralis is the creative brand.
+Auralis Design sells products.
+Auralis Digital builds websites and hosts the brand/display shop.
 ```
 
 The Shop link should not send customers to website service content.
@@ -283,10 +330,10 @@ target="_blank" rel="noopener"
 
   <div class="product-scroll" aria-label="Featured Auralis Design products">
     <a class="product-card" href="https://auralis-design.myshopify.com/products/tan-sherpa-blanket" target="_blank" rel="noopener">
-      <img src="https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778647384" alt="Tan Sherpa Blanket">
-      <h3>Tan Sherpa Blanket</h3>
-      <p class="price">$48.85</p>
-      <p class="description">Soft sherpa blanket for cozy home decor.</p>
+      <img src="https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778650633" alt="Zeus Blanket">
+      <h3>Zeus Blanket</h3>
+      <p class="price">$60.99</p>
+      <p class="description">Super-soft sherpa blanket with a tan sherpa backing.</p>
       <span class="button">View on Shopify</span>
     </a>
   </div>
@@ -372,10 +419,10 @@ The first version is acceptable when:
 - A visitor can open Auralis Digital and find the shop/display section
 - A visitor can horizontally scroll through product cards on mobile and desktop
 - Each card displays image, title, price, short description, and a clear Buy/View button
-- Clicking the image opens the matching Shopify product page
-- Clicking the product title opens the matching Shopify product page
-- Clicking the price opens the matching Shopify product page
-- Clicking the Buy/View button opens the matching Shopify product page
+- Homepage feature cards/media may link to `/shop` so visitors browse on Auralis Digital first
+- Main gallery/mockup selectors keep users on Auralis Digital and do not immediately send visitors to Shopify
+- Clearly labeled Buy/View on Shopify buttons open the matching Shopify product page
+- Shop page product cards may open Shopify when they are clearly labeled as outbound Shopify actions
 - The Website Services page is separate from the product shopping flow
 - The website does not ask customers to pay outside Shopify
 - The product page on Shopify remains the checkout source of truth
@@ -394,6 +441,43 @@ When a Shopify product changes:
 - Update the product image if changed
 - Remove website cards for archived products
 - Add new cards for new active products
+
+## Product Update Checklist
+
+For each new Shopify product, confirm and record:
+
+- Title
+- Price
+- Handle
+- Category
+- Mockups/images
+- Alt text
+- Specs
+- Material/product-base review scope
+- CTA link test
+- Shopify password/storefront visibility check
+
+## Shopify Launch Note
+
+Use `docs/SHOPIFY_LAUNCH_CHECKLIST.md` as the internal pre-launch checklist.
+
+Before sending real traffic to a Shopify product link:
+
+- Remove the Shopify storefront password or adjust CTA expectations
+- Test `/products/tan-sherpa-blanket` from an incognito browser
+- Confirm the product page opens without admin login or customer confusion
+- Confirm checkout works
+- Confirm shipping rates work
+- Confirm payment provider is active
+- Confirm refund, shipping, privacy, terms, and contact policy links are visible
+
+## Metadata Note
+
+React client-side metadata helps after the app loads.
+
+Static `index.html` metadata may still be what crawlers and social preview bots read first.
+
+Long-term SEO improvements may require prerendering, static route HTML, or a framework with route-level metadata.
 
 ## Upgrade Rule
 

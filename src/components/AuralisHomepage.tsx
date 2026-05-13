@@ -23,6 +23,16 @@ import {
   Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  featuredProduct,
+  productReasons,
+  productTrustSteps,
+  productUseCases,
+  shopFaqs,
+  shopCategories,
+  shopProducts,
+  type ShopProduct,
+} from "@/data/shopCatalog";
 import { cn } from "@/lib/utils";
 
 const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com";
@@ -95,17 +105,6 @@ const serviceAreas = [
   { label: "Ypsilanti", href: "service-areas/ypsilanti-websites.html" },
   { label: "Ann Arbor", href: "service-areas/ann-arbor-websites.html" },
   { label: "Detroit Metro", href: "service-areas/detroit-metro-websites.html" },
-];
-
-const shopProducts = [
-  {
-    title: "Tan Sherpa Blanket",
-    price: "$48.85",
-    shortDescription: "Soft sherpa blanket for cozy home decor.",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778647384",
-    shopifyProductUrl: "https://auralis-design.myshopify.com/products/tan-sherpa-blanket",
-    altText: "Tan Sherpa Blanket",
-  },
 ];
 
 const faqs = [
@@ -218,6 +217,128 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
     <div data-reveal-id={id} className={cn("reveal-up", visible && "is-visible", className)}>
       {children}
     </div>
+  );
+}
+
+const pageMeta: Record<AuralisPage, { title: string; description: string; canonicalPath: string }> = {
+  home: {
+    title: "Auralis Digital | Auralis Design Shop and Brand Hub",
+    description:
+      "Browse Auralis Design products on Auralis Digital, then buy securely through Shopify. Website services remain available on a separate page.",
+    canonicalPath: "/",
+  },
+  shop: {
+    title: "Shop Auralis Design | Zeus Collection Product Catalog",
+    description:
+      "Shop the Zeus collection from Auralis Design, browse product mockups, and buy securely through Shopify with Printify fulfillment for Printify products.",
+    canonicalPath: "/shop",
+  },
+  "web-design": {
+    title: "Website Services | Auralis Digital",
+    description:
+      "Website services from Auralis Digital are separate from the Auralis Design product shop and built for clear local business presence.",
+    canonicalPath: "/web-design",
+  },
+  websites: {
+    title: "Website Examples | Auralis Digital",
+    description: "Browse example website builds and demo directions from Auralis Digital.",
+    canonicalPath: "/websites",
+  },
+};
+
+function setMetaTag(selector: string, attr: string, value: string) {
+  const tag = document.head.querySelector(selector);
+  if (tag) tag.setAttribute(attr, value);
+}
+
+function ProductImageGallery({ product }: { product: ShopProduct }) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const selectedMockup = product.mockups[selectedIndex] ?? product.mockups[0];
+
+  return (
+    <div className="product-gallery-card" aria-label={`${product.title} product images`}>
+      <div className="product-gallery-main">
+        <img src={selectedMockup.imageUrl} alt={selectedMockup.altText} />
+      </div>
+      <div className="product-gallery-thumbs" aria-label={`${product.title} mockup gallery`}>
+        {product.mockups.map((mockup, index) => (
+          <button
+            key={`${mockup.imageUrl}-${mockup.label}`}
+            type="button"
+            className={cn("product-gallery-thumb", selectedIndex === index && "is-active")}
+            onClick={() => setSelectedIndex(index)}
+            aria-label={`Show ${mockup.label}`}
+            aria-pressed={selectedIndex === index}
+          >
+            <img src={mockup.imageUrl} alt="" loading={index === 0 ? "eager" : "lazy"} />
+            <span>{mockup.label}</span>
+          </button>
+        ))}
+      </div>
+      <p className="product-gallery-note">
+        Browse the product mockups here. Shopify opens in a new tab only when you are ready to buy.
+      </p>
+    </div>
+  );
+}
+
+function ProductCard({ product }: { product: ShopProduct }) {
+  return (
+    <a
+      href={product.shopifyTrackingUrl}
+      className="product-card"
+      target="_blank"
+      rel="noopener"
+      aria-label={`View ${product.title} on Shopify`}
+    >
+      <img src={product.imageUrl} alt={product.altText} loading="lazy" />
+      <span className="product-meta">{product.category}</span>
+      <h3>{product.title}</h3>
+      <p className="product-price">{product.price}</p>
+      <p className="product-description">{product.shortDescription}</p>
+      <span className="product-button">
+        View on Shopify <ArrowRight className="size-4" aria-hidden="true" />
+      </span>
+    </a>
+  );
+}
+
+function CategoryShopSections() {
+  return (
+    <Reveal className="category-shop-wrap">
+      <div className="category-chip-row" aria-label="Shop product categories">
+        {shopCategories.map((category) => (
+          <a key={category.name} href={`#category-${category.name.toLowerCase().replace(/\s+/g, "-")}`}>
+            {category.name}
+          </a>
+        ))}
+      </div>
+      <div className="category-section-grid">
+        {shopCategories.map((category) => {
+          const products = shopProducts.filter((product) => product.category === category.name);
+          const categoryId = `category-${category.name.toLowerCase().replace(/\s+/g, "-")}`;
+
+          return (
+            <section key={category.name} id={categoryId} className="category-panel" aria-labelledby={`${categoryId}-title`}>
+              <div className="category-panel-header">
+                <h3 id={`${categoryId}-title`}>{category.name}</h3>
+                <span>{products.length ? `${products.length} product${products.length === 1 ? "" : "s"}` : "Coming soon"}</span>
+              </div>
+              <p className="category-description">{category.description}</p>
+              {products.length ? (
+                <div className="category-product-row">
+                  {products.map((product) => (
+                    <ProductCard key={product.slug} product={product} />
+                  ))}
+                </div>
+              ) : (
+                <p className="category-empty">This category is ready for future Auralis Design products.</p>
+              )}
+            </section>
+          );
+        })}
+      </div>
+    </Reveal>
   );
 }
 
@@ -379,6 +500,13 @@ const NAV_LINKS = [
   { label: "Contact", href: "/#contact" },
 ];
 
+const POLICY_LINKS = [
+  { label: "Refund Policy", href: "https://auralis-design.myshopify.com/policies/refund-policy" },
+  { label: "Shipping Policy", href: "https://auralis-design.myshopify.com/policies/shipping-policy" },
+  { label: "Privacy Policy", href: "https://auralis-design.myshopify.com/policies/privacy-policy" },
+  { label: "Terms of Service", href: "https://auralis-design.myshopify.com/policies/terms-of-service" },
+];
+
 type AuralisPage = "home" | "shop" | "web-design" | "websites";
 
 export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage }) {
@@ -390,10 +518,26 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   const isWebsites = page === "websites";
 
   useEffect(() => {
+    const meta = pageMeta[page];
+    const canonical = `https://www.auralisdigital.net${meta.canonicalPath}`;
+
+    document.title = meta.title;
+    setMetaTag('meta[name="description"]', "content", meta.description);
+    setMetaTag('meta[property="og:title"]', "content", meta.title);
+    setMetaTag('meta[property="og:description"]', "content", meta.description);
+    setMetaTag('meta[property="og:url"]', "content", canonical);
+    setMetaTag('meta[name="twitter:title"]', "content", meta.title);
+    setMetaTag('meta[name="twitter:description"]', "content", meta.description);
+    setMetaTag('link[rel="canonical"]', "href", canonical);
+  }, [page]);
+
+  useEffect(() => {
     if (!mobileOpen) return;
-    const close = () => setMobileOpen(false);
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
-    return () => document.removeEventListener("keydown", close);
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [mobileOpen]);
 
   return (
@@ -409,7 +553,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <a key={l.href} href={l.href} className="text-xs font-bold text-muted-foreground hover:text-foreground lg:text-sm">{l.label}</a>
             ))}
             <Button variant="conversion" size="sm" asChild>
-              <a href={shopProducts[0].shopifyProductUrl} target="_blank" rel="noopener">View Product</a>
+              <a href="/shop">View Product</a>
             </Button>
           </nav>
           {/* Mobile: hamburger */}
@@ -462,27 +606,25 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="eyebrow"><Store aria-hidden="true" /> Auralis Design Shop</div>
               <h1>Shop Auralis Design pieces through a clean brand site.</h1>
               <p className="hero-subhead">
-                Auralis Digital is the showcase home for Auralis Design products. Browse featured pieces here, then open Shopify when you are ready to view details or buy.
+                Auralis Digital is the home for Auralis Design products and website services. Shop the product line, or visit Website Services for custom business websites.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
                   <a href="/shop">Shop Auralis Design <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
-                  <a href={shopProducts[0].shopifyProductUrl} target="_blank" rel="noopener">View Product</a>
+                  <a href="/web-design">Website Services</a>
                 </Button>
               </div>
             </div>
             <a
-              href={shopProducts[0].shopifyProductUrl}
+              href="/shop"
               className="product-hero-card"
-              target="_blank"
-              rel="noopener"
-              aria-label={`View ${shopProducts[0].title} on Shopify`}
+              aria-label={`Browse ${featuredProduct.title} on the Auralis Digital shop page`}
             >
-              <img src={shopProducts[0].imageUrl} alt={shopProducts[0].altText} />
-              <span>{shopProducts[0].title}</span>
-              <strong>{shopProducts[0].price}</strong>
+              <img src={featuredProduct.imageUrl} alt={featuredProduct.altText} />
+              <span>{featuredProduct.title}</span>
+              <strong>{featuredProduct.price}</strong>
             </a>
           </div>
         </section>
@@ -501,7 +643,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               {shopProducts.map((product) => (
                 <Reveal key={product.shopifyProductUrl} className="product-reveal">
                   <a
-                    href={product.shopifyProductUrl}
+                    href={product.shopifyTrackingUrl}
                     className="product-card"
                     target="_blank"
                     rel="noopener"
@@ -525,12 +667,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band">
           <div className="site-shell problem-layout">
             <Reveal className="section-heading compact">
-              <span className="section-label">Why this setup</span>
-              <h2>Brand site for browsing. Shopify for buying.</h2>
+              <span className="section-label">How it works</span>
+              <h2>Browse here. Checkout through Shopify. Fulfilled through Printify.</h2>
             </Reveal>
             <Reveal className="problem-card">
               <p>
-                This keeps Auralis Digital lightweight and visual while Shopify remains the source of truth for product pages, checkout, payment security, order management, and Printify fulfillment.
+                Auralis is a creative brand. Auralis Design sells products. Auralis Digital builds websites and gives the product line a clear brand home while Shopify remains the checkout, payment, order, and product source of truth.
               </p>
             </Reveal>
           </div>
@@ -544,58 +686,116 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label"><Store aria-hidden="true" /> Auralis Design Shop</span>
-              <h2 id="shop-preview-title">Shop featured pieces from Auralis Design.</h2>
+              <h2 id="shop-preview-title">Shop the Zeus collection from Auralis Design.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Browse selected Auralis Design products here. Product details and secure checkout open on Shopify, with Printify handling fulfillment for Printify products.
+                Browse Auralis Design products here with mockups, product details, categories, and home decor notes. When you are ready to buy, secure checkout opens on Shopify.
               </p>
             </Reveal>
             <Reveal className="shop-product-layout">
-              <a
-                href={shopProducts[0].shopifyProductUrl}
-                className="shop-product-media"
-                target="_blank"
-                rel="noopener"
-                aria-label={`View ${shopProducts[0].title} on Shopify`}
-              >
-                <img src={shopProducts[0].imageUrl} alt={shopProducts[0].altText} />
-              </a>
-              <div className="shop-product-details">
-                <span className="product-meta">Featured product</span>
-                <h3>{shopProducts[0].title}</h3>
-                <p className="product-price">{shopProducts[0].price}</p>
-                <p className="product-description">{shopProducts[0].shortDescription}</p>
-                <p className="text-sm leading-7 text-muted-foreground">
-                  Auralis Digital shows the product presentation. Shopify opens in a new tab for product details, checkout, payment, order handling, and Printify fulfillment.
-                </p>
-                <Button variant="conversion" size="xl" asChild>
-                  <a href={shopProducts[0].shopifyProductUrl} target="_blank" rel="noopener">
-                    View on Shopify <ArrowRight aria-hidden="true" />
-                  </a>
-                </Button>
+              <ProductImageGallery product={featuredProduct} />
+              <div className="shop-product-info-card">
+                <div>
+                  <span className="product-meta">Featured product</span>
+                  <h3>{featuredProduct.title}</h3>
+                  <p className="product-price">{featuredProduct.price}</p>
+                  <p className="product-description">{featuredProduct.detailDescription}</p>
+                </div>
+                <div className="product-highlight-grid" aria-label={`${featuredProduct.title} highlights`}>
+                  {featuredProduct.highlights.map((highlight) => (
+                    <span key={highlight}><CheckCircle2 aria-hidden="true" /> {highlight}</span>
+                  ))}
+                </div>
+                <dl className="product-spec-list">
+                  {featuredProduct.specs.map((spec) => (
+                    <div key={spec.label}>
+                      <dt>{spec.label}</dt>
+                      <dd>{spec.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <div className="product-buy-panel">
+                  <p>
+                    Auralis Digital displays the product. Shopify handles checkout, payment, orders, and fulfillment routing.
+                  </p>
+                  <Button variant="conversion" size="xl" asChild>
+                    <a href={featuredProduct.shopifyTrackingUrl} target="_blank" rel="noopener">
+                      Buy on Shopify <ArrowRight aria-hidden="true" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </Reveal>
-            <div className="product-scroll" aria-label="Featured Auralis Design products">
-              {shopProducts.map((product) => (
-                <Reveal key={product.shopifyProductUrl} className="product-reveal">
-                  <a
-                    href={product.shopifyProductUrl}
-                    className="product-card"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label={`View ${product.title} on Shopify`}
-                  >
-                    <img src={product.imageUrl} alt={product.altText} loading="lazy" />
-                    <span className="product-meta">Shopify checkout</span>
-                    <h3>{product.title}</h3>
-                    <p className="product-price">{product.price}</p>
-                    <p className="product-description">{product.shortDescription}</p>
-                    <span className="product-button">
-                      View on Shopify <ArrowRight className="size-4" aria-hidden="true" />
-                    </span>
-                  </a>
-                </Reveal>
+            <Reveal className="product-marketing-grid">
+              <div className="product-story-panel">
+                <span className="product-meta">Why you'll like it</span>
+                <h3>A growing product collection with expressive artwork and practical everyday formats.</h3>
+                <ul>
+                  {productReasons.map((reason) => (
+                    <li key={reason}><CheckCircle2 aria-hidden="true" /> {reason}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="product-good-for-panel">
+                <span className="product-meta">Good for</span>
+                <div className="product-use-list">
+                  {productUseCases.map((useCase) => (
+                    <span key={useCase}>{useCase}</span>
+                  ))}
+                </div>
+                <p>
+                  The Zeus collection now includes cozy blankets, paper goods, drinkware, and wall art for home decor, creative spaces, and simple gift ideas.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal className="product-flow-strip" aria-label="Customer shopping flow">
+              {productTrustSteps.map((step) => (
+                <div key={step.title}>
+                  <BadgeCheck aria-hidden="true" />
+                  <h3>{step.title}</h3>
+                  <p>{step.copy}</p>
+                </div>
               ))}
-            </div>
+            </Reveal>
+            <Reveal className="product-flow-strip" aria-label="Product order process">
+              {[
+                "Browse products on Auralis Digital",
+                "Open the product on Shopify",
+                "Checkout securely",
+                "Printify prints and fulfills your order",
+              ].map((step, index) => (
+                <div key={step}>
+                  <BadgeCheck aria-hidden="true" />
+                  <h3>{index + 1}. {step}</h3>
+                  <p>{index === 0 ? "Stay on the brand site while comparing mockups, categories, and product notes." : "The selling and fulfillment steps happen through Shopify and Printify."}</p>
+                </div>
+              ))}
+            </Reveal>
+            <Reveal className="review-disclosure-panel">
+              <span className="product-meta">Material reviews</span>
+              <h3>Reviews can be labeled by what they actually tested.</h3>
+              <p>
+                Feedback about softness, warmth, or the sherpa blanket base should be labeled as product-base feedback unless the customer reviewed this exact Auralis Design artwork.
+              </p>
+              <p className="review-note">{featuredProduct.reviewScope}</p>
+            </Reveal>
+            <Reveal className="shop-faq-panel">
+              <div className="section-heading compact">
+                <span className="section-label">Product FAQ</span>
+                <h2>Questions before checkout.</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Auralis Digital keeps browsing clear, while Shopify remains the secure checkout and order source of truth.
+                </p>
+              </div>
+              <div className="shop-faq-grid">
+                {shopFaqs.map((faq) => (
+                  <div key={faq.q} className="shop-faq-item">
+                    <h3>{faq.q}</h3>
+                    <p>{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+            <CategoryShopSections />
           </div>
         </section>
         )}
@@ -956,7 +1156,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   </a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" asChild>
-                  <a href={isHome ? shopProducts[0].shopifyProductUrl : MAILTO} target={isHome ? "_blank" : undefined} rel={isHome ? "noopener" : undefined}>
+                  <a href={isHome ? featuredProduct.shopifyTrackingUrl : MAILTO} target={isHome ? "_blank" : undefined} rel={isHome ? "noopener" : undefined}>
                     {isHome ? "View on Shopify" : "Request a Quote"}
                   </a>
                 </Button>
@@ -971,7 +1171,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <p className="text-base font-black tracking-tight text-foreground">AURALIS DIGITAL</p>
-              <p className="mt-2 text-sm text-muted-foreground">A brand/display site for Auralis Design products, with Shopify handling product checkout.</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Auralis is a creative brand. Auralis Design sells products. Auralis Digital builds websites and hosts the brand/display shop.
+              </p>
             </div>
             <div>
               <p className="mb-3 text-sm font-black uppercase tracking-widest text-primary">Contact</p>
@@ -991,16 +1193,25 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               </div>
               <a href="sitemap.xml" className="mt-3 block text-sm text-muted-foreground hover:text-primary">Sitemap</a>
             </div>
+            <div className="sm:col-span-2 lg:col-span-3">
+              <p className="mb-3 text-sm font-black uppercase tracking-widest text-primary">Shop policies</p>
+              <div className="flex flex-wrap gap-2">
+                {POLICY_LINKS.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </footer>
       </main>
-
-      {/* ── Sticky contact bar (desktop) ─────────────────── */}
-      <div className="fixed bottom-4 right-4 z-50 hidden items-center gap-2 md:flex">
-        <Button variant="conversion" size="sm" asChild>
-          <a href="/shop">Shop Auralis Design</a>
-        </Button>
-      </div>
 
       {/* ── Mobile bottom CTA ────────────────────────────── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 p-3 backdrop-blur-xl md:hidden">

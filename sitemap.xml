@@ -5,35 +5,43 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.auralisdigital.net/about-christopher.html</loc>
+    <loc>https://www.auralisdigital.net/shop</loc>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.auralisdigital.net/web-design</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.auralisdigital.net/about-christopher.html</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.auralisdigital.net/website-llc.html</loc>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.auralisdigital.net/projects/demo-index.html</loc>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.auralisdigital.net/service-areas/</loc>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.auralisdigital.net/service-areas/belleville-websites.html</loc>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.auralisdigital.net/service-areas/ypsilanti-websites.html</loc>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.auralisdigital.net/service-areas/ann-arbor-websites.html</loc>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.auralisdigital.net/service-areas/detroit-metro-websites.html</loc>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
   </url>
 </urlset>

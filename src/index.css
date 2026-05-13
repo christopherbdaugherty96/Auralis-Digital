@@ -8,43 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 42 38% 96%;
-    --foreground: 220 38% 13%;
+    --background: 231 42% 13%;
+    --foreground: 42 45% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 38% 13%;
+    --card: 232 34% 18%;
+    --card-foreground: 42 45% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 232 34% 18%;
+    --popover-foreground: 42 45% 96%;
 
-    --primary: 197 78% 28%;
+    --primary: 197 82% 56%;
     --primary-foreground: 42 45% 97%;
 
-    --secondary: 185 38% 89%;
-    --secondary-foreground: 199 58% 18%;
+    --secondary: 253 46% 31%;
+    --secondary-foreground: 42 45% 96%;
 
-    --muted: 42 28% 90%;
-    --muted-foreground: 220 16% 42%;
+    --muted: 233 30% 24%;
+    --muted-foreground: 218 24% 76%;
 
-    --accent: 25 86% 58%;
-    --accent-foreground: 220 38% 13%;
+    --accent: 38 88% 62%;
+    --accent-foreground: 231 42% 13%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 207 24% 84%;
-    --input: 207 24% 84%;
-    --ring: 197 78% 28%;
+    --border: 229 28% 31%;
+    --input: 229 28% 31%;
+    --ring: 197 82% 56%;
 
     --radius: 0.9rem;
-    --surface: 42 45% 98%;
-    --surface-ink: 219 42% 11%;
-    --teal-soft: 188 55% 86%;
-    --gold-soft: 38 88% 83%;
-    --gradient-hero: radial-gradient(circle at 18% 18%, hsl(var(--gold-soft) / 0.55), transparent 30%), radial-gradient(circle at 84% 12%, hsl(var(--teal-soft) / 0.85), transparent 34%), linear-gradient(135deg, hsl(42 45% 98%), hsl(195 45% 92%));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card) / 0.94), hsl(195 45% 96% / 0.82));
-    --gradient-ink: linear-gradient(135deg, hsl(219 42% 11%), hsl(197 70% 20%));
-    --shadow-soft: 0 18px 60px -32px hsl(220 38% 13% / 0.28);
+    --surface: 232 34% 18%;
+    --surface-ink: 42 45% 96%;
+    --teal-soft: 198 72% 47%;
+    --gold-soft: 40 92% 66%;
+    --purple-soft: 267 58% 42%;
+    --gradient-hero: radial-gradient(circle at 16% 18%, hsl(var(--gold-soft) / 0.22), transparent 28%), radial-gradient(circle at 82% 12%, hsl(var(--teal-soft) / 0.28), transparent 34%), radial-gradient(circle at 70% 62%, hsl(var(--purple-soft) / 0.32), transparent 38%), linear-gradient(135deg, hsl(232 46% 11%), hsl(224 48% 17%) 46%, hsl(259 42% 19%));
+    --gradient-card: linear-gradient(145deg, hsl(232 32% 20% / 0.94), hsl(250 38% 24% / 0.86));
+    --gradient-ink: linear-gradient(135deg, hsl(233 45% 12%), hsl(258 48% 22%));
+    --shadow-soft: 0 18px 60px -32px hsl(240 55% 4% / 0.62);
     --shadow-conversion: 0 18px 34px -18px hsl(var(--primary) / 0.58);
     --shadow-conversion-hover: 0 24px 44px -18px hsl(var(--primary) / 0.68);
 
@@ -127,10 +128,10 @@ All colors MUST be HSL.
   .auralis-page { @apply relative min-h-screen bg-background text-foreground; background: var(--gradient-hero); }
   .site-shell { @apply relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
   .ambient-layer { @apply pointer-events-none fixed inset-0 z-0 overflow-hidden; }
-  .ambient-grid { @apply absolute inset-0 opacity-40; background-image: linear-gradient(hsl(var(--foreground) / 0.05) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground) / 0.05) 1px, transparent 1px); background-size: 48px 48px; mask-image: linear-gradient(to bottom, black, transparent 82%); }
+  .ambient-grid { @apply absolute inset-0 opacity-30; background-image: linear-gradient(hsl(var(--foreground) / 0.055) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground) / 0.055) 1px, transparent 1px); background-size: 48px 48px; mask-image: linear-gradient(to bottom, black, transparent 82%); }
   .parallax-shape { @apply absolute rounded-full blur-3xl; }
-  .shape-one { @apply -left-24 top-32 h-80 w-80 bg-secondary/70; }
-  .shape-two { @apply -right-28 top-[34rem] h-96 w-96 bg-accent/25; }
+  .shape-one { @apply -left-24 top-32 h-80 w-80 bg-secondary/45; }
+  .shape-two { @apply -right-28 top-[34rem] h-96 w-96 bg-accent/20; }
   .hero-section { @apply relative min-h-[92vh] py-16 sm:py-20 lg:py-24; }
   .hero-grid { @apply grid items-center gap-14 lg:grid-cols-[1fr_0.92fr]; }
   .hero-copy { @apply max-w-3xl animate-fade-up; }
@@ -182,6 +183,59 @@ All colors MUST be HSL.
   .shop-product-media img { @apply aspect-square w-full rounded-[1.1rem] object-cover; }
   .shop-product-details { @apply flex flex-col justify-center gap-4; }
   .shop-product-details h3 { @apply text-3xl font-black leading-tight sm:text-5xl; }
+  .shop-product-info-card { @apply flex flex-col justify-center gap-6 rounded-[1.5rem] bg-card/80 p-5 shadow-soft sm:p-7; }
+  .shop-product-info-card h3 { @apply text-3xl font-black leading-tight sm:text-5xl; }
+  .product-gallery-card { @apply rounded-[1.5rem] bg-card p-4 shadow-soft; }
+  .product-gallery-main { @apply rounded-[1.2rem] bg-secondary/40; }
+  .product-gallery-main img { @apply aspect-square w-full rounded-[1.2rem] object-cover; }
+  .product-gallery-thumbs { @apply mt-4 flex gap-3 overflow-x-auto pb-2; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .product-gallery-thumb { @apply flex min-w-[132px] max-w-[132px] shrink-0 flex-col gap-2 rounded-2xl border border-border bg-background p-2 text-left text-xs font-black text-muted-foreground transition-all duration-200 hover:border-primary/50 hover:text-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40; scroll-snap-align: start; }
+  .product-gallery-thumb.is-active { @apply border-primary bg-primary/10 text-primary shadow-soft; }
+  .product-gallery-thumb img { @apply aspect-square w-full rounded-xl object-cover; }
+  .product-gallery-note { @apply mt-3 text-xs leading-6 text-muted-foreground; }
+  .product-highlight-grid { @apply grid gap-3 sm:grid-cols-2; }
+  .product-highlight-grid span { @apply flex items-center gap-2 rounded-2xl border border-primary/10 bg-primary/10 px-4 py-3 text-sm font-black text-foreground; }
+  .product-highlight-grid svg { @apply size-4 shrink-0 text-primary; }
+  .product-spec-list { @apply grid gap-3; }
+  .product-spec-list div { @apply flex items-start justify-between gap-4 rounded-2xl border border-border/80 bg-background/70 px-4 py-3; }
+  .product-spec-list dt { @apply text-xs font-black uppercase tracking-[0.12em] text-muted-foreground; }
+  .product-spec-list dd { @apply text-right text-sm font-extrabold text-foreground; }
+  .product-buy-panel { @apply rounded-[1.25rem] border border-primary/15 bg-primary/10 p-4; }
+  .product-buy-panel p { @apply mb-4 text-sm leading-7 text-muted-foreground; }
+  .product-marketing-grid { @apply mb-8 grid gap-5 lg:grid-cols-[1.1fr_0.9fr]; }
+  .product-story-panel, .product-good-for-panel { @apply rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-6 shadow-soft backdrop-blur-xl sm:p-8; }
+  .product-story-panel h3 { @apply mb-5 text-2xl font-black leading-tight sm:text-3xl; }
+  .product-story-panel ul { @apply grid gap-3; }
+  .product-story-panel li { @apply flex gap-3 text-sm leading-7 text-muted-foreground; }
+  .product-story-panel li svg { @apply mt-1 size-4 shrink-0 text-primary; }
+  .product-good-for-panel p { @apply mt-5 text-sm leading-7 text-muted-foreground; }
+  .product-use-list { @apply grid gap-3 sm:grid-cols-2 lg:grid-cols-1; }
+  .product-use-list span { @apply rounded-2xl border border-primary/15 bg-primary/10 px-4 py-3 text-sm font-black text-foreground; }
+  .product-flow-strip { @apply mb-10 grid gap-4 rounded-[1.5rem] border border-primary/15 bg-primary/10 p-4 shadow-soft sm:grid-cols-2 lg:grid-cols-4 sm:p-5; }
+  .product-flow-strip div { @apply rounded-[1.1rem] bg-card/75 p-4; }
+  .product-flow-strip svg { @apply mb-3 size-5 text-primary; }
+  .product-flow-strip h3 { @apply mb-2 text-base font-black; }
+  .product-flow-strip p { @apply text-sm leading-6 text-muted-foreground; }
+  .review-disclosure-panel { @apply mb-8 rounded-[1.5rem] border border-primary/15 bg-card/70 p-6 shadow-soft backdrop-blur-xl sm:p-8; }
+  .review-disclosure-panel h3 { @apply mb-3 text-2xl font-black leading-tight sm:text-3xl; }
+  .review-disclosure-panel p { @apply max-w-4xl text-sm leading-7 text-muted-foreground; }
+  .review-note { @apply mt-4 rounded-2xl border border-accent/25 bg-accent/10 p-4 text-foreground; }
+  .shop-faq-panel { @apply mb-8 rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-6 shadow-soft backdrop-blur-xl sm:p-8; }
+  .shop-faq-grid { @apply mt-6 grid gap-4 sm:grid-cols-2; }
+  .shop-faq-item { @apply rounded-2xl border border-border/80 bg-background/65 p-5; }
+  .shop-faq-item h3 { @apply mb-2 text-base font-black text-foreground; }
+  .shop-faq-item p { @apply text-sm leading-7 text-muted-foreground; }
+  .category-shop-wrap { @apply mt-2; }
+  .category-chip-row { @apply mb-6 flex gap-3 overflow-x-auto pb-2; scrollbar-width: thin; }
+  .category-chip-row a { @apply shrink-0 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-black text-primary no-underline transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40; }
+  .category-section-grid { @apply grid gap-5; }
+  .category-panel { @apply rounded-[1.5rem] border border-card/80 bg-card/65 p-5 shadow-soft backdrop-blur-xl sm:p-6; }
+  .category-panel-header { @apply mb-5 flex flex-wrap items-center justify-between gap-3; }
+  .category-panel-header h3 { @apply text-2xl font-black; }
+  .category-panel-header span { @apply rounded-full border border-border bg-background/70 px-3 py-1 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground; }
+  .category-description { @apply mb-5 max-w-3xl text-sm leading-7 text-muted-foreground; }
+  .category-product-row { @apply grid gap-5 sm:grid-cols-2 lg:grid-cols-3; }
+  .category-empty { @apply rounded-2xl border border-dashed border-border bg-background/50 p-5 text-sm leading-7 text-muted-foreground; }
   .product-scroll { @apply -mx-5 flex gap-5 overflow-x-auto px-5 pb-5 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0; scroll-snap-type: x mandatory; scrollbar-width: thin; }
   .product-reveal { @apply min-w-[280px] max-w-[280px] shrink-0 sm:min-w-[320px] sm:max-w-[320px] lg:min-w-[360px] lg:max-w-[360px]; scroll-snap-align: start; }
   .product-card { @apply block h-full rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-4 text-foreground no-underline shadow-soft backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
