@@ -1,5 +1,7 @@
 import AuralisHomepage from "@/components/AuralisHomepage";
 
-const Index = () => <AuralisHomepage />;
+type AuralisPage = "home" | "shop" | "web-design" | "websites";
+
+const Index = ({ page = "home" }: { page?: AuralisPage }) => <AuralisHomepage page={page} />;
 
 export default Index;

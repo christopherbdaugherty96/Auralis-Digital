@@ -168,10 +168,30 @@ All colors MUST be HSL.
   .section-heading { @apply mx-auto mb-12 max-w-3xl text-center; }
   .section-heading.compact { @apply mx-0 text-left; }
   .section-heading h2 { @apply text-3xl font-black leading-tight sm:text-5xl; }
+  .product-hero-card { @apply relative mx-auto block w-full max-w-[520px] rounded-[2rem] border border-card/80 bg-card/75 p-5 text-foreground no-underline shadow-soft backdrop-blur-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
+  .product-hero-card img { @apply mb-5 aspect-square w-full rounded-[1.45rem] object-cover shadow-soft; }
+  .product-hero-card span { @apply block text-lg font-black; }
+  .product-hero-card strong { @apply mt-2 block text-4xl font-black; }
   .problem-layout { @apply grid items-center gap-8 lg:grid-cols-[0.85fr_1fr]; }
   .problem-card { @apply rounded-[1.75rem] border border-card/80 bg-card/75 p-8 text-lg leading-8 text-muted-foreground shadow-soft backdrop-blur-xl sm:p-10; }
   .service-grid { @apply grid gap-5 md:grid-cols-2 lg:grid-cols-3; }
   .service-card, .concept-card, .process-step { @apply rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-6 shadow-soft backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion; }
+  .shop-preview { @apply overflow-hidden; }
+  .shop-product-layout { @apply mb-10 grid gap-7 rounded-[2rem] border border-card/80 bg-card/70 p-5 shadow-soft backdrop-blur-xl lg:grid-cols-[0.95fr_1.05fr] lg:p-8; }
+  .shop-product-media { @apply block rounded-[1.5rem] bg-card p-4 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
+  .shop-product-media img { @apply aspect-square w-full rounded-[1.1rem] object-cover; }
+  .shop-product-details { @apply flex flex-col justify-center gap-4; }
+  .shop-product-details h3 { @apply text-3xl font-black leading-tight sm:text-5xl; }
+  .product-scroll { @apply -mx-5 flex gap-5 overflow-x-auto px-5 pb-5 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .product-reveal { @apply min-w-[280px] max-w-[280px] shrink-0 sm:min-w-[320px] sm:max-w-[320px] lg:min-w-[360px] lg:max-w-[360px]; scroll-snap-align: start; }
+  .product-card { @apply block h-full rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-4 text-foreground no-underline shadow-soft backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
+  .product-card img { @apply mb-5 aspect-square w-full rounded-[1.15rem] object-cover shadow-soft; }
+  .product-meta { @apply mb-3 inline-flex rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-[0.12em] text-primary; }
+  .product-card h3 { @apply mb-2 text-2xl font-black; }
+  .product-price { @apply mb-3 text-3xl font-black text-foreground; }
+  .product-description { @apply text-sm leading-7 text-muted-foreground; }
+  .product-button { @apply mt-5 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-black text-primary-foreground shadow-conversion transition-transform duration-300; }
+  .product-card:hover .product-button { @apply translate-x-1; }
   .icon-tile { @apply mb-6 flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary; }
   .icon-tile.large { @apply mx-auto size-14; }
   .service-card h3, .concept-card h3, .process-step h3 { @apply mb-3 text-xl font-black; }
