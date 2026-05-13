@@ -179,17 +179,109 @@ Use Shopify as the main website and make `Website Services` a normal Shopify pag
 
 This is clean long-term if Shopify becomes the primary public site, but the current documented direction keeps Auralis Digital as the brand/display website and Shopify as the selling backend.
 
+## Implementation Build Task
+
+Build the first version as a static/manual display section, not as a Shopify checkout integration.
+
+The implementation should add or update:
+
+- Homepage featured shop/display section
+- Optional dedicated Shop page
+- Main navigation link for Shop
+- Main navigation link for Website Services
+- Product card styling
+- Mobile horizontal scroll behavior
+- Desktop horizontal scroll or card-grid behavior
+
+The first build should use hardcoded product card data from the current Shopify product until a larger catalog requires automation.
+
+Minimum product data fields:
+
+```text
+title
+price
+shortDescription
+imageUrl
+shopifyProductUrl
+altText
+```
+
+For the current product:
+
+```text
+title: Tan Sherpa Blanket
+price: $48.85
+shortDescription: Soft sherpa blanket for cozy home decor.
+imageUrl: https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778647384
+shopifyProductUrl: https://auralis-design.myshopify.com/products/tan-sherpa-blanket
+altText: Tan Sherpa Blanket
+```
+
+## Implementation Non-Goals
+
+Do not build these in the first version:
+
+- Custom checkout
+- Custom cart
+- Payment forms
+- Tax calculation
+- Shipping calculation
+- Printify API integration
+- Shopify Admin API integration on the public website
+- Automatic product syncing
+- Customer account handling
+- Order status handling
+
+These belong to Shopify, Printify, or a later upgrade.
+
+## Navigation Requirement
+
+The website navigation should make the distinction clear:
+
+```text
+Shop = product browsing and Shopify product links
+Website Services = separate service inquiry page
+```
+
+The Shop link should not send customers to website service content.
+
+The Website Services link should not interrupt the product shopping flow.
+
+## Accessibility And UX Requirements
+
+Product cards should be usable on mobile and desktop.
+
+Each product image should have meaningful alt text.
+
+Each card should have a visible focus state for keyboard users.
+
+Clickable cards should not rely only on color to show that they are clickable.
+
+Buttons should use direct language such as:
+
+```text
+View on Shopify
+Buy on Shopify
+View Product
+```
+
+External Shopify links should use:
+
+```html
+target="_blank" rel="noopener"
+```
+
 ## Manual Product Card HTML Example
 
 ```html
-<section class="shop-preview">
+<section class="shop-preview" aria-labelledby="shop-preview-title">
   <div class="shop-header">
     <p class="eyebrow">Auralis Design Shop</p>
-    <h2>Shop Featured Pieces</h2>
+    <h2 id="shop-preview-title">Shop Featured Pieces</h2>
     <p>Browse selected products from Auralis Design. Checkout is securely handled through Shopify.</p>
   </div>
 
-  <div class="product-scroll">
+  <div class="product-scroll" aria-label="Featured Auralis Design products">
     <a class="product-card" href="https://auralis-design.myshopify.com/products/tan-sherpa-blanket" target="_blank" rel="noopener">
       <img src="https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778647384" alt="Tan Sherpa Blanket">
       <h3>Tan Sherpa Blanket</h3>
@@ -240,6 +332,11 @@ This is clean long-term if Shopify becomes the primary public site, but the curr
   background: white;
 }
 
+.product-card:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
 .product-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -283,6 +380,8 @@ The first version is acceptable when:
 - The website does not ask customers to pay outside Shopify
 - The product page on Shopify remains the checkout source of truth
 - Printify remains the fulfillment source for Printify products
+- Keyboard focus is visible on product cards
+- Product images include meaningful alt text
 
 ## Maintenance Rule
 
