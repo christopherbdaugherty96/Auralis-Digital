@@ -11,6 +11,8 @@ Use this before sending real traffic from Auralis Digital to Shopify.
   - `https://auralis-design.myshopify.com/products/tan-sherpa-blanket`
 - [ ] Each published product link from Auralis Digital opens the intended Shopify product page.
 - [ ] UTM-tagged product links still resolve to the correct Shopify product page.
+- [ ] Product pages do not show the Shopify password page, opening-soon page, or storefront gate to public visitors.
+- [ ] Product page browser title and visible content identify the intended product, not only the store password shell.
 
 ## Checkout
 
@@ -37,14 +39,23 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 - [ ] Shipping Policy link is visible.
 - [ ] Privacy Policy link is visible.
 - [ ] Terms of Service link is visible.
+- [ ] Refund Policy opens publicly from incognito without the Shopify password gate.
+- [ ] Shipping Policy opens publicly from incognito without the Shopify password gate.
+- [ ] Privacy Policy opens publicly from incognito without the Shopify password gate.
+- [ ] Terms of Service opens publicly from incognito without the Shopify password gate.
 - [ ] Contact email is visible.
 
 ## Mobile And Customer Flow
 
 - [ ] Homepage primary CTA leads to `/shop`.
+- [ ] Live `/shop` route opens directly without HTTP `404`.
+- [ ] Live `/web-design` route opens directly without HTTP `404`.
+- [ ] GitHub Pages fallback restores `/?p=/shop` to the actual Shop page.
 - [ ] Product gallery selectors stay on Auralis Digital.
 - [ ] Clearly labeled buy/view buttons open Shopify in a new tab.
 - [ ] Mobile product cards scroll naturally.
+- [ ] Mobile hero and product card do not clip awkwardly at a 390px-wide viewport.
+- [ ] Fixed mobile bottom CTA does not block contact, footer, or product content.
 - [ ] Keyboard focus is visible on product cards and CTA links.
 - [ ] Customer flow is clear: browse on Auralis Digital, checkout through Shopify, fulfilled through Printify.
 
