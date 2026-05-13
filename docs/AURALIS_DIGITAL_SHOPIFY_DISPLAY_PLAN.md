@@ -111,6 +111,14 @@ Clickable elements should link to the Shopify product page:
 - Price
 - Buy button
 
+## Checkout Boundary
+
+Auralis Digital should not add custom payment handling, cart logic, tax calculation, or order fulfillment logic for this first version.
+
+Those responsibilities stay with Shopify and Printify.
+
+This avoids unnecessary payment/security complexity and keeps the Auralis Digital website focused on display, branding, and routing customers to the correct Shopify product page.
+
 ## Current Shopify Product Link Format
 
 Shopify product URLs should follow this structure:
@@ -259,6 +267,22 @@ This is clean long-term if Shopify becomes the primary public site, but the curr
   font-weight: 700;
 }
 ```
+
+## Display Shop Acceptance Checklist
+
+The first version is acceptable when:
+
+- A visitor can open Auralis Digital and find the shop/display section
+- A visitor can horizontally scroll through product cards on mobile and desktop
+- Each card displays image, title, price, short description, and a clear Buy/View button
+- Clicking the image opens the matching Shopify product page
+- Clicking the product title opens the matching Shopify product page
+- Clicking the price opens the matching Shopify product page
+- Clicking the Buy/View button opens the matching Shopify product page
+- The Website Services page is separate from the product shopping flow
+- The website does not ask customers to pay outside Shopify
+- The product page on Shopify remains the checkout source of truth
+- Printify remains the fulfillment source for Printify products
 
 ## Maintenance Rule
 
