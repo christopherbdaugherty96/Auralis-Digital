@@ -2,13 +2,61 @@
 
 ## Goal
 
-Auralis Digital should display Auralis Design products visually on the website while Shopify handles product pages, checkout, payments, order management, and Printify fulfillment.
+Auralis Digital should act as the brand/display website for Auralis while showing Auralis Design products in a clean visual shop section.
 
-## Site Structure
+Shopify remains responsible for product pages, checkout, payments, taxes, order management, and the path that sends Printify orders into fulfillment.
+
+The website should let visitors scroll through products on Auralis Digital, then send them to Shopify when they are ready to view, price-check, or buy.
+
+## Current Store Context
+
+Connected Shopify store:
+
+```text
+Auralis Design
+https://auralis-design.myshopify.com
+```
+
+Current active product example:
+
+```text
+Tan Sherpa Blanket
+https://auralis-design.myshopify.com/products/tan-sherpa-blanket
+```
+
+Current product source:
+
+```text
+Vendor: Printify
+Product type: Home Decor
+```
+
+## Printify Connection Rule
+
+The Shopify store can be connected to Printify through the Shopify app system and the Printify dashboard.
+
+Connection should be verified in both places:
+
+1. Shopify Admin -> Apps
+2. Confirm `Printify: Print on Demand` appears as an installed app
+3. Printify -> My Stores
+4. Confirm the Shopify store appears as a connected store
+
+A practical working check is:
+
+1. Publish a product from Printify
+2. Confirm the product appears in Shopify Admin -> Products
+3. Confirm the product has Printify as the vendor or fulfillment source
+
+Order approval should start manually until test orders have been reviewed. Automatic approval can be enabled later after the first successful order flow is confirmed.
+
+## Recommended Site Structure
 
 Primary navigation:
 
+```text
 Home | Shop | Website Services | About | Contact
+```
 
 ## Page Roles
 
@@ -24,13 +72,29 @@ The Shop page should display product cards in a scrollable layout. Each product 
 
 Website-building services should live on a separate page so they do not confuse the product shop experience.
 
+This page is for the separate option where customers can ask about website creation, website setup, or Auralis Digital service work.
+
+### About
+
+The About page should explain the Auralis brand and the difference between the display website, Shopify shop, and services.
+
 ### Contact
 
 The Contact page should support service inquiries, customer questions, and general messages.
 
 ## Product Showcase Behavior
 
-The Auralis Digital website should not process product checkout directly.
+The Auralis Digital website should not process product checkout directly in this first version.
+
+Instead, Auralis Digital should work as a product showcase:
+
+1. Customer lands on Auralis Digital
+2. Customer scrolls through displayed products
+3. Customer sees product image, title, price, and short description
+4. Customer clicks the image, title, price, or Buy/View button
+5. Customer is taken to the Shopify product page
+6. Shopify handles checkout
+7. Shopify/Printify handle order flow and fulfillment
 
 Each product card should include:
 
@@ -67,11 +131,45 @@ Use manual product cards first.
 
 Manual product cards are preferred at this stage because the product catalog is small and the visual layout can be controlled directly from the website.
 
+This keeps Auralis Digital lightweight while Shopify handles the selling system.
+
 Later, this can be upgraded to:
 
 - Shopify Buy Button embed
 - Shopify Storefront API product feed
 - Full Shopify-powered storefront
+
+## Main Options Considered
+
+### Option 1: Link to Shopify Store
+
+Add a simple button such as `Shop Auralis Design` that links to:
+
+```text
+https://auralis-design.myshopify.com
+```
+
+This is the easiest setup.
+
+### Option 2: Scrollable Product Showcase
+
+Display products directly on Auralis Digital using product cards.
+
+Each card links to the product page on Shopify.
+
+This is the recommended current setup.
+
+### Option 3: Shopify Buy Button Embed
+
+Use Shopify's Buy Button app to generate embeddable product or collection code.
+
+This is useful if the website builder supports custom HTML embeds and Shopify-managed buttons are preferred.
+
+### Option 4: Shopify as Main Website
+
+Use Shopify as the main website and make `Website Services` a normal Shopify page.
+
+This is clean long-term if Shopify becomes the primary public site, but the current documented direction keeps Auralis Digital as the brand/display website and Shopify as the selling backend.
 
 ## Manual Product Card HTML Example
 
@@ -174,6 +272,17 @@ When a Shopify product changes:
 - Remove website cards for archived products
 - Add new cards for new active products
 
+## Upgrade Rule
+
+Move away from manual product cards only when one of these becomes true:
+
+- The product catalog grows enough that manual updates become annoying
+- Prices change often
+- Collections need to update automatically
+- A live cart or embedded checkout experience is needed on Auralis Digital
+
+At that point, use Shopify Buy Button first. Use the Shopify Storefront API only if a custom dynamic storefront is needed.
+
 ## Final Decision
 
 Auralis Digital remains the brand/display website.
@@ -181,3 +290,5 @@ Auralis Digital remains the brand/display website.
 Shopify remains the selling and checkout system.
 
 Printify remains the fulfillment system.
+
+Website-making services remain available, but only as a separate page/option so the shop experience stays clear.
