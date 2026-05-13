@@ -67,7 +67,8 @@ Goal: reduce new-business trust friction before outreach.
 Goal: prevent confusion between the website-services business and the Auralis Design product/shop surface.
 
 - [ ] Confirm long-term relationship between `Auralis Digital` and `Auralis Design`.
-- [ ] Decide whether website services or the product shop should be primary on the homepage.
+- [ ] Patch homepage hero/meta positioning so website services remain primary while the shop stays secondary.
+- [ ] Confirm homepage CTA order matches website-services-first execution priority.
 - [ ] Confirm navigation clearly separates Shop and Website Services.
 - [ ] Confirm website-services prospects can find contact/intake without being confused by product-shop content.
 - [ ] Confirm product buyers understand checkout opens through Shopify.

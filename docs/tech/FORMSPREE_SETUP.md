@@ -1,42 +1,83 @@
 # Formspree Setup Guide
 
-Last updated: 2026-04-26
+Last updated: 2026-05-13
 
 ## Purpose
 
-Replace the current mailto inquiry flow with a real submission form without building a custom backend yet.
+Replace the temporary mailto fallback with a real Formspree submission path without building a custom backend yet.
 
 ## Why This Is The Right Next Move
 
-- Captures leads reliably
-- Works even if a visitor has no mail app configured
-- Faster path to first customers than building custom infrastructure
-- Matches the current roadmap
+- Captures leads reliably.
+- Works even if a visitor has no mail app configured.
+- Faster path to first customers than building custom infrastructure.
+- Matches the current roadmap and active execution checklist.
 
-## Steps
+## Current Source Truth
 
-1. Create a Formspree account.
+The React/Vite contact form is implemented in `src/components/AuralisHomepage.tsx`.
+
+It reads production configuration from:
+
+- `VITE_CONTACT_EMAIL`
+- `VITE_FORMSPREE_ENDPOINT`
+
+If `VITE_FORMSPREE_ENDPOINT` is present, the form posts JSON to Formspree.
+
+If `VITE_FORMSPREE_ENDPOINT` is missing, the form falls back to a prepared `mailto:` flow using `VITE_CONTACT_EMAIL` or the current fallback Gmail address.
+
+Do not hardcode the Formspree endpoint in the React source.
+
+## Setup Steps
+
+1. Create or log into the Auralis Digital Formspree account.
 2. Create a new form.
-3. Copy the generated endpoint (example: `/f/xxxxabcd`).
-4. Update the website form `action` attribute with your real endpoint.
-5. Submit a live test inquiry.
-6. Confirm the message reaches your business email.
-7. Keep phone/email fallback visible.
+3. Copy the full Formspree endpoint URL.
+4. Add `VITE_FORMSPREE_ENDPOINT` as a GitHub Actions secret.
+5. Add `VITE_CONTACT_EMAIL` as a GitHub Actions variable.
+6. Trigger the GitHub Pages deploy workflow.
+7. Test the live site from desktop.
+8. Test the live site from phone.
+9. Confirm no email app opens after production env is configured.
+10. Confirm submissions arrive in the intended inbox.
+11. Confirm the success state appears after submission.
+12. Confirm no visible console or network errors occur during submission.
+
+## GitHub Configuration
+
+Use these commands from the repo after the real values exist:
+
+```powershell
+gh variable set VITE_CONTACT_EMAIL --body "hello@auralisdigital.net"
+gh secret set VITE_FORMSPREE_ENDPOINT --body "https://formspree.io/f/xxxxabcd"
+gh workflow run "Deploy to GitHub Pages"
+```
 
 ## Recommended Fields
 
+The current React form already collects:
+
 - Name
-- Business Name
+- Business name
 - Email
-- Phone
-- Website URL (optional)
-- What do you need help with?
-- Budget range (optional)
+- Budget range
+- Timeline
+- Project details
+
+Future fields can be added later, but do not expand the form before the basic live flow is verified.
 
 ## Safety Rule
 
-Do not remove the working mailto fallback until the new form is tested end-to-end.
+Do not remove the mailto fallback until the Formspree flow has been tested end to end on the live site.
+
+## Success Criteria
+
+- Public site uses the intended contact email value.
+- Form submits without opening an email app.
+- Submission arrives in the correct inbox.
+- User sees the success state.
+- Contact flow feels immediate and reliable.
 
 ## After Setup
 
-Update `docs/ROADMAP.md` and check off the lead capture task.
+After live verification, update `active/NEXT_STEPS_TODO.md` and `docs/ROADMAP.md` only if the task is actually complete.
