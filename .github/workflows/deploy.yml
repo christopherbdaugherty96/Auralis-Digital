@@ -33,16 +33,7 @@ jobs:
 
       - name: Copy static pages to dist
         run: |
-          mkdir -p dist/products dist/shop dist/custom-design dist/web-design dist/websites dist/refund-policy dist/shipping-policy dist/privacy-policy dist/terms-of-service
-          cp -f dist/index.html dist/products/index.html
-          cp -f dist/index.html dist/shop/index.html
-          cp -f dist/index.html dist/custom-design/index.html
-          cp -f dist/index.html dist/web-design/index.html
-          cp -f dist/index.html dist/websites/index.html
-          cp -f dist/index.html dist/refund-policy/index.html
-          cp -f dist/index.html dist/shipping-policy/index.html
-          cp -f dist/index.html dist/privacy-policy/index.html
-          cp -f dist/index.html dist/terms-of-service/index.html
+          node scripts/generate-route-pages.mjs
           cp -f website/about-christopher.html dist/ 2>/dev/null || true
           cp -f clients/website-llc/website-llc.html dist/ 2>/dev/null || true
           cp -f projects/restaurant-demo.html dist/ 2>/dev/null || true
