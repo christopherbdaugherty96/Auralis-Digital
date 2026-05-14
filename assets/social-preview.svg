@@ -1,9 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#050813"/><stop offset="100%" stop-color="#0f172a"/></linearGradient></defs>
-<rect width="1200" height="630" fill="url(#g)"/>
-<circle cx="180" cy="120" r="180" fill="#2ea8ff" opacity="0.12"/>
-<circle cx="1040" cy="520" r="220" fill="#7dd3fc" opacity="0.08"/>
-<text x="70" y="250" fill="#ffffff" font-size="72" font-family="Arial" font-weight="700">AURALIS DIGITAL</text>
-<text x="70" y="340" fill="#cbd5e1" font-size="34" font-family="Arial">Websites for Michigan Local Businesses</text>
-<text x="70" y="405" fill="#94a3b8" font-size="28" font-family="Arial">Trust • Clarity • Calls • Quotes • Bookings</text>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="52%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="55%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="180" cy="130" r="190" fill="#38bdf8" opacity="0.14"/>
+  <circle cx="1040" cy="515" r="235" fill="#a78bfa" opacity="0.16"/>
+  <rect x="70" y="74" width="1060" height="482" rx="34" fill="#020617" opacity="0.72" stroke="url(#a)" stroke-width="3"/>
+  <text x="110" y="170" fill="#fbbf24" font-size="34" font-family="Arial, sans-serif" font-weight="700" letter-spacing="4">AURALIS DIGITAL</text>
+  <text x="110" y="280" fill="#ffffff" font-size="72" font-family="Arial, sans-serif" font-weight="800">Products, Custom Design,</text>
+  <text x="110" y="360" fill="#ffffff" font-size="72" font-family="Arial, sans-serif" font-weight="800">and Websites</text>
+  <text x="112" y="438" fill="#cbd5e1" font-size="32" font-family="Arial, sans-serif">Original products. Personalized visuals. Clean digital presence.</text>
+  <rect x="110" y="486" width="285" height="52" rx="26" fill="url(#a)"/>
+  <text x="138" y="522" fill="#020617" font-size="24" font-family="Arial, sans-serif" font-weight="800">Shop Auralis</text>
 </svg>
