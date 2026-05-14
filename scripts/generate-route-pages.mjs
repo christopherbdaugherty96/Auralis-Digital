@@ -46,7 +46,7 @@ const routes = [
   {
     path: "/shipping-policy",
     title: "Shipping Policy | Auralis Digital",
-    description: "Review shipping and fulfillment guidance for Auralis Design products fulfilled through Shopify and Printify.",
+    description: "Review shipping and fulfillment guidance for Auralis Design products purchased through Shopify.",
     canonicalPath: "/shipping-policy",
   },
   {

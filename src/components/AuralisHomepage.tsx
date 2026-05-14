@@ -66,7 +66,7 @@ const customRequestTypes = [
   "Personal artwork",
   "Image or theme-based design",
   "Gift design",
-  "Product mockup concept",
+  "Product photo concept",
   "Apparel concept",
   "Poster or wall art concept",
   "Blanket, mug, journal, canvas, or shirt design",
@@ -78,7 +78,7 @@ const customProcess = [
   "Auralis reviews scope",
   "You get a quote or next step",
   "Design direction is confirmed",
-  "Final design or mockup is prepared",
+  "Final design or product preview is prepared",
 ];
 
 const services = [
@@ -301,7 +301,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   "shipping-policy": {
     title: "Shipping Policy | Auralis Digital",
     description:
-      "Review shipping and fulfillment guidance for Auralis Design products fulfilled through Shopify and Printify.",
+      "Review shipping and fulfillment guidance for Auralis Design products purchased through Shopify.",
     canonicalPath: "/shipping-policy",
   },
   "privacy-policy": {
@@ -323,7 +323,7 @@ const policyPages = {
     eyebrow: "Refund Policy",
     title: "Refunds and issue support.",
     intro:
-      "Auralis Digital displays products and accepts inquiries. Product purchases are completed through Shopify, and Printify products are produced and fulfilled after purchase.",
+      "Auralis Digital displays products and accepts inquiries. Product purchases are completed through Shopify, and many products are produced and fulfilled after purchase.",
     sections: [
       {
         title: "Product orders",
@@ -346,12 +346,12 @@ const policyPages = {
     eyebrow: "Shipping Policy",
     title: "Shipping and fulfillment expectations.",
     intro:
-      "Auralis Design products shown on this site open through Shopify when a visitor is ready to buy. Printify handles production and fulfillment for Printify products.",
+      "Auralis Design products shown on this site open through Shopify when a visitor is ready to buy. Production and fulfillment are handled after purchase for made-to-order products.",
     sections: [
       {
         title: "Produced after purchase",
         copy:
-          "Many Printify products are made after an order is placed. That means timing can vary by product, destination, production queue, and carrier conditions.",
+          "Many products are made after an order is placed. That means timing can vary by product, destination, production queue, and carrier conditions.",
       },
       {
         title: "Shipping details",
@@ -384,7 +384,7 @@ const policyPages = {
       {
         title: "Third-party services",
         copy:
-          "Shopify, Printify, form providers, analytics tools, hosting providers, and email providers may process information according to their own policies when those tools are used.",
+          "Shopify, production partners, form providers, analytics tools, hosting providers, and email providers may process information according to their own policies when those tools are used.",
       },
     ],
   },
@@ -407,7 +407,7 @@ const policyPages = {
       {
         title: "No unsupported claims",
         copy:
-          "Auralis should not use fake reviews, fake urgency, fake discounts, or unsupported claims. Product details should stay aligned with Shopify and Printify product truth.",
+          "Auralis should not use fake reviews, fake urgency, fake discounts, or unsupported claims. Product details should stay aligned with published product and checkout information.",
       },
     ],
   },
@@ -420,44 +420,44 @@ function setMetaTag(selector: string, attr: string, value: string) {
 
 function ProductImageGallery({ product }: { product: ShopProduct }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const selectedMockup = product.mockups[selectedIndex] ?? product.mockups[0];
+  const selectedPhoto = product.photos[selectedIndex] ?? product.photos[0];
 
   return (
     <div className="product-gallery-card" aria-label={`${product.title} product images`}>
       <div className="product-gallery-main">
-        <img src={selectedMockup.imageUrl} alt={selectedMockup.altText} />
+        <img src={selectedPhoto.imageUrl} alt={selectedPhoto.altText} />
       </div>
-      <div className="product-gallery-thumbs" aria-label={`${product.title} mockup gallery`}>
-        {product.mockups.map((mockup, index) => (
+      <div className="product-gallery-thumbs" aria-label={`${product.title} photo gallery`}>
+        {product.photos.map((photo, index) => (
           <button
-            key={`${mockup.imageUrl}-${mockup.label}`}
+            key={`${photo.imageUrl}-${photo.label}`}
             type="button"
             className={cn("product-gallery-thumb", selectedIndex === index && "is-active")}
             onClick={() => setSelectedIndex(index)}
-            aria-label={`Show ${mockup.label}`}
+            aria-label={`Show ${photo.label}`}
             aria-pressed={selectedIndex === index}
           >
-            <img src={mockup.imageUrl} alt="" loading={index === 0 ? "eager" : "lazy"} />
-            <span>{mockup.label}</span>
+            <img src={photo.imageUrl} alt="" loading={index === 0 ? "eager" : "lazy"} />
+            <span>{photo.label}</span>
           </button>
         ))}
       </div>
       <p className="product-gallery-note">
-        Browse the product mockups here. Shopify opens in a new tab only when you are ready to buy.
+        Browse the product photos here. Shopify opens in a new tab only when you are ready to buy.
       </p>
     </div>
   );
 }
 
-function ProductMockupScroll({ product }: { product: ShopProduct }) {
+function ProductPhotoScroll({ product }: { product: ShopProduct }) {
   return (
     <>
-      <div className="product-card-mockups" aria-label={`${product.title} mockup images`}>
-        {product.mockups.map((mockup, index) => (
+      <div className="product-card-photos" aria-label={`${product.title} product photos`}>
+        {product.photos.map((photo, index) => (
           <img
-            key={`${product.slug}-${mockup.imageUrl}`}
-            src={mockup.imageUrl}
-            alt={mockup.altText}
+            key={`${product.slug}-${photo.imageUrl}`}
+            src={photo.imageUrl}
+            alt={photo.altText}
             loading={index === 0 ? "eager" : "lazy"}
           />
         ))}
@@ -470,7 +470,7 @@ function ProductMockupScroll({ product }: { product: ShopProduct }) {
 function ProductCard({ product }: { product: ShopProduct }) {
   return (
     <article className="product-card">
-      <ProductMockupScroll product={product} />
+      <ProductPhotoScroll product={product} />
       <span className="product-meta">{product.category}</span>
       <h3>{product.title}</h3>
       <p className="product-price">{product.price}</p>
@@ -497,7 +497,7 @@ function ProductCatalogGrid() {
         <span className="section-label">All products</span>
         <h2>Browse the rest of the Auralis Design catalog.</h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Compare mockups, sizes, materials, and product notes before opening Shopify to buy.
+          Compare photos, sizes, materials, and product notes before opening Shopify to buy.
         </p>
       </div>
       <div className="product-catalog-grid">
@@ -509,7 +509,7 @@ function ProductCatalogGrid() {
   );
 }
 
-function HeroMockup() {
+function HeroPreviewGraphic() {
   return (
     <div className="hero-preview-wrap" aria-label="Website preview for a local business homepage">
       <div className="hero-preview">
@@ -838,7 +838,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </Button>
               </div>
             </div>
-            <HeroMockup />
+            <HeroPreviewGraphic />
           </div>
         </section>
 
@@ -896,7 +896,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <span className="section-label"><Store aria-hidden="true" /> Auralis Design Shop</span>
               <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Browse Auralis Design products here with mockups, product details, categories, and home decor notes. When you are ready to buy, secure checkout opens on Shopify.
+                Browse Auralis Design products here with photos, product details, categories, and home decor notes. When you are ready to buy, secure checkout opens on Shopify.
               </p>
             </Reveal>
             <Reveal className="shop-product-layout">
@@ -970,12 +970,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 "Browse products on Auralis Digital",
                 "Open the product on Shopify",
                 "Checkout securely",
-                "Printify prints and fulfills your order",
+                "Production and fulfillment happen after purchase",
               ].map((step, index) => (
                 <div key={step}>
                   <BadgeCheck aria-hidden="true" />
                   <h3>{index + 1}. {step}</h3>
-                  <p>{index === 0 ? "Stay on the brand site while comparing mockups, categories, and product notes." : "The selling and fulfillment steps happen through Shopify and Printify."}</p>
+                  <p>{index === 0 ? "Stay on the brand site while comparing photos, categories, and product notes." : "Checkout happens through Shopify, and production begins after purchase for made-to-order items."}</p>
                 </div>
               ))}
             </Reveal>
@@ -1102,7 +1102,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               </div>
             </Reveal>
             <Reveal>
-              <HeroMockup />
+              <HeroPreviewGraphic />
             </Reveal>
           </div>
         </section>
