@@ -1,23 +1,24 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-05-13
+Last updated: 2026-05-14
 
 ## Current Mode
 
 Repo cleanup is complete. Do not restart cleanup unless something is actively broken.
 
-Auralis Digital currently contains two related public surfaces:
+Auralis Digital currently contains three related public surfaces:
 
-1. website services for local businesses
-2. an Auralis Design product/shop surface with Shopify checkout routing
+1. Auralis Design products
+2. custom / personalized design requests
+3. website design services
 
-Current execution priority remains website services first:
+Current execution priority is:
 
 ```text
-business setup -> trust setup -> lead capture -> outreach -> first client -> proof
+business setup -> trust setup -> inquiry flow -> products/custom design/web design clarity -> first real sale or client -> proof
 ```
 
-The product/shop surface exists, but should not be treated as a mature commerce operation until commerce readiness is verified.
+Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
 
 ---
 
@@ -39,7 +40,7 @@ Goal: make Auralis ready to accept money cleanly and credibly.
 
 ## Phase 2 - Trust Setup
 
-Goal: reduce new-business trust friction before outreach.
+Goal: reduce trust friction before outreach or traffic.
 
 - [ ] Set up domain email such as `hello@auralisdigital.net`.
 - [ ] Replace public Gmail references where appropriate.
@@ -47,39 +48,42 @@ Goal: reduce new-business trust friction before outreach.
 - [ ] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
 - [ ] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
 - [ ] Trigger GitHub Pages deploy after contact env is configured.
-- [ ] Submit test form from desktop on the live site.
-- [ ] Submit test form from phone on the live site.
+- [ ] Submit test inquiry from desktop on the live site.
+- [ ] Submit test inquiry from phone on the live site.
 - [ ] Confirm no mailto window opens after production env is configured.
 - [ ] Confirm submission arrives in Formspree/inbox.
-- [ ] Confirm success state appears after form submission.
+- [ ] Confirm success state appears after inquiry submission.
 - [ ] Confirm no visible console/network errors during form submission.
 - [ ] Create or complete Google Business Profile.
 - [ ] Confirm public phone/contact path.
 - [ ] Decide service-area/address policy for public listings.
 - [ ] Keep sample builds labeled as sample/demo work.
-- [ ] Do not add testimonials until a real client approves one.
-- [ ] Confirm no fake client logos, reviews, or case studies appear on public surfaces.
+- [ ] Do not add testimonials until a real customer or client approves one.
+- [ ] Confirm no fake client logos, reviews, discounts, urgency, or case studies appear on public surfaces.
 
 ---
 
 ## Phase 3 - Brand / Public-Positioning Clarity
 
-Goal: prevent confusion between the website-services business and the Auralis Design product/shop surface.
+Goal: keep the three-pillar public direction understandable.
 
 - [ ] Confirm long-term relationship between `Auralis Digital` and `Auralis Design`.
-- [ ] Patch homepage hero/meta positioning so website services remain primary while the shop stays secondary.
-- [ ] Confirm homepage CTA order matches website-services-first execution priority.
-- [ ] Confirm navigation clearly separates Shop and Website Services.
-- [ ] Confirm website-services prospects can find contact/intake without being confused by product-shop content.
+- [ ] Verify live homepage behavior after deploy.
+- [ ] Confirm homepage acts as a brand gateway instead of a product catalog.
+- [ ] Confirm homepage routes visitors toward Products, Custom Design, and Website Design.
+- [ ] Confirm no product pricing appears on the homepage.
+- [ ] Confirm navigation clearly separates Products, Custom Design, and Website Design.
+- [ ] Confirm website-design prospects can find contact/intake without confusion.
+- [ ] Confirm custom-design visitors understand request boundaries.
 - [ ] Confirm product buyers understand checkout opens through Shopify.
-- [ ] Confirm public copy does not imply Auralis Digital collects product payments directly.
+- [ ] Confirm public copy does not imply Auralis Digital processes card payments directly.
 - [ ] Confirm public copy does not imply the product/shop surface is fully mature until commerce readiness is verified.
 
 ---
 
-## Phase 4 - Outreach
+## Phase 4 - Outreach / Traffic
 
-Goal: generate real conversations.
+Goal: generate real conversations and real purchase intent.
 
 Use:
 
@@ -90,26 +94,29 @@ Use:
 
 Weekly targets:
 
-- [ ] 25 prospects researched.
-- [ ] 10 outreach messages sent.
+- [ ] 25 prospects or potential buyers researched.
+- [ ] 10 outreach messages or traffic pushes.
 - [ ] 5 follow-ups sent.
 - [ ] 2 real conversations started.
-- [ ] 1 proposal sent.
+- [ ] 1 proposal, quote, or product inquiry response sent.
 
 Execution tasks:
 
-- [ ] Pick one local niche for the first outreach push.
-- [ ] Add qualified prospects to `leads/LEADS_ACTIVE_OUTREACH.csv`.
-- [ ] Record each outreach attempt.
+- [ ] Pick one first execution lane:
+  - products
+  - custom design
+  - website design
+- [ ] Add qualified prospects or buyers to tracking.
+- [ ] Record each outreach or inquiry response.
 - [ ] Record each follow-up.
-- [ ] Move interested leads into intake.
+- [ ] Move interested people into intake.
 - [ ] Use third-party website audit/rebuild consultation path when the prospect already has a non-Auralis site.
 
 ---
 
-## Phase 5 - First Client
+## Phase 5 - First Real Transaction Or Client
 
-Goal: deliver one real engagement end to end.
+Goal: complete one real engagement end to end.
 
 Use:
 
@@ -123,9 +130,9 @@ Use:
 - [ ] Confirm scope, timeline, price, payment, and revision limits.
 - [ ] Get written approval or signed agreement.
 - [ ] Collect payment or deposit.
-- [ ] Build and review.
-- [ ] Launch or hand off.
-- [ ] Confirm final client ownership/access expectations.
+- [ ] Build, design, or fulfill.
+- [ ] Launch, deliver, or hand off.
+- [ ] Confirm final ownership/access expectations.
 - [ ] Confirm any care-plan eligibility at handoff.
 
 ---
@@ -142,22 +149,22 @@ Use:
 
 - [ ] Ask for testimonial.
 - [ ] Ask for portfolio permission.
-- [ ] Capture screenshots.
+- [ ] Capture screenshots or product proof.
 - [ ] Publish live URL where allowed.
 - [ ] Write case study.
-- [ ] Offer the care plan.
+- [ ] Offer the care plan when relevant.
 - [ ] Add real testimonial only after explicit approval.
-- [ ] Keep demo/sample work clearly labeled until tied to real client permission.
+- [ ] Keep demo/sample work clearly labeled until tied to real permission.
 
 ---
 
 ## Phase 7 - Product / Commerce Readiness
 
-Goal: verify the Auralis Design shop/product surface before treating it as a mature commerce operation.
+Goal: verify the Auralis product surface before treating it as a mature commerce operation.
 
 - [ ] Verify Shopify product links from the live site.
 - [ ] Verify Shopify checkout flow.
-- [ ] Verify Auralis Digital local policy links.
+- [ ] Verify local Auralis policy/support pages.
 - [ ] Publish or verify Shopify refund policy link.
 - [ ] Publish or verify Shopify shipping policy link.
 - [ ] Verify Shopify privacy policy link.
@@ -167,6 +174,12 @@ Goal: verify the Auralis Design shop/product surface before treating it as a mat
 - [ ] Confirm shipping settings.
 - [ ] Run a real Shopify test order.
 - [ ] Verify Printify fulfillment flow for Printify products.
+- [ ] Remove Printify from customer-facing website copy before public product traffic.
+  - [ ] Confirm no `Printify` text appears in `src/components/AuralisHomepage.tsx`.
+  - [ ] Confirm no `Printify` text appears in `src/data/shopCatalog.ts`.
+  - [ ] Confirm no `Printify` text appears in `scripts/generate-route-pages.mjs` route metadata.
+  - [ ] Confirm live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` pages do not visibly mention Printify.
+  - [ ] Keep Printify references allowed in internal docs/checklists where fulfillment setup is being tracked.
 - [ ] Confirm production/fulfillment timing expectations.
 - [ ] Confirm customer support email/path.
 - [ ] Confirm product margin/profit assumptions.
@@ -177,22 +190,37 @@ Goal: verify the Auralis Design shop/product surface before treating it as a mat
 
 ---
 
-## Phase 8 - Issue Cleanup
+## Phase 8 - Custom Design Readiness
+
+Goal: verify the custom-design request flow before treating it as a mature service.
+
+- [ ] Confirm custom-design inquiry flow works on desktop and phone.
+- [ ] Confirm custom-design request boundaries are visible publicly.
+- [ ] Confirm pricing/revision expectations are not misleading.
+- [ ] Confirm file-transfer/reference-image workflow.
+- [ ] Confirm delivery/export workflow.
+- [ ] Confirm rights/usage expectations for custom work.
+- [ ] Confirm copyrighted-character/logo policy.
+- [ ] Complete one real custom-design request.
+
+---
+
+## Phase 9 - Issue Cleanup
 
 Goal: make open GitHub issues match current repo truth.
 
 - [ ] Review issue #9 and confirm whether the third-party audit offer is fully implemented across all listed docs.
 - [ ] Patch any remaining issue #9 docs if needed.
 - [ ] Close issue #9 only after listed acceptance items are checked.
-- [ ] Review issue #3 because React/Vite appears already present.
+- [ ] Review issue #3 because React/Vite and direct-route support are already present.
 - [ ] Close or rewrite issue #3 as deployment verification if still relevant.
-- [ ] Review issue #2 before editing because it references `index.html` while current source also includes React/Vite.
-- [ ] Verify whether duplicate demo cards still appear in the active live homepage source.
-- [ ] Keep issue #1 low priority until trust setup, contact backend, outreach, and first-client proof are handled.
+- [ ] Review issue #2 before editing because it references older source assumptions.
+- [ ] Verify whether duplicate demo cards still appear in the active live source.
+- [ ] Keep issue #1 low priority until trust setup, checkout verification, and first proof are handled.
 
 ---
 
-## Phase 9 - Deployment / Technical Guardrails
+## Phase 10 - Deployment / Technical Guardrails
 
 Goal: avoid breaking the live site while executing business work.
 
@@ -209,6 +237,6 @@ Goal: avoid breaking the live site while executing business work.
 
 ## Anti-Stall Rule
 
-Do not confuse planning with progress. Revenue comes from conversations, delivery, and proof.
+Do not confuse planning with progress. Revenue and proof come from real visitors, real conversations, real transactions, and real delivery.
 
-If a task does not support business setup, trust setup, lead capture, outreach, first-client delivery, proof, retention, or verified commerce readiness, defer it.
+If a task does not support business setup, trust setup, inquiry flow, outreach, first-client delivery, first sale, proof, retention, or verified commerce readiness, defer it.

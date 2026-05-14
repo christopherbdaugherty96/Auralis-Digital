@@ -1,55 +1,74 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-05-13
+Last updated: 2026-05-14
 
 This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
 
 ## Current Public Direction
 
-Auralis Digital currently contains two related public surfaces:
+Auralis Digital currently contains three related public surfaces:
 
-1. **Auralis Digital website services**
-   - local-business website services
-   - lead-capture and conversion-focused web design
-   - website refreshes for Auralis-built sites
-   - managed hosting and care support
-
-2. **Auralis Design product/shop surface**
+1. **Auralis Design products**
    - product catalog and product mockups
+   - local Auralis product/support policy pages
    - Shopify checkout links
    - Printify fulfillment references for Printify products
-   - Auralis Design product branding
 
-The current React/Vite source reflects both surfaces.
+2. **Custom / personalized design requests**
+   - personal artwork ideas
+   - image, phrase, symbol, or theme-based requests
+   - product concept requests for gifts, apparel, wall art, mugs, blankets, journals, canvas, and related formats
 
-Current business execution priority remains:
+3. **Website design services**
+   - local-business and creator website design
+   - website refreshes for Auralis-built sites
+   - third-party website audit/rebuild consultation path
+   - managed hosting and care support
+
+The current React/Vite source reflects the three-pillar direction.
+
+Current execution priority is:
 
 ```text
-website services
-trust setup
-lead capture
-outreach
-first client delivery
+brand clarity
+reliable inquiry flow
+products/custom design/web design offer clarity
+Shopify checkout verification
+first real sale or client
 real proof
 ```
 
-The shop/product surface exists publicly, but it should not replace or distract from the current execution priority unless the business focus is intentionally changed.
+Website design remains an active Auralis service, but it is no longer the sole core idea. The product and custom-design surfaces are also first-class parts of the public direction.
 
 ## What Is Real Right Now
 
 - Auralis Digital has a live public website.
 - The repo uses a Vite/React frontend with GitHub Pages deployment.
-- The website-service offer is defined:
+- The source supports public routes for:
+  - `/`
+  - `/products`
+  - `/shop` as a products alias
+  - `/custom-design`
+  - `/web-design`
+  - `/websites`
+  - `/refund-policy`
+  - `/shipping-policy`
+  - `/privacy-policy`
+  - `/terms-of-service`
+- The homepage is intended to act as a brand gateway for Products, Custom Design, and Website Design instead of a product catalog.
+- Product/shop catalog data currently lives in `src/data/shopCatalog.ts`.
+- Shopify is currently framed as the checkout/payment/order source of truth.
+- Printify is currently referenced as fulfillment for Printify products.
+- Auralis Digital local policy/support pages exist for refund, shipping, privacy, and terms guidance.
+- Footer policy links point to local Auralis policy/support pages.
+- Route-specific static metadata generation is implemented through `scripts/generate-route-pages.mjs` for main public routes and policy routes.
+- The website-design offer is defined:
   - local business websites
   - refreshes for Auralis-built sites
   - lead capture
   - ongoing website care
   - third-party website audit/rebuild consultation path
-- The React source also contains an active Auralis Design product/shop surface.
-- Product/shop catalog data currently lives in `src/data/shopCatalog.ts`.
-- Shopify is currently framed as the checkout/payment/order source of truth.
-- Printify is currently referenced as fulfillment for Printify products.
-- Starting pricing exists:
+- Starting website-design pricing exists:
   - $250 refresh for Auralis-built sites
   - $150-$300 third-party website audit/rebuild consultation
   - $500+ basic website
@@ -62,7 +81,6 @@ The shop/product surface exists publicly, but it should not replace or distract 
   - website and deployment docs in `docs/tech/`
   - internal build workflow in `docs/internal/AURALIS_SITE_STUDIO.md`
 - Portfolio/demo work should be treated as sample builds unless tied to a real delivered client.
-- The strongest immediate business bottleneck is not documentation. It is trust setup plus first-client execution.
 
 ## Legal and Business Formation Gaps
 
@@ -83,27 +101,34 @@ The shop/product surface exists publicly, but it should not replace or distract 
 
 ## Website-Service Operational Gaps
 
-- No completed end-to-end client delivery is confirmed.
+- No completed end-to-end website client delivery is confirmed.
 - Scope, revision, payment, and handoff docs exist, but have not yet been tested against a real engagement.
-- The first signed agreement, first payment, first delivery, and first testimonial are still the execution threshold.
+- The first signed website agreement, first website payment, first delivery, and first testimonial are still unconfirmed.
 
-## Product/Commerce Operational Gaps
+## Product / Commerce Operational Gaps
 
-The shop/product surface exists technically, but commerce readiness is not yet fully confirmed in current docs.
+The product surface exists technically, and local Auralis policy/support pages exist, but commerce readiness is not yet fully confirmed.
 
 Not yet confirmed in repo truth:
 
-- Shopify production readiness
+- Shopify production checkout readiness
 - Shopify payment/tax/shipping review
+- Shopify-hosted refund, shipping, and terms policy publishing or verification
+- full incognito add-to-cart/checkout test up to final payment confirmation
 - Printify test-order verification
 - fulfillment QA
-- refund/shipping workflow verification
+- refund/shipping workflow verification inside Shopify checkout
 - support-email workflow
 - product-margin review
 - artwork/product-rights workflow
-- public commerce readiness checklist
 
 The product/shop surface should not be treated as a fully mature commerce operation until these are validated.
+
+## Custom Design Operational Gaps
+
+- No completed custom/personalized design request is confirmed in repo truth.
+- Custom design pricing, revision, file-transfer, usage-rights, and delivery workflow still need real-world validation.
+- Custom requests should be reviewed before acceptance, especially when they involve copyrighted characters, logos, unclear usage rights, offensive content, or work that cannot be produced cleanly.
 
 ## Priority Order
 
@@ -113,34 +138,34 @@ The product/shop surface should not be treated as a fully mature commerce operat
 4. Set up domain email.
 5. Set up invoicing/payment processing.
 6. Configure and verify the live contact-form backend.
-7. Create or complete Google Business Profile.
-8. Contact qualified prospects using the `leads/` materials.
-9. Close and deliver one real client, even if discounted.
-10. Publish one live URL, testimonial, and case study.
-11. Offer the care plan at handoff.
-12. Separately verify Shopify/Printify commerce readiness if the product surface remains public-facing.
+7. Verify the three-pillar live site flow on phone and desktop.
+8. Publish or verify Shopify-hosted refund, shipping, and terms policies.
+9. Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.
+10. Create or complete Google Business Profile.
+11. Start focused outreach or traffic for one branch at a time: products, custom design, or website design.
+12. Close one real sale or client engagement.
+13. Publish real proof only after permission or confirmation.
 
 ## Do Not Do Right Now
 
-- Do not fake testimonials, reviews, client logos, or case studies.
+- Do not fake testimonials, reviews, client logos, sales, urgency, discounts, or case studies.
 - Do not relabel sample builds as client work.
 - Do not keep creating overlapping status documents.
-- Do not prioritize visual polish over legal setup, domain email, payment flow, outreach, and first delivery.
 - Do not edit `gh-pages` manually or merge it into `main`.
 - Do not treat copied static HTML as stale without checking the deployment workflow.
 - Do not offer the standard Website Refresh for websites Auralis did not originally build. Third-party sites should start with an audit, rebuild, migration, or custom quote.
-- Do not imply the product/shop surface is a fully mature commerce operation until checkout, fulfillment, policy, and support readiness are verified.
+- Do not imply the product/shop surface is fully mature until Shopify checkout, fulfillment, policy, and support readiness are verified.
+- Do not add custom checkout, cart, payment, Shopify Admin API, or Printify API logic to the public site without a separate implementation review.
 
 ## Current Repo and Deployment Truth
 
 - `main` is current.
-- PR #7 has been merged into `main`.
-- The reconciliation and delayed cleanup branches have been mined and deleted.
 - `gh-pages` should remain.
 - `main` is the source of truth for code and documentation.
 - GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 - `gh-pages` is generated deployment output.
 - Static HTML under copied folders such as `website/`, `projects/`, and `service-areas/` is active deployment input.
+- Route-specific static metadata is generated during deployment by `scripts/generate-route-pages.mjs`.
 - The repo currently contains both React/Vite routes and copied static deployment inputs.
 - See `docs/tech/DEPLOYMENT_TRUTH.md` before changing hosting, deployment, or static HTML files.
 
@@ -150,14 +175,11 @@ Use `active/NEXT_STEPS_TODO.md` as the active execution checklist.
 
 Current correct sequence:
 
-1. file or confirm the LLC
-2. get the EIN
-3. open the bank account
-4. configure domain email
-5. configure the real contact-form backend
-6. set up payments
-7. execute outreach
-8. deliver the first real client
-9. collect proof
-
-One completed real client will solve more trust problems than another round of website polish.
+1. finish business/contact trust setup
+2. verify live contact/inquiry flow
+3. verify live three-pillar navigation on phone and desktop
+4. publish or verify Shopify-hosted refund, shipping, and terms policies
+5. run Shopify checkout test up to final payment confirmation
+6. choose one first execution lane: product sale, custom design request, or website design client
+7. complete one real transaction or engagement
+8. collect real proof only after permission or confirmation
