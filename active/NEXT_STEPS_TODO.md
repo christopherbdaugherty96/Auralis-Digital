@@ -174,6 +174,12 @@ Goal: verify the Auralis product surface before treating it as a mature commerce
 - [ ] Confirm shipping settings.
 - [ ] Run a real Shopify test order.
 - [ ] Verify Printify fulfillment flow for Printify products.
+- [ ] Remove Printify from customer-facing website copy before public product traffic.
+  - [ ] Confirm no `Printify` text appears in `src/components/AuralisHomepage.tsx`.
+  - [ ] Confirm no `Printify` text appears in `src/data/shopCatalog.ts`.
+  - [ ] Confirm no `Printify` text appears in `scripts/generate-route-pages.mjs` route metadata.
+  - [ ] Confirm live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` pages do not visibly mention Printify.
+  - [ ] Keep Printify references allowed in internal docs/checklists where fulfillment setup is being tracked.
 - [ ] Confirm production/fulfillment timing expectations.
 - [ ] Confirm customer support email/path.
 - [ ] Confirm product margin/profit assumptions.
