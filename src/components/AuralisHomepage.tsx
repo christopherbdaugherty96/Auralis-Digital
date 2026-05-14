@@ -29,7 +29,6 @@ import {
   productTrustSteps,
   productUseCases,
   shopFaqs,
-  shopCategories,
   shopProducts,
   type ShopProduct,
 } from "@/data/shopCatalog";
@@ -293,6 +292,125 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
     description: "Browse example website builds and demo directions from Auralis Digital.",
     canonicalPath: "/websites",
   },
+  "refund-policy": {
+    title: "Refund Policy | Auralis Digital",
+    description:
+      "Review Auralis Digital refund and support guidance for product purchases, custom design requests, and website design work.",
+    canonicalPath: "/refund-policy",
+  },
+  "shipping-policy": {
+    title: "Shipping Policy | Auralis Digital",
+    description:
+      "Review shipping and fulfillment guidance for Auralis Design products fulfilled through Shopify and Printify.",
+    canonicalPath: "/shipping-policy",
+  },
+  "privacy-policy": {
+    title: "Privacy Policy | Auralis Digital",
+    description:
+      "Review privacy guidance for Auralis Digital inquiries, product browsing, Shopify checkout links, and website contact forms.",
+    canonicalPath: "/privacy-policy",
+  },
+  "terms-of-service": {
+    title: "Terms of Service | Auralis Digital",
+    description:
+      "Review Auralis Digital terms for product browsing, Shopify checkout links, custom design requests, and website design inquiries.",
+    canonicalPath: "/terms-of-service",
+  },
+};
+
+const policyPages = {
+  "refund-policy": {
+    eyebrow: "Refund Policy",
+    title: "Refunds and issue support.",
+    intro:
+      "Auralis Digital displays products and accepts inquiries. Product purchases are completed through Shopify, and Printify products are produced and fulfilled after purchase.",
+    sections: [
+      {
+        title: "Product orders",
+        copy:
+          "If something is wrong with a product order, contact Auralis with the product name, order details, photos if relevant, and a short description of the issue. Auralis will review the request and help route the next step through the proper Shopify or fulfillment path.",
+      },
+      {
+        title: "Custom design and website work",
+        copy:
+          "Custom design and website projects are reviewed before acceptance. Scope, pricing, timeline, revision limits, and payment terms should be confirmed before paid work begins.",
+      },
+      {
+        title: "Before public traffic",
+        copy:
+          "Shopify-hosted refund settings should still be published and verified before serious product traffic is sent to Shopify checkout.",
+      },
+    ],
+  },
+  "shipping-policy": {
+    eyebrow: "Shipping Policy",
+    title: "Shipping and fulfillment expectations.",
+    intro:
+      "Auralis Design products shown on this site open through Shopify when a visitor is ready to buy. Printify handles production and fulfillment for Printify products.",
+    sections: [
+      {
+        title: "Produced after purchase",
+        copy:
+          "Many Printify products are made after an order is placed. That means timing can vary by product, destination, production queue, and carrier conditions.",
+      },
+      {
+        title: "Shipping details",
+        copy:
+          "Final shipping options, shipping price, tax handling, and delivery estimates should be confirmed inside Shopify checkout before payment.",
+      },
+      {
+        title: "Support",
+        copy:
+          "For shipping questions, include the product name, Shopify order details, and the email used at checkout so the request can be reviewed.",
+      },
+    ],
+  },
+  "privacy-policy": {
+    eyebrow: "Privacy Policy",
+    title: "How Auralis handles visitor information.",
+    intro:
+      "Auralis Digital keeps browsing and inquiries separate from checkout. Product checkout, payment, and order records are handled through Shopify.",
+    sections: [
+      {
+        title: "Inquiry information",
+        copy:
+          "If you send a contact or project request, Auralis receives the information you choose to provide, such as name, email, business or project name, inquiry type, budget range, timeline, and details.",
+      },
+      {
+        title: "Product checkout",
+        copy:
+          "Auralis Digital does not collect card details or run checkout on this website. Clearly labeled buy buttons open Shopify in a new tab.",
+      },
+      {
+        title: "Third-party services",
+        copy:
+          "Shopify, Printify, form providers, analytics tools, hosting providers, and email providers may process information according to their own policies when those tools are used.",
+      },
+    ],
+  },
+  "terms-of-service": {
+    eyebrow: "Terms of Service",
+    title: "Using Auralis Digital.",
+    intro:
+      "Auralis Digital is a creative brand website for products, custom design requests, and website design inquiries. It is not a custom checkout, cart, tax, or shipping calculator.",
+    sections: [
+      {
+        title: "Product browsing",
+        copy:
+          "Product pages on Auralis Digital are for display and product information. Purchases happen through Shopify when a visitor uses a clearly labeled Shopify button.",
+      },
+      {
+        title: "Custom requests",
+        copy:
+          "Custom design and website requests are reviewed before acceptance. Auralis may decline requests involving unclear rights, copyrighted characters or logos, offensive content, unrealistic timelines, or work that cannot be produced cleanly.",
+      },
+      {
+        title: "No unsupported claims",
+        copy:
+          "Auralis should not use fake reviews, fake urgency, fake discounts, or unsupported claims. Product details should stay aligned with Shopify and Printify product truth.",
+      },
+    ],
+  },
 };
 
 function setMetaTag(selector: string, attr: string, value: string) {
@@ -333,16 +451,19 @@ function ProductImageGallery({ product }: { product: ShopProduct }) {
 
 function ProductMockupScroll({ product }: { product: ShopProduct }) {
   return (
-    <div className="product-card-mockups" aria-label={`${product.title} mockup images`}>
-      {product.mockups.map((mockup, index) => (
-        <img
-          key={`${product.slug}-${mockup.imageUrl}`}
-          src={mockup.imageUrl}
-          alt={mockup.altText}
-          loading={index === 0 ? "eager" : "lazy"}
-        />
-      ))}
-    </div>
+    <>
+      <div className="product-card-mockups" aria-label={`${product.title} mockup images`}>
+        {product.mockups.map((mockup, index) => (
+          <img
+            key={`${product.slug}-${mockup.imageUrl}`}
+            src={mockup.imageUrl}
+            alt={mockup.altText}
+            loading={index === 0 ? "eager" : "lazy"}
+          />
+        ))}
+      </div>
+      <p className="product-card-swipe">Swipe photos</p>
+    </>
   );
 }
 
@@ -367,40 +488,22 @@ function ProductCard({ product }: { product: ShopProduct }) {
   );
 }
 
-function CategoryShopSections() {
-  return (
-    <Reveal className="category-shop-wrap">
-      <div className="category-chip-row" aria-label="Shop product categories">
-        {shopCategories.map((category) => (
-          <a key={category.name} href={`#category-${category.name.toLowerCase().replace(/\s+/g, "-")}`}>
-            {category.name}
-          </a>
-        ))}
-      </div>
-      <div className="category-section-grid">
-        {shopCategories.map((category) => {
-          const products = shopProducts.filter((product) => product.category === category.name);
-          const categoryId = `category-${category.name.toLowerCase().replace(/\s+/g, "-")}`;
+function ProductCatalogGrid() {
+  const catalogProducts = shopProducts.filter((product) => product.slug !== featuredProduct.slug);
 
-          return (
-            <section key={category.name} id={categoryId} className="category-panel" aria-labelledby={`${categoryId}-title`}>
-              <div className="category-panel-header">
-                <h3 id={`${categoryId}-title`}>{category.name}</h3>
-                <span>{products.length ? `${products.length} product${products.length === 1 ? "" : "s"}` : "Coming soon"}</span>
-              </div>
-              <p className="category-description">{category.description}</p>
-              {products.length ? (
-                <div className="category-product-row">
-                  {products.map((product) => (
-                    <ProductCard key={product.slug} product={product} />
-                  ))}
-                </div>
-              ) : (
-                <p className="category-empty">This category is ready for future Auralis Design products.</p>
-              )}
-            </section>
-          );
-        })}
+  return (
+    <Reveal className="product-catalog-section">
+      <div className="section-heading compact">
+        <span className="section-label">All products</span>
+        <h2>Browse the rest of the Auralis Design catalog.</h2>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Compare mockups, sizes, materials, and product notes before opening Shopify to buy.
+        </p>
+      </div>
+      <div className="product-catalog-grid">
+        {catalogProducts.map((product) => (
+          <ProductCard key={product.slug} product={product} />
+        ))}
       </div>
     </Reveal>
   );
@@ -448,6 +551,39 @@ function HeroMockup() {
         );
       })}
     </div>
+  );
+}
+
+function PolicyPageContent({ page }: { page: PolicyPage }) {
+  const policy = policyPages[page];
+
+  return (
+    <section className="content-section policy-page">
+      <div className="site-shell">
+        <Reveal className="section-heading">
+          <span className="section-label">{policy.eyebrow}</span>
+          <h1>{policy.title}</h1>
+          <p className="mt-4 text-lg leading-8 text-muted-foreground">{policy.intro}</p>
+        </Reveal>
+        <div className="policy-grid">
+          {policy.sections.map((section) => (
+            <Reveal key={section.title} className="service-card">
+              <h2>{section.title}</h2>
+              <p>{section.copy}</p>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal className="policy-support-card">
+          <h2>Need help with an order or request?</h2>
+          <p>
+            Email Auralis with the product name, Shopify order details if available, and a short description of what happened.
+          </p>
+          <Button variant="conversion" size="lg" asChild>
+            <a href={MAILTO}>Contact Auralis</a>
+          </Button>
+        </Reveal>
+      </div>
+    </section>
   );
 }
 
@@ -573,10 +709,24 @@ const NAV_LINKS = [
 ];
 
 const POLICY_LINKS = [
-  { label: "Privacy Policy", href: "https://auralis-design.myshopify.com/policies/privacy-policy" },
+  { label: "Refund Policy", href: "/refund-policy" },
+  { label: "Shipping Policy", href: "/shipping-policy" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
 ];
 
-type AuralisPage = "home" | "shop" | "custom-design" | "web-design" | "websites";
+type AuralisPage =
+  | "home"
+  | "shop"
+  | "custom-design"
+  | "web-design"
+  | "websites"
+  | "refund-policy"
+  | "shipping-policy"
+  | "privacy-policy"
+  | "terms-of-service";
+
+type PolicyPage = keyof typeof policyPages;
 
 export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage }) {
   const scrollY = useReducedMotionAwareScroll();
@@ -586,6 +736,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   const isCustomDesign = page === "custom-design";
   const isWebDesign = page === "web-design";
   const isWebsites = page === "websites";
+  const isPolicyPage = page in policyPages;
 
   useEffect(() => {
     const meta = pageMeta[page];
@@ -736,12 +887,14 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Shop ────────────────────────────────────────── */}
+        {isPolicyPage && <PolicyPageContent page={page as PolicyPage} />}
+
         {isShop && (
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label"><Store aria-hidden="true" /> Auralis Design Shop</span>
-              <h2 id="shop-preview-title">Shop the Zeus collection from Auralis Design.</h2>
+              <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Browse Auralis Design products here with mockups, product details, categories, and home decor notes. When you are ready to buy, secure checkout opens on Shopify.
               </p>
@@ -780,6 +933,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </div>
               </div>
             </Reveal>
+            <ProductCatalogGrid />
             <Reveal className="product-marketing-grid">
               <div className="product-story-panel">
                 <span className="product-meta">Why you'll like it</span>
@@ -798,7 +952,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   ))}
                 </div>
                 <p>
-                  The Zeus collection now includes cozy blankets, paper goods, drinkware, and wall art for home decor, creative spaces, and simple gift ideas.
+                  The Auralis Design catalog includes cozy blankets, paper goods, drinkware, and wall art for home decor, creative spaces, and simple gift ideas.
                 </p>
               </div>
             </Reveal>
@@ -850,7 +1004,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 ))}
               </div>
             </Reveal>
-            <CategoryShopSections />
           </div>
         </section>
         )}
@@ -927,6 +1080,34 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Example work ────────────────────────────────── */}
+        {isWebDesign && (
+        <section className="section-band">
+          <div className="site-shell grid items-center gap-10 lg:grid-cols-[0.92fr_1fr] lg:gap-14">
+            <Reveal className="section-heading compact">
+              <span className="section-label">Website preview</span>
+              <h2>Look trusted before customers call.</h2>
+              <p className="mt-4 text-lg leading-8 text-muted-foreground">
+                Auralis website design focuses on the first few seconds: a polished mobile view, clear service message, local trust signals, and an obvious contact path.
+              </p>
+              <div className="mt-7 grid gap-3 sm:grid-cols-2">
+                {benefits.map((benefit) => {
+                  const Icon = benefit.icon;
+                  return (
+                    <div key={benefit.label} className="web-preview-benefit">
+                      <Icon aria-hidden="true" />
+                      <span>{benefit.label}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </Reveal>
+            <Reveal>
+              <HeroMockup />
+            </Reveal>
+          </div>
+        </section>
+        )}
+
         {isWebsites && (
         <section id="work" className="section-band">
           <div className="site-shell">
@@ -1301,8 +1482,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <a
                     key={link.label}
                     href={link.href}
-                    target="_blank"
-                    rel="noopener"
                     className="text-sm text-muted-foreground hover:text-primary"
                   >
                     {link.label}

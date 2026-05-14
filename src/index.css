@@ -164,6 +164,8 @@ All colors MUST be HSL.
   .hero-card-two { @apply right-0 top-8; animation-delay: 0.2s; }
   .hero-card-three { @apply bottom-20 left-4; animation-delay: 0.4s; }
   .hero-card-four { @apply bottom-10 right-2; animation-delay: 0.6s; }
+  .web-preview-benefit { @apply inline-flex items-center gap-2 rounded-2xl border border-card/80 bg-card/70 px-4 py-3 text-sm font-extrabold text-foreground shadow-soft backdrop-blur-xl; }
+  .web-preview-benefit svg { @apply size-5 shrink-0 text-primary; }
   .section-band, .content-section, .final-cta-section { @apply relative py-20 sm:py-24; }
   .section-band { @apply bg-card/30 backdrop-blur-sm; }
   .section-heading { @apply mx-auto mb-12 max-w-3xl text-center; }
@@ -241,12 +243,22 @@ All colors MUST be HSL.
   .product-card { @apply block h-full rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-4 text-foreground no-underline shadow-soft backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
   .product-card-mockups { @apply mb-5 flex gap-3 overflow-x-auto pb-2; scroll-snap-type: x mandatory; scrollbar-width: thin; }
   .product-card-mockups img { @apply aspect-square min-w-full max-w-full shrink-0 rounded-[1.15rem] object-cover shadow-soft; scroll-snap-align: start; }
+  .product-card-swipe { @apply -mt-3 mb-4 text-xs font-black uppercase tracking-[0.14em] text-muted-foreground; }
   .product-meta { @apply mb-3 inline-flex rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-[0.12em] text-primary; }
   .product-card h3 { @apply mb-2 text-2xl font-black; }
   .product-price { @apply mb-3 text-3xl font-black text-foreground; }
   .product-description { @apply text-sm leading-7 text-muted-foreground; }
   .product-button { @apply mt-5 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-black text-primary-foreground shadow-conversion transition-transform duration-300; }
   .product-card:hover .product-button { @apply translate-x-1; }
+  .product-catalog-section { @apply mt-14; }
+  .product-catalog-grid { @apply grid gap-5 md:grid-cols-2 xl:grid-cols-3; }
+  .policy-page { @apply pt-32; }
+  .policy-page .section-heading h1 { @apply text-4xl font-black leading-tight sm:text-6xl; }
+  .policy-grid { @apply grid gap-5 md:grid-cols-3; }
+  .policy-grid h2 { @apply mb-3 text-xl font-black; }
+  .policy-support-card { @apply mt-8 rounded-[1.5rem] border border-primary/20 bg-primary/5 p-6 shadow-soft backdrop-blur-xl sm:p-8; }
+  .policy-support-card h2 { @apply mb-3 text-2xl font-black; }
+  .policy-support-card p { @apply mb-5 max-w-3xl leading-7 text-muted-foreground; }
   .icon-tile { @apply mb-6 flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary; }
   .icon-tile.large { @apply mx-auto size-14; }
   .service-card h3, .concept-card h3, .process-step h3 { @apply mb-3 text-xl font-black; }

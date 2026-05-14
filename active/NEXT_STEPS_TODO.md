@@ -157,10 +157,11 @@ Goal: verify the Auralis Design shop/product surface before treating it as a mat
 
 - [ ] Verify Shopify product links from the live site.
 - [ ] Verify Shopify checkout flow.
-- [ ] Verify refund policy link.
-- [ ] Verify shipping policy link.
-- [ ] Verify privacy policy link.
-- [ ] Verify terms-of-service link.
+- [ ] Verify Auralis Digital local policy links.
+- [ ] Publish or verify Shopify refund policy link.
+- [ ] Publish or verify Shopify shipping policy link.
+- [ ] Verify Shopify privacy policy link.
+- [ ] Publish or verify Shopify terms-of-service link.
 - [ ] Confirm Shopify payment settings.
 - [ ] Confirm tax settings.
 - [ ] Confirm shipping settings.

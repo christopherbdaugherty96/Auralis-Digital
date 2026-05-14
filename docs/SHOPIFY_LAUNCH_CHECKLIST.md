@@ -38,14 +38,15 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 
 ## Policies And Contact
 
-- [ ] Refund Policy link is visible.
-- [ ] Shipping Policy link is visible.
-- [ ] Privacy Policy link is visible.
-- [ ] Terms of Service link is visible.
-- [ ] Refund Policy opens publicly from incognito without `404`.
-- [ ] Shipping Policy opens publicly from incognito without `404`.
-- [x] Privacy Policy opens publicly from incognito without the Shopify password gate.
-- [ ] Terms of Service opens publicly from incognito without `404`.
+- [ ] Auralis Digital Refund Policy link is visible.
+- [ ] Auralis Digital Shipping Policy link is visible.
+- [ ] Auralis Digital Privacy Policy link is visible.
+- [ ] Auralis Digital Terms of Service link is visible.
+- [ ] Auralis Digital policy pages open publicly from incognito without `404`.
+- [ ] Shopify-hosted Refund Policy is published or checkout clearly links to the correct policy.
+- [ ] Shopify-hosted Shipping Policy is published or checkout clearly links to the correct policy.
+- [x] Shopify-hosted Privacy Policy opens publicly from incognito without the Shopify password gate.
+- [ ] Shopify-hosted Terms of Service is published or checkout clearly links to the correct policy.
 - [ ] Contact email is visible.
 
 ## Mobile And Customer Flow

@@ -46,18 +46,14 @@ These items came from the post-merge review of the shop-first Auralis Digital up
 
 Update: the source has since moved to a three-pillar brand structure: Products, Custom Design, and Website Design. Older shop-first homepage notes below should be read as historical findings unless they are still present on the deployed live site.
 
-### P1
+### Recently Resolved
 
-- Fix GitHub Pages direct-route restore for `/shop`, `/web-design`, and `/websites`.
-  - Current risk: `public/404.html` redirects unknown paths to `/?p=/shop`, but the React app does not read the `p` query parameter.
-  - Customer impact: a direct refresh/share of `/shop` may land on the homepage instead of the Shop page.
-  - Acceptance: visiting `https://www.auralisdigital.net/shop` directly, refreshing it, and opening it from an incognito browser all render the Shop page.
+- GitHub Pages direct-route restore and route folders are live.
+  - Verified: `/products`, `/shop`, `/custom-design`, `/web-design`, and `/websites` return HTTP `200`.
+  - Verified: live `robots.txt` includes `Sitemap: https://www.auralisdigital.net/sitemap.xml`.
+  - Remaining route/SEO caveat: route-specific metadata is still client-side after load.
 
 ### P2
-
-- Add the sitemap reference to the deployed robots file.
-  - Current risk: root `robots.txt` includes `Sitemap: https://www.auralisdigital.net/sitemap.xml`, but `public/robots.txt` is what Vite copies into `dist/`.
-  - Acceptance: live `https://www.auralisdigital.net/robots.txt` includes the sitemap URL.
 
 - Plan better static metadata for route pages.
   - Current risk: `index.html` has one static title/description, while `/shop` and `/web-design` metadata updates happen client-side after load.
@@ -92,31 +88,17 @@ Live target tested:
   - Required action: run an incognito checkout test up to the final payment confirmation step.
   - Acceptance: an incognito visitor can open each product page, add a product to cart, and proceed through checkout up to the final payment confirmation step.
 
-- `/shop`, `/web-design`, and `/websites` return HTTP `404` when opened directly.
-  - Customer impact: homepage navigation links advertise these routes, but shared links, direct visits, and refreshes can fail.
-  - SEO impact: `sitemap.xml` includes `/shop` and `/web-design`, but those URLs currently return `404` at the HTTP level.
-  - Acceptance: each route returns the intended page for direct live visits, incognito visits, and refreshes.
-
-- `/?p=/shop` renders the homepage instead of the Shop page.
-  - Current risk: the GitHub Pages 404 helper preserves the path in the `p` query parameter, but the React app does not restore that path.
-  - Acceptance: `/?p=/shop` restores `/shop`, `/?p=/web-design` restores `/web-design`, and `/?p=/websites` restores `/websites`.
-
 - Keep Shopify product handles synchronized with Auralis Digital catalog data.
   - 2026-05-13 second pass: old blanket URL `/products/tan-sherpa-blanket` returned `404`; current public blanket handle is `/products/zeus-sherpa-blanket`.
   - Acceptance: every product in `src/data/shopCatalog.ts` returns HTTP `200` and opens the intended Shopify product page.
 
-- Shopify policy links are incomplete.
-  - 2026-05-13 second pass: Privacy Policy opened publicly, but Refund Policy, Shipping Policy, and Terms of Service returned Shopify `404`.
-  - Customer impact: ecommerce trust is weakened if policy links are missing before purchase.
-  - Acceptance: refund, shipping, privacy, and terms links open publicly from incognito without password/login confusion or `404`.
+- Shopify policy links are incomplete, but Auralis Digital now has local policy/support fallback routes.
+  - 2026-05-13 second pass: Shopify Privacy Policy opened publicly, but Shopify Refund Policy, Shipping Policy, and Terms of Service returned `404`.
+  - Repo action: add local `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` pages for public trust and footer links.
+  - Remaining Shopify-admin action: publish or verify the Shopify-hosted refund, shipping, and terms policies used by checkout.
+  - Acceptance: Auralis Digital policy links open publicly, and Shopify checkout exposes the correct Shopify policy links before serious product traffic.
 
 ### Live SEO / Discovery Gaps
-
-- Live `robots.txt` does not include `Sitemap: https://www.auralisdigital.net/sitemap.xml`.
-  - Acceptance: deployed `robots.txt` includes the sitemap line.
-
-- Live `sitemap.xml` includes `/shop` and `/web-design`, but the routes currently return `404`.
-  - Acceptance: sitemap routes and live route behavior agree.
 
 ### Live Visual / Customer Friction
 
