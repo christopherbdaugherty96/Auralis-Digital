@@ -42,6 +42,8 @@ Goal: make Auralis ready to accept money cleanly and credibly.
 
 Goal: reduce trust friction before outreach or traffic.
 
+Current live note: as of 2026-05-14, no production contact env is configured in the GitHub repo, so the live contact form still uses the mailto fallback and shows `Prepare Project Email`.
+
 - [ ] Set up domain email such as `hello@auralisdigital.net`.
 - [ ] Replace public Gmail references where appropriate.
 - [ ] Create Formspree form and copy endpoint.
@@ -82,6 +84,7 @@ Goal: keep the three-pillar public direction understandable.
   - [x] Update the OG/social preview image source in `public/og-image.svg` and `public/assets/social-preview.svg`.
   - [x] Confirm homepage `<title>`, meta description, `og:title`, `og:description`, `twitter:title`, and `twitter:description` match the three-pillar brand direction.
   - [x] Confirm the social preview image copy matches Products, Custom Design, and Website Design instead of website-services-only positioning.
+  - [x] Confirm refreshed social preview SVG assets return live HTTP `200` after deploy.
   - [x] Run build/test validation after changing metadata or image assets.
   - [ ] After deploy, use the Facebook Sharing Debugger and click `Scrape Again` for `https://www.auralisdigital.net/`.
   - [ ] Re-test a Facebook/Instagram post preview before public promotion.
@@ -170,9 +173,9 @@ Use:
 Goal: verify the Auralis product surface before treating it as a mature commerce operation.
 
 - [x] Verify Shopify product links from source/local public checks.
-- [ ] Verify Shopify product links from the live site after latest deploy.
+- [x] Verify Shopify product links from the live site after latest deploy.
 - [ ] Verify Shopify checkout flow.
-- [ ] Verify local Auralis policy/support pages.
+- [x] Verify local Auralis policy/support pages.
 - [ ] Publish or verify Shopify refund policy link.
 - [ ] Publish or verify Shopify shipping policy link.
 - [ ] Verify Shopify privacy policy link.
@@ -186,8 +189,8 @@ Goal: verify the Auralis product surface before treating it as a mature commerce
   - [x] Confirm no `Printify` text appears in `src/components/AuralisHomepage.tsx`.
   - [x] Confirm no `Printify` text appears in `src/data/shopCatalog.ts`.
   - [x] Confirm no `Printify` text appears in `scripts/generate-route-pages.mjs` route metadata.
-  - [ ] Confirm live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` pages do not visibly mention Printify.
-  - [ ] Keep Printify references allowed in internal docs/checklists where fulfillment setup is being tracked.
+  - [x] Confirm live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` pages do not visibly mention Printify.
+  - [x] Keep Printify references allowed in internal docs/checklists where fulfillment setup is being tracked.
 - [ ] Confirm production/fulfillment timing expectations.
 - [ ] Confirm customer support email/path.
 - [ ] Confirm product margin/profit assumptions.
