@@ -75,6 +75,13 @@ Older shop-first homepage notes should be treated as historical findings unless 
   - product gallery selector interaction worked
   - seven product-specific Shopify buttons were present
 - Social preview SVG assets now use the three-pillar Auralis positioning and return live HTTP `200`.
+- Website demo split is live after PR #24.
+  - `/web-design`, `/websites`, and `/websites/` return HTTP `200`.
+  - `/web-design` links visitors to the separate website demos page instead of embedding the full gallery above pricing.
+  - `/websites` contains the website demos gallery in the deployed React bundle.
+  - All 10 root-relative `/projects/...` demo targets return HTTP `200`.
+  - Lawn Care demo route and deployable local images return HTTP `200`.
+  - Lawn Care demo cleanup is live: no dead `RobsLawnCare` URL, old image path, fake phone number, mock-pricing wording, or old Website LLC/Y.O.U. branding in the checked live page.
 
 ### P2
 
@@ -128,10 +135,15 @@ Live target tested:
 - Homepage source no longer lists product cards.
   - Verify after deploy that `/` routes to Products, Custom Design, and Website Design instead of sending visitors directly to Shopify.
 
+- Browser screenshot QA remains limited.
+  - The in-app Browser plugin could not attach during this session because the local Node runtime failed on an invalid `C:\Users\Chris\package.json` config.
+  - Current live demo verification used HTTP checks, deployed bundle inspection, and source checks rather than screenshot-backed browser automation.
+
 ### Confirmed Working Live
 
 - Homepage loads with HTTP `200`.
 - Current public routes return HTTP `200`: `/`, `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`.
+- Website demo routes return HTTP `200`: `/websites`, `/websites/`, and all 10 `/projects/...` demo targets.
 - Local policy/support routes return HTTP `200`: `/refund-policy`, `/shipping-policy`, `/privacy-policy`, `/terms-of-service`.
 - UTM-tagged Shopify links are present.
 - Every product `shopifyTrackingUrl` in `src/data/shopCatalog.ts` returned HTTP `200` from Shopify and showed public buy/add-to-cart signals during the 2026-05-14 live link check.
