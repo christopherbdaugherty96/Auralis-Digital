@@ -78,6 +78,13 @@ Goal: keep the three-pillar public direction understandable.
 - [ ] Confirm product buyers understand checkout opens through Shopify.
 - [ ] Confirm public copy does not imply Auralis Digital processes card payments directly.
 - [ ] Confirm public copy does not imply the product/shop surface is fully mature until commerce readiness is verified.
+- [ ] Refresh the public social preview card so Facebook/Instagram no longer show the old `Professional Websites for Local Businesses` graphic.
+  - [ ] Update the OG/social preview image used by the homepage, likely `public/og-image.png` or the generated OG image source.
+  - [ ] Confirm homepage `<title>`, meta description, `og:title`, `og:description`, `twitter:title`, and `twitter:description` match the three-pillar brand direction.
+  - [ ] Confirm the social preview image copy matches Products, Custom Design, and Website Design instead of website-services-only positioning.
+  - [ ] Run `npm run build` after changing metadata or image generation.
+  - [ ] After deploy, use the Facebook Sharing Debugger and click `Scrape Again` for `https://www.auralisdigital.net/`.
+  - [ ] Re-test a Facebook/Instagram post preview before public promotion.
 
 ---
 
