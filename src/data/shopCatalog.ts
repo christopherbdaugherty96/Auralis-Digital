@@ -58,7 +58,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Zeus Sherpa Blanket",
     featured: true,
     price: "$60.99",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Home Decor",
     variantSummary: '60" x 50"',
     category: "Blankets",
@@ -73,13 +73,13 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["60\" x 50\" size", "Tan sherpa backing", "One-sided print", "Rounded corners"],
     specs: [
       { label: "Product", value: "Sherpa blanket" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Home Decor" },
       { label: "Size", value: '60" x 50"' },
       { label: "Material", value: "100% polyester printed mink front, ultra-soft tan sherpa back" },
       { label: "Print", value: "One-sided high-definition print" },
       { label: "Finish", value: "Rounded corners and decorative stitching" },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -109,7 +109,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Zeus Woven Blanket",
     featured: false,
     price: "$47.10",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Home Decor",
     variantSummary: "Artwork or Photo / 52'' x 37''",
     category: "Blankets",
@@ -124,14 +124,14 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["52'' x 37'' size", "100% cotton", "Colorful fringed edges", "Woven threads"],
     specs: [
       { label: "Product", value: "Woven blanket" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Home Decor" },
       { label: "Size", value: "52'' x 37''" },
       { label: "Variants", value: "Artwork or Photo" },
       { label: "Material", value: "100% cotton" },
       { label: "Finish", value: "Colorful edge fringe and woven threads" },
       { label: "Note", value: "Mockups may not fully show the final woven texture" },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -161,7 +161,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Flower of the Sun Woven Blanket",
     featured: false,
     price: "$48.99",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Home Decor",
     variantSummary: "Artwork or Photo / 52'' x 37''",
     category: "Blankets",
@@ -176,14 +176,14 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["52'' x 37'' size", "100% cotton", "Colorful fringed edges", "Unique Shopify mockups"],
     specs: [
       { label: "Product", value: "Woven blanket" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Home Decor" },
       { label: "Size", value: "52'' x 37''" },
       { label: "Variants", value: "Artwork or Photo" },
       { label: "Material", value: "100% cotton" },
       { label: "Finish", value: "Colorful edge fringe and woven threads" },
       { label: "Note", value: "Mockups may not fully show the final woven texture" },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -214,7 +214,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Zeus Journal Matte",
     featured: false,
     price: "$18.99",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Paper products",
     variantSummary: "Journal",
     category: "Journals",
@@ -229,14 +229,14 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["5.75\" x 8\" size", "Matte hardcover", "150 lined pages", "Full wraparound print"],
     specs: [
       { label: "Product", value: "Hardcover journal" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Paper products" },
       { label: "Size", value: '5.75" x 8"' },
       { label: "Pages", value: "150 lined pages / 75 sheets" },
       { label: "Binding", value: "Casewrap binding" },
       { label: "Finish", value: "Matte laminate cover with full wraparound print" },
       { label: "Note", value: '0.5" x 0.5" production barcode visible on back cover' },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -266,7 +266,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Sun of Life Notebook - Ruled Line",
     featured: false,
     price: "$18.99",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Paper products",
     variantSummary: "One Size",
     category: "Journals",
@@ -281,7 +281,7 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["6\" x 8\" size", "118 ruled pages", "Durable printed cover", "Metal spiral binding"],
     specs: [
       { label: "Product", value: "Spiral notebook" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Paper products" },
       { label: "Variant", value: "One Size" },
       { label: "Size", value: '6" x 8" / 15.2 x 20.3 cm' },
@@ -289,7 +289,7 @@ export const shopProducts: ShopProduct[] = [
       { label: "Paper", value: "350 gsm covers, 90 gsm inside pages" },
       { label: "Back cover", value: "Dark grey" },
       { label: "Binding", value: "Metal spiral binding" },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -320,7 +320,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Zeus Mug 11oz",
     featured: false,
     price: "$17.99",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Mug",
     variantSummary: "11oz",
     category: "Coffee Mugs",
@@ -335,13 +335,13 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["11oz / 0.33 l", "White ceramic", "C-handle", "Lead and BPA-free"],
     specs: [
       { label: "Product", value: "Ceramic mug" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Mug" },
       { label: "Size", value: "11oz / 0.33 l" },
       { label: "Material", value: "White ceramic" },
       { label: "Shape", value: "Rounded corners with C-handle" },
       { label: "Safety", value: "Lead and BPA-free" },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -371,7 +371,7 @@ export const shopProducts: ShopProduct[] = [
     title: "Zeus Matte Vertical Posters",
     featured: false,
     price: "$22.99",
-    vendor: "Printify",
+    vendor: "Auralis Design",
     productType: "Poster",
     variantSummary: '8" x 10" / Matte',
     category: "Posters",
@@ -386,7 +386,7 @@ export const shopProducts: ShopProduct[] = [
     highlights: ["8\" x 10\" size", "Museum-grade paper", "Matte finish", "Indoor wall art"],
     specs: [
       { label: "Product", value: "Matte vertical poster" },
-      { label: "Vendor", value: "Printify" },
+      { label: "Brand", value: "Auralis Design" },
       { label: "Product type", value: "Poster" },
       { label: "Size", value: '8" x 10"' },
       { label: "Finish", value: "Matte" },
@@ -394,7 +394,7 @@ export const shopProducts: ShopProduct[] = [
       { label: "Paper weight", value: "175-189 g/m2 depending on print provider" },
       { label: "Use", value: "Indoor wall art" },
       { label: "Tolerance", value: 'Slight size deviation possible, about +/- 1/16"' },
-      { label: "Fulfillment", value: "Printify for Printify products" },
+      { label: "Fulfillment", value: "Produced after purchase" },
     ],
     mockups: [
       {
@@ -436,7 +436,7 @@ export const productUseCases = ["Cozy home decor", "Gift ideas", "Desk and journ
 export const productTrustSteps = [
   { title: "Browse here", copy: "View product mockups, product notes, categories, and details on Auralis Digital." },
   { title: "Buy through Shopify", copy: "When you are ready, the buy button opens the Shopify product page in a new tab." },
-  { title: "Fulfilled through Printify", copy: "Shopify keeps the order source of truth and routes Printify products through fulfillment." },
+  { title: "Produced after purchase", copy: "Product orders are processed after checkout, and shipping timing can vary by product and destination." },
 ];
 
 export const shopFaqs = [
@@ -446,7 +446,7 @@ export const shopFaqs = [
   },
   {
     q: "Who fulfills the products?",
-    a: "Printify handles production and fulfillment for Printify products after the Shopify order is placed.",
+    a: "Auralis products are produced and fulfilled after the Shopify order is placed. Timing can vary by product and destination.",
   },
   {
     q: "Is payment collected on Auralis Digital?",
@@ -454,6 +454,6 @@ export const shopFaqs = [
   },
   {
     q: "How fast will items ship?",
-    a: "Each item is produced and fulfilled after purchase through Printify, so timing can vary by product and destination.",
+    a: "Each item is produced after purchase, so timing can vary by product and destination.",
   },
 ];
