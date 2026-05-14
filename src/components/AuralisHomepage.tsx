@@ -36,8 +36,51 @@ import {
 import { cn } from "@/lib/utils";
 
 const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com";
-const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Website Project Request")}`;
+const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}`;
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
+
+const homeOfferings = [
+  {
+    title: "Products",
+    copy: "Browse original Auralis Design pieces and collections. Checkout opens securely through Shopify.",
+    href: "/products",
+    cta: "Explore Products",
+    icon: Store,
+  },
+  {
+    title: "Custom Design",
+    copy: "Request a personalized design based on an idea, image, phrase, theme, symbol, or product concept.",
+    href: "/custom-design",
+    cta: "Request Custom Design",
+    icon: Sparkles,
+  },
+  {
+    title: "Website Design",
+    copy: "Clean websites for small businesses, creators, and local brands that need a stronger online presence.",
+    href: "/web-design",
+    cta: "Website Design",
+    icon: MonitorSmartphone,
+  },
+];
+
+const customRequestTypes = [
+  "Personal artwork",
+  "Image or theme-based design",
+  "Gift design",
+  "Product mockup concept",
+  "Apparel concept",
+  "Poster or wall art concept",
+  "Blanket, mug, journal, canvas, or shirt design",
+  "Creator or small-brand visual",
+];
+
+const customProcess = [
+  "Send the idea",
+  "Auralis reviews scope",
+  "You get a quote or next step",
+  "Design direction is confirmed",
+  "Final design or mockup is prepared",
+];
 
 const services = [
   { title: "Website design", copy: "Clean, credible websites shaped around what local customers need to see first.", icon: Paintbrush },
@@ -222,21 +265,27 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
 
 const pageMeta: Record<AuralisPage, { title: string; description: string; canonicalPath: string }> = {
   home: {
-    title: "Auralis Digital | Auralis Design Shop and Brand Hub",
+    title: "Auralis Digital | Creative Design, Products, and Websites",
     description:
-      "Browse Auralis Design products on Auralis Digital, then buy securely through Shopify. Website services remain available on a separate page.",
+      "Auralis Digital creates original products, custom visual designs, personalized design requests, and clean websites for people, creators, and small businesses.",
     canonicalPath: "/",
   },
   shop: {
-    title: "Shop Auralis Design | Zeus Collection Product Catalog",
+    title: "Products | Auralis Digital",
     description:
-      "Shop the Zeus collection from Auralis Design, browse product mockups, and buy securely through Shopify with Printify fulfillment for Printify products.",
-    canonicalPath: "/shop",
+      "Browse Auralis Design products and collections. Product checkout opens securely through Shopify.",
+    canonicalPath: "/products",
+  },
+  "custom-design": {
+    title: "Custom Design Requests | Auralis Digital",
+    description:
+      "Request a personalized design, product concept, image-based idea, gift design, apparel concept, wall art concept, or custom visual from Auralis Digital.",
+    canonicalPath: "/custom-design",
   },
   "web-design": {
-    title: "Website Services | Auralis Digital",
+    title: "Website Design | Auralis Digital",
     description:
-      "Website services from Auralis Digital are separate from the Auralis Design product shop and built for clear local business presence.",
+      "Clean website design for small businesses, creators, and local brands that need a stronger online presence.",
     canonicalPath: "/web-design",
   },
   websites: {
@@ -282,24 +331,39 @@ function ProductImageGallery({ product }: { product: ShopProduct }) {
   );
 }
 
+function ProductMockupScroll({ product }: { product: ShopProduct }) {
+  return (
+    <div className="product-card-mockups" aria-label={`${product.title} mockup images`}>
+      {product.mockups.map((mockup, index) => (
+        <img
+          key={`${product.slug}-${mockup.imageUrl}`}
+          src={mockup.imageUrl}
+          alt={mockup.altText}
+          loading={index === 0 ? "eager" : "lazy"}
+        />
+      ))}
+    </div>
+  );
+}
+
 function ProductCard({ product }: { product: ShopProduct }) {
   return (
-    <a
-      href={product.shopifyTrackingUrl}
-      className="product-card"
-      target="_blank"
-      rel="noopener"
-      aria-label={`View ${product.title} on Shopify`}
-    >
-      <img src={product.imageUrl} alt={product.altText} loading="lazy" />
+    <article className="product-card">
+      <ProductMockupScroll product={product} />
       <span className="product-meta">{product.category}</span>
       <h3>{product.title}</h3>
       <p className="product-price">{product.price}</p>
-      <p className="product-description">{product.shortDescription}</p>
-      <span className="product-button">
+      <p className="product-description">{product.detailDescription}</p>
+      <a
+        href={product.shopifyTrackingUrl}
+        className="product-button"
+        target="_blank"
+        rel="noopener"
+        aria-label={`View ${product.title} on Shopify`}
+      >
         View on Shopify <ArrowRight className="size-4" aria-hidden="true" />
-      </span>
-    </a>
+      </a>
+    </article>
   );
 }
 
@@ -391,7 +455,7 @@ type FormStatus = "idle" | "submitting" | "success" | "error";
 
 function ContactForm() {
   const [form, setForm] = useState({
-    name: "", business: "", email: "",
+    name: "", business: "", email: "", interest: "Custom design request",
     budget: "Not sure yet", timeline: "Not sure yet", details: "",
   });
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -414,14 +478,14 @@ function ContactForm() {
         setStatus("error");
       }
     } else {
-      const subject = "Website Project Inquiry";
+      const subject = `Auralis Inquiry - ${form.interest}`;
       const body = [
         "Hi Auralis Digital,",
         "",
-        "I am interested in a website project.",
+        `I am interested in: ${form.interest}`,
         "",
         `Name: ${form.name}`,
-        `Business: ${form.business}`,
+        `Business / project name: ${form.business}`,
         `Email: ${form.email}`,
         `Budget: ${form.budget}`,
         `Timeline: ${form.timeline}`,
@@ -450,11 +514,19 @@ function ContactForm() {
       <label className={labelCls}>Your name
         <input className={inputCls} value={form.name} onChange={set("name")} required autoComplete="name" />
       </label>
-      <label className={labelCls}>Business name
+      <label className={labelCls}>Business / project name
         <input className={inputCls} value={form.business} onChange={set("business")} autoComplete="organization" />
       </label>
       <label className={labelCls}>Email
         <input className={inputCls} type="email" value={form.email} onChange={set("email")} required autoComplete="email" />
+      </label>
+      <label className={labelCls}>What are you interested in?
+        <select className={inputCls} value={form.interest} onChange={set("interest")}>
+          <option>Custom design request</option>
+          <option>Product question</option>
+          <option>Website design</option>
+          <option>General inquiry</option>
+        </select>
       </label>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className={labelCls}>Budget range
@@ -474,7 +546,7 @@ function ContactForm() {
           </select>
         </label>
       </div>
-      <label className={labelCls}>Project details
+      <label className={labelCls}>Details
         <textarea className={inputCls} rows={4} value={form.details} onChange={set("details")} placeholder="What do you need?" />
       </label>
       {status === "error" && (
@@ -494,26 +566,24 @@ function ContactForm() {
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Shop", href: "/shop" },
-  { label: "Website Services", href: "/web-design" },
-  { label: "About", href: "/#about" },
+  { label: "Products", href: "/products" },
+  { label: "Custom Design", href: "/custom-design" },
+  { label: "Website Design", href: "/web-design" },
   { label: "Contact", href: "/#contact" },
 ];
 
 const POLICY_LINKS = [
-  { label: "Refund Policy", href: "https://auralis-design.myshopify.com/policies/refund-policy" },
-  { label: "Shipping Policy", href: "https://auralis-design.myshopify.com/policies/shipping-policy" },
   { label: "Privacy Policy", href: "https://auralis-design.myshopify.com/policies/privacy-policy" },
-  { label: "Terms of Service", href: "https://auralis-design.myshopify.com/policies/terms-of-service" },
 ];
 
-type AuralisPage = "home" | "shop" | "web-design" | "websites";
+type AuralisPage = "home" | "shop" | "custom-design" | "web-design" | "websites";
 
 export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage }) {
   const scrollY = useReducedMotionAwareScroll();
   const [mobileOpen, setMobileOpen] = useState(false);
   const isHome = page === "home";
   const isShop = page === "shop";
+  const isCustomDesign = page === "custom-design";
   const isWebDesign = page === "web-design";
   const isWebsites = page === "websites";
 
@@ -553,7 +623,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <a key={l.href} href={l.href} className="text-xs font-bold text-muted-foreground hover:text-foreground lg:text-sm">{l.label}</a>
             ))}
             <Button variant="conversion" size="sm" asChild>
-              <a href="/shop">View Product</a>
+              <a href="/custom-design">Start a Request</a>
             </Button>
           </nav>
           {/* Mobile: hamburger */}
@@ -582,7 +652,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               ))}
               <div className="mt-2 flex flex-col gap-2">
                 <Button variant="conversion" size="lg" className="w-full" asChild>
-                  <a href="/shop" onClick={() => setMobileOpen(false)}>Shop Auralis Design</a>
+                  <a href="/custom-design" onClick={() => setMobileOpen(false)}>Start a Request</a>
                 </Button>
               </div>
             </nav>
@@ -603,63 +673,48 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="hero-section">
           <div className="site-shell hero-grid">
             <div className="hero-copy">
-              <div className="eyebrow"><Store aria-hidden="true" /> Auralis Design Shop</div>
-              <h1>Shop Auralis Design pieces through a clean brand site.</h1>
+              <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
+              <h1>Creative design for products, personal ideas, and digital presence.</h1>
               <p className="hero-subhead">
-                Auralis Digital is the home for Auralis Design products and website services. Shop the product line, or visit Website Services for custom business websites.
+                Auralis Digital brings together original product designs, custom visual requests, and practical website design for people, creators, and small businesses.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
-                  <a href="/shop">Shop Auralis Design <ArrowRight aria-hidden="true" /></a>
+                  <a href="/products">Explore Products <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
-                  <a href="/web-design">Website Services</a>
+                  <a href="/custom-design">Request Custom Design</a>
                 </Button>
               </div>
             </div>
-            <a
-              href="/shop"
-              className="product-hero-card"
-              aria-label={`Browse ${featuredProduct.title} on the Auralis Digital shop page`}
-            >
-              <img src={featuredProduct.imageUrl} alt={featuredProduct.altText} />
-              <span>{featuredProduct.title}</span>
-              <strong>{featuredProduct.price}</strong>
-            </a>
+            <HeroMockup />
           </div>
         </section>
 
         {/* ── Problem ─────────────────────────────────────── */}
-        <section id="featured" className="content-section shop-preview" aria-labelledby="featured-shop-title">
+        <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Shop Auralis Design</span>
-              <h2 id="featured-shop-title">Featured products stay visible on Auralis Digital.</h2>
+              <span className="section-label">What Auralis does</span>
+              <h2>Choose the path that matches what you need.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Auralis Digital displays the product. Shopify handles checkout, payments, orders, and the Printify fulfillment path.
+                Auralis is built around creative output: ready-to-buy products, custom visual requests, and clean website design.
               </p>
             </Reveal>
-            <div className="product-scroll" aria-label="Featured Auralis Design products">
-              {shopProducts.map((product) => (
-                <Reveal key={product.shopifyProductUrl} className="product-reveal">
-                  <a
-                    href={product.shopifyTrackingUrl}
-                    className="product-card"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label={`View ${product.title} on Shopify`}
-                  >
-                    <img src={product.imageUrl} alt={product.altText} loading="lazy" />
-                    <span className="product-meta">Shopify checkout</span>
-                    <h3>{product.title}</h3>
-                    <p className="product-price">{product.price}</p>
-                    <p className="product-description">{product.shortDescription}</p>
-                    <span className="product-button">
-                      View on Shopify <ArrowRight className="size-4" aria-hidden="true" />
-                    </span>
-                  </a>
-                </Reveal>
-              ))}
+            <div className="grid gap-5 md:grid-cols-3">
+              {homeOfferings.map((offering) => {
+                const Icon = offering.icon;
+                return (
+                  <Reveal key={offering.title} className="service-card flex flex-col gap-4">
+                    <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                    <h3>{offering.title}</h3>
+                    <p>{offering.copy}</p>
+                    <a href={offering.href} className="mt-auto inline-flex items-center gap-2 text-sm font-black text-primary">
+                      {offering.cta} <ArrowRight className="size-4" aria-hidden="true" />
+                    </a>
+                  </Reveal>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -667,12 +722,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band">
           <div className="site-shell problem-layout">
             <Reveal className="section-heading compact">
-              <span className="section-label">How it works</span>
-              <h2>Browse here. Checkout through Shopify. Fulfilled through Printify.</h2>
+              <span className="section-label">Brand structure</span>
+              <h2>Products, custom design, and websites live under one creative brand.</h2>
             </Reveal>
             <Reveal className="problem-card">
               <p>
-                Auralis is a creative brand. Auralis Design sells products. Auralis Digital builds websites and gives the product line a clear brand home while Shopify remains the checkout, payment, order, and product source of truth.
+                Auralis Design is the product line. Custom Design is the request path for personal ideas, gift concepts, and visual concepts. Website Design remains available for small businesses, creators, and local brands that need a stronger online presence.
               </p>
             </Reveal>
           </div>
@@ -801,14 +856,58 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Services ────────────────────────────────────── */}
+        {isCustomDesign && (
+        <section id="custom-design" className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <span className="section-label"><Sparkles aria-hidden="true" /> Custom Design</span>
+              <h2>Custom design requests for personal ideas, gifts, products, and creative visuals.</h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Have an idea, image, phrase, symbol, theme, or product concept you want turned into a design? Auralis reviews custom requests and confirms scope before work begins.
+              </p>
+            </Reveal>
+            <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+              <Reveal className="service-card">
+                <div className="icon-tile"><Sparkles aria-hidden="true" /></div>
+                <h3>What you can request</h3>
+                <div className="product-use-list mt-5">
+                  {customRequestTypes.map((type) => (
+                    <span key={type}>{type}</span>
+                  ))}
+                </div>
+              </Reveal>
+              <Reveal className="service-card">
+                <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
+                <h3>How it works</h3>
+                <ul className="mt-5 space-y-3">
+                  {customProcess.map((step, index) => (
+                    <li key={step} className="flex gap-3 text-sm font-bold text-muted-foreground">
+                      <span className="step-number !h-8 !w-8 !text-xs">0{index + 1}</span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            </div>
+            <Reveal className="mt-8 service-card border-primary/20 bg-primary/5">
+              <span className="product-meta">Request boundaries</span>
+              <h3>Every custom request is reviewed before acceptance.</h3>
+              <p className="mt-3 text-muted-foreground">
+                Pricing depends on complexity, intended use, product type, turnaround, and revision needs. Auralis may decline requests involving copyrighted characters, logos, unclear usage rights, offensive content, or designs that cannot be produced cleanly.
+              </p>
+            </Reveal>
+          </div>
+        </section>
+        )}
+
         {isWebDesign && (
         <section id="services" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Website Services</span>
-              <h2>Everything your local digital presence needs to feel credible.</h2>
+              <span className="section-label">Website Design</span>
+              <h2>Clean websites for businesses, creators, and local brands.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                This service inquiry path is separate from the Auralis Design product shop.
+                Website design is one Auralis service path, separate from products and custom visual requests.
               </p>
             </Reveal>
             <div className="service-grid">
@@ -1044,11 +1143,11 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell problem-layout">
             <Reveal className="section-heading compact">
               <span className="section-label">About</span>
-              <h2>Auralis Digital is the brand site. Shopify is the product checkout.</h2>
+              <h2>Auralis Digital is the creative home for products, custom design, and websites.</h2>
             </Reveal>
             <Reveal className="problem-card">
               <p>
-                Auralis Digital brings the brand, website services, and product showcase into one clear public site. Auralis Design products link to Shopify for product details, payment, order handling, and the Printify fulfillment path.
+                Auralis Design products live alongside custom visual requests and website design. Product purchases open through Shopify, while custom design and website work start with a reviewed inquiry.
               </p>
             </Reveal>
           </div>
@@ -1102,20 +1201,22 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Contact ─────────────────────────────────────── */}
-        {(isHome || isWebDesign) && (
+        {(isHome || isCustomDesign || isWebDesign) && (
         <section id="contact" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label">Contact</span>
-              <h2>{isHome ? "Contact Auralis Digital." : "Start your project."}</h2>
+              <h2>{isHome ? "Contact Auralis Digital." : isCustomDesign ? "Start a custom design request." : "Start your website project."}</h2>
             </Reveal>
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
               <Reveal className="service-card">
-                <h3>{isHome ? "Send a message" : "Send a project request"}</h3>
+                <h3>{isHome ? "Send a message" : isCustomDesign ? "Send a design request" : "Send a project request"}</h3>
                 <p className="mb-6 text-muted-foreground">
                   {isHome
-                    ? "Use this form for questions about Auralis Design products or website service inquiries."
-                    : "Fill in the basics and Auralis Digital will review what your business needs first."}
+                    ? "Use this form for product questions, custom design requests, website design, or general inquiries."
+                    : isCustomDesign
+                      ? "Share the idea, use, timeline, and any important constraints. Auralis will review fit before accepting the request."
+                      : "Fill in the basics and Auralis Digital will review what your business needs first."}
                 </p>
                 <ContactForm />
               </Reveal>
@@ -1132,7 +1233,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal className="service-card border-primary/20 bg-primary/5">
                   <h3 className="text-sm font-black uppercase tracking-widest text-primary">What to include</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    Business name, current website or social page, services offered, city or service area, and the main action you want customers to take.
+                    For products, include the item name. For custom design, include the idea, intended use, timeline, and constraints. For websites, include the business name, current site or social page, and the main action you want customers to take.
                   </p>
                 </Reveal>
               </div>
@@ -1142,22 +1243,22 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Final CTA ───────────────────────────────────── */}
-        {(isHome || isWebDesign) && (
+        {(isHome || isCustomDesign || isWebDesign) && (
         <section className="final-cta-section">
           <div className="site-shell">
             <Reveal className="final-cta">
-              <div className="icon-tile large">{isHome ? <Store aria-hidden="true" /> : <CalendarCheck aria-hidden="true" />}</div>
-              <h2>{isHome ? "Ready to shop Auralis Design?" : "Ready to make your business look professional online?"}</h2>
-              <p>{isHome ? "Browse the featured product on Auralis Digital, then use Shopify for secure checkout." : "Start with a free website review or request a quote today."}</p>
+              <div className="icon-tile large">{isWebDesign ? <CalendarCheck aria-hidden="true" /> : <Sparkles aria-hidden="true" />}</div>
+              <h2>{isWebDesign ? "Ready to make your business look professional online?" : "Ready to start with Auralis?"}</h2>
+              <p>{isWebDesign ? "Start with a free website review or request a quote today." : "Choose products, custom design, or website design and send the right request path."}</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="xl" asChild>
-                  <a href={isHome ? "/shop" : "/web-design#contact"}>
-                    {isHome ? "Open the Shop" : "Get a Free Website Review"} <ArrowRight aria-hidden="true" />
+                  <a href={isWebDesign ? "/web-design#contact" : "/custom-design"}>
+                    {isWebDesign ? "Get a Free Website Review" : "Start a Request"} <ArrowRight aria-hidden="true" />
                   </a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" asChild>
-                  <a href={isHome ? featuredProduct.shopifyTrackingUrl : MAILTO} target={isHome ? "_blank" : undefined} rel={isHome ? "noopener" : undefined}>
-                    {isHome ? "View on Shopify" : "Request a Quote"}
+                  <a href={isWebDesign ? MAILTO : "/products"}>
+                    {isWebDesign ? "Request a Quote" : "Explore Products"}
                   </a>
                 </Button>
               </div>
@@ -1172,7 +1273,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <div>
               <p className="text-base font-black tracking-tight text-foreground">AURALIS DIGITAL</p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Auralis is a creative brand. Auralis Design sells products. Auralis Digital builds websites and hosts the brand/display shop.
+                Auralis is a creative brand for products, custom visual requests, and clean website design.
               </p>
             </div>
             <div>
@@ -1216,7 +1317,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
       {/* ── Mobile bottom CTA ────────────────────────────── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 p-3 backdrop-blur-xl md:hidden">
         <Button variant="conversion" size="lg" className="w-full" asChild>
-          <a href="/shop">Shop Auralis Design</a>
+          <a href="/custom-design">Start a Request</a>
         </Button>
       </div>
     </>

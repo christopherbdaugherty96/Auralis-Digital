@@ -44,6 +44,8 @@ Do not use this for:
 
 These items came from the post-merge review of the shop-first Auralis Digital update.
 
+Update: the source has since moved to a three-pillar brand structure: Products, Custom Design, and Website Design. Older shop-first homepage notes below should be read as historical findings unless they are still present on the deployed live site.
+
 ### P1
 
 - Fix GitHub Pages direct-route restore for `/shop`, `/web-design`, and `/websites`.
@@ -64,10 +66,10 @@ These items came from the post-merge review of the shop-first Auralis Digital up
 
 ### P3
 
-- Align homepage product-card click behavior with the browse-first customer flow.
-  - Current behavior: homepage featured product cards are clearly labeled but open Shopify directly.
-  - Preferred behavior: homepage product cards/media lead to `/shop`; explicit buy/view buttons on the Shop page open Shopify.
-  - Acceptance: homepage encourages browsing on Auralis Digital first, while outbound Shopify links remain clearly labeled.
+- Verify the three-pillar homepage after deploy.
+  - Current source behavior: homepage is a brand gateway with Products, Custom Design, and Website Design cards.
+  - Preferred behavior: homepage does not list product prices or send visitors directly to Shopify.
+  - Acceptance: `/` routes visitors to `/products`, `/custom-design`, and `/web-design` without acting as a product catalog.
 
 ### Verified During Audit
 
@@ -85,6 +87,11 @@ Live target tested:
 
 ### Confirmed Live Blockers
 
+- Shopify storefront password gate has been removed, but checkout still needs a full incognito test.
+  - Customer impact: visitors can reach public Shopify product pages, but purchase readiness is not proven until add-to-cart, checkout, payment, shipping, and tax settings are tested.
+  - Required action: run an incognito checkout test up to the final payment confirmation step.
+  - Acceptance: an incognito visitor can open each product page, add a product to cart, and proceed through checkout up to the final payment confirmation step.
+
 - `/shop`, `/web-design`, and `/websites` return HTTP `404` when opened directly.
   - Customer impact: homepage navigation links advertise these routes, but shared links, direct visits, and refreshes can fail.
   - SEO impact: `sitemap.xml` includes `/shop` and `/web-design`, but those URLs currently return `404` at the HTTP level.
@@ -94,15 +101,14 @@ Live target tested:
   - Current risk: the GitHub Pages 404 helper preserves the path in the `p` query parameter, but the React app does not restore that path.
   - Acceptance: `/?p=/shop` restores `/shop`, `/?p=/web-design` restores `/web-design`, and `/?p=/websites` restores `/websites`.
 
-- Shopify product links appear password-gated.
-  - Tested product links resolved with HTTP `200`, but page content appeared behind the Shopify storefront password gate.
-  - Customer impact: visitors clicking `View on Shopify` may not reach a normal public product page.
-  - Acceptance: all published Shopify product URLs open publicly from incognito without password/login confusion.
+- Keep Shopify product handles synchronized with Auralis Digital catalog data.
+  - 2026-05-13 second pass: old blanket URL `/products/tan-sherpa-blanket` returned `404`; current public blanket handle is `/products/zeus-sherpa-blanket`.
+  - Acceptance: every product in `src/data/shopCatalog.ts` returns HTTP `200` and opens the intended Shopify product page.
 
-- Shopify policy links appear password-gated.
-  - Refund, Shipping, Privacy, and Terms policy URLs resolved with HTTP `200`, but content appeared password-gated.
-  - Customer impact: ecommerce trust is weakened if policy links do not open normally before purchase.
-  - Acceptance: public policy links open from incognito without password/login confusion.
+- Shopify policy links are incomplete.
+  - 2026-05-13 second pass: Privacy Policy opened publicly, but Refund Policy, Shipping Policy, and Terms of Service returned Shopify `404`.
+  - Customer impact: ecommerce trust is weakened if policy links are missing before purchase.
+  - Acceptance: refund, shipping, privacy, and terms links open publicly from incognito without password/login confusion or `404`.
 
 ### Live SEO / Discovery Gaps
 
@@ -121,9 +127,8 @@ Live target tested:
 - Fixed mobile bottom CTA can crowd lower content.
   - Acceptance: final CTA/footer/contact areas remain readable and tappable above the fixed mobile CTA.
 
-- Homepage product cards open Shopify directly.
-  - This is clearly labeled, but it sends customers into the current password-gated Shopify flow from the homepage.
-  - Preferred next behavior: route homepage product cards/media to `/shop`; keep explicit outbound Shopify buy/view actions on the Shop page.
+- Homepage source no longer lists product cards.
+  - Verify after deploy that `/` routes to Products, Custom Design, and Website Design instead of sending visitors directly to Shopify.
 
 ### Live Copy / Conversion Opportunities
 

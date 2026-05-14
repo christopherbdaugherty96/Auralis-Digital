@@ -6,18 +6,21 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 
 ## Storefront Access
 
-- [ ] Shopify storefront password is removed, or public CTA expectations are adjusted.
+- [x] Before public launch, remove Shopify storefront password protection from `Online Store -> Preferences -> Store access`.
+- [x] Shopify storefront password is removed, or public CTA expectations are adjusted.
 - [ ] Primary product URL opens from an incognito browser without admin login:
-  - `https://auralis-design.myshopify.com/products/tan-sherpa-blanket`
+  - `https://auralis-design.myshopify.com/products/zeus-sherpa-blanket`
 - [ ] Each published product link from Auralis Digital opens the intended Shopify product page.
 - [ ] UTM-tagged product links still resolve to the correct Shopify product page.
-- [ ] Product pages do not show the Shopify password page, opening-soon page, or storefront gate to public visitors.
+- [x] Product pages do not show the Shopify password page, opening-soon page, or storefront gate to public visitors.
 - [ ] Product page browser title and visible content identify the intended product, not only the store password shell.
+- [ ] Each product is `Active` and available on the `Online Store` sales channel.
 
 ## Checkout
 
 - [ ] Shopify payment provider is active.
 - [ ] Test checkout opens from the product page.
+- [ ] Run one full incognito checkout test from a product page through add-to-cart and checkout up to the final payment confirmation step.
 - [ ] Shipping rates are active for expected customer locations.
 - [ ] Taxes are handled by Shopify settings, not Auralis Digital website code.
 - [ ] Auralis Digital does not collect payment, card details, or checkout data.
@@ -39,10 +42,10 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 - [ ] Shipping Policy link is visible.
 - [ ] Privacy Policy link is visible.
 - [ ] Terms of Service link is visible.
-- [ ] Refund Policy opens publicly from incognito without the Shopify password gate.
-- [ ] Shipping Policy opens publicly from incognito without the Shopify password gate.
-- [ ] Privacy Policy opens publicly from incognito without the Shopify password gate.
-- [ ] Terms of Service opens publicly from incognito without the Shopify password gate.
+- [ ] Refund Policy opens publicly from incognito without `404`.
+- [ ] Shipping Policy opens publicly from incognito without `404`.
+- [x] Privacy Policy opens publicly from incognito without the Shopify password gate.
+- [ ] Terms of Service opens publicly from incognito without `404`.
 - [ ] Contact email is visible.
 
 ## Mobile And Customer Flow

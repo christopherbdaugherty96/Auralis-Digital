@@ -133,10 +133,10 @@ All colors MUST be HSL.
   .shape-one { @apply -left-24 top-32 h-80 w-80 bg-secondary/45; }
   .shape-two { @apply -right-28 top-[34rem] h-96 w-96 bg-accent/20; }
   .hero-section { @apply relative min-h-[92vh] py-16 sm:py-20 lg:py-24; }
-  .hero-grid { @apply grid items-center gap-14 lg:grid-cols-[1fr_0.92fr]; }
+  .hero-grid { @apply grid min-w-0 items-center gap-10 lg:grid-cols-[1fr_0.92fr] lg:gap-14; }
   .hero-copy { @apply max-w-3xl animate-fade-up; }
   .eyebrow, .section-label { @apply mb-5 inline-flex items-center gap-2 rounded-full border border-primary/15 bg-card/65 px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-primary shadow-soft backdrop-blur-xl; }
-  .hero-copy h1 { @apply max-w-4xl text-5xl font-black leading-[0.95] text-foreground sm:text-6xl lg:text-7xl; }
+  .hero-copy h1 { @apply max-w-4xl text-5xl font-black leading-[0.95] text-foreground sm:text-6xl lg:text-7xl; overflow-wrap: anywhere; }
   .hero-subhead { @apply mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl; }
   .cta-row { @apply mt-9 flex flex-col gap-3 sm:flex-row; }
   .cta-row.centered { @apply justify-center; }
@@ -169,7 +169,7 @@ All colors MUST be HSL.
   .section-heading { @apply mx-auto mb-12 max-w-3xl text-center; }
   .section-heading.compact { @apply mx-0 text-left; }
   .section-heading h2 { @apply text-3xl font-black leading-tight sm:text-5xl; }
-  .product-hero-card { @apply relative mx-auto block w-full max-w-[520px] rounded-[2rem] border border-card/80 bg-card/75 p-5 text-foreground no-underline shadow-soft backdrop-blur-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
+  .product-hero-card { @apply relative mx-auto block w-full max-w-[520px] rounded-[2rem] border border-card/80 bg-card/75 p-5 text-foreground no-underline shadow-soft backdrop-blur-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; max-width: min(100%, 520px); }
   .product-hero-card img { @apply mb-5 aspect-square w-full rounded-[1.45rem] object-cover shadow-soft; }
   .product-hero-card span { @apply block text-lg font-black; }
   .product-hero-card strong { @apply mt-2 block text-4xl font-black; }
@@ -236,10 +236,11 @@ All colors MUST be HSL.
   .category-description { @apply mb-5 max-w-3xl text-sm leading-7 text-muted-foreground; }
   .category-product-row { @apply grid gap-5 sm:grid-cols-2 lg:grid-cols-3; }
   .category-empty { @apply rounded-2xl border border-dashed border-border bg-background/50 p-5 text-sm leading-7 text-muted-foreground; }
-  .product-scroll { @apply -mx-5 flex gap-5 overflow-x-auto px-5 pb-5 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0; scroll-snap-type: x mandatory; scrollbar-width: thin; }
-  .product-reveal { @apply min-w-[280px] max-w-[280px] shrink-0 sm:min-w-[320px] sm:max-w-[320px] lg:min-w-[360px] lg:max-w-[360px]; scroll-snap-align: start; }
+  .product-scroll { @apply -mx-5 flex max-w-full gap-5 overflow-x-auto px-5 pb-5 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .product-reveal { @apply min-w-[min(78vw,280px)] max-w-[min(78vw,280px)] shrink-0 sm:min-w-[320px] sm:max-w-[320px] lg:min-w-[360px] lg:max-w-[360px]; scroll-snap-align: start; }
   .product-card { @apply block h-full rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] p-4 text-foreground no-underline shadow-soft backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
-  .product-card img { @apply mb-5 aspect-square w-full rounded-[1.15rem] object-cover shadow-soft; }
+  .product-card-mockups { @apply mb-5 flex gap-3 overflow-x-auto pb-2; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .product-card-mockups img { @apply aspect-square min-w-full max-w-full shrink-0 rounded-[1.15rem] object-cover shadow-soft; scroll-snap-align: start; }
   .product-meta { @apply mb-3 inline-flex rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-[0.12em] text-primary; }
   .product-card h3 { @apply mb-2 text-2xl font-black; }
   .product-price { @apply mb-3 text-3xl font-black text-foreground; }
@@ -265,4 +266,28 @@ All colors MUST be HSL.
   .final-cta p { @apply mx-auto mt-5 max-w-2xl text-lg leading-8 text-primary-foreground/75; }
   .reveal-up { @apply translate-y-6 opacity-0 transition-all duration-700 ease-out; }
   .reveal-up.is-visible { @apply translate-y-0 opacity-100; }
+
+  @media (max-width: 640px) {
+    .auralis-page,
+    .site-shell,
+    .hero-grid,
+    .hero-copy,
+    .shop-preview {
+      max-width: 100vw;
+      overflow-x: clip;
+    }
+
+    .hero-copy,
+    .hero-subhead,
+    .product-hero-card,
+    .shop-product-layout,
+    .product-gallery-card,
+    .shop-product-info-card {
+      max-width: calc(100vw - 40px);
+    }
+
+    .hero-subhead {
+      overflow-wrap: anywhere;
+    }
+  }
 }

@@ -1,5 +1,7 @@
 # Auralis Digital Shopify Display Plan
 
+Scope note: this document is product/Shopify-specific. The broader Auralis Digital site direction is now three-pillar: Products, Custom Design, and Website Design. Use this plan for the product catalog and Shopify checkout boundary, not as the full brand-site roadmap.
+
 ## Goal
 
 Auralis Digital should act as the brand/display website for Auralis while showing Auralis Design products in a clean visual shop section.
@@ -20,8 +22,8 @@ https://auralis-design.myshopify.com
 Current active product example:
 
 ```text
-Zeus Blanket
-https://auralis-design.myshopify.com/products/tan-sherpa-blanket
+Zeus Sherpa Blanket
+https://auralis-design.myshopify.com/products/zeus-sherpa-blanket
 ```
 
 Current product source:
@@ -130,7 +132,7 @@ https://auralis-design.myshopify.com/products/{product-handle}
 Current active product example:
 
 ```text
-https://auralis-design.myshopify.com/products/tan-sherpa-blanket
+https://auralis-design.myshopify.com/products/zeus-sherpa-blanket
 ```
 
 ## Implementation Approach
@@ -213,7 +215,7 @@ mockups
 Current active Shopify products:
 
 ```text
-- Zeus Blanket | $60.99 | Printify | Home Decor | 60" x 50" | /products/tan-sherpa-blanket
+- Zeus Sherpa Blanket | $60.99 | Printify | Home Decor | 60" x 50" | /products/zeus-sherpa-blanket
 - Zeus Woven Blanket | $47.10 | Printify | Home Decor | Artwork or Photo / 52'' x 37'' | /products/zeus-woven-blanket
 - Zeus Journal Matte | $18.99 | Printify | Paper products | Journal | /products/zeus-journal-matte
 - Zeus Mug 11oz | $17.99 | Printify | Mug | 11oz | /products/zeus-mug-11oz
@@ -223,12 +225,12 @@ Current active Shopify products:
 Current featured product:
 
 ```text
-title: Zeus Blanket
+title: Zeus Sherpa Blanket
 price: $60.99
 shortDescription: Super-soft sherpa blanket with a tan sherpa backing.
 imageUrl: https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778650633
-shopifyProductUrl: https://auralis-design.myshopify.com/products/tan-sherpa-blanket
-altText: Zeus Blanket
+shopifyProductUrl: https://auralis-design.myshopify.com/products/zeus-sherpa-blanket
+altText: Zeus Sherpa Blanket
 ```
 
 ## Sales And Marketing Requirements
@@ -329,9 +331,9 @@ target="_blank" rel="noopener"
   </div>
 
   <div class="product-scroll" aria-label="Featured Auralis Design products">
-    <a class="product-card" href="https://auralis-design.myshopify.com/products/tan-sherpa-blanket" target="_blank" rel="noopener">
-      <img src="https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1365855276876874161_2048.jpg?v=1778650633" alt="Zeus Blanket">
-      <h3>Zeus Blanket</h3>
+    <a class="product-card" href="https://auralis-design.myshopify.com/products/zeus-sherpa-blanket" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0783/5769/2516/files/946217445547567931_2048.jpg?v=1778696075" alt="Zeus Sherpa Blanket">
+      <h3>Zeus Sherpa Blanket</h3>
       <p class="price">$60.99</p>
       <p class="description">Super-soft sherpa blanket with a tan sherpa backing.</p>
       <span class="button">View on Shopify</span>
@@ -464,7 +466,7 @@ Use `docs/SHOPIFY_LAUNCH_CHECKLIST.md` as the internal pre-launch checklist.
 Before sending real traffic to a Shopify product link:
 
 - Remove the Shopify storefront password or adjust CTA expectations
-- Test `/products/tan-sherpa-blanket` from an incognito browser
+- Test `/products/zeus-sherpa-blanket` from an incognito browser
 - Confirm the product page opens without admin login or customer confusion
 - Confirm checkout works
 - Confirm shipping rates work

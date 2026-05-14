@@ -25,8 +25,19 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 | `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof and commerce readiness tracking. |
 | `docs/STATUS.md` | Short operational status snapshot. |
 | `docs/ROADMAP.md` | Execution roadmap and priority order. |
+| `docs/SHOPIFY_LAUNCH_CHECKLIST.md` | Product/Shopify launch checklist before sending real traffic to product links. |
 | `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
 | `docs/INDEX.md` | This map. |
+
+## Current Public Direction
+
+Auralis Digital currently contains three related public surfaces:
+
+1. Auralis products
+2. Custom / personalized design requests
+3. Website design services
+
+The homepage should act as a brand gateway. Products belong on `/products` and `/shop`, custom requests belong on `/custom-design`, and website services belong on `/web-design`.
 
 ## Sales and Lead Generation
 

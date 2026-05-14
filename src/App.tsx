@@ -8,6 +8,18 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
+function restoreGitHubPagesRoute() {
+  const params = new URLSearchParams(window.location.search);
+  const preservedPath = params.get("p");
+
+  if (!preservedPath?.startsWith("/")) return;
+
+  const restoredUrl = `${preservedPath}${window.location.hash}`;
+  window.history.replaceState(null, "", restoredUrl);
+}
+
+restoreGitHubPagesRoute();
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -16,7 +28,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/products" element={<Index page="shop" />} />
           <Route path="/shop" element={<Index page="shop" />} />
+          <Route path="/custom-design" element={<Index page="custom-design" />} />
           <Route path="/web-design" element={<Index page="web-design" />} />
           <Route path="/websites" element={<Index page="websites" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
