@@ -161,6 +161,12 @@ Acceptance:
 
 Goal: preserve the website design pillar without letting it conflict with the product/custom design direction.
 
+Current live note:
+
+- PR #24 split website demos into a separate `/websites` page and kept `/web-design` focused on the service offer, pricing, and inquiry path.
+- `/web-design`, `/websites`, `/websites/`, and all current `/projects/...` demo targets returned HTTP `200` after deploy.
+- The Lawn Care demo now uses local deployable assets and Auralis Digital sample/demo language.
+
 Required:
 
 - Confirm website-design page routes prospects to intake clearly.

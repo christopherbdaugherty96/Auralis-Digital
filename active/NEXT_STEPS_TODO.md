@@ -75,6 +75,7 @@ Goal: keep the three-pillar public direction understandable.
 - [ ] Confirm homepage routes visitors toward Products, Custom Design, and Website Design.
 - [ ] Confirm no product pricing appears on the homepage.
 - [ ] Confirm navigation clearly separates Products, Custom Design, and Website Design.
+- [x] Confirm website-design prospects can find website demos from the Website Design page.
 - [ ] Confirm website-design prospects can find contact/intake without confusion.
 - [ ] Confirm custom-design visitors understand request boundaries.
 - [ ] Confirm product buyers understand checkout opens through Shopify.
@@ -228,6 +229,14 @@ Goal: make open GitHub issues match current repo truth.
 - [ ] Close or rewrite issue #3 as deployment verification if still relevant.
 - [ ] Review issue #2 before editing because it references older source assumptions.
 - [ ] Verify whether duplicate demo cards still appear in the active live source.
+- [x] Verify live website demo routes after PR #24.
+  - [x] `/web-design` returns HTTP `200`.
+  - [x] `/websites` returns HTTP `200`.
+  - [x] `/websites/` returns HTTP `200`.
+  - [x] All 10 website demo targets return HTTP `200`.
+  - [x] Lawn Care demo route and local image assets return HTTP `200`.
+  - [x] Deployed bundle uses root-relative `/projects/...` demo links.
+  - [x] Lawn Care demo no longer contains the dead `RobsLawnCare` URL, old image path, fake phone number, mock-pricing wording, or old Website LLC/Y.O.U. branding.
 - [ ] Keep issue #1 low priority until trust setup, checkout verification, and first proof are handled.
 
 ---
