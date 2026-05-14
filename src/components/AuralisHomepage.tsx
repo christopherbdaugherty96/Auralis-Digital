@@ -471,10 +471,12 @@ function ProductCard({ product }: { product: ShopProduct }) {
   return (
     <article className="product-card">
       <ProductPhotoScroll product={product} />
-      <span className="product-meta">{product.category}</span>
-      <h3>{product.title}</h3>
-      <p className="product-price">{product.price}</p>
-      <p className="product-description">{product.detailDescription}</p>
+      <div className="product-card-body">
+        <span className="product-meta">{product.category}</span>
+        <h3>{product.title}</h3>
+        <p className="product-price">{product.price}</p>
+        <p className="product-description">{product.shortDescription}</p>
+      </div>
       <a
         href={product.shopifyTrackingUrl}
         className="product-button"
@@ -495,9 +497,9 @@ function ProductCatalogGrid() {
     <Reveal className="product-catalog-section">
       <div className="section-heading compact">
         <span className="section-label">All products</span>
-        <h2>Browse the rest of the Auralis Design catalog.</h2>
+        <h2>Browse every current Auralis Design product.</h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Compare photos, sizes, materials, and product notes before opening Shopify to buy.
+          Every card includes photos, price, size notes, and a clear Shopify button when you are ready to buy.
         </p>
       </div>
       <div className="product-catalog-grid">
@@ -1496,7 +1498,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
       {/* ── Mobile bottom CTA ────────────────────────────── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 p-3 backdrop-blur-xl md:hidden">
         <Button variant="conversion" size="lg" className="w-full" asChild>
-          <a href="/custom-design">Start a Request</a>
+          {isShop ? (
+            <a href={featuredProduct.shopifyTrackingUrl} target="_blank" rel="noopener">
+              Buy Featured Product
+            </a>
+          ) : (
+            <a href="/custom-design">Start a Request</a>
+          )}
         </Button>
       </div>
     </>
