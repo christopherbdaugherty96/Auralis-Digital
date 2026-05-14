@@ -102,6 +102,79 @@ const concepts = [
   { name: "Contractor", note: "Trust-focused project pages with service areas, quote forms, and clear calls.", icon: Hammer },
 ];
 
+const websiteDemos = [
+  {
+    title: "Restaurant",
+    category: "Food",
+    description: "Diner, coney, takeout, or cafe structure focused on menu visibility, hours, location, and mobile customer action.",
+    imageUrl: "/assets/demo-thumbnails/restaurant.svg",
+    href: "/projects/bryans-neighborhood-coney-final-demo/index.html",
+  },
+  {
+    title: "Lawn Care",
+    category: "Outdoor Service",
+    description: "Quote-request website for mowing, landscaping, cleanup, service areas, packages, and recurring customer inquiries.",
+    imageUrl: "/assets/demo-thumbnails/lawn-care.svg",
+    href: "/projects/robs-lawn-care-demo/site/index.html",
+  },
+  {
+    title: "Maintenance",
+    category: "Home Repair",
+    description: "Handyman and property-maintenance layout built around repairs, service clarity, trust, and job-detail requests.",
+    imageUrl: "/assets/demo-thumbnails/handyman.svg",
+    href: "/projects/maintenance-man-demo/index.html",
+  },
+  {
+    title: "Barbershop",
+    category: "Personal Care",
+    description: "Booking-forward local shop demo for services, location, appointment flow, and phone-first mobile visitors.",
+    imageUrl: "/assets/demo-thumbnails/barbershop.svg",
+    href: "/projects/barbershop-demo/index.html",
+  },
+  {
+    title: "Salon",
+    category: "Personal Care",
+    description: "Polished beauty-service demo for service menus, style photos, booking prompts, policies, and client trust.",
+    imageUrl: "/assets/demo-thumbnails/salon.svg",
+    href: "/projects/salon-demo/index.html",
+  },
+  {
+    title: "Painter",
+    category: "Trades",
+    description: "Residential and commercial quote-driven demo for project photos, before-and-after proof, and estimate requests.",
+    imageUrl: "/assets/demo-thumbnails/painter.svg",
+    href: "/projects/painter-demo/index.html",
+  },
+  {
+    title: "Roofing / Contractor",
+    category: "Trades",
+    description: "Estimate-focused contractor layout for repairs, exterior services, homeowner trust, and project-detail capture.",
+    imageUrl: "/assets/demo-thumbnails/roofing.svg",
+    href: "/projects/roofing-contractor-demo/index.html",
+  },
+  {
+    title: "Cleaning Service",
+    category: "Home Service",
+    description: "Lead-capture demo for residential, commercial, deep-clean, recurring-cleaning, and one-time service requests.",
+    imageUrl: "/assets/demo-thumbnails/cleaning.svg",
+    href: "/projects/cleaning-service-demo/index.html",
+  },
+  {
+    title: "Mobile Detailing",
+    category: "Auto Service",
+    description: "Convenience-focused auto detailing demo for packages, booking, service area, and mobile-first quote flow.",
+    imageUrl: "/assets/demo-thumbnails/detailing.svg",
+    href: "/projects/mobile-detailing-demo/index.html",
+  },
+  {
+    title: "Photographer",
+    category: "Creative",
+    description: "Portfolio-focused demo for session inquiries, package clarity, image-forward trust, and visual storytelling.",
+    imageUrl: "/assets/demo-thumbnails/photographer.svg",
+    href: "/projects/photographer-demo/index.html",
+  },
+];
+
 const pricing = [
   {
     label: "For Auralis-built sites",
@@ -1115,24 +1188,46 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label">Example work</span>
-              <h2>Sample builds shaped around real local business needs.</h2>
+              <h2>Website demos shaped around real local business needs.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                These are example builds, not inflated claims. They show the kind of practical structure local businesses can use to get more calls and inquiries.
+                These are sample website directions, not client claims. Click through the examples to see how layout, mobile calls, trust sections, and quote paths can work for different businesses.
               </p>
             </Reveal>
+            <div className="website-demo-grid">
+              {websiteDemos.map((demo) => (
+                <Reveal key={demo.title}>
+                  <a
+                    href={demo.href}
+                    className="website-demo-card"
+                    target={demo.external ? "_blank" : undefined}
+                    rel={demo.external ? "noopener" : undefined}
+                  >
+                    <img src={demo.imageUrl} alt={`${demo.title} website demo thumbnail`} loading="lazy" />
+                    <div className="website-demo-body">
+                      <span>{demo.category}</span>
+                      <h3>{demo.title}</h3>
+                      <p>{demo.description}</p>
+                      <strong>
+                        View sample build <ArrowRight className="size-4" aria-hidden="true" />
+                      </strong>
+                    </div>
+                  </a>
+                </Reveal>
+              ))}
+            </div>
             <Reveal>
               <a
                 href={DEMO_LIBRARY_HREF}
-                className="service-card flex flex-col gap-4 no-underline sm:flex-row sm:items-center sm:justify-between"
+                className="service-card mt-8 flex flex-col gap-4 no-underline sm:flex-row sm:items-center sm:justify-between"
               >
                 <div className="flex flex-col gap-2">
                   <h3 className="mb-0">Industry Demo Library</h3>
                   <p className="text-muted-foreground">
-                    Browse niche examples for restaurants, barbershops, painters, roofers, cleaners, salons, and more.
+                    Open the original static demo hub with the same examples in a compact library format.
                   </p>
                 </div>
                 <span className="inline-flex shrink-0 items-center gap-1 text-sm font-bold text-primary">
-                  Browse all examples <ArrowRight className="size-4" aria-hidden="true" />
+                  Open demo library <ArrowRight className="size-4" aria-hidden="true" />
                 </span>
               </a>
             </Reveal>
@@ -1195,6 +1290,28 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </Reveal>
               ))}
             </div>
+          </div>
+        </section>
+        )}
+
+        {/* Website demos link */}
+        {isWebDesign && (
+        <section id="website-demos" className="section-band">
+          <div className="site-shell">
+            <Reveal>
+              <a href="/websites" className="service-card flex flex-col gap-5 no-underline sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <span className="section-label">Website demos</span>
+                  <h2 className="mt-3 text-3xl font-black leading-tight sm:text-5xl">Want to see example designs first?</h2>
+                  <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
+                    Browse sample website designs for restaurants, lawn care, barbershops, salons, contractors, cleaning services, mobile detailing, photographers, and more.
+                  </p>
+                </div>
+                <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-black text-primary-foreground shadow-conversion">
+                  View website demos <ArrowRight className="size-4" aria-hidden="true" />
+                </span>
+              </a>
+            </Reveal>
           </div>
         </section>
         )}
