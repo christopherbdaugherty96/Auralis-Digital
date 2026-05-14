@@ -270,6 +270,14 @@ All colors MUST be HSL.
   .concept-grid { @apply grid gap-5 md:grid-cols-2 lg:grid-cols-5; }
   .concept-header { @apply mb-6 flex items-center justify-between gap-3 text-xs font-black uppercase tracking-[0.14em] text-primary; }
   .concept-header svg { @apply size-6; }
+  .website-demo-grid { @apply grid gap-5 sm:grid-cols-2 xl:grid-cols-3; }
+  .website-demo-card { @apply flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-card/80 bg-[image:var(--gradient-card)] text-foreground no-underline shadow-soft backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-conversion focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 focus-visible:ring-offset-4 focus-visible:ring-offset-background; }
+  .website-demo-card img { @apply aspect-[16/10] w-full bg-background object-cover; }
+  .website-demo-body { @apply flex flex-1 flex-col p-5; }
+  .website-demo-body span { @apply mb-3 w-fit rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-black uppercase tracking-[0.12em] text-primary; }
+  .website-demo-body h3 { @apply mb-3 text-xl font-black; }
+  .website-demo-body p { @apply flex-1 text-sm leading-7 text-muted-foreground; }
+  .website-demo-body strong { @apply mt-5 inline-flex items-center gap-2 text-sm font-black text-primary; }
   .trust-layout { @apply grid gap-10 lg:grid-cols-[0.78fr_1fr]; }
   .trust-grid { @apply grid gap-4 sm:grid-cols-2; }
   .trust-pill { @apply flex items-center gap-3 rounded-2xl border border-card/80 bg-card/70 p-4 font-bold shadow-soft backdrop-blur-xl; }
