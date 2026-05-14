@@ -1495,18 +1495,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         </footer>
       </main>
 
-      {/* ── Mobile bottom CTA ────────────────────────────── */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 p-3 backdrop-blur-xl md:hidden">
-        <Button variant="conversion" size="lg" className="w-full" asChild>
-          {isShop ? (
-            <a href={featuredProduct.shopifyTrackingUrl} target="_blank" rel="noopener">
-              Buy Featured Product
-            </a>
-          ) : (
+      {!isShop && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 p-3 backdrop-blur-xl md:hidden">
+          <Button variant="conversion" size="lg" className="w-full" asChild>
             <a href="/custom-design">Start a Request</a>
-          )}
-        </Button>
-      </div>
+          </Button>
+        </div>
+      )}
     </>
   );
 }
