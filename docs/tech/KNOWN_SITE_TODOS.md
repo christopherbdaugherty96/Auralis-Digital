@@ -32,6 +32,7 @@ Do not use this for:
 ## Active Site Execution Tasks
 
 - Configure production contact env: `VITE_CONTACT_EMAIL` and `VITE_FORMSPREE_ENDPOINT`.
+  - 2026-05-14 live check: repo variables/secrets are not currently visible/configured, and the live contact form still shows the mailto fallback.
 - Verify live form submission on phone and desktop.
 - Run a manual phone and desktop QA pass before outreach or product traffic.
 - Manually review each demo before sending it to prospects.
@@ -48,8 +49,9 @@ Older shop-first homepage notes should be treated as historical findings unless 
 ### Recently Resolved
 
 - GitHub Pages direct-route restore and route folders are live.
-  - Verified: `/products`, `/shop`, `/custom-design`, `/web-design`, and `/websites` return HTTP `200`.
+  - Verified live after PR #22: `/`, `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`, and local policy/support pages return HTTP `200`.
   - Verified: live `robots.txt` includes `Sitemap: https://www.auralisdigital.net/sitemap.xml`.
+  - Source check: `/?p=/...` fallback restoration is implemented in `src/App.tsx`; browser-level fallback restore still needs a live browser/CDP pass before marking it fully user-verified.
 - Route-specific static metadata generation is implemented through `scripts/generate-route-pages.mjs`.
   - Generated route folders cover `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`, and policy/support pages.
   - Route HTML can ship route-specific title, description, canonical, OG, and Twitter metadata.
@@ -66,7 +68,13 @@ Older shop-first homepage notes should be treated as historical findings unless 
   - all seven products present
   - product gallery selectors stay on Auralis Digital
   - product-specific Shopify buttons remain the buy path
-- Social preview SVG assets now use the three-pillar Auralis positioning.
+- Live mobile `/products` QA passed at a 390px viewport after PR #22:
+  - no horizontal overflow
+  - all seven products present
+  - no fixed bottom CTA blocking product content
+  - product gallery selector interaction worked
+  - seven product-specific Shopify buttons were present
+- Social preview SVG assets now use the three-pillar Auralis positioning and return live HTTP `200`.
 
 ### P2
 
@@ -113,9 +121,9 @@ Live target tested:
 
 ### Live Visual / Customer Friction
 
-- Latest local mobile source QA shows no horizontal overflow at a 390px viewport. Recheck live phone behavior after deploy.
+- Latest live mobile `/products` QA shows no horizontal overflow at a 390px viewport.
 
-- The fixed mobile bottom CTA has been removed from `/products` so each product card's Shopify button remains the product-specific buy path. Recheck live phone behavior after deploy.
+- The fixed mobile bottom CTA has been removed from `/products` so each product card's Shopify button remains the product-specific buy path.
 
 - Homepage source no longer lists product cards.
   - Verify after deploy that `/` routes to Products, Custom Design, and Website Design instead of sending visitors directly to Shopify.
@@ -123,10 +131,15 @@ Live target tested:
 ### Confirmed Working Live
 
 - Homepage loads with HTTP `200`.
-- Route folders exist for the current public React routes.
-- Local policy/support routes exist.
+- Current public routes return HTTP `200`: `/`, `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`.
+- Local policy/support routes return HTTP `200`: `/refund-policy`, `/shipping-policy`, `/privacy-policy`, `/terms-of-service`.
 - UTM-tagged Shopify links are present.
+- Every product `shopifyTrackingUrl` in `src/data/shopCatalog.ts` returned HTTP `200` from Shopify and showed public buy/add-to-cart signals during the 2026-05-14 live link check.
+- Live contact form currently uses mailto fallback:
+  - submit button text: `Prepare Project Email`
+  - `VITE_CONTACT_EMAIL` / `VITE_FORMSPREE_ENDPOINT` still need production configuration.
 - `og-image.png` returns HTTP `200`.
+- `public/og-image.svg` and `public/assets/social-preview.svg` return live HTTP `200` and use three-pillar positioning.
 - `sitemap.xml` exists and includes the current route set, including policy routes.
 
 ## Rule

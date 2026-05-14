@@ -46,7 +46,7 @@ Goal: remove avoidable trust friction before sending serious traffic.
 
 ### 1. Public Printify Visibility Cleanup
 
-Current state: completed in PR #18.
+Current state: completed in PR #18 and live-rechecked after PR #22.
 
 Acceptance:
 
@@ -55,11 +55,11 @@ Acceptance:
   - `src/data/shopCatalog.ts`
   - `scripts/generate-route-pages.mjs`
 - Internal docs may still mention Printify for fulfillment tracking.
-- Live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` should be rechecked after each deploy.
+- Live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` were rechecked after PR #22 and did not visibly expose production-partner branding.
 
 ### 2. Social Preview Refresh
 
-Current state: source assets and docs updated in PR #19.
+Current state: source assets and docs updated in PR #19; live social SVG assets return HTTP `200` after PR #22.
 
 Required:
 
@@ -96,13 +96,19 @@ Acceptance:
 - Auralis receives the inquiry.
 - The website clearly confirms submission.
 
+Current live note:
+
+- As of 2026-05-14, the live contact form still uses the mailto fallback and shows `Prepare Project Email`.
+- No production contact variable/secret is currently visible from the repo environment check.
+- This remains the highest-ROI technical task before serious outreach.
+
 ## Phase 3 - Shopify Commerce Readiness
 
 Goal: do not treat the product surface as mature until checkout, policies, and fulfillment assumptions are verified.
 
 Required:
 
-- Verify every Shopify product link from the live site.
+- Verify every Shopify product link from the live site. Completed on 2026-05-14 for the current seven website catalog products.
 - Verify Shopify-hosted refund policy.
 - Verify Shopify-hosted shipping policy.
 - Verify Shopify-hosted privacy policy.
@@ -124,6 +130,12 @@ Acceptance:
 - Policies are visible during checkout.
 - Customer support path is clear.
 - Public copy does not overstate maturity.
+
+Current live note:
+
+- Shopify storefront password is removed.
+- Current Auralis Digital Shopify product links resolve to public product pages with buy/add-to-cart signals.
+- Full incognito checkout, payment, tax, shipping, and Shopify-hosted policy verification are still open.
 
 ## Phase 4 - Custom Design Readiness
 
@@ -233,8 +245,8 @@ Acceptance:
 
 1. Verify contact/Formspree flow.
 2. Verify Shopify policies and checkout.
-3. Confirm live social preview cache after deploy with Facebook Sharing Debugger.
-4. Run live phone QA on `/products`, `/custom-design`, `/web-design`, and contact flow.
+3. Confirm live social preview cache with Facebook Sharing Debugger.
+4. Run live phone QA on `/custom-design`, `/web-design`, and contact flow.
 5. Pick one execution lane.
 6. Get one real sale/client/request.
 7. Capture real proof.

@@ -38,37 +38,40 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 
 ## Policies And Contact
 
-- [ ] Auralis Digital Refund Policy link is visible.
-- [ ] Auralis Digital Shipping Policy link is visible.
-- [ ] Auralis Digital Privacy Policy link is visible.
-- [ ] Auralis Digital Terms of Service link is visible.
-- [ ] Auralis Digital policy pages open publicly from incognito without `404`.
+- [x] Auralis Digital Refund Policy route opens publicly without HTTP `404`.
+- [x] Auralis Digital Shipping Policy route opens publicly without HTTP `404`.
+- [x] Auralis Digital Privacy Policy route opens publicly without HTTP `404`.
+- [x] Auralis Digital Terms of Service route opens publicly without HTTP `404`.
+- [x] Auralis Digital policy pages open publicly without HTTP `404`.
 - [ ] Shopify-hosted Refund Policy is published or checkout clearly links to the correct policy.
 - [ ] Shopify-hosted Shipping Policy is published or checkout clearly links to the correct policy.
 - [x] Shopify-hosted Privacy Policy opens publicly from incognito without the Shopify password gate.
 - [ ] Shopify-hosted Terms of Service is published or checkout clearly links to the correct policy.
-- [ ] Contact email is visible.
+- [x] Contact email path is visible through live mailto fallback.
 
 ## Mobile And Customer Flow
 
-- [ ] Homepage primary CTA leads to `/shop`.
-- [ ] Live `/shop` route opens directly without HTTP `404`.
-- [ ] Live `/web-design` route opens directly without HTTP `404`.
-- [ ] GitHub Pages fallback restores `/?p=/shop` to the actual Shop page.
+- [ ] Homepage primary product CTA leads to `/products`.
+- [x] Live `/products` route opens directly without HTTP `404`.
+- [x] Live `/shop` route opens directly without HTTP `404`.
+- [x] Live `/custom-design` route opens directly without HTTP `404`.
+- [x] Live `/web-design` route opens directly without HTTP `404`.
+- [ ] GitHub Pages fallback restores `/?p=/shop` to the actual Shop page in a live browser check.
+  - Source implementation exists in `src/App.tsx`; browser-level fallback restore still needs a direct live browser pass.
 - [x] Product gallery selectors stay on Auralis Digital.
 - [x] Clearly labeled buy/view buttons open Shopify in a new tab.
 - [x] Mobile product cards render with all products visible in a 390px browser check.
-- [ ] Mobile hero and product card do not clip awkwardly at a 390px-wide viewport.
-- [ ] Fixed mobile bottom CTA does not block contact, footer, or product content.
+- [x] Mobile product page does not horizontally overflow at a 390px-wide viewport.
+- [x] Fixed mobile bottom CTA does not block product content on `/products`.
 - [ ] Keyboard focus is visible on product cards and CTA links.
 - [x] Customer flow is clear: browse on Auralis Digital, checkout through Shopify, production begins after purchase for made-to-order items.
 
 ## Boundaries
 
-- [ ] No custom cart is added to Auralis Digital.
-- [ ] No custom checkout is added to Auralis Digital.
-- [ ] No payment forms are added to Auralis Digital.
-- [ ] No tax or shipping calculation is added to Auralis Digital.
-- [ ] No Shopify Admin API is used on the public website.
-- [ ] No production-partner API is used on the public website.
-- [ ] No fake reviews, fake urgency, or fake discounts are used.
+- [x] No custom cart is added to Auralis Digital.
+- [x] No custom checkout is added to Auralis Digital.
+- [x] No payment forms are added to Auralis Digital.
+- [x] No tax or shipping calculation is added to Auralis Digital.
+- [x] No Shopify Admin API is used on the public website.
+- [x] No production-partner API is used on the public website.
+- [x] No fake reviews, fake urgency, or fake discounts are used.
