@@ -1,30 +1,32 @@
 # Auralis Digital Document Index
 
-Last updated: 2026-05-13
+Last updated: 2026-05-14
 
 This is the navigation layer for the repo. Use it to find the current source of truth before creating or editing another document.
 
-Auralis Digital currently contains two related public surfaces:
+Auralis Digital currently contains three related public surfaces:
 
-1. Auralis Digital website services
-2. An Auralis Design product/shop surface with Shopify checkout routing
+1. Auralis Design products
+2. custom / personalized design requests
+3. website design services
 
-Current execution priority remains website services first:
+Current execution priority is:
 
 ```text
-business setup -> trust setup -> lead capture -> outreach -> first client -> proof
+business setup -> trust setup -> inquiry flow -> products/custom design/web design clarity -> first real sale or client -> proof
 ```
 
-The product/shop surface exists publicly, but commerce readiness is still separately tracked and should not be overstated.
+The product/shop surface exists publicly, but commerce readiness is still separately tracked and should not be overstated. Custom design and website design are also active public directions, but neither should be presented as more mature than the current delivery/proof state supports.
 
 ## Start Here
 
 | File | Purpose |
 |---|---|
 | `docs/AURALIS_CURRENT_STATUS.md` | Canonical truth doc: what is real, what is missing, and what to do next. |
+| `docs/ROADMAP_EXECUTION_2026-05-14.md` | Current execution roadmap: public trust fixes, contact verification, Shopify readiness, custom design readiness, website design readiness, first sale/client, and proof. |
 | `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof and commerce readiness tracking. |
 | `docs/STATUS.md` | Short operational status snapshot. |
-| `docs/ROADMAP.md` | Execution roadmap and priority order. |
+| `docs/ROADMAP.md` | Older/general execution roadmap and priority order. Use the dated execution roadmap above for the current ordered workstream. |
 | `docs/SHOPIFY_LAUNCH_CHECKLIST.md` | Product/Shopify launch checklist before sending real traffic to product links. |
 | `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
 | `docs/INDEX.md` | This map. |
@@ -33,11 +35,24 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 
 Auralis Digital currently contains three related public surfaces:
 
-1. Auralis products
+1. Auralis Design products
 2. Custom / personalized design requests
 3. Website design services
 
 The homepage should act as a brand gateway. Products belong on `/products` and `/shop`, custom requests belong on `/custom-design`, and website services belong on `/web-design`.
+
+## Current Highest-ROI Workstream
+
+Use `docs/ROADMAP_EXECUTION_2026-05-14.md` for the current ordered workstream:
+
+1. Finish public Printify cleanup.
+2. Refresh social preview image/card.
+3. Verify contact/Formspree flow.
+4. Verify Shopify policies and checkout.
+5. Mobile QA pass.
+6. Pick one execution lane.
+7. Get one real sale/client/request.
+8. Capture real proof.
 
 ## Sales and Lead Generation
 
@@ -93,11 +108,10 @@ Historical documents live here. They may explain past decisions, but they do not
 
 Do not create overlapping roadmap, status, or current-state documents.
 
-Update:
+Update existing canonical docs before creating new tracking layers:
 
 1. `docs/AURALIS_CURRENT_STATUS.md`
-2. `active/NEXT_STEPS_TODO.md`
-3. `docs/STATUS.md`
-4. `docs/ROADMAP.md`
-
-before creating new tracking layers.
+2. `docs/ROADMAP_EXECUTION_2026-05-14.md`
+3. `active/NEXT_STEPS_TODO.md`
+4. `docs/STATUS.md`
+5. `docs/ROADMAP.md`
