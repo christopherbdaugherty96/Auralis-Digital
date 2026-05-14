@@ -45,14 +45,13 @@ The homepage should act as a brand gateway. Products belong on `/products` and `
 
 Use `docs/ROADMAP_EXECUTION_2026-05-14.md` for the current ordered workstream:
 
-1. Finish public Printify cleanup.
-2. Refresh social preview image/card.
-3. Verify contact/Formspree flow.
-4. Verify Shopify policies and checkout.
-5. Mobile QA pass.
-6. Pick one execution lane.
-7. Get one real sale/client/request.
-8. Capture real proof.
+1. Verify contact/Formspree flow.
+2. Verify Shopify policies and checkout.
+3. Confirm live social preview cache after deploy with Facebook Sharing Debugger.
+4. Run live phone QA on `/products`, `/custom-design`, `/web-design`, and contact flow.
+5. Pick one execution lane.
+6. Get one real sale/client/request.
+7. Capture real proof.
 
 ## Sales and Lead Generation
 

@@ -78,11 +78,11 @@ Goal: keep the three-pillar public direction understandable.
 - [ ] Confirm product buyers understand checkout opens through Shopify.
 - [ ] Confirm public copy does not imply Auralis Digital processes card payments directly.
 - [ ] Confirm public copy does not imply the product/shop surface is fully mature until commerce readiness is verified.
-- [ ] Refresh the public social preview card so Facebook/Instagram no longer show the old `Professional Websites for Local Businesses` graphic.
-  - [ ] Update the OG/social preview image used by the homepage, likely `public/og-image.png` or the generated OG image source.
-  - [ ] Confirm homepage `<title>`, meta description, `og:title`, `og:description`, `twitter:title`, and `twitter:description` match the three-pillar brand direction.
-  - [ ] Confirm the social preview image copy matches Products, Custom Design, and Website Design instead of website-services-only positioning.
-  - [ ] Run `npm run build` after changing metadata or image generation.
+- [x] Refresh the public social preview card source so Facebook/Instagram no longer use website-services-only asset copy after cache refresh.
+  - [x] Update the OG/social preview image source in `public/og-image.svg` and `public/assets/social-preview.svg`.
+  - [x] Confirm homepage `<title>`, meta description, `og:title`, `og:description`, `twitter:title`, and `twitter:description` match the three-pillar brand direction.
+  - [x] Confirm the social preview image copy matches Products, Custom Design, and Website Design instead of website-services-only positioning.
+  - [x] Run build/test validation after changing metadata or image assets.
   - [ ] After deploy, use the Facebook Sharing Debugger and click `Scrape Again` for `https://www.auralisdigital.net/`.
   - [ ] Re-test a Facebook/Instagram post preview before public promotion.
 
@@ -169,7 +169,8 @@ Use:
 
 Goal: verify the Auralis product surface before treating it as a mature commerce operation.
 
-- [ ] Verify Shopify product links from the live site.
+- [x] Verify Shopify product links from source/local public checks.
+- [ ] Verify Shopify product links from the live site after latest deploy.
 - [ ] Verify Shopify checkout flow.
 - [ ] Verify local Auralis policy/support pages.
 - [ ] Publish or verify Shopify refund policy link.
@@ -180,18 +181,19 @@ Goal: verify the Auralis product surface before treating it as a mature commerce
 - [ ] Confirm tax settings.
 - [ ] Confirm shipping settings.
 - [ ] Run a real Shopify test order.
-- [ ] Verify Printify fulfillment flow for Printify products.
-- [ ] Remove Printify from customer-facing website copy before public product traffic.
-  - [ ] Confirm no `Printify` text appears in `src/components/AuralisHomepage.tsx`.
-  - [ ] Confirm no `Printify` text appears in `src/data/shopCatalog.ts`.
-  - [ ] Confirm no `Printify` text appears in `scripts/generate-route-pages.mjs` route metadata.
+- [ ] Verify production-partner fulfillment flow for made-to-order products.
+- [x] Remove production-partner branding from customer-facing website copy before public product traffic.
+  - [x] Confirm no `Printify` text appears in `src/components/AuralisHomepage.tsx`.
+  - [x] Confirm no `Printify` text appears in `src/data/shopCatalog.ts`.
+  - [x] Confirm no `Printify` text appears in `scripts/generate-route-pages.mjs` route metadata.
   - [ ] Confirm live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` pages do not visibly mention Printify.
   - [ ] Keep Printify references allowed in internal docs/checklists where fulfillment setup is being tracked.
 - [ ] Confirm production/fulfillment timing expectations.
 - [ ] Confirm customer support email/path.
 - [ ] Confirm product margin/profit assumptions.
 - [ ] Confirm artwork/product-rights ownership workflow.
-- [ ] Confirm product photos/mockups are accurate enough for public sale.
+- [x] Confirm product photos are present for every current source product.
+- [ ] Confirm product photos match the latest live Shopify/admin-side product truth before public sale.
 - [ ] Confirm no fake product reviews/testimonials are implied.
 - [ ] Create a dedicated commerce-readiness doc if this checklist grows beyond active TODO size.
 
