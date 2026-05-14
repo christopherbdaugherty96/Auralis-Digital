@@ -46,20 +46,7 @@ Goal: remove avoidable trust friction before sending serious traffic.
 
 ### 1. Public Printify Visibility Cleanup
 
-Current state:
-
-- `scripts/generate-route-pages.mjs` cleanup exists on `fix/hide-printify-public-copy-v2`.
-- `src/data/shopCatalog.ts` cleanup exists on older `fix/hide-printify-public-copy` and must be re-applied to v2.
-- `src/components/AuralisHomepage.tsx` still needs local patching because connector fetches can truncate the file.
-
-Required sequence:
-
-1. Re-apply product catalog cleanup to `fix/hide-printify-public-copy-v2`.
-2. Patch `src/components/AuralisHomepage.tsx` locally because connector fetch truncates the file.
-3. Run build/test/diff checks.
-4. Push `fix/hide-printify-public-copy-v2`.
-5. Open PR.
-6. Then start a separate branch for the social-preview image refresh.
+Current state: completed in PR #18.
 
 Acceptance:
 
@@ -68,21 +55,15 @@ Acceptance:
   - `src/data/shopCatalog.ts`
   - `scripts/generate-route-pages.mjs`
 - Internal docs may still mention Printify for fulfillment tracking.
-- Live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` do not visibly mention Printify after deploy.
+- Live `/products`, `/refund-policy`, `/shipping-policy`, `/privacy-policy`, and `/terms-of-service` should be rechecked after each deploy.
 
 ### 2. Social Preview Refresh
 
-Current state:
-
-- Facebook/Instagram preview still shows the old `Professional Websites for Local Businesses` graphic.
-- Active TODO tracks this but no image refresh has been implemented yet.
+Current state: source assets and docs updated in PR #19.
 
 Required:
 
-- Update OG/social preview image used by homepage.
-- Confirm homepage title/meta/OG/Twitter copy matches three-pillar direction.
-- Run `npm run build`.
-- Deploy.
+- Confirm deploy has published the refreshed preview assets.
 - Use Facebook Sharing Debugger and click `Scrape Again` for `https://www.auralisdigital.net/`.
 - Re-test Facebook/Instagram post preview.
 
@@ -250,14 +231,13 @@ Acceptance:
 
 ## Current Highest-ROI Order
 
-1. Finish public Printify cleanup.
-2. Refresh social preview image/card.
-3. Verify contact/Formspree flow.
-4. Verify Shopify policies and checkout.
-5. Mobile QA pass.
-6. Pick one execution lane.
-7. Get one real sale/client/request.
-8. Capture real proof.
+1. Verify contact/Formspree flow.
+2. Verify Shopify policies and checkout.
+3. Confirm live social preview cache after deploy with Facebook Sharing Debugger.
+4. Run live phone QA on `/products`, `/custom-design`, `/web-design`, and contact flow.
+5. Pick one execution lane.
+6. Get one real sale/client/request.
+7. Capture real proof.
 
 ## Do Not Do Yet
 

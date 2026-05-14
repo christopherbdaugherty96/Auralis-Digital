@@ -59,6 +59,14 @@ Older shop-first homepage notes should be treated as historical findings unless 
   - `/privacy-policy`
   - `/terms-of-service`
 - Footer policy links now point to local Auralis policy/support pages instead of incomplete Shopify policy URLs.
+- Public product/customer copy no longer visibly exposes production-partner branding in source.
+- Product image labels use `Photo` wording instead of `Mockup` wording in public source.
+- Mobile `/products` source QA passed at a 390px viewport:
+  - no horizontal overflow
+  - all seven products present
+  - product gallery selectors stay on Auralis Digital
+  - product-specific Shopify buttons remain the buy path
+- Social preview SVG assets now use the three-pillar Auralis positioning.
 
 ### P2
 
@@ -105,11 +113,9 @@ Live target tested:
 
 ### Live Visual / Customer Friction
 
-- Mobile hero/product area can still create horizontal pressure on narrow viewports.
-  - Acceptance: mobile viewport around 390px wide shows hero copy, CTA, and key page cards without awkward horizontal clipping.
+- Latest local mobile source QA shows no horizontal overflow at a 390px viewport. Recheck live phone behavior after deploy.
 
-- Fixed mobile bottom CTA can crowd lower content.
-  - Acceptance: final CTA/footer/contact areas remain readable and tappable above the fixed mobile CTA.
+- The fixed mobile bottom CTA has been removed from `/products` so each product card's Shopify button remains the product-specific buy path. Recheck live phone behavior after deploy.
 
 - Homepage source no longer lists product cards.
   - Verify after deploy that `/` routes to Products, Custom Design, and Website Design instead of sending visitors directly to Shopify.
