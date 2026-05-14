@@ -9,10 +9,10 @@ This is the canonical truth layer for Auralis Digital. If another document disag
 Auralis Digital currently contains three related public surfaces:
 
 1. **Auralis Design products**
-   - product catalog and product mockups
+   - product catalog and product photos
    - local Auralis product/support policy pages
    - Shopify checkout links
-   - Printify fulfillment references for Printify products
+   - made-to-order production guidance without public production-partner branding
 
 2. **Custom / personalized design requests**
    - personal artwork ideas
@@ -58,7 +58,7 @@ Website design remains an active Auralis service, but it is no longer the sole c
 - The homepage is intended to act as a brand gateway for Products, Custom Design, and Website Design instead of a product catalog.
 - Product/shop catalog data currently lives in `src/data/shopCatalog.ts`.
 - Shopify is currently framed as the checkout/payment/order source of truth.
-- Printify is currently referenced as fulfillment for Printify products.
+- Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
 - Auralis Digital local policy/support pages exist for refund, shipping, privacy, and terms guidance.
 - Footer policy links point to local Auralis policy/support pages.
 - Route-specific static metadata generation is implemented through `scripts/generate-route-pages.mjs` for main public routes and policy routes.
@@ -115,7 +115,7 @@ Not yet confirmed in repo truth:
 - Shopify payment/tax/shipping review
 - Shopify-hosted refund, shipping, and terms policy publishing or verification
 - full incognito add-to-cart/checkout test up to final payment confirmation
-- Printify test-order verification
+- production-partner test-order verification
 - fulfillment QA
 - refund/shipping workflow verification inside Shopify checkout
 - support-email workflow
@@ -155,7 +155,7 @@ The product/shop surface should not be treated as a fully mature commerce operat
 - Do not treat copied static HTML as stale without checking the deployment workflow.
 - Do not offer the standard Website Refresh for websites Auralis did not originally build. Third-party sites should start with an audit, rebuild, migration, or custom quote.
 - Do not imply the product/shop surface is fully mature until Shopify checkout, fulfillment, policy, and support readiness are verified.
-- Do not add custom checkout, cart, payment, Shopify Admin API, or Printify API logic to the public site without a separate implementation review.
+- Do not add custom checkout, cart, payment, Shopify Admin API, or production-partner API logic to the public site without a separate implementation review.
 
 ## Current Repo and Deployment Truth
 

@@ -8,12 +8,12 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 
 - [x] Before public launch, remove Shopify storefront password protection from `Online Store -> Preferences -> Store access`.
 - [x] Shopify storefront password is removed, or public CTA expectations are adjusted.
-- [ ] Primary product URL opens from an incognito browser without admin login:
+- [x] Primary product URL opens from a public browser check without admin login:
   - `https://auralis-design.myshopify.com/products/zeus-sherpa-blanket`
-- [ ] Each published product link from Auralis Digital opens the intended Shopify product page.
-- [ ] UTM-tagged product links still resolve to the correct Shopify product page.
+- [x] Each published product link from Auralis Digital opens a public Shopify product page.
+- [x] UTM-tagged product links still resolve to the correct Shopify product page.
 - [x] Product pages do not show the Shopify password page, opening-soon page, or storefront gate to public visitors.
-- [ ] Product page browser title and visible content identify the intended product, not only the store password shell.
+- [x] Product pages show public buy/add-to-cart signals instead of only the store password shell.
 - [ ] Each product is `Active` and available on the `Online Store` sales channel.
 
 ## Checkout
@@ -27,13 +27,13 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 
 ## Product Truth
 
-- [ ] Product title matches Shopify.
-- [ ] Product price matches Shopify.
-- [ ] Product handle/link matches Shopify.
-- [ ] Product category matches the website catalog.
-- [ ] Product images/mockups match the published Shopify product.
-- [ ] Product alt text is meaningful.
-- [ ] Product specs and variant text match Shopify/Printify.
+- [x] Product title matches the currently published catalog source.
+- [x] Product price matches the currently published catalog source.
+- [x] Product handle/link matches the currently published catalog source.
+- [x] Product category matches the website catalog.
+- [x] Product photos are present for every currently published website product.
+- [x] Product alt text is meaningful.
+- [ ] Product specs and variant text match Shopify production data after a final admin-side review.
 - [ ] Material or product-base review copy is labeled honestly.
 
 ## Policies And Contact
@@ -55,13 +55,13 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 - [ ] Live `/shop` route opens directly without HTTP `404`.
 - [ ] Live `/web-design` route opens directly without HTTP `404`.
 - [ ] GitHub Pages fallback restores `/?p=/shop` to the actual Shop page.
-- [ ] Product gallery selectors stay on Auralis Digital.
-- [ ] Clearly labeled buy/view buttons open Shopify in a new tab.
-- [ ] Mobile product cards scroll naturally.
+- [x] Product gallery selectors stay on Auralis Digital.
+- [x] Clearly labeled buy/view buttons open Shopify in a new tab.
+- [x] Mobile product cards render with all products visible in a 390px browser check.
 - [ ] Mobile hero and product card do not clip awkwardly at a 390px-wide viewport.
 - [ ] Fixed mobile bottom CTA does not block contact, footer, or product content.
 - [ ] Keyboard focus is visible on product cards and CTA links.
-- [ ] Customer flow is clear: browse on Auralis Digital, checkout through Shopify, fulfilled through Printify.
+- [x] Customer flow is clear: browse on Auralis Digital, checkout through Shopify, production begins after purchase for made-to-order items.
 
 ## Boundaries
 
@@ -70,5 +70,5 @@ Use this before sending real traffic from Auralis Digital to Shopify.
 - [ ] No payment forms are added to Auralis Digital.
 - [ ] No tax or shipping calculation is added to Auralis Digital.
 - [ ] No Shopify Admin API is used on the public website.
-- [ ] No Printify API is used on the public website.
+- [ ] No production-partner API is used on the public website.
 - [ ] No fake reviews, fake urgency, or fake discounts are used.

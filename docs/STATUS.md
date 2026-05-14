@@ -8,9 +8,9 @@ Auralis Digital has a live public website and a React/Vite source base deployed 
 
 The repo now contains three related public surfaces:
 
-1. **Auralis Design products** — product catalog pages, Shopify checkout links, local Auralis policy/support pages, and Printify fulfillment references for Printify products.
-2. **Custom / personalized design requests** — inquiry flow for image, phrase, symbol, theme, gift, product concept, apparel, wall art, and related custom design requests.
-3. **Website design services** — websites for local businesses, creators, and small brands, plus refreshes for Auralis-built sites and third-party audit/rebuild consultation.
+1. **Auralis Design products** - product catalog pages, Shopify checkout links, and local Auralis policy/support pages.
+2. **Custom / personalized design requests** - inquiry flow for image, phrase, symbol, theme, gift, product concept, apparel, wall art, and related custom design requests.
+3. **Website design services** - websites for local businesses, creators, and small brands, plus refreshes for Auralis-built sites and third-party audit/rebuild consultation.
 
 The active business priority is now three-pillar execution:
 
@@ -54,7 +54,7 @@ Website design remains active, but it is not the only core idea. Products and cu
 - Product catalog data lives in `src/data/shopCatalog.ts`.
 - Auralis Digital displays products and product details.
 - Shopify is framed as the checkout, payment, order, and product source of truth.
-- Printify is referenced as fulfillment for Printify products.
+- Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
 - Local Auralis policy/support pages exist for refund, shipping, privacy, and terms guidance.
 - Footer policy links point to local Auralis policy/support pages.
 - Commerce readiness is still not complete.

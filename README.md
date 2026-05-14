@@ -1,22 +1,23 @@
 # Auralis Digital
 
-Auralis Digital is the public web home for two related surfaces:
+Auralis Digital is the public web home for three related surfaces:
 
-1. **Auralis Digital website services** — practical websites for Michigan local businesses built to earn trust, clarify services, and drive calls, bookings, and quote requests.
-2. **Auralis Design product shop** — a product/catalog surface that displays Auralis Design pieces and routes checkout through Shopify, with Printify fulfillment for Printify products.
+1. **Auralis Design products** - product catalog pages that display original pieces and route checkout through Shopify.
+2. **Custom / personalized design requests** - a request path for personal ideas, gifts, product concepts, apparel, wall art, and related visuals.
+3. **Website design services** - practical websites for small businesses, creators, and local brands.
 
-Current business priority: website services, trust setup, outreach, first-client delivery, and real proof.
+Current business priority: brand clarity, reliable inquiry flow, product/custom design/website design offer clarity, verified commerce readiness, one real sale or client, and real proof.
 
-The shop/product surface exists and may remain public, but it should not distract from the active execution priority unless the business focus is intentionally changed.
+Website design remains active, but it is no longer the only public business idea. Products and custom design are also first-class Auralis paths.
 
 ## Live Website
 
 Primary domain: https://www.auralisdigital.net/  
 GitHub Pages fallback: https://christopherbdaugherty96.github.io/Auralis-Digital/
 
-## Current Website Services Offer
+## Current Website Design Offer
 
-Auralis Digital builds clean, practical, mobile-ready websites for local businesses that need a stronger online presence.
+Auralis Digital builds clean, practical, mobile-ready websites for local businesses, creators, and small brands that need a stronger online presence.
 
 Core services:
 
@@ -42,25 +43,25 @@ Best-fit website clients:
 
 ## Auralis Design Shop Surface
 
-The React/Vite site also includes an Auralis Design product/shop surface.
+The React/Vite site includes an Auralis Design product/shop surface.
 
 Current source truth:
 
 - product catalog data lives in `src/data/shopCatalog.ts`
 - product pages/cards route buyers to Shopify checkout
 - Shopify remains the checkout, payment, order, and product source of truth
-- Printify is referenced as fulfillment for Printify products
+- public Auralis pages describe made-to-order production without exposing production-partner branding as customer-facing copy
 - Auralis Digital displays product information but does not collect payment directly on the site
 
 Commerce readiness should be verified separately before treating the shop as a mature public sales operation.
 
-Needed checks include Shopify checkout, product links, policy pages, payment/tax/shipping settings, test order flow, Printify fulfillment, product margin, support email, and artwork/product-rights ownership.
+Needed checks include Shopify checkout, product links, policy pages, payment/tax/shipping settings, test order flow, production/fulfillment handling, product margin, support email, and artwork/product-rights ownership.
 
-## Immediate Next Step (Current Focus)
+## Immediate Next Step
 
 Auralis is currently in active execution mode.
 
-The next step is turning the site into a working lead system and starting outreach for website services.
+The next step is turning the site into a working inquiry and sales system, then choosing one focused lane for first traffic: products, custom design, or website design.
 
 See:
 
@@ -74,11 +75,11 @@ See:
 
 ### Website Builds
 
-- Website Refresh for Auralis-built sites — $250
-- Website Audit / Rebuild Consultation for third-party sites — $150-$300
-- Basic Website — $500+
-- Standard Website — $1,000+
-- Premium / Custom — quote based
+- Website Refresh for Auralis-built sites - $250
+- Website Audit / Rebuild Consultation for third-party sites - $150-$300
+- Basic Website - $500+
+- Standard Website - $1,000+
+- Premium / Custom - quote based
 
 Pricing is a starting framework. Final scope, timeline, revisions, add-ons, integrations, hosting needs, and content requirements should be confirmed before work begins.
 
@@ -86,20 +87,20 @@ Third-party websites are not eligible for the $250 Website Refresh by default. T
 
 ### Ongoing Support
 
-- Managed Hosting and Care Plan — $250/month
+- Managed Hosting and Care Plan - $250/month
 
 The managed hosting and care plan is primarily for websites built or significantly rebuilt by Auralis Digital. It is for businesses that want stress-free website management, hosting/deployment coordination, routine upkeep, small updates, and priority support after launch.
 
 ## Operating System
 
-The repo includes internal operating documents for selling, building, launching, and supporting websites.
+The repo includes internal operating documents for selling, building, launching, and supporting products, custom design requests, and websites.
 
 Start with:
 
 - `docs/AURALIS_CURRENT_STATUS.md`
 - `active/NEXT_STEPS_TODO.md`
 - `docs/INDEX.md`
-- `docs/ROADMAP.md`
+- `docs/ROADMAP_EXECUTION_2026-05-14.md`
 - `leads/`
 - `onboarding/`
 - `docs/tech/`
@@ -107,5 +108,4 @@ Start with:
 ## Contact
 
 Auralis Digital  
-Email: auralisdigitaleco@gmail.com  
-Phone:
+Email: auralisdigitaleco@gmail.com
