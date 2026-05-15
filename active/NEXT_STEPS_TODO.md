@@ -1,6 +1,6 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-05-14
+Last updated: 2026-05-15
 
 ## Current Mode
 
@@ -256,6 +256,151 @@ Goal: avoid breaking the live site while executing business work.
 - [ ] Run `npm run lint` before merging website-source changes.
 - [ ] Run `npm run test` when changing source behavior covered by tests.
 - [ ] Avoid hosting-platform changes until current deployment is broken or business execution requires it.
+
+---
+
+## Phase 11 - Official Website Readiness Audit
+
+Goal: close the gaps that make the site feel unfinished, unverified, or less official to customers, search engines, and local prospects.
+
+This section came from the 2026-05-15 official-site audit. Treat these as TODOs, not completed claims.
+
+### Structured Data / Schema
+
+- [ ] Add JSON-LD `Organization` schema for Auralis Digital.
+  - [ ] Use the canonical site URL: `https://www.auralisdigital.net/`.
+  - [ ] Use the real brand name: `Auralis Digital`.
+  - [ ] Use a real logo/image URL that returns live HTTP `200`.
+  - [ ] Add `email` only after domain email is active.
+  - [ ] Add `sameAs` only for real public profiles that are active and brand-aligned.
+  - [ ] Do not add fake founders, fake social profiles, fake reviews, fake ratings, or fake legal claims.
+- [ ] Add `LocalBusiness` or `ProfessionalService` schema for the website-service side only if the public business/service-area policy is confirmed.
+  - [ ] Prefer `areaServed` for Southeast Michigan service coverage if no public address is being listed.
+  - [ ] Do not publish a fake office address.
+  - [ ] Do not publish fake hours.
+  - [ ] Do not publish phone/address fields unless they are intentional public contact paths.
+- [ ] Add `Service` schema on `/web-design` for website design, landing pages, mobile optimization, local SEO setup, contact/booking forms, and content/brand cleanup.
+- [ ] Add `Person` schema only on a founder/about page and only for public founder details Christopher wants indexed.
+- [ ] Add `Product` schema only after Shopify product truth is verified against live Shopify/admin-side product data.
+  - [ ] Confirm product title, price, image, description, availability, shipping/policy assumptions, and canonical Shopify product URL before adding product schema.
+  - [ ] Do not add aggregate ratings or reviews until real review data exists.
+- [ ] Add `FAQPage` schema only for FAQ entries that are visibly present on the same public page.
+- [ ] Test all schema with Google Rich Results Test where applicable.
+- [ ] Test all schema with Schema Markup Validator.
+- [ ] Re-check live page source after deploy to confirm JSON-LD is present on the public site.
+
+### Domain Trust / Business Legitimacy
+
+- [ ] Replace Gmail as the primary public business contact once domain email is active.
+- [ ] Update source/env/public copy to use `hello@auralisdigital.net` or the chosen domain email.
+- [ ] Confirm LLC filing before implying Auralis is a legally formed LLC.
+- [ ] Confirm EIN before using it in business banking/payment setup docs.
+- [ ] Confirm business bank account before treating the business as fully payment-ready.
+- [ ] Confirm invoicing or payment processor before accepting paid custom design or website work.
+- [ ] Confirm standard agreement, scope, payment, revision, delivery, and handoff docs before the first paid website/client engagement.
+- [ ] Create or complete Google Business Profile only with truthful service-area/address/contact details.
+- [ ] Decide whether Auralis is public-address, service-area-only, or online-only before publishing local listing details.
+
+### Contact / Lead Capture Readiness
+
+- [ ] Configure production `VITE_CONTACT_EMAIL`.
+- [ ] Configure production `VITE_FORMSPREE_ENDPOINT`.
+- [ ] Confirm the live form no longer falls back to mailto after production env is set.
+- [ ] Submit one desktop test inquiry from the live site.
+- [ ] Submit one phone test inquiry from the live site.
+- [ ] Confirm Formspree/inbox receives each test inquiry.
+- [ ] Confirm success UI appears after submission.
+- [ ] Confirm failed submission UI is understandable.
+- [ ] Confirm no contact-form console errors or blocked network requests.
+- [ ] Add spam protection or Formspree-side safeguards if spam becomes visible.
+- [ ] Add a clear response expectation if appropriate, such as `Replies usually within 1-2 business days`.
+
+### Rendering / Performance / Core Web Vitals
+
+- [ ] Run Lighthouse or PageSpeed Insights on the live homepage mobile view.
+- [ ] Run Lighthouse or PageSpeed Insights on `/products` mobile view.
+- [ ] Record current Core Web Vitals or lab metrics before optimization.
+- [ ] Confirm only the true above-the-fold hero image or critical visual loads eagerly.
+- [ ] Change product-grid and non-critical gallery images to lazy loading where appropriate.
+- [ ] Avoid marking the first image of every product card as `eager`.
+- [ ] Add explicit `width`, `height`, or stable aspect-ratio containers for product and demo images to reduce layout shift.
+- [ ] Replace or request smaller Shopify CDN image sizes instead of loading `2048.jpg` assets where smaller display sizes are enough.
+- [ ] Confirm images are compressed and visually acceptable on mobile.
+- [ ] Review bundle size after build.
+- [ ] Split or lazy-load heavier route content if homepage, products, policy content, demos, and catalog data inflate the initial bundle.
+- [ ] Review whether the large `AuralisHomepage.tsx` component should be split by route or major section.
+- [ ] Review unused dependencies and unused UI packages after the site stabilizes.
+- [ ] Confirm JavaScript-rendered pages still expose enough crawlable title/description/canonical metadata through generated route pages.
+- [ ] Confirm route-specific generated static pages are current after deployment.
+
+### Search / Sitemap / Route Hygiene
+
+- [ ] Verify every URL in `sitemap.xml` returns live HTTP `200`.
+- [ ] Verify every sitemap URL is intentional and current.
+- [ ] Confirm `/products` is the preferred canonical product route.
+- [ ] Decide whether `/shop` should remain an alias, redirect, or lower-priority sitemap entry.
+- [ ] Confirm canonical URLs match the intended public route for every main route.
+- [ ] Confirm `about-christopher.html` is still intentional before keeping it in the sitemap.
+- [ ] Confirm `website-llc.html` is still intentional before keeping it in the sitemap.
+- [ ] Confirm service-area pages are accurate, current, and do not overclaim local presence.
+- [ ] Submit or re-submit sitemap in Google Search Console after major metadata/schema changes.
+- [ ] Confirm Google Search Console property is set up for `auralisdigital.net`.
+
+### Social Preview / Metadata
+
+- [ ] Confirm live `og:image` returns HTTP `200`.
+- [ ] Confirm `og:image` is 1200 x 630 or otherwise social-preview safe.
+- [ ] Confirm Open Graph and Twitter metadata match the three-pillar public direction.
+- [ ] Use Facebook Sharing Debugger to scrape the homepage after deploy.
+- [ ] Test a real Facebook/Instagram share preview before public promotion.
+- [ ] Test a text-message/iMessage preview if mobile outreach will use the domain.
+
+### Positioning / Copy Consistency
+
+- [ ] Keep the public one-line positioning consistent: products, custom design, and websites under one creative brand.
+- [ ] Confirm the homepage does not make website design look like the only offer.
+- [ ] Confirm the product page does not make Auralis look like it runs checkout/payment directly.
+- [ ] Confirm custom design copy does not imply every request is automatically accepted.
+- [ ] Confirm website design copy does not imply completed client proof before real client work exists.
+- [ ] Confirm demos are labeled as demos/samples unless tied to real delivered work and permission.
+- [ ] Remove or revise any stale wording from older `Website LLC`, `Y.O.U.`, or website-only positioning where it appears on public surfaces.
+
+### Commerce / Shopify Verification
+
+- [ ] Verify Shopify product titles, prices, images, descriptions, variants, and availability against live Shopify/admin truth before public sale traffic.
+- [ ] Verify Shopify checkout flow up to final payment confirmation in incognito.
+- [ ] Verify Shopify payment settings.
+- [ ] Verify Shopify tax settings.
+- [ ] Verify Shopify shipping settings.
+- [ ] Verify Shopify-hosted refund, shipping, privacy, and terms policies.
+- [ ] Verify production-partner fulfillment/test-order workflow before scaling product traffic.
+- [ ] Confirm support email and order-support workflow.
+- [ ] Confirm product margins after production, shipping, taxes/fees, and platform costs.
+- [ ] Confirm artwork/product-rights workflow before adding custom or customer-submitted designs to products.
+
+### Proof / Public Claims Guardrails
+
+- [ ] Do not add testimonials until a real customer or client gives approval.
+- [ ] Do not add reviews, ratings, stars, or aggregate review schema until real review data exists.
+- [ ] Do not add fake client logos.
+- [ ] Do not use fake urgency, fake discounts, or fake sales language.
+- [ ] Do not claim completed client delivery until it exists.
+- [ ] Do not claim mature commerce readiness until Shopify checkout, policies, support, fulfillment, and test-order checks pass.
+
+### Acceptance Gate
+
+Official-site readiness can be marked complete only after:
+
+- [ ] Domain email is live and public Gmail fallback is removed or intentionally secondary.
+- [ ] Formspree/contact backend works on the live site from desktop and phone.
+- [ ] Organization schema is live and validated.
+- [ ] Service/local schema is live only if truthful business/service-area data is confirmed.
+- [ ] PageSpeed/Lighthouse mobile issues are recorded and the worst image/rendering issues are addressed.
+- [ ] Sitemap URLs are verified.
+- [ ] Google Search Console is set up or intentionally deferred with a note.
+- [ ] Google Business Profile is set up or intentionally deferred with a note.
+- [ ] Shopify checkout/policy/support readiness is verified before serious product traffic.
+- [ ] Public proof remains truthful: no fake testimonials, fake reviews, fake case studies, fake urgency, or fake logos.
 
 ---
 
