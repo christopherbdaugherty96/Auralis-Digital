@@ -1,6 +1,6 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-05-14
+Last updated: 2026-05-15
 
 ## Current Mode
 
@@ -24,6 +24,25 @@ Formspree setup (immediate blocker) -> trust setup -> custom design inquiry flow
 
 Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
 
+## Immediate Next Step - Formspree Production Contact Setup
+
+Goal: replace the live `mailto:` inquiry fallback with a real production form submission path before outreach.
+
+Next action sequence:
+
+1. Create a Formspree form for Auralis Digital inquiries.
+2. Copy the Formspree endpoint URL.
+3. In GitHub repo settings, add `VITE_FORMSPREE_ENDPOINT` as a production secret used by the GitHub Pages build.
+4. Add or confirm `VITE_CONTACT_EMAIL` as the public contact email variable.
+5. Trigger a GitHub Pages deploy from `main`.
+6. Open `https://www.auralisdigital.net/custom-design` on desktop and submit a test inquiry.
+7. Open `https://www.auralisdigital.net/custom-design` on phone and submit a test inquiry.
+8. Confirm the live form no longer opens a mail client when the endpoint is configured.
+9. Confirm the submission arrives in Formspree and/or the destination inbox.
+10. Confirm the success state appears on the website after submission.
+
+Do not start broad outreach until this contact path is verified.
+
 ---
 
 ## Phase 1 - Business Setup
@@ -46,20 +65,20 @@ Goal: make Auralis ready to accept money cleanly and credibly.
 
 Goal: reduce trust friction before outreach or traffic.
 
-Current live note: as of 2026-05-14, no production contact env is configured in the GitHub repo, so the live contact form still uses the mailto fallback and shows `Prepare Project Email`.
+Current live note: as of 2026-05-15, no production contact env is confirmed in the GitHub repo, so the live contact form may still use the mailto fallback and show `Prepare Project Email` until `VITE_FORMSPREE_ENDPOINT` is configured and deployed.
 
-- [ ] Set up domain email such as `hello@auralisdigital.net`.
-- [ ] Replace public Gmail references where appropriate.
 - [ ] Create Formspree form and copy endpoint.
-- [ ] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
 - [ ] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
+- [ ] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
 - [ ] Trigger GitHub Pages deploy after contact env is configured.
-- [ ] Submit test inquiry from desktop on the live site.
-- [ ] Submit test inquiry from phone on the live site.
+- [ ] Submit test inquiry from desktop on the live `/custom-design` page.
+- [ ] Submit test inquiry from phone on the live `/custom-design` page.
 - [ ] Confirm no mailto window opens after production env is configured.
 - [ ] Confirm submission arrives in Formspree/inbox.
 - [ ] Confirm success state appears after inquiry submission.
 - [ ] Confirm no visible console/network errors during form submission.
+- [ ] Set up domain email such as `hello@auralisdigital.net`.
+- [ ] Replace public Gmail references where appropriate.
 - [ ] Create or complete Google Business Profile.
 - [ ] Confirm public phone/contact path.
 - [ ] Decide service-area/address policy for public listings.
