@@ -113,9 +113,9 @@ const websiteDemos = [
   {
     title: "Patterson's Lawn Care & Snow Removal",
     category: "Client Preview",
-    description: "Local service website demo built from confirmed business-card materials, phone-first calls to action, and launch-readiness discipline.",
+    description: "Polished local-service website demo built from confirmed business-card materials, service information, and phone-first customer action.",
     imageUrl: "/projects/pattersons-lawn-care-demo/preview-desktop.png",
-    href: "/projects/pattersons-lawn-care-demo/index.html",
+    href: "/projects/pattersons-lawn-care-demo/site/index.html",
   },
   {
     title: "Lawn Care",
@@ -1247,7 +1247,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                       <h3>{demo.title}</h3>
                       <p>{demo.description}</p>
                       <strong>
-                        {demo.category === "Client Preview" ? "View client preview" : "View sample build"} <ArrowRight className="size-4" aria-hidden="true" />
+                        {demo.category === "Client Preview" ? "View website demo" : "View sample build"} <ArrowRight className="size-4" aria-hidden="true" />
                       </strong>
                     </div>
                   </a>
