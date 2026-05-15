@@ -12,10 +12,14 @@ Auralis Digital currently contains three related public surfaces:
 2. custom / personalized design requests
 3. website design services
 
+First execution lane: **custom design requests**.
+
+Custom design was chosen because it needs less infrastructure than Shopify product sales (checkout/payment/shipping verification) or website clients (contracts, scope, deposits, delivery). It only needs a working contact form, clear price anchors, and one real customer. Products and website services remain active public surfaces but are not the outreach focus until custom design has produced at least one real proof artifact.
+
 Current execution priority is:
 
 ```text
-business setup -> trust setup -> inquiry flow -> products/custom design/web design clarity -> first real sale or client -> proof
+Formspree setup (immediate blocker) -> trust setup -> custom design inquiry flow -> first real custom design request -> proof -> then expand to products and website clients
 ```
 
 Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
@@ -113,10 +117,8 @@ Weekly targets:
 
 Execution tasks:
 
-- [ ] Pick one first execution lane:
-  - products
-  - custom design
-  - website design
+- [x] Pick one first execution lane: **custom design**.
+  - Chosen 2026-05-14. Products and website services remain active but are not the outreach focus.
 - [ ] Add qualified prospects or buyers to tracking.
 - [ ] Record each outreach or inquiry response.
 - [ ] Record each follow-up.
@@ -208,7 +210,8 @@ Goal: verify the Auralis product surface before treating it as a mature commerce
 Goal: verify the custom-design request flow before treating it as a mature service.
 
 - [ ] Confirm custom-design inquiry flow works on desktop and phone.
-- [ ] Confirm custom-design request boundaries are visible publicly.
+- [x] Confirm custom-design request boundaries are visible publicly.
+- [x] Add clear price anchors to custom design page (Simple $25 / Standard $50 / Premium $100+).
 - [ ] Confirm pricing/revision expectations are not misleading.
 - [ ] Confirm file-transfer/reference-image workflow.
 - [ ] Confirm delivery/export workflow.
