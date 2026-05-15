@@ -333,6 +333,32 @@ This section came from the 2026-05-15 official-site audit. Treat these as TODOs,
 - [ ] Confirm JavaScript-rendered pages still expose enough crawlable title/description/canonical metadata through generated route pages.
 - [ ] Confirm route-specific generated static pages are current after deployment.
 
+### Accessibility / Usability
+
+- [ ] Test keyboard navigation through header, mobile menu, product gallery, product cards, CTAs, policy links, and contact form.
+- [ ] Confirm every interactive element has visible focus state.
+- [ ] Confirm mobile menu opens, closes, and can be dismissed with Escape on desktop keyboard testing.
+- [ ] Confirm form inputs have clear labels, required states, error states, and autocomplete where appropriate.
+- [ ] Confirm image alt text is meaningful for product images, demos, logos, and social preview assets.
+- [ ] Confirm decorative images/icons are hidden from assistive technology where appropriate.
+- [ ] Check color contrast for hero text, muted text, buttons, product cards, and footer links.
+- [ ] Confirm motion/parallax/reveal effects respect reduced-motion preferences.
+- [ ] Confirm tap targets are comfortable on phone.
+- [ ] Confirm all main pages have one clear `h1` and logical heading order.
+- [ ] Confirm policy pages, product pages, custom-design pages, and website-design pages are readable without relying only on visuals.
+
+### Privacy / Security / Analytics Boundaries
+
+- [ ] Confirm no private API keys, Shopify Admin tokens, production-partner credentials, or form secrets are exposed in frontend source or built assets.
+- [ ] Confirm only public-safe Vite variables are exposed to the browser.
+- [ ] Confirm contact-form data collection matches the public privacy policy.
+- [ ] Confirm Formspree or any form provider settings match what the privacy policy says.
+- [ ] If analytics are added, document the provider, what is collected, and whether cookie/banner/privacy updates are required.
+- [ ] Do not add tracking pixels, ad pixels, or retargeting scripts without updating privacy guidance first.
+- [ ] Confirm external links that open Shopify or third-party tools use safe `target="_blank"` handling with `rel="noopener"`.
+- [ ] Confirm no custom checkout, cart, payment, Shopify Admin API, or production-partner API logic is added to the public site without separate implementation review.
+- [ ] Confirm no hidden automation, scraping, or background customer-data collection is added to the public site.
+
 ### Search / Sitemap / Route Hygiene
 
 - [ ] Verify every URL in `sitemap.xml` returns live HTTP `200`.
@@ -345,6 +371,18 @@ This section came from the 2026-05-15 official-site audit. Treat these as TODOs,
 - [ ] Confirm service-area pages are accurate, current, and do not overclaim local presence.
 - [ ] Submit or re-submit sitemap in Google Search Console after major metadata/schema changes.
 - [ ] Confirm Google Search Console property is set up for `auralisdigital.net`.
+
+### Measurement / Post-Deploy Verification
+
+- [ ] Create a simple post-deploy verification checklist for public-route checks after every metadata, schema, or contact-flow change.
+- [ ] Verify homepage, products, custom-design, web-design, websites, and policy routes after deploy.
+- [ ] Verify direct-route reload behavior for React routes on GitHub Pages.
+- [ ] Verify contact form after every contact/env/deployment change.
+- [ ] Record Lighthouse/PageSpeed results before and after major performance changes.
+- [ ] Record schema validation results after structured-data changes.
+- [ ] Record Search Console indexing or sitemap submission status when available.
+- [ ] Record Facebook/Instagram/social preview refresh status after social metadata changes.
+- [ ] Keep proof screenshots or notes for major readiness checks in docs or a dedicated proof folder only if they are useful for future execution.
 
 ### Social Preview / Metadata
 
@@ -396,11 +434,14 @@ Official-site readiness can be marked complete only after:
 - [ ] Organization schema is live and validated.
 - [ ] Service/local schema is live only if truthful business/service-area data is confirmed.
 - [ ] PageSpeed/Lighthouse mobile issues are recorded and the worst image/rendering issues are addressed.
+- [ ] Accessibility keyboard, focus, contrast, reduced-motion, form-label, and heading-order checks are complete.
+- [ ] Privacy/security review confirms no private keys, Admin tokens, hidden tracking, or unsupported data collection were added.
 - [ ] Sitemap URLs are verified.
 - [ ] Google Search Console is set up or intentionally deferred with a note.
 - [ ] Google Business Profile is set up or intentionally deferred with a note.
 - [ ] Shopify checkout/policy/support readiness is verified before serious product traffic.
 - [ ] Public proof remains truthful: no fake testimonials, fake reviews, fake case studies, fake urgency, or fake logos.
+- [ ] Post-deploy verification notes exist for schema, social preview, contact flow, sitemap/indexing, and performance checks.
 
 ---
 
