@@ -743,6 +743,9 @@ function ContactForm() {
         <label className={labelCls}>Budget range
           <select className={inputCls} value={form.budget} onChange={set("budget")}>
             <option>Not sure yet</option>
+            <option>Under $50</option>
+            <option>$50–$100</option>
+            <option>$100–$250</option>
             <option>$250–$500</option>
             <option>$500–$1,000</option>
             <option>$1,000+</option>
@@ -906,10 +909,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
-                  <a href="/products">Explore Products <ArrowRight aria-hidden="true" /></a>
+                  <a href="/custom-design">Request Custom Design <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
-                  <a href="/custom-design">Request Custom Design</a>
+                  <a href="/products">Explore Products</a>
                 </Button>
               </div>
             </div>
@@ -1117,11 +1120,40 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </ul>
               </Reveal>
             </div>
+            <Reveal className="mt-8">
+              <h3 className="text-lg font-black mb-5">Pricing guide</h3>
+              <div className="grid gap-5 md:grid-cols-3">
+                <div className="service-card border-primary/20">
+                  <span className="product-meta">Simple</span>
+                  <h4 className="text-xl font-black mt-2">Starting at $25</h4>
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    Small personalized artwork, phrase-based design, symbol or theme concept, or simple product mockup.
+                  </p>
+                </div>
+                <div className="service-card border-primary/20">
+                  <span className="product-meta">Standard</span>
+                  <h4 className="text-xl font-black mt-2">Starting at $50</h4>
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    More detailed concept, multiple references, product-ready design direction, or refined visual composition.
+                  </p>
+                </div>
+                <div className="service-card border-primary/20">
+                  <span className="product-meta">Premium / Product Concept</span>
+                  <h4 className="text-xl font-black mt-2">Starting at $100+</h4>
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    Complex artwork, multiple product formats, detailed revisions, or design intended for product launch.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-5 text-sm text-muted-foreground">
+                Final price depends on complexity, usage, number of revisions, and whether the design is for personal use or product/commercial use.
+              </p>
+            </Reveal>
             <Reveal className="mt-8 service-card border-primary/20 bg-primary/5">
               <span className="product-meta">Request boundaries</span>
               <h3>Every custom request is reviewed before acceptance.</h3>
               <p className="mt-3 text-muted-foreground">
-                Pricing depends on complexity, intended use, product type, turnaround, and revision needs. Auralis may decline requests involving copyrighted characters, logos, unclear usage rights, offensive content, or designs that cannot be produced cleanly.
+                Auralis may decline requests involving copyrighted characters, logos, unclear usage rights, offensive content, or designs that cannot be produced cleanly.
               </p>
             </Reveal>
           </div>
