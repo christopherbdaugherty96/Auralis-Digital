@@ -1,6 +1,6 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-05-14
+Last updated: 2026-05-16
 
 This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
 
@@ -30,8 +30,8 @@ The current React/Vite source reflects the three-pillar direction.
 Current execution priority is:
 
 ```text
-brand clarity
-reliable inquiry flow
+domain email
+reliable inquiry flow (Formspree live — phone test pending)
 products/custom design/web design offer clarity
 Shopify checkout verification
 first real sale or client
@@ -92,12 +92,14 @@ Website design remains an active Auralis service, but it is no longer the sole c
 
 ## Online Trust Gaps
 
+- Production contact form is live via Formspree (receipt-confirmed 2026-05-16).
 - Public email still appears to use Gmail in at least some docs or site materials.
 - Domain email such as `hello@auralisdigital.net` is still needed.
 - Google Business Profile is not confirmed.
 - Real testimonials or reviews are not confirmed.
 - Real delivered client case studies are not confirmed.
 - Physical or service address policy is not confirmed.
+- Phone test submission still pending (desktop tests passed).
 
 ## Website-Service Operational Gaps
 
@@ -137,7 +139,7 @@ The product/shop surface should not be treated as a fully mature commerce operat
 3. Open a business bank account.
 4. Set up domain email.
 5. Set up invoicing/payment processing.
-6. Configure and verify the live contact-form backend.
+6. ~~Configure and verify the live contact-form backend.~~ Done 2026-05-16 (phone test pending).
 7. Verify the three-pillar live site flow on phone and desktop.
 8. Publish or verify Shopify-hosted refund, shipping, and terms policies.
 9. Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.
