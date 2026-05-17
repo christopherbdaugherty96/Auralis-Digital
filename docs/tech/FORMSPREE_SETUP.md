@@ -1,6 +1,6 @@
 # Formspree Setup Guide
 
-Last updated: 2026-05-13
+Last updated: 2026-05-17
 
 ## Purpose
 
@@ -45,10 +45,20 @@ Do not hardcode the Formspree endpoint in the React source.
 
 ## GitHub Configuration
 
-Use these commands from the repo after the real values exist:
+Current temporary contact inbox:
+
+```text
+auralisdigitaleco@gmail.com
+```
+
+Use the temporary Gmail value until a domain email is configured and verified.
+After `hello@auralisdigital.net` or another domain email sends/receives
+correctly, update `VITE_CONTACT_EMAIL` and redeploy.
+
+Use these commands from the repo with the current temporary inbox:
 
 ```powershell
-gh variable set VITE_CONTACT_EMAIL --body "hello@auralisdigital.net"
+gh variable set VITE_CONTACT_EMAIL --body "auralisdigitaleco@gmail.com"
 gh secret set VITE_FORMSPREE_ENDPOINT --body "https://formspree.io/f/xxxxabcd"
 gh workflow run "Deploy to GitHub Pages"
 ```
