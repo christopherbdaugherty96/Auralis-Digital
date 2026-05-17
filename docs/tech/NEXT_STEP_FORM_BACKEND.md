@@ -33,16 +33,17 @@ The deploy workflow maps these values into the Vite build step:
 3. Create a new form.
 4. Copy the endpoint URL.
 5. Add it as `VITE_FORMSPREE_ENDPOINT` in the deployment environment.
-6. Add the domain email as `VITE_CONTACT_EMAIL`.
+6. Add the current verified contact inbox as `VITE_CONTACT_EMAIL`. Use
+   `auralisdigitaleco@gmail.com` until a domain email is configured and verified.
 
 Do not hardcode the endpoint in `src/components/AuralisHomepage.tsx`.
 
 ## GitHub Configuration
 
-Use these commands from the repo once the real values exist:
+Use these commands from the repo with the current temporary inbox:
 
 ```powershell
-gh variable set VITE_CONTACT_EMAIL --body "hello@auralisdigital.net"
+gh variable set VITE_CONTACT_EMAIL --body "auralisdigitaleco@gmail.com"
 gh secret set VITE_FORMSPREE_ENDPOINT --body "https://formspree.io/f/xxxxabcd"
 ```
 
@@ -84,7 +85,7 @@ GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 
 ## Success Criteria
 
-- Public site uses the domain email value.
+- Public site uses the intended contact email value.
 - Form submits without opening an email app.
 - Submission arrives in the correct inbox.
 - Contact flow feels immediate and reliable.
@@ -92,5 +93,5 @@ GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 ## Internal Note
 
 This step is complete. The site is now a working lead-generation path via
-Formspree. Remaining trust items: domain email, phone test, Google Business
+Formspree. Remaining trust items: domain email, Google Business
 Profile, analytics (GA4/Search Console/Clarity).

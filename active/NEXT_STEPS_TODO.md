@@ -1,6 +1,6 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-05-16
+Last updated: 2026-05-17
 
 ## Current Mode
 
@@ -19,7 +19,7 @@ Custom design was chosen because it needs less infrastructure than Shopify produ
 Current execution priority is:
 
 ```text
-domain email -> trust setup -> custom design inquiry flow -> first real custom design request -> proof -> then expand to products and website clients
+temporary Gmail contact path -> custom design inquiry flow -> first real custom design request -> proof -> domain email/trust setup -> then expand to products and website clients
 ```
 
 Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
@@ -50,8 +50,13 @@ Current live note: as of 2026-05-16, the production contact env is configured an
 the live form uses Formspree. Two desktop test submissions were received in the
 Formspree dashboard. The mailto fallback no longer triggers.
 
+Current contact correction: domain email is not configured yet. Auralis is using
+`auralisdigitaleco@gmail.com` as the temporary contact inbox until a domain email
+such as `hello@auralisdigital.net` is active and verified.
+
 - [ ] Set up domain email such as `hello@auralisdigital.net`.
-- [ ] Replace public Gmail references where appropriate.
+- [x] Use `auralisdigitaleco@gmail.com` as the temporary contact inbox.
+- [ ] Replace public Gmail references where appropriate only after domain email is active.
 - [x] Create Formspree form and copy endpoint.
 - [x] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
 - [x] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
@@ -305,15 +310,15 @@ This section came from the 2026-05-15 official-site audit. Treat these as TODOs,
 
 ### Contact / Lead Capture Readiness
 
-- [ ] Configure production `VITE_CONTACT_EMAIL`.
-- [ ] Configure production `VITE_FORMSPREE_ENDPOINT`.
-- [ ] Confirm the live form no longer falls back to mailto after production env is set.
-- [ ] Submit one desktop test inquiry from the live site.
-- [ ] Submit one phone test inquiry from the live site.
-- [ ] Confirm Formspree/inbox receives each test inquiry.
-- [ ] Confirm success UI appears after submission.
+- [x] Configure production `VITE_CONTACT_EMAIL`.
+- [x] Configure production `VITE_FORMSPREE_ENDPOINT`.
+- [x] Confirm the live form no longer falls back to mailto after production env is set.
+- [x] Submit one desktop test inquiry from the live site.
+- [x] Submit one phone test inquiry from the live site.
+- [x] Confirm Formspree/inbox receives each test inquiry.
+- [x] Confirm success UI appears after submission.
 - [ ] Confirm failed submission UI is understandable.
-- [ ] Confirm no contact-form console errors or blocked network requests.
+- [x] Confirm no contact-form console errors or blocked network requests.
 - [ ] Add spam protection or Formspree-side safeguards if spam becomes visible.
 - [ ] Add a clear response expectation if appropriate, such as `Replies usually within 1-2 business days`.
 

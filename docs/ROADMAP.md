@@ -1,6 +1,6 @@
 # Auralis Digital Roadmap
 
-Last updated: 2026-05-13
+Last updated: 2026-05-17
 
 ## Current Truth
 
@@ -74,6 +74,7 @@ Goal: make the public presence feel legitimate without pretending to have proof 
 Tasks:
 
 - [ ] Replace public Gmail references with domain email where appropriate.
+- [x] Use `auralisdigitaleco@gmail.com` as the temporary contact email until domain email is active.
 - [ ] Create Google Business Profile.
 - [ ] Verify live website contact paths.
 - [ ] Keep sample builds clearly labeled as examples or demos.

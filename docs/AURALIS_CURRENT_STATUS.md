@@ -1,6 +1,6 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-05-16
+Last updated: 2026-05-17
 
 This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
 
@@ -30,9 +30,9 @@ The current React/Vite source reflects the three-pillar direction.
 Current execution priority is:
 
 ```text
-domain email
-reliable inquiry flow (Formspree live — desktop + phone confirmed)
-products/custom design/web design offer clarity
+temporary Gmail contact path
+custom design proof loop
+domain email / trust setup
 Shopify checkout verification
 first real sale or client
 real proof
@@ -93,7 +93,7 @@ Website design remains an active Auralis service, but it is no longer the sole c
 ## Online Trust Gaps
 
 - Production contact form is live via Formspree (receipt-confirmed 2026-05-16).
-- Public email still appears to use Gmail in at least some docs or site materials.
+- Temporary contact email is `auralisdigitaleco@gmail.com`.
 - Domain email such as `hello@auralisdigital.net` is still needed.
 - Google Business Profile is not confirmed.
 - Real testimonials or reviews are not confirmed.
@@ -137,7 +137,7 @@ The product/shop surface should not be treated as a fully mature commerce operat
 1. Confirm LLC filing with Michigan.
 2. Obtain EIN.
 3. Open a business bank account.
-4. Set up domain email.
+4. Keep using `auralisdigitaleco@gmail.com` temporarily until domain email is active.
 5. Set up invoicing/payment processing.
 6. ~~Configure and verify the live contact-form backend.~~ Done 2026-05-16 (phone confirmed 2026-05-17).
 7. Verify the three-pillar live site flow on phone and desktop.

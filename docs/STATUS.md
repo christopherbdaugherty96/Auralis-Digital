@@ -1,6 +1,6 @@
 # Auralis Digital Status
 
-Last updated: 2026-05-16
+Last updated: 2026-05-17
 
 ## Current State
 
@@ -24,7 +24,7 @@ Website design remains active, but it is not the only core idea. Products and cu
 
 1. Confirm LLC filing with Michigan and obtain EIN.
 2. Open a business bank account.
-3. Set up `hello@auralisdigital.net` or another domain email.
+3. Keep `auralisdigitaleco@gmail.com` as the temporary contact email until `hello@auralisdigital.net` or another domain email is active.
 4. ~~Configure and verify the production contact-form backend.~~ Done 2026-05-16.
 5. Configure real payment/invoicing flow.
 6. Verify the live three-pillar navigation and inquiry flow on desktop and phone.
@@ -46,7 +46,7 @@ Website design remains active, but it is not the only core idea. Products and cu
 - Public routes include `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`, and local policy/support routes.
 - Lead capture backend is live via Formspree (desktop confirmed 2026-05-16, phone
   confirmed 2026-05-17).
-- Public contact email should move away from Gmail where appropriate.
+- Temporary public contact email is `auralisdigitaleco@gmail.com`; move away from Gmail only after domain email sends/receives correctly.
 - Portfolio proof must remain clearly labeled as sample/demo work until real client work exists.
 - Website Refresh is limited to Auralis-built sites. Third-party sites should start with an audit, rebuild, migration, or custom quote.
 
