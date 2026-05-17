@@ -57,7 +57,7 @@ Formspree dashboard. The mailto fallback no longer triggers.
 - [x] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
 - [x] Trigger GitHub Pages deploy after contact env is configured.
 - [x] Submit test inquiry from desktop on the live site.
-- [ ] Submit test inquiry from phone on the live site.
+- [x] Submit test inquiry from phone on the live site.
 - [x] Confirm no mailto window opens after production env is configured.
 - [x] Confirm submission arrives in Formspree/inbox.
 - [x] Confirm success state appears after inquiry submission.

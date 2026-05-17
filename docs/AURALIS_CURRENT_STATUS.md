@@ -31,7 +31,7 @@ Current execution priority is:
 
 ```text
 domain email
-reliable inquiry flow (Formspree live — phone test pending)
+reliable inquiry flow (Formspree live — desktop + phone confirmed)
 products/custom design/web design offer clarity
 Shopify checkout verification
 first real sale or client
@@ -99,7 +99,7 @@ Website design remains an active Auralis service, but it is no longer the sole c
 - Real testimonials or reviews are not confirmed.
 - Real delivered client case studies are not confirmed.
 - Physical or service address policy is not confirmed.
-- Phone test submission still pending (desktop tests passed).
+- Phone test submission confirmed 2026-05-17.
 
 ## Website-Service Operational Gaps
 
@@ -139,7 +139,7 @@ The product/shop surface should not be treated as a fully mature commerce operat
 3. Open a business bank account.
 4. Set up domain email.
 5. Set up invoicing/payment processing.
-6. ~~Configure and verify the live contact-form backend.~~ Done 2026-05-16 (phone test pending).
+6. ~~Configure and verify the live contact-form backend.~~ Done 2026-05-16 (phone confirmed 2026-05-17).
 7. Verify the three-pillar live site flow on phone and desktop.
 8. Publish or verify Shopify-hosted refund, shipping, and terms policies.
 9. Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.

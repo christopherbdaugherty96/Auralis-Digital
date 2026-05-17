@@ -75,8 +75,8 @@ GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 
 - [x] Open the live Auralis site on desktop.
 - [x] Submit the form on the live site from desktop (2 submissions, 2026-05-16).
-- [ ] Open the live Auralis site on phone.
-- [ ] Submit the form on the live site from phone.
+- [x] Open the live Auralis site on phone.
+- [x] Submit the form on the live site from phone (confirmed 2026-05-17).
 - [x] Confirm no `mailto:` window opens.
 - [x] Confirm both desktop submissions arrive in the expected inbox.
 - [x] Confirm the success state appears after submission.

@@ -44,8 +44,8 @@ Website design remains active, but it is not the only core idea. Products and cu
 - Static folders such as `website/`, `projects/`, and `service-areas/` may be active deployment input because the deploy workflow copies selected static files into `dist/`.
 - Route-specific static metadata generation is implemented through `scripts/generate-route-pages.mjs`.
 - Public routes include `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`, and local policy/support routes.
-- Lead capture backend is live via Formspree (receipt-confirmed 2026-05-16, phone
-  test still pending).
+- Lead capture backend is live via Formspree (desktop confirmed 2026-05-16, phone
+  confirmed 2026-05-17).
 - Public contact email should move away from Gmail where appropriate.
 - Portfolio proof must remain clearly labeled as sample/demo work until real client work exists.
 - Website Refresh is limited to Auralis-built sites. Third-party sites should start with an audit, rebuild, migration, or custom quote.
