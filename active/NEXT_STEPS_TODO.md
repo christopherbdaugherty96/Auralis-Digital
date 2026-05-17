@@ -1,6 +1,6 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-05-15
+Last updated: 2026-05-16
 
 ## Current Mode
 
@@ -19,7 +19,7 @@ Custom design was chosen because it needs less infrastructure than Shopify produ
 Current execution priority is:
 
 ```text
-Formspree setup (immediate blocker) -> trust setup -> custom design inquiry flow -> first real custom design request -> proof -> then expand to products and website clients
+domain email -> trust setup -> custom design inquiry flow -> first real custom design request -> proof -> then expand to products and website clients
 ```
 
 Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
@@ -46,20 +46,22 @@ Goal: make Auralis ready to accept money cleanly and credibly.
 
 Goal: reduce trust friction before outreach or traffic.
 
-Current live note: as of 2026-05-14, no production contact env is configured in the GitHub repo, so the live contact form still uses the mailto fallback and shows `Prepare Project Email`.
+Current live note: as of 2026-05-16, the production contact env is configured and
+the live form uses Formspree. Two desktop test submissions were received in the
+Formspree dashboard. The mailto fallback no longer triggers.
 
 - [ ] Set up domain email such as `hello@auralisdigital.net`.
 - [ ] Replace public Gmail references where appropriate.
-- [ ] Create Formspree form and copy endpoint.
-- [ ] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
-- [ ] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
-- [ ] Trigger GitHub Pages deploy after contact env is configured.
-- [ ] Submit test inquiry from desktop on the live site.
+- [x] Create Formspree form and copy endpoint.
+- [x] Add GitHub repo variable: `VITE_CONTACT_EMAIL`.
+- [x] Add GitHub repo secret: `VITE_FORMSPREE_ENDPOINT`.
+- [x] Trigger GitHub Pages deploy after contact env is configured.
+- [x] Submit test inquiry from desktop on the live site.
 - [ ] Submit test inquiry from phone on the live site.
-- [ ] Confirm no mailto window opens after production env is configured.
-- [ ] Confirm submission arrives in Formspree/inbox.
-- [ ] Confirm success state appears after inquiry submission.
-- [ ] Confirm no visible console/network errors during form submission.
+- [x] Confirm no mailto window opens after production env is configured.
+- [x] Confirm submission arrives in Formspree/inbox.
+- [x] Confirm success state appears after inquiry submission.
+- [x] Confirm no visible console/network errors during form submission.
 - [ ] Create or complete Google Business Profile.
 - [ ] Confirm public phone/contact path.
 - [ ] Decide service-area/address policy for public listings.

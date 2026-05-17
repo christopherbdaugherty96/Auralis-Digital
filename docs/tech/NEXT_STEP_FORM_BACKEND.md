@@ -1,6 +1,6 @@
 # NEXT STEP: Form Backend
 
-Status: immediate next technical action
+Status: complete — receipt-confirmed 2026-05-16
 
 ## Why This Matters
 
@@ -54,14 +54,16 @@ gh workflow run "Deploy to GitHub Pages"
 
 ## Blocked Until
 
-This cannot be fully verified until these real production values exist:
+~~This cannot be fully verified until these real production values exist:~~
+
+Both values are now configured in the production environment as of 2026-05-16:
 
 ```text
-VITE_CONTACT_EMAIL=...
-VITE_FORMSPREE_ENDPOINT=...
+VITE_CONTACT_EMAIL=auralisdigitaleco@gmail.com (variable)
+VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/mpqnalkb (secret)
 ```
 
-The repo/deploy plumbing is ready. The remaining work is real-world configuration.
+Deploy completed successfully. Live form uses Formspree mode, no mailto fallback.
 
 ## Deploy
 
@@ -71,14 +73,14 @@ GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 
 ## Test
 
-- Open the live Auralis site on desktop.
-- Submit the form on the live site from desktop.
-- Open the live Auralis site on phone.
-- Submit the form on the live site from phone.
-- Confirm no `mailto:` window opens.
-- Confirm both submissions arrive in the expected inbox.
-- Confirm the success state appears after submission.
-- Confirm no console or network errors appear.
+- [x] Open the live Auralis site on desktop.
+- [x] Submit the form on the live site from desktop (2 submissions, 2026-05-16).
+- [ ] Open the live Auralis site on phone.
+- [ ] Submit the form on the live site from phone.
+- [x] Confirm no `mailto:` window opens.
+- [x] Confirm both desktop submissions arrive in the expected inbox.
+- [x] Confirm the success state appears after submission.
+- [x] Confirm no console or network errors appear.
 
 ## Success Criteria
 
@@ -89,4 +91,6 @@ GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
 
 ## Internal Note
 
-This is the final technical step required to turn the site from a static presentation into a working lead-generation path.
+This step is complete. The site is now a working lead-generation path via
+Formspree. Remaining trust items: domain email, phone test, Google Business
+Profile, analytics (GA4/Search Console/Clarity).
