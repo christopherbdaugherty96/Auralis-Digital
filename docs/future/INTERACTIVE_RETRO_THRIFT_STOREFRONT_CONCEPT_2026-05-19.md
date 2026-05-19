@@ -4,11 +4,17 @@ Status: future concept / deferred
 Date added: 2026-05-19
 Last reviewed: 2026-05-19
 
+## Summary
+
+Auralis could eventually add an optional interactive retro thrift-shop storefront to the Products/Shop experience.
+
+The normal product grid remains the primary shopping path. The interactive storefront is a future brand-experience layer that lets visitors enter a small stylized shop, move a simple avatar or cursor-controlled character, browse product areas, and open normal product cards from inside the scene.
+
+This is not a current build priority. It belongs after verified commerce readiness, stable customer paths, first real sale/client proof, and mobile/accessibility review.
+
 ## Concept
 
-Auralis could eventually replace or supplement the normal product-list browsing experience with an interactive retro thrift-shop style storefront.
-
-Instead of only showing products as a static list or grid, visitors could enter a small digital shop environment, move a simple avatar or cursor-controlled character around the store, browse shelves/racks/walls, and select products from inside the scene.
+Instead of only showing products as a static list or grid, visitors could enter a small digital shop environment, browse shelves/racks/walls, and select products from inside the scene.
 
 The intended feeling is:
 
@@ -31,13 +37,13 @@ Core visual language:
 - Handpicked, found-object feeling instead of sterile ecommerce grid.
 - Old signage, stickers, posters, shelves, racks, bins, frames, and display tables.
 - Subtle creative clutter, but not visual chaos.
-- Product areas should look intentionally arranged so visitors still understand where to go.
+- Product areas arranged clearly so visitors still understand where to go.
 
 Possible scene details:
 
 - A front door or entry mat that says something like `Enter the Shop`.
 - Wall signs for `Prints`, `Apparel`, `Mugs`, `Journals`, `Blankets`, `Custom Requests`, and `Featured Finds`.
-- A checkout counter or register area that points visitors back to Shopify checkout.
+- A checkout counter or register area that explains Shopify checkout and support/contact paths.
 - A bulletin board for featured drops, custom design examples, announcements, or future limited releases.
 - A small fitting-room or mirror-style area for apparel previews if this ever becomes useful.
 - A back-wall gallery for wall art and canvas pieces.
@@ -57,11 +63,10 @@ Possible interaction patterns:
 
 - A visitor enters a stylized shop scene from the Products or Shop page.
 - A small avatar, icon, or cursor-controlled character moves through the store.
-- Movement can use keyboard arrows, WASD, touch joystick, tap-to-move, or direct click/tap hotspots.
+- Movement can use keyboard arrows, WASD, touch joystick, tap-to-move, direct click/tap hotspots, or a simplified mobile map.
 - Product categories are represented as shop areas, such as wall art, apparel, mugs, journals, blankets, or custom design requests.
 - Clicking, tapping, or walking near a product opens a normal product card, image gallery, price, description, and Shopify checkout link.
 - Hotspots should be clearly visible so the user is never forced to guess what is clickable.
-- The experience can include signs, racks, shelves, posters, old TV/storefront details, and vintage visual cues.
 - The standard product grid should remain available as a fallback for speed, accessibility, search, and users who do not want the interactive mode.
 
 ## Avatar / Visitor Icon Direction
@@ -155,7 +160,7 @@ This is technically possible, but it should be treated as a later interactive de
 Possible implementation paths:
 
 1. Lightweight 2D interactive scene using React, CSS, SVG, Canvas, or a game-like component.
-2. More advanced WebGL/Three.js scene if the brand later needs a stronger immersive storefront.
+2. More advanced WebGL/Three.js scene only if the brand later needs a stronger immersive storefront and the lightweight version proves useful.
 3. Hybrid approach: standard product grid remains primary, with an optional `Enter the Shop` experience for visitors who want the interactive version.
 
 The first version should prefer the lightweight 2D/hybrid route before attempting full 3D.
