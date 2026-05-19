@@ -1,1 +1,1 @@
-product_name,category,mockup_type,status,priority,notes
+product_name,drop_id,category,mockup_type,platform_target,status,priority,prompt_status,notes
