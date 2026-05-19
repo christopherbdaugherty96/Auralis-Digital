@@ -12,7 +12,7 @@ This document is a truth snapshot, not a maturity claim. It records what is curr
 
 ## Current Truth In One Line
 
-Auralis Design is currently a pre-validation Shopify storefront moving toward a restrained cinematic operator lifestyle brand, with Art & Symbolic preserved as a secondary archive layer.
+Auralis Design is currently a pre-validation Shopify storefront moving toward a restrained cinematic operator lifestyle brand, with Art & Symbolic preserved as a secondary archive layer and Independent Signal emerging as a controlled philosophical/geometric sublayer.
 
 ---
 
@@ -20,7 +20,7 @@ Auralis Design is currently a pre-validation Shopify storefront moving toward a 
 
 The strongest current framing is:
 
-> Auralis is a restrained operator lifestyle brand built around early work, discipline, practical skill, quiet environments, and subtle symbolic atmosphere.
+> Auralis is a restrained operator lifestyle brand built around early work, discipline, practical skill, quiet environments, industrial geometry, and subtle symbolic atmosphere.
 
 The store should not be treated as generic print-on-demand merchandise.
 
@@ -32,6 +32,8 @@ The store should not be treated as generic print-on-demand merchandise.
 - overdesigned AI visuals
 - random product sprawl
 - fake urgency, fake reviews, fake proof, or fake sales claims
+- loud anti-system branding
+- generic rebellion aesthetics
 
 ### Lean Into
 
@@ -44,6 +46,9 @@ The store should not be treated as generic print-on-demand merchandise.
 - practical discipline
 - self-built operator identity
 - restrained symbolic undertones
+- industrial geometry
+- blueprint/grid atmosphere
+- quiet independent philosophy
 
 ---
 
@@ -62,6 +67,29 @@ This is the main storefront direction and the first product-validation lane.
 - Independent Builder
 
 These should feel like distinct environments, not generic product categories.
+
+### Independent Signal Sublayer
+
+Documented in:
+
+- `docs/marketing/INDEPENDENT_SIGNAL_SUBLAYER_2026-05-19.md`
+
+Purpose:
+
+Introduce a restrained self-built / quietly anti-dependent philosophy into the brand without turning the storefront into generic rebellion merch.
+
+Core emotional framing:
+
+> build your own structure quietly.
+
+The geometry layer should feel:
+- engineered
+- symbolic
+- structural
+- blueprint-like
+- atmospheric
+
+not decorative.
 
 ### Secondary Archive Layer
 
@@ -228,6 +256,7 @@ Hero language should be minimal:
 - No Shortcuts.
 - Uniforms for the self-built.
 - Operator Series.
+- Construct Your Own.
 
 Avoid long homepage copy, fake urgency, heavy motivational text, and visual clutter.
 
@@ -286,6 +315,7 @@ Caption examples:
 - Quiet operators.
 - Leave it cleaner.
 - Discipline first.
+- Construct your own.
 
 Avoid overexplaining the brand in every post.
 
@@ -329,4 +359,4 @@ The next progress should come from:
 
 ## Final Working Rule
 
-Auralis should grow through atmosphere, proof, and disciplined product validation — not through inventory volume.
+Auralis should grow through atmosphere, proof, disciplined product validation, and restrained identity-building — not through inventory volume.
