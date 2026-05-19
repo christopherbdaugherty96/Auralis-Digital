@@ -87,6 +87,93 @@ Core emotional positioning:
 
 ---
 
+# Customer Avatars
+
+## Lawn Care Owner / Crew Lead
+
+Likely motivations:
+- wants a simple but proud work identity
+- may own or want to own a small service business
+- values toughness, reliability, and local reputation
+- responds to lawn stripes, early mornings, equipment, heat, sweat, and hustle themes
+
+Possible products:
+- hats
+- work tees
+- hoodies
+- decals
+- tumblers
+- garage/shop signs
+
+Possible slogans/themes:
+- Stripe Season
+- Lawn Money
+- Built Before Sunrise
+- Cut Clean
+- Yard Operator
+
+## Power Washing Operator
+
+Likely motivations:
+- likes before/after transformation
+- may be side-hustling or building a local business
+- responds to pressure, grit, clean results, and practical pride
+
+Possible products:
+- hoodies
+- tees
+- truck decals
+- hats
+- stickers
+
+Possible slogans/themes:
+- Pressure Built
+- Wash Rig Ready
+- Surface Reset
+- Dirty Work Clean Money
+
+## Mechanic / Garage Dad
+
+Likely motivations:
+- identity tied to fixing, maintaining, and knowing machines
+- values competence, tools, hands-on skill, and garage culture
+- responds to simple marks, wrench/garage themes, and practical humor
+
+Possible products:
+- garage signs
+- hats
+- decals
+- hoodies
+- mugs/tumblers
+
+Possible slogans/themes:
+- Garage Standard
+- Built Not Bought
+- Wrench Time
+- Runs Because I Fixed It
+
+## Practical Dad / Provider
+
+Likely motivations:
+- family provider identity
+- practical competence
+- quiet pride
+- humor around fixing things, mowing, grilling, garages, tools, and household repairs
+
+Possible products:
+- hats
+- tees
+- mugs/tumblers
+- decals
+
+Possible slogans/themes:
+- Dad Fixed It
+- Weekend Operator
+- Mow. Fix. Repeat.
+- Provider Mode
+
+---
+
 # Important Strategic Insight
 
 This audience does not primarily buy:
@@ -412,6 +499,152 @@ Potentially weaker products for this audience:
 
 ---
 
+# Example Initial Test Catalog
+
+Use a small test catalog before scaling.
+
+## Lawn Care / Yard Operator
+
+1. Hat — Yard Operator
+   - simple badge logo
+   - grass stripe or mower-line motif
+   - black, dark green, tan, or gray mockup
+
+2. Tee — Built Before Sunrise
+   - early morning lawn crew theme
+   - understated typography
+
+3. Decal — Stripe Season
+   - truck, trailer, mower, water bottle use
+
+## Power Washing
+
+4. Hoodie — Pressure Built
+   - pressure wand or water-line mark
+   - rugged but clean graphic
+
+5. Tee — Dirty Work Clean Money
+   - practical side-hustle positioning
+   - not too cartoonish
+
+## Mechanic / Garage
+
+6. Garage Sign — Built Not Bought
+   - strong simple workshop graphic
+
+7. Hat — Garage Standard
+   - patch-style mark
+   - clean utility branding
+
+## Practical Dad
+
+8. Tee — Dad Fixed It
+   - simple practical humor
+
+9. Tumbler — Provider Mode
+   - family/provider identity
+   - muted, useful, everyday product
+
+## Bridge Product
+
+10. Tee or poster — Sacred Labor / Solar Steel
+   - only if the design genuinely bridges symbolic art and work identity
+   - should not feel forced
+
+---
+
+# Store Structure Recommendation
+
+If testing inside one store, the navigation should make categories obvious.
+
+Recommended simple navigation:
+- Home
+- Art & Symbolic
+- Operator Series
+- Journals / Decor
+- About
+
+Homepage layout should avoid dumping all categories together.
+
+Recommended homepage structure:
+1. Hero: broad Auralis identity
+2. Two-path collection block:
+   - Art & Symbolic Design
+   - Operator / Workwear Series
+3. Featured products from each lane
+4. Short brand explanation
+5. Email capture or follow prompt
+
+Possible one-line positioning:
+Auralis creates design-driven products for people drawn to symbols, work ethic, and independent creation.
+
+Cleaner alternative:
+Auralis is a design brand exploring symbolic art, operator identity, and products for people who build their own path.
+
+If this feels too broad after testing, split the operator lane into its own brand.
+
+---
+
+# Product Page Copy Requirements
+
+Operator products should avoid generic supplier descriptions.
+
+Each product page should include:
+- who it is for
+- what identity it represents
+- why the design exists
+- simple use case
+- clear product details
+
+Example structure:
+1. Identity hook
+2. Short product meaning
+3. Practical product details
+4. Use/wear context
+
+Example product copy direction:
+Yard Operator is for the early risers, weekend crews, and small-service builders who know clean stripes do not happen by accident. Simple, rugged, and made for the people who keep properties sharp.
+
+---
+
+# Content Testing Plan
+
+Do not rely only on Shopify traffic.
+
+Test the category through content:
+- short videos showing product mockups
+- simple posts asking which design should drop first
+- local service-business angle posts
+- dad/work humor posts
+- Pinterest pins with product mockups
+- before/after style power washing/lawn visuals if available
+
+Minimum content test:
+- 3 lawn care posts
+- 3 mechanic/garage posts
+- 3 dad/operator posts
+- 3 power washing posts
+- 3 current art/cosmic comparison posts
+
+Compare which lane gets easier reactions.
+
+---
+
+# What Not To Do
+
+Do not:
+- create 50 products before testing 5-10
+- mix sacred geometry and operator products on one page without category separation
+- use generic POD descriptions
+- overuse fake grit, skulls, flames, and cliches
+- chase every trade at once
+- make the store look like a flea market of unrelated designs
+- abandon the current art identity without evidence
+- split into a new brand before knowing whether the operator lane has pull
+- assume likes equal sales
+
+---
+
 # Design Direction Guidelines
 
 Operator category should lean toward:
@@ -529,6 +762,19 @@ Recommended immediate next action:
 3. Keep product design simple and identity-based.
 4. Build the collection page before adding too many products.
 5. Test the collection with content before committing to a full brand pivot.
+
+---
+
+# Third-Pass Verdict
+
+The idea is worth preserving because it connects three important realities:
+- the current store has an artistic visual identity
+- the blue-collar/operator audience may be easier to sell to
+- Christopher's broader ecosystem already touches local service businesses, websites, and practical operators
+
+The mistake would be choosing a permanent identity before testing.
+
+The disciplined move is to build a small controlled operator lane, measure response, and then decide whether Auralis remains a multi-category design store or the operator lane deserves a separate brand.
 
 ---
 
