@@ -13,6 +13,28 @@ This is a strategic exploration document that preserves the current idea, the av
 
 ---
 
+# Active Recommendation
+
+Use Perspective 3 as the active working direction:
+
+## One store, multiple style categories, with operator / builder identity as the priority.
+
+This is not an equal-category model.
+
+Priority order:
+1. Operator / builder / blue-collar / independent worker identity
+2. Lawn care, power washing, mechanic, dad/provider, and service-business subcategories
+3. Artistic / symbolic / cosmic products as secondary differentiating collections
+4. Future categories only if they fit the broader builder/operator/independent-creator world
+
+The current recommendation is not to fully abandon the artistic side.
+The current recommendation is to stop making the artistic side carry the whole store.
+
+Operator/builder identity should lead customer acquisition.
+Artistic/symbolic categories should provide differentiation, limited drops, and creative depth.
+
+---
+
 # Updated Core Conclusion
 
 The strongest current direction is not an equal-weight multi-category store.
@@ -918,6 +940,24 @@ Recommended immediate next action:
 4. Keep product design simple and identity-based.
 5. Build the collection page before adding too many products.
 6. Test the operator collection with content before committing to a full brand pivot or split.
+
+---
+
+# Second-Pass Recommendation Lock
+
+This document remains exploratory, but the working recommendation is clear:
+
+## Build the next Auralis iteration around operator/builder priority, not equal category weight.
+
+Do not interpret "multiple categories" as "anything can go anywhere."
+
+The next practical move should be:
+1. Operator Series first.
+2. Art & Symbolic second.
+3. Future categories only after passing the fit test.
+4. No new broad product uploads until the primary hierarchy is visible in navigation, homepage, and collection structure.
+
+This is the cleanest current bridge between commercial focus and creative flexibility.
 
 ---
 
