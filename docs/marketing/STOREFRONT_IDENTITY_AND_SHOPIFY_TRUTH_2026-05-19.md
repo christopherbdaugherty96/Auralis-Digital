@@ -1,18 +1,22 @@
 # Storefront Identity And Shopify Truth — 2026-05-19
 
-Status: current operating truth / documentation update
+Status: current Shopify/storefront truth snapshot
 
 ## Purpose
 
 Document the current Auralis Shopify storefront direction after the live product and collection cleanup work performed on 2026-05-19.
 
-This document is not a claim that the commerce operation is fully validated. It records the current storefront identity, active campaign direction, remaining readiness gaps, and the updated product/collection truth that should guide the next execution pass.
+This document is a truth snapshot, not a maturity claim. It records what is currently real, what is still unverified, and what should guide the next execution pass.
+
+---
+
+## Current Truth In One Line
+
+Auralis Design is currently a pre-validation Shopify storefront moving toward a restrained cinematic operator lifestyle brand, with Art & Symbolic preserved as a secondary archive layer.
 
 ---
 
 ## Current Storefront Positioning
-
-Auralis Design is currently moving toward a cinematic operator lifestyle brand with a secondary symbolic/art archive.
 
 The strongest current framing is:
 
@@ -20,7 +24,8 @@ The strongest current framing is:
 
 The store should not be treated as generic print-on-demand merchandise.
 
-The storefront should avoid:
+### Avoid
+
 - generic AI merch language
 - fake hustle culture
 - loud alpha/entrepreneur clichés
@@ -28,7 +33,8 @@ The storefront should avoid:
 - random product sprawl
 - fake urgency, fake reviews, fake proof, or fake sales claims
 
-The storefront should lean into:
+### Lean Into
+
 - dawn starts
 - garage lights
 - lawn stripes
@@ -41,6 +47,30 @@ The storefront should lean into:
 
 ---
 
+## Brand Architecture
+
+### Primary Commercial Layer
+
+Operator / builder identity.
+
+This is the main storefront direction and the first product-validation lane.
+
+### Secondary Expansion Lanes
+
+- Lawn & Power
+- Garage & Mechanic
+- Independent Builder
+
+These should feel like distinct environments, not generic product categories.
+
+### Secondary Archive Layer
+
+Art & Symbolic.
+
+This layer should remain curated, quieter, and more gallery/archive-like. It should not be mixed randomly into the primary operator campaign.
+
+---
+
 ## Current Collection Architecture
 
 ### Operator Series
@@ -49,7 +79,7 @@ Role: primary commercial identity layer.
 
 Theme: discipline before comfort.
 
-Current collection description in Shopify frames the collection around predawn work, trucks warming up, garage lights, wet lawns, and the self-built operator.
+Current Shopify copy frames the collection around predawn work, trucks warming up, garage lights, wet lawns, and the self-built operator.
 
 ### Lawn & Power
 
@@ -57,7 +87,7 @@ Role: primary acquisition category.
 
 Theme: environmental pride and outdoor operator momentum.
 
-Current Shopify copy now references wet grass, driveway steam, mowing, washing, hauling, cutting, cleaning, and pride in leaving a jobsite better than it was found.
+Current Shopify copy references wet grass, driveway steam, mowing, washing, hauling, cutting, cleaning, and pride in leaving a jobsite better than it was found.
 
 ### Garage & Mechanic
 
@@ -65,7 +95,7 @@ Role: secondary operator expansion lane.
 
 Theme: craftsmanship in silence.
 
-Current Shopify copy now references shop floors, dim lights, oil-stained hands, industrial atmosphere, and doing the work correctly when no one is watching.
+Current Shopify copy references shop floors, dim lights, oil-stained hands, industrial atmosphere, and doing the work correctly when no one is watching.
 
 ### Independent Builder
 
@@ -73,7 +103,7 @@ Role: broader self-built worker and small-operator lane.
 
 Theme: steady persistence.
 
-Current Shopify copy now references self-built workers, small operators, practical skill, consistency, and creating your own path through steady work.
+Current Shopify copy references self-built workers, small operators, practical skill, consistency, and creating your own path through steady work.
 
 ### Art & Symbolic
 
@@ -81,13 +111,13 @@ Role: secondary creative/archive layer.
 
 Theme: quiet mythology / collected objects.
 
-Current Shopify copy now frames this as the quieter archive of Auralis: cosmic pieces, sacred geometry, mythic visuals, and personal artwork presented as collected objects rather than ordinary merch.
+Current Shopify copy frames this as the quieter archive of Auralis: cosmic pieces, sacred geometry, mythic visuals, and personal artwork presented as collected objects rather than ordinary merch.
 
 ---
 
 ## Current Polished Operator Product Lineup
 
-The following active Shopify products have been renamed/polished away from raw Printify naming:
+The following active Shopify products have been renamed/polished away from raw Printify naming.
 
 ### Hoodies
 
@@ -108,7 +138,9 @@ The following active Shopify products have been renamed/polished away from raw P
 
 - Built Before Sunrise Quarter-Zip
 
-These products currently have real Shopify active status, Printify vendor linkage, variants, SKUs, prices, inventory, and product images.
+These products currently have active Shopify status, Printify vendor linkage, variants, SKUs, prices, inventory, and product images.
+
+This does not yet verify sample quality, shipping timing, margin quality, or real customer demand.
 
 ---
 
@@ -121,15 +153,16 @@ Older manually created Shopify draft products still exist in collections with pr
 - GARAGE STANDARD Tee
 - NO SHORTCUTS Tee
 
-These should not be published as-is.
+These are not sellable products.
+
+Do not publish them as-is.
 
 They should either be:
+
 - replaced by the real Printify-linked versions,
 - kept as internal placeholders,
 - archived later,
-- or removed from customer-facing collection order if Shopify theme exposes draft products unexpectedly.
-
-Do not treat these draft products as sellable.
+- or removed from customer-facing collection order if the Shopify theme exposes draft products unexpectedly.
 
 ---
 
@@ -145,7 +178,7 @@ Shopify analytics checked on 2026-05-19 showed the last 30 days at approximately
 
 Interpretation:
 
-The store is still pre-validation. The next step is not scaling, paid ads, or broad product expansion. The next step is focused storefront presentation, sample ordering, and a small organic campaign.
+The store is still pre-validation. The next step is not scaling, paid ads, or broad product expansion. The next step is focused storefront presentation, sample ordering, checkout/policy verification, and a small organic campaign.
 
 ---
 
@@ -156,6 +189,7 @@ Recommended immediate campaign:
 # Before Sunrise
 
 Primary collection focus:
+
 - Operator Series
 - Lawn & Power
 
@@ -168,6 +202,7 @@ Primary products for Sprint 01 testing:
 5. Garage Standard Full-Zip Hoodie
 
 Alternative/secondary items:
+
 - No Shortcuts Full-Zip Hoodie
 - Yard Operator Zip Hoodie
 - Garage Standard Fleece Hoodie
@@ -187,7 +222,7 @@ Recommended structure:
 4. Secondary collection: Garage & Mechanic
 5. Secondary/quiet archive: Art & Symbolic
 
-Hero language should be minimal. Recommended lines:
+Hero language should be minimal:
 
 - Built Before Sunrise.
 - No Shortcuts.
@@ -206,7 +241,7 @@ Avoid long homepage copy, fake urgency, heavy motivational text, and visual clut
 - trailer silhouette
 - work lights
 - subtle fog
-- tiny/clean text: Built Before Sunrise
+- minimal text: Built Before Sunrise
 
 ### Lawn & Power Banner
 
@@ -261,9 +296,11 @@ Avoid overexplaining the brand in every post.
 The following are still open and should remain in active TODO tracking:
 
 - homepage/theme sections not yet verified or redesigned in Shopify admin
+- default `Home page` collection not yet confirmed safe against the new storefront direction
 - collection banners not yet created/uploaded
 - product samples not yet ordered
 - print quality not yet verified
+- garment quality/sizing not yet verified
 - shipping timing not yet verified
 - Shopify checkout test not yet completed
 - Shopify refund/shipping/privacy/terms policy links not yet fully verified
@@ -283,9 +320,10 @@ The next progress should come from:
 1. collection banners
 2. homepage curation
 3. sample orders
-4. 7-day organic Before Sunrise campaign
-5. analytics review
-6. product decision logging
+4. checkout and policy verification
+5. 7-day organic Before Sunrise campaign
+6. analytics review
+7. product decision logging
 
 ---
 
