@@ -134,16 +134,16 @@ const aboutPrinciples = [
 
 const experienceHighlights = [
   {
-    title: "Auralis Design",
-    copy: "Shopify-connected products and custom visual directions built around symbolic artwork, personal concepts, and product-ready presentation.",
+    title: "Customer-first service",
+    copy: "10 years of experience in high-volume hospitality shaped how I communicate, read what people need, solve problems quickly, and keep service calm under pressure.",
   },
   {
-    title: "Website Design",
-    copy: "Local-business websites, demos, intake flows, service pages, and quote paths built to help owners look credible online.",
+    title: "Sales and coordination",
+    copy: "Automotive sales experience added needs-based consultation, clear follow-up, CRM tracking, appointment coordination, and trust-building through direct communication.",
   },
   {
-    title: "Pour Social",
-    copy: "Founder-led event bar staffing and beverage planning concept with a live site, calculators, intake flow, and operations docs.",
+    title: "Operations mindset",
+    copy: "Bartending, serving, events, POS work, cash handling, and team coordination taught me to manage details, timing, accuracy, and fast-moving workflows.",
   },
 ];
 
@@ -1118,7 +1118,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                     I build practical creative systems that turn ideas into something people can actually use.
                   </h1>
                   <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    I am Christopher Daugherty, the builder behind Auralis Digital. My work sits at the intersection of creative products, clear websites, local business systems, and founder-led ventures like Pour Social.
+                    I am Christopher Daugherty, the builder behind Auralis Digital. My background is rooted in high-volume hospitality, event service, and automotive sales, where clear communication, trust, timing, and follow-through matter every day.
+                  </p>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    That experience now carries into the work I build: practical websites, product ideas, intake flows, and service brands that help people understand the offer and take the next step with confidence.
                   </p>
                   <div className="cta-row">
                     <Button variant="conversion" size="xl" asChild>
@@ -1182,9 +1185,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="site-shell">
                 <Reveal className="section-heading">
                   <span className="section-label">Experience snapshot</span>
-                  <h2>The portfolio is intentionally mixed, but each lane has a purpose.</h2>
+                  <h2>Relevant experience behind the work.</h2>
                   <p className="mt-4">
-                    Auralis Digital is the umbrella for the creative and operational work I am building in public.
+                    The through-line is people, service, and systems: understanding what someone needs, making the process clear, and keeping the details organized.
                   </p>
                 </Reveal>
                 <div className="grid gap-5 md:grid-cols-3">
