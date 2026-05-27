@@ -1732,7 +1732,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
       {!isHome && !isShop && (
         <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border/40 bg-background/90 p-3 backdrop-blur-xl md:hidden">
           <Button variant="conversion" size="lg" className="w-full" asChild>
-            <a href="/custom-design">Start a Request</a>
+            <a
+              href={isPourSocial ? "https://pour-social.vercel.app" : "/custom-design"}
+              target={isPourSocial ? "_blank" : undefined}
+              rel={isPourSocial ? "noopener noreferrer" : undefined}
+            >
+              {isPourSocial ? "View Pour Social" : "Start a Request"}
+            </a>
           </Button>
         </div>
       )}
