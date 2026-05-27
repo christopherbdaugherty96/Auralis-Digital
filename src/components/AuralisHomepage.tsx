@@ -533,7 +533,27 @@ function ProductCard({ product }: { product: ShopProduct }) {
   );
 }
 
-const productCategories = ["All", ...Array.from(new Set(shopProducts.map((p) => p.category)))];
+const preferredProductCategoryOrder = [
+  "Apparel",
+  "Blankets",
+  "Journals & Notebooks",
+  "Wall Decor",
+  "Hats",
+  "Jewelry & Accessories",
+  "Home Decor",
+];
+
+const productCategories = [
+  "All",
+  ...Array.from(new Set(shopProducts.map((p) => p.category))).sort((a, b) => {
+    const first = preferredProductCategoryOrder.indexOf(a);
+    const second = preferredProductCategoryOrder.indexOf(b);
+    const firstRank = first === -1 ? Number.MAX_SAFE_INTEGER : first;
+    const secondRank = second === -1 ? Number.MAX_SAFE_INTEGER : second;
+
+    return firstRank - secondRank || a.localeCompare(b);
+  }),
+];
 
 function ProductCatalogGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
