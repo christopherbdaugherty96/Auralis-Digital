@@ -143,7 +143,7 @@ const experienceHighlights = [
   },
   {
     title: "Practical execution",
-    copy: "That same mindset carries into websites, intake flows, product ideas, and founder-led service brands.",
+    copy: "That same mindset carries into websites, product ideas, and service brands like Pour Social.",
   },
 ];
 
@@ -1115,13 +1115,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal className="section-heading compact">
                   <span className="section-label">About Christopher</span>
                   <h1 className="text-4xl font-extrabold leading-[0.98] sm:text-5xl lg:text-6xl">
-                    I build practical creative systems that turn ideas into something people can actually use.
+                    I design websites, products, and service brands with a practical creative edge.
                   </h1>
                   <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    I am Christopher Daugherty, the builder behind Auralis Digital. My background comes from 10 years of bartending and service experience, where clear communication, timing, trust, and staying calm under pressure matter every day.
+                    I am Christopher Daugherty, the builder behind Auralis Digital. My work brings together website design, product ideas, and service brands like Pour Social, shaped by 10 years of bartending and customer service experience.
                   </p>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    That service mindset now carries into the work I build: practical websites, product ideas, intake flows, and service brands that make the offer clear and help people take the next step with confidence.
+                    That background taught me how to communicate clearly, understand what people need, and keep the experience smooth. I use that same mindset to build clear websites, creative products, and brands that help people take the next step with confidence.
                   </p>
                   <div className="cta-row">
                     <Button variant="conversion" size="xl" asChild>
