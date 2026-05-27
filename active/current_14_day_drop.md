@@ -6,21 +6,22 @@ Last updated: 2026-05-19
 
 ## Active Campaign
 
-SPRINT_01 — Before Sunrise / Operator Series
+SPRINT_01 — Sacred Geometry / Psychedelic Product Focus
 
-## Current Truth
+## Direction Correction
 
-The original draft product targets have been superseded by the current live Shopify operator catalog.
+The previous Operator Series / Before Sunrise / blue-collar direction is no longer active.
 
-Do not use the older planned list as the active product truth:
+Do not use these as active Auralis product truth:
 
-- Yard Operator Hat
-- Built Before Sunrise Tee
-- Stripe Season Decal
-- Pressure Built Hoodie
-- Provider Mode Tumbler
-
-Those remain possible future ideas only.
+- Operator Series
+- Before Sunrise
+- Lawn & Power
+- Garage & Mechanic
+- Independent Builder
+- blue-collar operator positioning
+- workwear-first identity
+- lawn care / mechanic / pressure-washing audience targeting
 
 Current storefront truth is documented in:
 
@@ -28,85 +29,91 @@ Current storefront truth is documented in:
 
 ## Sprint 01 Product Focus
 
-Use the current live Shopify products for the first focused test:
+Use Christopher's personal sacred-geometry, psychedelic, symbolic, and cosmic design language for the first focused test.
 
-1. Yard Operator Full-Zip Hoodie
-2. No Shortcuts Performance Tee
-3. Built Before Sunrise Quarter-Zip
-4. Built Before Sunrise Performance Tee
-5. Garage Standard Full-Zip Hoodie
+Select 3-5 strongest products from the current live Shopify/catalog surface before posting traffic. Candidate focus products include:
 
-Secondary / alternate products:
+1. Sun of Life Wall Tapestry
+2. Sun of Life Woven Blanket
+3. Sun of Life Notebook - Ruled Line
+4. Zeus Journal Matte
+5. Zeus Woven Blanket or Zeus Sherpa Blanket
 
-- No Shortcuts Full-Zip Hoodie
-- Yard Operator Zip Hoodie
-- Garage Standard Fleece Hoodie
-- No Shortcuts Performance Tee - White
+A new Cosmic Balance / yin-yang / sacred-geometry design may become the stronger first campaign if the product mockups are ready and checkout/product pages are clean.
 
 ## Primary Audience
 
-- lawn care workers
-- power washing operators
-- garage/mechanic workers
-- service-business operators
-- practical self-built workers
+- people who like sacred geometry and symbolic art
+- psychedelic art and cosmic visual fans
+- people decorating rooms, studios, dorms, meditation corners, or creative spaces
+- gift buyers looking for personal or symbolic designs
+- creators who want custom symbolic artwork
+- people interested in journals, wall art, blankets, mugs, apparel, and accessories with meaning-driven visuals
 
 ## Campaign Identity
 
-Campaign name:
+Campaign name options:
 
-## Before Sunrise
+- Cosmic Balance
+- Sun of Life
+- Sacred Geometry Drop
+- Psychedelic Symbols
+- Auralis Symbolic Art
 
 Brand tone:
 
-- quiet
-- disciplined
-- cinematic
-- work-driven
-- restrained
-- atmospheric
+- visual-first
+- symbolic
+- colorful
+- cosmic
+- personal
+- art-led
+- calm but striking
+- honest and non-hype
 
 Avoid:
 
+- blue-collar operator branding
+- workwear-first identity
 - fake hustle language
 - generic AI merch language
-- loud alpha branding
-- random product sprawl
+- fake scarcity
 - unverified sales or proof claims
+- claiming spiritual effects or guaranteed transformation
 
 ## Content Direction
 
-Use environmental, practical visuals:
+Use visual, design-led posts:
 
-- predawn light
-- lawn stripes
-- pressure-washer steam
-- garage lights
-- work trucks and trailers
-- tools and steel textures
-- product detail shots
-- finished-job visuals
+- raw artwork close-up
+- product mockup
+- room or lifestyle context
+- short caption
+- clear shop/request CTA
 
 Short captions only:
 
-- Built before sunrise.
-- No shortcuts.
-- Quiet operators.
-- Leave it cleaner.
-- Discipline first.
+- Cosmic balance, made physical.
+- Sacred geometry for your space.
+- Psychedelic color. Symbolic form.
+- A new design from Auralis.
+- Made for rooms, rituals, and creative corners.
+- Request a custom symbolic design.
 
 ## Pre-Launch Requirements
 
 Before serious product traffic:
 
-- [ ] create or upload collection banners
-- [ ] curate homepage around Operator Series / Before Sunrise
-- [ ] order at least one sample tee, hoodie, and quarter-zip
-- [ ] verify print quality
-- [ ] verify shipping timing
+- [ ] select the first 3-5 sacred-geometry / psychedelic products to test
+- [ ] confirm product titles, images, prices, and descriptions match the corrected direction
+- [ ] create or upload collection/banner visuals for the corrected direction
+- [ ] curate homepage/storefront around the selected symbolic-art campaign
 - [ ] verify Shopify checkout flow
 - [ ] verify Shopify policy links
 - [ ] review margins after production, shipping, taxes, and fees
+- [ ] verify product quality through samples or careful self-check before heavy promotion
+- [ ] prepare 7-day organic content around the corrected campaign
+- [ ] log posts/results in the trackers before claiming signal
 
 ## Analytics Baseline
 
