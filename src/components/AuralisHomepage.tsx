@@ -32,6 +32,7 @@ import { cn } from "@/lib/utils";
 const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com";
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}`;
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
+const FOUNDER_HEADSHOT_SRC = "/assets/christopher-headshot.jpg";
 
 const homeOfferings = [
   {
@@ -121,6 +122,28 @@ const portfolioHighlights = [
     href: "/pour-social",
     cta: "Review Pour Social",
     icon: Wine,
+  },
+];
+
+const aboutPrinciples = [
+  "Build practical digital surfaces that make the next step obvious.",
+  "Keep claims honest: no fake reviews, no overstated automation, no confusing service promises.",
+  "Treat products, websites, and founder ventures as connected work without blurring their boundaries.",
+  "Design for real people on phones first, then polish the broader brand around that core flow.",
+];
+
+const experienceHighlights = [
+  {
+    title: "Auralis Design",
+    copy: "Shopify-connected products and custom visual directions built around symbolic artwork, personal concepts, and product-ready presentation.",
+  },
+  {
+    title: "Website Design",
+    copy: "Local-business websites, demos, intake flows, service pages, and quote paths built to help owners look credible online.",
+  },
+  {
+    title: "Pour Social",
+    copy: "Founder-led event bar staffing and beverage planning concept with a live site, calculators, intake flow, and operations docs.",
   },
 ];
 
@@ -364,10 +387,16 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
 
 const pageMeta: Record<AuralisPage, { title: string; description: string; canonicalPath: string }> = {
   home: {
-    title: "Auralis Digital | Creative Design, Products, and Websites",
+    title: "Christopher Daugherty | Auralis Digital",
     description:
-      "Auralis Digital creates original products, custom visual designs, personalized design requests, and clean websites for people, creators, and small businesses.",
+      "A personal portfolio hub for Christopher Daugherty, bringing together Auralis Design products, custom visual work, website design, and founder ventures.",
     canonicalPath: "/",
+  },
+  about: {
+    title: "About Christopher | Auralis Digital",
+    description:
+      "Meet Christopher Daugherty, the founder behind Auralis Digital, Auralis Design products, website builds, and Pour Social.",
+    canonicalPath: "/about",
   },
   shop: {
     title: "Products | Auralis Digital",
@@ -839,6 +868,7 @@ function ContactForm() {
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   { label: "Products", href: "/products" },
   { label: "Custom Design", href: "/custom-design" },
   { label: "Website Design", href: "/web-design" },
@@ -855,6 +885,7 @@ const POLICY_LINKS = [
 
 type AuralisPage =
   | "home"
+  | "about"
   | "shop"
   | "custom-design"
   | "web-design"
@@ -869,7 +900,9 @@ type PolicyPage = keyof typeof policyPages;
 
 export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [founderPhotoAvailable, setFounderPhotoAvailable] = useState(true);
   const isHome = page === "home";
+  const isAbout = page === "about";
   const isShop = page === "shop";
   const isCustomDesign = page === "custom-design";
   const isWebDesign = page === "web-design";
@@ -983,13 +1016,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
-              <h1>Creative design for products, personal ideas, and digital presence.</h1>
+              <h1>A personal portfolio for products, websites, and founder-built ventures.</h1>
               <p className="hero-subhead">
-                Auralis Digital brings together original product designs, custom visual requests, and practical website design for people, creators, and small businesses.
+                I am Christopher Daugherty. Auralis Digital brings together original product designs, custom visual requests, practical website design, and the service brands I am building.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
-                  <a href="/custom-design">Request Custom Design <ArrowRight aria-hidden="true" /></a>
+                  <a href="/about">Meet Christopher <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
                   <a href="/products">Explore Products</a>
@@ -1004,9 +1037,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Choose the path that matches what you need.</h2>
+              <h2>Choose the part of the portfolio you want to explore.</h2>
               <p className="mt-4">
-                Auralis is built around creative output: ready-to-buy products, custom visual requests, and clean website design.
+                Auralis is the umbrella: ready-to-buy products, custom visual requests, website work, and founder ventures each have a clear lane.
               </p>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-3">
@@ -1030,11 +1063,11 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band">
           <div className="site-shell problem-layout">
             <Reveal className="section-heading compact">
-              <h2>Products, custom design, and websites live under one creative brand.</h2>
+              <h2>One main site, clear separate paths.</h2>
             </Reveal>
             <Reveal className="problem-card">
               <p>
-                Auralis Design is the product line. Custom Design is the request path for personal ideas, gift concepts, and visual concepts. Website Design remains available for small businesses, creators, and local brands that need a stronger online presence.
+                Auralis Design is the product line. Custom Design is the request path for personal ideas and visual concepts. Website Design remains available for small businesses and local brands. Pour Social stays its own service brand, shown here as a founder venture.
               </p>
             </Reveal>
           </div>
@@ -1074,6 +1107,98 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
 
         {/* ── Shop ────────────────────────────────────────── */}
         {isPolicyPage && <PolicyPageContent page={page as PolicyPage} />}
+
+        {isAbout && (
+          <>
+            <section className="content-section">
+              <div className="site-shell grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+                <Reveal className="section-heading compact">
+                  <span className="section-label">About Christopher</span>
+                  <h1 className="text-4xl font-extrabold leading-[0.98] sm:text-5xl lg:text-6xl">
+                    I build practical creative systems that turn ideas into something people can actually use.
+                  </h1>
+                  <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    I am Christopher Daugherty, the builder behind Auralis Digital. My work sits at the intersection of creative products, clear websites, local business systems, and founder-led ventures like Pour Social.
+                  </p>
+                  <div className="cta-row">
+                    <Button variant="conversion" size="xl" asChild>
+                      <a href="/custom-design">Start a Request <ArrowRight aria-hidden="true" /></a>
+                    </Button>
+                    <Button variant="conversionOutline" size="xl" asChild>
+                      <a href="/pour-social">View Pour Social</a>
+                    </Button>
+                  </div>
+                </Reveal>
+                <Reveal className="founder-photo-card">
+                  <div className="founder-photo-frame">
+                    {founderPhotoAvailable && (
+                      <img
+                        src={FOUNDER_HEADSHOT_SRC}
+                        alt="Christopher Daugherty"
+                        loading="eager"
+                        decoding="async"
+                        width={900}
+                        height={1125}
+                        onError={() => setFounderPhotoAvailable(false)}
+                      />
+                    )}
+                    <div
+                      className="founder-photo-placeholder"
+                      aria-label="Christopher Daugherty portrait placeholder"
+                    >
+                      <span>CD</span>
+                    </div>
+                  </div>
+                  <div className="founder-photo-caption">
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Founder</p>
+                    <h2>Christopher Daugherty</h2>
+                    <p>Auralis Digital, Auralis Design, website builds, and Pour Social.</p>
+                  </div>
+                </Reveal>
+              </div>
+            </section>
+
+            <section className="section-band">
+              <div className="site-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+                <Reveal className="section-heading compact">
+                  <span className="section-label">How I think</span>
+                  <h2>Simple, credible, and useful beats complicated.</h2>
+                  <p className="mt-4">
+                    The shared thread across the work is practical clarity: make the offer understandable, make the next step obvious, and keep the system honest enough to grow.
+                  </p>
+                </Reveal>
+                <div className="grid gap-4">
+                  {aboutPrinciples.map((principle) => (
+                    <Reveal key={principle} className="trust-pill">
+                      <CheckCircle2 aria-hidden="true" />
+                      <span>{principle}</span>
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="site-shell">
+                <Reveal className="section-heading">
+                  <span className="section-label">Experience snapshot</span>
+                  <h2>The portfolio is intentionally mixed, but each lane has a purpose.</h2>
+                  <p className="mt-4">
+                    Auralis Digital is the umbrella for the creative and operational work I am building in public.
+                  </p>
+                </Reveal>
+                <div className="grid gap-5 md:grid-cols-3">
+                  {experienceHighlights.map((item) => (
+                    <Reveal key={item.title} className="service-card">
+                      <h3>{item.title}</h3>
+                      <p>{item.copy}</p>
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
+            </section>
+          </>
+        )}
 
         {isShop && (
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">

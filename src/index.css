@@ -269,6 +269,16 @@ All colors MUST be HSL.
   .policy-support-card h2 { @apply mb-3 text-lg font-semibold; }
   .policy-support-card p { @apply mb-5 max-w-3xl text-sm leading-relaxed text-muted-foreground; }
 
+  /* Founder bio */
+  .founder-photo-card { @apply overflow-hidden rounded-2xl border border-border/40 bg-card/40 p-4 shadow-soft; }
+  .founder-photo-frame { @apply relative overflow-hidden rounded-xl border border-border/30 bg-background/45; aspect-ratio: 4 / 5; }
+  .founder-photo-frame img { @apply absolute inset-0 z-10 h-full w-full object-cover object-[50%_18%]; }
+  .founder-photo-placeholder { @apply flex h-full min-h-[26rem] items-center justify-center bg-[image:var(--gradient-ink)] text-primary-foreground; }
+  .founder-photo-placeholder span { @apply flex size-28 items-center justify-center rounded-full border border-primary-foreground/20 bg-primary-foreground/10 text-4xl font-black tracking-tight; }
+  .founder-photo-caption { @apply p-4; }
+  .founder-photo-caption h2 { @apply mt-2 text-2xl font-bold; }
+  .founder-photo-caption p:last-child { @apply mt-2 text-sm leading-relaxed text-muted-foreground; }
+
   /* ── Shared ─────────────────────────────────────── */
   .icon-tile { @apply mb-5 flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary; }
   .icon-tile.large { @apply mx-auto size-14 rounded-xl; }

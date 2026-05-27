@@ -2,6 +2,7 @@ import AuralisHomepage from "@/components/AuralisHomepage";
 
 type AuralisPage =
   | "home"
+  | "about"
   | "shop"
   | "custom-design"
   | "web-design"

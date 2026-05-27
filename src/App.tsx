@@ -28,6 +28,7 @@ const App = () => (
       <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<Index page="about" />} />
           <Route path="/products" element={<Index page="shop" />} />
           <Route path="/shop" element={<Index page="shop" />} />
           <Route path="/custom-design" element={<Index page="custom-design" />} />
