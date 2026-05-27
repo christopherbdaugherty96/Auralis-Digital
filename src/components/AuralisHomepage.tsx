@@ -492,7 +492,7 @@ function ProductPhotoScroll({ product }: { product: ShopProduct }) {
   return (
     <>
       <div className="product-card-photos" aria-label={`${product.title} product photos`}>
-        {product.photos.map((photo, index) => (
+        {product.photos.map((photo) => (
           <img
             key={`${product.slug}-${photo.imageUrl}`}
             src={photo.imageUrl}
@@ -515,7 +515,10 @@ function ProductCard({ product }: { product: ShopProduct }) {
     <article className="product-card">
       <ProductPhotoScroll product={product} />
       <div className="product-card-body">
-        <span className="product-meta">{product.category}</span>
+        <div className="product-card-kicker">
+          <span className="product-meta">{product.category}</span>
+          <span className="product-variant">{product.variantSummary}</span>
+        </div>
         <h3>{product.title}</h3>
         <p className="product-price">{product.price}</p>
         <p className="product-description">{product.shortDescription}</p>

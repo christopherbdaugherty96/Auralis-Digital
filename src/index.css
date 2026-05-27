@@ -210,7 +210,9 @@ All colors MUST be HSL.
   .product-card-photos img { @apply aspect-square min-w-full max-w-full shrink-0 rounded-xl object-cover; scroll-snap-align: start; }
   .product-card-swipe { @apply -mt-2 mb-3 text-center text-xs font-medium text-muted-foreground/70; }
   .product-card-body { @apply flex flex-1 flex-col; }
-  .product-meta { @apply mb-3 inline-flex w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-accent; }
+  .product-card-kicker { @apply mb-3 flex flex-wrap items-center gap-2; }
+  .product-meta { @apply inline-flex w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-accent; }
+  .product-variant { @apply max-w-full rounded-full border border-border/35 bg-background/45 px-3 py-1 text-xs font-semibold text-muted-foreground; }
   .product-card h3 { @apply mb-1 text-lg font-semibold; }
   .product-price { @apply mb-3 text-2xl font-bold text-foreground; }
   .product-description { @apply text-sm leading-relaxed text-muted-foreground; }
