@@ -134,16 +134,16 @@ const aboutPrinciples = [
 
 const experienceHighlights = [
   {
-    title: "Customer-first service",
-    copy: "10 years of experience in high-volume hospitality shaped how I communicate, read what people need, solve problems quickly, and keep service calm under pressure.",
+    title: "Bartending experience",
+    copy: "10 years behind the bar shaped how I handle timing, pressure, communication, and customer trust.",
   },
   {
-    title: "Sales and coordination",
-    copy: "Automotive sales experience added needs-based consultation, clear follow-up, CRM tracking, appointment coordination, and trust-building through direct communication.",
+    title: "Service mindset",
+    copy: "Good service means making people feel guided, understood, and confident in the next step.",
   },
   {
-    title: "Operations mindset",
-    copy: "Bartending, serving, events, POS work, cash handling, and team coordination taught me to manage details, timing, accuracy, and fast-moving workflows.",
+    title: "Practical execution",
+    copy: "That same mindset carries into websites, intake flows, product ideas, and founder-led service brands.",
   },
 ];
 
@@ -1118,10 +1118,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                     I build practical creative systems that turn ideas into something people can actually use.
                   </h1>
                   <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    I am Christopher Daugherty, the builder behind Auralis Digital. My background is rooted in high-volume hospitality, event service, and automotive sales, where clear communication, trust, timing, and follow-through matter every day.
+                    I am Christopher Daugherty, the builder behind Auralis Digital. My background comes from 10 years of bartending and service experience, where clear communication, timing, trust, and staying calm under pressure matter every day.
                   </p>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    That experience now carries into the work I build: practical websites, product ideas, intake flows, and service brands that help people understand the offer and take the next step with confidence.
+                    That service mindset now carries into the work I build: practical websites, product ideas, intake flows, and service brands that make the offer clear and help people take the next step with confidence.
                   </p>
                   <div className="cta-row">
                     <Button variant="conversion" size="xl" asChild>
@@ -1185,9 +1185,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="site-shell">
                 <Reveal className="section-heading">
                   <span className="section-label">Experience snapshot</span>
-                  <h2>Relevant experience behind the work.</h2>
+                  <h2>10 years of service experience behind the work.</h2>
                   <p className="mt-4">
-                    The through-line is people, service, and systems: understanding what someone needs, making the process clear, and keeping the details organized.
+                    Bartending and service taught me how to read what people need, communicate clearly, stay organized, and keep the experience smooth from first impression to final follow-through.
                   </p>
                 </Reveal>
                 <div className="grid gap-5 md:grid-cols-3">
