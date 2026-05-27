@@ -14,14 +14,14 @@ Auralis Digital currently contains three related public surfaces:
 
 Current active execution lane: **Shopify storefront pre-launch validation for Auralis Design products**.
 
-This does not mean the product/shop surface is mature. It means the latest active work has shifted toward making the Shopify storefront coherent, sample-ready, and testable before traffic.
+This does not mean the product/shop surface is mature. It means the current work is to make the Shopify storefront coherent, sample-ready, checkout-ready, and testable before traffic.
 
-Custom design and website design remain active public surfaces, but the current execution focus is now the storefront validation path because live Shopify products and collections were materially updated on 2026-05-19.
+Current direction correction: Auralis Design should focus on Christopher's own sacred-geometry, psychedelic, symbolic, cosmic, and spiritual-inspired artwork. The operator / blue-collar / Before Sunrise direction is not active and should not guide the brand, website, Shopify collections, captions, or outreach.
 
 Current execution priority is:
 
 ```text
-Shopify storefront truth -> homepage/collection curation -> sample orders -> checkout/policy verification -> 7-day Before Sunrise organic campaign -> analytics review -> first real product sale or proof
+sacred-geometry storefront truth -> strongest 3-5 product focus -> homepage/collection curation -> checkout/policy verification -> small organic product test -> analytics review -> first real product sale or proof
 ```
 
 Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
@@ -81,13 +81,14 @@ Current contact correction: domain email is not configured yet. Auralis is using
 
 ## Phase 3 - Brand / Public-Positioning Clarity
 
-Goal: keep the three-pillar public direction understandable while reflecting the newer Shopify/storefront identity work.
+Goal: keep the three-pillar public direction understandable while reflecting the corrected sacred-geometry / psychedelic product identity.
 
 - [ ] Confirm long-term relationship between `Auralis Digital` and `Auralis Design`.
 - [ ] Verify live homepage behavior after deploy.
 - [ ] Confirm homepage acts as a brand gateway instead of a raw product catalog.
 - [ ] Confirm homepage routes visitors toward Products, Custom Design, and Website Design.
-- [ ] Confirm Shopify storefront/homepage presentation prioritizes Operator Series / Before Sunrise without erasing Custom Design or Website Design.
+- [ ] Confirm Shopify storefront/homepage presentation prioritizes sacred geometry, psychedelic art, symbolic products, and personal designs.
+- [ ] Confirm no active public copy presents Operator Series, Before Sunrise, Lawn & Power, Garage & Mechanic, Independent Builder, or blue-collar workwear as the Auralis direction.
 - [ ] Confirm no product pricing appears on the Auralis Digital homepage unless intentionally selected.
 - [ ] Confirm navigation clearly separates Products, Custom Design, and Website Design.
 - [x] Confirm website-design prospects can find website demos from the Website Design page.
@@ -96,7 +97,7 @@ Goal: keep the three-pillar public direction understandable while reflecting the
 - [ ] Confirm product buyers understand checkout opens through Shopify.
 - [ ] Confirm public copy does not imply Auralis Digital processes card payments directly.
 - [ ] Confirm public copy does not imply the product/shop surface is fully mature until commerce readiness is verified.
-- [ ] Confirm public product/storefront language follows the 2026-05-19 identity system: cinematic operator lifestyle brand, secondary symbolic/art archive, restrained non-generic tone.
+- [ ] Confirm public product/storefront language follows the corrected identity: sacred geometry, psychedelic art, symbolic/cosmic personal designs, custom design bridge, honest non-hype tone.
 - [x] Refresh the public social preview card source so Facebook/Instagram no longer use website-services-only asset copy after cache refresh.
   - [x] Update the OG/social preview image source in `public/og-image.svg` and `public/assets/social-preview.svg`.
   - [x] Confirm homepage `<title>`, meta description, `og:title`, `og:description`, `twitter:title`, and `twitter:description` match the three-pillar brand direction.
@@ -121,30 +122,32 @@ Primary docs:
 
 Current Sprint 01 campaign:
 
-## Before Sunrise / Operator Series
+## Sacred Geometry / Psychedelic Product Focus
 
-Primary products:
+Candidate product focus:
 
-1. Yard Operator Full-Zip Hoodie
-2. No Shortcuts Performance Tee
-3. Built Before Sunrise Quarter-Zip
-4. Built Before Sunrise Performance Tee
-5. Garage Standard Full-Zip Hoodie
+1. Sun of Life Wall Tapestry
+2. Sun of Life Woven Blanket
+3. Sun of Life Notebook - Ruled Line
+4. Zeus Journal Matte
+5. Zeus Woven Blanket or Zeus Sherpa Blanket
+
+A new Cosmic Balance / yin-yang / sacred-geometry product set can replace this list if its mockups, product pages, and Shopify checkout path are cleaner.
 
 Pre-launch tasks:
 
-- [ ] Create or upload Operator Series collection banner.
-- [ ] Create or upload Lawn & Power collection banner.
-- [ ] Create or upload Garage & Mechanic collection banner.
-- [ ] Create or upload Art & Symbolic collection banner.
-- [ ] Curate Shopify homepage around Operator Series / Before Sunrise.
-- [ ] Confirm the default `Home page` collection is not undermining the new storefront direction.
-- [ ] Confirm draft products priced at `0.00` are not customer-visible as sellable products.
-- [ ] Order at least one tee sample.
-- [ ] Order at least one hoodie sample.
-- [ ] Order at least one quarter-zip sample.
-- [ ] Verify print quality.
-- [ ] Verify garment quality and sizing.
+- [ ] Select the first 3-5 sacred-geometry / psychedelic products to test.
+- [ ] Confirm product titles, images, prices, and descriptions match the corrected direction.
+- [ ] Create or upload Sacred Geometry / Balance collection banner.
+- [ ] Create or upload Psychedelic / Cosmic collection banner.
+- [ ] Create or upload Sun of Life collection banner.
+- [ ] Create or upload Mythic / Zeus archive banner if those products remain public.
+- [ ] Curate Shopify homepage around the selected symbolic-art campaign.
+- [ ] Confirm the default `Home page` collection is not undermining the corrected storefront direction.
+- [ ] Confirm any draft or placeholder products priced at `0.00` are not customer-visible as sellable products.
+- [ ] Verify product quality through samples or careful self-check before heavy promotion.
+- [ ] Verify print quality for promoted products.
+- [ ] Verify product quality, size, and material expectations.
 - [ ] Verify production/shipping timing.
 - [ ] Verify Shopify checkout flow up to final payment confirmation.
 - [ ] Verify Shopify-hosted refund policy link.
@@ -156,7 +159,7 @@ Pre-launch tasks:
 - [ ] Confirm shipping settings.
 - [ ] Confirm support email/order-support workflow.
 - [ ] Confirm margins after production, shipping, taxes, fees, and platform costs.
-- [ ] Prepare 7-day organic Before Sunrise campaign content.
+- [ ] Prepare 7-day organic content around the corrected sacred-geometry / psychedelic campaign.
 - [ ] Log campaign posts/results in the trackers before claiming signal.
 
 Analytics baseline checked 2026-05-19:
@@ -249,7 +252,7 @@ Use:
 
 ## Phase 8 - Custom Design Readiness
 
-Goal: keep the custom-design request flow available without confusing it with the current Shopify storefront focus.
+Goal: keep the custom-design request flow available and connected to the corrected symbolic-art product direction.
 
 - [ ] Confirm custom-design inquiry flow works on desktop and phone.
 - [x] Confirm custom-design request boundaries are visible publicly.
@@ -259,6 +262,7 @@ Goal: keep the custom-design request flow available without confusing it with th
 - [ ] Confirm delivery/export workflow.
 - [ ] Confirm rights/usage expectations for custom work.
 - [ ] Confirm copyrighted-character/logo policy.
+- [ ] Confirm custom requests can include sacred geometry, psychedelic art, symbolic themes, color/energy direction, personal phrases, yin-yang/balance, zodiac/animal themes, or gift concepts.
 - [ ] Complete one real custom-design request.
 
 ---
