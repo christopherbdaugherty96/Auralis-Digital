@@ -97,6 +97,47 @@ const concepts = [
   { name: "Contractor", note: "Trust-focused project pages with service areas, quote forms, and clear calls.", icon: Hammer },
 ];
 
+const portfolioHighlights = [
+  {
+    title: "Auralis Design",
+    label: "Product line",
+    copy: "Original Shopify-backed products, custom visual requests, and symbolic artwork translated into real items.",
+    href: "/products",
+    cta: "Browse products",
+    icon: Store,
+  },
+  {
+    title: "Website Builds",
+    label: "Service path",
+    copy: "Practical websites and demo systems for local businesses that need clearer offers, trust, and contact flow.",
+    href: "/web-design",
+    cta: "View website work",
+    icon: MonitorSmartphone,
+  },
+  {
+    title: "Pour Social",
+    label: "Founder venture",
+    copy: "A mobile bartending and event bar-planning concept for Southeast Michigan events, built with calculators, intake flow, and operations docs.",
+    href: "/pour-social",
+    cta: "Review Pour Social",
+    icon: Wine,
+  },
+];
+
+const pourSocialStrengths = [
+  "Event bar staffing and beverage planning are framed as the offer, not just one-person bartending.",
+  "The site keeps a smart compliance boundary: clients provide or pre-order alcohol; Pour Social does not sell alcohol.",
+  "The repo includes calculators, booking intake, package direction, legal notes, operations guides, and Nova-style event workflow docs.",
+  "The scalable version is a branded coordination layer for weddings, private parties, corporate events, staff packets, and repeatable service standards.",
+];
+
+const pourSocialLaunchGaps = [
+  "Replace the placeholder booking email before launch.",
+  "Connect the form to a real endpoint or CRM instead of relying only on mailto fallback.",
+  "Add real contact details, founder/about proof, event photos or branded setup mockups, and package descriptions.",
+  "Keep the assistant labeled as a planning helper until it is connected to a real AI workflow.",
+];
+
 const websiteDemos = [
   {
     title: "Restaurant",
@@ -350,6 +391,12 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
     title: "Website Examples | Auralis Digital",
     description: "Browse example website builds and demo directions from Auralis Digital.",
     canonicalPath: "/websites",
+  },
+  "pour-social": {
+    title: "Pour Social | Founder Venture by Christopher Daugherty",
+    description:
+      "Review Pour Social, a founder-built mobile bartending and event bar-planning venture for Southeast Michigan events.",
+    canonicalPath: "/pour-social",
   },
   "refund-policy": {
     title: "Refund Policy | Auralis Digital",
@@ -795,6 +842,7 @@ const NAV_LINKS = [
   { label: "Products", href: "/products" },
   { label: "Custom Design", href: "/custom-design" },
   { label: "Website Design", href: "/web-design" },
+  { label: "Pour Social", href: "/pour-social" },
   { label: "Contact", href: "/custom-design#contact" },
 ];
 
@@ -811,6 +859,7 @@ type AuralisPage =
   | "custom-design"
   | "web-design"
   | "websites"
+  | "pour-social"
   | "refund-policy"
   | "shipping-policy"
   | "privacy-policy"
@@ -825,6 +874,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   const isCustomDesign = page === "custom-design";
   const isWebDesign = page === "web-design";
   const isWebsites = page === "websites";
+  const isPourSocial = page === "pour-social";
   const isPolicyPage = page in policyPages;
 
   useEffect(() => {
@@ -989,6 +1039,36 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             </Reveal>
           </div>
         </section>
+
+        <section className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <span className="section-label">Founder portfolio</span>
+              <h2>One hub for the things Christopher is building.</h2>
+              <p className="mt-4">
+                Auralis Digital can act as the front door: product experiments, client website work, and founder-led ventures like Pour Social each get a clear lane.
+              </p>
+            </Reveal>
+            <div className="grid gap-5 md:grid-cols-3">
+              {portfolioHighlights.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Reveal key={item.title} className="service-card flex flex-col gap-4">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                      <span className="product-meta">{item.label}</span>
+                    </div>
+                    <h3>{item.title}</h3>
+                    <p>{item.copy}</p>
+                    <a href={item.href} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                      {item.cta} <ArrowRight className="size-4" aria-hidden="true" />
+                    </a>
+                  </Reveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
           </>
         )}
 
@@ -1027,6 +1107,99 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Services ────────────────────────────────────── */}
+        {isPourSocial && (
+          <>
+            <section className="content-section">
+              <div className="site-shell">
+                <Reveal className="section-heading">
+                  <span className="section-label"><Wine aria-hidden="true" /> Founder Venture</span>
+                  <h2>Pour Social: mobile bartending, event bar staffing, and beverage planning.</h2>
+                  <p className="mt-4">
+                    Pour Social is a separate founder-built service concept for Southeast Michigan events. The strongest direction is bigger than one bartender: a branded coordination layer for staffing, menu planning, alcohol quantity guidance, mixers, garnishes, setup expectations, and service flow.
+                  </p>
+                  <div className="cta-row justify-center">
+                    <Button variant="conversion" size="xl" asChild>
+                      <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">
+                        View live Pour Social site <ArrowRight aria-hidden="true" />
+                      </a>
+                    </Button>
+                    <Button variant="conversionOutline" size="xl" asChild>
+                      <a href="https://github.com/christopherbdaugherty96/Pour-Social" target="_blank" rel="noopener noreferrer">
+                        View GitHub repo
+                      </a>
+                    </Button>
+                  </div>
+                </Reveal>
+                <div className="grid gap-5 md:grid-cols-3">
+                  <Reveal className="service-card">
+                    <div className="icon-tile"><CalendarCheck aria-hidden="true" /></div>
+                    <h3>What it sells</h3>
+                    <p>Professional event bar staffing and beverage planning for private events, weddings, parties, and corporate gatherings.</p>
+                  </Reveal>
+                  <Reveal className="service-card">
+                    <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
+                    <h3>What makes it scalable</h3>
+                    <p>Packages, intake, staff/event packets, calculators, service standards, and repeatable operations make it more than a solo service page.</p>
+                  </Reveal>
+                  <Reveal className="service-card">
+                    <div className="icon-tile"><CheckCircle2 aria-hidden="true" /></div>
+                    <h3>Important boundary</h3>
+                    <p>Pour Social does not sell alcohol. Clients provide or pre-order alcohol while Pour Social handles planning and service execution.</p>
+                  </Reveal>
+                </div>
+              </div>
+            </section>
+
+            <section className="section-band">
+              <div className="site-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+                <Reveal className="section-heading compact">
+                  <span className="section-label">Repository review</span>
+                  <h2>The business foundation is already useful.</h2>
+                  <p className="mt-4">
+                    The repo is a static marketing site plus operations blueprint. That is the right stage: enough to explain the offer and test demand, without pretending the booking platform is fully automated.
+                  </p>
+                </Reveal>
+                <div className="grid gap-4">
+                  {pourSocialStrengths.map((item) => (
+                    <Reveal key={item} className="trust-pill">
+                      <CheckCircle2 aria-hidden="true" />
+                      <span>{item}</span>
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="site-shell">
+                <Reveal className="section-heading">
+                  <span className="section-label">Before launch</span>
+                  <h2>Make it real before pushing it harder.</h2>
+                  <p className="mt-4">
+                    Pour Social should stay on the main Auralis site as a venture/case study now, then become a stronger public service brand once the contact flow, proof, and compliance details are launch-ready.
+                  </p>
+                </Reveal>
+                <div className="grid gap-5 md:grid-cols-2">
+                  {pourSocialLaunchGaps.map((item, index) => (
+                    <Reveal key={item} className="process-step">
+                      <span className="step-number">0{index + 1}</span>
+                      <h3>{index === 0 ? "Contact" : index === 1 ? "Form" : index === 2 ? "Trust proof" : "Assistant"}</h3>
+                      <p>{item}</p>
+                    </Reveal>
+                  ))}
+                </div>
+                <Reveal className="service-card mt-8 border-primary/20 bg-primary/5">
+                  <span className="product-meta">Portfolio recommendation</span>
+                  <h3>Use Auralis as the umbrella. Let Pour Social stay its own brand.</h3>
+                  <p className="mt-3 text-muted-foreground">
+                    The main website should introduce Christopher and show the lanes: Auralis Design products, website/design services, and founder ventures. Pour Social should be one featured venture with its own CTA, not merged into the same service menu as Shopify products or website builds.
+                  </p>
+                </Reveal>
+              </div>
+            </section>
+          </>
+        )}
+
         {isCustomDesign && (
         <section id="custom-design" className="content-section">
           <div className="site-shell">

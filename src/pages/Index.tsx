@@ -6,6 +6,7 @@ type AuralisPage =
   | "custom-design"
   | "web-design"
   | "websites"
+  | "pour-social"
   | "refund-policy"
   | "shipping-policy"
   | "privacy-policy"
