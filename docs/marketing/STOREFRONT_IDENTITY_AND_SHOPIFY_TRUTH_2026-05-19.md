@@ -4,15 +4,34 @@ Status: current Shopify/storefront truth snapshot
 
 ## Purpose
 
-Document the current Auralis Shopify storefront direction after the live product and collection cleanup work performed on 2026-05-19.
+Document the corrected Auralis Shopify storefront direction after removing the operator / blue-collar / Before Sunrise direction from active guidance.
 
-This document is a truth snapshot, not a maturity claim. It records what is currently real, what is still unverified, and what should guide the next execution pass.
+This document is a truth snapshot, not a maturity claim. It records what Christopher wants the storefront to be, what is currently real, what is still unverified, and what should guide the next execution pass.
 
 ---
 
 ## Current Truth In One Line
 
-Auralis Design is currently a pre-validation Shopify storefront moving toward a restrained cinematic operator lifestyle brand, with Art & Symbolic preserved as a secondary archive layer and Independent Signal emerging as a controlled philosophical/geometric sublayer.
+Auralis Design is a pre-validation Shopify storefront centered on Christopher's personal sacred-geometry, psychedelic, symbolic, cosmic, and spiritual-inspired artwork, with products acting as physical formats for the designs rather than a generic merch catalog.
+
+---
+
+## Direction Correction
+
+The operator / blue-collar / Before Sunrise direction is no longer active.
+
+Do not use these as active Auralis storefront guidance:
+
+- Operator Series
+- Before Sunrise
+- Lawn & Power
+- Garage & Mechanic
+- Independent Builder
+- blue-collar operator positioning
+- workwear-first identity
+- lawn care / mechanic / pressure-washing audience targeting
+
+Those ideas may exist only as historical exploration if they remain in git history. They are not current brand truth.
 
 ---
 
@@ -20,177 +39,266 @@ Auralis Design is currently a pre-validation Shopify storefront moving toward a 
 
 The strongest current framing is:
 
-> Auralis is a restrained operator lifestyle brand built around early work, discipline, practical skill, quiet environments, industrial geometry, and subtle symbolic atmosphere.
+> Auralis Design turns personal sacred-geometry, psychedelic, symbolic, and cosmic artwork into products for rooms, rituals, creative spaces, self-expression, and gifts.
 
 The store should not be treated as generic print-on-demand merchandise.
 
-### Avoid
-
-- generic AI merch language
-- fake hustle culture
-- loud alpha/entrepreneur clichés
-- overdesigned AI visuals
-- random product sprawl
-- fake urgency, fake reviews, fake proof, or fake sales claims
-- loud anti-system branding
-- generic rebellion aesthetics
+The product surface should feel like an art/design shop with a personal visual language, not a random catalog.
 
 ### Lean Into
 
-- dawn starts
-- garage lights
-- lawn stripes
-- work trucks and trailers
-- pressure-washer steam
-- shop floors and steel textures
-- practical discipline
-- self-built operator identity
-- restrained symbolic undertones
-- industrial geometry
-- blueprint/grid atmosphere
-- quiet independent philosophy
+- sacred geometry
+- psychedelic art
+- yin-yang balance
+- cosmic color
+- symbolic artwork
+- personal design experiments
+- spiritual and meditative room decor
+- art-forward gifts
+- journals, blankets, wall art, mugs, apparel, and accessories as design formats
+- custom design requests based on symbols, themes, images, phrases, energy, color, or personal meaning
+
+### Avoid
+
+- blue-collar operator branding
+- generic workwear branding
+- fake hustle language
+- generic AI merch language
+- loud alpha / entrepreneur clichés
+- random product sprawl
+- fake urgency, fake reviews, fake proof, or fake sales claims
+- pretending designs are more validated than they are
+- overclaiming spiritual effects or guaranteed personal transformation
 
 ---
 
 ## Brand Architecture
 
-### Primary Commercial Layer
+### Primary Creative Layer
 
-Operator / builder identity.
+Sacred Geometry / Psychedelic / Symbolic Art.
 
 This is the main storefront direction and the first product-validation lane.
 
-### Secondary Expansion Lanes
+### Product Format Layer
 
-- Lawn & Power
-- Garage & Mechanic
-- Independent Builder
+Products are formats for Christopher's designs:
 
-These should feel like distinct environments, not generic product categories.
+- wall tapestries
+- woven blankets
+- sherpa blankets
+- posters
+- canvases
+- journals and notebooks
+- mugs
+- shirts
+- hoodies
+- hats
+- jewelry/accessories
 
-### Independent Signal Sublayer
+The product format should support the artwork. The artwork should be the reason the product exists.
 
-Documented in:
+### Custom Design Layer
 
-- `docs/marketing/INDEPENDENT_SIGNAL_SUBLAYER_2026-05-19.md`
+Custom/personalized design remains a first-class Auralis direction.
 
-Purpose:
+The best bridge between the Shopify store and custom work is:
 
-Introduce a restrained self-built / quietly anti-dependent philosophy into the brand without turning the storefront into generic rebellion merch.
+> request a personal symbolic design, then optionally place it on a product format.
 
-Core emotional framing:
+Examples:
 
-> build your own structure quietly.
+- custom sacred-geometry artwork
+- custom psychedelic profile or wall-art concept
+- chakra/symbol/color-based design
+- yin-yang or balance-themed design
+- zodiac, animal, quote, name, or personal-theme design
+- gift design for a person or event
 
-The geometry layer should feel:
-- engineered
-- symbolic
-- structural
-- blueprint-like
-- atmospheric
+### Website Design Layer
 
-not decorative.
+Website design remains an Auralis Digital service surface, but it should not define the Auralis Design product identity.
 
-### Secondary Archive Layer
-
-Art & Symbolic.
-
-This layer should remain curated, quieter, and more gallery/archive-like. It should not be mixed randomly into the primary operator campaign.
-
----
-
-## Current Collection Architecture
-
-### Operator Series
-
-Role: primary commercial identity layer.
-
-Theme: discipline before comfort.
-
-Current Shopify copy frames the collection around predawn work, trucks warming up, garage lights, wet lawns, and the self-built operator.
-
-### Lawn & Power
-
-Role: primary acquisition category.
-
-Theme: environmental pride and outdoor operator momentum.
-
-Current Shopify copy references wet grass, driveway steam, mowing, washing, hauling, cutting, cleaning, and pride in leaving a jobsite better than it was found.
-
-### Garage & Mechanic
-
-Role: secondary operator expansion lane.
-
-Theme: craftsmanship in silence.
-
-Current Shopify copy references shop floors, dim lights, oil-stained hands, industrial atmosphere, and doing the work correctly when no one is watching.
-
-### Independent Builder
-
-Role: broader self-built worker and small-operator lane.
-
-Theme: steady persistence.
-
-Current Shopify copy references self-built workers, small operators, practical skill, consistency, and creating your own path through steady work.
-
-### Art & Symbolic
-
-Role: secondary creative/archive layer.
-
-Theme: quiet mythology / collected objects.
-
-Current Shopify copy frames this as the quieter archive of Auralis: cosmic pieces, sacred geometry, mythic visuals, and personal artwork presented as collected objects rather than ordinary merch.
+Website posts can still appear on Instagram and the website, but they should be clearly framed as Auralis Digital services, separate from Auralis Design products.
 
 ---
 
-## Current Polished Operator Product Lineup
+## Current Product / Collection Architecture
 
-The following active Shopify products have been renamed/polished away from raw Printify naming.
+### Sacred Geometry / Balance
 
-### Hoodies
+Role: primary creative identity layer.
 
-- Yard Operator Full-Zip Hoodie
-- Yard Operator Zip Hoodie
-- No Shortcuts Full-Zip Hoodie
-- Built Before Sunrise Full-Zip Hoodie
-- Garage Standard Full-Zip Hoodie
-- Garage Standard Fleece Hoodie
+Theme: symmetry, geometry, balance, meaning, and symbolic structure.
 
-### Performance / Workwear
+Current examples include yin-yang and geometric product concepts.
 
-- No Shortcuts Performance Tee
-- No Shortcuts Performance Tee - White
-- Built Before Sunrise Performance Tee
+### Psychedelic / Cosmic Art
 
-### Premium Layer
+Role: primary visual-energy layer.
 
-- Built Before Sunrise Quarter-Zip
+Theme: color, movement, cosmic atmosphere, galaxies, eyes, surreal forms, and high-impact visuals.
 
-These products currently have active Shopify status, Printify vendor linkage, variants, SKUs, prices, inventory, and product images.
+### Sun of Life / Solar Symbolic
 
-This does not yet verify sample quality, shipping timing, margin quality, or real customer demand.
+Role: warm symbolic collection lane.
+
+Theme: sun, life, pattern, energy, warmth, and room-centered products.
+
+Current products include Sun of Life blanket, notebook, and tapestry-style formats.
+
+### Mythic / Zeus Archive
+
+Role: secondary art archive layer.
+
+Theme: mythic visual identity and bold symbolic artwork.
+
+Current products include Zeus blanket, journal, poster, mug, and related formats if still active in Shopify and the website catalog.
+
+### Auralis Brand / Accessories
+
+Role: supporting brand layer.
+
+Theme: simple Auralis identity products such as hats or accessories.
+
+This should stay secondary unless a specific design becomes proven.
 
 ---
 
-## Important Draft Product Note
+## Current Storefront Readiness
 
-Older manually created Shopify draft products still exist in collections with price `0.00` and no proper variant/fulfillment setup:
+The product surface exists technically, but commerce readiness is still not fully confirmed.
 
-- YARD OPERATOR Tee
-- BUILT BEFORE SUNRISE Tee
-- GARAGE STANDARD Tee
-- NO SHORTCUTS Tee
+Open readiness gaps:
 
-These are not sellable products.
+- Shopify checkout test not yet fully verified through final payment confirmation
+- Shopify policy links still need verification
+- support-email workflow still needs domain-email cleanup
+- sample quality still needs verification for any product intended for heavier promotion
+- product margins still need review after production, shipping, taxes, fees, and platform costs
+- no real product sale is confirmed in repo truth
+- no customer proof, testimonial, or review is confirmed
 
-Do not publish them as-is.
+Do not scale paid ads or broad product volume until these checks are complete.
 
-They should either be:
+---
 
-- replaced by the real Printify-linked versions,
-- kept as internal placeholders,
-- archived later,
-- or removed from customer-facing collection order if the Shopify theme exposes draft products unexpectedly.
+## Current Campaign Direction
+
+Recommended immediate campaign:
+
+# Sacred Geometry / Psychedelic Product Focus
+
+Primary focus:
+
+- one coherent design style
+- 3-5 strongest products using that style
+- short organic posts showing product mockups and the artwork itself
+- no fake scarcity, fake proof, or fake transformation claims
+
+Candidate first campaign themes:
+
+1. Cosmic Balance
+   - yin-yang
+   - sacred geometry
+   - psychedelic color
+   - balance / duality / energy language
+
+2. Sun of Life
+   - warm solar design
+   - blanket / tapestry / notebook / wall-art products
+   - room and gift positioning
+
+3. Mythic Geometry
+   - Zeus or mythic symbolic artwork
+   - poster / journal / blanket / mug formats
+   - archive-style presentation
+
+The first campaign should not try to sell every product equally.
+
+---
+
+## Homepage / Storefront Design Direction
+
+The storefront should not show the entire catalog equally.
+
+Recommended structure:
+
+1. Hero: Sacred geometry / psychedelic artwork identity
+2. Featured collection: Cosmic Balance or Sun of Life
+3. Featured products: 3-5 strongest visual products
+4. Custom design request bridge
+5. Secondary archive: Mythic / Zeus / older symbolic products
+6. Website design service link remains present but not dominant inside the product storefront
+
+Hero language should be simple:
+
+- Sacred geometry for everyday spaces.
+- Psychedelic art, printed with purpose.
+- Symbolic designs for rooms, gifts, and personal expression.
+- Cosmic balance in physical form.
+- Custom symbolic designs available.
+
+Avoid long homepage copy, fake urgency, heavy motivational text, and visual clutter.
+
+---
+
+## Collection Imagery Direction
+
+### Sacred Geometry / Balance Banner
+
+- dark or cosmic background
+- centered geometry
+- yin-yang or radial balance
+- clean high-contrast product mockups
+- minimal text
+
+### Psychedelic / Cosmic Banner
+
+- deep color field
+- galaxy texture
+- surreal movement
+- glowing pattern work
+- room/product context where possible
+
+### Sun of Life Banner
+
+- warm solar color
+- circular geometry
+- tapestry / blanket / notebook context
+- light room or creative corner
+
+### Mythic Archive Banner
+
+- darker mythic atmosphere
+- Zeus or symbolic figure artwork
+- poster / journal / blanket formats
+- gallery/archive tone
+
+---
+
+## Content System Direction
+
+Short-form content should be visual-first and design-led.
+
+Best structure:
+
+1. show the raw artwork or close-up
+2. show it on one product
+3. show a room/outfit/use context
+4. one-line caption
+5. clear shop/request CTA
+
+Caption examples:
+
+- Cosmic balance, made physical.
+- Sacred geometry for your space.
+- A new design from Auralis.
+- Psychedelic color. Symbolic form.
+- Made for rooms, rituals, and creative corners.
+- Request a custom symbolic design.
+
+Avoid overexplaining the brand in every post.
 
 ---
 
@@ -206,118 +314,7 @@ Shopify analytics checked on 2026-05-19 showed the last 30 days at approximately
 
 Interpretation:
 
-The store is still pre-validation. The next step is not scaling, paid ads, or broad product expansion. The next step is focused storefront presentation, sample ordering, checkout/policy verification, and a small organic campaign.
-
----
-
-## Current Campaign Direction
-
-Recommended immediate campaign:
-
-# Before Sunrise
-
-Primary collection focus:
-
-- Operator Series
-- Lawn & Power
-
-Primary products for Sprint 01 testing:
-
-1. Yard Operator Full-Zip Hoodie
-2. No Shortcuts Performance Tee
-3. Built Before Sunrise Quarter-Zip
-4. Built Before Sunrise Performance Tee
-5. Garage Standard Full-Zip Hoodie
-
-Alternative/secondary items:
-
-- No Shortcuts Full-Zip Hoodie
-- Yard Operator Zip Hoodie
-- Garage Standard Fleece Hoodie
-- No Shortcuts Performance Tee - White
-
----
-
-## Homepage / Storefront Design Direction
-
-The homepage should not show the entire catalog equally.
-
-Recommended structure:
-
-1. Hero: Built Before Sunrise / Operator Series
-2. Featured collection: Lawn & Power
-3. Featured products: 4-6 strongest operator pieces
-4. Secondary collection: Garage & Mechanic
-5. Secondary/quiet archive: Art & Symbolic
-
-Hero language should be minimal:
-
-- Built Before Sunrise.
-- No Shortcuts.
-- Uniforms for the self-built.
-- Operator Series.
-- Construct Your Own.
-
-Avoid long homepage copy, fake urgency, heavy motivational text, and visual clutter.
-
----
-
-## Collection Imagery Direction
-
-### Operator Series Banner
-
-- predawn blue-gray sky
-- trailer silhouette
-- work lights
-- subtle fog
-- minimal text: Built Before Sunrise
-
-### Lawn & Power Banner
-
-- fresh-cut lines
-- mower path texture
-- pressure-washer steam
-- muted green palette
-- wet pavement or driveway mist
-
-### Garage & Mechanic Banner
-
-- overhead shop light
-- steel table or workbench
-- socket/tool shadows
-- cold industrial grain
-
-### Art & Symbolic Banner
-
-- dark geometry
-- subtle gold sacred linework
-- cosmic texture
-- restrained visual mystery
-
----
-
-## Content System Direction
-
-Short-form content should be restrained and environmental.
-
-Best structure:
-
-1. dark morning / startup shot
-2. work motion
-3. product texture or logo shot
-4. finished result
-5. one-line caption
-
-Caption examples:
-
-- Built before sunrise.
-- No shortcuts.
-- Quiet operators.
-- Leave it cleaner.
-- Discipline first.
-- Construct your own.
-
-Avoid overexplaining the brand in every post.
+The store is still pre-validation. The next step is not scaling, paid ads, or broad product expansion. The next step is focused storefront presentation, sample/order-flow verification, checkout/policy verification, and a small organic campaign around the strongest sacred-geometry / psychedelic design set.
 
 ---
 
@@ -325,17 +322,16 @@ Avoid overexplaining the brand in every post.
 
 The following are still open and should remain in active TODO tracking:
 
-- homepage/theme sections not yet verified or redesigned in Shopify admin
-- default `Home page` collection not yet confirmed safe against the new storefront direction
-- collection banners not yet created/uploaded
-- product samples not yet ordered
-- print quality not yet verified
-- garment quality/sizing not yet verified
+- Shopify storefront/homepage not yet verified around the corrected sacred-geometry / psychedelic direction
+- collection banners not yet created or uploaded for the corrected direction
+- strongest 3-5 products not yet selected for the first corrected campaign
+- product samples or self-checks not yet completed for promoted products
+- print/product quality not yet verified
 - shipping timing not yet verified
-- Shopify checkout test not yet completed
+- Shopify checkout test not yet completed through final payment confirmation
 - Shopify refund/shipping/privacy/terms policy links not yet fully verified
 - product margins not yet reviewed after production, shipping, taxes, and fees
-- marketing content not yet posted/tracked
+- marketing content not yet posted/tracked for the corrected direction
 - no real product sale yet confirmed
 - no customer proof, testimonial, or review yet confirmed
 
@@ -343,20 +339,20 @@ The following are still open and should remain in active TODO tracking:
 
 ## Operating Guardrail
 
-Do not create more products until the current operator catalog is visually presented, sample-checked, and tested with real traffic.
+Do not create more products until the current sacred-geometry / psychedelic catalog is visually organized, sample-checked where needed, and tested with real organic traffic.
 
 The next progress should come from:
 
-1. collection banners
-2. homepage curation
-3. sample orders
-4. checkout and policy verification
-5. 7-day organic Before Sunrise campaign
-6. analytics review
-7. product decision logging
+1. correcting public/storefront positioning
+2. selecting 3-5 strongest sacred-geometry / psychedelic products
+3. creating collection/banner visuals
+4. verifying checkout and policy links
+5. posting a small organic product test
+6. reviewing analytics
+7. logging product decisions
 
 ---
 
 ## Final Working Rule
 
-Auralis should grow through atmosphere, proof, disciplined product validation, and restrained identity-building — not through inventory volume.
+Auralis Design should grow through Christopher's own visual language, truthful product validation, sacred/symbolic design consistency, and real proof — not through copied niches, generic merch trends, or unrelated workwear positioning.
