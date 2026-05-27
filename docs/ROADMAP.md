@@ -6,23 +6,24 @@ Last updated: 2026-05-17
 
 The docs and website foundation are strong enough to sell from.
 
-Auralis Digital currently contains two related public surfaces:
+Auralis Digital currently contains three related public surfaces:
 
-1. website services for local businesses
-2. an Auralis Design product/shop surface with Shopify checkout routing
+1. Auralis Design products with Shopify checkout routing
+2. custom / personalized design requests
+3. website services for local businesses, creators, and small brands
 
-Current execution priority remains:
+Current execution priority is:
 
 ```text
-website services
-trust setup
-lead capture
-outreach
-first client delivery
-real proof
+temporary Gmail contact path
+custom design inquiry flow
+first real custom design request
+proof
+domain email / trust setup
+then expand to products and website clients
 ```
 
-The product/shop surface exists publicly, but it should not replace the active execution priority unless the business focus intentionally changes.
+Custom design is the first execution lane because it needs less infrastructure than product commerce or full website-client delivery. Products and website services remain active public surfaces, but they should not be treated as more mature than current proof supports.
 
 Reference:
 
@@ -35,14 +36,15 @@ Reference:
 1. Confirm Michigan LLC filing.
 2. Obtain EIN.
 3. Open a business bank account.
-4. Set up domain email, preferably `hello@auralisdigital.net`.
-5. Configure and verify the production contact-form backend.
-6. Set up payment processing or invoicing.
-7. Create or complete Google Business Profile.
-8. Start focused local outreach.
-9. Close and deliver one real client.
-10. Capture testimonial, live URL, and case study.
-11. Offer the $250/month managed hosting and care plan at handoff.
+4. Keep `auralisdigitaleco@gmail.com` as the temporary contact email until domain email is active.
+5. Set up domain email, preferably `hello@auralisdigital.net`.
+6. ~~Configure and verify the production contact-form backend.~~ Done 2026-05-16; phone confirmed 2026-05-17.
+7. Set up payment processing or invoicing.
+8. Create or complete Google Business Profile.
+9. Start focused outreach for custom design.
+10. Close and deliver one real custom design request.
+11. Capture real proof only after permission or confirmation.
+12. Expand toward product sales and website clients after the first proof loop.
 12. Separately verify Shopify/Printify commerce readiness if the product surface remains public-facing.
 
 ## Phase 1 - Business Foundation

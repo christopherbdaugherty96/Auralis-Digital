@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode, type FormEvent } from "react";
 import {
   ArrowRight,
-  BadgeCheck,
   CalendarCheck,
   CheckCircle2,
   ClipboardList,
@@ -24,10 +23,6 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
-  featuredProduct,
-  productReasons,
-  productTrustSteps,
-  productUseCases,
   shopFaqs,
   shopProducts,
   type ShopProduct,
@@ -68,8 +63,8 @@ const customRequestTypes = [
   "Gift design",
   "Product photo concept",
   "Apparel concept",
-  "Poster or wall art concept",
-  "Blanket, mug, journal, canvas, or shirt design",
+  "Wall decor concept",
+  "Blanket, journal, wall decor, hat, accessory, or apparel concept",
   "Creator or small-brand visual",
 ];
 
@@ -291,29 +286,6 @@ const benefits = [
   { label: "Clear contact flow", icon: MessageSquareText, className: "hero-card-four" },
 ];
 
-function useReducedMotionAwareScroll() {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) return;
-
-    let frame = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => setScrollY(window.scrollY));
-    };
-
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
-  return scrollY;
-}
 
 function Reveal({ children, className }: { children: ReactNode; className?: string }) {
   const [visible, setVisible] = useState(false);
@@ -322,6 +294,13 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
   useEffect(() => {
     const target = document.querySelector(`[data-reveal-id="${id}"]`);
     if (!target) return;
+
+    const rect = target.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -498,35 +477,15 @@ function setMetaTag(selector: string, attr: string, value: string) {
   if (tag) tag.setAttribute(attr, value);
 }
 
-function ProductImageGallery({ product }: { product: ShopProduct }) {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const selectedPhoto = product.photos[selectedIndex] ?? product.photos[0];
+function scrollToCurrentHash() {
+  const id = decodeURIComponent(window.location.hash.replace("#", ""));
+  if (!id) return false;
 
-  return (
-    <div className="product-gallery-card" aria-label={`${product.title} product images`}>
-      <div className="product-gallery-main">
-        <img src={selectedPhoto.imageUrl} alt={selectedPhoto.altText} />
-      </div>
-      <div className="product-gallery-thumbs" aria-label={`${product.title} photo gallery`}>
-        {product.photos.map((photo, index) => (
-          <button
-            key={`${photo.imageUrl}-${photo.label}`}
-            type="button"
-            className={cn("product-gallery-thumb", selectedIndex === index && "is-active")}
-            onClick={() => setSelectedIndex(index)}
-            aria-label={`Show ${photo.label}`}
-            aria-pressed={selectedIndex === index}
-          >
-            <img src={photo.imageUrl} alt="" loading={index === 0 ? "eager" : "lazy"} />
-            <span>{photo.label}</span>
-          </button>
-        ))}
-      </div>
-      <p className="product-gallery-note">
-        Browse the product photos here. Shopify opens in a new tab only when you are ready to buy.
-      </p>
-    </div>
-  );
+  const target = document.getElementById(id);
+  if (!target) return false;
+
+  target.scrollIntoView({ block: "start", behavior: "auto" });
+  return true;
 }
 
 function ProductPhotoScroll({ product }: { product: ShopProduct }) {
@@ -538,11 +497,15 @@ function ProductPhotoScroll({ product }: { product: ShopProduct }) {
             key={`${product.slug}-${photo.imageUrl}`}
             src={photo.imageUrl}
             alt={photo.altText}
-            loading={index === 0 ? "eager" : "lazy"}
+            loading="lazy"
+            decoding="async"
+            width={800}
+            height={800}
+            sizes="(min-width: 1280px) 29vw, (min-width: 768px) 45vw, 92vw"
           />
         ))}
       </div>
-      <p className="product-card-swipe">Swipe photos</p>
+      {product.photos.length > 1 && <p className="product-card-swipe">Swipe photos</p>}
     </>
   );
 }
@@ -561,7 +524,7 @@ function ProductCard({ product }: { product: ShopProduct }) {
         href={product.shopifyTrackingUrl}
         className="product-button"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         aria-label={`View ${product.title} on Shopify`}
       >
         View on Shopify <ArrowRight className="size-4" aria-hidden="true" />
@@ -570,20 +533,39 @@ function ProductCard({ product }: { product: ShopProduct }) {
   );
 }
 
+const productCategories = ["All", ...Array.from(new Set(shopProducts.map((p) => p.category)))];
+
 function ProductCatalogGrid() {
-  const catalogProducts = shopProducts.filter((product) => product.slug !== featuredProduct.slug);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const filtered = activeCategory === "All" ? shopProducts : shopProducts.filter((p) => p.category === activeCategory);
 
   return (
     <Reveal className="product-catalog-section">
       <div className="section-heading compact">
         <span className="section-label">All products</span>
         <h2>Browse every current Auralis Design product.</h2>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <p className="mt-4">
           Every card includes photos, price, size notes, and a clear Shopify button when you are ready to buy.
         </p>
       </div>
+      <div className="product-category-tabs" aria-label="Filter by category">
+        {productCategories.map((cat) => {
+          const count = cat === "All" ? shopProducts.length : shopProducts.filter((p) => p.category === cat).length;
+          return (
+            <button
+              key={cat}
+              type="button"
+              aria-pressed={activeCategory === cat}
+              className={cn("product-category-tab", activeCategory === cat && "is-active")}
+              onClick={() => setActiveCategory(cat)}
+            >
+              {cat} ({count})
+            </button>
+          );
+        })}
+      </div>
       <div className="product-catalog-grid">
-        {catalogProducts.map((product) => (
+        {filtered.map((product) => (
           <ProductCard key={product.slug} product={product} />
         ))}
       </div>
@@ -645,7 +627,7 @@ function PolicyPageContent({ page }: { page: PolicyPage }) {
         <Reveal className="section-heading">
           <span className="section-label">{policy.eyebrow}</span>
           <h1>{policy.title}</h1>
-          <p className="mt-4 text-lg leading-8 text-muted-foreground">{policy.intro}</p>
+          <p className="mt-4">{policy.intro}</p>
         </Reveal>
         <div className="policy-grid">
           {policy.sections.map((section) => (
@@ -713,14 +695,14 @@ function ContactForm() {
     }
   };
 
-  const inputCls = "mt-1 mb-4 block w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40";
-  const labelCls = "block text-sm font-bold text-foreground";
+  const inputCls = "form-input";
+  const labelCls = "form-label";
 
   if (status === "success") {
     return (
       <div className="flex flex-col items-center gap-4 py-10 text-center">
         <CheckCircle2 className="size-12 text-primary" aria-hidden="true" />
-        <h3 className="text-xl font-black">Message received.</h3>
+        <h3 className="text-xl font-bold">Message received.</h3>
         <p className="text-muted-foreground">Auralis Digital will review your request and follow up shortly.</p>
         <Button variant="conversionOutline" size="sm" onClick={() => setStatus("idle")}>Send another</Button>
       </div>
@@ -790,7 +772,7 @@ const NAV_LINKS = [
   { label: "Products", href: "/products" },
   { label: "Custom Design", href: "/custom-design" },
   { label: "Website Design", href: "/web-design" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/custom-design#contact" },
 ];
 
 const POLICY_LINKS = [
@@ -814,7 +796,6 @@ type AuralisPage =
 type PolicyPage = keyof typeof policyPages;
 
 export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage }) {
-  const scrollY = useReducedMotionAwareScroll();
   const [mobileOpen, setMobileOpen] = useState(false);
   const isHome = page === "home";
   const isShop = page === "shop";
@@ -835,6 +816,32 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
     setMetaTag('meta[name="twitter:title"]', "content", meta.title);
     setMetaTag('meta[name="twitter:description"]', "content", meta.description);
     setMetaTag('link[rel="canonical"]', "href", canonical);
+
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, [page]);
+
+  useEffect(() => {
+    if (!window.location.hash) return;
+
+    let frame = 0;
+    let timeout = 0;
+    const scroll = () => {
+      frame = window.requestAnimationFrame(() => {
+        if (!scrollToCurrentHash()) {
+          timeout = window.setTimeout(scrollToCurrentHash, 120);
+        }
+      });
+    };
+
+    scroll();
+    window.addEventListener("hashchange", scroll);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.clearTimeout(timeout);
+      window.removeEventListener("hashchange", scroll);
+    };
   }, [page]);
 
   useEffect(() => {
@@ -849,22 +856,21 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   return (
     <>
       {/* ── Nav ───────────────────────────────────────────── */}
-      <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
-        <div className="site-shell flex items-center justify-between py-3">
+      <header className="site-nav">
+        <div className="site-shell flex items-center justify-between py-3.5">
           <a href="/" className="text-lg font-black tracking-tight text-foreground" onClick={() => setMobileOpen(false)}>
             AURALIS DIGITAL
           </a>
-          <nav className="hidden items-center gap-4 lg:gap-6 md:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-5 lg:gap-7 md:flex" aria-label="Main navigation">
             {NAV_LINKS.map((l) => (
-              <a key={l.href} href={l.href} className="text-xs font-bold text-muted-foreground hover:text-foreground lg:text-sm">{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground">{l.label}</a>
             ))}
             <Button variant="conversion" size="sm" asChild>
               <a href="/custom-design">Start a Request</a>
             </Button>
           </nav>
-          {/* Mobile: hamburger */}
           <button
-            className="md:hidden rounded-md p-2 text-foreground hover:bg-accent"
+            className="md:hidden rounded-lg p-2 text-foreground transition-colors hover:bg-card"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((o) => !o)}
@@ -872,21 +878,20 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>
-        {/* Mobile drawer */}
         {mobileOpen && (
-          <div className="border-t border-border/50 bg-background/95 backdrop-blur-xl md:hidden">
+          <div className="border-t border-border/30 bg-background/95 backdrop-blur-xl md:hidden">
             <nav className="site-shell flex flex-col gap-1 py-4" aria-label="Mobile navigation">
               {NAV_LINKS.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
-                  className="rounded-lg px-3 py-3 text-base font-bold text-muted-foreground hover:bg-accent hover:text-foreground"
+                  className="rounded-lg px-3 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-card hover:text-foreground"
                   onClick={() => setMobileOpen(false)}
                 >
                   {l.label}
                 </a>
               ))}
-              <div className="mt-2 flex flex-col gap-2">
+              <div className="mt-3 flex flex-col gap-2">
                 <Button variant="conversion" size="lg" className="w-full" asChild>
                   <a href="/custom-design" onClick={() => setMobileOpen(false)}>Start a Request</a>
                 </Button>
@@ -897,11 +902,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
       </header>
 
       <main id="top" className="auralis-page overflow-hidden">
-        <div className="ambient-layer" aria-hidden="true">
-          <div className="ambient-grid" />
-          <div className="parallax-shape shape-one" style={{ transform: `translate3d(0, ${scrollY * 0.035}px, 0)` }} />
-          <div className="parallax-shape shape-two" style={{ transform: `translate3d(0, ${scrollY * -0.025}px, 0)` }} />
-        </div>
 
         {isHome && (
           <>
@@ -931,9 +931,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">What Auralis does</span>
               <h2>Choose the path that matches what you need.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Auralis is built around creative output: ready-to-buy products, custom visual requests, and clean website design.
               </p>
             </Reveal>
@@ -945,7 +944,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                     <div className="icon-tile"><Icon aria-hidden="true" /></div>
                     <h3>{offering.title}</h3>
                     <p>{offering.copy}</p>
-                    <a href={offering.href} className="mt-auto inline-flex items-center gap-2 text-sm font-black text-primary">
+                    <a href={offering.href} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
                       {offering.cta} <ArrowRight className="size-4" aria-hidden="true" />
                     </a>
                   </Reveal>
@@ -958,7 +957,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band">
           <div className="site-shell problem-layout">
             <Reveal className="section-heading compact">
-              <span className="section-label">Brand structure</span>
               <h2>Products, custom design, and websites live under one creative brand.</h2>
             </Reveal>
             <Reveal className="problem-card">
@@ -980,103 +978,15 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <span className="section-label"><Store aria-hidden="true" /> Auralis Design Shop</span>
               <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Browse Auralis Design products here with photos, product details, categories, and home decor notes. When you are ready to buy, secure checkout opens on Shopify.
               </p>
             </Reveal>
-            <Reveal className="shop-product-layout">
-              <ProductImageGallery product={featuredProduct} />
-              <div className="shop-product-info-card">
-                <div>
-                  <span className="product-meta">Featured product</span>
-                  <h3>{featuredProduct.title}</h3>
-                  <p className="product-price">{featuredProduct.price}</p>
-                  <p className="product-description">{featuredProduct.detailDescription}</p>
-                </div>
-                <div className="product-highlight-grid" aria-label={`${featuredProduct.title} highlights`}>
-                  {featuredProduct.highlights.map((highlight) => (
-                    <span key={highlight}><CheckCircle2 aria-hidden="true" /> {highlight}</span>
-                  ))}
-                </div>
-                <dl className="product-spec-list">
-                  {featuredProduct.specs.map((spec) => (
-                    <div key={spec.label}>
-                      <dt>{spec.label}</dt>
-                      <dd>{spec.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-                <div className="product-buy-panel">
-                  <p>
-                    Auralis Digital displays the product. Shopify handles checkout, payment, orders, and fulfillment routing.
-                  </p>
-                  <Button variant="conversion" size="xl" asChild>
-                    <a href={featuredProduct.shopifyTrackingUrl} target="_blank" rel="noopener">
-                      Buy on Shopify <ArrowRight aria-hidden="true" />
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </Reveal>
             <ProductCatalogGrid />
-            <Reveal className="product-marketing-grid">
-              <div className="product-story-panel">
-                <span className="product-meta">Why you'll like it</span>
-                <h3>A growing product collection with expressive artwork and practical everyday formats.</h3>
-                <ul>
-                  {productReasons.map((reason) => (
-                    <li key={reason}><CheckCircle2 aria-hidden="true" /> {reason}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="product-good-for-panel">
-                <span className="product-meta">Good for</span>
-                <div className="product-use-list">
-                  {productUseCases.map((useCase) => (
-                    <span key={useCase}>{useCase}</span>
-                  ))}
-                </div>
-                <p>
-                  The Auralis Design catalog includes cozy blankets, paper goods, drinkware, and wall art for home decor, creative spaces, and simple gift ideas.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal className="product-flow-strip" aria-label="Customer shopping flow">
-              {productTrustSteps.map((step) => (
-                <div key={step.title}>
-                  <BadgeCheck aria-hidden="true" />
-                  <h3>{step.title}</h3>
-                  <p>{step.copy}</p>
-                </div>
-              ))}
-            </Reveal>
-            <Reveal className="product-flow-strip" aria-label="Product order process">
-              {[
-                "Browse products on Auralis Digital",
-                "Open the product on Shopify",
-                "Checkout securely",
-                "Production and fulfillment happen after purchase",
-              ].map((step, index) => (
-                <div key={step}>
-                  <BadgeCheck aria-hidden="true" />
-                  <h3>{index + 1}. {step}</h3>
-                  <p>{index === 0 ? "Stay on the brand site while comparing photos, categories, and product notes." : "Checkout happens through Shopify, and production begins after purchase for made-to-order items."}</p>
-                </div>
-              ))}
-            </Reveal>
-            <Reveal className="review-disclosure-panel">
-              <span className="product-meta">Material reviews</span>
-              <h3>Reviews can be labeled by what they actually tested.</h3>
-              <p>
-                Feedback about softness, warmth, or the sherpa blanket base should be labeled as product-base feedback unless the customer reviewed this exact Auralis Design artwork.
-              </p>
-              <p className="review-note">{featuredProduct.reviewScope}</p>
-            </Reveal>
             <Reveal className="shop-faq-panel">
               <div className="section-heading compact">
-                <span className="section-label">Product FAQ</span>
                 <h2>Questions before checkout.</h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-4">
                   Auralis Digital keeps browsing clear, while Shopify remains the secure checkout and order source of truth.
                 </p>
               </div>
@@ -1100,7 +1010,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <span className="section-label"><Sparkles aria-hidden="true" /> Custom Design</span>
               <h2>Custom design requests for personal ideas, gifts, products, and creative visuals.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Have an idea, image, phrase, symbol, theme, or product concept you want turned into a design? Auralis reviews custom requests and confirms scope before work begins.
               </p>
             </Reveal>
@@ -1119,8 +1029,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <h3>How it works</h3>
                 <ul className="mt-5 space-y-3">
                   {customProcess.map((step, index) => (
-                    <li key={step} className="flex gap-3 text-sm font-bold text-muted-foreground">
-                      <span className="step-number !h-8 !w-8 !text-xs">0{index + 1}</span>
+                    <li key={step} className="flex items-center gap-3 text-sm font-medium text-muted-foreground">
+                      <span className="step-number !h-7 !w-7 !text-[0.65rem] shrink-0">0{index + 1}</span>
                       <span>{step}</span>
                     </li>
                   ))}
@@ -1128,25 +1038,25 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               </Reveal>
             </div>
             <Reveal className="mt-8">
-              <h3 className="text-lg font-black mb-5">Pricing guide</h3>
+              <h3 className="text-lg font-bold mb-5">Pricing guide</h3>
               <div className="grid gap-5 md:grid-cols-3">
                 <div className="service-card border-primary/20">
                   <span className="product-meta">Simple</span>
-                  <h4 className="text-xl font-black mt-2">Starting at $25</h4>
+                  <h4 className="text-xl font-bold mt-2">Starting at $25</h4>
                   <p className="mt-3 text-sm text-muted-foreground">
                     Small personalized artwork, phrase-based design, symbol or theme concept, or simple product mockup.
                   </p>
                 </div>
                 <div className="service-card border-primary/20">
                   <span className="product-meta">Standard</span>
-                  <h4 className="text-xl font-black mt-2">Starting at $50</h4>
+                  <h4 className="text-xl font-bold mt-2">Starting at $50</h4>
                   <p className="mt-3 text-sm text-muted-foreground">
                     More detailed concept, multiple references, product-ready design direction, or refined visual composition.
                   </p>
                 </div>
                 <div className="service-card border-primary/20">
                   <span className="product-meta">Premium / Product Concept</span>
-                  <h4 className="text-xl font-black mt-2">Starting at $100+</h4>
+                  <h4 className="text-xl font-bold mt-2">Starting at $100+</h4>
                   <p className="mt-3 text-sm text-muted-foreground">
                     Complex artwork, multiple product formats, detailed revisions, or design intended for product launch.
                   </p>
@@ -1173,7 +1083,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <span className="section-label">Website Design</span>
               <h2>Clean websites for businesses, creators, and local brands.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Website design is one Auralis service path, separate from products and custom visual requests.
               </p>
             </Reveal>
@@ -1198,9 +1108,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band">
           <div className="site-shell grid items-center gap-10 lg:grid-cols-[0.92fr_1fr] lg:gap-14">
             <Reveal className="section-heading compact">
-              <span className="section-label">Website preview</span>
               <h2>Look trusted before customers call.</h2>
-              <p className="mt-4 text-lg leading-8 text-muted-foreground">
+              <p className="mt-4">
                 Auralis website design focuses on the first few seconds: a polished mobile view, clear service message, local trust signals, and an obvious contact path.
               </p>
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
@@ -1226,9 +1135,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="work" className="section-band">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Example work</span>
               <h2>Website demos shaped around real local business needs.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 These are sample website directions, not client claims. Click through the examples to see how layout, mobile calls, trust sections, and quote paths can work for different businesses.
               </p>
             </Reveal>
@@ -1238,10 +1146,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <a
                     href={demo.href}
                     className="website-demo-card"
-                    target={demo.external ? "_blank" : undefined}
-                    rel={demo.external ? "noopener" : undefined}
                   >
-                    <img src={demo.imageUrl} alt={`${demo.title} website demo thumbnail`} loading="lazy" />
+                    <img
+                      src={demo.imageUrl}
+                      alt={`${demo.title} website demo thumbnail`}
+                      loading="lazy"
+                      decoding="async"
+                      width={1200}
+                      height={750}
+                      sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 92vw"
+                    />
                     <div className="website-demo-body">
                       <span>{demo.category}</span>
                       <h3>{demo.title}</h3>
@@ -1265,7 +1179,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                     Open the original static demo hub with the same examples in a compact library format.
                   </p>
                 </div>
-                <span className="inline-flex shrink-0 items-center gap-1 text-sm font-bold text-primary">
+                <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-primary">
                   Open demo library <ArrowRight className="size-4" aria-hidden="true" />
                 </span>
               </a>
@@ -1279,9 +1193,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Why it works</span>
               <h2>What separates a site that gets calls from one that gets ignored.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Testimonials are added as clients launch. In the meantime, here is the honest reasoning behind every decision.
               </p>
             </Reveal>
@@ -1290,7 +1203,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal key={p.stat} className="service-card flex flex-col gap-3">
                   <div className="flex items-center gap-2">
                     <Star className="size-4 shrink-0 text-primary" aria-hidden="true" />
-                    <span className="text-base font-black text-foreground">{p.stat}</span>
+                    <span className="text-base font-semibold text-foreground">{p.stat}</span>
                   </div>
                   <p className="text-sm text-muted-foreground">{p.detail}</p>
                 </Reveal>
@@ -1299,8 +1212,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="mt-8">
               <div className="service-card border-primary/20 bg-primary/5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <p className="text-sm font-black uppercase tracking-widest text-primary">Client results</p>
-                  <p className="mt-1 text-base font-bold text-foreground">Real testimonials posted as projects complete.</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Client results</p>
+                  <p className="mt-1 text-base font-semibold text-foreground">Real testimonials posted as projects complete.</p>
                   <p className="mt-1 text-sm text-muted-foreground">No invented reviews. Proof is earned, not faked.</p>
                 </div>
                 <Button variant="conversion" size="lg" className="shrink-0" asChild>
@@ -1317,7 +1230,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="process" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Process</span>
               <h2>A simple path from scattered ideas to a launched website.</h2>
             </Reveal>
             <div className="process-line">
@@ -1340,13 +1252,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal>
               <a href="/websites" className="service-card flex flex-col gap-5 no-underline sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <span className="section-label">Website demos</span>
-                  <h2 className="mt-3 text-3xl font-black leading-tight sm:text-5xl">Want to see example designs first?</h2>
+                  <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-5xl">Want to see example designs first?</h2>
                   <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
                     Browse sample website designs for restaurants, lawn care, barbershops, salons, contractors, cleaning services, mobile detailing, photographers, and more.
                   </p>
                 </div>
-                <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-black text-primary-foreground shadow-conversion">
+                <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-conversion">
                   View website demos <ArrowRight className="size-4" aria-hidden="true" />
                 </span>
               </a>
@@ -1360,9 +1271,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="pricing" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Pricing</span>
               <h2>Clear starting points with room to grow.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Simple entry points. Final scope is confirmed before work starts, so there are no surprise expectations.
               </p>
             </Reveal>
@@ -1371,14 +1281,14 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal key={tier.title}>
                   <div className={cn(
                     "service-card flex flex-col gap-4 h-full",
-                    tier.featured && "ring-2 ring-primary/40 shadow-conversion"
+                    tier.featured && "border-primary/30 ring-1 ring-primary/20"
                   )}>
-                    <span className="inline-block rounded-full border border-primary/25 bg-primary/8 px-3 py-1 text-xs font-bold text-primary">
+                    <span className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
                       {tier.label}
                     </span>
                     <h3 className="mb-0">{tier.title}</h3>
-                    <p className="text-4xl font-black text-foreground">{tier.price}</p>
-                    <p className="text-muted-foreground">{tier.note}</p>
+                    <p className="text-3xl font-bold text-foreground">{tier.price}</p>
+                    <p className="text-sm text-muted-foreground">{tier.note}</p>
                     <ul className="mt-auto space-y-2">
                       {tier.items.map((item) => (
                         <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -1401,13 +1311,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             {/* Care plan */}
             {pricing.filter((t) => t.retainer).map((tier) => (
               <Reveal key={tier.title} className="mt-8">
-                <div className="service-card flex flex-col gap-4 border-primary/30 bg-primary/5 md:flex-row md:items-center md:gap-10">
+                <div className="service-card flex flex-col gap-4 border-primary/20 bg-primary/5 md:flex-row md:items-center md:gap-10">
                   <div className="shrink-0">
-                    <span className="inline-block rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
+                    <span className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
                       {tier.label}
                     </span>
                     <h3 className="mb-0 mt-3">{tier.title}</h3>
-                    <p className="text-4xl font-black text-foreground">{tier.price}</p>
+                    <p className="text-3xl font-bold text-foreground">{tier.price}</p>
                   </div>
                   <div className="flex flex-1 flex-col gap-4">
                     <p className="text-muted-foreground">{tier.note}</p>
@@ -1437,7 +1347,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Who this is for</span>
               <h2>Built for the kind of businesses that need to look real online.</h2>
             </Reveal>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -1461,7 +1370,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band trust-section">
           <div className="site-shell trust-layout">
             <Reveal className="section-heading compact">
-              <span className="section-label">Trust</span>
               <h2>Professional without making the process complicated.</h2>
             </Reveal>
             <div className="trust-grid">
@@ -1476,31 +1384,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         </section>
         )}
 
-        {/* ── About ───────────────────────────────────────── */}
-        {isHome && (
-        <section id="about" className="content-section">
-          <div className="site-shell problem-layout">
-            <Reveal className="section-heading compact">
-              <span className="section-label">About</span>
-              <h2>Auralis Digital is the creative home for products, custom design, and websites.</h2>
-            </Reveal>
-            <Reveal className="problem-card">
-              <p>
-                Auralis Design products live alongside custom visual requests and website design. Product purchases open through Shopify, while custom design and website work start with a reviewed inquiry.
-              </p>
-            </Reveal>
-          </div>
-        </section>
-        )}
-
         {/* ── Service areas ───────────────────────────────── */}
         {isWebsites && (
         <section id="areas" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Service area</span>
               <h2>Built for Michigan small businesses.</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
+              <p className="mt-4">
                 Auralis Digital supports local business websites across southeast Michigan and nearby communities.
               </p>
             </Reveal>
@@ -1509,7 +1399,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <a
                   key={area.label}
                   href={area.href}
-                  className="rounded-full border border-border bg-card/70 px-4 py-2 text-sm font-bold text-foreground backdrop-blur-sm transition-colors hover:border-primary/50 hover:text-primary"
+                  className="rounded-full border border-border/40 bg-card/40 px-4 py-2 text-sm font-medium text-foreground transition-colors duration-200 hover:border-primary/40 hover:text-primary"
                 >
                   {area.label}
                 </a>
@@ -1524,7 +1414,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="faq" className="section-band">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">FAQ</span>
               <h2>Questions local owners usually ask first.</h2>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -1540,22 +1429,19 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Contact ─────────────────────────────────────── */}
-        {(isHome || isCustomDesign || isWebDesign) && (
+        {(isCustomDesign || isWebDesign) && (
         <section id="contact" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Contact</span>
-              <h2>{isHome ? "Contact Auralis Digital." : isCustomDesign ? "Start a custom design request." : "Start your website project."}</h2>
+              <h2>{isCustomDesign ? "Start a custom design request." : "Start your website project."}</h2>
             </Reveal>
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
               <Reveal className="service-card">
-                <h3>{isHome ? "Send a message" : isCustomDesign ? "Send a design request" : "Send a project request"}</h3>
+                <h3>{isCustomDesign ? "Send a design request" : "Send a project request"}</h3>
                 <p className="mb-6 text-muted-foreground">
-                  {isHome
-                    ? "Use this form for product questions, custom design requests, website design, or general inquiries."
-                    : isCustomDesign
-                      ? "Share the idea, use, timeline, and any important constraints. Auralis will review fit before accepting the request."
-                      : "Fill in the basics and Auralis Digital will review what your business needs first."}
+                  {isCustomDesign
+                    ? "Share the idea, use, timeline, and any important constraints. Auralis will review fit before accepting the request."
+                    : "Fill in the basics and Auralis Digital will review what your business needs first."}
                 </p>
                 <ContactForm />
               </Reveal>
@@ -1563,14 +1449,14 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal className="service-card">
                   <h3>Prefer to reach out directly?</h3>
                   <div className="mt-4 space-y-3">
-                    <a href={MAILTO} className="flex items-center gap-3 break-all font-bold text-foreground hover:text-primary">
+                    <a href={MAILTO} className="flex items-center gap-3 break-all font-semibold text-foreground hover:text-primary">
                       <MessageSquareText className="size-5 shrink-0 text-primary" aria-hidden="true" /> {EMAIL}
                     </a>
                     <p className="text-sm text-muted-foreground">Service area: Michigan local businesses</p>
                   </div>
                 </Reveal>
                 <Reveal className="service-card border-primary/20 bg-primary/5">
-                  <h3 className="text-sm font-black uppercase tracking-widest text-primary">What to include</h3>
+                  <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">What to include</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
                     For products, include the item name. For custom design, include the idea, intended use, timeline, and constraints. For websites, include the business name, current site or social page, and the main action you want customers to take.
                   </p>
@@ -1582,7 +1468,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Final CTA ───────────────────────────────────── */}
-        {(isHome || isCustomDesign || isWebDesign) && (
+        {(isCustomDesign || isWebDesign) && (
         <section className="final-cta-section">
           <div className="site-shell">
             <Reveal className="final-cta">
@@ -1607,52 +1493,48 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-border bg-card/60 py-10 backdrop-blur-sm">
-          <div className="site-shell grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div>
-              <p className="text-base font-black tracking-tight text-foreground">AURALIS DIGITAL</p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Auralis is a creative brand for products, custom visual requests, and clean website design.
-              </p>
-            </div>
-            <div>
-              <p className="mb-3 text-sm font-black uppercase tracking-widest text-primary">Contact</p>
-              <div className="space-y-1 text-sm text-muted-foreground">
-                <a href={MAILTO} className="block break-all hover:text-primary">{EMAIL}</a>
-                <p>Michigan</p>
+        <footer className="site-footer relative">
+          <div className="site-shell">
+            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="lg:col-span-1">
+                <p className="footer-brand">AURALIS DIGITAL</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Creative brand for products, custom visual requests, and clean website design.
+                </p>
+              </div>
+              <div>
+                <p className="footer-label">Explore</p>
+                <div className="flex flex-col gap-2">
+                  {NAV_LINKS.map((link) => (
+                    <a key={link.href} href={link.href} className="footer-link">{link.label}</a>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="footer-label">Policies</p>
+                <div className="flex flex-col gap-2">
+                  {POLICY_LINKS.map((link) => (
+                    <a key={link.label} href={link.href} className="footer-link">{link.label}</a>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="footer-label">Contact</p>
+                <div className="flex flex-col gap-2">
+                  <a href={MAILTO} className="footer-link break-all">{EMAIL}</a>
+                  <p className="text-sm text-muted-foreground">Southeast Michigan</p>
+                </div>
               </div>
             </div>
-            <div>
-              <p className="mb-3 text-sm font-black uppercase tracking-widest text-primary">Explore</p>
-              <div className="flex flex-wrap gap-2">
-                {NAV_LINKS.map((link) => (
-                  <a key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-primary">
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-              <a href="sitemap.xml" className="mt-3 block text-sm text-muted-foreground hover:text-primary">Sitemap</a>
-            </div>
-            <div className="sm:col-span-2 lg:col-span-3">
-              <p className="mb-3 text-sm font-black uppercase tracking-widest text-primary">Shop policies</p>
-              <div className="flex flex-wrap gap-2">
-                {POLICY_LINKS.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
+            <div className="footer-copyright">
+              <p>&copy; {new Date().getFullYear()} Auralis Digital. All rights reserved.</p>
             </div>
           </div>
         </footer>
       </main>
 
-      {!isShop && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 p-3 backdrop-blur-xl md:hidden">
+      {!isHome && !isShop && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border/40 bg-background/90 p-3 backdrop-blur-xl md:hidden">
           <Button variant="conversion" size="lg" className="w-full" asChild>
             <a href="/custom-design">Start a Request</a>
           </Button>

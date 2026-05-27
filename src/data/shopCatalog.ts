@@ -1,6 +1,5 @@
 export type ShopProduct = {
   title: string;
-  featured: boolean;
   price: string;
   vendor: string;
   productType: string;
@@ -19,36 +18,6 @@ export type ShopProduct = {
   reviewScope: string;
 };
 
-export const shopCategories = [
-  {
-    name: "Blankets",
-    description: "Cozy Auralis Design blankets for bedrooms, couches, studios, and gift-ready home decor.",
-  },
-  {
-    name: "Journals",
-    description: "Matte journals and notebooks for reflection, planning, sketching, and daily creative routines.",
-  },
-  {
-    name: "Coffee Mugs",
-    description: "Functional drinkware for desks, kitchens, morning routines, and small gift ideas.",
-  },
-  {
-    name: "Posters",
-    description: "Accessible art prints for personal spaces, studios, dorms, offices, and creative walls.",
-  },
-  {
-    name: "Hats",
-    description: "Wearable Auralis Design pieces for everyday style, drops, and future seasonal collections.",
-  },
-  {
-    name: "Shirts",
-    description: "Graphic apparel built around expressive artwork, comfort, and simple Shopify checkout.",
-  },
-  {
-    name: "Canvas",
-    description: "Wall art formats for turning Auralis Design visuals into room-focused statement pieces.",
-  },
-];
 
 const withShopifyTracking = (url: string) =>
   `${url}?utm_source=auralisdigital&utm_medium=site&utm_campaign=shop_catalog`;
@@ -56,7 +25,7 @@ const withShopifyTracking = (url: string) =>
 export const shopProducts: ShopProduct[] = [
   {
     title: "Zeus Sherpa Blanket",
-    featured: true,
+
     price: "$60.99",
     vendor: "Auralis Design",
     productType: "Home Decor",
@@ -107,7 +76,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Zeus Woven Blanket",
-    featured: false,
+
     price: "$47.10",
     vendor: "Auralis Design",
     productType: "Home Decor",
@@ -158,21 +127,21 @@ export const shopProducts: ShopProduct[] = [
     reviewScope: "Reviews should refer to the woven blanket product base unless they mention this exact Zeus Woven Blanket artwork.",
   },
   {
-    title: "Flower of the Sun Woven Blanket",
-    featured: false,
+    title: "Sun of Life Woven Blanket",
+
     price: "$48.99",
     vendor: "Auralis Design",
     productType: "Home Decor",
     variantSummary: "Artwork or Photo / 52'' x 37''",
     category: "Blankets",
     slug: "flower-of-the-sun-woven-blanket",
-    shortDescription: "A woven cotton throw with Flower of the Sun artwork and colorful fringed edges.",
+    shortDescription: "A woven cotton throw with Sun of Life artwork and colorful fringed edges.",
     detailDescription:
-      "The Flower of the Sun Woven Blanket turns bright artwork into a 52'' x 37'' cotton throw with visible woven threads and colorful edge fringe. It is a warm visual piece for couches, reading corners, studios, dorms, wall-style display, and thoughtful home-decor gifts. The published Shopify options include Artwork and Photo variants at the same size and price, so visitors can compare the full photo set before buying through Shopify.",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/965410947997061203_2048.jpg?v=1778697245",
+      "The Sun of Life Woven Blanket turns bright artwork into a 52'' x 37'' cotton throw with visible woven threads and colorful edge fringe. It is a warm visual piece for couches, reading corners, studios, dorms, wall-style display, and thoughtful home-decor gifts. The published Shopify options include Artwork and Photo variants at the same size and price, so visitors can compare the full photo set before buying through Shopify.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/965410947997061203_2048.jpg?v=1778782127",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/flower-of-the-sun-woven-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/flower-of-the-sun-woven-blanket"),
-    altText: "Flower of the Sun Woven Blanket",
+    altText: "Sun of Life Woven Blanket",
     highlights: ["52'' x 37'' size", "100% cotton", "Colorful fringed edges", "Multiple product photos"],
     specs: [
       { label: "Product", value: "Woven blanket" },
@@ -188,36 +157,88 @@ export const shopProducts: ShopProduct[] = [
     photos: [
       {
         label: "Photo 1",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/965410947997061203_2048.jpg?v=1778697245",
-        altText: "Flower of the Sun Woven Blanket product photo 1",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/965410947997061203_2048.jpg?v=1778782127",
+        altText: "Sun of Life Woven Blanket product photo 1",
       },
       {
         label: "Photo 2",
         imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/4396691404307989589_2048.jpg?v=1778697255",
-        altText: "Flower of the Sun Woven Blanket product photo 2",
+        altText: "Sun of Life Woven Blanket product photo 2",
       },
       {
         label: "Photo 3",
         imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2702450247328070278_2048.jpg?v=1778697269",
-        altText: "Flower of the Sun Woven Blanket product photo 3",
+        altText: "Sun of Life Woven Blanket product photo 3",
       },
       {
         label: "Photo 4",
         imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14867096990000065301_2048.jpg?v=1778697279",
-        altText: "Flower of the Sun Woven Blanket product photo 4",
+        altText: "Sun of Life Woven Blanket product photo 4",
       },
     ],
     reviewScope:
-      "Reviews should refer to the woven blanket product base unless they mention this exact Flower of the Sun artwork.",
+      "Reviews should refer to the woven blanket product base unless they mention this exact Sun of Life artwork.",
+  },
+  {
+    title: "Woven Blanket",
+
+    price: "$47.10",
+    vendor: "Auralis Design",
+    productType: "Home Decor",
+    variantSummary: "Artwork or Photo / 52'' x 37''",
+    category: "Blankets",
+    slug: "woven-blanket",
+    shortDescription: "A woven cotton throw with colorful fringed edges and a soft heirloom-style texture.",
+    detailDescription:
+      "The Woven Blanket is a 52'' x 37'' cotton throw with visible woven threads and colorful edge fringe. It is made for cozy couch styling, wall-style display, room decor, personal gifts, and warm everyday use. The published Shopify options include Artwork and Photo variants at the same size and price.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2799150508494482362_2048.jpg?v=1779819318",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/woven-blanket",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/woven-blanket"),
+    altText: "Woven Blanket",
+    highlights: ["52'' x 37'' size", "100% cotton", "Colorful fringed edges", "Artwork or Photo variants"],
+    specs: [
+      { label: "Product", value: "Woven blanket" },
+      { label: "Brand", value: "Auralis Design" },
+      { label: "Product type", value: "Home Decor" },
+      { label: "Size", value: "52'' x 37''" },
+      { label: "Variants", value: "Artwork or Photo" },
+      { label: "Material", value: "100% cotton" },
+      { label: "Finish", value: "Colorful edge fringe and woven threads" },
+      { label: "Note", value: "Product photos may not fully show the final woven texture" },
+      { label: "Production", value: "Made after purchase by production partners" },
+    ],
+    photos: [
+      {
+        label: "Photo 1",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2799150508494482362_2048.jpg?v=1779819318",
+        altText: "Woven Blanket product photo 1",
+      },
+      {
+        label: "Photo 2",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6961932024382464180_2048.jpg?v=1779819328",
+        altText: "Woven Blanket product photo 2",
+      },
+      {
+        label: "Photo 3",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/3198947950187575422_2048.jpg?v=1779819344",
+        altText: "Woven Blanket product photo 3",
+      },
+      {
+        label: "Photo 4",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5348081534972767681_2048.jpg?v=1779819355",
+        altText: "Woven Blanket product photo 4",
+      },
+    ],
+    reviewScope: "Reviews should refer to the woven blanket product base unless they mention this exact Auralis Design artwork.",
   },
   {
     title: "Zeus Journal Matte",
-    featured: false,
+
     price: "$18.99",
     vendor: "Auralis Design",
-    productType: "Paper products",
+    productType: "Journals & Notebooks",
     variantSummary: "Journal",
-    category: "Journals",
+    category: "Journals & Notebooks",
     slug: "zeus-journal-matte",
     shortDescription: "A matte hardcover journal for notes, planning, reflection, and daily creative work.",
     detailDescription:
@@ -230,7 +251,7 @@ export const shopProducts: ShopProduct[] = [
     specs: [
       { label: "Product", value: "Hardcover journal" },
       { label: "Brand", value: "Auralis Design" },
-      { label: "Product type", value: "Paper products" },
+      { label: "Product type", value: "Journals & Notebooks" },
       { label: "Size", value: '5.75" x 8"' },
       { label: "Pages", value: "150 lined pages / 75 sheets" },
       { label: "Binding", value: "Casewrap binding" },
@@ -264,12 +285,12 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Sun of Life Notebook - Ruled Line",
-    featured: false,
+
     price: "$18.99",
     vendor: "Auralis Design",
-    productType: "Paper products",
+    productType: "Journals & Notebooks",
     variantSummary: "One Size",
-    category: "Journals",
+    category: "Journals & Notebooks",
     slug: "spiral-notebook-ruled-line",
     shortDescription: "A ruled spiral notebook for lists, notes, planning, sketches, and everyday writing.",
     detailDescription:
@@ -282,7 +303,7 @@ export const shopProducts: ShopProduct[] = [
     specs: [
       { label: "Product", value: "Spiral notebook" },
       { label: "Brand", value: "Auralis Design" },
-      { label: "Product type", value: "Paper products" },
+      { label: "Product type", value: "Journals & Notebooks" },
       { label: "Variant", value: "One Size" },
       { label: "Size", value: '6" x 8" / 15.2 x 20.3 cm' },
       { label: "Pages", value: "118 ruled pages / 59 sheets" },
@@ -317,126 +338,234 @@ export const shopProducts: ShopProduct[] = [
       "Reviews should refer to the spiral notebook product base unless they mention this exact Sun of Life artwork.",
   },
   {
-    title: "Zeus Mug 11oz",
-    featured: false,
-    price: "$17.99",
+    title: "Sun of Life Wall Tapestry",
+
+    price: "$28.99",
     vendor: "Auralis Design",
-    productType: "Mug",
-    variantSummary: "11oz",
-    category: "Coffee Mugs",
-    slug: "zeus-mug-11oz",
-    shortDescription: "An 11oz ceramic mug for coffee, tea, desk setups, kitchens, and easy gifting.",
+    productType: "Wall Decor",
+    variantSummary: '26" x 36"',
+    category: "Wall Decor",
+    slug: "sun-of-life-wall-tapestry",
+    shortDescription: "A lightweight Sun of Life wall tapestry for rooms, studios, dorms, and creative backdrops.",
     detailDescription:
-      "The Zeus Mug 11oz brings the artwork into a daily-use format for coffee, tea, hot chocolate, office desks, kitchen shelves, and small gift moments. The white ceramic 11oz / 0.33 l base keeps the piece simple and functional, with rounded corners, a C-handle, and lead- and BPA-free construction.",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8121189513190038541_2048.jpg?v=1778654724",
-    shopifyProductUrl: "https://auralis-design.myshopify.com/products/zeus-mug-11oz",
-    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/zeus-mug-11oz"),
-    altText: "Zeus Mug 11oz",
-    highlights: ["11oz / 0.33 l", "White ceramic", "C-handle", "Lead and BPA-free"],
+      "The Sun of Life Wall Tapestry turns the artwork into a lightweight 26\" x 36\" wall piece for bedrooms, studios, dorm rooms, creative corners, and photo backdrops. The 100% polyester fabric keeps it easy to hang, move, fold, and store, while hemmed edges help the tapestry feel finished for everyday room styling.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14376604022080907068_2048.jpg?v=1778785066",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/sun-of-life-wall-tapestry",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/sun-of-life-wall-tapestry"),
+    altText: "Sun of Life Wall Tapestry",
+    highlights: ['26" x 36" size', "100% polyester", "Hemmed edges", "Lightweight wall decor"],
     specs: [
-      { label: "Product", value: "Ceramic mug" },
+      { label: "Product", value: "Wall tapestry" },
       { label: "Brand", value: "Auralis Design" },
-      { label: "Product type", value: "Mug" },
-      { label: "Size", value: "11oz / 0.33 l" },
-      { label: "Material", value: "White ceramic" },
-      { label: "Shape", value: "Rounded corners with C-handle" },
-      { label: "Safety", value: "Lead and BPA-free" },
+      { label: "Product type", value: "Wall Decor" },
+      { label: "Size", value: '26" x 36"' },
+      { label: "Material", value: "100% polyester" },
+      { label: "Finish", value: "Hemmed edges" },
+      { label: "Use", value: "Indoor wall decor, creative backdrop, or room accent" },
       { label: "Production", value: "Made after purchase by production partners" },
     ],
     photos: [
       {
         label: "Photo 1",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8121189513190038541_2048.jpg?v=1778654724",
-        altText: "Zeus Mug 11oz product photo 1",
-      },
-      {
-        label: "Photo 2",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6412037726450784535_2048.jpg?v=1778654726",
-        altText: "Zeus Mug 11oz product photo 2",
-      },
-      {
-        label: "Photo 3",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12295707888379519899_2048.jpg?v=1778654728",
-        altText: "Zeus Mug 11oz product photo 3",
-      },
-      {
-        label: "Photo 4",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17640987671903681999_2048.jpg?v=1778654730",
-        altText: "Zeus Mug 11oz product photo 4",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14376604022080907068_2048.jpg?v=1778785066",
+        altText: "Sun of Life Wall Tapestry product photo 1",
       },
     ],
-    reviewScope: "Reviews should refer to the 11oz ceramic mug product base unless they mention this exact Zeus Mug artwork.",
+    reviewScope:
+      "Reviews should refer to the wall tapestry product base unless they mention this exact Sun of Life artwork.",
   },
   {
-    title: "Zeus Matte Vertical Posters",
-    featured: false,
-    price: "$22.99",
+    title: "Auralis Digital Trucker Caps",
+
+    price: "$21.37",
     vendor: "Auralis Design",
-    productType: "Poster",
-    variantSummary: '8" x 10" / Matte',
-    category: "Posters",
-    slug: "zeus-matte-vertical-posters",
-    shortDescription: "A matte vertical poster for bedrooms, studios, offices, dorms, and creative walls.",
+    productType: "Hats",
+    variantSummary: "Black / One size",
+    category: "Hats",
+    slug: "auralis-digital-trucker-caps",
+    shortDescription: "A black one-size trucker cap with Auralis Digital styling and a breathable mesh back.",
     detailDescription:
-      "The Zeus Matte Vertical Poster is the clean wall-art version of the collection, published in an 8\" x 10\" matte size for bedrooms, studios, offices, dorms, gallery walls, and creative spaces that need a focused visual piece. Museum-grade archival paper and pigmented archival inks help the artwork feel crisp indoors, while the matte finish keeps glare low.",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2049462911992851992_2048.jpg?v=1778654485",
-    shopifyProductUrl: "https://auralis-design.myshopify.com/products/zeus-matte-vertical-posters",
-    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/zeus-matte-vertical-posters"),
-    altText: "Zeus Matte Vertical Posters",
-    highlights: ["8\" x 10\" size", "Museum-grade paper", "Matte finish", "Indoor wall art"],
+      "The Auralis Digital Trucker Cap is a lightweight one-size hat with a 100% polyester foam front, 100% nylon mesh back, and adjustable plastic snap closure. It is built for everyday casual wear, local brand support, product drops, warm-weather outfits, and simple gift ideas. The published Shopify variant is Black / One size.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10582133132536755704_2048.jpg?v=1778794928",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/auralis-digital-trucker-caps",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/auralis-digital-trucker-caps"),
+    altText: "Auralis Digital Trucker Caps",
+    highlights: ["Black / One size", "Adjustable snap closure", "Foam front", "Mesh back"],
     specs: [
-      { label: "Product", value: "Matte vertical poster" },
+      { label: "Product", value: "Trucker cap" },
       { label: "Brand", value: "Auralis Design" },
-      { label: "Product type", value: "Poster" },
-      { label: "Size", value: '8" x 10"' },
-      { label: "Finish", value: "Matte" },
-      { label: "Paper", value: "Museum-grade archival paper" },
-      { label: "Paper weight", value: "175-189 g/m2 depending on print provider" },
-      { label: "Use", value: "Indoor wall art" },
-      { label: "Tolerance", value: 'Slight size deviation possible, about +/- 1/16"' },
+      { label: "Product type", value: "Hats" },
+      { label: "Variant", value: "Black / One size" },
+      { label: "Fit", value: 'One size fits most, about 22.8" / 58 cm' },
+      { label: "Front", value: "100% polyester foam front" },
+      { label: "Back", value: "100% nylon mesh weave back" },
+      { label: "Closure", value: "Adjustable plastic snap closure" },
+      { label: "Note", value: "Creases may straighten naturally after unpackaging and wear" },
       { label: "Production", value: "Made after purchase by production partners" },
     ],
     photos: [
       {
         label: "Photo 1",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2049462911992851992_2048.jpg?v=1778654485",
-        altText: "Zeus Matte Vertical Posters product photo 1",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10582133132536755704_2048.jpg?v=1778794928",
+        altText: "Auralis Digital Trucker Caps product photo 1",
       },
       {
         label: "Photo 2",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/4702263243593761246_2048.jpg?v=1778654490",
-        altText: "Zeus Matte Vertical Posters product photo 2",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8699638975083853557_2048.jpg?v=1778794938",
+        altText: "Auralis Digital Trucker Caps product photo 2",
       },
       {
         label: "Photo 3",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10011389094125847811_2048.jpg?v=1778654493",
-        altText: "Zeus Matte Vertical Posters product photo 3",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6778490280354954443_2048.jpg?v=1778794945",
+        altText: "Auralis Digital Trucker Caps product photo 3",
       },
       {
         label: "Photo 4",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10633343667107313983_2048.jpg?v=1778654496",
-        altText: "Zeus Matte Vertical Posters product photo 4",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11010848881538086164_2048.jpg?v=1778794952",
+        altText: "Auralis Digital Trucker Caps product photo 4",
       },
     ],
-    reviewScope: "Reviews should refer to the matte poster product base unless they mention this exact Zeus poster artwork.",
+    reviewScope:
+      "Reviews should refer to the trucker cap product base unless they mention this exact Auralis Digital cap design.",
   },
-];
+  {
+    title: "Snapback Trucker Cap with Patch (Embroidery)",
 
-export const featuredProduct = shopProducts.find((product) => product.featured) ?? shopProducts[0];
+    price: "$33.28",
+    vendor: "Auralis Design",
+    productType: "Hats",
+    variantSummary: "Circle / One size / Black / White patch",
+    category: "Hats",
+    slug: "snapback-trucker-cap-with-patch-embroidery",
+    shortDescription: "A structured snapback trucker cap with an embroidered patch and classic mesh-back fit.",
+    detailDescription:
+      "The Snapback Trucker Cap with Patch (Embroidery) adds a structured, mid-profile hat option to the Auralis catalog. It uses a cotton/poly front and visor, polyester mesh back, cotton sweatband, pre-curved visor, and adjustable plastic snap closure. The active Shopify variant is Circle / One size / Black / White patch.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12429268837997228989_2048.jpg?v=1778799387",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/snapback-trucker-cap-with-patch-embroidery",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/snapback-trucker-cap-with-patch-embroidery"),
+    altText: "Snapback Trucker Cap with Patch Embroidery",
+    highlights: ["One size", "Embroidered patch", "Adjustable snap closure", "Mesh back"],
+    specs: [
+      { label: "Product", value: "Snapback trucker cap" },
+      { label: "Brand", value: "Auralis Design" },
+      { label: "Product type", value: "Hats" },
+      { label: "Variant", value: "Circle / One size / Black / White patch" },
+      { label: "Front and visor", value: "60% cotton, 40% polyester" },
+      { label: "Back", value: "100% polyester mesh" },
+      { label: "Sweatband", value: "100% cotton" },
+      { label: "Closure", value: "Adjustable plastic snap closure" },
+      { label: "Patch", value: "White patch with black outline" },
+      { label: "Production", value: "Made after purchase by production partners" },
+    ],
+    photos: [
+      {
+        label: "Photo 1",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12429268837997228989_2048.jpg?v=1778799387",
+        altText: "Snapback Trucker Cap with Patch Embroidery product photo 1",
+      },
+    ],
+    reviewScope:
+      "Reviews should refer to the snapback trucker cap product base unless they mention this exact embroidered patch design.",
+  },
+  {
+    title: "Oval Necklace",
 
-export const productReasons = [
-  "A growing Auralis Design catalog across blankets, paper goods, mugs, and wall art.",
-  "Product photos stay visible on Auralis Digital before checkout opens on Shopify.",
-  "Categories are ready for more blankets, hats, shirts, mugs, canvas, and posters.",
-  "Simple Shopify checkout when you are ready to buy.",
-];
+    price: "$22.07",
+    vendor: "Auralis Design",
+    productType: "Jewelry",
+    variantSummary: "One Size / Silver",
+    category: "Jewelry & Accessories",
+    slug: "oval-necklace",
+    shortDescription: "A silver oval pendant necklace with a printed aluminum surface for wearable Auralis styling.",
+    detailDescription:
+      "The Oval Necklace is a small wearable accessory with a silver zinc alloy pendant and necklace chain. The ellipse-shaped pendant uses a white aluminum print surface, making it a simple giftable piece for everyday outfits, personal styling, and small Auralis Design accessories. The active Shopify variant is One Size / Silver.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10249708691631938172_2048.jpg?v=1778799083",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/oval-necklace",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/oval-necklace"),
+    altText: "Oval Necklace",
+    highlights: ["One Size / Silver", "Ellipse pendant", "Zinc alloy chain", "White aluminum print surface"],
+    specs: [
+      { label: "Product", value: "Oval necklace" },
+      { label: "Brand", value: "Auralis Design" },
+      { label: "Product type", value: "Jewelry" },
+      { label: "Variant", value: "One Size / Silver" },
+      { label: "Pendant", value: "Ellipse-shaped pendant" },
+      { label: "Material", value: "Zinc alloy pendant and necklace chain" },
+      { label: "Print surface", value: "White aluminum print surface" },
+      { label: "Production", value: "Made after purchase by production partners" },
+    ],
+    photos: [
+      {
+        label: "Photo 1",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10249708691631938172_2048.jpg?v=1778799083",
+        altText: "Oval Necklace product photo 1",
+      },
+      {
+        label: "Photo 2",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12080478687373963269_2048.jpg?v=1778799085",
+        altText: "Oval Necklace product photo 2",
+      },
+      {
+        label: "Photo 3",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10581411034302332643_2048.jpg?v=1778799087",
+        altText: "Oval Necklace product photo 3",
+      },
+      {
+        label: "Photo 4",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9119972945663593159_2048.jpg?v=1778799089",
+        altText: "Oval Necklace product photo 4",
+      },
+    ],
+    reviewScope:
+      "Reviews should refer to the oval necklace product base unless they mention this exact Auralis Design necklace artwork.",
+  },
+  {
+    title: "Built Before Sunrise Quarter-Zip",
 
-export const productUseCases = ["Cozy home decor", "Gift ideas", "Desk and journal setup", "Wall art and creative spaces"];
-
-export const productTrustSteps = [
-  { title: "Browse here", copy: "View product photos, product notes, categories, and details on Auralis Digital." },
-  { title: "Buy through Shopify", copy: "When you are ready, the buy button opens the Shopify product page in a new tab." },
-  { title: "Produced after purchase", copy: "Shopify keeps the order source of truth, and production begins after purchase for made-to-order items." },
+    price: "$71.57",
+    vendor: "Auralis Design",
+    productType: "Apparel",
+    variantSummary: "XS-4XL / White",
+    category: "Apparel",
+    slug: "built-before-sunrise-mens-sport-wick-stretch-quarter-zip-pullover-embroidery",
+    shortDescription: "A white embroidered quarter-zip for early mornings, cool starts, and work-ready casual layering.",
+    detailDescription:
+      "The Built Before Sunrise Quarter-Zip is a premium white embroidered pullover built for early mornings, cool starts, and operators who are already working before sunrise. It is available in XS through 4XL, with larger sizes priced higher in Shopify.",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2822150292153943244_2048.jpg?v=1779226283",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/built-before-sunrise-mens-sport-wick%C2%AE-stretch-quarter-zip-pullover-embroidery",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/built-before-sunrise-mens-sport-wick%C2%AE-stretch-quarter-zip-pullover-embroidery"),
+    altText: "Built Before Sunrise Quarter-Zip",
+    highlights: ["XS-4XL sizing", "White colorway", "Embroidery", "Quarter-zip pullover"],
+    specs: [
+      { label: "Product", value: "Quarter-zip pullover" },
+      { label: "Brand", value: "Auralis Design" },
+      { label: "Product type", value: "Apparel" },
+      { label: "Sizes", value: "XS, S, M, L, XL, 2XL, 3XL, 4XL" },
+      { label: "Color", value: "White" },
+      { label: "Decoration", value: "Embroidery" },
+      { label: "Price note", value: "XS-XL start at $71.57; larger sizes cost more in Shopify" },
+      { label: "Production", value: "Made after purchase by production partners" },
+    ],
+    photos: [
+      {
+        label: "Photo 1",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2822150292153943244_2048.jpg?v=1779226283",
+        altText: "Built Before Sunrise Quarter-Zip product photo 1",
+      },
+      {
+        label: "Photo 2",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10816511292133222572_2048.jpg?v=1779226291",
+        altText: "Built Before Sunrise Quarter-Zip product photo 2",
+      },
+      {
+        label: "Photo 3",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/15701714723653121171_2048.jpg?v=1779226292",
+        altText: "Built Before Sunrise Quarter-Zip product photo 3",
+      },
+    ],
+    reviewScope:
+      "Reviews should refer to the quarter-zip pullover product base unless they mention this exact Built Before Sunrise embroidery.",
+  },
 ];
 
 export const shopFaqs = [
