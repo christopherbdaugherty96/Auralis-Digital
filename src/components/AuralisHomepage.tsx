@@ -305,7 +305,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   home: {
     title: "Auralis Digital",
     description:
-      "Products, custom design, and website services by Auralis Digital.",
+      "Products, website creation, custom designs, and services by Auralis Digital.",
     canonicalPath: "/",
   },
   shop: {
@@ -966,9 +966,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
-              <h1>Products, websites, and creative design under one roof.</h1>
+              <h1>Products, website creation, custom designs, and services.</h1>
               <p className="hero-subhead">
-                Original products, custom design, mobile-first websites, and Pour Social — built by Christopher Daugherty.
+                Original products, custom designs, mobile-first website creation, and service brands like Pour Social — built by Christopher Daugherty.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
@@ -1074,7 +1074,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <h2>Auralis Digital</h2>
               <p className="mt-4">
-                Products, custom design, and website services — built and managed by Christopher Daugherty in Southeast Michigan.
+                Products, website creation, custom designs, and services — built and managed by Christopher Daugherty in Southeast Michigan.
               </p>
             </Reveal>
           </div>
@@ -1538,7 +1538,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="lg:col-span-1">
                 <p className="footer-brand">AURALIS DIGITAL</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Products, custom design, and website services.
+                  Products, website creation, custom designs, and services.
                 </p>
               </div>
               <div>
