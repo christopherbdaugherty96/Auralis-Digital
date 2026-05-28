@@ -847,6 +847,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   const isWebsites = page === "websites";
   const isPourSocial = page === "pour-social";
   const isPolicyPage = page in policyPages;
+  const customDesignPreviewProduct = shopProducts.find((p) => p.slug === CUSTOM_DESIGN_PREVIEW_SLUG);
 
   useEffect(() => {
     const meta = pageMeta[page];
@@ -995,7 +996,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   ? HOMEPAGE_PREVIEW_SLUGS.map((s) => shopProducts.find((p) => p.slug === s)).filter(Boolean) as ShopProduct[]
                   : [];
                 const customDesignPreview = offering.preview === "custom-artwork"
-                  ? shopProducts.find((p) => p.slug === CUSTOM_DESIGN_PREVIEW_SLUG)
+                  ? customDesignPreviewProduct
                   : undefined;
                 return (
                   <Reveal key={offering.title} className="service-card flex flex-col gap-4">
@@ -1138,13 +1139,28 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label"><Sparkles aria-hidden="true" /> Custom Design</span>
-              <h2>Turn your idea into a real design.</h2>
-              <p className="mt-4">
-                Send an idea, image, phrase, or theme. Auralis reviews scope and confirms pricing before work begins.
+              <h2 className="mx-auto max-w-[20rem] sm:max-w-none">
+                Turn your idea into a<span className="block sm:inline"> real design.</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-[21rem] sm:max-w-none">
+                <span className="block sm:inline">Send an idea, image, phrase, or theme.</span>{" "}
+                <span className="block sm:inline">Auralis reviews scope and confirms pricing</span>{" "}
+                <span className="block sm:inline">before work begins.</span>
               </p>
             </Reveal>
-            <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
-              <Reveal className="service-card">
+            <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-[1.1fr_0.9fr]">
+              <Reveal className="service-card min-w-0">
+                {customDesignPreviewProduct && (
+                  <img
+                    className="mb-5 aspect-[16/10] w-full max-w-full rounded-xl bg-background object-cover object-center"
+                    src={customDesignPreviewProduct.imageUrl}
+                    alt={customDesignPreviewProduct.altText}
+                    loading="lazy"
+                    decoding="async"
+                    width={800}
+                    height={500}
+                  />
+                )}
                 <div className="icon-tile"><Sparkles aria-hidden="true" /></div>
                 <h3>What you can request</h3>
                 <div className="product-use-list mt-5">
@@ -1153,7 +1169,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   ))}
                 </div>
               </Reveal>
-              <Reveal className="service-card">
+              <Reveal className="service-card min-w-0">
                 <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
                 <h3>How it works</h3>
                 <ul className="mt-5 space-y-3">

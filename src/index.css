@@ -344,7 +344,19 @@ All colors MUST be HSL.
     .shop-preview .section-heading h2 { font-size: 1.75rem; line-height: 1.1; }
     .shop-preview .section-heading p { font-size: 0.9375rem; }
 
-    .section-heading h2 { font-size: 1.75rem; }
+    .section-heading { max-width: calc(100vw - 40px); }
+    .section-heading h2 {
+      max-width: 100%;
+      font-size: 1.75rem;
+      line-height: 1.12;
+      overflow-wrap: anywhere;
+      text-wrap: wrap;
+      white-space: normal;
+    }
+    .section-heading p {
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
 
     .shop-faq-panel { padding: 1rem; }
 
