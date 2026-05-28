@@ -187,9 +187,6 @@ All colors MUST be HSL.
   .hero-card-two { @apply right-0 top-8; animation-delay: 0.2s; }
   .hero-card-three { @apply bottom-20 left-4; animation-delay: 0.4s; }
   .hero-card-four { @apply bottom-10 right-2; animation-delay: 0.6s; }
-  .web-preview-benefit { @apply inline-flex items-center gap-2 rounded-lg border border-border/30 bg-card/50 px-4 py-3 text-sm font-medium text-foreground backdrop-blur-xl; }
-  .web-preview-benefit svg { @apply size-4 shrink-0 text-primary; }
-
   /* ── Sections ───────────────────────────────────── */
   .content-section { @apply relative py-16 sm:py-20; }
   .section-band { @apply relative py-14 sm:py-16 bg-card/20; }
@@ -227,10 +224,6 @@ All colors MUST be HSL.
   .shop-faq-item h3 { @apply mb-2 text-sm font-semibold text-foreground; }
   .shop-faq-item p { @apply text-sm leading-relaxed text-muted-foreground; }
 
-  /* ── Card: accent-bordered (callouts) ──────────── */
-  .problem-layout { @apply grid items-center gap-8 lg:grid-cols-[0.85fr_1fr]; }
-  .problem-card { @apply rounded-2xl border-l-4 border-l-accent border border-border/30 bg-card/30 p-8 text-base leading-relaxed text-muted-foreground sm:p-10; }
-
   /* ── Offering card previews ─────────────────────── */
   .offering-card-preview { @apply mb-4 overflow-hidden rounded-xl; }
   .offering-product-thumbs { @apply grid grid-cols-3 gap-2; }
@@ -245,8 +238,7 @@ All colors MUST be HSL.
   .device-phone-notch { @apply mx-auto mt-2 mb-1 h-1 w-8 rounded-full bg-muted/50; }
   .device-phone img { @apply aspect-[9/16] w-full object-cover object-top; }
 
-  .offering-placeholder-img { @apply flex items-center justify-center rounded-xl bg-[image:var(--gradient-ink)] text-primary-foreground/40; min-height: 11rem; }
-  .offering-placeholder-img svg { @apply size-12 opacity-50; }
+  .offering-custom-artwork { @apply aspect-[16/10] w-full rounded-xl bg-background object-cover object-center; }
 
   /* ── Demo cards (border glow on hover) ─────────── */
   .website-demo-grid { @apply grid gap-5 sm:grid-cols-2 xl:grid-cols-3; }
@@ -281,7 +273,6 @@ All colors MUST be HSL.
   .policy-support-card { @apply mt-8 rounded-2xl border border-primary/15 bg-primary/5 p-6 sm:p-8; }
   .policy-support-card h2 { @apply mb-3 text-lg font-semibold; }
   .policy-support-card p { @apply mb-5 max-w-3xl text-sm leading-relaxed text-muted-foreground; }
-
 
   /* ── Shared ─────────────────────────────────────── */
   .icon-tile { @apply mb-5 flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary; }

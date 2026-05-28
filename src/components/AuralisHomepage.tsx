@@ -33,7 +33,6 @@ const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}`;
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 
-
 const homeOfferings = [
   {
     title: "Products",
@@ -57,7 +56,7 @@ const homeOfferings = [
     href: "/custom-design",
     cta: "Request Custom Design",
     icon: Sparkles,
-    preview: "placeholder" as const,
+    preview: "custom-artwork" as const,
   },
 ];
 
@@ -67,6 +66,8 @@ const HOMEPAGE_PREVIEW_SLUGS = [
   "sun-of-life-wall-tapestry",
 ];
 
+const CUSTOM_DESIGN_PREVIEW_SLUG = "woven-blanket";
+
 const customRequestTypes = [
   "Personal artwork",
   "Image or theme-based design",
@@ -74,7 +75,7 @@ const customRequestTypes = [
   "Product photo concept",
   "Apparel concept",
   "Wall decor concept",
-  "Blanket, journal, wall decor, hat, accessory, or apparel concept",
+  "Blanket, journal, hat, or accessory concept",
   "Creator or small-brand visual",
 ];
 
@@ -106,7 +107,6 @@ const concepts = [
   { name: "Mobile bartending", note: "Event inquiries, packages, and availability.", icon: Wine },
   { name: "Contractor", note: "Service areas, quote forms, and trust signals.", icon: Hammer },
 ];
-
 
 const websiteDemos = [
   {
@@ -994,6 +994,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 const previewProducts = offering.preview === "products"
                   ? HOMEPAGE_PREVIEW_SLUGS.map((s) => shopProducts.find((p) => p.slug === s)).filter(Boolean) as ShopProduct[]
                   : [];
+                const customDesignPreview = offering.preview === "custom-artwork"
+                  ? shopProducts.find((p) => p.slug === CUSTOM_DESIGN_PREVIEW_SLUG)
+                  : undefined;
                 return (
                   <Reveal key={offering.title} className="service-card flex flex-col gap-4">
                     {offering.preview === "products" && previewProducts.length > 0 && (
@@ -1018,11 +1021,17 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                         <DeviceMockup />
                       </div>
                     )}
-                    {offering.preview === "placeholder" && (
+                    {offering.preview === "custom-artwork" && customDesignPreview && (
                       <div className="offering-card-preview">
-                        <div className="offering-placeholder-img">
-                          <Sparkles aria-hidden="true" />
-                        </div>
+                        <img
+                          className="offering-custom-artwork"
+                          src={customDesignPreview.imageUrl}
+                          alt={customDesignPreview.altText}
+                          loading="lazy"
+                          decoding="async"
+                          width={600}
+                          height={420}
+                        />
                       </div>
                     )}
                     <h3>{offering.title}</h3>
@@ -1053,9 +1062,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <Button variant="conversion" size="sm" asChild>
                     <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">Visit Pour Social</a>
                   </Button>
-                  <Button variant="conversionOutline" size="sm" asChild>
-                    <a href="https://github.com/christopherbdaugherty96/Pour-Social" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  </Button>
                 </div>
               </div>
             </Reveal>
@@ -1078,7 +1084,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
 
         {/* ── Shop ────────────────────────────────────────── */}
         {isPolicyPage && <PolicyPageContent page={page as PolicyPage} />}
-
 
         {isShop && (
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
@@ -1120,11 +1125,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Button variant="conversion" size="xl" asChild>
                   <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">
                     Visit Pour Social <ArrowRight aria-hidden="true" />
-                  </a>
-                </Button>
-                <Button variant="conversionOutline" size="xl" asChild>
-                  <a href="https://github.com/christopherbdaugherty96/Pour-Social" target="_blank" rel="noopener noreferrer">
-                    View GitHub Repo
                   </a>
                 </Button>
               </div>
