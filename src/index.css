@@ -37,13 +37,10 @@ All colors MUST be HSL.
     --ring: 197 82% 56%;
 
     --radius: 0.9rem;
-    --surface: 232 34% 18%;
-    --surface-ink: 42 45% 96%;
     --teal-soft: 198 72% 47%;
     --gold-soft: 40 92% 66%;
     --purple-soft: 267 58% 42%;
     --gradient-hero: radial-gradient(circle at 16% 18%, hsl(var(--gold-soft) / 0.22), transparent 28%), radial-gradient(circle at 82% 12%, hsl(var(--teal-soft) / 0.28), transparent 34%), radial-gradient(circle at 70% 62%, hsl(var(--purple-soft) / 0.32), transparent 38%), linear-gradient(135deg, hsl(232 46% 11%), hsl(224 48% 17%) 46%, hsl(259 42% 19%));
-    --gradient-card: linear-gradient(145deg, hsl(232 32% 20% / 0.94), hsl(250 38% 24% / 0.86));
     --gradient-ink: linear-gradient(135deg, hsl(233 45% 12%), hsl(258 48% 22%));
     --shadow-soft: 0 18px 60px -32px hsl(240 55% 4% / 0.62);
     --shadow-conversion: 0 18px 34px -18px hsl(var(--primary) / 0.58);
@@ -221,7 +218,6 @@ All colors MUST be HSL.
 
   /* ── Card: standard (service, concept, process — border glow on hover) ── */
   .service-card { @apply rounded-2xl border border-border/40 bg-card/40 p-6 transition-all duration-300 hover:border-primary/25 hover:bg-card/55; }
-  .concept-card { @apply rounded-2xl border border-border/40 bg-card/40 p-6 transition-all duration-300 hover:border-primary/25 hover:bg-card/55; }
   .process-step { @apply rounded-2xl border border-border/40 bg-card/40 p-6; }
 
   /* ── Card: flat (FAQ, info — no hover) ────────── */
@@ -234,6 +230,23 @@ All colors MUST be HSL.
   /* ── Card: accent-bordered (callouts) ──────────── */
   .problem-layout { @apply grid items-center gap-8 lg:grid-cols-[0.85fr_1fr]; }
   .problem-card { @apply rounded-2xl border-l-4 border-l-accent border border-border/30 bg-card/30 p-8 text-base leading-relaxed text-muted-foreground sm:p-10; }
+
+  /* ── Offering card previews ─────────────────────── */
+  .offering-card-preview { @apply mb-4 overflow-hidden rounded-xl; }
+  .offering-product-thumbs { @apply grid grid-cols-3 gap-2; }
+  .offering-product-thumbs img { @apply aspect-square w-full rounded-lg object-cover; }
+
+  .device-mockup-wrap { @apply relative flex items-end justify-center gap-0 rounded-xl bg-[image:var(--gradient-ink)] p-5 pb-0 overflow-hidden; min-height: 11rem; }
+  .device-desktop { @apply relative w-[72%] shrink-0 overflow-hidden rounded-t-lg border border-b-0 border-primary-foreground/20 bg-card/90; }
+  .device-desktop-bar { @apply flex items-center gap-1.5 px-3 py-2 bg-card/80 border-b border-primary-foreground/10; }
+  .device-desktop-bar span { @apply h-2 w-2 rounded-full bg-muted/60; }
+  .device-desktop img { @apply aspect-[16/10] w-full object-cover object-top; }
+  .device-phone { @apply relative -ml-6 w-[26%] shrink-0 self-end overflow-hidden rounded-t-xl border border-b-0 border-primary-foreground/20 bg-card/90; }
+  .device-phone-notch { @apply mx-auto mt-2 mb-1 h-1 w-8 rounded-full bg-muted/50; }
+  .device-phone img { @apply aspect-[9/16] w-full object-cover object-top; }
+
+  .offering-placeholder-img { @apply flex items-center justify-center rounded-xl bg-[image:var(--gradient-ink)] text-primary-foreground/40; min-height: 11rem; }
+  .offering-placeholder-img svg { @apply size-12 opacity-50; }
 
   /* ── Demo cards (border glow on hover) ─────────── */
   .website-demo-grid { @apply grid gap-5 sm:grid-cols-2 xl:grid-cols-3; }
@@ -269,27 +282,15 @@ All colors MUST be HSL.
   .policy-support-card h2 { @apply mb-3 text-lg font-semibold; }
   .policy-support-card p { @apply mb-5 max-w-3xl text-sm leading-relaxed text-muted-foreground; }
 
-  /* Founder bio */
-  .founder-photo-card { @apply overflow-hidden rounded-2xl border border-border/40 bg-card/40 p-4 shadow-soft; }
-  .founder-photo-frame { @apply relative overflow-hidden rounded-xl border border-border/30 bg-background/45; aspect-ratio: 4 / 5; }
-  .founder-photo-frame img { @apply absolute inset-0 z-10 h-full w-full object-cover object-[50%_18%]; }
-  .founder-photo-placeholder { @apply flex h-full min-h-[26rem] items-center justify-center bg-[image:var(--gradient-ink)] text-primary-foreground; }
-  .founder-photo-placeholder span { @apply flex size-28 items-center justify-center rounded-full border border-primary-foreground/20 bg-primary-foreground/10 text-4xl font-black tracking-tight; }
-  .founder-photo-caption { @apply p-4; }
-  .founder-photo-caption h2 { @apply mt-2 text-2xl font-bold; }
-  .founder-photo-caption p:last-child { @apply mt-2 text-sm leading-relaxed text-muted-foreground; }
 
   /* ── Shared ─────────────────────────────────────── */
   .icon-tile { @apply mb-5 flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary; }
   .icon-tile.large { @apply mx-auto size-14 rounded-xl; }
-  .service-card h3, .concept-card h3, .process-step h3 { @apply mb-2 text-base font-semibold; }
-  .service-card p, .concept-card p, .process-step p { @apply text-sm leading-relaxed text-muted-foreground; }
+  .service-card h3, .process-step h3 { @apply mb-2 text-base font-semibold; }
+  .service-card p, .process-step p { @apply text-sm leading-relaxed text-muted-foreground; }
   .process-line { @apply relative grid gap-5 md:grid-cols-5; }
   .process-line::before { @apply absolute left-6 right-6 top-8 hidden h-px bg-border/50 md:block; content: ""; }
   .step-number { @apply mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground; }
-  .concept-grid { @apply grid gap-5 md:grid-cols-2 lg:grid-cols-5; }
-  .concept-header { @apply mb-6 flex items-center justify-between gap-3 text-xs font-bold uppercase tracking-[0.14em] text-primary; }
-  .concept-header svg { @apply size-6; }
   .trust-layout { @apply grid gap-10 lg:grid-cols-[0.78fr_1fr]; }
   .trust-grid { @apply grid gap-3 sm:grid-cols-2; }
   .trust-pill { @apply flex items-center gap-3 rounded-lg border border-border/30 bg-card/30 px-4 py-3.5 text-sm font-medium; }
@@ -367,7 +368,7 @@ All colors MUST be HSL.
     .product-button { width: 100%; justify-content: center; min-height: 44px; }
     .hero-subhead { overflow-wrap: anywhere; }
 
-    .service-card, .concept-card, .process-step { padding: 1.25rem; }
+    .service-card, .process-step { padding: 1.25rem; }
     .footer-copyright { margin-top: 2rem; padding-top: 1.5rem; }
   }
 }

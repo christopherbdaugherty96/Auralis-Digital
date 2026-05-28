@@ -32,30 +32,39 @@ import { cn } from "@/lib/utils";
 const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com";
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}`;
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
-const FOUNDER_HEADSHOT_SRC = "/assets/christopher-headshot.jpg";
+
 
 const homeOfferings = [
   {
     title: "Products",
-    copy: "Browse original Auralis Design pieces and collections. Checkout opens securely through Shopify.",
+    copy: "Original designs on blankets, journals, wall decor, hats, jewelry, and apparel. Checkout through Shopify.",
     href: "/products",
     cta: "Explore Products",
     icon: Store,
-  },
-  {
-    title: "Custom Design",
-    copy: "Request a personalized design based on an idea, image, phrase, theme, symbol, or product concept.",
-    href: "/custom-design",
-    cta: "Request Custom Design",
-    icon: Sparkles,
+    preview: "products" as const,
   },
   {
     title: "Website Design",
-    copy: "Clean websites for small businesses, creators, and local brands that need a stronger online presence.",
+    copy: "Mobile-first websites for small businesses and local brands that need to look credible and get contacted.",
     href: "/web-design",
     cta: "Website Design",
     icon: MonitorSmartphone,
+    preview: "device-mockup" as const,
   },
+  {
+    title: "Custom Design",
+    copy: "Turn an idea, image, phrase, or theme into a personalized design or product concept.",
+    href: "/custom-design",
+    cta: "Request Custom Design",
+    icon: Sparkles,
+    preview: "placeholder" as const,
+  },
+];
+
+const HOMEPAGE_PREVIEW_SLUGS = [
+  "psychedelic-ying-yang-tan-sherpa-blanket",
+  "oval-necklace",
+  "sun-of-life-wall-tapestry",
 ];
 
 const customRequestTypes = [
@@ -78,12 +87,12 @@ const customProcess = [
 ];
 
 const services = [
-  { title: "Website design", copy: "Clean, credible websites shaped around what local customers need to see first.", icon: Paintbrush },
-  { title: "Landing pages", copy: "Focused pages for offers, events, ads, seasonal services, and quote requests.", icon: Store },
-  { title: "Mobile optimization", copy: "Responsive layouts that make calling, booking, and reading effortless on phones.", icon: MonitorSmartphone },
-  { title: "Local SEO setup", copy: "Page structure, location signals, and search basics that help nearby customers find you.", icon: SearchCheck },
-  { title: "Contact and booking forms", copy: "Simple flows that route visitors toward calls, quotes, bookings, or messages.", icon: MessageSquareText },
-  { title: "Content and brand cleanup", copy: "Sharper wording, better hierarchy, and a more consistent professional presence.", icon: Sparkles },
+  { title: "Website design", copy: "Professional sites built around your services, trust, and contact flow.", icon: Paintbrush },
+  { title: "Landing pages", copy: "Focused pages for offers, events, ads, and quote requests.", icon: Store },
+  { title: "Mobile optimization", copy: "Layouts that make calling, booking, and reading easy on phones.", icon: MonitorSmartphone },
+  { title: "Local SEO setup", copy: "Page structure and location signals that help nearby customers find you.", icon: SearchCheck },
+  { title: "Contact forms", copy: "Simple flows that route visitors toward calls, quotes, or messages.", icon: MessageSquareText },
+  { title: "Brand cleanup", copy: "Sharper wording, better hierarchy, and cleaner presentation.", icon: Sparkles },
 ];
 
 const process = ["Discover", "Structure", "Design", "Review", "Launch"];
@@ -91,75 +100,13 @@ const process = ["Discover", "Structure", "Design", "Review", "Launch"];
 const DEMO_LIBRARY_HREF = "projects/demo-index.html";
 
 const concepts = [
-  { name: "Barbershop", note: "Booking-forward pages with services, location, and social proof sections.", icon: Scissors },
-  { name: "Restaurant", note: "Menu, hours, directions, reservations, and fast mobile browsing.", icon: UtensilsCrossed },
-  { name: "Lawn care", note: "Quote-first service pages for neighborhoods, packages, and seasonal work.", icon: Leaf },
-  { name: "Mobile bartending", note: "Event inquiry flows with packages, galleries, and availability prompts.", icon: Wine },
-  { name: "Contractor", note: "Trust-focused project pages with service areas, quote forms, and clear calls.", icon: Hammer },
+  { name: "Barbershop", note: "Booking, services, location, and social proof.", icon: Scissors },
+  { name: "Restaurant", note: "Menu, hours, directions, and mobile ordering.", icon: UtensilsCrossed },
+  { name: "Lawn care", note: "Quote requests, packages, and service areas.", icon: Leaf },
+  { name: "Mobile bartending", note: "Event inquiries, packages, and availability.", icon: Wine },
+  { name: "Contractor", note: "Service areas, quote forms, and trust signals.", icon: Hammer },
 ];
 
-const portfolioHighlights = [
-  {
-    title: "Auralis Design",
-    label: "Product line",
-    copy: "Original Shopify-backed products, custom visual requests, and symbolic artwork translated into real items.",
-    href: "/products",
-    cta: "Browse products",
-    icon: Store,
-  },
-  {
-    title: "Website Builds",
-    label: "Service path",
-    copy: "Practical websites and demo pages for local businesses that need clearer offers, trust, and contact flow.",
-    href: "/web-design",
-    cta: "View website work",
-    icon: MonitorSmartphone,
-  },
-  {
-    title: "Pour Social",
-    label: "Service brand",
-    copy: "A mobile bartending and event bar-planning brand for Southeast Michigan events, with clear service direction, planning tools, and operations docs.",
-    href: "/pour-social",
-    cta: "Review Pour Social",
-    icon: Wine,
-  },
-];
-
-const aboutPrinciples = [
-  "Build practical pages and product ideas that make the next step obvious.",
-  "Keep claims honest: no fake reviews, no overstated automation, no confusing service promises.",
-  "Keep products, websites, and service brands connected without blurring their boundaries.",
-  "Design for real people on phones first, then polish the broader brand around that core flow.",
-];
-
-const experienceHighlights = [
-  {
-    title: "Bartending experience",
-    copy: "10 years behind the bar shaped how I handle timing, pressure, communication, and customer trust.",
-  },
-  {
-    title: "Service mindset",
-    copy: "Good service means making people feel guided, understood, and confident in the next step.",
-  },
-  {
-    title: "Practical execution",
-    copy: "That same mindset carries into websites, product ideas, and service brands like Pour Social.",
-  },
-];
-
-const pourSocialStrengths = [
-  "Event bar staffing and beverage planning are framed as the offer, not just one-person bartending.",
-  "The site keeps a smart compliance boundary: clients provide or pre-order alcohol; Pour Social does not sell alcohol.",
-  "The repo includes calculators, booking intake, package direction, legal notes, operations guides, and Nova-style event workflow docs.",
-  "The scalable version is a branded coordination layer for weddings, private parties, corporate events, staff packets, and repeatable service standards.",
-];
-
-const pourSocialLaunchGaps = [
-  "Replace the placeholder booking email before launch.",
-  "Connect the form to a real endpoint or simple lead tracker instead of relying only on mailto fallback.",
-  "Add real contact details, founder/about proof, event photos or branded setup mockups, and package descriptions.",
-  "Keep the assistant labeled as a planning helper until it is connected to a real AI workflow.",
-];
 
 const websiteDemos = [
   {
@@ -289,49 +236,19 @@ const serviceAreas = [
 ];
 
 const faqs = [
-  {
-    q: "How fast can a basic site be built?",
-    a: "Simple sites can usually move quickly when the business name, services, photos, contact info, and preferred style are ready.",
-  },
-  {
-    q: "Do I need photos?",
-    a: "Photos help, but the first version can start with strong layout, clean copy, and placeholder visuals while real photos are gathered.",
-  },
-  {
-    q: "Can you refresh an existing site?",
-    a: "Website Refresh is for sites originally built by Auralis Digital. Third-party sites usually need an audit, rebuild, migration, or custom quote before improvement work begins.",
-  },
-  {
-    q: "What does the $250 managed hosting and care plan include?",
-    a: "Stress-free website management, hosting/deployment coordination, routine upkeep, small content updates, and priority support. It is not unlimited redesign or development work.",
-  },
-  {
-    q: "Do I need to handle my own hosting?",
-    a: "By default, clients own and pay for their domain and hosting. Auralis Digital can help configure, connect, and maintain the site as part of a care plan.",
-  },
-  {
-    q: "What areas do you serve?",
-    a: "Southeast Michigan — Belleville, Ypsilanti, Ann Arbor, Detroit Metro, Downriver, and surrounding communities.",
-  },
+  { q: "How fast can a site be built?", a: "Simple sites move quickly when your business info, services, and photos are ready." },
+  { q: "Do I need photos?", a: "Photos help, but the first version can start with strong layout and placeholder visuals." },
+  { q: "Can you refresh an existing site?", a: "Website Refresh is for Auralis-built sites. Third-party sites usually need a custom quote." },
+  { q: "What does the care plan include?", a: "Hosting coordination, routine upkeep, small content updates, and priority support." },
+  { q: "Do I handle my own hosting?", a: "By default, yes. Auralis can help configure and maintain it as part of a care plan." },
+  { q: "What areas do you serve?", a: "Southeast Michigan — Belleville, Ypsilanti, Ann Arbor, Detroit Metro, and surrounding areas." },
 ];
 
 const proofPoints = [
-  {
-    stat: "Mobile-first",
-    detail: "Every site is built around phone visitors first — because that's where local customers check before they call.",
-  },
-  {
-    stat: "No surprise scope",
-    detail: "Final price and page count are confirmed before work starts. Revisions are documented and capped.",
-  },
-  {
-    stat: "You own everything",
-    detail: "Domain, hosting, and files stay yours. No lock-in, no proprietary platform that disappears.",
-  },
-  {
-    stat: "Built for action",
-    detail: "Every site is designed around one goal: make it easy for visitors to call, book, or request a quote.",
-  },
+  { stat: "Mobile-first", detail: "Built around phone visitors first — where local customers check before they call." },
+  { stat: "No surprise scope", detail: "Price and page count confirmed before work starts." },
+  { stat: "You own everything", detail: "Domain, hosting, and files stay yours. No lock-in." },
+  { stat: "Built for action", detail: "Every site makes it easy to call, book, or request a quote." },
 ];
 
 const trustItems = [
@@ -349,7 +266,6 @@ const benefits = [
   { label: "Fast launch", icon: Zap, className: "hero-card-three" },
   { label: "Clear contact flow", icon: MessageSquareText, className: "hero-card-four" },
 ];
-
 
 function Reveal({ children, className }: { children: ReactNode; className?: string }) {
   const [visible, setVisible] = useState(false);
@@ -387,16 +303,10 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
 
 const pageMeta: Record<AuralisPage, { title: string; description: string; canonicalPath: string }> = {
   home: {
-    title: "Christopher Daugherty | Auralis Digital",
+    title: "Auralis Digital",
     description:
-      "A personal portfolio hub for Christopher Daugherty, bringing together Auralis Design products, custom visual work, website design, and service brands.",
+      "Products, custom design, and website services by Auralis Digital.",
     canonicalPath: "/",
-  },
-  about: {
-    title: "About Christopher | Auralis Digital",
-    description:
-      "Meet Christopher Daugherty, the founder behind Auralis Digital, Auralis Design products, website builds, and Pour Social.",
-    canonicalPath: "/about",
   },
   shop: {
     title: "Products | Auralis Digital",
@@ -422,9 +332,9 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
     canonicalPath: "/websites",
   },
   "pour-social": {
-    title: "Pour Social | Service Brand by Christopher Daugherty",
+    title: "Pour Social | Auralis Digital",
     description:
-      "Review Pour Social, a mobile bartending and event bar-planning service brand for Southeast Michigan events.",
+      "Mobile bartending and event bar planning for Southeast Michigan.",
     canonicalPath: "/pour-social",
   },
   "refund-policy": {
@@ -672,6 +582,35 @@ function ProductCatalogGrid() {
   );
 }
 
+function DeviceMockup() {
+  return (
+    <div className="device-mockup-wrap">
+      <div className="device-desktop">
+        <div className="device-desktop-bar"><span /><span /><span /></div>
+        <img
+          src="/assets/demo-thumbnails/restaurant.svg"
+          alt="Restaurant website demo — desktop view"
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={500}
+        />
+      </div>
+      <div className="device-phone">
+        <div className="device-phone-notch" />
+        <img
+          src="/assets/demo-thumbnails/barbershop.svg"
+          alt="Barbershop website demo — mobile view"
+          loading="lazy"
+          decoding="async"
+          width={360}
+          height={640}
+        />
+      </div>
+    </div>
+  );
+}
+
 function HeroPreviewGraphic() {
   return (
     <div className="hero-preview-wrap" aria-label="Website preview for a local business homepage">
@@ -866,14 +805,16 @@ function ContactForm() {
   );
 }
 
-const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "Custom Design", href: "/custom-design" },
+const TOP_NAV_LINKS = [
+  { label: "Pour Social", href: "https://pour-social.vercel.app", external: true },
+  { label: "Products", href: "/products", external: false },
+];
+
+const MENU_LINKS = [
   { label: "Website Design", href: "/web-design" },
-  { label: "Pour Social", href: "/pour-social" },
+  { label: "Custom Design", href: "/custom-design" },
   { label: "Contact", href: "/custom-design#contact" },
+  { label: "About", href: "/#about" },
 ];
 
 const POLICY_LINKS = [
@@ -885,7 +826,6 @@ const POLICY_LINKS = [
 
 type AuralisPage =
   | "home"
-  | "about"
   | "shop"
   | "custom-design"
   | "web-design"
@@ -900,9 +840,7 @@ type PolicyPage = keyof typeof policyPages;
 
 export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage }) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [founderPhotoAvailable, setFounderPhotoAvailable] = useState(true);
   const isHome = page === "home";
-  const isAbout = page === "about";
   const isShop = page === "shop";
   const isCustomDesign = page === "custom-design";
   const isWebDesign = page === "web-design";
@@ -967,27 +905,44 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <a href="/" className="text-lg font-black tracking-tight text-foreground" onClick={() => setMobileOpen(false)}>
             AURALIS DIGITAL
           </a>
-          <nav className="hidden items-center gap-5 lg:gap-7 md:flex" aria-label="Main navigation">
-            {NAV_LINKS.map((l) => (
-              <a key={l.href} href={l.href} className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground">{l.label}</a>
-            ))}
-            <Button variant="conversion" size="sm" asChild>
-              <a href="/custom-design">Start a Request</a>
-            </Button>
-          </nav>
-          <button
-            className="md:hidden rounded-lg p-2 text-foreground transition-colors hover:bg-card"
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((o) => !o)}
-          >
-            {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
+          <div className="flex items-center gap-5 lg:gap-7">
+            <nav className="hidden items-center gap-5 lg:gap-7 sm:flex" aria-label="Main navigation">
+              {TOP_NAV_LINKS.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground"
+                  {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
+                  {l.label}
+                </a>
+              ))}
+            </nav>
+            <button
+              className="rounded-lg p-2 text-foreground transition-colors hover:bg-card"
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+              onClick={() => setMobileOpen((o) => !o)}
+            >
+              {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+          </div>
         </div>
         {mobileOpen && (
-          <div className="border-t border-border/30 bg-background/95 backdrop-blur-xl md:hidden">
-            <nav className="site-shell flex flex-col gap-1 py-4" aria-label="Mobile navigation">
-              {NAV_LINKS.map((l) => (
+          <div className="border-t border-border/30 bg-background/95 backdrop-blur-xl">
+            <nav className="site-shell flex flex-col gap-1 py-4" aria-label="Menu">
+              {TOP_NAV_LINKS.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="rounded-lg px-3 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-card hover:text-foreground sm:hidden"
+                  onClick={() => setMobileOpen(false)}
+                  {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
+                  {l.label}
+                </a>
+              ))}
+              {MENU_LINKS.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
@@ -997,11 +952,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   {l.label}
                 </a>
               ))}
-              <div className="mt-3 flex flex-col gap-2">
-                <Button variant="conversion" size="lg" className="w-full" asChild>
-                  <a href="/custom-design" onClick={() => setMobileOpen(false)}>Start a Request</a>
-                </Button>
-              </div>
             </nav>
           </div>
         )}
@@ -1016,16 +966,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
-              <h1>A personal portfolio for products, websites, and service brands.</h1>
+              <h1>Products, websites, and creative design under one roof.</h1>
               <p className="hero-subhead">
-                I am Christopher Daugherty. Auralis Digital brings together original product designs, custom visual requests, practical website design, and service brands like Pour Social.
+                Original products, custom design, mobile-first websites, and Pour Social — built by Christopher Daugherty.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
-                  <a href="/about">Meet Christopher <ArrowRight aria-hidden="true" /></a>
+                  <a href="/products">Explore Products <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
-                  <a href="/products">Explore Products</a>
+                  <a href="/web-design">Website Design</a>
                 </Button>
               </div>
             </div>
@@ -1033,21 +983,48 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
 
-        {/* ── Problem ─────────────────────────────────────── */}
+        {/* ── Lanes ───────────────────────────────────────── */}
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Choose the part of the portfolio you want to explore.</h2>
-              <p className="mt-4">
-                Auralis is the hub: ready-to-buy products, custom visual requests, website work, and service brands each have a clear lane.
-              </p>
+              <h2>What Auralis offers.</h2>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-3">
               {homeOfferings.map((offering) => {
-                const Icon = offering.icon;
+                const previewProducts = offering.preview === "products"
+                  ? HOMEPAGE_PREVIEW_SLUGS.map((s) => shopProducts.find((p) => p.slug === s)).filter(Boolean) as ShopProduct[]
+                  : [];
                 return (
                   <Reveal key={offering.title} className="service-card flex flex-col gap-4">
-                    <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                    {offering.preview === "products" && previewProducts.length > 0 && (
+                      <div className="offering-card-preview">
+                        <div className="offering-product-thumbs">
+                          {previewProducts.map((product) => (
+                            <img
+                              key={product.slug}
+                              src={product.imageUrl}
+                              alt={product.altText}
+                              loading="lazy"
+                              decoding="async"
+                              width={400}
+                              height={400}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {offering.preview === "device-mockup" && (
+                      <div className="offering-card-preview">
+                        <DeviceMockup />
+                      </div>
+                    )}
+                    {offering.preview === "placeholder" && (
+                      <div className="offering-card-preview">
+                        <div className="offering-placeholder-img">
+                          <Sparkles aria-hidden="true" />
+                        </div>
+                      </div>
+                    )}
                     <h3>{offering.title}</h3>
                     <p>{offering.copy}</p>
                     <a href={offering.href} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
@@ -1060,46 +1037,40 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
 
+        {/* ── Pour Social feature card ────────────────────── */}
         <section className="section-band">
-          <div className="site-shell problem-layout">
-            <Reveal className="section-heading compact">
-              <h2>One main site, clear separate paths.</h2>
-            </Reveal>
-            <Reveal className="problem-card">
-              <p>
-                Auralis Design is the product line. Custom Design is the request path for personal ideas and visual concepts. Website Design remains available for small businesses and local brands. Pour Social stays separate as its own service brand.
-              </p>
+          <div className="site-shell">
+            <Reveal>
+              <div className="service-card flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="icon-tile mb-0"><Wine aria-hidden="true" /></div>
+                  <div>
+                    <h3 className="mb-0">Pour Social</h3>
+                    <p>Mobile bartending &amp; event bar planning for Southeast Michigan.</p>
+                  </div>
+                </div>
+                <div className="flex shrink-0 gap-3">
+                  <Button variant="conversion" size="sm" asChild>
+                    <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">Visit Pour Social</a>
+                  </Button>
+                  <Button variant="conversionOutline" size="sm" asChild>
+                    <a href="https://github.com/christopherbdaugherty96/Pour-Social" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </Button>
+                </div>
+              </div>
             </Reveal>
           </div>
         </section>
 
-        <section className="content-section">
+        {/* ── About (homepage) ────────────────────────────── */}
+        <section id="about" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Founder portfolio</span>
-              <h2>One hub for the things Christopher is building.</h2>
+              <h2>Auralis Digital</h2>
               <p className="mt-4">
-                Auralis Digital acts as the front door: product ideas, website work, and service brands like Pour Social each get a clear path.
+                Products, custom design, and website services — built and managed by Christopher Daugherty in Southeast Michigan.
               </p>
             </Reveal>
-            <div className="grid gap-5 md:grid-cols-3">
-              {portfolioHighlights.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <Reveal key={item.title} className="service-card flex flex-col gap-4">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="icon-tile"><Icon aria-hidden="true" /></div>
-                      <span className="product-meta">{item.label}</span>
-                    </div>
-                    <h3>{item.title}</h3>
-                    <p>{item.copy}</p>
-                    <a href={item.href} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
-                      {item.cta} <ArrowRight className="size-4" aria-hidden="true" />
-                    </a>
-                  </Reveal>
-                );
-              })}
-            </div>
           </div>
         </section>
           </>
@@ -1108,100 +1079,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         {/* ── Shop ────────────────────────────────────────── */}
         {isPolicyPage && <PolicyPageContent page={page as PolicyPage} />}
 
-        {isAbout && (
-          <>
-            <section className="content-section">
-              <div className="site-shell grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
-                <Reveal className="section-heading compact">
-                  <span className="section-label">About Christopher</span>
-                  <h1 className="text-4xl font-extrabold leading-[0.98] sm:text-5xl lg:text-6xl">
-                    I design websites, products, and service brands with a practical creative edge.
-                  </h1>
-                  <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    I am Christopher Daugherty, the builder behind Auralis Digital. My work brings together website design, product ideas, and service brands like Pour Social, shaped by 10 years of bartending and customer service experience.
-                  </p>
-                  <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    That background taught me to communicate clearly, understand what people need, and keep the experience smooth. I use that same mindset to build clear websites, creative products, and brands that help people take the next step.
-                  </p>
-                  <div className="cta-row">
-                    <Button variant="conversion" size="xl" asChild>
-                      <a href="/custom-design">Start a Request <ArrowRight aria-hidden="true" /></a>
-                    </Button>
-                    <Button variant="conversionOutline" size="xl" asChild>
-                      <a href="/pour-social">View Pour Social</a>
-                    </Button>
-                  </div>
-                </Reveal>
-                <Reveal className="founder-photo-card">
-                  <div className="founder-photo-frame">
-                    {founderPhotoAvailable && (
-                      <img
-                        src={FOUNDER_HEADSHOT_SRC}
-                        alt="Christopher Daugherty"
-                        loading="eager"
-                        decoding="async"
-                        width={900}
-                        height={1125}
-                        onError={() => setFounderPhotoAvailable(false)}
-                      />
-                    )}
-                    <div
-                      className="founder-photo-placeholder"
-                      aria-label="Christopher Daugherty portrait placeholder"
-                    >
-                      <span>CD</span>
-                    </div>
-                  </div>
-                  <div className="founder-photo-caption">
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Founder</p>
-                    <h2>Christopher Daugherty</h2>
-                    <p>Auralis Digital, Auralis Design, website builds, and Pour Social.</p>
-                  </div>
-                </Reveal>
-              </div>
-            </section>
-
-            <section className="section-band">
-              <div className="site-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-                <Reveal className="section-heading compact">
-                  <span className="section-label">How I think</span>
-                  <h2>Simple, credible, and useful beats complicated.</h2>
-                  <p className="mt-4">
-                    The shared thread across the work is practical clarity: make the offer understandable, keep the next step obvious, and avoid promises the page cannot prove yet.
-                  </p>
-                </Reveal>
-                <div className="grid gap-4">
-                  {aboutPrinciples.map((principle) => (
-                    <Reveal key={principle} className="trust-pill">
-                      <CheckCircle2 aria-hidden="true" />
-                      <span>{principle}</span>
-                    </Reveal>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className="content-section">
-              <div className="site-shell">
-                <Reveal className="section-heading">
-                  <span className="section-label">Experience snapshot</span>
-                  <h2>10 years of service experience behind the work.</h2>
-                  <p className="mt-4">
-                    Bartending and service taught me how to read what people need, communicate clearly, stay organized, and keep the experience smooth from first impression to final follow-through.
-                  </p>
-                </Reveal>
-                <div className="grid gap-5 md:grid-cols-3">
-                  {experienceHighlights.map((item) => (
-                    <Reveal key={item.title} className="service-card">
-                      <h3>{item.title}</h3>
-                      <p>{item.copy}</p>
-                    </Reveal>
-                  ))}
-                </div>
-              </div>
-            </section>
-          </>
-        )}
 
         {isShop && (
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
@@ -1210,16 +1087,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <span className="section-label"><Store aria-hidden="true" /> Auralis Design Shop</span>
               <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
               <p className="mt-4">
-                Browse Auralis Design products here with photos, product details, categories, and home decor notes. When you are ready to buy, secure checkout opens on Shopify.
+                Browse products with photos and details. Secure checkout opens on Shopify.
               </p>
             </Reveal>
             <ProductCatalogGrid />
             <Reveal className="shop-faq-panel">
               <div className="section-heading compact">
                 <h2>Questions before checkout.</h2>
-                <p className="mt-4">
-                  Auralis Digital keeps browsing clear, while Shopify remains the secure checkout and order source of truth.
-                </p>
               </div>
               <div className="shop-faq-grid">
                 {shopFaqs.map((faq) => (
@@ -1234,98 +1108,29 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         </section>
         )}
 
-        {/* ── Services ────────────────────────────────────── */}
+        {/* ── Pour Social (simple redirect page) ─────────── */}
         {isPourSocial && (
-          <>
-            <section className="content-section">
-              <div className="site-shell">
-                <Reveal className="section-heading">
-                  <span className="section-label"><Wine aria-hidden="true" /> Service Brand</span>
-                  <h2>Pour Social: mobile bartending, event bar staffing, and beverage planning.</h2>
-                  <p className="mt-4">
-                    Pour Social is a separate mobile bar service brand for Southeast Michigan events. The direction is clear: bartending, event bar staffing, menu planning, alcohol quantity guidance, mixers, garnishes, setup expectations, and service flow.
-                  </p>
-                  <div className="cta-row justify-center">
-                    <Button variant="conversion" size="xl" asChild>
-                      <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">
-                        View live Pour Social site <ArrowRight aria-hidden="true" />
-                      </a>
-                    </Button>
-                    <Button variant="conversionOutline" size="xl" asChild>
-                      <a href="https://github.com/christopherbdaugherty96/Pour-Social" target="_blank" rel="noopener noreferrer">
-                        View GitHub repo
-                      </a>
-                    </Button>
-                  </div>
-                </Reveal>
-                <div className="grid gap-5 md:grid-cols-3">
-                  <Reveal className="service-card">
-                    <div className="icon-tile"><CalendarCheck aria-hidden="true" /></div>
-                    <h3>What it sells</h3>
-                    <p>Professional event bar staffing and beverage planning for private events, weddings, parties, and corporate gatherings.</p>
-                  </Reveal>
-                  <Reveal className="service-card">
-                    <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
-                    <h3>What makes it scalable</h3>
-                    <p>Packages, intake, staff/event packets, calculators, service standards, and repeatable operations make it more than a solo service page.</p>
-                  </Reveal>
-                  <Reveal className="service-card">
-                    <div className="icon-tile"><CheckCircle2 aria-hidden="true" /></div>
-                    <h3>Important boundary</h3>
-                    <p>Pour Social does not sell alcohol. Clients provide or pre-order alcohol while Pour Social handles planning and service execution.</p>
-                  </Reveal>
-                </div>
+        <section className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <div className="icon-tile large"><Wine aria-hidden="true" /></div>
+              <h2>Pour Social</h2>
+              <p className="mt-4">Mobile bartending and event bar planning for Southeast Michigan.</p>
+              <div className="cta-row centered">
+                <Button variant="conversion" size="xl" asChild>
+                  <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">
+                    Visit Pour Social <ArrowRight aria-hidden="true" />
+                  </a>
+                </Button>
+                <Button variant="conversionOutline" size="xl" asChild>
+                  <a href="https://github.com/christopherbdaugherty96/Pour-Social" target="_blank" rel="noopener noreferrer">
+                    View GitHub Repo
+                  </a>
+                </Button>
               </div>
-            </section>
-
-            <section className="section-band">
-              <div className="site-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-                <Reveal className="section-heading compact">
-                  <span className="section-label">Repository review</span>
-                  <h2>The business foundation is already useful.</h2>
-                  <p className="mt-4">
-                    The repo is a static marketing site plus operations blueprint. That is the right stage: enough to explain the offer and test demand without pretending the booking platform is fully automated.
-                  </p>
-                </Reveal>
-                <div className="grid gap-4">
-                  {pourSocialStrengths.map((item) => (
-                    <Reveal key={item} className="trust-pill">
-                      <CheckCircle2 aria-hidden="true" />
-                      <span>{item}</span>
-                    </Reveal>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className="content-section">
-              <div className="site-shell">
-                <Reveal className="section-heading">
-                  <span className="section-label">Before launch</span>
-                  <h2>Make it real before pushing it harder.</h2>
-                  <p className="mt-4">
-                    Pour Social should stay on the main Auralis site as a featured service brand now, then become stronger once the contact flow, proof, and compliance details are launch-ready.
-                  </p>
-                </Reveal>
-                <div className="grid gap-5 md:grid-cols-2">
-                  {pourSocialLaunchGaps.map((item, index) => (
-                    <Reveal key={item} className="process-step">
-                      <span className="step-number">0{index + 1}</span>
-                      <h3>{index === 0 ? "Contact" : index === 1 ? "Form" : index === 2 ? "Trust proof" : "Assistant"}</h3>
-                      <p>{item}</p>
-                    </Reveal>
-                  ))}
-                </div>
-                <Reveal className="service-card mt-8 border-primary/20 bg-primary/5">
-                  <span className="product-meta">Portfolio recommendation</span>
-                  <h3>Use Auralis as the umbrella. Let Pour Social stay its own brand.</h3>
-                  <p className="mt-3 text-muted-foreground">
-                    The main website should introduce Christopher and show the lanes: Auralis Design products, website/design services, and Pour Social. Pour Social should be one featured brand with its own CTA, not merged into the same service menu as Shopify products or website builds.
-                  </p>
-                </Reveal>
-              </div>
-            </section>
-          </>
+            </Reveal>
+          </div>
+        </section>
         )}
 
         {isCustomDesign && (
@@ -1333,9 +1138,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label"><Sparkles aria-hidden="true" /> Custom Design</span>
-              <h2>Custom design requests for personal ideas, gifts, products, and creative visuals.</h2>
+              <h2>Turn your idea into a real design.</h2>
               <p className="mt-4">
-                Have an idea, image, phrase, symbol, theme, or product concept you want turned into a design? Auralis reviews custom requests and confirms scope before work begins.
+                Send an idea, image, phrase, or theme. Auralis reviews scope and confirms pricing before work begins.
               </p>
             </Reveal>
             <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
@@ -1361,42 +1166,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </ul>
               </Reveal>
             </div>
-            <Reveal className="mt-8">
-              <h3 className="text-lg font-bold mb-5">Pricing guide</h3>
-              <div className="grid gap-5 md:grid-cols-3">
-                <div className="service-card border-primary/20">
-                  <span className="product-meta">Simple</span>
-                  <h4 className="text-xl font-bold mt-2">Starting at $25</h4>
-                  <p className="mt-3 text-sm text-muted-foreground">
-                    Small personalized artwork, phrase-based design, symbol or theme concept, or simple product mockup.
-                  </p>
-                </div>
-                <div className="service-card border-primary/20">
-                  <span className="product-meta">Standard</span>
-                  <h4 className="text-xl font-bold mt-2">Starting at $50</h4>
-                  <p className="mt-3 text-sm text-muted-foreground">
-                    More detailed concept, multiple references, product-ready design direction, or refined visual composition.
-                  </p>
-                </div>
-                <div className="service-card border-primary/20">
-                  <span className="product-meta">Premium / Product Concept</span>
-                  <h4 className="text-xl font-bold mt-2">Starting at $100+</h4>
-                  <p className="mt-3 text-sm text-muted-foreground">
-                    Complex artwork, multiple product formats, detailed revisions, or design intended for product launch.
-                  </p>
-                </div>
-              </div>
-              <p className="mt-5 text-sm text-muted-foreground">
-                Final price depends on complexity, usage, number of revisions, and whether the design is for personal use or product/commercial use.
-              </p>
-            </Reveal>
-            <Reveal className="mt-8 service-card border-primary/20 bg-primary/5">
-              <span className="product-meta">Request boundaries</span>
-              <h3>Every custom request is reviewed before acceptance.</h3>
-              <p className="mt-3 text-muted-foreground">
-                Auralis may decline requests involving copyrighted characters, logos, unclear usage rights, offensive content, or designs that cannot be produced cleanly.
-              </p>
-            </Reveal>
           </div>
         </section>
         )}
@@ -1406,10 +1175,18 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label">Website Design</span>
-              <h2>Clean websites for businesses, creators, and local brands.</h2>
+              <h2>Websites that help small businesses look credible and get contacted.</h2>
               <p className="mt-4">
-                Website design is one Auralis service path, separate from products and custom visual requests.
+                Mobile-first. Clear offers. Simple contact flow.
               </p>
+              <div className="cta-row centered">
+                <Button variant="conversion" size="xl" asChild>
+                  <a href="/websites">Browse Demos <ArrowRight aria-hidden="true" /></a>
+                </Button>
+                <Button variant="conversionOutline" size="xl" asChild>
+                  <a href="#contact">Start a Request</a>
+                </Button>
+              </div>
             </Reveal>
             <div className="service-grid">
               {services.map((service) => {
@@ -1427,41 +1204,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         </section>
         )}
 
-        {/* ── Example work ────────────────────────────────── */}
-        {isWebDesign && (
-        <section className="section-band">
-          <div className="site-shell grid items-center gap-10 lg:grid-cols-[0.92fr_1fr] lg:gap-14">
-            <Reveal className="section-heading compact">
-              <h2>Look trusted before customers call.</h2>
-              <p className="mt-4">
-                Auralis website design focuses on the first few seconds: a polished mobile view, clear service message, local trust signals, and an obvious contact path.
-              </p>
-              <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {benefits.map((benefit) => {
-                  const Icon = benefit.icon;
-                  return (
-                    <div key={benefit.label} className="web-preview-benefit">
-                      <Icon aria-hidden="true" />
-                      <span>{benefit.label}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </Reveal>
-            <Reveal>
-              <HeroPreviewGraphic />
-            </Reveal>
-          </div>
-        </section>
-        )}
-
         {isWebsites && (
         <section id="work" className="section-band">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Website demos shaped around real local business needs.</h2>
+              <h2>Example website builds.</h2>
               <p className="mt-4">
-                These are sample website directions, not client claims. Click through the examples to see how layout, mobile calls, trust sections, and quote paths can work for different businesses.
+                Click through to see layout, mobile flow, and contact paths.
               </p>
             </Reveal>
             <div className="website-demo-grid">
@@ -1500,7 +1249,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <div className="flex flex-col gap-2">
                   <h3 className="mb-0">Industry Demo Library</h3>
                   <p className="text-muted-foreground">
-                    Open the original static demo hub with the same examples in a compact library format.
+                    Same examples in a compact static format.
                   </p>
                 </div>
                 <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-primary">
@@ -1512,19 +1261,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         </section>
         )}
 
-        {/* ── Proof / Results ─────────────────────────────── */}
+        {/* ── Why it works ──────────────────────────────── */}
         {isWebDesign && (
-        <section className="content-section">
+        <section className="section-band">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>What separates a site that gets calls from one that gets ignored.</h2>
-              <p className="mt-4">
-                Testimonials are added as clients launch. In the meantime, here is the honest reasoning behind every decision.
-              </p>
+              <h2>Why it works.</h2>
             </Reveal>
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {proofPoints.map((p) => (
-                <Reveal key={p.stat} className="service-card flex flex-col gap-3">
+                <Reveal key={p.stat} className="service-card flex flex-col gap-2">
                   <div className="flex items-center gap-2">
                     <Star className="size-4 shrink-0 text-primary" aria-hidden="true" />
                     <span className="text-base font-semibold text-foreground">{p.stat}</span>
@@ -1533,18 +1279,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </Reveal>
               ))}
             </div>
-            <Reveal className="mt-8">
-              <div className="service-card border-primary/20 bg-primary/5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Client results</p>
-                  <p className="mt-1 text-base font-semibold text-foreground">Real testimonials posted as projects complete.</p>
-                  <p className="mt-1 text-sm text-muted-foreground">No invented reviews. Proof is earned, not faked.</p>
-                </div>
-                <Button variant="conversion" size="lg" className="shrink-0" asChild>
-                  <a href="#contact">Get a Free Website Review <ArrowRight aria-hidden="true" /></a>
-                </Button>
-              </div>
-            </Reveal>
           </div>
         </section>
         )}
@@ -1554,38 +1288,17 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="process" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>A simple path from scattered ideas to a launched website.</h2>
+              <h2>How it works.</h2>
             </Reveal>
             <div className="process-line">
               {process.map((step, index) => (
                 <Reveal key={step} className="process-step">
                   <span className="step-number">0{index + 1}</span>
                   <h3>{step}</h3>
-                  <p>{index === 0 ? "Understand the business and goals." : index === 1 ? "Map pages, content, and contact flows." : index === 2 ? "Create a polished mobile-first experience." : index === 3 ? "Refine details with clear communication." : "Publish with the essentials in place."}</p>
+                  <p>{index === 0 ? "Understand the business and goals." : index === 1 ? "Map pages, content, and contact flows." : index === 2 ? "Build a polished mobile-first experience." : index === 3 ? "Refine with clear communication." : "Publish and launch."}</p>
                 </Reveal>
               ))}
             </div>
-          </div>
-        </section>
-        )}
-
-        {/* Website demos link */}
-        {isWebDesign && (
-        <section id="website-demos" className="section-band">
-          <div className="site-shell">
-            <Reveal>
-              <a href="/websites" className="service-card flex flex-col gap-5 no-underline sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-5xl">Want to see example designs first?</h2>
-                  <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
-                    Browse sample website designs for restaurants, lawn care, barbershops, salons, contractors, cleaning services, mobile detailing, photographers, and more.
-                  </p>
-                </div>
-                <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-conversion">
-                  View website demos <ArrowRight className="size-4" aria-hidden="true" />
-                </span>
-              </a>
-            </Reveal>
           </div>
         </section>
         )}
@@ -1595,9 +1308,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="pricing" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Clear starting points with room to grow.</h2>
+              <h2>Pricing.</h2>
               <p className="mt-4">
-                Simple entry points. Final scope is confirmed before work starts, so there are no surprise expectations.
+                Final scope confirmed before work starts. No surprise costs.
               </p>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-3">
@@ -1629,7 +1342,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               ))}
             </div>
             <p className="mt-6 text-center text-sm text-muted-foreground">
-              Final pricing depends on page count, content needs, photos, features, and launch support.
+              Final pricing depends on scope, content, and features.
             </p>
 
             {/* Care plan */}
@@ -1671,7 +1384,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Built for the kind of businesses that need to look real online.</h2>
+              <h2>Built for these kinds of businesses.</h2>
             </Reveal>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {concepts.map((c) => {
@@ -1694,7 +1407,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band trust-section">
           <div className="site-shell trust-layout">
             <Reveal className="section-heading compact">
-              <h2>Professional without making the process complicated.</h2>
+              <h2>Simple process, professional result.</h2>
             </Reveal>
             <div className="trust-grid">
               {trustItems.map((item) => (
@@ -1713,9 +1426,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="areas" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Built for Michigan small businesses.</h2>
+              <h2>Service areas.</h2>
               <p className="mt-4">
-                Auralis Digital supports local business websites across southeast Michigan and nearby communities.
+                Southeast Michigan and surrounding communities.
               </p>
             </Reveal>
             <Reveal className="flex flex-wrap gap-3">
@@ -1738,7 +1451,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="faq" className="section-band">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>Questions local owners usually ask first.</h2>
+              <h2>Common questions.</h2>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {faqs.map((faq) => (
@@ -1764,8 +1477,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <h3>{isCustomDesign ? "Send a design request" : "Send a project request"}</h3>
                 <p className="mb-6 text-muted-foreground">
                   {isCustomDesign
-                    ? "Share the idea, use, timeline, and any important constraints. Auralis will review fit before accepting the request."
-                    : "Fill in the basics and Auralis Digital will review what your business needs first."}
+                    ? "Share the idea, timeline, and any constraints."
+                    : "Fill in the basics. Auralis reviews scope before starting."}
                 </p>
                 <ContactForm />
               </Reveal>
@@ -1782,7 +1495,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal className="service-card border-primary/20 bg-primary/5">
                   <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">What to include</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    For products, include the item name. For custom design, include the idea, intended use, timeline, and constraints. For websites, include the business name, current site or social page, and the main action you want customers to take.
+                    {isCustomDesign
+                      ? "Include the idea, intended use, timeline, and any constraints."
+                      : "Include your business name, current site or social page, and what action you want customers to take."}
                   </p>
                 </Reveal>
               </div>
@@ -1797,8 +1512,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="final-cta">
               <div className="icon-tile large">{isWebDesign ? <CalendarCheck aria-hidden="true" /> : <Sparkles aria-hidden="true" />}</div>
-              <h2>{isWebDesign ? "Ready to make your business look professional online?" : "Ready to start with Auralis?"}</h2>
-              <p>{isWebDesign ? "Start with a free website review or request a quote today." : "Choose products, custom design, or website design and send the right request path."}</p>
+              <h2>{isWebDesign ? "Ready to get started?" : "Ready to start?"}</h2>
+              <p>{isWebDesign ? "Request a quote or get a free website review." : "Browse products or start a custom design request."}</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="xl" asChild>
                   <a href={isWebDesign ? "/web-design#contact" : "/custom-design"}>
@@ -1823,14 +1538,21 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="lg:col-span-1">
                 <p className="footer-brand">AURALIS DIGITAL</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Personal creative hub for products, custom visual requests, website design, and service brands.
+                  Products, custom design, and website services.
                 </p>
               </div>
               <div>
                 <p className="footer-label">Explore</p>
                 <div className="flex flex-col gap-2">
-                  {NAV_LINKS.map((link) => (
-                    <a key={link.href} href={link.href} className="footer-link">{link.label}</a>
+                  {[...TOP_NAV_LINKS, ...MENU_LINKS].map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className="footer-link"
+                      {...("external" in link && link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
+                      {link.label}
+                    </a>
                   ))}
                 </div>
               </div>
