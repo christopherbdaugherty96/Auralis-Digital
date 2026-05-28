@@ -24,6 +24,218 @@ const withShopifyTracking = (url: string) =>
 
 export const shopProducts: ShopProduct[] = [
   {
+    title: "Sacred Owl Indoor Wall Tapestry",
+    price: "$27.25",
+    vendor: "Auralis Design",
+    shopifyVendor: "Printify",
+    productType: "Home Decor",
+    variantSummary: "26\" x 36\"",
+    category: "Wall Decor",
+    slug: "copy-of-indoor-wall-tapestry",
+    shortDescription: "A vivid owl wall tapestry with cosmic feather detail and sacred-geometry eye artwork.",
+    detailDescription: "A lightweight indoor wall tapestry designed to make a room feel more immersive without needing a framed print. The polyester fabric keeps the artwork crisp, while hemmed edges help the piece hold up as wall decor, backdrop styling, or a foldable festival-room accent.\n\n.: 100% polyester\n.: Lightweight and easy to hang, move, or fold for storage\n.: Hemmed edges for added durability\n.: 26\" x 36\" size",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/18285861230107040115_2048.jpg?v=1780000969",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/copy-of-indoor-wall-tapestry",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/copy-of-indoor-wall-tapestry"),
+    altText: "Sacred owl indoor wall tapestry with cosmic feather and sacred geometry artwork",
+    highlights: [
+          "26\" x 36\"",
+          "Wall Decor",
+          "Home Decor",
+          "1 product photo"
+    ],
+    specs: [
+          {
+                "label": "Product",
+                "value": "Home Decor"
+          },
+          {
+                "label": "Brand",
+                "value": "Auralis Design"
+          },
+          {
+                "label": "Shopify vendor",
+                "value": "Printify"
+          },
+          {
+                "label": "Category",
+                "value": "Wall Decor"
+          },
+          {
+                "label": "Options",
+                "value": "26\" x 36\""
+          },
+          {
+                "label": "Variants",
+                "value": "1"
+          },
+          {
+                "label": "Checkout",
+                "value": "Opens through Shopify"
+          },
+          {
+                "label": "Production",
+                "value": "Made after purchase by production partners"
+          }
+    ],
+    photos: [
+          {
+                "label": "Photo 1",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/18285861230107040115_2048.jpg?v=1780000969",
+                "altText": "Sacred owl indoor wall tapestry product photo 1"
+          }
+    ],
+    reviewScope: "Reviews should refer to the wall decor product base unless they mention this exact Sacred Owl Indoor Wall Tapestry design.",
+  },
+  {
+    title: "TreeHugger Softstyle T-Shirt",
+    price: "$24.99",
+    vendor: "Auralis Design",
+    shopifyVendor: "Printify",
+    productType: "T-Shirt",
+    variantSummary: "S-3XL / Dark Chocolate, Light Blue, Navy, Red, Royal, Sport Grey, White, Black, Military Green, Dark Heather, Natural",
+    category: "Apparel",
+    slug: "treehugger-softstyle-t-shirt",
+    shortDescription: "A retro Tree Hugger graphic tee with warm festival color, vintage lettering, and nature-loving energy.",
+    detailDescription: "A unisex Gildan Softstyle tee with a lightweight feel and a retro Tree Hugger graphic built for everyday wear, markets, festivals, and casual nature-loving fits. Solid colors are ring-spun cotton, while heather and sport grey variants use cotton-poly blends for durability.\n\nDisclaimer:\n- Due to fabric properties, the White color variant may appear off-white rather than bright white.\n\n.: Lightweight fabric (4.5 oz/yd2)\n.: Classic fit with crew neckline\n.: Tear-away label\n.: Ethically grown and harvested US cotton\n.: OEKO-TEX STANDARD 100 certified blank",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2212812279947528840_2048.jpg?v=1780000909",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/treehugger-softstyle-t-shirt",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/treehugger-softstyle-t-shirt"),
+    altText: "TreeHugger Softstyle T-Shirt with retro nature artwork",
+    highlights: [
+          "S-3XL / 11 colors",
+          "Apparel",
+          "T-Shirt",
+          "3 curated product photos"
+    ],
+    specs: [
+          {
+                "label": "Product",
+                "value": "T-Shirt"
+          },
+          {
+                "label": "Brand",
+                "value": "Auralis Design"
+          },
+          {
+                "label": "Shopify vendor",
+                "value": "Printify"
+          },
+          {
+                "label": "Category",
+                "value": "Apparel"
+          },
+          {
+                "label": "Options",
+                "value": "S-3XL / Dark Chocolate, Light Blue, Navy, Red, Royal, Sport Grey, White, Black, Military Green, Dark Heather, Natural"
+          },
+          {
+                "label": "Variants",
+                "value": "66"
+          },
+          {
+                "label": "Checkout",
+                "value": "Opens through Shopify"
+          },
+          {
+                "label": "Production",
+                "value": "Made after purchase by production partners"
+          }
+    ],
+    photos: [
+          {
+                "label": "Photo 1",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2212812279947528840_2048.jpg?v=1780000909",
+                "altText": "TreeHugger Softstyle T-Shirt product photo 1"
+          },
+          {
+                "label": "Photo 2",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14578738876872491628_2048.jpg?v=1780000907",
+                "altText": "TreeHugger Softstyle T-Shirt product photo 2"
+          },
+          {
+                "label": "Photo 3",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/4599687907991187213_2048.jpg?v=1780000911",
+                "altText": "TreeHugger Softstyle T-Shirt product photo 3"
+          }
+    ],
+    reviewScope: "Reviews should refer to the t-shirt product base unless they mention this exact TreeHugger Softstyle T-Shirt design.",
+  },
+  {
+    title: "Geometric Dad Cap",
+    price: "$25.00",
+    vendor: "Auralis Design",
+    shopifyVendor: "Printify",
+    productType: "Hats",
+    variantSummary: "One size / Black, Dark Grey, Green Camo, Khaki, Light Blue, Navy, Pink, Spruce, Stone, White, Cranberry",
+    category: "Hats",
+    slug: "geometric-dad-cap",
+    shortDescription: "A low-profile dad cap with embroidered sacred-geometry patch artwork across everyday colorways.",
+    detailDescription: "A classic unstructured dad cap with a low-profile fit, antique brass buckle closure, and embroidered geometric patch artwork. The cotton build keeps it breathable for daily wear, while the camo variant uses a cotton-poly blend.\n\n.: 100% cotton; Green Camo is 65% polyester and 35% cotton\n.: Unstructured six-panel, low-profile fit\n.: Permacurv visor\n.: Self-fabric hideaway strap with antique brass buckle and grommet\n.: Sewn-in label",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14952659522585989047_2048.jpg?v=1779998808",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/geometric-dad-cap",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/geometric-dad-cap"),
+    altText: "Geometric Dad Cap with embroidered sacred geometry patch",
+    highlights: [
+          "One size / 11 colors",
+          "Hats",
+          "Hats",
+          "3 curated product photos"
+    ],
+    specs: [
+          {
+                "label": "Product",
+                "value": "Hats"
+          },
+          {
+                "label": "Brand",
+                "value": "Auralis Design"
+          },
+          {
+                "label": "Shopify vendor",
+                "value": "Printify"
+          },
+          {
+                "label": "Category",
+                "value": "Hats"
+          },
+          {
+                "label": "Options",
+                "value": "One size / Black, Dark Grey, Green Camo, Khaki, Light Blue, Navy, Pink, Spruce, Stone, White, Cranberry"
+          },
+          {
+                "label": "Variants",
+                "value": "11"
+          },
+          {
+                "label": "Checkout",
+                "value": "Opens through Shopify"
+          },
+          {
+                "label": "Production",
+                "value": "Made after purchase by production partners"
+          }
+    ],
+    photos: [
+          {
+                "label": "Photo 1",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14952659522585989047_2048.jpg?v=1779998808",
+                "altText": "Geometric Dad Cap product photo 1"
+          },
+          {
+                "label": "Photo 2",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14523316421327505325_2048.jpg?v=1779998784",
+                "altText": "Geometric Dad Cap product photo 2"
+          },
+          {
+                "label": "Photo 3",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2560937500450959037_2048.jpg?v=1779998792",
+                "altText": "Geometric Dad Cap product photo 3"
+          }
+    ],
+    reviewScope: "Reviews should refer to the hats product base unless they mention this exact Geometric Dad Cap design.",
+  },
+  {
     title: "Sid Girl Midweight Softstyle Fleece Hoodie",
     price: "$49.99",
     vendor: "Auralis Design",
