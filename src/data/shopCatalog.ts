@@ -34,7 +34,7 @@ export const shopProducts: ShopProduct[] = [
     slug: "psychedelic-ying-yang-heavy-cotton-tee",
     shortDescription: "A psychedelic yin-yang tee for everyday wear, pairing bold symbolic artwork with an easy unisex cotton fit.",
     detailDescription: "The Gildan 5000 heavy cotton tee is a dependable classic made for everyday wear and custom printing. Its 100% cotton fabric is tightly knit to give designs sharper detail and long-lasting color. The seamless body eliminates side seams for a smoother fit, while reinforced shoulders keep the shirt in shape through repeated washes. Durable, comfortable, and print-friendly, the Gildan 5000 is a trusted staple for personalized apparel.\nDisclaimer:\n- Due to the fabric properties, the White color variant may appear off-white rather than bright white.\n- Sleeve prints and neck labels are produced using DTF (Direct-to-Film) printing technology. This applies only to products fulfilled by the print providers OPT OnDemand and Shirt Monkey among the providers offering this item.\n.: The Gildan 5000 is made with medium fabric (5.3 oz/yd² / 180 g/m²) consisting of 100% cotton, offering year-round comfort with lasting durability.\n.: The classic fit of this shirt ensures a comfy, relaxed wear while the crew neckline adds that neat, timeless look that can blend into any occasion, casual or semi-formal.\n.: The tear-away label means a scratch-free experience with no irritation or discomfort whatsoever.\n.: Made using 100% US cotton that is ethically grown and harvested. Gildan is also a proud member of the US Cotton Trust Protocol ensuring ethical and sustainable means of production.\n.: This blank tee is certified by OEKO-TEX® STANDARD 100 (Certificate No. 168252, OETI - Institut fuer Oekologie).",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6689296063766890639_2048.jpg?v=1779839544",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5464731681615404100_2048.jpg?v=1779839551",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/psychedelic-ying-yang-heavy-cotton-tee",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/psychedelic-ying-yang-heavy-cotton-tee"),
     altText: "Psychedelic Ying yang Heavy Cotton Tee",
@@ -42,7 +42,7 @@ export const shopProducts: ShopProduct[] = [
       "White, Black / S-5XL",
       "Apparel",
       "T-Shirt",
-      "8 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -81,43 +81,18 @@ export const shopProducts: ShopProduct[] = [
     photos: [
       {
         "label": "Photo 1",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6689296063766890639_2048.jpg?v=1779839544",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5464731681615404100_2048.jpg?v=1779839551",
         "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 1"
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/13683375375613357417_2048.jpg?v=1779839546",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11867246045127936010_2048.jpg?v=1779839550",
         "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17328706771025920603_2048.jpg?v=1779839547",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 3"
-      },
-      {
-        "label": "Photo 4",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7900726310634010515_2048.jpg?v=1779839548",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 4"
-      },
-      {
-        "label": "Photo 5",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11867246045127936010_2048.jpg?v=1779839550",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 5"
-      },
-      {
-        "label": "Photo 6",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5464731681615404100_2048.jpg?v=1779839551",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 6"
-      },
-      {
-        "label": "Photo 7",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/409021588510847799_2048.jpg?v=1779839552",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 7"
-      },
-      {
-        "label": "Photo 8",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11819048640334279979_2048.jpg?v=1779839554",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 8"
+        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the t-shirt product base unless they mention this exact Psychedelic Ying yang Heavy Cotton Tee design.",
@@ -141,7 +116,7 @@ export const shopProducts: ShopProduct[] = [
       "Artwork / 52'' × 37''",
       "Blankets",
       "Home Decor",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -185,18 +160,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12559563694927311043_2048.jpg?v=1779839314",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14685688208648080050_2048.jpg?v=1779839369",
         "altText": "Psychedelic Ying yang Woven Blanket product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14685688208648080050_2048.jpg?v=1779839369",
-        "altText": "Psychedelic Ying yang Woven Blanket product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11532357835120184043_2048.jpg?v=1779839426",
-        "altText": "Psychedelic Ying yang Woven Blanket product photo 4"
+        "altText": "Psychedelic Ying yang Woven Blanket product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Psychedelic Ying yang Woven Blanket design.",
@@ -220,7 +190,7 @@ export const shopProducts: ShopProduct[] = [
       "60\" × 50\"",
       "Blankets",
       "Home Decor",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -264,18 +234,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/15412259991077438106_2048.jpg?v=1779838997",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14617968385392367380_2048.jpg?v=1779839000",
         "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14617968385392367380_2048.jpg?v=1779839000",
-        "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9589426059931243785_2048.jpg?v=1779839003",
-        "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 4"
+        "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Psychedelic Ying Yang Tan Sherpa Blanket design.",
@@ -291,7 +256,7 @@ export const shopProducts: ShopProduct[] = [
     slug: "psychedelic-midweight-softstyle-fleece-hoodie",
     shortDescription: "A midweight fleece hoodie carrying the psychedelic balance artwork in a clean white or black everyday layer.",
     detailDescription: "The Gildan SF500 is all about durability with a soft touch. It’s made with an 80/20 cotton-poly blend and lined hood, plus a 100% cotton surface for sharp prints. The dropped shoulder adds a modern fit. This hoodie is WRAP-certified and OEKO-TEX® STANDARD 100 (Certificate No. 168252, OETI - Institut fuer Oekologie) approved – because comfort shouldn't require compromise.\nDisclaimer:\n- Due to the fabric properties, the White color variant may appear off-white rather than bright white.\n.: Material: 80% ring-spun cotton, 20% polyester with 100% cotton face (fiber content varies for different colors)\n.: Medium-heavy fabric (8.4 oz /yd² (284.8 g/m²))\n.: Classic fit\n.: Tear-away label\n.: Sustainable manufacturing: This product meets the OEKO-TEX® STANDARD 100 (Certificate No. 168252, OETI - Institut fuer Oekologie)\n.: Socially conscious manufacturing: This product was made by a mill partnered with Fair Labor Association and was made in a facility that is WRAP certified",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/661702561689835442_2048.jpg?v=1779838951",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8886076135680667713_2048.jpg?v=1779838980",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/psychedelic-midweight-softstyle-fleece-hoodie",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/psychedelic-midweight-softstyle-fleece-hoodie"),
     altText: "Psychedelic Midweight Softstyle Fleece Hoodie",
@@ -299,7 +264,7 @@ export const shopProducts: ShopProduct[] = [
       "S-5XL / White, Black",
       "Apparel",
       "Hoodie",
-      "8 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -338,43 +303,18 @@ export const shopProducts: ShopProduct[] = [
     photos: [
       {
         "label": "Photo 1",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/661702561689835442_2048.jpg?v=1779838951",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8886076135680667713_2048.jpg?v=1779838980",
         "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 1"
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/13284312461389880452_2048.jpg?v=1779838957",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5802785510145578650_2048.jpg?v=1779838963",
         "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5802785510145578650_2048.jpg?v=1779838963",
-        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 3"
-      },
-      {
-        "label": "Photo 4",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10662457253968137966_2048.jpg?v=1779838968",
-        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 4"
-      },
-      {
-        "label": "Photo 5",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2650710178155775464_2048.jpg?v=1779838974",
-        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 5"
-      },
-      {
-        "label": "Photo 6",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8886076135680667713_2048.jpg?v=1779838980",
-        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 6"
-      },
-      {
-        "label": "Photo 7",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/16950089099803709311_2048.jpg?v=1779838985",
-        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 7"
-      },
-      {
-        "label": "Photo 8",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/13018936863533231854_2048.jpg?v=1779838992",
-        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 8"
+        "altText": "Psychedelic Midweight Softstyle Fleece Hoodie product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the hoodie product base unless they mention this exact Psychedelic Midweight Softstyle Fleece Hoodie design.",
@@ -398,7 +338,7 @@ export const shopProducts: ShopProduct[] = [
       "Artwork / 52'' × 37''",
       "Blankets",
       "Home Decor",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -442,18 +382,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6961932024382464180_2048.jpg?v=1779839430",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/3198947950187575422_2048.jpg?v=1779839432",
         "altText": "The pixel oven (commissioned design) Woven Blanket product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/3198947950187575422_2048.jpg?v=1779839432",
-        "altText": "The pixel oven (commissioned design) Woven Blanket product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5348081534972767681_2048.jpg?v=1779839432",
-        "altText": "The pixel oven (commissioned design) Woven Blanket product photo 4"
+        "altText": "The pixel oven (commissioned design) Woven Blanket product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact The pixel oven (commissioned design) Woven Blanket design.",
@@ -540,7 +475,7 @@ export const shopProducts: ShopProduct[] = [
       "One Size / Silver",
       "Jewelry & Accessories",
       "Accessories",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -584,18 +519,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12080478687373963269_2048.jpg?v=1779835892",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10581411034302332643_2048.jpg?v=1779835894",
         "altText": "Sun of life Necklace product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/10581411034302332643_2048.jpg?v=1779835894",
-        "altText": "Sun of life Necklace product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9119972945663593159_2048.jpg?v=1779835895",
-        "altText": "Sun of life Necklace product photo 4"
+        "altText": "Sun of life Necklace product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the accessories product base unless they mention this exact Sun of life Necklace design.",
@@ -761,7 +691,7 @@ export const shopProducts: ShopProduct[] = [
       "One Size",
       "Journals & Notebooks",
       "Paper Products",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -805,18 +735,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6340474145974871508_2048.jpg?v=1778703265",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1672287110976738539_2048.jpg?v=1778703265",
         "altText": "Sun of Life Notebook - Ruled Line product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1672287110976738539_2048.jpg?v=1778703265",
-        "altText": "Sun of Life Notebook - Ruled Line product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6475067351204432166_2048.jpg?v=1778703266",
-        "altText": "Sun of Life Notebook - Ruled Line product photo 4"
+        "altText": "Sun of Life Notebook - Ruled Line product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the paper products product base unless they mention this exact Sun of Life Notebook - Ruled Line design.",
@@ -840,7 +765,7 @@ export const shopProducts: ShopProduct[] = [
       "Artwork / 52'' × 37''",
       "Blankets",
       "Home Decor",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -884,18 +809,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/4396691404307989589_2048.jpg?v=1778782130",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2702450247328070278_2048.jpg?v=1778782133",
         "altText": "Sun of Life Woven Blanket product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2702450247328070278_2048.jpg?v=1778782133",
-        "altText": "Sun of Life Woven Blanket product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14867096990000065301_2048.jpg?v=1778782136",
-        "altText": "Sun of Life Woven Blanket product photo 4"
+        "altText": "Sun of Life Woven Blanket product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Sun of Life Woven Blanket design.",
@@ -919,7 +839,7 @@ export const shopProducts: ShopProduct[] = [
       "60\" × 50\"",
       "Blankets",
       "Home Decor",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -963,18 +883,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/13756698073366963350_2048.jpg?v=1778696078",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9060425350173305158_2048.jpg?v=1778696080",
         "altText": "Zeus Sherpa Blanket product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9060425350173305158_2048.jpg?v=1778696080",
-        "altText": "Zeus Sherpa Blanket product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/4139067084560893128_2048.jpg?v=1778696083",
-        "altText": "Zeus Sherpa Blanket product photo 4"
+        "altText": "Zeus Sherpa Blanket product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Zeus Sherpa Blanket design.",
@@ -998,7 +913,7 @@ export const shopProducts: ShopProduct[] = [
       "Artwork / 52'' × 37''",
       "Blankets",
       "Home Decor",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -1042,18 +957,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/3350635306670397556_2048.jpg?v=1778654656",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6465571721629919199_2048.jpg?v=1778654688",
         "altText": "Zeus Woven Blanket product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6465571721629919199_2048.jpg?v=1778654688",
-        "altText": "Zeus Woven Blanket product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6355129833010096723_2048.jpg?v=1778654722",
-        "altText": "Zeus Woven Blanket product photo 4"
+        "altText": "Zeus Woven Blanket product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Zeus Woven Blanket design.",
@@ -1077,7 +987,7 @@ export const shopProducts: ShopProduct[] = [
       "Journal",
       "Journals & Notebooks",
       "Paper Products",
-      "4 product photos"
+      "3 product photos"
     ],
     specs: [
       {
@@ -1121,18 +1031,13 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/276846659853719506_2048.jpg?v=1778654387",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11425389356575498434_2048.jpg?v=1778654389",
         "altText": "Zeus Journal Matte product photo 2"
       },
       {
         "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11425389356575498434_2048.jpg?v=1778654389",
-        "altText": "Zeus Journal Matte product photo 3"
-      },
-      {
-        "label": "Photo 4",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7977574976202349062_2048.jpg?v=1778654391",
-        "altText": "Zeus Journal Matte product photo 4"
+        "altText": "Zeus Journal Matte product photo 3"
       }
     ],
     reviewScope: "Reviews should refer to the paper products product base unless they mention this exact Zeus Journal Matte design.",

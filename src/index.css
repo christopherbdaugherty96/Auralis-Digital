@@ -343,6 +343,12 @@ All colors MUST be HSL.
     .shop-preview .section-heading { margin-bottom: 1.5rem; text-align: left; }
     .shop-preview .section-heading h2 { font-size: 1.75rem; line-height: 1.1; }
     .shop-preview .section-heading p { font-size: 0.9375rem; }
+    .shop-preview .section-heading,
+    .shop-preview .section-heading h2,
+    .shop-preview .section-heading p {
+      width: 100%;
+      max-width: calc(100vw - 40px);
+    }
 
     .section-heading { max-width: calc(100vw - 40px); }
     .section-heading h2 {
@@ -364,7 +370,18 @@ All colors MUST be HSL.
     .product-card h3 { font-size: 1.1rem; }
     .product-price { font-size: 1.5rem; }
     .product-catalog-section { margin-top: 2rem; }
+    .product-catalog-section,
+    .product-catalog-grid,
+    .product-card,
+    .product-card-photos {
+      min-width: 0;
+      max-width: 100%;
+    }
     .product-catalog-grid { gap: 0.75rem; }
+    .product-category-tabs {
+      width: 100%;
+      max-width: calc(100vw - 40px);
+    }
     .product-card-photos { margin-bottom: 0.75rem; gap: 0.5rem; }
     .product-card-swipe { margin-bottom: 0.5rem; font-size: 0.65rem; }
 
