@@ -110,15 +110,15 @@ const portfolioHighlights = [
   {
     title: "Website Builds",
     label: "Service path",
-    copy: "Practical websites and demo systems for local businesses that need clearer offers, trust, and contact flow.",
+    copy: "Practical websites and demo pages for local businesses that need clearer offers, trust, and contact flow.",
     href: "/web-design",
     cta: "View website work",
     icon: MonitorSmartphone,
   },
   {
     title: "Pour Social",
-    label: "Founder venture",
-    copy: "A mobile bartending and event bar-planning concept for Southeast Michigan events, built with calculators, intake flow, and operations docs.",
+    label: "Service brand",
+    copy: "A mobile bartending and event bar-planning brand for Southeast Michigan events, with clear service direction, planning tools, and operations docs.",
     href: "/pour-social",
     cta: "Review Pour Social",
     icon: Wine,
@@ -126,9 +126,9 @@ const portfolioHighlights = [
 ];
 
 const aboutPrinciples = [
-  "Build practical digital surfaces that make the next step obvious.",
+  "Build practical pages and product ideas that make the next step obvious.",
   "Keep claims honest: no fake reviews, no overstated automation, no confusing service promises.",
-  "Treat products, websites, and founder ventures as connected work without blurring their boundaries.",
+  "Keep products, websites, and service brands connected without blurring their boundaries.",
   "Design for real people on phones first, then polish the broader brand around that core flow.",
 ];
 
@@ -156,7 +156,7 @@ const pourSocialStrengths = [
 
 const pourSocialLaunchGaps = [
   "Replace the placeholder booking email before launch.",
-  "Connect the form to a real endpoint or CRM instead of relying only on mailto fallback.",
+  "Connect the form to a real endpoint or simple lead tracker instead of relying only on mailto fallback.",
   "Add real contact details, founder/about proof, event photos or branded setup mockups, and package descriptions.",
   "Keep the assistant labeled as a planning helper until it is connected to a real AI workflow.",
 ];
@@ -389,7 +389,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   home: {
     title: "Christopher Daugherty | Auralis Digital",
     description:
-      "A personal portfolio hub for Christopher Daugherty, bringing together Auralis Design products, custom visual work, website design, and founder ventures.",
+      "A personal portfolio hub for Christopher Daugherty, bringing together Auralis Design products, custom visual work, website design, and service brands.",
     canonicalPath: "/",
   },
   about: {
@@ -422,9 +422,9 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
     canonicalPath: "/websites",
   },
   "pour-social": {
-    title: "Pour Social | Founder Venture by Christopher Daugherty",
+    title: "Pour Social | Service Brand by Christopher Daugherty",
     description:
-      "Review Pour Social, a founder-built mobile bartending and event bar-planning venture for Southeast Michigan events.",
+      "Review Pour Social, a mobile bartending and event bar-planning service brand for Southeast Michigan events.",
     canonicalPath: "/pour-social",
   },
   "refund-policy": {
@@ -1016,9 +1016,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
-              <h1>A personal portfolio for products, websites, and founder-built ventures.</h1>
+              <h1>A personal portfolio for products, websites, and service brands.</h1>
               <p className="hero-subhead">
-                I am Christopher Daugherty. Auralis Digital brings together original product designs, custom visual requests, practical website design, and the service brands I am building.
+                I am Christopher Daugherty. Auralis Digital brings together original product designs, custom visual requests, practical website design, and service brands like Pour Social.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
@@ -1039,7 +1039,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <h2>Choose the part of the portfolio you want to explore.</h2>
               <p className="mt-4">
-                Auralis is the umbrella: ready-to-buy products, custom visual requests, website work, and founder ventures each have a clear lane.
+                Auralis is the hub: ready-to-buy products, custom visual requests, website work, and service brands each have a clear lane.
               </p>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-3">
@@ -1067,7 +1067,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             </Reveal>
             <Reveal className="problem-card">
               <p>
-                Auralis Design is the product line. Custom Design is the request path for personal ideas and visual concepts. Website Design remains available for small businesses and local brands. Pour Social stays its own service brand, shown here as a founder venture.
+                Auralis Design is the product line. Custom Design is the request path for personal ideas and visual concepts. Website Design remains available for small businesses and local brands. Pour Social stays separate as its own service brand.
               </p>
             </Reveal>
           </div>
@@ -1079,7 +1079,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <span className="section-label">Founder portfolio</span>
               <h2>One hub for the things Christopher is building.</h2>
               <p className="mt-4">
-                Auralis Digital can act as the front door: product experiments, client website work, and founder-led ventures like Pour Social each get a clear lane.
+                Auralis Digital acts as the front door: product ideas, website work, and service brands like Pour Social each get a clear path.
               </p>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-3">
@@ -1121,7 +1121,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                     I am Christopher Daugherty, the builder behind Auralis Digital. My work brings together website design, product ideas, and service brands like Pour Social, shaped by 10 years of bartending and customer service experience.
                   </p>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                    That background taught me how to communicate clearly, understand what people need, and keep the experience smooth. I use that same mindset to build clear websites, creative products, and brands that help people take the next step with confidence.
+                    That background taught me to communicate clearly, understand what people need, and keep the experience smooth. I use that same mindset to build clear websites, creative products, and brands that help people take the next step.
                   </p>
                   <div className="cta-row">
                     <Button variant="conversion" size="xl" asChild>
@@ -1167,7 +1167,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <span className="section-label">How I think</span>
                   <h2>Simple, credible, and useful beats complicated.</h2>
                   <p className="mt-4">
-                    The shared thread across the work is practical clarity: make the offer understandable, make the next step obvious, and keep the system honest enough to grow.
+                    The shared thread across the work is practical clarity: make the offer understandable, keep the next step obvious, and avoid promises the page cannot prove yet.
                   </p>
                 </Reveal>
                 <div className="grid gap-4">
@@ -1240,10 +1240,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <section className="content-section">
               <div className="site-shell">
                 <Reveal className="section-heading">
-                  <span className="section-label"><Wine aria-hidden="true" /> Founder Venture</span>
+                  <span className="section-label"><Wine aria-hidden="true" /> Service Brand</span>
                   <h2>Pour Social: mobile bartending, event bar staffing, and beverage planning.</h2>
                   <p className="mt-4">
-                    Pour Social is a separate founder-built service concept for Southeast Michigan events. The strongest direction is bigger than one bartender: a branded coordination layer for staffing, menu planning, alcohol quantity guidance, mixers, garnishes, setup expectations, and service flow.
+                    Pour Social is a separate mobile bar service brand for Southeast Michigan events. The direction is clear: bartending, event bar staffing, menu planning, alcohol quantity guidance, mixers, garnishes, setup expectations, and service flow.
                   </p>
                   <div className="cta-row justify-center">
                     <Button variant="conversion" size="xl" asChild>
@@ -1284,7 +1284,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <span className="section-label">Repository review</span>
                   <h2>The business foundation is already useful.</h2>
                   <p className="mt-4">
-                    The repo is a static marketing site plus operations blueprint. That is the right stage: enough to explain the offer and test demand, without pretending the booking platform is fully automated.
+                    The repo is a static marketing site plus operations blueprint. That is the right stage: enough to explain the offer and test demand without pretending the booking platform is fully automated.
                   </p>
                 </Reveal>
                 <div className="grid gap-4">
@@ -1304,7 +1304,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <span className="section-label">Before launch</span>
                   <h2>Make it real before pushing it harder.</h2>
                   <p className="mt-4">
-                    Pour Social should stay on the main Auralis site as a venture/case study now, then become a stronger public service brand once the contact flow, proof, and compliance details are launch-ready.
+                    Pour Social should stay on the main Auralis site as a featured service brand now, then become stronger once the contact flow, proof, and compliance details are launch-ready.
                   </p>
                 </Reveal>
                 <div className="grid gap-5 md:grid-cols-2">
@@ -1320,7 +1320,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <span className="product-meta">Portfolio recommendation</span>
                   <h3>Use Auralis as the umbrella. Let Pour Social stay its own brand.</h3>
                   <p className="mt-3 text-muted-foreground">
-                    The main website should introduce Christopher and show the lanes: Auralis Design products, website/design services, and founder ventures. Pour Social should be one featured venture with its own CTA, not merged into the same service menu as Shopify products or website builds.
+                    The main website should introduce Christopher and show the lanes: Auralis Design products, website/design services, and Pour Social. Pour Social should be one featured brand with its own CTA, not merged into the same service menu as Shopify products or website builds.
                   </p>
                 </Reveal>
               </div>
@@ -1823,7 +1823,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="lg:col-span-1">
                 <p className="footer-brand">AURALIS DIGITAL</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Creative brand for products, custom visual requests, and clean website design.
+                  Personal creative hub for products, custom visual requests, website design, and service brands.
                 </p>
               </div>
               <div>
