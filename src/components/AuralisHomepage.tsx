@@ -1210,6 +1210,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Button variant="conversionOutline" size="xl" asChild>
                   <a href="#contact">Start a Request</a>
                 </Button>
+                <a href="#pricing" className="text-sm font-medium text-primary hover:underline">
+                  View Pricing
+                </a>
               </div>
             </Reveal>
             <Reveal className="web-design-hero-graphic">
@@ -1334,74 +1337,77 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         {isWebDesign && (
         <section id="pricing" className="content-section">
           <div className="site-shell">
-            <Reveal className="section-heading">
-              <h2>Pricing.</h2>
-              <p className="mt-4">
-                Final scope confirmed before work starts. No surprise costs.
-              </p>
-            </Reveal>
-            <div className="grid gap-5 md:grid-cols-3">
-              {pricing.filter((t) => !t.retainer).map((tier) => (
-                <Reveal key={tier.title}>
-                  <div className={cn(
-                    "service-card flex flex-col gap-4 h-full",
-                    tier.featured && "border-primary/30 ring-1 ring-primary/20"
-                  )}>
-                    <span className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                      {tier.label}
-                    </span>
-                    <h3 className="mb-0">{tier.title}</h3>
-                    <p className="text-3xl font-bold text-foreground">{tier.price}</p>
-                    <p className="text-sm text-muted-foreground">{tier.note}</p>
-                    <ul className="mt-auto space-y-2">
-                      {tier.items.map((item) => (
-                        <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <CheckCircle2 className="size-4 shrink-0 text-primary" aria-hidden="true" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant={tier.featured ? "conversion" : "conversionOutline"} size="lg" className="mt-2 w-full" asChild>
-                      <a href="#contact">Get started</a>
-                    </Button>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-            <p className="mt-6 text-center text-sm text-muted-foreground">
-              Final pricing depends on scope, content, and features.
-            </p>
-
-            {/* Care plan */}
-            {pricing.filter((t) => t.retainer).map((tier) => (
-              <Reveal key={tier.title} className="mt-8">
-                <div className="service-card flex flex-col gap-4 border-primary/20 bg-primary/5 md:flex-row md:items-center md:gap-10">
-                  <div className="shrink-0">
-                    <span className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                      {tier.label}
-                    </span>
-                    <h3 className="mb-0 mt-3">{tier.title}</h3>
-                    <p className="text-3xl font-bold text-foreground">{tier.price}</p>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4">
-                    <p className="text-muted-foreground">{tier.note}</p>
-                    <ul className="grid gap-2 sm:grid-cols-2">
-                      {tier.items.map((item) => (
-                        <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <CheckCircle2 className="size-4 shrink-0 text-primary" aria-hidden="true" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="shrink-0">
-                    <Button variant="conversionOutline" size="lg" className="w-full md:w-auto" asChild>
-                      <a href="#contact">Ask about care plan</a>
-                    </Button>
-                  </div>
+            <details className="pricing-details">
+              <summary className="pricing-summary">
+                <h2>Pricing</h2>
+                <span className="pricing-toggle-hint">Tap to view pricing details</span>
+              </summary>
+              <div className="pricing-content">
+                <p className="mb-6 text-center text-sm text-muted-foreground">
+                  Final scope confirmed before work starts. No surprise costs.
+                </p>
+                <div className="grid gap-5 md:grid-cols-3">
+                  {pricing.filter((t) => !t.retainer).map((tier) => (
+                    <div key={tier.title} className={cn(
+                      "service-card flex flex-col gap-4 h-full",
+                      tier.featured && "border-primary/30 ring-1 ring-primary/20"
+                    )}>
+                      <span className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                        {tier.label}
+                      </span>
+                      <h3 className="mb-0">{tier.title}</h3>
+                      <p className="text-3xl font-bold text-foreground">{tier.price}</p>
+                      <p className="text-sm text-muted-foreground">{tier.note}</p>
+                      <ul className="mt-auto space-y-2">
+                        {tier.items.map((item) => (
+                          <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <CheckCircle2 className="size-4 shrink-0 text-primary" aria-hidden="true" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      <Button variant={tier.featured ? "conversion" : "conversionOutline"} size="lg" className="mt-2 w-full" asChild>
+                        <a href="#contact">Get started</a>
+                      </Button>
+                    </div>
+                  ))}
                 </div>
-              </Reveal>
-            ))}
+                <p className="mt-6 text-center text-sm text-muted-foreground">
+                  Final pricing depends on scope, content, and features.
+                </p>
+
+                {/* Care plan */}
+                {pricing.filter((t) => t.retainer).map((tier) => (
+                  <div key={tier.title} className="mt-8">
+                    <div className="service-card flex flex-col gap-4 border-primary/20 bg-primary/5 md:flex-row md:items-center md:gap-10">
+                      <div className="shrink-0">
+                        <span className="inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                          {tier.label}
+                        </span>
+                        <h3 className="mb-0 mt-3">{tier.title}</h3>
+                        <p className="text-3xl font-bold text-foreground">{tier.price}</p>
+                      </div>
+                      <div className="flex flex-1 flex-col gap-4">
+                        <p className="text-muted-foreground">{tier.note}</p>
+                        <ul className="grid gap-2 sm:grid-cols-2">
+                          {tier.items.map((item) => (
+                            <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                              <CheckCircle2 className="size-4 shrink-0 text-primary" aria-hidden="true" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="shrink-0">
+                        <Button variant="conversionOutline" size="lg" className="w-full md:w-auto" asChild>
+                          <a href="#contact">Ask about care plan</a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </details>
           </div>
         </section>
         )}

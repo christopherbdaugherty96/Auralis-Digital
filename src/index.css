@@ -188,7 +188,16 @@ All colors MUST be HSL.
   .hero-card-two { @apply right-0 top-8; animation-delay: 0.2s; }
   .hero-card-three { @apply bottom-20 left-4; animation-delay: 0.4s; }
   .hero-card-four { @apply bottom-10 right-2; animation-delay: 0.6s; }
-  .web-design-hero-graphic { @apply mx-auto mt-8 mb-12 max-w-2xl; }
+  .web-design-hero-graphic { @apply mx-auto mt-8 mb-12 max-w-2xl overflow-hidden; }
+
+  /* ── Pricing details/collapse ─────────────────── */
+  .pricing-details { @apply rounded-2xl border border-border/30 bg-card/30 backdrop-blur-xl; }
+  .pricing-summary { @apply flex cursor-pointer items-center justify-between gap-4 px-6 py-5 select-none list-none; }
+  .pricing-summary::-webkit-details-marker { display: none; }
+  .pricing-summary h2 { @apply mb-0 text-2xl font-bold text-foreground; }
+  .pricing-toggle-hint { @apply text-sm text-muted-foreground transition-opacity; }
+  .pricing-details[open] .pricing-toggle-hint { @apply opacity-0; }
+  .pricing-content { @apply px-6 pb-6 pt-2; }
   /* ── Sections ───────────────────────────────────── */
   .content-section { @apply relative py-16 sm:py-20; }
   .section-band { @apply relative py-14 sm:py-16 bg-card/20; }
@@ -336,6 +345,10 @@ All colors MUST be HSL.
     .hero-preview-wrap { min-height: 430px; }
     .hero-preview { top: 1.5rem; width: 92%; }
     .floating-benefit { max-width: 45vw; padding: 0.7rem 0.8rem; font-size: 0.75rem; }
+
+    .web-design-hero-graphic { margin-bottom: 2rem; }
+    .web-design-hero-graphic .hero-preview-wrap { min-height: 360px; transform: scale(0.85); transform-origin: top center; }
+    .web-design-hero-graphic .floating-benefit { font-size: 0.65rem; padding: 0.5rem 0.6rem; }
     .hero-card-one { left: 0; top: 0; }
     .hero-card-two { right: 0; top: -0.5rem; }
     .hero-card-three { bottom: 3.5rem; left: 0; }
