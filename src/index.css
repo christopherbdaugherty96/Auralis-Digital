@@ -261,6 +261,18 @@ All colors MUST be HSL.
   .website-demo-body p { @apply flex-1 text-sm leading-relaxed text-muted-foreground; }
   .website-demo-body strong { @apply mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary; }
 
+  /* ── Products hero banner ────────────────────────── */
+  .products-hero { @apply relative flex min-h-[420px] items-center justify-center overflow-hidden; }
+  .products-hero-bg {
+    @apply absolute inset-0 bg-cover bg-center;
+    background-image: url("/assets/brand/products-hero.jpg");
+  }
+  .products-hero-overlay { @apply absolute inset-0 bg-black/50; }
+  .products-hero-content { @apply relative z-10 py-16 text-center; }
+  .products-hero-content h1 { @apply text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl; }
+  .products-hero-content p { @apply mx-auto mt-4 max-w-xl text-base text-white/80 sm:text-lg; }
+  .products-hero-content .cta-row { @apply mt-8; }
+
   /* ── Product catalog ────────────────────────────── */
   .shop-preview { @apply overflow-hidden; }
   .product-catalog-section { @apply mt-8; }
@@ -353,6 +365,11 @@ All colors MUST be HSL.
     .hero-card-two { right: 0; top: -0.5rem; }
     .hero-card-three { bottom: 3.5rem; left: 0; }
     .hero-card-four { bottom: 1.25rem; right: 0; }
+
+    .products-hero { min-height: 320px; }
+    .products-hero-bg { background-position: center 40%; }
+    .products-hero-content h1 { font-size: 1.75rem; }
+    .products-hero-content p { font-size: 0.9375rem; }
 
     .content-section { padding-top: 3rem; padding-bottom: 3rem; }
     .section-band { padding-top: 2.5rem; padding-bottom: 2.5rem; }

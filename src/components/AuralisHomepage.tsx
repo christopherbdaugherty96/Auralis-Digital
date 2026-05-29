@@ -1094,6 +1094,26 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         {isPolicyPage && <PolicyPageContent page={page as PolicyPage} />}
 
         {isShop && (
+        <>
+        <section className="products-hero" aria-label="Auralis Digital Products">
+          <div className="products-hero-bg" role="img" aria-label="Sacred geometry Metatron's Cube artwork" />
+          <div className="products-hero-overlay" />
+          <div className="site-shell products-hero-content">
+            <Reveal>
+              <h1>Auralis Digital Products</h1>
+              <p>Sacred geometry, psychedelic art, festival-inspired designs, and custom creations.</p>
+              <div className="cta-row centered">
+                <Button variant="conversion" size="xl" asChild>
+                  <a href="#shop">Shop Collection <ArrowRight aria-hidden="true" /></a>
+                </Button>
+                <Button variant="conversionOutline" size="xl" asChild>
+                  <a href="/custom-design">Request Custom Design</a>
+                </Button>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
           <div className="site-shell">
             <Reveal className="section-heading">
@@ -1119,6 +1139,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             </Reveal>
           </div>
         </section>
+        </>
         )}
 
         {/* ── Pour Social (simple redirect page) ─────────── */}
