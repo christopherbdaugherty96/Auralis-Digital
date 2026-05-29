@@ -1062,7 +1062,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <div className="icon-tile mb-0"><Wine aria-hidden="true" /></div>
                   <div>
                     <h3 className="mb-0">Pour Social</h3>
-                    <p>Mobile bartending &amp; event bar planning for Southeast Michigan.</p>
+                    <p>Mobile BYOB bar service coming soon.</p>
                   </div>
                 </div>
                 <div className="flex shrink-0 gap-3">
@@ -1125,9 +1125,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
+              <span className="section-label coming-soon-badge">Coming Soon</span>
               <div className="icon-tile large"><Wine aria-hidden="true" /></div>
               <h2>Pour Social</h2>
-              <p className="mt-4">Mobile bartending and event bar planning for Southeast Michigan.</p>
+              <p className="mt-4">Mobile BYOB bar service for Southeast Michigan.</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="xl" asChild>
                   <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">

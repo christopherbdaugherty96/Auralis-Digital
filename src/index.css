@@ -157,6 +157,7 @@ All colors MUST be HSL.
   .hero-copy { @apply max-w-3xl animate-fade-up; }
   .eyebrow { @apply mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent; }
   .section-label { @apply mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary; }
+  .coming-soon-badge { @apply rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-primary; }
   .hero-copy h1 { @apply max-w-4xl text-4xl font-extrabold leading-[0.96] text-foreground sm:text-5xl lg:text-6xl; overflow-wrap: anywhere; }
   .hero-subhead { @apply mt-6 max-w-xl text-base font-normal leading-relaxed text-muted-foreground sm:text-lg; }
   .cta-row { @apply mt-8 flex flex-col gap-3 sm:flex-row; }
