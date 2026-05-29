@@ -216,21 +216,38 @@ All colors MUST be HSL.
   .shop-faq-item h3 { @apply mb-2 text-sm font-semibold text-foreground; }
   .shop-faq-item p { @apply text-sm leading-relaxed text-muted-foreground; }
 
-  /* ── Offering card previews ─────────────────────── */
-  .offering-card-preview { @apply mb-4 overflow-hidden rounded-xl; }
-  .offering-product-thumbs { @apply grid grid-cols-3 gap-2; }
-  .offering-product-thumbs img { @apply aspect-square w-full rounded-lg object-cover; }
+  /* ── Homepage offering tiles ────────────────────── */
+  .home-tiles { @apply grid gap-5 sm:grid-cols-2; }
+  .home-tile-wide { @apply sm:col-span-2; }
+  .home-tile-inner {
+    @apply block overflow-hidden rounded-2xl border border-border/30 bg-card/40 text-foreground no-underline transition-all duration-300;
+  }
+  .home-tile-inner:hover { @apply -translate-y-1 border-primary/25 bg-card/55 shadow-soft; }
+  .home-tile-inner > img { @apply aspect-[16/10] w-full object-cover; }
+  .home-tile-img-row { @apply grid grid-cols-4 gap-0.5; }
+  .home-tile-img-row img { @apply aspect-square w-full object-cover; }
+  .home-tile-body { @apply p-5; }
+  .home-tile-body h3 { @apply mt-2 text-lg font-bold; }
+  .home-tile-body p { @apply mt-1 text-sm leading-relaxed text-muted-foreground; }
+  .home-tile-link { @apply mt-3 inline-flex items-center gap-2 text-sm font-semibold text-primary; }
 
-  .device-mockup-wrap { @apply relative flex items-end justify-center gap-0 rounded-xl bg-[image:var(--gradient-ink)] p-5 pb-0 overflow-hidden; min-height: 11rem; }
-  .device-desktop { @apply relative w-[72%] shrink-0 overflow-hidden rounded-t-lg border border-b-0 border-primary-foreground/20 bg-card/90; }
-  .device-desktop-bar { @apply flex items-center gap-1.5 px-3 py-2 bg-card/80 border-b border-primary-foreground/10; }
-  .device-desktop-bar span { @apply h-2 w-2 rounded-full bg-muted/60; }
-  .device-desktop img { @apply aspect-[16/10] w-full object-cover object-top; }
-  .device-phone { @apply relative -ml-6 w-[26%] shrink-0 self-end overflow-hidden rounded-t-xl border border-b-0 border-primary-foreground/20 bg-card/90; }
-  .device-phone-notch { @apply mx-auto mt-2 mb-1 h-1 w-8 rounded-full bg-muted/50; }
-  .device-phone img { @apply aspect-[9/16] w-full object-cover object-top; }
+  /* ── Homepage featured products ────────────────── */
+  .home-featured-grid { @apply grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6; }
+  .home-featured-card {
+    @apply block overflow-hidden rounded-xl border border-border/30 bg-card/40 text-foreground no-underline transition-all duration-300;
+  }
+  .home-featured-card:hover { @apply -translate-y-1 border-primary/25 shadow-soft; }
+  .home-featured-card img { @apply aspect-square w-full object-cover; }
+  .home-featured-card-body { @apply p-3; }
+  .home-featured-card-body h3 { @apply text-xs font-semibold leading-tight; line-height: 1.35; }
+  .home-featured-card-body p { @apply mt-1 text-xs font-bold text-primary; }
 
-  .offering-custom-artwork { @apply aspect-[16/10] w-full rounded-xl bg-background object-cover object-center; }
+  /* ── Homepage split section ────────────────────── */
+  .home-split { @apply grid items-center gap-8 lg:grid-cols-2 lg:gap-12; }
+  .home-split-media img { @apply w-full rounded-2xl object-cover; aspect-ratio: 1; }
+  .home-split-content { @apply flex flex-col gap-4; }
+  .home-split-content h2 { @apply text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl; }
+  .home-split-content p { @apply text-base leading-relaxed text-muted-foreground; }
 
   /* ── Demo cards (border glow on hover) ─────────── */
   .website-demo-grid { @apply grid gap-5 sm:grid-cols-2 xl:grid-cols-3; }

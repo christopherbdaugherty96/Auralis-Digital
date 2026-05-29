@@ -32,37 +32,20 @@ const EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "auralisdigitaleco@gmail.com
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}`;
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 
-const homeOfferings = [
-  {
-    title: "Products",
-    copy: "Original artwork on tees, hoodies, blankets, tapestries, and more. Checkout through Shopify.",
-    href: "/products",
-    cta: "Explore Products",
-    icon: Store,
-    preview: "products" as const,
-  },
-  {
-    title: "Website Design",
-    copy: "Mobile-first websites for small businesses and local brands that need to look credible and get contacted.",
-    href: "/web-design",
-    cta: "Website Design",
-    icon: MonitorSmartphone,
-    preview: "device-mockup" as const,
-  },
-  {
-    title: "Custom Design",
-    copy: "Turn an idea, image, phrase, or theme into a personalized design or product concept.",
-    href: "/custom-design",
-    cta: "Request Custom Design",
-    icon: Sparkles,
-    preview: "custom-artwork" as const,
-  },
+const HOMEPAGE_FEATURED_SLUGS = [
+  "sun-of-life-wall-tapestry",
+  "psychedelic-ying-yang-woven-blanket",
+  "micro-or-macro-t-shirt",
+  "snapback-trucker-cap-with-patch-embroidery",
+  "oval-necklace",
+  "zeus-journal-matte",
 ];
 
-const HOMEPAGE_PREVIEW_SLUGS = [
+const HOMEPAGE_TILE_SLUGS = [
+  "sun-of-life-wall-tapestry",
+  "psychedelic-ying-yang-woven-blanket",
   "micro-or-macro-t-shirt",
-  "micro-or-macro-v2-nublend-crewneck-sweatshirt",
-  "treehugger-softstyle-t-shirt",
+  "geometric-dad-cap",
 ];
 
 const CUSTOM_DESIGN_PREVIEW = {
@@ -582,34 +565,6 @@ function ProductCatalogGrid() {
   );
 }
 
-function DeviceMockup() {
-  return (
-    <div className="device-mockup-wrap">
-      <div className="device-desktop">
-        <div className="device-desktop-bar"><span /><span /><span /></div>
-        <img
-          src="/assets/demo-thumbnails/restaurant.svg"
-          alt="Restaurant website demo — desktop view"
-          loading="lazy"
-          decoding="async"
-          width={800}
-          height={500}
-        />
-      </div>
-      <div className="device-phone">
-        <div className="device-phone-notch" />
-        <img
-          src="/assets/demo-thumbnails/barbershop.svg"
-          alt="Barbershop website demo — mobile view"
-          loading="lazy"
-          decoding="async"
-          width={360}
-          height={640}
-        />
-      </div>
-    </div>
-  );
-}
 
 
 function PolicyPageContent({ page }: { page: PolicyPage }) {
@@ -944,70 +899,137 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
 
-        {/* ── Lanes ───────────────────────────────────────── */}
+        {/* ── Offering tiles ─────────────────────────────── */}
         <section className="content-section">
           <div className="site-shell">
-            <Reveal className="section-heading">
-              <h2>What Auralis offers.</h2>
+            <div className="home-tiles">
+              <Reveal className="home-tile home-tile-wide">
+                <a href="/products" className="home-tile-inner">
+                  <div className="home-tile-img-row">
+                    {HOMEPAGE_TILE_SLUGS.map((slug) => {
+                      const p = shopProducts.find((x) => x.slug === slug);
+                      return p ? (
+                        <img key={slug} src={p.imageUrl} alt={p.altText} loading="lazy" decoding="async" width={400} height={400} />
+                      ) : null;
+                    })}
+                  </div>
+                  <div className="home-tile-body">
+                    <Store className="size-5 text-primary" aria-hidden="true" />
+                    <h3>Products</h3>
+                    <p>Sacred geometry, psychedelic art, and custom designs on apparel, blankets, wall art, and more.</p>
+                    <span className="home-tile-link">Shop Products <ArrowRight className="size-4" aria-hidden="true" /></span>
+                  </div>
+                </a>
+              </Reveal>
+              <Reveal className="home-tile">
+                <a href="/web-design" className="home-tile-inner">
+                  <img
+                    src="/assets/brand/web-design-banner.jpg"
+                    alt="Auralis Digital website design services"
+                    loading="lazy"
+                    decoding="async"
+                    width={600}
+                    height={375}
+                  />
+                  <div className="home-tile-body">
+                    <MonitorSmartphone className="size-5 text-primary" aria-hidden="true" />
+                    <h3>Website Design</h3>
+                    <p>Mobile-first websites for small businesses and local brands.</p>
+                    <span className="home-tile-link">Website Design <ArrowRight className="size-4" aria-hidden="true" /></span>
+                  </div>
+                </a>
+              </Reveal>
+              <Reveal className="home-tile">
+                <a href="/custom-design" className="home-tile-inner">
+                  <img
+                    src={CUSTOM_DESIGN_OFFERING_PREVIEW.imageUrl}
+                    alt={CUSTOM_DESIGN_OFFERING_PREVIEW.altText}
+                    loading="lazy"
+                    decoding="async"
+                    width={600}
+                    height={375}
+                  />
+                  <div className="home-tile-body">
+                    <Sparkles className="size-5 text-primary" aria-hidden="true" />
+                    <h3>Custom Design</h3>
+                    <p>Turn any idea, image, or theme into a personalized design.</p>
+                    <span className="home-tile-link">Request Design <ArrowRight className="size-4" aria-hidden="true" /></span>
+                  </div>
+                </a>
+              </Reveal>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Featured products ───────────────────────────── */}
+        <section className="section-band home-featured-section">
+          <div className="site-shell">
+            <Reveal className="section-heading compact">
+              <span className="section-label">Featured</span>
+              <h2>Popular products.</h2>
             </Reveal>
-            <div className="grid gap-5 md:grid-cols-3">
-              {homeOfferings.map((offering) => {
-                const previewProducts = offering.preview === "products"
-                  ? HOMEPAGE_PREVIEW_SLUGS.map((s) => shopProducts.find((p) => p.slug === s)).filter(Boolean) as ShopProduct[]
-                  : [];
-                const offeringDesignPreview = offering.preview === "custom-artwork"
-                  ? CUSTOM_DESIGN_OFFERING_PREVIEW
-                  : undefined;
+            <div className="home-featured-grid">
+              {HOMEPAGE_FEATURED_SLUGS.map((slug) => {
+                const p = shopProducts.find((x) => x.slug === slug);
+                if (!p) return null;
                 return (
-                  <Reveal key={offering.title} className="service-card flex flex-col gap-4">
-                    {offering.preview === "products" && previewProducts.length > 0 && (
-                      <div className="offering-card-preview">
-                        <div className="offering-product-thumbs">
-                          {previewProducts.map((product) => (
-                            <img
-                              key={product.slug}
-                              src={product.imageUrl}
-                              alt={product.altText}
-                              loading="lazy"
-                              decoding="async"
-                              width={400}
-                              height={400}
-                            />
-                          ))}
-                        </div>
+                  <Reveal key={slug}>
+                    <a
+                      href={p.shopifyTrackingUrl}
+                      className="home-featured-card"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${p.title} on Shopify`}
+                    >
+                      <img src={p.imageUrl} alt={p.altText} loading="lazy" decoding="async" width={400} height={400} />
+                      <div className="home-featured-card-body">
+                        <h3>{p.title}</h3>
+                        <p>{p.price}</p>
                       </div>
-                    )}
-                    {offering.preview === "device-mockup" && (
-                      <div className="offering-card-preview">
-                        <DeviceMockup />
-                      </div>
-                    )}
-                    {offering.preview === "custom-artwork" && offeringDesignPreview && (
-                      <div className="offering-card-preview">
-                        <img
-                          className="offering-custom-artwork"
-                          src={offeringDesignPreview.imageUrl}
-                          alt={offeringDesignPreview.altText}
-                          loading="lazy"
-                          decoding="async"
-                          width={600}
-                          height={420}
-                        />
-                      </div>
-                    )}
-                    <h3>{offering.title}</h3>
-                    <p>{offering.copy}</p>
-                    <a href={offering.href} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
-                      {offering.cta} <ArrowRight className="size-4" aria-hidden="true" />
                     </a>
                   </Reveal>
                 );
               })}
             </div>
+            <Reveal>
+              <div className="cta-row centered" style={{ marginTop: "2rem" }}>
+                <Button variant="conversion" size="lg" asChild>
+                  <a href="/products">Shop All {shopProducts.length} Products <ArrowRight aria-hidden="true" /></a>
+                </Button>
+              </div>
+            </Reveal>
           </div>
         </section>
 
-        {/* ── Pour Social feature card ────────────────────── */}
+        {/* ── Custom design showcase ─────────────────────── */}
+        <section className="content-section">
+          <div className="site-shell">
+            <Reveal className="home-split">
+              <div className="home-split-media">
+                <img
+                  src={CUSTOM_DESIGN_PREVIEW.imageUrl}
+                  alt={CUSTOM_DESIGN_PREVIEW.altText}
+                  loading="lazy"
+                  decoding="async"
+                  width={600}
+                  height={600}
+                />
+              </div>
+              <div className="home-split-content">
+                <span className="section-label"><Sparkles className="size-4" aria-hidden="true" /> Custom Design</span>
+                <h2>Turn your idea into a real design.</h2>
+                <p>Send an image, phrase, symbol, or theme. Auralis reviews scope and confirms pricing before work begins.</p>
+                <div>
+                  <Button variant="conversion" size="lg" asChild>
+                    <a href="/custom-design">Start a Request <ArrowRight aria-hidden="true" /></a>
+                  </Button>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* ── Pour Social ────────────────────────────────── */}
         <section className="section-band">
           <div className="site-shell">
             <Reveal>
@@ -1029,14 +1051,32 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
 
-        {/* ── About (homepage) ────────────────────────────── */}
+        {/* ── About ──────────────────────────────────────── */}
         <section id="about" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
               <h2>Auralis Digital</h2>
               <p className="mt-4">
-                Products, website creation, custom designs, and services — built and managed by Christopher Daugherty in Southeast Michigan.
+                Products, custom designs, and website services — built and managed by Christopher Daugherty in Southeast Michigan.
               </p>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* ── Final CTA ──────────────────────────────────── */}
+        <section className="final-cta-section">
+          <div className="site-shell">
+            <Reveal className="final-cta">
+              <h2>Ready to start?</h2>
+              <p>Browse products, request a custom design, or start a website project.</p>
+              <div className="cta-row centered">
+                <Button variant="conversion" size="xl" asChild>
+                  <a href="/products">Shop Products <ArrowRight aria-hidden="true" /></a>
+                </Button>
+                <Button variant="conversionOutline" size="xl" asChild>
+                  <a href="/custom-design">Request Design</a>
+                </Button>
+              </div>
             </Reveal>
           </div>
         </section>
