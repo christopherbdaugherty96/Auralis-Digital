@@ -298,6 +298,8 @@ All colors MUST be HSL.
   .footer-brand { @apply text-base font-black tracking-tight text-foreground; }
   .footer-label { @apply mb-3 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground; }
   .footer-link { @apply text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground; }
+  .footer-qr-link { @apply mt-4 inline-block; }
+  .footer-qr { @apply rounded-lg bg-white p-1 shadow-soft; }
   .footer-copyright { @apply mt-10 border-t border-border/30 pt-6 text-center text-xs text-muted-foreground; }
 
   /* ── Form inputs ────────────────────────────────── */

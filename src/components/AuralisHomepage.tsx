@@ -1596,6 +1596,23 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <a href={MAILTO} className="footer-link break-all">{EMAIL}</a>
                   <p className="text-sm text-muted-foreground">Southeast Michigan</p>
                 </div>
+                <a
+                  href="https://www.instagram.com/auralis_digital_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-qr-link"
+                  aria-label="Follow Auralis Digital on Instagram"
+                >
+                  <img
+                    src="/assets/brand/instagram-qr.png"
+                    alt="Auralis Digital Instagram QR code"
+                    width={96}
+                    height={96}
+                    loading="lazy"
+                    decoding="async"
+                    className="footer-qr"
+                  />
+                </a>
               </div>
             </div>
             <div className="footer-copyright">
