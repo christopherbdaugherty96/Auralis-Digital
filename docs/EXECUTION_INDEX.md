@@ -14,12 +14,13 @@ The goal is to keep the repo operationally coherent while moving toward:
 business setup -> trust setup -> lead capture -> outreach -> first client -> proof -> retention
 ```
 
-Auralis currently contains two public surfaces:
+Auralis currently contains three main public surfaces, plus Pour Social as a separate service route:
 
-1. Auralis Digital website services
-2. Auralis Design shop/product surface
+1. Auralis Design products (catalog + Shopify checkout)
+2. Custom / personalized design requests
+3. Website design services
 
-Website services remain the primary execution priority.
+Pour Social has its own route (`/pour-social`) as an external service brand.
 
 The product/shop surface exists publicly but is not considered fully commerce-mature until commerce readiness is verified.
 

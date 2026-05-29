@@ -124,15 +124,7 @@ Current Sprint 01 campaign:
 
 ## Sacred Geometry / Psychedelic Product Focus
 
-Candidate product focus:
-
-1. Sun of Life Wall Tapestry
-2. Sun of Life Woven Blanket
-3. Sun of Life Notebook - Ruled Line
-4. Zeus Journal Matte
-5. Zeus Woven Blanket or Zeus Sherpa Blanket
-
-A new Cosmic Balance / yin-yang / sacred-geometry product set can replace this list if its mockups, product pages, and Shopify checkout path are cleaner.
+The website catalog now contains 27 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
 
 Pre-launch tasks:
 
@@ -256,7 +248,7 @@ Goal: keep the custom-design request flow available and connected to the correct
 
 - [ ] Confirm custom-design inquiry flow works on desktop and phone.
 - [x] Confirm custom-design request boundaries are visible publicly.
-- [x] Add clear price anchors to custom design page (Simple $25 / Standard $50 / Premium $100+).
+- ~~Add clear price anchors to custom design page.~~ Removed — public pricing tiers were intentionally deleted. Do not re-add.
 - [ ] Confirm pricing/revision expectations are not misleading.
 - [ ] Confirm file-transfer/reference-image workflow.
 - [ ] Confirm delivery/export workflow.

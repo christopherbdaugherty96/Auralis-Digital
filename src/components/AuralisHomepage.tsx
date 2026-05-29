@@ -976,7 +976,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
               <h1>Products, website creation, custom designs, and services.</h1>
               <p className="hero-subhead">
-                Original products, custom designs, mobile-first website creation, and service brands like Pour Social — built by Christopher Daugherty.
+                Products, custom design, websites, and Pour Social — all in one place, built by Christopher Daugherty.
               </p>
               <div className="cta-row">
                 <Button variant="conversion" size="xl" asChild>
