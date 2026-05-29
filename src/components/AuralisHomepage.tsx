@@ -36,7 +36,7 @@ const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 const homeOfferings = [
   {
     title: "Products",
-    copy: "Original designs on blankets, journals, wall decor, hats, jewelry, and apparel. Checkout through Shopify.",
+    copy: "Original artwork on tees, crewnecks, tapestries, and more. Checkout through Shopify.",
     href: "/products",
     cta: "Explore Products",
     icon: Store,
@@ -61,12 +61,12 @@ const homeOfferings = [
 ];
 
 const HOMEPAGE_PREVIEW_SLUGS = [
-  "psychedelic-ying-yang-tan-sherpa-blanket",
-  "oval-necklace",
-  "sun-of-life-wall-tapestry",
+  "micro-or-macro-t-shirt",
+  "micro-or-macro-v2-nublend-crewneck-sweatshirt",
+  "treehugger-softstyle-t-shirt",
 ];
 
-const CUSTOM_DESIGN_PREVIEW_SLUG = "woven-blanket";
+const CUSTOM_DESIGN_PREVIEW_SLUG = "copy-of-indoor-wall-tapestry";
 
 const customRequestTypes = [
   "Personal artwork",
@@ -524,12 +524,7 @@ function ProductCard({ product }: { product: ShopProduct }) {
 
 const preferredProductCategoryOrder = [
   "Apparel",
-  "Blankets",
-  "Journals & Notebooks",
   "Wall Decor",
-  "Hats",
-  "Jewelry & Accessories",
-  "Home Decor",
 ];
 
 const productCategories = [
