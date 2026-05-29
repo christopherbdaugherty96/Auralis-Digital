@@ -534,6 +534,7 @@ const preferredProductCategoryOrder = [
   "Blankets",
   "Wall Decor",
   "Hats",
+  "Home Decor",
   "Jewelry & Accessories",
   "Journals & Notebooks",
 ];
