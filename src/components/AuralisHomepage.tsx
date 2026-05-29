@@ -716,14 +716,14 @@ function ContactForm() {
   );
 }
 
-const TOP_NAV_LINKS = [
-  { label: "Pour Social", href: "https://pour-social.vercel.app", external: true },
-  { label: "Products", href: "/products", external: false },
-];
-
-const MENU_LINKS = [
+const NAV_LINKS = [
+  { label: "Products", href: "/products" },
   { label: "Website Design", href: "/web-design" },
   { label: "Custom Design", href: "/custom-design" },
+  { label: "Pour Social", href: "https://pour-social.vercel.app", external: true },
+];
+
+const SECONDARY_NAV_LINKS = [
   { label: "Contact", href: "/custom-design#contact" },
   { label: "About", href: "/#about" },
 ];
@@ -813,25 +813,33 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
     <>
       {/* ── Nav ───────────────────────────────────────────── */}
       <header className="site-nav">
-        <div className="site-shell flex items-center justify-between py-3.5">
-          <a href="/" className="text-lg font-black tracking-tight text-foreground" onClick={() => setMobileOpen(false)}>
-            AURALIS DIGITAL
+        <div className="site-shell nav-bar">
+          <a href="/" className="nav-brand" onClick={() => setMobileOpen(false)}>
+            <img
+              src="/assets/brand/auralis-logo.jpg"
+              alt=""
+              className="nav-logo"
+              width={32}
+              height={32}
+              decoding="async"
+            />
+            <span>AURALIS DIGITAL</span>
           </a>
-          <div className="flex items-center gap-5 lg:gap-7">
-            <nav className="hidden items-center gap-5 lg:gap-7 sm:flex" aria-label="Main navigation">
-              {TOP_NAV_LINKS.map((l) => (
+          <div className="nav-right">
+            <nav className="nav-desktop" aria-label="Main navigation">
+              {NAV_LINKS.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
-                  className="text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground"
-                  {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="nav-link"
+                  {...("external" in l && l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 >
                   {l.label}
                 </a>
               ))}
             </nav>
             <button
-              className="rounded-lg p-2 text-foreground transition-colors hover:bg-card"
+              className="nav-hamburger"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((o) => !o)}
@@ -841,24 +849,25 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </div>
         {mobileOpen && (
-          <div className="border-t border-border/30 bg-background/95 backdrop-blur-xl">
-            <nav className="site-shell flex flex-col gap-1 py-4" aria-label="Menu">
-              {TOP_NAV_LINKS.map((l) => (
+          <div className="nav-mobile-menu">
+            <nav className="site-shell nav-mobile-inner" aria-label="Menu">
+              {NAV_LINKS.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
-                  className="rounded-lg px-3 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-card hover:text-foreground sm:hidden"
+                  className="nav-mobile-link"
                   onClick={() => setMobileOpen(false)}
-                  {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  {...("external" in l && l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 >
                   {l.label}
                 </a>
               ))}
-              {MENU_LINKS.map((l) => (
+              <div className="nav-mobile-divider" />
+              {SECONDARY_NAV_LINKS.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
-                  className="rounded-lg px-3 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-card hover:text-foreground"
+                  className="nav-mobile-link nav-mobile-secondary"
                   onClick={() => setMobileOpen(false)}
                 >
                   {l.label}
@@ -1587,19 +1596,29 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="site-footer relative">
+        <footer className="site-footer">
           <div className="site-shell">
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="lg:col-span-1">
-                <p className="footer-brand">AURALIS DIGITAL</p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Products, website creation, custom designs, and services.
+            <div className="footer-grid">
+              <div className="footer-brand-col">
+                <a href="/" className="footer-brand">
+                  <img
+                    src="/assets/brand/auralis-logo.jpg"
+                    alt=""
+                    className="footer-logo"
+                    width={36}
+                    height={36}
+                    decoding="async"
+                  />
+                  <span>AURALIS DIGITAL</span>
+                </a>
+                <p className="footer-tagline">
+                  Creative products, custom design, and website services.
                 </p>
               </div>
               <div>
                 <p className="footer-label">Explore</p>
-                <div className="flex flex-col gap-2">
-                  {[...TOP_NAV_LINKS, ...MENU_LINKS].map((link) => (
+                <div className="footer-links">
+                  {NAV_LINKS.map((link) => (
                     <a
                       key={link.href}
                       href={link.href}
@@ -1612,17 +1631,25 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </div>
               </div>
               <div>
-                <p className="footer-label">Policies</p>
-                <div className="flex flex-col gap-2">
+                <p className="footer-label">Support</p>
+                <div className="footer-links">
+                  <a href={MAILTO} className="footer-link break-all">{EMAIL}</a>
                   {POLICY_LINKS.map((link) => (
                     <a key={link.label} href={link.href} className="footer-link">{link.label}</a>
                   ))}
                 </div>
               </div>
               <div>
-                <p className="footer-label">Contact</p>
-                <div className="flex flex-col gap-2">
-                  <a href={MAILTO} className="footer-link break-all">{EMAIL}</a>
+                <p className="footer-label">Connect</p>
+                <div className="footer-links">
+                  <a
+                    href="https://www.instagram.com/auralis_digital_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-link"
+                  >
+                    <Instagram className="size-4" aria-hidden="true" /> Instagram
+                  </a>
                   <p className="text-sm text-muted-foreground">Southeast Michigan</p>
                 </div>
                 <a
@@ -1644,18 +1671,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </a>
               </div>
             </div>
-            <div className="footer-copyright">
+            <div className="footer-bottom">
               <p>&copy; {new Date().getFullYear()} Auralis Digital. All rights reserved.</p>
-              <a
-                href="https://www.instagram.com/auralis_digital_/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Auralis Digital on Instagram"
-                title="Auralis Digital on Instagram"
-                className="footer-social-icon"
-              >
-                <Instagram aria-hidden="true" />
-              </a>
+              <p className="footer-checkout-note">Product checkout handled through Shopify.</p>
             </div>
           </div>
         </footer>

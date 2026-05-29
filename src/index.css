@@ -148,8 +148,21 @@ All colors MUST be HSL.
   .site-shell { @apply relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
 
   /* ── Nav ─────────────────────────────────────────── */
-  .site-nav { @apply sticky top-0 z-50 border-b border-border/40 bg-background/85 backdrop-blur-xl; }
+  .site-nav { @apply sticky top-0 z-50 border-b border-border/40 bg-background/90 backdrop-blur-2xl; }
   .site-nav::before { @apply absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent; content: ""; }
+  .nav-bar { @apply flex items-center justify-between py-3; }
+  .nav-brand { @apply flex items-center gap-2.5 text-foreground no-underline; }
+  .nav-brand span { @apply text-base font-black tracking-tight; }
+  .nav-logo { @apply size-8 rounded-full object-cover; }
+  .nav-right { @apply flex items-center gap-1; }
+  .nav-desktop { @apply hidden items-center gap-1 md:flex; }
+  .nav-link { @apply rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors duration-200 hover:bg-card/60 hover:text-foreground; }
+  .nav-hamburger { @apply rounded-lg p-2.5 text-muted-foreground transition-colors duration-200 hover:bg-card/60 hover:text-foreground; }
+  .nav-mobile-menu { @apply border-t border-border/20 bg-background/95 backdrop-blur-2xl; }
+  .nav-mobile-inner { @apply flex flex-col gap-0.5 py-3; }
+  .nav-mobile-link { @apply rounded-lg px-4 py-3 text-base font-medium text-muted-foreground transition-colors duration-150 hover:bg-card/60 hover:text-foreground; }
+  .nav-mobile-secondary { @apply text-muted-foreground/70; }
+  .nav-mobile-divider { @apply my-1 h-px bg-border/20; }
 
   /* ── Hero ────────────────────────────────────────── */
   .hero-section { @apply relative py-16 sm:py-20 lg:py-24; }
@@ -312,16 +325,21 @@ All colors MUST be HSL.
   .final-cta p { @apply mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-primary-foreground/70; }
 
   /* ── Footer ──────────────────────────────────────── */
-  .site-footer { @apply border-t border-border/50 bg-background/60 py-12 backdrop-blur-sm; }
+  .site-footer { @apply relative border-t border-border/50 bg-card/15 py-14 backdrop-blur-sm; }
   .site-footer::before { @apply absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border/40 to-transparent; content: ""; }
-  .footer-brand { @apply text-base font-black tracking-tight text-foreground; }
-  .footer-label { @apply mb-3 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground; }
-  .footer-link { @apply text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground; }
+  .footer-grid { @apply grid gap-10 sm:grid-cols-2 lg:grid-cols-4; }
+  .footer-brand-col { @apply lg:col-span-1; }
+  .footer-brand { @apply inline-flex items-center gap-2.5 text-foreground no-underline; }
+  .footer-brand span { @apply text-base font-black tracking-tight; }
+  .footer-logo { @apply size-9 rounded-full object-cover; }
+  .footer-tagline { @apply mt-3 text-sm leading-relaxed text-muted-foreground; }
+  .footer-label { @apply mb-3 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground/80; }
+  .footer-links { @apply flex flex-col gap-2; }
+  .footer-link { @apply inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground; }
   .footer-qr-link { @apply mt-4 inline-block; }
   .footer-qr { @apply rounded-lg bg-white p-1 shadow-soft; }
-  .footer-copyright { @apply mt-10 border-t border-border/30 pt-6 text-center text-xs text-muted-foreground; }
-  .footer-social-icon { @apply mt-3 inline-flex items-center justify-center rounded-full p-2 text-muted-foreground transition-colors duration-200 hover:text-foreground; }
-  .footer-social-icon svg { @apply size-5; }
+  .footer-bottom { @apply mt-10 border-t border-border/20 pt-6 text-center text-xs text-muted-foreground; }
+  .footer-checkout-note { @apply mt-1 text-muted-foreground/60; }
 
   /* ── Form inputs ────────────────────────────────── */
   .form-input { @apply mt-1 mb-4 block w-full rounded-lg border border-border/80 bg-background/80 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 transition-colors duration-200 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20; }
@@ -415,6 +433,6 @@ All colors MUST be HSL.
     .hero-subhead { overflow-wrap: anywhere; }
 
     .service-card, .process-step { padding: 1.25rem; }
-    .footer-copyright { margin-top: 2rem; padding-top: 1.5rem; }
+    .footer-bottom { margin-top: 2rem; padding-top: 1.5rem; }
   }
 }
