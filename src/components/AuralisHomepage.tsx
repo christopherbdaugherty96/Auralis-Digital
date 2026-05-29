@@ -987,7 +987,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </Button>
               </div>
             </div>
-            <HeroPreviewGraphic />
           </div>
         </section>
 
@@ -1210,6 +1209,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <a href="#contact">Start a Request</a>
                 </Button>
               </div>
+            </Reveal>
+            <Reveal className="web-design-hero-graphic">
+              <HeroPreviewGraphic />
             </Reveal>
             <div className="service-grid">
               {services.map((service) => {
