@@ -36,7 +36,7 @@ const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 const homeOfferings = [
   {
     title: "Products",
-    copy: "Original artwork on tees, crewnecks, tapestries, and more. Checkout through Shopify.",
+    copy: "Original artwork on tees, hoodies, blankets, tapestries, and more. Checkout through Shopify.",
     href: "/products",
     cta: "Explore Products",
     icon: Store,
@@ -531,7 +531,11 @@ function ProductCard({ product }: { product: ShopProduct }) {
 
 const preferredProductCategoryOrder = [
   "Apparel",
+  "Blankets",
   "Wall Decor",
+  "Hats",
+  "Jewelry & Accessories",
+  "Journals & Notebooks",
 ];
 
 const productCategories = [
