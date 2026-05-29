@@ -883,7 +883,17 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         {isHome && (
           <>
         {/* ── Hero ────────────────────────────────────────── */}
-        <section className="hero-section">
+        <section className="hero-section hero-has-bg">
+          <div className="hero-bg-wrap" aria-hidden="true">
+            <img
+              src="/assets/brand/auralis-home-hero-bg.jpeg"
+              alt=""
+              className="hero-bg-img"
+              decoding="async"
+              loading="eager"
+            />
+            <div className="hero-bg-overlay" />
+          </div>
           <div className="site-shell hero-centered">
             <img
               src="/assets/brand/auralis-logo.jpg"
@@ -895,7 +905,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             />
             <h1>Auralis Digital</h1>
             <p className="hero-subhead">
-              Products &bull; Custom Design &bull; Website Design
+              Creative products, custom design, and website services in one place.
             </p>
             <div className="cta-row centered">
               <Button variant="conversion" size="xl" asChild>

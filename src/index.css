@@ -166,6 +166,14 @@ All colors MUST be HSL.
 
   /* ── Hero ────────────────────────────────────────── */
   .hero-section { @apply relative py-16 sm:py-20 lg:py-24; }
+  .hero-has-bg { @apply overflow-hidden py-20 sm:py-24 lg:py-28; }
+  .hero-bg-wrap { @apply absolute inset-0; }
+  .hero-bg-img { @apply h-full w-full object-cover; }
+  .hero-bg-overlay { @apply absolute inset-0 bg-background/70 backdrop-blur-[2px]; }
+  .hero-has-bg .hero-centered { @apply relative z-10; }
+  .hero-has-bg .hero-logo { @apply ring-4 ring-background/40 shadow-2xl; }
+  .hero-has-bg h1 { @apply drop-shadow-md; }
+  .hero-has-bg .hero-subhead { @apply text-foreground/80; }
   .hero-grid { @apply grid min-w-0 items-center gap-10 lg:grid-cols-[1fr_0.88fr] lg:gap-16; }
   .hero-centered { @apply flex flex-col items-center text-center animate-fade-up; }
   .hero-logo { @apply mb-8 w-48 h-48 rounded-full object-cover sm:w-56 sm:h-56 lg:w-64 lg:h-64; }
@@ -366,6 +374,7 @@ All colors MUST be HSL.
     .hero-subhead { max-width: calc(100vw - 40px); }
 
     .hero-section { min-height: auto; padding-top: 4rem; }
+    .hero-has-bg { padding-top: 4rem; padding-bottom: 4rem; }
     .hero-logo { width: 10rem; height: 10rem; margin-bottom: 1.5rem; }
     .hero-centered h1 { font-size: 2rem; }
     .hero-copy h1 { font-size: 2rem; line-height: 1.06; text-wrap: wrap; }
