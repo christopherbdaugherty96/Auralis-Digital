@@ -372,10 +372,12 @@ All colors MUST be HSL.
     .hero-card-three { bottom: 3.5rem; left: 0; }
     .hero-card-four { bottom: 1.25rem; right: 0; }
 
-    .products-hero { min-height: 320px; }
+    .products-hero { min-height: 220px; }
     .products-hero-bg { background-position: center 40%; }
-    .products-hero-content h1 { font-size: 1.75rem; }
-    .products-hero-content p { font-size: 0.9375rem; }
+    .products-hero-content { padding-top: 2rem; padding-bottom: 2rem; }
+    .products-hero-content h1 { font-size: 1.5rem; }
+    .products-hero-content p { font-size: 0.875rem; margin-top: 0.5rem; }
+    .products-hero-content .cta-row { margin-top: 1rem; gap: 0.5rem; }
 
     .content-section { padding-top: 3rem; padding-bottom: 3rem; }
     .section-band { padding-top: 2.5rem; padding-bottom: 2.5rem; }

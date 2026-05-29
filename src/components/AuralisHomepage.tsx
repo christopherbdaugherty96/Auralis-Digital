@@ -557,7 +557,7 @@ function ProductCatalogGrid() {
   const filtered = activeCategory === "All" ? shopProducts : shopProducts.filter((p) => p.category === activeCategory);
 
   return (
-    <Reveal className="product-catalog-section">
+    <Reveal id="products-grid" className="product-catalog-section">
       <div className="section-heading compact">
         <span className="section-label">All products</span>
         <h2>Browse every current Auralis Design product.</h2>
@@ -1108,10 +1108,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <h1>Auralis Digital Products</h1>
               <p>Sacred geometry, psychedelic art, festival-inspired designs, and custom creations.</p>
               <div className="cta-row centered">
-                <Button variant="conversion" size="xl" asChild>
-                  <a href="#shop">Shop Collection <ArrowRight aria-hidden="true" /></a>
+                <Button variant="conversion" size="lg" asChild>
+                  <a href="#products-grid">Shop All 27 Products <ArrowRight aria-hidden="true" /></a>
                 </Button>
-                <Button variant="conversionOutline" size="xl" asChild>
+                <Button variant="conversionOutline" size="lg" asChild>
                   <a href="/custom-design">Request Custom Design</a>
                 </Button>
               </div>
