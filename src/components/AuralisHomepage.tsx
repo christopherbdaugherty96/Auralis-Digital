@@ -66,7 +66,14 @@ const HOMEPAGE_PREVIEW_SLUGS = [
   "treehugger-softstyle-t-shirt",
 ];
 
-const CUSTOM_DESIGN_PREVIEW_SLUG = "copy-of-indoor-wall-tapestry";
+const CUSTOM_DESIGN_PREVIEW = {
+  imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/252296532838227647_2048.jpg?v=1779946779",
+  altText: "Custom dog pillow — example of a personalized design",
+};
+const CUSTOM_DESIGN_OFFERING_PREVIEW = {
+  imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2799150508494482362_2048.jpg?v=1779839428",
+  altText: "Pixel Oven woven blanket — commissioned custom design",
+};
 
 const customRequestTypes = [
   "Personal artwork",
@@ -842,7 +849,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   const isWebsites = page === "websites";
   const isPourSocial = page === "pour-social";
   const isPolicyPage = page in policyPages;
-  const customDesignPreviewProduct = shopProducts.find((p) => p.slug === CUSTOM_DESIGN_PREVIEW_SLUG);
+  const customDesignPreview = CUSTOM_DESIGN_PREVIEW;
 
   useEffect(() => {
     const meta = pageMeta[page];
@@ -990,8 +997,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 const previewProducts = offering.preview === "products"
                   ? HOMEPAGE_PREVIEW_SLUGS.map((s) => shopProducts.find((p) => p.slug === s)).filter(Boolean) as ShopProduct[]
                   : [];
-                const customDesignPreview = offering.preview === "custom-artwork"
-                  ? customDesignPreviewProduct
+                const offeringDesignPreview = offering.preview === "custom-artwork"
+                  ? CUSTOM_DESIGN_OFFERING_PREVIEW
                   : undefined;
                 return (
                   <Reveal key={offering.title} className="service-card flex flex-col gap-4">
@@ -1017,12 +1024,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                         <DeviceMockup />
                       </div>
                     )}
-                    {offering.preview === "custom-artwork" && customDesignPreview && (
+                    {offering.preview === "custom-artwork" && offeringDesignPreview && (
                       <div className="offering-card-preview">
                         <img
                           className="offering-custom-artwork"
-                          src={customDesignPreview.imageUrl}
-                          alt={customDesignPreview.altText}
+                          src={offeringDesignPreview.imageUrl}
+                          alt={offeringDesignPreview.altText}
                           loading="lazy"
                           decoding="async"
                           width={600}
@@ -1145,11 +1152,11 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             </Reveal>
             <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-[1.1fr_0.9fr]">
               <Reveal className="service-card min-w-0">
-                {customDesignPreviewProduct && (
+                {customDesignPreview && (
                   <img
                     className="mb-5 aspect-[16/10] w-full max-w-full rounded-xl bg-background object-cover object-center"
-                    src={customDesignPreviewProduct.imageUrl}
-                    alt={customDesignPreviewProduct.altText}
+                    src={customDesignPreview.imageUrl}
+                    alt={customDesignPreview.altText}
                     loading="lazy"
                     decoding="async"
                     width={800}
