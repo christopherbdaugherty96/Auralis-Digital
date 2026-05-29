@@ -5,6 +5,7 @@ import {
   CheckCircle2,
   ClipboardList,
   Hammer,
+  Instagram,
   Leaf,
   MapPin,
   Menu,
@@ -1617,6 +1618,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             </div>
             <div className="footer-copyright">
               <p>&copy; {new Date().getFullYear()} Auralis Digital. All rights reserved.</p>
+              <a
+                href="https://www.instagram.com/auralis_digital_/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Auralis Digital on Instagram"
+                title="Auralis Digital on Instagram"
+                className="footer-social-icon"
+              >
+                <Instagram aria-hidden="true" />
+              </a>
             </div>
           </div>
         </footer>
