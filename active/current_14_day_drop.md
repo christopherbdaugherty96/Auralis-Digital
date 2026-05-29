@@ -31,7 +31,9 @@ Current storefront truth is documented in:
 
 Use Christopher's personal sacred-geometry, psychedelic, symbolic, and cosmic design language for the first focused test.
 
-Select 3-5 strongest products from the current live Shopify/catalog surface before posting traffic. Candidate focus products include:
+The website catalog now contains 27 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
+
+Previous candidate list (may still be valid but should be re-evaluated against the full 27-product catalog):
 
 1. Sun of Life Wall Tapestry
 2. Sun of Life Woven Blanket
@@ -39,7 +41,7 @@ Select 3-5 strongest products from the current live Shopify/catalog surface befo
 4. Zeus Journal Matte
 5. Zeus Woven Blanket or Zeus Sherpa Blanket
 
-A new Cosmic Balance / yin-yang / sacred-geometry design may become the stronger first campaign if the product mockups are ready and checkout/product pages are clean.
+New products added since the original list include tapestries (Inner Presence, Math Equations, Goddess), apparel (Micro or Macro series, TreeHugger, Sid Girl hoodie), hats (Geometric Dad Cap, Trippy Hippy, Tripsitter), and a custom dog pillow. Any of these may be stronger campaign leads.
 
 ## Primary Audience
 

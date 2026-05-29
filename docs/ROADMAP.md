@@ -1,6 +1,6 @@
 # Auralis Digital Roadmap
 
-Last updated: 2026-05-17
+Last updated: 2026-05-29
 
 ## Current Truth
 
@@ -12,18 +12,17 @@ Auralis Digital currently contains three related public surfaces:
 2. custom / personalized design requests
 3. website services for local businesses, creators, and small brands
 
+The website catalog contains 27 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Pour Social has its own route (`/pour-social`) as an external service brand. There is no standalone About page; `/about` redirects to `/#about`. Custom Design pricing tiers were intentionally removed from the public site.
+
 Current execution priority is:
 
 ```text
-temporary Gmail contact path
-custom design inquiry flow
-first real custom design request
-proof
-domain email / trust setup
-then expand to products and website clients
+sacred-geometry storefront truth -> strongest 3-5 product focus -> homepage/collection curation -> checkout/policy verification -> small organic product test -> analytics review -> first real product sale or proof
 ```
 
-Custom design is the first execution lane because it needs less infrastructure than product commerce or full website-client delivery. Products and website services remain active public surfaces, but they should not be treated as more mature than current proof supports.
+The current active execution lane is Shopify storefront pre-launch validation. Products, custom design, and website design are all active public directions, but none should be presented as more mature than current proof supports.
+
+> **Superseded (2026-05-19):** An earlier version of this doc listed custom design as the first execution lane. That was replaced by the storefront pre-launch priority after the product catalog grew to 27 items and the sacred-geometry/psychedelic direction was established.
 
 Reference:
 
@@ -173,9 +172,9 @@ Success criteria:
 The website has real proof, and the sales process becomes easier for the next client.
 ```
 
-## Phase 6 - Commerce Readiness (Only If Shop Surface Remains Active)
+## Phase 6 - Commerce Readiness
 
-Goal: verify the Shopify/Printify product surface before treating it as a mature public commerce operation.
+Goal: verify the Shopify/Printify product surface before treating it as a mature public commerce operation. The shop surface is active (27 products, 7 categories) and is the current execution lane.
 
 Tasks:
 

@@ -1,6 +1,6 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-05-17
+Last updated: 2026-05-29
 
 This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
 
@@ -27,18 +27,15 @@ Auralis Digital currently contains three related public surfaces:
 
 The current React/Vite source reflects the three-pillar direction.
 
+Pour Social has its own route (`/pour-social`) as an external service brand. There is no standalone About page; `/about` redirects to `/#about`. Custom Design pricing tiers were intentionally removed from the public site.
+
 Current execution priority is:
 
 ```text
-temporary Gmail contact path
-custom design proof loop
-domain email / trust setup
-Shopify checkout verification
-first real sale or client
-real proof
+sacred-geometry storefront truth -> strongest 3-5 product focus -> homepage/collection curation -> checkout/policy verification -> small organic product test -> analytics review -> first real product sale or proof
 ```
 
-Website design remains an active Auralis service, but it is no longer the sole core idea. The product and custom-design surfaces are also first-class parts of the public direction.
+The current active execution lane is Shopify storefront pre-launch validation for Auralis Design products. Products, custom design, and website design are all first-class parts of the public direction.
 
 ## What Is Real Right Now
 
@@ -55,8 +52,10 @@ Website design remains an active Auralis service, but it is no longer the sole c
   - `/shipping-policy`
   - `/privacy-policy`
   - `/terms-of-service`
+  - `/pour-social`
+  - `/about` (redirects to `/#about`)
 - The homepage is intended to act as a brand gateway for Products, Custom Design, and Website Design instead of a product catalog.
-- Product/shop catalog data currently lives in `src/data/shopCatalog.ts`.
+- Product/shop catalog data currently lives in `src/data/shopCatalog.ts` (27 products across 7 categories: Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks).
 - Shopify is currently framed as the checkout/payment/order source of truth.
 - Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
 - Auralis Digital local policy/support pages exist for refund, shipping, privacy, and terms guidance.
@@ -129,7 +128,8 @@ The product/shop surface should not be treated as a fully mature commerce operat
 ## Custom Design Operational Gaps
 
 - No completed custom/personalized design request is confirmed in repo truth.
-- Custom design pricing, revision, file-transfer, usage-rights, and delivery workflow still need real-world validation.
+- Public Custom Design pricing tiers were intentionally removed. Pricing is handled per-request.
+- Revision, file-transfer, usage-rights, and delivery workflow still need real-world validation.
 - Custom requests should be reviewed before acceptance, especially when they involve copyrighted characters, logos, unclear usage rights, offensive content, or work that cannot be produced cleanly.
 
 ## Priority Order
@@ -178,10 +178,11 @@ Use `active/NEXT_STEPS_TODO.md` as the active execution checklist.
 Current correct sequence:
 
 1. finish business/contact trust setup
-2. verify live contact/inquiry flow
-3. verify live three-pillar navigation on phone and desktop
-4. publish or verify Shopify-hosted refund, shipping, and terms policies
-5. run Shopify checkout test up to final payment confirmation
-6. choose one first execution lane: product sale, custom design request, or website design client
-7. complete one real transaction or engagement
+2. keep catalog synchronized with Shopify
+3. verify product/category rendering after product additions
+4. improve product copy/images where needed
+5. verify Shopify checkout, policy links, and payment/tax/shipping settings
+6. run small organic product test around sacred-geometry/psychedelic direction
+7. complete one real sale or engagement
 8. collect real proof only after permission or confirmation
+9. continue Website Design page polish separately
