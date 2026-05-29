@@ -167,32 +167,9 @@ All colors MUST be HSL.
   .cta-row { @apply mt-8 flex flex-col gap-3 sm:flex-row; }
   .cta-row.centered { @apply justify-center; }
 
-  /* ── Hero preview graphic ───────────────────────── */
-  .hero-preview-wrap { @apply relative mx-auto min-h-[560px] w-full max-w-[590px] animate-scale-in-soft; }
-  .hero-preview { @apply absolute left-1/2 top-16 w-[86%] -translate-x-1/2 overflow-hidden rounded-[2rem] border border-card/80 bg-card/75 p-4 shadow-soft backdrop-blur-2xl; }
-  .preview-topbar { @apply mb-4 flex gap-2; }
-  .preview-topbar span { @apply h-3 w-3 rounded-full bg-muted; }
-  .preview-hero { @apply grid min-h-64 grid-cols-[1fr_0.62fr] items-end gap-4 rounded-[1.35rem] bg-[image:var(--gradient-ink)] p-6 text-primary-foreground; }
-  .preview-kicker { @apply mb-3 text-xs font-bold uppercase tracking-[0.16em] opacity-75; }
-  .preview-hero h2 { @apply max-w-[13rem] text-3xl font-black leading-none; }
-  .preview-phone { @apply ml-auto h-56 w-32 rounded-[1.8rem] border border-primary-foreground/20 bg-primary-foreground/10 p-3 shadow-2xl; }
-  .phone-speaker { @apply mx-auto mb-4 h-1.5 w-10 rounded-full bg-primary-foreground/30; }
-  .phone-card { @apply mb-3 h-16 rounded-xl bg-primary-foreground/25; }
-  .phone-line { @apply mb-2 h-2 rounded-full bg-primary-foreground/30; }
-  .phone-line.short { @apply w-2/3; }
-  .phone-button { @apply mt-5 h-8 rounded-full bg-accent; }
-  .preview-grid { @apply mt-4 grid grid-cols-3 gap-3; }
-  .preview-panel { @apply h-20 rounded-2xl bg-secondary/70; }
-  .preview-panel.strong { @apply bg-accent/45; }
-  .preview-cta-row { @apply mt-4 flex gap-3; }
-  .preview-cta-row span { @apply h-11 flex-1 rounded-full bg-primary/15; }
-  .floating-benefit { @apply absolute z-20 flex items-center gap-2 rounded-xl border border-border/30 bg-card/80 px-4 py-3 text-sm font-medium text-foreground shadow-soft backdrop-blur-2xl animate-float; }
-  .floating-benefit svg { @apply size-4 text-primary; }
-  .hero-card-one { @apply left-0 top-10; }
-  .hero-card-two { @apply right-0 top-8; animation-delay: 0.2s; }
-  .hero-card-three { @apply bottom-20 left-4; animation-delay: 0.4s; }
-  .hero-card-four { @apply bottom-10 right-2; animation-delay: 0.6s; }
-  .web-design-hero-graphic { @apply mx-auto mt-8 mb-12 max-w-2xl overflow-hidden; }
+  /* ── Web design banner ──────────────────────────── */
+  .web-design-banner { @apply mx-auto mt-8 mb-12 max-w-2xl; }
+  .web-design-banner-img { @apply w-full rounded-2xl shadow-soft; }
 
   /* ── Pricing details/collapse ─────────────────── */
   .pricing-details { @apply rounded-2xl border border-border/30 bg-card/30 backdrop-blur-xl; }
@@ -351,8 +328,7 @@ All colors MUST be HSL.
     .auralis-page { padding-bottom: 5rem; }
 
     .hero-copy,
-    .hero-subhead,
-    .hero-preview-wrap { max-width: calc(100vw - 40px); }
+    .hero-subhead { max-width: calc(100vw - 40px); }
 
     .hero-section { min-height: auto; padding-top: 4rem; }
     .hero-logo { width: 10rem; height: 10rem; margin-bottom: 1.5rem; }
@@ -360,17 +336,6 @@ All colors MUST be HSL.
     .hero-copy h1 { font-size: 2rem; line-height: 1.06; text-wrap: wrap; }
     .hero-subhead { font-size: 0.95rem; }
     .cta-row { max-width: calc(100vw - 40px); }
-    .hero-preview-wrap { min-height: 430px; }
-    .hero-preview { top: 1.5rem; width: 92%; }
-    .floating-benefit { max-width: 45vw; padding: 0.7rem 0.8rem; font-size: 0.75rem; }
-
-    .web-design-hero-graphic { margin-bottom: 2rem; }
-    .web-design-hero-graphic .hero-preview-wrap { min-height: 360px; transform: scale(0.85); transform-origin: top center; }
-    .web-design-hero-graphic .floating-benefit { font-size: 0.65rem; padding: 0.5rem 0.6rem; }
-    .hero-card-one { left: 0; top: 0; }
-    .hero-card-two { right: 0; top: -0.5rem; }
-    .hero-card-three { bottom: 3.5rem; left: 0; }
-    .hero-card-four { bottom: 1.25rem; right: 0; }
 
     .products-hero { min-height: 220px; }
     .products-hero-bg { background-position: center 40%; }

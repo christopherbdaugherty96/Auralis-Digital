@@ -7,7 +7,6 @@ import {
   Hammer,
   Instagram,
   Leaf,
-  MapPin,
   Menu,
   MessageSquareText,
   MonitorSmartphone,
@@ -20,7 +19,6 @@ import {
   UtensilsCrossed,
   Wine,
   X,
-  Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -268,12 +266,6 @@ const trustItems = [
   "Designed around calls, quotes, bookings, and messages",
 ];
 
-const benefits = [
-  { label: "Mobile-first", icon: MonitorSmartphone, className: "hero-card-one" },
-  { label: "Local SEO ready", icon: MapPin, className: "hero-card-two" },
-  { label: "Fast launch", icon: Zap, className: "hero-card-three" },
-  { label: "Clear contact flow", icon: MessageSquareText, className: "hero-card-four" },
-];
 
 function Reveal({ children, className }: { children: ReactNode; className?: string }) {
   const [visible, setVisible] = useState(false);
@@ -619,50 +611,6 @@ function DeviceMockup() {
   );
 }
 
-function HeroPreviewGraphic() {
-  return (
-    <div className="hero-preview-wrap" aria-label="Website preview for a local business homepage">
-      <div className="hero-preview">
-        <div className="preview-topbar">
-          <span />
-          <span />
-          <span />
-        </div>
-        <div className="preview-hero">
-          <div>
-            <p className="preview-kicker">Local service website</p>
-            <h2>Look trusted before they call.</h2>
-          </div>
-          <div className="preview-phone">
-            <div className="phone-speaker" />
-            <div className="phone-card" />
-            <div className="phone-line" />
-            <div className="phone-line short" />
-            <div className="phone-button" />
-          </div>
-        </div>
-        <div className="preview-grid">
-          <div className="preview-panel strong" />
-          <div className="preview-panel" />
-          <div className="preview-panel" />
-        </div>
-        <div className="preview-cta-row">
-          <span />
-          <span />
-        </div>
-      </div>
-      {benefits.map((benefit) => {
-        const Icon = benefit.icon;
-        return (
-          <div key={benefit.label} className={cn("floating-benefit", benefit.className)}>
-            <Icon aria-hidden="true" />
-            <span>{benefit.label}</span>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
 
 function PolicyPageContent({ page }: { page: PolicyPage }) {
   const policy = policyPages[page];
@@ -1241,8 +1189,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 </a>
               </div>
             </Reveal>
-            <Reveal className="web-design-hero-graphic">
-              <HeroPreviewGraphic />
+            <Reveal className="web-design-banner">
+              <img
+                src="/assets/brand/web-design-banner.jpg"
+                alt="Auralis Digital website design — custom websites, mobile responsive, SEO optimized, built to convert"
+                className="web-design-banner-img"
+                loading="lazy"
+                decoding="async"
+                width={1080}
+                height={1080}
+              />
             </Reveal>
             <div className="service-grid">
               {services.map((service) => {
