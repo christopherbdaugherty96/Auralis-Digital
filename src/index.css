@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 231 42% 13%;
-    --foreground: 42 45% 96%;
+    --background: 220 45% 11%;
+    --foreground: 210 30% 96%;
 
-    --card: 232 34% 18%;
-    --card-foreground: 42 45% 96%;
+    --card: 218 38% 16%;
+    --card-foreground: 210 30% 96%;
 
-    --popover: 232 34% 18%;
-    --popover-foreground: 42 45% 96%;
+    --popover: 218 38% 16%;
+    --popover-foreground: 210 30% 96%;
 
     --primary: 197 82% 56%;
     --primary-foreground: 42 45% 97%;
 
-    --secondary: 253 46% 31%;
-    --secondary-foreground: 42 45% 96%;
+    --secondary: 215 40% 28%;
+    --secondary-foreground: 210 30% 96%;
 
     --muted: 233 30% 24%;
     --muted-foreground: 218 24% 76%;
 
     --accent: 38 88% 62%;
-    --accent-foreground: 231 42% 13%;
+    --accent-foreground: 220 45% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 229 28% 31%;
-    --input: 229 28% 31%;
+    --border: 217 28% 28%;
+    --input: 217 28% 28%;
     --ring: 197 82% 56%;
 
     --radius: 0.9rem;
     --teal-soft: 198 72% 47%;
-    --gold-soft: 40 92% 66%;
-    --purple-soft: 267 58% 42%;
-    --gradient-hero: radial-gradient(circle at 16% 18%, hsl(var(--gold-soft) / 0.22), transparent 28%), radial-gradient(circle at 82% 12%, hsl(var(--teal-soft) / 0.28), transparent 34%), radial-gradient(circle at 70% 62%, hsl(var(--purple-soft) / 0.32), transparent 38%), linear-gradient(135deg, hsl(232 46% 11%), hsl(224 48% 17%) 46%, hsl(259 42% 19%));
-    --gradient-ink: linear-gradient(135deg, hsl(233 45% 12%), hsl(258 48% 22%));
-    --shadow-soft: 0 18px 60px -32px hsl(240 55% 4% / 0.62);
+    --blue-soft: 210 60% 35%;
+    --cyan-soft: 195 65% 40%;
+    --gradient-hero: radial-gradient(circle at 20% 20%, hsl(var(--cyan-soft) / 0.18), transparent 30%), radial-gradient(circle at 80% 15%, hsl(var(--teal-soft) / 0.22), transparent 36%), radial-gradient(circle at 65% 65%, hsl(var(--blue-soft) / 0.20), transparent 40%), linear-gradient(135deg, hsl(220 48% 10%), hsl(218 44% 14%) 50%, hsl(215 40% 16%));
+    --gradient-ink: linear-gradient(135deg, hsl(220 45% 10%), hsl(215 42% 18%));
+    --shadow-soft: 0 18px 60px -32px hsl(220 55% 4% / 0.62);
     --shadow-conversion: 0 18px 34px -18px hsl(var(--primary) / 0.58);
     --shadow-conversion-hover: 0 24px 44px -18px hsl(var(--primary) / 0.68);
 
