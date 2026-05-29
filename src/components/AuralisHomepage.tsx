@@ -972,21 +972,26 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <>
         {/* ── Hero ────────────────────────────────────────── */}
         <section className="hero-section">
-          <div className="site-shell hero-grid">
-            <div className="hero-copy">
-              <div className="eyebrow"><Sparkles aria-hidden="true" /> Auralis Digital</div>
-              <h1>Products, website creation, custom designs, and services.</h1>
-              <p className="hero-subhead">
-                Products, custom design, websites, and Pour Social — all in one place, built by Christopher Daugherty.
-              </p>
-              <div className="cta-row">
-                <Button variant="conversion" size="xl" asChild>
-                  <a href="/products">Explore Products <ArrowRight aria-hidden="true" /></a>
-                </Button>
-                <Button variant="conversionOutline" size="xl" className="hidden sm:inline-flex" asChild>
-                  <a href="/web-design">Website Design</a>
-                </Button>
-              </div>
+          <div className="site-shell hero-centered">
+            <img
+              src="/assets/brand/auralis-logo.jpg"
+              alt="Auralis Digital logo"
+              className="hero-logo"
+              width={240}
+              height={240}
+              decoding="async"
+            />
+            <h1>Auralis Digital</h1>
+            <p className="hero-subhead">
+              Products &bull; Custom Design &bull; Website Design
+            </p>
+            <div className="cta-row centered">
+              <Button variant="conversion" size="xl" asChild>
+                <a href="/products">Shop Products <ArrowRight aria-hidden="true" /></a>
+              </Button>
+              <Button variant="conversionOutline" size="xl" asChild>
+                <a href="/custom-design">Request Design</a>
+              </Button>
             </div>
           </div>
         </section>

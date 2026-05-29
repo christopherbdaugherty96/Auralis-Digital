@@ -152,8 +152,12 @@ All colors MUST be HSL.
   .site-nav::before { @apply absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent; content: ""; }
 
   /* ── Hero ────────────────────────────────────────── */
-  .hero-section { @apply relative min-h-[90vh] py-16 sm:py-20 lg:py-24; }
+  .hero-section { @apply relative py-16 sm:py-20 lg:py-24; }
   .hero-grid { @apply grid min-w-0 items-center gap-10 lg:grid-cols-[1fr_0.88fr] lg:gap-16; }
+  .hero-centered { @apply flex flex-col items-center text-center animate-fade-up; }
+  .hero-logo { @apply mb-8 w-48 h-48 rounded-full object-cover sm:w-56 sm:h-56 lg:w-64 lg:h-64; }
+  .hero-centered h1 { @apply text-4xl font-extrabold text-foreground sm:text-5xl lg:text-6xl; }
+  .hero-centered .hero-subhead { @apply mx-auto mt-4 text-base tracking-wide text-muted-foreground sm:text-lg; }
   .hero-copy { @apply max-w-3xl animate-fade-up; }
   .eyebrow { @apply mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent; }
   .section-label { @apply mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary; }
@@ -351,6 +355,8 @@ All colors MUST be HSL.
     .hero-preview-wrap { max-width: calc(100vw - 40px); }
 
     .hero-section { min-height: auto; padding-top: 4rem; }
+    .hero-logo { width: 10rem; height: 10rem; margin-bottom: 1.5rem; }
+    .hero-centered h1 { font-size: 2rem; }
     .hero-copy h1 { font-size: 2rem; line-height: 1.06; text-wrap: wrap; }
     .hero-subhead { font-size: 0.95rem; }
     .cta-row { max-width: calc(100vw - 40px); }
