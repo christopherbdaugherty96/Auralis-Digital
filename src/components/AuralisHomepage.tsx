@@ -882,20 +882,23 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         {/* ── Hero ────────────────────────────────────────── */}
         <section className="hero-section hero-has-bg">
           <div className="hero-bg-wrap" aria-hidden="true">
-            <img
-              src="/assets/brand/auralis-home-hero-bg.jpeg"
-              alt=""
-              className="hero-bg-img"
-              decoding="async"
-              loading="eager"
-            />
+            <picture>
+              <source media="(max-width: 639px)" srcSet="/assets/brand/home-hero-mobile.png" />
+              <img
+                src="/assets/brand/auralis-home-hero-bg.jpeg"
+                alt=""
+                className="hero-bg-img"
+                decoding="async"
+                loading="eager"
+              />
+            </picture>
             <div className="hero-bg-overlay" />
           </div>
           <div className="site-shell hero-centered">
             <img
               src="/assets/brand/auralis-logo.jpg"
               alt="Auralis Digital logo"
-              className="hero-logo"
+              className="hero-logo hero-logo-desktop"
               width={240}
               height={240}
               decoding="async"

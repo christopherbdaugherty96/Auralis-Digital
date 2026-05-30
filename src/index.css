@@ -172,6 +172,7 @@ All colors MUST be HSL.
   .hero-bg-overlay { @apply absolute inset-0 bg-background/70 backdrop-blur-[2px]; }
   .hero-has-bg .hero-centered { @apply relative z-10; }
   .hero-has-bg .hero-logo { @apply ring-2 ring-background/40 shadow-2xl sm:ring-4; }
+  .hero-logo-desktop { @apply hidden sm:block; }
   .hero-has-bg h1 { @apply drop-shadow-md; }
   .hero-has-bg .hero-subhead { @apply text-foreground/80; }
   .hero-grid { @apply grid min-w-0 items-center gap-10 lg:grid-cols-[1fr_0.88fr] lg:gap-16; }
@@ -375,6 +376,8 @@ All colors MUST be HSL.
 
     .hero-section { min-height: auto; padding-top: 4rem; }
     .hero-has-bg { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+    .hero-has-bg .hero-bg-overlay { background: hsl(var(--background) / 0.45); backdrop-filter: none; }
+    .hero-has-bg .hero-bg-img { object-position: center top; }
     .hero-logo { width: 7.5rem; height: 7.5rem; margin-bottom: 1rem; }
     .hero-centered h1 { font-size: 1.75rem; }
     .hero-copy h1 { font-size: 2rem; line-height: 1.06; text-wrap: wrap; }
@@ -383,8 +386,13 @@ All colors MUST be HSL.
     .cta-row { max-width: calc(100vw - 40px); }
     .hero-has-bg .cta-row { margin-top: 1.25rem; gap: 0.5rem; }
 
-    .products-hero { min-height: 220px; }
-    .products-hero-bg { background-position: center 40%; }
+    .products-hero { min-height: 280px; }
+    .products-hero-bg {
+      background-image: url("/assets/brand/products-hero-mobile.png");
+      background-position: center top;
+      background-size: cover;
+    }
+    .products-hero-overlay { background: rgba(0,0,0,0.35); }
     .products-hero-content { padding-top: 2rem; padding-bottom: 2rem; }
     .products-hero-content h1 { font-size: 1.5rem; }
     .products-hero-content p { font-size: 0.875rem; margin-top: 0.5rem; }
