@@ -170,7 +170,7 @@ All colors MUST be HSL.
   .hero-bg-wrap { @apply relative w-full; background-color: hsl(0 0% 3%); }
   .hero-bg-img { @apply w-full object-contain object-center; max-height: 55vh; }
   .hero-bg-overlay { @apply absolute inset-0 bg-background/20; }
-  .hero-has-bg .hero-centered { @apply relative z-10 py-8 sm:py-10; }
+  .hero-has-bg .hero-centered { @apply relative z-10 py-5 sm:py-8; }
   .hero-has-bg .hero-logo { @apply hidden; }
   .hero-has-bg h1 { @apply hidden; }
   .hero-has-bg .hero-subhead { @apply mt-0 text-foreground/80; }
