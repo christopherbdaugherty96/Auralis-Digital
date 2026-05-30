@@ -1680,6 +1680,228 @@ export const shopProducts: ShopProduct[] = [
     ],
     reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Goddess Tapestry design.",
   },
+  {
+    title: "Secret owl Hooded Sherpa Fleece Blanket",
+    price: "$111.99",
+    vendor: "Auralis Design",
+    shopifyVendor: "Printify",
+    productType: "All Over Prints",
+    variantSummary: "One size / 70.5″ × 52″",
+    category: "Blankets",
+    slug: "secret-owl-hooded-sherpa-fleece-blanket",
+    shortDescription: "A hooded sherpa fleece blanket with a secret owl design, made from soft polyester with a cream sherpa-lined hood.",
+    detailDescription: "The Sherpa blanket is here to deliver fuzzy warmth and custom style. Made 100% with supremely soft polyester, this hooded fleece blanket is the perfect choice for keeping warm and cozy during the colder months.\n.: 100% polyester with cream-colored sherpa fleece hood\n.: One size: 70.5″ × 52″ (179.07cm × 132.08cm)\n.: White parts of the design remain unprinted, showing the base fabric color\n.: Pre-constructed with size variance of +/- 3 inches\n.: Blank product sourced from China",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7118871357353985488_2048.jpg?v=1780113620",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/secret-owl-hooded-sherpa-fleece-blanket",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/secret-owl-hooded-sherpa-fleece-blanket"),
+    altText: "Secret owl Hooded Sherpa Fleece Blanket",
+    highlights: [
+      "One size / 70.5″ × 52″",
+      "Blankets",
+      "All Over Prints",
+      "3 product photos"
+    ],
+    specs: [
+      {
+        "label": "Product",
+        "value": "All Over Prints"
+      },
+      {
+        "label": "Brand",
+        "value": "Auralis Design"
+      },
+      {
+        "label": "Shopify vendor",
+        "value": "Printify"
+      },
+      {
+        "label": "Category",
+        "value": "Blankets"
+      },
+      {
+        "label": "Options",
+        "value": "One size / 70.5″ × 52″"
+      },
+      {
+        "label": "Variants",
+        "value": "1"
+      },
+      {
+        "label": "Checkout",
+        "value": "Opens through Shopify"
+      },
+      {
+        "label": "Production",
+        "value": "Made after purchase by production partners"
+      }
+    ],
+    photos: [
+      {
+        "label": "Photo 1",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7118871357353985488_2048.jpg?v=1780113620",
+        "altText": "Secret owl Hooded Sherpa Fleece Blanket product photo 1"
+      },
+      {
+        "label": "Photo 2",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14953711319267291452_2048.jpg?v=1780113623",
+        "altText": "Secret owl Hooded Sherpa Fleece Blanket product photo 2"
+      },
+      {
+        "label": "Photo 3",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9901378550416884071_2048.jpg?v=1780113624",
+        "altText": "Secret owl Hooded Sherpa Fleece Blanket product photo 3"
+      }
+    ],
+    reviewScope: "Reviews should refer to the hooded blanket product base unless they mention this exact Secret owl design.",
+  },
+  {
+    title: "Sun of Life Hooded Sherpa Fleece Blanket",
+    price: "$111.99",
+    vendor: "Auralis Design",
+    shopifyVendor: "Printify",
+    productType: "All Over Prints",
+    variantSummary: "One size / 70.5″ × 52″",
+    category: "Blankets",
+    slug: "sun-of-life-hooded-sherpa-fleece-blanket",
+    shortDescription: "A hooded sherpa fleece blanket featuring the Sun of Life artwork, made from soft polyester with a cream sherpa-lined hood.",
+    detailDescription: "The Sherpa blanket is here to deliver fuzzy warmth and custom style. Made 100% with supremely soft polyester, this hooded fleece blanket is the perfect choice for keeping warm and cozy during the colder months.\n.: 100% polyester with cream-colored sherpa fleece hood\n.: One size: 70.5″ × 52″ (179.07cm × 132.08cm)\n.: White parts of the design remain unprinted, showing the base fabric color\n.: Pre-constructed with size variance of +/- 3 inches\n.: Blank product sourced from China",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1542355155027848485_2048.jpg?v=1780113625",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/sun-of-life-hooded-sherpa-fleece-blanket",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/sun-of-life-hooded-sherpa-fleece-blanket"),
+    altText: "Sun of Life Hooded Sherpa Fleece Blanket",
+    highlights: [
+      "One size / 70.5″ × 52″",
+      "Blankets",
+      "All Over Prints",
+      "3 product photos"
+    ],
+    specs: [
+      {
+        "label": "Product",
+        "value": "All Over Prints"
+      },
+      {
+        "label": "Brand",
+        "value": "Auralis Design"
+      },
+      {
+        "label": "Shopify vendor",
+        "value": "Printify"
+      },
+      {
+        "label": "Category",
+        "value": "Blankets"
+      },
+      {
+        "label": "Options",
+        "value": "One size / 70.5″ × 52″"
+      },
+      {
+        "label": "Variants",
+        "value": "1"
+      },
+      {
+        "label": "Checkout",
+        "value": "Opens through Shopify"
+      },
+      {
+        "label": "Production",
+        "value": "Made after purchase by production partners"
+      }
+    ],
+    photos: [
+      {
+        "label": "Photo 1",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1542355155027848485_2048.jpg?v=1780113625",
+        "altText": "Sun of Life Hooded Sherpa Fleece Blanket product photo 1"
+      },
+      {
+        "label": "Photo 2",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11241345068108034137_2048.jpg?v=1780113626",
+        "altText": "Sun of Life Hooded Sherpa Fleece Blanket product photo 2"
+      },
+      {
+        "label": "Photo 3",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17378005354909122438_2048.jpg?v=1780113626",
+        "altText": "Sun of Life Hooded Sherpa Fleece Blanket product photo 3"
+      }
+    ],
+    reviewScope: "Reviews should refer to the hooded blanket product base unless they mention this exact Sun of Life design.",
+  },
+  {
+    title: "Unisex College Hoodie",
+    price: "$55.99",
+    vendor: "Auralis Design",
+    shopifyVendor: "Printify",
+    productType: "Hoodie",
+    variantSummary: "S-2XL / Multiple colors",
+    category: "Apparel",
+    slug: "unisex-college-hoodie",
+    shortDescription: "A unisex college hoodie with Auralis artwork, available in multiple colors and sizes for everyday layering.",
+    detailDescription: "A comfortable unisex college hoodie designed for everyday wear. Available in a wide range of colors and sizes, this hoodie pairs custom Auralis artwork with a classic collegiate silhouette.\n.: Multiple color options available\n.: Size range: S–2XL\n.: 90 variants across color and size combinations\n.: Designed for casual everyday layering",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8889074245300531984_2048.jpg?v=1780113157",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/unisex-college-hoodie",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/unisex-college-hoodie"),
+    altText: "Unisex College Hoodie",
+    highlights: [
+      "S-2XL / Multiple colors",
+      "Apparel",
+      "Hoodie",
+      "3 product photos"
+    ],
+    specs: [
+      {
+        "label": "Product",
+        "value": "Hoodie"
+      },
+      {
+        "label": "Brand",
+        "value": "Auralis Design"
+      },
+      {
+        "label": "Shopify vendor",
+        "value": "Printify"
+      },
+      {
+        "label": "Category",
+        "value": "Apparel"
+      },
+      {
+        "label": "Options",
+        "value": "S-2XL / Multiple colors"
+      },
+      {
+        "label": "Variants",
+        "value": "90"
+      },
+      {
+        "label": "Checkout",
+        "value": "Opens through Shopify"
+      },
+      {
+        "label": "Production",
+        "value": "Made after purchase by production partners"
+      }
+    ],
+    photos: [
+      {
+        "label": "Photo 1",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8889074245300531984_2048.jpg?v=1780113157",
+        "altText": "Unisex College Hoodie product photo 1"
+      },
+      {
+        "label": "Photo 2",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12596031551110255834_2048.jpg?v=1780113277",
+        "altText": "Unisex College Hoodie product photo 2"
+      },
+      {
+        "label": "Photo 3",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6517217752869517980_2048.jpg?v=1780113283",
+        "altText": "Unisex College Hoodie product photo 3"
+      }
+    ],
+    reviewScope: "Reviews should refer to the hoodie product base unless they mention this exact Unisex College Hoodie design.",
+  },
 ];
 
 export const shopFaqs = [

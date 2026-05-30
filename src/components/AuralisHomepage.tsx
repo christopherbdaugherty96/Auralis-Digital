@@ -1111,7 +1111,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal>
               <div className="cta-row centered">
                 <Button variant="conversion" size="lg" asChild>
-                  <a href="#products-grid">Shop All 27 Products <ArrowRight aria-hidden="true" /></a>
+                  <a href="#products-grid">Shop All 30 Products <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="lg" asChild>
                   <a href="/custom-design">Request Custom Design</a>
