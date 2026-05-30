@@ -1829,25 +1829,25 @@ export const shopProducts: ShopProduct[] = [
     reviewScope: "Reviews should refer to the hooded blanket product base unless they mention this exact Sun of Life design.",
   },
   {
-    title: "Unisex College Hoodie",
-    price: "$55.99",
+    title: "Treehugger Hoodie",
+    price: "$50.10",
     vendor: "Auralis Design",
     shopifyVendor: "Printify",
     productType: "Hoodie",
-    variantSummary: "S-2XL / Multiple colors",
+    variantSummary: "S-2XL / 5 colors",
     category: "Apparel",
-    slug: "unisex-college-hoodie",
-    shortDescription: "A unisex college hoodie with Auralis artwork, available in multiple colors and sizes for everyday layering.",
-    detailDescription: "A comfortable unisex college hoodie designed for everyday wear. Available in a wide range of colors and sizes, this hoodie pairs custom Auralis artwork with a classic collegiate silhouette.\n.: Multiple color options available\n.: Size range: S–2XL\n.: 90 variants across color and size combinations\n.: Designed for casual everyday layering",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8889074245300531984_2048.jpg?v=1780113157",
-    shopifyProductUrl: "https://auralis-design.myshopify.com/products/unisex-college-hoodie",
-    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/unisex-college-hoodie"),
-    altText: "Unisex College Hoodie",
+    slug: "treehugger-hoodie",
+    shortDescription: "A cozy unisex hoodie with TreeHugger artwork, available in five colorways with a loose, true-to-size fit.",
+    detailDescription: "Put new life into a classic wardrobe staple with your own art. This hoodie features a unisex design with side seams that help the garment retain its shape on the long run. With a spacious kangaroo pocket for enhanced daily practicality, a comfy true-to-size fit, and multiple colors to choose from — these hoodies provide a cozy wearing experience packed with style.\n.: 80% cotton, 20% polyester (fiber content may vary for different colors)\n.: Medium heavy fabric (8.3 oz/yd² / 281.2 g/m²)\n.: Loose fit with tear-away label\n.: Runs true to size\n.: WRAP, Sedex, and PETA certified",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8425709701594728324_2048.jpg?v=1780171907",
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/treehugger-hoodie",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/treehugger-hoodie"),
+    altText: "Treehugger Hoodie",
     highlights: [
-      "S-2XL / Multiple colors",
+      "S-2XL / 5 colors",
       "Apparel",
       "Hoodie",
-      "3 product photos"
+      "2 product photos"
     ],
     specs: [
       {
@@ -1868,11 +1868,11 @@ export const shopProducts: ShopProduct[] = [
       },
       {
         "label": "Options",
-        "value": "S-2XL / Multiple colors"
+        "value": "S-2XL / Bottle Green, Burgundy, Heather Grey, Sun Yellow, Arctic White"
       },
       {
         "label": "Variants",
-        "value": "90"
+        "value": "21"
       },
       {
         "label": "Checkout",
@@ -1886,21 +1886,16 @@ export const shopProducts: ShopProduct[] = [
     photos: [
       {
         "label": "Photo 1",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8889074245300531984_2048.jpg?v=1780113157",
-        "altText": "Unisex College Hoodie product photo 1"
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8425709701594728324_2048.jpg?v=1780171907",
+        "altText": "Treehugger Hoodie product photo 1"
       },
       {
         "label": "Photo 2",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/12596031551110255834_2048.jpg?v=1780113277",
-        "altText": "Unisex College Hoodie product photo 2"
-      },
-      {
-        "label": "Photo 3",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6517217752869517980_2048.jpg?v=1780113283",
-        "altText": "Unisex College Hoodie product photo 3"
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/4911237227046363609_2048.jpg?v=1780171947",
+        "altText": "Treehugger Hoodie product photo 2"
       }
     ],
-    reviewScope: "Reviews should refer to the hoodie product base unless they mention this exact Unisex College Hoodie design.",
+    reviewScope: "Reviews should refer to the hoodie product base unless they mention this exact Treehugger Hoodie design.",
   },
 ];
 
