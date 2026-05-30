@@ -1109,8 +1109,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="products-hero-overlay" />
           <div className="site-shell products-hero-content">
             <Reveal>
-              <h1>Auralis Digital Products</h1>
-              <p>Sacred geometry, psychedelic art, festival-inspired designs, and custom creations.</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="lg" asChild>
                   <a href="#products-grid">Shop All 27 Products <ArrowRight aria-hidden="true" /></a>
