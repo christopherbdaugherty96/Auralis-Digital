@@ -173,6 +173,7 @@ All colors MUST be HSL.
   .hero-has-bg .hero-centered { @apply relative z-10; }
   .hero-has-bg .hero-logo { @apply ring-2 ring-background/40 shadow-2xl sm:ring-4; }
   .hero-logo-desktop { @apply hidden sm:block; }
+  .hero-has-bg h1 { @apply hidden sm:block; }
   .hero-has-bg h1 { @apply drop-shadow-md; }
   .hero-has-bg .hero-subhead { @apply text-foreground/80; }
   .hero-grid { @apply grid min-w-0 items-center gap-10 lg:grid-cols-[1fr_0.88fr] lg:gap-16; }
