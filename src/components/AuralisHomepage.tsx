@@ -58,14 +58,13 @@ const CUSTOM_DESIGN_OFFERING_PREVIEW = {
 };
 
 const customRequestTypes = [
-  "Personal artwork",
-  "Image or theme-based design",
-  "Gift design",
-  "Product photo concept",
-  "Apparel concept",
-  "Wall decor concept",
-  "Blanket, journal, hat, or accessory concept",
-  "Creator or small-brand visual",
+  "Pet portraits and fur baby designs",
+  "Birthday, holiday, or memorial gifts",
+  "Photo-to-product concepts",
+  "Inside jokes and personal artwork",
+  "Event and party designs",
+  "Apparel, wall art, blankets, and accessories",
+  "Creator or small-brand visuals",
 ];
 
 const customProcess = [
@@ -534,11 +533,9 @@ function ProductCatalogGrid() {
   return (
     <Reveal id="products-grid" className="product-catalog-section">
       <div className="section-heading compact">
-        <span className="section-label">All products</span>
-        <h2>Browse every current Auralis Design product.</h2>
-        <p className="mt-4">
-          Every card includes photos, price, size notes, and a clear Shopify button when you are ready to buy.
-        </p>
+        <span className="section-label"><Store aria-hidden="true" /> All Products</span>
+        <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
+        <p>Browse with photos, prices, and details. Checkout opens on Shopify.</p>
       </div>
       <div className="product-category-tabs" aria-label="Filter by category">
         {productCategories.map((cat) => {
@@ -1128,13 +1125,6 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
 
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
           <div className="site-shell">
-            <Reveal className="section-heading">
-              <span className="section-label"><Store aria-hidden="true" /> Auralis Design Shop</span>
-              <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
-              <p className="mt-4">
-                Browse products with photos and details. Secure checkout opens on Shopify.
-              </p>
-            </Reveal>
             <ProductCatalogGrid />
             <Reveal className="shop-faq-panel">
               <div className="section-heading compact">
@@ -1176,40 +1166,54 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
 
         {isCustomDesign && (
+        <>
         <section id="custom-design" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
               <span className="section-label"><Sparkles aria-hidden="true" /> Custom Design</span>
-              <h2 className="mx-auto max-w-[20rem] sm:max-w-none">
-                Turn your idea into a<span className="block sm:inline"> real design.</span>
+              <h2 className="mx-auto max-w-[22rem] sm:max-w-none">
+                Custom designs made personal.
               </h2>
-              <p className="mx-auto mt-4 max-w-[21rem] sm:max-w-none">
-                <span className="block sm:inline">Send an idea, image, phrase, or theme.</span>{" "}
-                <span className="block sm:inline">Auralis reviews scope and confirms pricing</span>{" "}
-                <span className="block sm:inline">before work begins.</span>
+              <p className="mx-auto mt-4 max-w-[24rem] sm:max-w-xl">
+                Turn a pet photo, favorite phrase, inside joke, or personal artwork concept into something made to wear, use, gift, or display.
               </p>
             </Reveal>
-            <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-[1.1fr_0.9fr]">
+
+            {/* ── Preview + "Great for" ──────────────────── */}
+            <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-2">
               <Reveal className="service-card min-w-0">
                 {customDesignPreview && (
                   <img
-                    className="mb-5 aspect-[16/10] w-full max-w-full rounded-xl bg-background object-cover object-center"
+                    className="mb-5 aspect-square w-full max-w-full rounded-xl bg-background object-cover object-center"
                     src={customDesignPreview.imageUrl}
                     alt={customDesignPreview.altText}
                     loading="lazy"
                     decoding="async"
                     width={800}
-                    height={500}
+                    height={800}
                   />
                 )}
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Show off your fur baby with a custom pillow, blanket, shirt, or printable design.
+                </p>
+              </Reveal>
+              <Reveal className="service-card min-w-0">
                 <div className="icon-tile"><Sparkles aria-hidden="true" /></div>
-                <h3>What you can request</h3>
+                <h3>Great for</h3>
                 <div className="product-use-list mt-5">
                   {customRequestTypes.map((type) => (
                     <span key={type}>{type}</span>
                   ))}
                 </div>
               </Reveal>
+            </div>
+          </div>
+        </section>
+
+        {/* ── How it works ──────────────────────────────── */}
+        <section className="section-band">
+          <div className="site-shell">
+            <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-2">
               <Reveal className="service-card min-w-0">
                 <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
                 <h3>How it works</h3>
@@ -1222,9 +1226,26 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   ))}
                 </ul>
               </Reveal>
+              <Reveal className="service-card min-w-0">
+                {CUSTOM_DESIGN_OFFERING_PREVIEW && (
+                  <img
+                    className="mb-5 aspect-square w-full max-w-full rounded-xl bg-background object-cover object-center"
+                    src={CUSTOM_DESIGN_OFFERING_PREVIEW.imageUrl}
+                    alt={CUSTOM_DESIGN_OFFERING_PREVIEW.altText}
+                    loading="lazy"
+                    decoding="async"
+                    width={800}
+                    height={800}
+                  />
+                )}
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Perfect for gifts, pets, inside jokes, memorial pieces, events, or personal artwork.
+                </p>
+              </Reveal>
             </div>
           </div>
         </section>
+        </>
         )}
 
         {isWebDesign && (
