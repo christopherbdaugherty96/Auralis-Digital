@@ -283,12 +283,14 @@ All colors MUST be HSL.
   .website-demo-body strong { @apply mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary; }
 
   /* ── Products hero banner ────────────────────────── */
-  .products-hero { @apply relative flex min-h-[420px] items-center justify-center overflow-hidden; }
+  .products-hero { @apply relative flex items-center justify-center overflow-hidden; aspect-ratio: 1; max-height: 60vh; }
   .products-hero-bg {
-    @apply absolute inset-0 bg-cover bg-center;
+    @apply absolute inset-0 bg-center bg-no-repeat;
     background-image: url("/assets/brand/products-hero.jpg");
+    background-size: contain;
+    background-color: hsl(0 0% 3%);
   }
-  .products-hero-overlay { @apply absolute inset-0 bg-black/50; }
+  .products-hero-overlay { @apply absolute inset-0 bg-black/20; }
   .products-hero-content { @apply relative z-10 py-16 text-center; }
   .products-hero-content h1 { @apply text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl; }
   .products-hero-content p { @apply mx-auto mt-4 max-w-xl text-base text-white/80 sm:text-lg; }
