@@ -1073,7 +1073,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <h2>Auralis Digital</h2>
               <p className="mt-4">
-                Products, custom designs, and website services — built and managed by Christopher Daugherty in Southeast Michigan.
+                Auralis Digital is built and managed by Christopher Daugherty in Southeast Michigan.
+                What started as a personal creative outlet became a small business offering original products,
+                custom designs, and practical websites for local businesses and creators.
+              </p>
+              <p className="mt-3 text-muted-foreground/80">
+                Every product, design, and website is handled directly — no faceless team, no outsourced support.
+                If you have a question, you're talking to the person who built it.
               </p>
             </Reveal>
           </div>
@@ -1109,6 +1115,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="products-hero-overlay" />
           <div className="site-shell products-hero-content">
             <Reveal>
+              <h1>Auralis Design Products</h1>
+              <p>Sacred geometry, psychedelic art, and original designs — printed on demand.</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="lg" asChild>
                   <a href="#products-grid">Shop All 30 Products <ArrowRight aria-hidden="true" /></a>
@@ -1708,7 +1716,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         </footer>
       </main>
 
-      {!isHome && !isShop && (
+      {!isHome && !isShop && !isPolicyPage && (
         <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border/40 bg-background/90 p-3 backdrop-blur-xl md:hidden">
           <Button variant="conversion" size="lg" className="w-full" asChild>
             <a
