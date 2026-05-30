@@ -285,62 +285,62 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
 
 const pageMeta: Record<AuralisPage, { title: string; description: string; canonicalPath: string }> = {
   home: {
-    title: "Auralis Digital",
+    title: "Auralis Digital — Creative Products, Custom Design & Website Services",
     description:
-      "Products, website creation, custom designs, and services by Auralis Digital.",
+      "Original sacred geometry and psychedelic art products, personalized custom designs, and small-business website services. Built by Christopher Daugherty in Southeast Michigan.",
     canonicalPath: "/",
   },
   shop: {
-    title: "Products | Auralis Digital",
+    title: "Products — Sacred Geometry, Psychedelic Art & Original Designs | Auralis Digital",
     description:
-      "Browse Auralis Design products and collections. Product checkout opens securely through Shopify.",
+      "Shop apparel, blankets, wall art, hats, journals, and home decor featuring sacred geometry, psychedelic art, and original designs. Checkout opens securely through Shopify.",
     canonicalPath: "/products",
   },
   "custom-design": {
     title: "Custom Design Requests | Auralis Digital",
     description:
-      "Request a personalized design, product concept, image-based idea, gift design, apparel concept, wall art concept, or custom visual from Auralis Digital.",
+      "Request a personalized design — pet portraits, photo-to-product concepts, gift ideas, symbolic artwork, and custom visuals for apparel, wall art, blankets, and accessories.",
     canonicalPath: "/custom-design",
   },
   "web-design": {
-    title: "Website Design | Auralis Digital",
+    title: "Website Design for Small Businesses | Auralis Digital",
     description:
-      "Clean website design for small businesses, creators, and local brands that need a stronger online presence.",
+      "Mobile-first website design for small businesses, local brands, and creators in Southeast Michigan. Contact forms, SEO setup, and ongoing support included.",
     canonicalPath: "/web-design",
   },
   websites: {
-    title: "Website Examples | Auralis Digital",
-    description: "Browse example website builds and demo directions from Auralis Digital.",
-    canonicalPath: "/websites",
+    title: "Website Design Examples | Auralis Digital",
+    description: "Browse example website builds and demo directions from Auralis Digital. See sample layouts for restaurants, lawn care, barbershops, contractors, and more.",
+    canonicalPath: "/web-design",
   },
   "pour-social": {
-    title: "Pour Social | Auralis Digital",
+    title: "Pour Social — Mobile BYOB Bar Service | Auralis Digital",
     description:
-      "Mobile bartending and event bar planning for Southeast Michigan.",
+      "Mobile BYOB bar service for events in Southeast Michigan. Pour Social is coming soon.",
     canonicalPath: "/pour-social",
   },
   "refund-policy": {
     title: "Refund Policy | Auralis Digital",
     description:
-      "Review Auralis Digital refund and support guidance for product purchases, custom design requests, and website design work.",
+      "Refund and support guidance for Auralis Digital product purchases, custom design requests, and website design work.",
     canonicalPath: "/refund-policy",
   },
   "shipping-policy": {
     title: "Shipping Policy | Auralis Digital",
     description:
-      "Review shipping and fulfillment guidance for Auralis Design products purchased through Shopify.",
+      "Shipping and fulfillment guidance for Auralis Design products purchased through Shopify.",
     canonicalPath: "/shipping-policy",
   },
   "privacy-policy": {
     title: "Privacy Policy | Auralis Digital",
     description:
-      "Review privacy guidance for Auralis Digital inquiries, product browsing, Shopify checkout links, and website contact forms.",
+      "Privacy guidance for Auralis Digital inquiries, product browsing, Shopify checkout, and website contact forms.",
     canonicalPath: "/privacy-policy",
   },
   "terms-of-service": {
     title: "Terms of Service | Auralis Digital",
     description:
-      "Review Auralis Digital terms for product browsing, Shopify checkout links, custom design requests, and website design inquiries.",
+      "Terms for Auralis Digital product browsing, Shopify checkout, custom design requests, and website design inquiries.",
     canonicalPath: "/terms-of-service",
   },
 };
