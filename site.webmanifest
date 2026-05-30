@@ -3,8 +3,8 @@
   "short_name": "Auralis",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#f8f5ed",
-  "theme_color": "#0f172a",
+  "background_color": "#141d33",
+  "theme_color": "#10142f",
   "icons": [
     {
       "src": "/favicon-32x32.png?v=20260506",
