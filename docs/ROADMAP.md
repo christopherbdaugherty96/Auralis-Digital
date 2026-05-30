@@ -12,7 +12,7 @@ Auralis Digital currently contains three related public surfaces:
 2. custom / personalized design requests
 3. website services for local businesses, creators, and small brands
 
-The website catalog contains 27 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Pour Social has its own route (`/pour-social`) as an external service brand. There is no standalone About page; `/about` redirects to `/#about`. Custom Design pricing tiers were intentionally removed from the public site.
+The website catalog contains 30 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Pour Social has its own route (`/pour-social`) as an external service brand. There is no standalone About page; `/about` redirects to `/#about`. Custom Design pricing tiers were intentionally removed from the public site.
 
 Current execution priority is:
 
@@ -174,7 +174,7 @@ The website has real proof, and the sales process becomes easier for the next cl
 
 ## Phase 6 - Commerce Readiness
 
-Goal: verify the Shopify/Printify product surface before treating it as a mature public commerce operation. The shop surface is active (27 products, 7 categories) and is the current execution lane.
+Goal: verify the Shopify/Printify product surface before treating it as a mature public commerce operation. The shop surface is active (30 products, 7 categories) and is the current execution lane.
 
 Tasks:
 

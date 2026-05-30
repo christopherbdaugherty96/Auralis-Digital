@@ -124,7 +124,7 @@ Current Sprint 01 campaign:
 
 ## Sacred Geometry / Psychedelic Product Focus
 
-The website catalog now contains 27 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
+The website catalog now contains 30 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
 
 Pre-launch tasks:
 

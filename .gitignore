@@ -23,3 +23,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw working assets (not for deployment)
+PhotoAssests/

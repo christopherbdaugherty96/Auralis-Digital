@@ -24,7 +24,7 @@ const withShopifyTracking = (url: string) =>
 
 export const shopProducts: ShopProduct[] = [
   {
-    title: "Psychedelic Ying yang Heavy Cotton Tee",
+    title: "Psychedelic Yin-Yang Heavy Cotton Tee",
     price: "From $24.99",
     vendor: "Auralis Design",
     shopifyVendor: "Printify",
@@ -37,7 +37,7 @@ export const shopProducts: ShopProduct[] = [
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5464731681615404100_2048.jpg?v=1779839551",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/psychedelic-ying-yang-heavy-cotton-tee",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/psychedelic-ying-yang-heavy-cotton-tee"),
-    altText: "Psychedelic Ying yang Heavy Cotton Tee",
+    altText: "Psychedelic Yin-Yang Heavy Cotton Tee",
     highlights: [
       "White, Black / S-5XL",
       "Apparel",
@@ -52,12 +52,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Apparel"
       },
@@ -82,23 +77,23 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Photo 1",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5464731681615404100_2048.jpg?v=1779839551",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 1"
+        "altText": "Psychedelic Yin-Yang Heavy Cotton Tee product photo 1"
       },
       {
         "label": "Photo 2",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11867246045127936010_2048.jpg?v=1779839550",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 2"
+        "altText": "Psychedelic Yin-Yang Heavy Cotton Tee product photo 2"
       },
       {
         "label": "Photo 3",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11819048640334279979_2048.jpg?v=1779839554",
-        "altText": "Psychedelic Ying yang Heavy Cotton Tee product photo 3"
+        "altText": "Psychedelic Yin-Yang Heavy Cotton Tee product photo 3"
       }
     ],
-    reviewScope: "Reviews should refer to the t-shirt product base unless they mention this exact Psychedelic Ying yang Heavy Cotton Tee design.",
+    reviewScope: "Reviews should refer to the t-shirt product base unless they mention this exact Psychedelic Yin-Yang Heavy Cotton Tee design.",
   },
   {
-    title: "Psychedelic Ying yang Woven Blanket",
+    title: "Psychedelic Yin-Yang Woven Blanket",
     price: "$48.99",
     vendor: "Auralis Design",
     shopifyVendor: "Auralis Design",
@@ -107,11 +102,11 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "psychedelic-ying-yang-woven-blanket",
     shortDescription: "A woven cotton throw that turns the psychedelic yin-yang artwork into a textured home piece with fringed edges.",
-    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\nPlease note: This product has some limitations and specifics you should know. Before creating this product, please visit the link here.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
+    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/13253513801766639745_2048.jpg?v=1779839265",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/psychedelic-ying-yang-woven-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/psychedelic-ying-yang-woven-blanket"),
-    altText: "Psychedelic Ying yang Woven Blanket",
+    altText: "Psychedelic Yin-Yang Woven Blanket",
     highlights: [
       "Artwork / 52'' × 37''",
       "Blankets",
@@ -126,12 +121,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Auralis Design"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -156,23 +146,23 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Photo 1",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/13253513801766639745_2048.jpg?v=1779839265",
-        "altText": "Psychedelic Ying yang Woven Blanket product photo 1"
+        "altText": "Psychedelic Yin-Yang Woven Blanket product photo 1"
       },
       {
         "label": "Photo 2",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14685688208648080050_2048.jpg?v=1779839369",
-        "altText": "Psychedelic Ying yang Woven Blanket product photo 2"
+        "altText": "Psychedelic Yin-Yang Woven Blanket product photo 2"
       },
       {
         "label": "Photo 3",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11532357835120184043_2048.jpg?v=1779839426",
-        "altText": "Psychedelic Ying yang Woven Blanket product photo 3"
+        "altText": "Psychedelic Yin-Yang Woven Blanket product photo 3"
       }
     ],
-    reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Psychedelic Ying yang Woven Blanket design.",
+    reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Psychedelic Yin-Yang Woven Blanket design.",
   },
   {
-    title: "Psychedelic Ying Yang Tan Sherpa Blanket",
+    title: "Psychedelic Yin-Yang Tan Sherpa Blanket",
     price: "$60.99",
     vendor: "Auralis Design",
     shopifyVendor: "Printify",
@@ -181,11 +171,11 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "psychedelic-ying-yang-tan-sherpa-blanket",
     shortDescription: "A soft sherpa-backed blanket featuring the psychedelic yin-yang design for couch, bed, or studio lounging.",
-    detailDescription: "Keep it cozy all year round with this super-soft sherpa blanket. Great for snuggles by the fireplace, picnics, and a quick power nap. Print high-definition designs on the 100% poly front to keep it personal. The back has a tan sherpa lining. Rounded corners and decorative stitching keep everything sleek and smooth.\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: Available in two sizes\n.: One-sided print\n.: Blank product sourced from China",
+    detailDescription: "Keep it cozy all year round with this super-soft sherpa blanket. Great for snuggles by the fireplace, picnics, and a quick power nap. Print high-definition designs on the 100% poly front to keep it personal. The back has a tan sherpa lining. Rounded corners and decorative stitching keep everything sleek and smooth.\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: Available in two sizes\n.: One-sided print",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6135024105187545972_2048.jpg?v=1779838995",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/psychedelic-ying-yang-tan-sherpa-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/psychedelic-ying-yang-tan-sherpa-blanket"),
-    altText: "Psychedelic Ying Yang Tan Sherpa Blanket",
+    altText: "Psychedelic Yin-Yang Tan Sherpa Blanket",
     highlights: [
       "60\" × 50\"",
       "Blankets",
@@ -200,12 +190,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -230,20 +215,20 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Photo 1",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/6135024105187545972_2048.jpg?v=1779838995",
-        "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 1"
+        "altText": "Psychedelic Yin-Yang Tan Sherpa Blanket product photo 1"
       },
       {
         "label": "Photo 2",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14617968385392367380_2048.jpg?v=1779839000",
-        "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 2"
+        "altText": "Psychedelic Yin-Yang Tan Sherpa Blanket product photo 2"
       },
       {
         "label": "Photo 3",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9589426059931243785_2048.jpg?v=1779839003",
-        "altText": "Psychedelic Ying Yang Tan Sherpa Blanket product photo 3"
+        "altText": "Psychedelic Yin-Yang Tan Sherpa Blanket product photo 3"
       }
     ],
-    reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Psychedelic Ying Yang Tan Sherpa Blanket design.",
+    reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Psychedelic Yin-Yang Tan Sherpa Blanket design.",
   },
   {
     title: "Psychedelic Midweight Softstyle Fleece Hoodie",
@@ -274,12 +259,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Apparel"
       },
@@ -329,7 +309,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "woven-blanket",
     shortDescription: "A commissioned Pixel Oven woven blanket that brings custom artwork into a tactile cotton throw format.",
-    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\nPlease note: This product has some limitations and specifics you should know. Before creating this product, please visit the link here.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
+    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2799150508494482362_2048.jpg?v=1779839428",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/woven-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/woven-blanket"),
@@ -348,12 +328,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -421,12 +396,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Hats"
       },
@@ -485,12 +455,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Jewelry & Accessories"
       },
@@ -558,12 +523,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Hats"
       },
@@ -618,7 +578,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Wall Decor",
     slug: "sun-of-life-wall-tapestry",
     shortDescription: "A lightweight Sun of Life wall tapestry for adding symbolic artwork to a room, studio, or creative corner.",
-    detailDescription: "A custom wall tapestry is a surefire way to uplift any room’s aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Blanks sourced from China",
+    detailDescription: "A custom wall tapestry is a surefire way to uplift any room’s aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/14376604022080907068_2048.jpg?v=1778785066",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/sun-of-life-wall-tapestry",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/sun-of-life-wall-tapestry"),
@@ -637,12 +597,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Wall Decor"
       },
@@ -701,12 +656,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Journals & Notebooks"
       },
@@ -756,7 +706,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "flower-of-the-sun-woven-blanket",
     shortDescription: "A woven Sun of Life blanket that gives the symbolic artwork a warm cotton texture and fringed finish.",
-    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\nPlease note: This product has some limitations and specifics you should know. Before creating this product, please visit the link here.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
+    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/965410947997061203_2048.jpg?v=1778782127",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/flower-of-the-sun-woven-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/flower-of-the-sun-woven-blanket"),
@@ -775,12 +725,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -830,7 +775,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "zeus-sherpa-blanket",
     shortDescription: "A sherpa-backed Zeus blanket with vivid front artwork and a soft tan reverse for everyday lounging.",
-    detailDescription: "Keep it cozy all year round with this super-soft sherpa blanket. Great for snuggles by the fireplace, picnics, and a quick power nap. Print high-definition designs on the 100% poly front to keep it personal. The back has a tan sherpa lining. Rounded corners and decorative stitching keep everything sleek and smooth.\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: Available in two sizes\n.: One-sided print\n.: Blank product sourced from China",
+    detailDescription: "Keep it cozy all year round with this super-soft sherpa blanket. Great for snuggles by the fireplace, picnics, and a quick power nap. Print high-definition designs on the 100% poly front to keep it personal. The back has a tan sherpa lining. Rounded corners and decorative stitching keep everything sleek and smooth.\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: Available in two sizes\n.: One-sided print",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/946217445547567931_2048.jpg?v=1778696075",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/zeus-sherpa-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/zeus-sherpa-blanket"),
@@ -849,12 +794,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -904,7 +844,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "zeus-woven-blanket",
     shortDescription: "A woven Zeus blanket that translates the artwork into a cotton throw with texture, weight, and fringe.",
-    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\nPlease note: This product has some limitations and specifics you should know. Before creating this product, please visit the link here.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
+    detailDescription: "Whether you choose to feature a photo or a piece of graphic art, these cozy blankets elevate images into lasting, quality heirlooms. Put them up on the wall for a cozy display or use it to cuddle up on your couch. These cozy throw-sized woven blankets are woven out of 100% cotton yarn with a colorful edge fringe that extends the image.\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Choose between Artwork and Photo variants to best suit your design specifics\n.: Please note: Be aware that mockups do not fully showcase the final product",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/15994653165623932254_2048.jpg?v=1778654627",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/zeus-woven-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/zeus-woven-blanket"),
@@ -923,12 +863,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -997,12 +932,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Journals & Notebooks"
       },
@@ -1065,9 +995,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "T-Shirt" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Apparel" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Apparel" },
       { label: "Options", value: "XS-2XL / Black, Sport Dark Navy, Sport Graphite, Sport Red, White" },
       { label: "Variants", value: "30" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1115,9 +1043,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Sweatshirt" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Apparel" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Apparel" },
       { label: "Options", value: "S-3XL / Black, Forest Green, Khaki, Sandstone" },
       { label: "Variants", value: "24" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1165,9 +1091,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Sweatshirt" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Apparel" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Apparel" },
       { label: "Options", value: "S-3XL / Black, Maroon" },
       { label: "Variants", value: "12" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1193,7 +1117,7 @@ export const shopProducts: ShopProduct[] = [
     reviewScope: "Reviews should refer to the sweatshirt product base unless they mention this exact Micro or macro NuBlend® Crewneck Sweatshirt design.",
   },
   {
-    title: "Copy of Indoor Wall Tapestry",
+    title: "Micro or Macro Indoor Wall Tapestry",
     price: "$27.25",
     vendor: "Auralis Design",
     shopifyVendor: "Printify",
@@ -1202,11 +1126,11 @@ export const shopProducts: ShopProduct[] = [
     category: "Wall Decor",
     slug: "copy-of-indoor-wall-tapestry",
     shortDescription: "A lightweight polyester wall tapestry with hemmed edges and vivid printed artwork for any room.",
-    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Blanks sourced from China",
+    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/18285861230107040115_2048.jpg?v=1780000969",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/copy-of-indoor-wall-tapestry",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/copy-of-indoor-wall-tapestry"),
-    altText: "Copy of Indoor Wall Tapestry",
+    altText: "Micro or Macro Indoor Wall Tapestry",
     highlights: [
       "26\" × 36\"",
       "Wall Decor",
@@ -1215,9 +1139,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Home Decor" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Wall Decor" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Wall Decor" },
       { label: "Options", value: "26\" × 36\"" },
       { label: "Variants", value: "1" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1227,10 +1149,10 @@ export const shopProducts: ShopProduct[] = [
       {
         label: "Photo 1",
         imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/18285861230107040115_2048.jpg?v=1780000969",
-        altText: "Copy of Indoor Wall Tapestry product photo 1",
+        altText: "Micro or Macro Indoor Wall Tapestry product photo 1",
       },
     ],
-    reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Copy of Indoor Wall Tapestry design.",
+    reviewScope: "Reviews should refer to the home decor product base unless they mention this exact Micro or Macro Indoor Wall Tapestry design.",
   },
   {
     title: "TreeHugger Softstyle T-Shirt",
@@ -1255,9 +1177,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "T-Shirt" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Apparel" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Apparel" },
       { label: "Options", value: "S-3XL / Dark Chocolate, Light Blue, Navy, Red, Royal, Sport Grey, White, Black, Military Green, Dark Heather, Natural" },
       { label: "Variants", value: "55" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1304,9 +1224,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Home Decor" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Home Decor" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Home Decor" },
       { label: "Options", value: "14\" × 14\"" },
       { label: "Variants", value: "1" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1353,9 +1271,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Hats" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Hats" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Hats" },
       { label: "Options", value: "One size / Black, Dark Grey, Green Camo, Khaki, Light Blue, Navy, Pink, Spruce, Stone, White, Cranberry" },
       { label: "Variants", value: "11" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1403,9 +1319,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Hoodie" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Apparel" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Apparel" },
       { label: "Options", value: "S-5XL / Red, White, Sport Grey, Black" },
       { label: "Variants", value: "32" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1440,7 +1354,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Hats",
     slug: "trippy-hippy-vintage-corduroy-cap-embroidery",
     shortDescription: "A vintage corduroy cap with embroidered Trippy hippy artwork, unstructured low-profile crown, and adjustable gold buckle strap.",
-    detailDescription: "A vintage-inspired corduroy cap with embroidered artwork for a textured, standout look. The unstructured, six-panel, low-profile crown sits easy and breathable all day.\n\n.: 100% cotton corduroy\n.: Unstructured, 6-panel, low-profile crown\n.: Cotton twill sweatband and taping\n.: 6 embroidered eyelets\n.: Adjustable strap with gold-colored metal buckle\n.: Blank sourced from China and Vietnam",
+    detailDescription: "A vintage-inspired corduroy cap with embroidered artwork for a textured, standout look. The unstructured, six-panel, low-profile crown sits easy and breathable all day.\n\n.: 100% cotton corduroy\n.: Unstructured, 6-panel, low-profile crown\n.: Cotton twill sweatband and taping\n.: 6 embroidered eyelets\n.: Adjustable strap with gold-colored metal buckle",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7060472235354799441_2048.jpg?v=1779946500",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/trippy-hippy-vintage-corduroy-cap-embroidery",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/trippy-hippy-vintage-corduroy-cap-embroidery"),
@@ -1453,9 +1367,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Hats" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Hats" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Hats" },
       { label: "Options", value: "One size / Dark Brown, Burgundy" },
       { label: "Variants", value: "2" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1490,7 +1402,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Hats",
     slug: "tripsitter-bucket-hat-embroidery",
     shortDescription: "An embroidered cotton twill bucket hat with a 2¼\" brim and sewn eyelets in three colorways.",
-    detailDescription: "The embroidered bucket hat is the perfect blend of practicality, comfort, and style. Made from 100% cotton twill, this hat offers durability and breathability, keeping you cool during any activity. With a 3¾\" (9.52 cm) crown and a 2¼\" (5.71 cm) brim, it provides just the right amount of coverage without compromising on visibility. The sewn eyelets ensure extra breathability, making it an ideal accessory for both casual outings and outdoor activities.\n\n.: 100% cotton twill\n.: 3¾\" (9.52 cm) crown\n.: 2¼\" (5.71 cm) brim\n.: Sewn eyelets for breathability\n.: One size fits most\n.: Blank sourced from China and Vietnam",
+    detailDescription: "The embroidered bucket hat is the perfect blend of practicality, comfort, and style. Made from 100% cotton twill, this hat offers durability and breathability, keeping you cool during any activity. With a 3¾\" (9.52 cm) crown and a 2¼\" (5.71 cm) brim, it provides just the right amount of coverage without compromising on visibility. The sewn eyelets ensure extra breathability, making it an ideal accessory for both casual outings and outdoor activities.\n\n.: 100% cotton twill\n.: 3¾\" (9.52 cm) crown\n.: 2¼\" (5.71 cm) brim\n.: Sewn eyelets for breathability\n.: One size fits most",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5229951655020121090_2048.jpg?v=1779947350",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/tripsitter-bucket-hat-embroidery",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/tripsitter-bucket-hat-embroidery"),
@@ -1503,9 +1415,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Hats" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Hats" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Hats" },
       { label: "Options", value: "One size / Black, Navy, White" },
       { label: "Variants", value: "3" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1540,7 +1450,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Wall Decor",
     slug: "inner-presence-tapestry",
     shortDescription: "A polyester wall tapestry with the Inner presence artwork, hemmed edges, and four size options.",
-    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Blanks sourced from China",
+    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7412523164299724623_2048.jpg?v=1780031769",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/inner-presence-tapestry",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/inner-presence-tapestry"),
@@ -1553,9 +1463,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Home Decor" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Wall Decor" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Wall Decor" },
       { label: "Options", value: "26\" × 36\", 50\" × 60\", 68\" × 80\", 88\" × 104\"" },
       { label: "Variants", value: "4" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1590,7 +1498,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Wall Decor",
     slug: "math-equations-tapestry",
     shortDescription: "A polyester wall tapestry with math equation artwork, hemmed edges, and three size options.",
-    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Blanks sourced from China",
+    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5783598850365153819_2048.jpg?v=1780030585",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/math-equations-tapestry",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/math-equations-tapestry"),
@@ -1603,9 +1511,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Home Decor" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Wall Decor" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Wall Decor" },
       { label: "Options", value: "26\" × 36\", 68\" × 80\", 88\" × 104\"" },
       { label: "Variants", value: "3" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1640,7 +1546,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Wall Decor",
     slug: "goddess-tapestry",
     shortDescription: "A polyester wall tapestry with Goddess artwork available in portrait and landscape orientations across four sizes.",
-    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Portrait and landscape orientations\n.: Blanks sourced from China",
+    detailDescription: "A custom wall tapestry is a surefire way to uplift any room's aesthetics with a personal touch. This 100% Polyester wall tapestry comes with hemmed edges for extra durability to ensure years' worth of decorating bliss. The advanced tapestry printing techniques guarantee crisp detail even for the craziest of designs, in any of our multiple size choices.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Portrait and landscape orientations",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5617023650620575966_2048.jpg",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/goddess-tapestry",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/goddess-tapestry"),
@@ -1653,9 +1559,7 @@ export const shopProducts: ShopProduct[] = [
     ],
     specs: [
       { label: "Product", value: "Home Decor" },
-      { label: "Brand", value: "Auralis Design" },
-      { label: "Shopify vendor", value: "Printify" },
-      { label: "Category", value: "Wall Decor" },
+      { label: "Brand", value: "Auralis Design" },      { label: "Category", value: "Wall Decor" },
       { label: "Options", value: "26\" × 36\", 36\" × 26\", 50\" × 60\", 60\" × 50\", 68\" × 80\", 80\" × 68\", 88\" × 104\", 104\" × 88\"" },
       { label: "Variants", value: "8" },
       { label: "Checkout", value: "Opens through Shopify" },
@@ -1690,7 +1594,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "secret-owl-hooded-sherpa-fleece-blanket",
     shortDescription: "A hooded sherpa fleece blanket with a secret owl design, made from soft polyester with a cream sherpa-lined hood.",
-    detailDescription: "The Sherpa blanket is here to deliver fuzzy warmth and custom style. Made 100% with supremely soft polyester, this hooded fleece blanket is the perfect choice for keeping warm and cozy during the colder months.\n.: 100% polyester with cream-colored sherpa fleece hood\n.: One size: 70.5″ × 52″ (179.07cm × 132.08cm)\n.: White parts of the design remain unprinted, showing the base fabric color\n.: Pre-constructed with size variance of +/- 3 inches\n.: Blank product sourced from China",
+    detailDescription: "The Sherpa blanket is here to deliver fuzzy warmth and custom style. Made 100% with supremely soft polyester, this hooded fleece blanket is the perfect choice for keeping warm and cozy during the colder months.\n.: 100% polyester with cream-colored sherpa fleece hood\n.: One size: 70.5″ × 52″ (179.07cm × 132.08cm)\n.: White parts of the design remain unprinted, showing the base fabric color\n.: Pre-constructed with size variance of +/- 3 inches",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/7118871357353985488_2048.jpg?v=1780113620",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/secret-owl-hooded-sherpa-fleece-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/secret-owl-hooded-sherpa-fleece-blanket"),
@@ -1709,12 +1613,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -1764,7 +1663,7 @@ export const shopProducts: ShopProduct[] = [
     category: "Blankets",
     slug: "sun-of-life-hooded-sherpa-fleece-blanket",
     shortDescription: "A hooded sherpa fleece blanket featuring the Sun of Life artwork, made from soft polyester with a cream sherpa-lined hood.",
-    detailDescription: "The Sherpa blanket is here to deliver fuzzy warmth and custom style. Made 100% with supremely soft polyester, this hooded fleece blanket is the perfect choice for keeping warm and cozy during the colder months.\n.: 100% polyester with cream-colored sherpa fleece hood\n.: One size: 70.5″ × 52″ (179.07cm × 132.08cm)\n.: White parts of the design remain unprinted, showing the base fabric color\n.: Pre-constructed with size variance of +/- 3 inches\n.: Blank product sourced from China",
+    detailDescription: "The Sherpa blanket is here to deliver fuzzy warmth and custom style. Made 100% with supremely soft polyester, this hooded fleece blanket is the perfect choice for keeping warm and cozy during the colder months.\n.: 100% polyester with cream-colored sherpa fleece hood\n.: One size: 70.5″ × 52″ (179.07cm × 132.08cm)\n.: White parts of the design remain unprinted, showing the base fabric color\n.: Pre-constructed with size variance of +/- 3 inches",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1542355155027848485_2048.jpg?v=1780113625",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/sun-of-life-hooded-sherpa-fleece-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/sun-of-life-hooded-sherpa-fleece-blanket"),
@@ -1783,12 +1682,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Blankets"
       },
@@ -1857,12 +1751,7 @@ export const shopProducts: ShopProduct[] = [
       {
         "label": "Brand",
         "value": "Auralis Design"
-      },
-      {
-        "label": "Shopify vendor",
-        "value": "Printify"
-      },
-      {
+      },      {
         "label": "Category",
         "value": "Apparel"
       },

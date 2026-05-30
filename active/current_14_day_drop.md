@@ -31,9 +31,9 @@ Current storefront truth is documented in:
 
 Use Christopher's personal sacred-geometry, psychedelic, symbolic, and cosmic design language for the first focused test.
 
-The website catalog now contains 27 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
+The website catalog now contains 30 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
 
-Previous candidate list (may still be valid but should be re-evaluated against the full 27-product catalog):
+Previous candidate list (may still be valid but should be re-evaluated against the full 30-product catalog):
 
 1. Sun of Life Wall Tapestry
 2. Sun of Life Woven Blanket

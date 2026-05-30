@@ -55,7 +55,7 @@ The current active execution lane is Shopify storefront pre-launch validation fo
   - `/pour-social`
   - `/about` (redirects to `/#about`)
 - The homepage is intended to act as a brand gateway for Products, Custom Design, and Website Design instead of a product catalog.
-- Product/shop catalog data currently lives in `src/data/shopCatalog.ts` (27 products across 7 categories: Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks).
+- Product/shop catalog data currently lives in `src/data/shopCatalog.ts` (30 products across 7 categories: Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks).
 - Shopify is currently framed as the checkout/payment/order source of truth.
 - Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
 - Auralis Digital local policy/support pages exist for refund, shipping, privacy, and terms guidance.

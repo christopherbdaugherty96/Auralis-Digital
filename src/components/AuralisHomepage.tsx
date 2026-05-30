@@ -717,7 +717,7 @@ const NAV_LINKS = [
   { label: "Products", href: "/products" },
   { label: "Website Design", href: "/web-design" },
   { label: "Custom Design", href: "/custom-design" },
-  { label: "Pour Social", href: "https://pour-social.vercel.app", external: true },
+  { label: "Pour Social", href: "/pour-social" },
 ];
 
 const SECONDARY_NAV_LINKS = [
