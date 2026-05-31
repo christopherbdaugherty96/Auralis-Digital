@@ -575,7 +575,7 @@ function ProductCatalogGrid() {
   const filtered = activeCategory === "All" ? shopProducts : shopProducts.filter((p) => p.category === activeCategory);
 
   return (
-    <Reveal id="products-grid" className="product-catalog-section">
+    <div id="products-grid" className="product-catalog-section">
       <div className="section-heading compact">
         <span className="section-label"><Store aria-hidden="true" /> Lucid Creations</span>
         <h2 id="shop-preview-title">Shop the Lucid Creations collection.</h2>
@@ -607,7 +607,7 @@ function ProductCatalogGrid() {
           <ProductCard key={product.slug} product={product} />
         ))}
       </div>
-    </Reveal>
+    </div>
   );
 }
 
@@ -1169,17 +1169,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
 
-        <section className="content-section">
+        <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
           <div className="site-shell">
             <Reveal className="section-heading">
               <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Auralis Design Products</h1>
               <p className="mt-4">Sacred geometry, psychedelic art, and original designs — printed on demand.</p>
             </Reveal>
-          </div>
-        </section>
-
-        <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
-          <div className="site-shell">
             <ProductCatalogGrid />
             <Reveal className="shop-faq-panel">
               <div className="section-heading compact">

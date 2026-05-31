@@ -126,12 +126,6 @@ All colors MUST be HSL.
     letter-spacing: -0.011em;
     text-rendering: optimizeLegibility;
   }
-  body::before {
-    content: "";
-    @apply fixed inset-0 pointer-events-none;
-    z-index: 9999;
-    background: radial-gradient(ellipse at center, transparent 55%, hsl(225 65% 3% / 0.5) 100%);
-  }
 
   h1,
   h2,
@@ -153,27 +147,30 @@ All colors MUST be HSL.
 
 @layer components {
   /* ── Layout ─────────────────────────────────────── */
-  .auralis-page { @apply relative min-h-screen bg-background text-foreground; background: var(--gradient-hero); isolation: isolate; }
+  .auralis-page { @apply relative min-h-screen bg-background text-foreground; background: var(--gradient-hero); }
   .auralis-page::before {
     content: "";
     @apply fixed inset-0 pointer-events-none;
-    z-index: 0;
-    background: repeating-linear-gradient(
-      115deg,
-      transparent,
-      transparent 200px,
-      hsl(var(--primary) / 0.012) 200px,
-      hsl(var(--primary) / 0.012) 201px
-    );
+    z-index: 1;
+    background:
+      repeating-linear-gradient(
+        115deg,
+        transparent,
+        transparent 200px,
+        hsl(var(--primary) / 0.012) 200px,
+        hsl(var(--primary) / 0.012) 201px
+      );
     mix-blend-mode: screen;
   }
   .auralis-page::after {
     content: "";
     @apply fixed inset-0 pointer-events-none;
-    z-index: 0;
-    background: radial-gradient(circle 1px, hsl(var(--primary) / 0.08) 0.5px, transparent 0.5px);
-    background-size: 24px 24px;
-    opacity: 0.04;
+    z-index: 1;
+    background:
+      radial-gradient(ellipse at center, transparent 55%, hsl(225 65% 3% / 0.45) 100%),
+      radial-gradient(circle 1px, hsl(var(--primary) / 0.08) 0.5px, transparent 0.5px);
+    background-size: 100% 100%, 24px 24px;
+    opacity: 0.5;
   }
   .site-shell { @apply relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
 
@@ -470,8 +467,8 @@ All colors MUST be HSL.
     background-color: hsl(0 0% 3%);
   }
   .products-hero-overlay { @apply absolute inset-0 bg-black/20; }
-  .products-hero-content { @apply relative z-10 pb-0 pt-16 text-center; }
-  .products-hero-content .eyebrow { margin-bottom: -1.25rem; transform: translateY(50%); }
+  .products-hero-content { @apply relative z-10 pb-4 pt-16 text-center; }
+  .products-hero-content .eyebrow { @apply mb-0; }
   .products-hero-content h1 { @apply text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl; }
   .products-hero-content p { @apply mx-auto mt-4 max-w-xl text-base text-white/80 sm:text-lg; }
   .products-hero-cta {
