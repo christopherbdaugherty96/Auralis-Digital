@@ -40,11 +40,17 @@ All colors MUST be HSL.
     --teal-soft: 198 72% 47%;
     --blue-soft: 210 60% 35%;
     --cyan-soft: 195 65% 40%;
-    --gradient-hero: radial-gradient(circle at 20% 15%, hsl(var(--primary) / 0.08), transparent 40%), radial-gradient(circle at 75% 20%, hsl(var(--cyan-soft) / 0.06), transparent 35%), radial-gradient(circle at 50% 70%, hsl(var(--accent) / 0.04), transparent 45%), linear-gradient(135deg, hsl(225 65% 4%) 0%, hsl(220 55% 6%) 45%, hsl(230 70% 3%) 100%);
+    --gradient-hero:
+      radial-gradient(ellipse at 15% 10%, hsl(var(--primary) / 0.15), transparent 45%),
+      radial-gradient(ellipse at 80% 15%, hsl(var(--cyan-soft) / 0.12), transparent 40%),
+      radial-gradient(ellipse at 60% 60%, hsl(var(--blue-soft) / 0.10), transparent 50%),
+      radial-gradient(circle at 35% 80%, hsl(var(--accent) / 0.06), transparent 35%),
+      radial-gradient(circle at 90% 70%, hsl(var(--primary) / 0.08), transparent 30%),
+      linear-gradient(135deg, hsl(225 65% 2%) 0%, hsl(220 55% 7%) 40%, hsl(225 60% 4%) 70%, hsl(230 70% 2%) 100%);
     --gradient-ink: linear-gradient(135deg, hsl(225 60% 4%), hsl(220 50% 8%));
-    --glow-orb-cyan: radial-gradient(circle, hsl(var(--cyan-soft) / 0.14), transparent 70%);
-    --glow-orb-blue: radial-gradient(circle, hsl(var(--blue-soft) / 0.18), transparent 70%);
-    --glow-orb-primary: radial-gradient(circle, hsl(var(--primary) / 0.10), transparent 70%);
+    --glow-orb-cyan: radial-gradient(circle, hsl(var(--cyan-soft) / 0.20), transparent 70%);
+    --glow-orb-blue: radial-gradient(circle, hsl(var(--blue-soft) / 0.24), transparent 70%);
+    --glow-orb-primary: radial-gradient(circle, hsl(var(--primary) / 0.16), transparent 70%);
     --shadow-soft: 0 18px 60px -32px hsl(220 55% 4% / 0.62);
     --shadow-conversion: 0 18px 34px -18px hsl(var(--primary) / 0.58);
     --shadow-conversion-hover: 0 24px 44px -18px hsl(var(--primary) / 0.68);
@@ -157,8 +163,15 @@ All colors MUST be HSL.
         115deg,
         transparent,
         transparent 200px,
-        hsl(var(--primary) / 0.012) 200px,
-        hsl(var(--primary) / 0.012) 201px
+        hsl(var(--primary) / 0.025) 200px,
+        hsl(var(--primary) / 0.025) 201px
+      ),
+      repeating-linear-gradient(
+        245deg,
+        transparent,
+        transparent 300px,
+        hsl(var(--cyan-soft) / 0.015) 300px,
+        hsl(var(--cyan-soft) / 0.015) 301px
       );
     mix-blend-mode: screen;
   }
@@ -167,10 +180,9 @@ All colors MUST be HSL.
     @apply fixed inset-0 pointer-events-none;
     z-index: 1;
     background:
-      radial-gradient(ellipse at center, transparent 55%, hsl(225 65% 3% / 0.45) 100%),
-      radial-gradient(circle 1px, hsl(var(--primary) / 0.08) 0.5px, transparent 0.5px);
-    background-size: 100% 100%, 24px 24px;
-    opacity: 0.5;
+      radial-gradient(ellipse at center, transparent 60%, hsl(225 65% 2% / 0.35) 100%),
+      radial-gradient(circle 1px, hsl(var(--primary) / 0.06) 0.5px, transparent 0.5px);
+    background-size: 100% 100%, 20px 20px;
   }
   .site-shell { @apply relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
 
@@ -298,6 +310,36 @@ All colors MUST be HSL.
     filter: blur(80px);
     z-index: 0;
   }
+  /* ── Per-page background atmosphere ─────────── */
+  .auralis-page[data-page="shop"] {
+    background:
+      radial-gradient(ellipse at 10% 30%, hsl(var(--primary) / 0.12), transparent 50%),
+      radial-gradient(ellipse at 85% 50%, hsl(var(--cyan-soft) / 0.10), transparent 45%),
+      radial-gradient(circle at 50% 90%, hsl(var(--accent) / 0.05), transparent 40%),
+      var(--gradient-hero);
+  }
+  .auralis-page[data-page="web-design"] {
+    background:
+      radial-gradient(ellipse at 70% 10%, hsl(var(--primary) / 0.14), transparent 45%),
+      radial-gradient(ellipse at 10% 40%, hsl(var(--blue-soft) / 0.12), transparent 50%),
+      radial-gradient(circle at 80% 70%, hsl(var(--cyan-soft) / 0.08), transparent 40%),
+      var(--gradient-hero);
+  }
+  .auralis-page[data-page="custom-design"] {
+    background:
+      radial-gradient(ellipse at 30% 15%, hsl(var(--cyan-soft) / 0.12), transparent 45%),
+      radial-gradient(ellipse at 75% 50%, hsl(var(--accent) / 0.07), transparent 40%),
+      radial-gradient(circle at 20% 75%, hsl(var(--primary) / 0.10), transparent 45%),
+      var(--gradient-hero);
+  }
+  .auralis-page[data-page="pour-social"] {
+    background:
+      radial-gradient(ellipse at 50% 20%, hsl(var(--primary) / 0.14), transparent 50%),
+      radial-gradient(ellipse at 15% 60%, hsl(var(--cyan-soft) / 0.08), transparent 40%),
+      radial-gradient(circle at 80% 80%, hsl(var(--blue-soft) / 0.10), transparent 45%),
+      var(--gradient-hero);
+  }
+
   .section-heading { @apply mx-auto mb-10 max-w-3xl text-center; }
   .section-heading.compact { @apply mx-0 text-left; }
   .section-heading h2 { @apply text-3xl font-bold leading-tight sm:text-5xl; }

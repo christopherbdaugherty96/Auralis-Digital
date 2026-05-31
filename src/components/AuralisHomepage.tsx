@@ -924,7 +924,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         )}
       </header>
 
-      <main id="top" className="auralis-page overflow-hidden">
+      <main id="top" className="auralis-page overflow-hidden" data-page={page}>
 
         {isHome && (
           <>
