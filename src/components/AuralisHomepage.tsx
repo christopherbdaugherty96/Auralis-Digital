@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode, type FormEvent } from "react";
+import { useEffect, useMemo, useRef, useCallback, useState, type ReactNode, type FormEvent } from "react";
 import {
   ArrowRight,
   CalendarCheck,
@@ -287,7 +287,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   home: {
     title: "Auralis Digital — Creative Products, Custom Design & Website Services",
     description:
-      "Original sacred geometry and psychedelic art products, personalized custom designs, and small-business website services. Built by Christopher Daugherty in Southeast Michigan.",
+      "Original sacred geometry and psychedelic art products, personalized custom designs, and small-business website services. Based in Southeast Michigan.",
     canonicalPath: "/",
   },
   shop: {
@@ -457,9 +457,53 @@ function scrollToCurrentHash() {
 }
 
 function ProductPhotoScroll({ product }: { product: ShopProduct }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval>>();
+  const pausedRef = useRef(false);
+  const photoCount = product.photos.length;
+
+  const advance = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el || pausedRef.current) return;
+    const w = el.clientWidth;
+    const maxScroll = el.scrollWidth - w;
+    const next = el.scrollLeft + w;
+    el.scrollTo({ left: next >= maxScroll ? 0 : next, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
+    if (photoCount <= 1) return;
+    // Stagger start so cards don't all scroll at the same time
+    const delay = 3000 + Math.random() * 2000;
+    const startTimer = setTimeout(() => {
+      timerRef.current = setInterval(advance, 4000);
+    }, delay);
+    return () => {
+      clearTimeout(startTimer);
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [photoCount, advance]);
+
+  const handleInteraction = useCallback(() => {
+    pausedRef.current = true;
+    // Resume auto-scroll after 8 seconds of no interaction
+    if (timerRef.current) clearInterval(timerRef.current);
+    const resumeTimer = setTimeout(() => {
+      pausedRef.current = false;
+      timerRef.current = setInterval(advance, 4000);
+    }, 8000);
+    return () => clearTimeout(resumeTimer);
+  }, [advance]);
+
   return (
     <>
-      <div className="product-card-photos" aria-label={`${product.title} product photos`}>
+      <div
+        ref={scrollRef}
+        className="product-card-photos"
+        aria-label={`${product.title} product photos`}
+        onPointerDown={handleInteraction}
+        onWheel={handleInteraction}
+      >
         {product.photos.map((photo) => (
           <img
             key={`${product.slug}-${photo.imageUrl}`}
@@ -473,7 +517,7 @@ function ProductPhotoScroll({ product }: { product: ShopProduct }) {
           />
         ))}
       </div>
-      {product.photos.length > 1 && <p className="product-card-swipe">Swipe photos</p>}
+      {photoCount > 1 && <p className="product-card-swipe">Swipe photos</p>}
     </>
   );
 }
@@ -533,9 +577,14 @@ function ProductCatalogGrid() {
   return (
     <Reveal id="products-grid" className="product-catalog-section">
       <div className="section-heading compact">
-        <span className="section-label"><Store aria-hidden="true" /> All Products</span>
-        <h2 id="shop-preview-title">Shop Auralis Design products.</h2>
+        <span className="section-label"><Store aria-hidden="true" /> Lucid Creations</span>
+        <h2 id="shop-preview-title">Shop the Lucid Creations collection.</h2>
         <p>Browse with photos, prices, and details. Checkout opens on Shopify.</p>
+      </div>
+      <div className="cta-row mb-8">
+        <Button variant="conversion" size="lg" asChild>
+          <a href="/custom-design">Request Custom Design <ArrowRight aria-hidden="true" /></a>
+        </Button>
       </div>
       <div className="product-category-tabs" aria-label="Filter by category">
         {productCategories.map((cat) => {
@@ -1073,7 +1122,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <h2>Auralis Digital</h2>
               <p className="mt-4">
-                Auralis Digital is built and managed by Christopher Daugherty in Southeast Michigan.
+                Auralis Digital is built and managed in Southeast Michigan.
                 What started as a personal creative outlet became a small business offering original products,
                 custom designs, and practical websites for local businesses and creators.
               </p>
@@ -1115,16 +1164,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="products-hero-overlay" />
           <div className="site-shell products-hero-content">
             <Reveal>
-              <h1>Auralis Design Products</h1>
-              <p>Sacred geometry, psychedelic art, and original designs — printed on demand.</p>
-              <div className="cta-row centered">
-                <Button variant="conversion" size="lg" asChild>
-                  <a href="#products-grid">Shop All 30 Products <ArrowRight aria-hidden="true" /></a>
-                </Button>
-                <Button variant="conversionOutline" size="lg" asChild>
-                  <a href="/custom-design">Request Custom Design</a>
-                </Button>
-              </div>
+              <span className="eyebrow">Lucid Creations Collection</span>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Auralis Design Products</h1>
+              <p className="mt-4">Sacred geometry, psychedelic art, and original designs — printed on demand.</p>
             </Reveal>
           </div>
         </section>
