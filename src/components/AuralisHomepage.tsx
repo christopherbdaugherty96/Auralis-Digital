@@ -925,6 +925,14 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
       </header>
 
       <main id="top" className="auralis-page overflow-hidden" data-page={page}>
+        {/* Animated background orbs */}
+        <div className="bg-orbs" aria-hidden="true">
+          <div className="bg-orb bg-orb-1" />
+          <div className="bg-orb bg-orb-2" />
+          <div className="bg-orb bg-orb-3" />
+          <div className="bg-orb bg-orb-4" />
+          <div className="bg-orb bg-orb-5" />
+        </div>
 
         {isHome && (
           <>
