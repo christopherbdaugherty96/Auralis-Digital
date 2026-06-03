@@ -1,6 +1,6 @@
 # Auralis Digital Document Index
 
-Last updated: 2026-05-14
+Last updated: 2026-06-03
 
 This is the navigation layer for the repo. Use it to find the current source of truth before creating or editing another document.
 
@@ -22,6 +22,7 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 
 | File | Purpose |
 |---|---|
+| `docs/MASTER_BUSINESS_STRUCTURE.md` | Source of truth for deciding whether a project, store, website, repo, or revenue channel belongs under Auralis Digital. |
 | `docs/AURALIS_CURRENT_STATUS.md` | Canonical truth doc: what is real, what is missing, and what to do next. |
 | `docs/ROADMAP_EXECUTION_2026-05-14.md` | Current execution roadmap: public trust fixes, contact verification, Shopify readiness, custom design readiness, website design readiness, first sale/client, and proof. |
 | `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof and commerce readiness tracking. |
@@ -30,6 +31,32 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 | `docs/SHOPIFY_LAUNCH_CHECKLIST.md` | Product/Shopify launch checklist before sending real traffic to product links. |
 | `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
 | `docs/INDEX.md` | This map. |
+
+## Business Structure And Revenue Planning
+
+Use these files for parent-business structure, ecommerce strategy, affiliate/dropshipping strategy, and long-term direction.
+
+| File | Purpose |
+|---|---|
+| `docs/MASTER_BUSINESS_STRUCTURE.md` | Main decision layer for where future projects, websites, Shopify stores, repos, and revenue channels belong. |
+| `docs/AURALIS_DIGITAL_UMBRELLA_STRUCTURE.md` | Defines Auralis Digital as the parent business umbrella and maps major branches. |
+| `docs/BUSINESS_MAP.md` | Quick map of website services, Auralis Design products, RJ Print, affiliate products, dropshipping, and future ventures. |
+| `docs/ECOMMERCE_STACK_PLAN.md` | Shopify-first stack plan covering Printify, RJ Print, dropshipping, reviews, email, and social traffic. |
+| `docs/AFFILIATE_DROPSHIPPING_PLAN.md` | Strategy and guardrails for affiliate recommendations and curated dropshipping tests. |
+| `docs/3_YEAR_VISION.md` | Lightweight three-year direction: prove the business, build repeatable revenue, then separate only what earns separation. |
+
+## RJ Print Planning
+
+Folder: `projects/rj-print/docs/`
+
+RJ Print-specific planning lives with the RJ Print project because it is specific to that product line.
+
+| File | Purpose |
+|---|---|
+| `projects/rj-print/docs/RJ_PRINT_BRAND_PLAN.md` | RJ Print role, brand position, and relationship to Auralis Digital. |
+| `projects/rj-print/docs/RJ_PRINT_PRODUCT_CATEGORIES.md` | Starter product categories, fit criteria, and early avoid list. |
+| `projects/rj-print/docs/RJ_PRINT_PRICING_STRATEGY.md` | Pricing factors, margin guardrails, and custom quote rules. |
+| `projects/rj-print/docs/RJ_PRINT_FULFILLMENT_WORKFLOW.md` | Order, production, quality check, packaging, and customer communication workflow. |
 
 ## Current Public Direction
 

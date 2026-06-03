@@ -1,141 +1,57 @@
 # Auralis Digital Umbrella Structure
 
-## Final decision
+Last updated: 2026-06-03
 
-Auralis Digital is the parent and umbrella brand.
+Auralis Digital is the parent business umbrella for website services, ecommerce, product lines, affiliate strategy, future brands, and future ventures.
 
-Auralis Digital will continue operating the main website, Shopify store, domain, checkout, and customer-facing storefront.
-
-RJ Print will initially operate under Auralis Digital as a dedicated 3D-print product line, not as a separate website.
-
-## Current structure
-
-Auralis Digital supports multiple business lines and product categories:
-
-- Website/design services
-- Custom design
-- Ecommerce products
-- Printify products
-- RJ Print / 3D Prints
-- Future niche brands
-- Future software projects, including NovaLIS where appropriate
-
-## RJ Print placement
-
-RJ Print is a featured 3D-print product line inside the Auralis Digital storefront.
-
-RJ Print products should be listed under a dedicated `3D Prints` category inside the `Products` section.
-
-Recommended storefront wording:
-
-> RJ Print is the 3D-print collection by Auralis Digital, featuring custom and ready-made 3D-printed products.
-
-Alternative wording:
-
-> RJ Print is a featured 3D-print product line available through Auralis Digital.
-
-## Website navigation
-
-Keep the main navigation simple:
+## Parent Business
 
 ```text
-Home
-Products
-Custom Design
-Website Design
-About
-Contact
+Auralis Digital
 ```
 
-Inside `Products`, add:
+Auralis Digital owns the public business direction, operating documents, marketing systems, ecommerce planning, and future venture decisions.
+
+## Current Public Pillars
+
+1. Auralis Design products
+2. Custom / personalized design requests
+3. Website design services
+
+## Ecommerce Branch
 
 ```text
-3D Prints
+Ecommerce
+|-- Printify
+|-- RJ Print
+|-- Affiliate Products
+|-- Dropshipping Tests
+`-- Future Brands
 ```
 
-Possible `3D Prints` categories:
+## Website Services Branch
 
-- Koozies
-- Lamps
-- Clocks
-- Wallets
-- Home Decor
-- Desk Accessories
-- Custom 3D Prints
-- Ready-to-Ship Prints
-- Seasonal Prints
+Website services remain part of Auralis Digital.
 
-## Shopify collection setup
+This branch includes:
 
-Create one main collection:
+- local business websites
+- website refreshes
+- website audits
+- rebuild consultations
+- managed hosting and care
+- demo/sample sites
 
-```text
-3D Prints by RJ Print
-```
+## RJ Print
 
-Use subcollections, tags, or filters for:
+RJ Print is a product line inside the Auralis Digital ecosystem.
 
-- Koozies
-- Lamps
-- Clocks
-- Wallets
-- Home Decor
-- Desk Accessories
-- Custom Prints
-- Ready-to-Ship
-- Seasonal
+It should have its own project-level documentation because its products, pricing, fulfillment, and operations are specific.
 
-Recommended product naming pattern:
+RJ Print does not need its own repo right now.
 
-```text
-RJ Print 12 oz Can Koozie
-RJ Print Custom 3D Printed Lamp
-RJ Print 3D Printed Clock
-RJ Print Custom Desk Accessory
-```
+## Future Ventures
 
-Recommended product tags:
+Future ventures should be checked against `MASTER_BUSINESS_STRUCTURE.md` before creating a repo, domain, store, or standalone operating system.
 
-```text
-RJ Print
-3D Print
-Koozie
-Lamp
-Clock
-Wallet
-Custom Print
-Ready to Ship
-```
-
-## Page copy
-
-### 3D Prints page title
-
-```text
-3D Prints by RJ Print
-```
-
-### 3D Prints page description
-
-```text
-Explore RJ Print’s 3D-printed products, available through Auralis Digital. This collection includes ready-made and custom 3D prints such as koozies, lamps, clocks, wallets, home decor, desk accessories, and personalized printed items.
-```
-
-## About page update
-
-Add this section to the Auralis Digital About page when ready:
-
-```text
-Auralis Digital is an umbrella creative brand for custom products, website design, digital design, ecommerce projects, and featured product lines.
-
-RJ Print is one of our featured 3D-print product collections, offering custom and ready-made 3D-printed items through the Auralis Digital storefront.
-```
-
-## Rule going forward
-
-```text
-Auralis Digital is the umbrella.
-RJ Print starts inside Auralis Digital.
-3D Prints goes under Products.
-No separate RJ Print website until sales, brand demand, or operational complexity justify it.
-```
+The default decision is to keep early-stage ideas inside Auralis Digital until separation creates real clarity.
