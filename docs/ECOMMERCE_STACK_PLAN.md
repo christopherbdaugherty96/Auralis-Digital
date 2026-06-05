@@ -52,6 +52,14 @@ This keeps checkout, policies, email, analytics, order management, and store adm
 
 Do not create a second Shopify store yet. A separate RJ Print Shopify store is a later option only if the 3D printed product line grows enough to justify the extra maintenance.
 
+After creating or verifying the collections, audit every existing product and assign it to:
+
+- Lucid Creations
+- RJ Print
+- Both, only if truly justified
+
+Most apparel, blankets, pillows, wall art, and art-based POD products should live in Lucid Creations. Most koozies, wallets, lamps, clocks, chapstick holders, and functional 3D printed products should live in RJ Print.
+
 ## Lucid Creations
 
 Lucid Creations is the art/POD/custom-design-aligned product line.
@@ -113,6 +121,8 @@ Customer-facing role:
 ```text
 Original 3D printed products and functional designs.
 ```
+
+Custom 3D print commissions should belong to RJ Print through a "Custom 3D Print Request" path. Custom artwork or visual design requests should remain under Custom Design unless the primary deliverable is a 3D printed object.
 
 ## Dropshipping
 
@@ -182,15 +192,16 @@ Best content types:
 
 1. Keep one Shopify store.
 2. Create or verify separate Shopify collections for Lucid Creations and RJ Print.
-3. Add Auralis Digital navigation/shop paths so customers can browse Lucid Creations separately from RJ Print.
-4. Finish RJ Print / 3D print planning.
-5. Clean up and verify current Printify products.
-6. Add reviews.
-7. Set up Shopify Email.
-8. Add affiliate recommendations.
-9. Add one dropshipping supplier.
-10. Connect and test TikTok and Instagram selling.
-11. Use Faire only after demand is proven.
+3. Audit every existing product and assign it to Lucid Creations, RJ Print, or Both only if truly justified.
+4. Add Auralis Digital navigation/shop paths so customers can browse Lucid Creations separately from RJ Print.
+5. Finish RJ Print / 3D print planning.
+6. Clean up and verify current Printify products.
+7. Add reviews.
+8. Set up Shopify Email.
+9. Add affiliate recommendations.
+10. Add one dropshipping supplier.
+11. Connect and test TikTok and Instagram selling.
+12. Use Faire only after demand is proven.
 
 ## Main Rule
 

@@ -23,6 +23,19 @@ Best-fit product language:
 - small useful objects
 - creative printed accessories
 
+## Custom Request Boundary
+
+Use this split for custom work:
+
+- Standard 3D printed products belong in RJ Print.
+- Highly customized 3D print commissions belong in RJ Print through a "Custom 3D Print Request" path.
+- Custom artwork/design requests belong in Custom Design.
+
+If a request combines artwork and 3D printing, route it by the primary delivery:
+
+- final deliverable is a printed 3D object: RJ Print
+- final deliverable is artwork, layout, visual design, or files for other product formats: Custom Design
+
 ## Relationship To Auralis Digital
 
 Auralis Digital is the parent business.

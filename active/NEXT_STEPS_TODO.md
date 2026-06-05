@@ -34,6 +34,56 @@ Canonical current storefront truth:
 - `docs/marketing/STOREFRONT_IDENTITY_AND_SHOPIFY_TRUTH_2026-05-19.md`
 - `active/current_14_day_drop.md`
 
+## Current Priority List
+
+### Next Execution Order
+
+1. Finish the remaining product image reorder pass.
+2. Create or verify Lucid Creations and RJ Print collections.
+3. Review every existing product and assign it to Lucid Creations, RJ Print, or Both only if truly justified.
+4. Build collection navigation/pages and homepage integration.
+5. Move into operational cleanup: domain, 2FA, customs/HS codes, shipping coverage, and taxes.
+
+### Product Image Reorder Pass
+
+These are reorder-only fixes with low implementation risk and visible customer impact.
+
+- [ ] Psychedelic Ying Yang Tee.
+- [ ] Sid Girl Midweight Softstyle Fleece Hoodie.
+- [ ] Treehugger Hoodie.
+- [ ] Sun of Life Hooded Sherpa Fleece Blanket.
+
+### Storefront
+
+- [x] Policies
+- [x] Footer socials
+- [x] Sender email
+- [x] Product image cleanup
+- [ ] Create or verify Lucid Creations collection.
+- [ ] Create or verify RJ Print collection.
+- [ ] Audit every existing product and assign it to Lucid Creations, RJ Print, or Both only if truly justified.
+- [ ] Confirm Lucid Creations contains apparel, blankets, pillows, wall art, and art-based POD products.
+- [ ] Confirm RJ Print contains koozies, wallets, lamps, clocks, chapstick holders, and functional 3D printed products.
+- [ ] Build collection navigation/pages.
+- [ ] Add homepage integration for Lucid Creations and RJ Print paths.
+
+### RJ Print
+
+- [ ] Build RJ Print collection.
+- [ ] Add first 3D printed products.
+- [ ] Create RJ Print category structure.
+- [ ] Determine whether any Printify products belong in Lucid Creations or RJ Print.
+- [ ] Add a "Custom 3D Print Request" path under RJ Print for highly customized 3D print commissions.
+
+### Operational Cleanup
+
+- [ ] Branded domain.
+- [ ] 2FA verification.
+- [ ] Customs origin country data.
+- [ ] HS codes.
+- [ ] Shipping coverage review.
+- [ ] Tax review.
+
 ---
 
 ## Phase 1 - Business Setup
