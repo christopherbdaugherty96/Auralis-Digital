@@ -1,31 +1,45 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-05-29
+Last updated: 2026-06-05
 
 This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
 
 ## Current Public Direction
 
-Auralis Digital currently contains three related public surfaces:
+Auralis Digital currently contains four related public surfaces:
 
-1. **Auralis Design products**
-   - product catalog and product photos
+1. **Lucid Creations products**
+   - current art/POD/custom-design-aligned product catalog and product photos
+   - apparel, blankets, pillows, wall art, home decor, and related art-based creations
    - local Auralis product/support policy pages
    - Shopify checkout links
    - made-to-order production guidance without public production-partner branding
 
-2. **Custom / personalized design requests**
+2. **RJ Print products**
+   - 3D printed product line inside the Auralis ecosystem
+   - koozies, wallets, lamps, clocks, chapstick holders, accessories, and custom 3D prints
+   - dedicated collection/page structure while staying in the same Shopify store for now
+
+3. **Custom / personalized design requests**
    - personal artwork ideas
    - image, phrase, symbol, or theme-based requests
    - product concept requests for gifts, apparel, wall art, mugs, blankets, journals, canvas, and related formats
 
-3. **Website design services**
+4. **Website design services**
    - local-business and creator website design
    - website refreshes for Auralis-built sites
    - third-party website audit/rebuild consultation path
    - managed hosting and care support
 
-The current React/Vite source reflects the three-pillar direction.
+The current product/store structure should use one Shopify store with separate customer-facing collections/paths:
+
+```text
+Shop
+|-- Lucid Creations
+`-- RJ Print
+```
+
+Do not create a second Shopify store for RJ Print yet. A separate RJ Print store is a later option only if the product line grows enough to justify separate policies, analytics, domain/storefront work, and maintenance.
 
 Pour Social has its own route (`/pour-social`) as an external service brand. There is no standalone About page; `/about` redirects to `/#about`. Custom Design pricing tiers were intentionally removed from the public site.
 
@@ -35,7 +49,7 @@ Current execution priority is:
 sacred-geometry storefront truth -> strongest 3-5 product focus -> homepage/collection curation -> checkout/policy verification -> small organic product test -> analytics review -> first real product sale or proof
 ```
 
-The current active execution lane is Shopify storefront pre-launch validation for Auralis Design products. Products, custom design, and website design are all first-class parts of the public direction.
+The current active execution lane is Shopify storefront pre-launch validation with clearer collection separation between Lucid Creations and RJ Print. Products, custom design, and website design are all first-class parts of the public direction.
 
 ## What Is Real Right Now
 
@@ -57,6 +71,8 @@ The current active execution lane is Shopify storefront pre-launch validation fo
 - The homepage is intended to act as a brand gateway for Products, Custom Design, and Website Design instead of a product catalog.
 - Product/shop catalog data currently lives in `src/data/shopCatalog.ts` (30 products across 7 categories: Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks).
 - Shopify is currently framed as the checkout/payment/order source of truth.
+- One Shopify store should remain the current admin/checkout/policy/email/analytics system.
+- Product browsing should separate Lucid Creations from RJ Print through collections/pages instead of separate Shopify stores right now.
 - Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
 - Auralis Digital local policy/support pages exist for refund, shipping, privacy, and terms guidance.
 - Footer policy links point to local Auralis policy/support pages.
@@ -158,6 +174,7 @@ The product/shop surface should not be treated as a fully mature commerce operat
 - Do not offer the standard Website Refresh for websites Auralis did not originally build. Third-party sites should start with an audit, rebuild, migration, or custom quote.
 - Do not imply the product/shop surface is fully mature until Shopify checkout, fulfillment, policy, and support readiness are verified.
 - Do not add custom checkout, cart, payment, Shopify Admin API, or production-partner API logic to the public site without a separate implementation review.
+- Do not create a second Shopify store for RJ Print until the product line has enough demand to justify the extra maintenance.
 
 ## Current Repo and Deployment Truth
 
@@ -178,11 +195,12 @@ Use `active/NEXT_STEPS_TODO.md` as the active execution checklist.
 Current correct sequence:
 
 1. finish business/contact trust setup
-2. keep catalog synchronized with Shopify
-3. verify product/category rendering after product additions
-4. improve product copy/images where needed
-5. verify Shopify checkout, policy links, and payment/tax/shipping settings
-6. run small organic product test around sacred-geometry/psychedelic direction
-7. complete one real sale or engagement
-8. collect real proof only after permission or confirmation
-9. continue Website Design page polish separately
+2. keep one Shopify store while separating Lucid Creations and RJ Print collections/pages
+3. keep catalog synchronized with Shopify
+4. verify product/category rendering after product additions
+5. improve product copy/images where needed
+6. verify Shopify checkout, policy links, and payment/tax/shipping settings
+7. run small organic product test around sacred-geometry/psychedelic direction
+8. complete one real sale or engagement
+9. collect real proof only after permission or confirmation
+10. continue Website Design page polish separately

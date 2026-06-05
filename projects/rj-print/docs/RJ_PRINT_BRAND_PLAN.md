@@ -1,6 +1,6 @@
 # RJ Print Brand Plan
 
-Last updated: 2026-06-03
+Last updated: 2026-06-05
 
 RJ Print is the in-house 3D print product line inside the Auralis Digital ecosystem.
 
@@ -27,7 +27,18 @@ Best-fit product language:
 
 Auralis Digital is the parent business.
 
-RJ Print is a product line inside that business, not a separate repo right now.
+RJ Print is a product line inside that business, not a separate repo or separate Shopify store right now.
+
+Current store placement:
+
+```text
+Shopify
+`-- RJ Print collection
+```
+
+RJ Print should have its own collection/page so customers can browse 3D printed products separately from Lucid Creations while checkout, policies, email, analytics, and admin stay centralized.
+
+A separate RJ Print Shopify store can be reconsidered later if the line grows enough to justify separate maintenance.
 
 ## Initial Brand Priorities
 

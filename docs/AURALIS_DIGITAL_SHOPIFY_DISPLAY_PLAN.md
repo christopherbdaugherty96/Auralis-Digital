@@ -1,14 +1,16 @@
 # Auralis Digital Shopify Display Plan
 
-Scope note: this document is product/Shopify-specific. The broader Auralis Digital site direction is now three-pillar: Products, Custom Design, and Website Design. Use this plan for the product catalog and Shopify checkout boundary, not as the full brand-site roadmap.
+Scope note: this document is product/Shopify-specific. The broader Auralis Digital site direction now separates Lucid Creations, RJ Print, Custom Design, and Website Design. Use this plan for the product catalog and Shopify checkout boundary, not as the full brand-site roadmap.
 
 ## Goal
 
-Auralis Digital should act as the brand/display website for Auralis while showing Auralis Design products in a clean visual shop section.
+Auralis Digital should act as the brand/display website for Auralis while showing product lines in clean, separated shop paths.
 
 Shopify remains responsible for product pages, checkout, payments, taxes, order management, and the path that sends Printify orders into fulfillment.
 
 The website should let visitors scroll through products on Auralis Digital, then send them to Shopify when they are ready to view, price-check, or buy.
+
+Current structure: use one Shopify store with separate Lucid Creations and RJ Print collections/pages. Do not create a second Shopify store yet.
 
 ## Current Store Context
 
@@ -57,7 +59,15 @@ Order approval should start manually until test orders have been reviewed. Autom
 Primary navigation:
 
 ```text
-Home | Shop | Website Services | About | Contact
+Home | Shop | Custom Design | Website Design | Contact
+```
+
+Shop structure:
+
+```text
+Shop
+|-- Lucid Creations
+`-- RJ Print
 ```
 
 ## Page Roles
@@ -68,7 +78,27 @@ The homepage should introduce the Auralis brand and include a featured product s
 
 ### Shop
 
-The Shop page should display product cards in a scrollable layout. Each product card links out to the matching Shopify product page.
+The Shop page should separate product browsing into Lucid Creations and RJ Print paths. Each product card links out to the matching Shopify product page.
+
+Lucid Creations should contain current art/POD/custom-design-aligned products:
+
+- apparel
+- blankets
+- pillows
+- wall art
+- home decor
+- Printify products
+- art-based creations
+
+RJ Print should contain 3D printed products:
+
+- koozies
+- wallets
+- lamps
+- clocks
+- chapstick holders
+- accessories
+- custom 3D prints
 
 ### Website Services
 
@@ -121,6 +151,10 @@ Those responsibilities stay with Shopify and Printify.
 
 This avoids unnecessary payment/security complexity and keeps the Auralis Digital website focused on display, branding, and routing customers to the correct Shopify product page.
 
+Keep checkout, policies, email, analytics, and store admin centralized in one Shopify store while product lines are visually separated.
+
+A separate RJ Print Shopify store is a later option only if demand grows enough to justify the added maintenance.
+
 ## Current Shopify Product Link Format
 
 Shopify product URLs should follow this structure:
@@ -169,6 +203,8 @@ Each card links to the product page on Shopify.
 
 This is the recommended current setup.
 
+Current refinement: keep one Shopify store, but split browsing into Lucid Creations and RJ Print collections/pages.
+
 ### Option 3: Shopify Buy Button Embed
 
 Use Shopify's Buy Button app to generate embeddable product or collection code.
@@ -189,6 +225,8 @@ The implementation should add or update:
 
 - Homepage featured shop/display section
 - Optional dedicated Shop page
+- Lucid Creations shop path/collection
+- RJ Print shop path/collection
 - Main navigation link for Shop
 - Main navigation link for Website Services
 - Product card styling

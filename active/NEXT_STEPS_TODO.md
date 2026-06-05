@@ -1,20 +1,23 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-05-19
+Last updated: 2026-06-05
 
 ## Current Mode
 
 Repo cleanup is complete. Do not restart cleanup unless something is actively broken.
 
-Auralis Digital currently contains three related public surfaces:
+Auralis Digital currently contains four related public surfaces:
 
-1. Auralis Design products
-2. custom / personalized design requests
-3. website design services
+1. Lucid Creations products
+2. RJ Print products
+3. custom / personalized design requests
+4. website design services
 
-Current active execution lane: **Shopify storefront pre-launch validation for Auralis Design products**.
+Current active execution lane: **Shopify storefront pre-launch validation with separate Lucid Creations and RJ Print collections**.
 
-This does not mean the product/shop surface is mature. It means the current work is to make the Shopify storefront coherent, sample-ready, checkout-ready, and testable before traffic.
+This does not mean the product/shop surface is mature. It means the current work is to make the Shopify storefront coherent, sample-ready, checkout-ready, collection-separated, and testable before traffic.
+
+Current Shopify decision: keep one Shopify store for now. Use separate collections/pages for Lucid Creations and RJ Print. Do not create a second Shopify store yet.
 
 Current direction correction: Auralis Design should focus on Christopher's own sacred-geometry, psychedelic, symbolic, cosmic, and spiritual-inspired artwork. The operator / blue-collar / Before Sunrise direction is not active and should not guide the brand, website, Shopify collections, captions, or outreach.
 
@@ -24,7 +27,7 @@ Current execution priority is:
 sacred-geometry storefront truth -> strongest 3-5 product focus -> homepage/collection curation -> checkout/policy verification -> small organic product test -> analytics review -> first real product sale or proof
 ```
 
-Products, custom design, and website design are all active public directions. None of the three should falsely present themselves as more mature than they really are.
+Lucid Creations, RJ Print, custom design, and website design are all active public directions. None should falsely present themselves as more mature than they really are.
 
 Canonical current storefront truth:
 
@@ -81,16 +84,16 @@ Current contact correction: domain email is not configured yet. Auralis is using
 
 ## Phase 3 - Brand / Public-Positioning Clarity
 
-Goal: keep the three-pillar public direction understandable while reflecting the corrected sacred-geometry / psychedelic product identity.
+Goal: keep the public direction understandable while reflecting the corrected sacred-geometry / psychedelic product identity and the Lucid Creations / RJ Print shop split.
 
-- [ ] Confirm long-term relationship between `Auralis Digital` and `Auralis Design`.
+- [ ] Confirm long-term relationship between `Auralis Digital`, `Lucid Creations`, and `RJ Print`.
 - [ ] Verify live homepage behavior after deploy.
 - [ ] Confirm homepage acts as a brand gateway instead of a raw product catalog.
 - [ ] Confirm homepage routes visitors toward Products, Custom Design, and Website Design.
 - [ ] Confirm Shopify storefront/homepage presentation prioritizes sacred geometry, psychedelic art, symbolic products, and personal designs.
 - [ ] Confirm no active public copy presents Operator Series, Before Sunrise, Lawn & Power, Garage & Mechanic, Independent Builder, or blue-collar workwear as the Auralis direction.
 - [ ] Confirm no product pricing appears on the Auralis Digital homepage unless intentionally selected.
-- [ ] Confirm navigation clearly separates Products, Custom Design, and Website Design.
+- [ ] Confirm navigation clearly separates Lucid Creations, RJ Print, Custom Design, and Website Design.
 - [x] Confirm website-design prospects can find website demos from the Website Design page.
 - [ ] Confirm website-design prospects can find contact/intake without confusion.
 - [ ] Confirm custom-design visitors understand request boundaries.
@@ -128,6 +131,9 @@ The website catalog now contains 30 products across 7 categories (Apparel, Blank
 
 Pre-launch tasks:
 
+- [ ] Create or verify separate Shopify collections for Lucid Creations and RJ Print.
+- [ ] Confirm Auralis Digital lets customers browse Lucid Creations separately from RJ Print.
+- [ ] Confirm RJ Print remains in the same Shopify store for now.
 - [ ] Select the first 3-5 sacred-geometry / psychedelic products to test.
 - [ ] Confirm product titles, images, prices, and descriptions match the corrected direction.
 - [ ] Create or upload Sacred Geometry / Balance collection banner.

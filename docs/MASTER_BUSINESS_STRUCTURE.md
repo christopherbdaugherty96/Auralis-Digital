@@ -1,6 +1,6 @@
 # Master Business Structure
 
-Last updated: 2026-06-03
+Last updated: 2026-06-05
 
 This is the source-of-truth document for deciding where Auralis Digital business ideas, product lines, revenue channels, websites, Shopify stores, and repos belong.
 
@@ -13,6 +13,10 @@ Auralis Digital is the parent business umbrella.
 New work should stay inside `Auralis-Digital` unless it becomes a standalone software product, standalone brand, separate legal/business operation, or separately deployed system with its own lifecycle.
 
 Do not create a new repo for affiliate marketing, dropshipping, Printify planning, or RJ Print planning at the current stage.
+
+Current ecommerce structure: keep one Shopify store for now and separate product lines with clear Shopify collections and Auralis Digital navigation.
+
+Do not create a second Shopify store for RJ Print yet.
 
 ## Current Structure
 
@@ -27,8 +31,9 @@ Auralis Digital
 |-- Website Services
 |
 |-- Ecommerce
-|   |-- Printify
+|   |-- Lucid Creations
 |   |-- RJ Print
+|   |-- Printify
 |   |-- Affiliate Products
 |   `-- Future Brands
 |
@@ -71,12 +76,16 @@ Before creating a new repo, website, Shopify store, or brand surface, answer the
 ## Current Decisions
 
 - Auralis Digital remains the parent business.
-- Shopify remains the commerce system for product checkout, payments, orders, and platform operations.
+- Shopify remains the single commerce system for product checkout, payments, orders, policies, email, analytics, and platform operations.
+- Product browsing should be visually separated into two primary shop paths for now: Lucid Creations and RJ Print.
+- Lucid Creations contains current art/POD/custom-design-aligned products such as apparel, blankets, pillows, wall art, home decor, and art-based creations.
+- RJ Print contains 3D printed products such as koozies, wallets, lamps, clocks, chapstick holders, accessories, and custom 3D prints.
 - Printify remains the print-on-demand production layer for non-in-house products.
 - RJ Print remains a documented product line inside the Auralis ecosystem.
 - Affiliate products remain a revenue channel under Auralis Digital.
 - Dropshipping remains a test layer, not the business foundation.
 - Faire remains a later wholesale option after demand is proven.
+- A separate Shopify store for RJ Print is a later option only if RJ Print grows enough to justify separate policies, analytics, domain/storefront work, and maintenance.
 - No new repo is needed for affiliate marketing, dropshipping, Printify planning, or RJ Print planning right now.
 
 ## When To Create A New Repo

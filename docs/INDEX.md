@@ -1,14 +1,15 @@
 # Auralis Digital Document Index
 
-Last updated: 2026-06-03
+Last updated: 2026-06-05
 
 This is the navigation layer for the repo. Use it to find the current source of truth before creating or editing another document.
 
-Auralis Digital currently contains three related public surfaces:
+Auralis Digital currently contains four related public surfaces:
 
-1. Auralis Design products
-2. custom / personalized design requests
-3. website design services
+1. Lucid Creations products
+2. RJ Print products
+3. custom / personalized design requests
+4. website design services
 
 Current execution priority is:
 
@@ -40,8 +41,8 @@ Use these files for parent-business structure, ecommerce strategy, affiliate/dro
 |---|---|
 | `docs/MASTER_BUSINESS_STRUCTURE.md` | Main decision layer for where future projects, websites, Shopify stores, repos, and revenue channels belong. |
 | `docs/AURALIS_DIGITAL_UMBRELLA_STRUCTURE.md` | Defines Auralis Digital as the parent business umbrella and maps major branches. |
-| `docs/BUSINESS_MAP.md` | Quick map of website services, Auralis Design products, RJ Print, affiliate products, dropshipping, and future ventures. |
-| `docs/ECOMMERCE_STACK_PLAN.md` | Shopify-first stack plan covering Printify, RJ Print, dropshipping, reviews, email, and social traffic. |
+| `docs/BUSINESS_MAP.md` | Quick map of website services, Lucid Creations, RJ Print, affiliate products, dropshipping, and future ventures. |
+| `docs/ECOMMERCE_STACK_PLAN.md` | Shopify-first stack plan covering Lucid Creations, RJ Print, Printify, dropshipping, reviews, email, and social traffic. |
 | `docs/AFFILIATE_DROPSHIPPING_PLAN.md` | Strategy and guardrails for affiliate recommendations and curated dropshipping tests. |
 | `docs/3_YEAR_VISION.md` | Lightweight three-year direction: prove the business, build repeatable revenue, then separate only what earns separation. |
 
@@ -60,13 +61,14 @@ RJ Print-specific planning lives with the RJ Print project because it is specifi
 
 ## Current Public Direction
 
-Auralis Digital currently contains three related public surfaces:
+Auralis Digital currently contains four related public surfaces:
 
-1. Auralis Design products
-2. Custom / personalized design requests
-3. Website design services
+1. Lucid Creations products
+2. RJ Print products
+3. Custom / personalized design requests
+4. Website design services
 
-The homepage should act as a brand gateway. Products belong on `/products` and `/shop`, custom requests belong on `/custom-design`, and website services belong on `/web-design`.
+The homepage should act as a brand gateway. Product browsing should split into Lucid Creations and RJ Print paths while checkout remains in one Shopify store. Custom requests belong on `/custom-design`, and website services belong on `/web-design`.
 
 ## Current Highest-ROI Workstream
 

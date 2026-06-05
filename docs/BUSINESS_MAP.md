@@ -1,6 +1,6 @@
 # Business Map
 
-Last updated: 2026-06-03
+Last updated: 2026-06-05
 
 This map shows how the major Auralis Digital business areas relate to each other.
 
@@ -31,11 +31,18 @@ Includes:
 - managed hosting and care
 - demo/sample portfolio work
 
-## Auralis Design Products
+## Lucid Creations
 
-Product path for Auralis artwork, symbolic design, sacred geometry, psychedelic art, home decor, apparel, and custom design-aligned products.
+Product path for artwork, symbolic design, sacred geometry, psychedelic art, apparel, blankets, pillows, wall art, home decor, POD products, and custom design-aligned products.
 
 Shopify remains the commerce backend.
+
+Current customer-facing structure:
+
+```text
+Shop
+`-- Lucid Creations
+```
 
 ## RJ Print
 
@@ -48,6 +55,15 @@ Primary strengths:
 - made-to-order workflow
 - giftable items
 - creator and home decor products
+
+Current customer-facing structure:
+
+```text
+Shop
+`-- RJ Print
+```
+
+RJ Print should stay in the same Shopify store for now, separated by collection/page. A separate Shopify store is a later option only after the line proves enough demand.
 
 ## Affiliate Products
 
