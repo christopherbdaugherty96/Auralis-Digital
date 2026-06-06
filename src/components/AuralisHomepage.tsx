@@ -98,6 +98,13 @@ const concepts = [
 
 const websiteDemos = [
   {
+    title: "RJ Print",
+    category: "Product Showcase",
+    description: "3D-printing shop preview with a browsable product catalog, custom-order concepts, policy pages, and a mobile-first storefront flow.",
+    imageUrl: "/assets/demo-thumbnails/rj-print.svg",
+    href: "/projects/rj-print/",
+  },
+  {
     title: "Restaurant",
     category: "Food",
     description: "Diner, coney, takeout, or cafe structure focused on menu visibility, hours, location, and mobile customer action.",
