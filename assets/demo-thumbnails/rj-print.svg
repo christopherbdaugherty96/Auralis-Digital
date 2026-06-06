@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">RJ Print website demo thumbnail</title>
+  <desc id="desc">Dark brown product showcase preview for a 3D printing shop.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#120a06"/>
+      <stop offset="1" stop-color="#41200f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1">
+      <stop offset="0" stop-color="#5c2d13"/>
+      <stop offset="1" stop-color="#2a1209"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="92" fill="#100907"/>
+  <rect x="52" y="30" width="34" height="34" rx="7" fill="none" stroke="#f9733e" stroke-width="6"/>
+  <path d="M62 23v14m14-14v14M62 49v14m14-14v14M45 40h14m28 0h14M45 54h14m28 0h14" stroke="#f9733e" stroke-width="5" stroke-linecap="round"/>
+  <text x="112" y="59" fill="#fff7ed" font-family="Arial, sans-serif" font-size="30" font-weight="800">RJ PRINT</text>
+  <rect x="718" y="38" width="32" height="4" rx="2" fill="#c6a58f"/>
+  <rect x="718" y="50" width="32" height="4" rx="2" fill="#c6a58f"/>
+  <rect x="718" y="62" width="32" height="4" rx="2" fill="#c6a58f"/>
+  <rect x="70" y="172" width="250" height="44" rx="22" fill="#2b160d" stroke="#6f3a20"/>
+  <text x="105" y="201" fill="#d9955f" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">RJ PRINT SHOP</text>
+  <text x="70" y="304" fill="#fff7ed" font-family="Arial, sans-serif" font-size="66" font-weight="900">3D-Printed</text>
+  <text x="70" y="375" fill="#fff7ed" font-family="Arial, sans-serif" font-size="66" font-weight="900">Products</text>
+  <text x="72" y="430" fill="#d8c0ae" font-family="Arial, sans-serif" font-size="25">Made to order in PLA, PETG, and TPU.</text>
+  <text x="72" y="468" fill="#d8c0ae" font-family="Arial, sans-serif" font-size="25">Available in multiple colors.</text>
+  <rect x="70" y="540" width="445" height="112" rx="20" fill="url(#panel)" stroke="#804124"/>
+  <text x="102" y="584" fill="#f9733e" font-family="Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="3">RJ PRINT</text>
+  <text x="102" y="626" fill="#fff7ed" font-family="Arial, sans-serif" font-size="30" font-weight="900">Browse 3D-printed products.</text>
+  <g transform="translate(690 190)">
+    <rect width="360" height="430" rx="30" fill="#211008" stroke="#6f3a20" stroke-width="3"/>
+    <path d="M118 90h124v80l-22 30H140l-22-30z" fill="#f9733e" opacity=".88"/>
+    <path d="M148 117h64v54h-64z" fill="#2a1209"/>
+    <circle cx="180" cy="263" r="74" fill="none" stroke="#d9955f" stroke-width="20"/>
+    <path d="M180 217v92m-46-46h92" stroke="#f9733e" stroke-width="18" stroke-linecap="round"/>
+    <text x="66" y="386" fill="#f2d7c3" font-family="Arial, sans-serif" font-size="22" font-weight="700">Product showcase demo</text>
+  </g>
+</svg>

@@ -1,18 +1,18 @@
 {
   "name": "RJ Print",
   "short_name": "RJ Print",
-  "start_url": "/RJ-Print/",
+  "start_url": "/projects/rj-print/",
   "display": "browser",
   "background_color": "#1a1008",
   "theme_color": "#1a1008",
   "icons": [
     {
-      "src": "/RJ-Print/favicon-32x32.png?v=20260506",
+      "src": "/projects/rj-print/favicon-32x32.png?v=20260506",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/RJ-Print/apple-touch-icon.png?v=20260506",
+      "src": "/projects/rj-print/apple-touch-icon.png?v=20260506",
       "sizes": "180x180",
       "type": "image/png"
     }

@@ -1,6 +1,6 @@
 # RJ Print Product Categories
 
-Last updated: 2026-06-03
+Last updated: 2026-06-05
 
 This document defines starter product categories for RJ Print.
 
@@ -15,6 +15,20 @@ This document defines starter product categories for RJ Print.
 - display stands
 - small home decor
 - personalized gift items
+
+## First Launch Lineup
+
+RJ Print should not be promoted in homepage/navigation until it has enough real inventory to feel like a real product line. Target at least five products before public promotion.
+
+Strong first five:
+
+1. 12 oz Can Koozie
+2. Chapstick Holder
+3. Wallet / Card Holder
+4. Desk Organizer
+5. Custom 3D Print Request
+
+This gives the launch collection a mix of everyday carry, utility, office/home organization, giftable items, and custom work entry.
 
 ## Strong Fit Criteria
 
