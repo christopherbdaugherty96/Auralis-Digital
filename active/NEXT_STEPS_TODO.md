@@ -38,20 +38,19 @@ Canonical current storefront truth:
 
 ### Next Execution Order
 
-1. Finish the remaining product image reorder pass.
-2. Create or verify Lucid Creations and RJ Print collections.
-3. Review every existing product and assign it to Lucid Creations, RJ Print, or Both only if truly justified.
-4. Build collection navigation/pages and homepage integration.
-5. Move into operational cleanup: domain, 2FA, customs/HS codes, shipping coverage, and taxes.
+1. Finish the remaining product image reorder pass manually or with an exact Shopify media-ordering tool.
+2. Add the first real RJ Print products.
+3. Build collection navigation/pages and homepage integration only after RJ Print has enough real inventory.
+4. Move into operational cleanup: domain, 2FA, customs/HS codes, shipping coverage, and taxes.
 
 ### Product Image Reorder Pass
 
-These are reorder-only fixes with low implementation risk and visible customer impact.
+These are reorder-only fixes with visible customer impact. Do not use image replacement tools or bulk media operations. Only use a tool that supports exact Shopify media ordering while preserving variant mappings; otherwise perform the reorder manually in Shopify.
 
-- [ ] Psychedelic Ying Yang Tee.
-- [ ] Sid Girl Midweight Softstyle Fleece Hoodie.
-- [ ] Treehugger Hoodie.
-- [ ] Sun of Life Hooded Sherpa Fleece Blanket.
+- [x] Psychedelic Ying Yang Tee - already artwork-first.
+- [x] Sid Girl Midweight Softstyle Fleece Hoodie - already artwork-first.
+- [ ] Treehugger Hoodie - manual reorder still needed.
+- [ ] Sun of Life Hooded Sherpa Fleece Blanket - manual reorder still needed; image 3 is the clearest artwork-forward view.
 
 ### Storefront
 
@@ -59,21 +58,22 @@ These are reorder-only fixes with low implementation risk and visible customer i
 - [x] Footer socials
 - [x] Sender email
 - [x] Product image cleanup
-- [ ] Create or verify Lucid Creations collection.
-- [ ] Create or verify RJ Print collection.
-- [ ] Audit every existing product and assign it to Lucid Creations, RJ Print, or Both only if truly justified.
-- [ ] Confirm Lucid Creations contains apparel, blankets, pillows, wall art, and art-based POD products.
-- [ ] Confirm RJ Print contains koozies, wallets, lamps, clocks, chapstick holders, and functional 3D printed products.
+- [x] Create or verify Lucid Creations collection.
+- [x] Create or verify RJ Print collection.
+- [x] Audit every existing product and assign it to Lucid Creations, RJ Print, or Both only if truly justified.
+- [x] Confirm Lucid Creations contains current apparel, blankets, pillows, wall art, and art-based POD products.
+- [x] Confirm RJ Print currently remains empty until real 3D print inventory exists.
 - [ ] Build collection navigation/pages.
 - [ ] Add homepage integration for Lucid Creations and RJ Print paths.
 
 ### RJ Print
 
-- [ ] Build RJ Print collection.
-- [ ] Add first 3D printed products.
+- [x] Build RJ Print collection as empty infrastructure.
+- [ ] Add first 3D printed products; target at least 5 before homepage/navigation promotion.
 - [ ] Create RJ Print category structure.
 - [ ] Determine whether any Printify products belong in Lucid Creations or RJ Print.
 - [ ] Add a "Custom 3D Print Request" path under RJ Print for highly customized 3D print commissions.
+- [ ] Keep RJ Print out of homepage/navigation until it has at least 5 real products.
 
 ### Operational Cleanup
 
