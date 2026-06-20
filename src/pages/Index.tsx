@@ -3,6 +3,8 @@ import AuralisHomepage from "@/components/AuralisHomepage";
 type AuralisPage =
   | "home"
   | "shop"
+  | "collections"
+  | "creator-shops"
   | "custom-design"
   | "web-design"
   | "websites"

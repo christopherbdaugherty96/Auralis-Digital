@@ -31,6 +31,8 @@ const App = () => (
           <Route path="/about" element={<Navigate to="/#about" replace />} />
           <Route path="/products" element={<Index page="shop" />} />
           <Route path="/shop" element={<Index page="shop" />} />
+          <Route path="/collections" element={<Index page="collections" />} />
+          <Route path="/creator-shops" element={<Index page="creator-shops" />} />
           <Route path="/custom-design" element={<Index page="custom-design" />} />
           <Route path="/web-design" element={<Index page="web-design" />} />
           <Route path="/websites" element={<Index page="websites" />} />

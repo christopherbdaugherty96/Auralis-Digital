@@ -33,19 +33,13 @@ const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 
 const HOMEPAGE_FEATURED_SLUGS = [
+  "psychedelic-ying-yang-heavy-cotton-tee",
+  "psychedelic-midweight-softstyle-fleece-hoodie",
   "sun-of-life-wall-tapestry",
-  "psychedelic-ying-yang-woven-blanket",
-  "micro-or-macro-t-shirt",
-  "snapback-trucker-cap-with-patch-embroidery",
+  "goddess-tapestry",
+  "treehugger-hoodie",
+  "trippy-hippy-tee",
   "oval-necklace",
-  "zeus-journal-matte",
-];
-
-const HOMEPAGE_TILE_SLUGS = [
-  "sun-of-life-wall-tapestry",
-  "psychedelic-ying-yang-woven-blanket",
-  "micro-or-macro-t-shirt",
-  "geometric-dad-cap",
 ];
 
 const CUSTOM_DESIGN_PREVIEW = {
@@ -58,13 +52,23 @@ const CUSTOM_DESIGN_OFFERING_PREVIEW = {
 };
 
 const customRequestTypes = [
-  "Pet portraits and fur baby designs",
-  "Birthday, holiday, or memorial gifts",
-  "Photo-to-product concepts",
-  "Inside jokes and personal artwork",
-  "Event and party designs",
-  "Apparel, wall art, blankets, and accessories",
-  "Creator or small-brand visuals",
+  { category: "Wire Wraps", icon: "sparkles", items: [
+    "Hand-wrapped pieces using stones, crystals, and natural textures",
+    "Symbolic and sacred geometry designs",
+    "One-of-one styles — no two wraps are the same",
+    "Pendants, necklaces, and wearable art",
+  ]},
+  { category: "3D Print Requests", icon: "hammer", items: [
+    "Functional prints and one-off items",
+    "Prototypes and product concepts",
+    "Business signage and display pieces",
+    "Branded goods and promotional items",
+  ]},
+  { category: "Gift Bundles", icon: "star", items: [
+    "Curated art and accessory bundles",
+    "Personalized gift sets for any occasion",
+    "Festival care packages",
+  ]},
 ];
 
 const customProcess = [
@@ -76,17 +80,39 @@ const customProcess = [
 ];
 
 const services = [
-  { title: "Website design", copy: "Professional sites built around your services, trust, and contact flow.", icon: Paintbrush },
-  { title: "Landing pages", copy: "Focused pages for offers, events, ads, and quote requests.", icon: Store },
-  { title: "Mobile optimization", copy: "Layouts that make calling, booking, and reading easy on phones.", icon: MonitorSmartphone },
-  { title: "Local SEO setup", copy: "Page structure and location signals that help nearby customers find you.", icon: SearchCheck },
-  { title: "Contact forms", copy: "Simple flows that route visitors toward calls, quotes, or messages.", icon: MessageSquareText },
-  { title: "Brand cleanup", copy: "Sharper wording, better hierarchy, and cleaner presentation.", icon: Sparkles },
+  { title: "Shopify store setup", copy: "Full store build — theme, settings, checkout, payment, shipping zones, and domain connection.", icon: Store },
+  { title: "Product catalog structure", copy: "Product listings, variant setup, pricing, photos, descriptions, and SEO-friendly handles.", icon: Paintbrush },
+  { title: "Collections and navigation", copy: "Organized collections, homepage sections, menus, and filtered browsing that makes sense for your catalog.", icon: SearchCheck },
+  { title: "Printify / POD integration", copy: "Connect print-on-demand fulfillment so products go from order to production automatically.", icon: Sparkles },
+  { title: "Mobile-first storefront", copy: "Layouts optimized for phone shoppers — fast-loading pages, clear product photos, and easy checkout.", icon: MonitorSmartphone },
+  { title: "Launch support", copy: "Domain setup, test orders, social links, contact paths, and go-live checklist to make sure everything works.", icon: MessageSquareText },
 ];
 
 const process = ["Discover", "Structure", "Design", "Review", "Launch"];
 
-const DEMO_LIBRARY_HREF = "projects/demo-index.html";
+const businessLaunchIncludes = [
+  "Shopify store setup and configuration",
+  "Product catalog and variant setup",
+  "Collection and navigation structure",
+  "Homepage and product page layout",
+  "Printify / POD integration",
+  "Domain connection guidance",
+  "Checkout, payment, and shipping setup",
+  "Mobile-optimized storefront",
+  "Social media link integration",
+  "Contact and email setup",
+  "Go-live checklist and test orders",
+];
+
+const businessLaunchClientPaid = [
+  "Domain purchase",
+  "Shopify plan",
+  "Printify product costs",
+  "Paid apps or subscriptions",
+  "Premium themes",
+  "Paid advertising budget",
+];
+
 
 const concepts = [
   { name: "Barbershop", note: "Booking, services, location, and social proof.", icon: Scissors },
@@ -96,163 +122,217 @@ const concepts = [
   { name: "Contractor", note: "Service areas, quote forms, and trust signals.", icon: Hammer },
 ];
 
+const collectionCards = [
+  {
+    title: "Apparel",
+    copy: "Wearable art, hats, shirts, and creator merch concepts.",
+    href: "/products",
+    icon: Store,
+  },
+  {
+    title: "Blankets",
+    copy: "Soft statement pieces featuring original and custom artwork.",
+    href: "/products",
+    icon: Sparkles,
+  },
+  {
+    title: "Wall Art",
+    copy: "Tapestries and visual pieces for rooms, studios, and creative spaces.",
+    href: "/products",
+    icon: Paintbrush,
+  },
+  {
+    title: "Accessories",
+    copy: "Hats, journals, cards, and smaller products for everyday use.",
+    href: "/products",
+    icon: Store,
+  },
+  {
+    title: "3D Prints",
+    copy: "Custom printed items, prototypes, signage, and practical product ideas.",
+    href: "/creator-shops",
+    icon: Hammer,
+  },
+];
+
+const creatorShops = [
+  {
+    title: "Lucid Creations",
+    copy: "The Shopify shop by Auralis Digital — psychedelic art, handmade pieces, festival-inspired designs, and select 3D printed goods.",
+    href: "/products",
+    icon: Sparkles,
+  },
+  {
+    title: "RJ Print",
+    copy: "3D printed products, custom manufacturing, prototypes, business signage, and promotional items.",
+    href: "/creator-shops",
+    icon: Hammer,
+  },
+  {
+    title: "LastStopShop",
+    copy: "A future shop lane for curated products, drops, and creative resale ideas.",
+    href: "/creator-shops",
+    icon: Store,
+  },
+  {
+    title: "Pour Social",
+    copy: "Mobile BYOB bar service from the broader creator shop ecosystem.",
+    href: "/pour-social",
+    icon: Wine,
+  },
+  {
+    title: "Partnered Creators",
+    copy: "Creator storefronts and product drops supported by Auralis Digital.",
+    href: "/creator-shops",
+    icon: Star,
+  },
+];
+
 const websiteDemos = [
   {
     title: "RJ Print",
     category: "Product Showcase",
     description: "3D-printing shop preview with a browsable product catalog, custom-order concepts, policy pages, and a mobile-first storefront flow.",
     imageUrl: "/assets/demo-thumbnails/rj-print.svg",
-    href: "/projects/rj-print/",
   },
   {
     title: "Restaurant",
     category: "Food",
     description: "Diner, coney, takeout, or cafe structure focused on menu visibility, hours, location, and mobile customer action.",
     imageUrl: "/assets/demo-thumbnails/restaurant.svg",
-    href: "/projects/bryans-neighborhood-coney-final-demo/index.html",
   },
   {
     title: "Patterson's Lawn Care & Snow Removal",
     category: "Client Preview",
     description: "Polished local-service website demo built from confirmed business-card materials, service information, and phone-first customer action.",
-    imageUrl: "/projects/pattersons-lawn-care-demo/preview-desktop.png",
-    href: "/projects/pattersons-lawn-care-demo/site/index.html",
+    imageUrl: "/assets/demo-thumbnails/lawn-care.svg",
   },
   {
     title: "Lawn Care",
     category: "Outdoor Service",
     description: "Quote-request website for mowing, landscaping, cleanup, service areas, packages, and recurring customer inquiries.",
     imageUrl: "/assets/demo-thumbnails/lawn-care.svg",
-    href: "/projects/robs-lawn-care-demo/site/index.html",
   },
   {
     title: "Maintenance",
     category: "Home Repair",
     description: "Handyman and property-maintenance layout built around repairs, service clarity, trust, and job-detail requests.",
     imageUrl: "/assets/demo-thumbnails/handyman.svg",
-    href: "/projects/maintenance-man-demo/index.html",
   },
   {
     title: "Barbershop",
     category: "Personal Care",
     description: "Booking-forward local shop demo for services, location, appointment flow, and phone-first mobile visitors.",
     imageUrl: "/assets/demo-thumbnails/barbershop.svg",
-    href: "/projects/barbershop-demo/index.html",
   },
   {
     title: "Salon",
     category: "Personal Care",
     description: "Polished beauty-service demo for service menus, style photos, booking prompts, policies, and client trust.",
     imageUrl: "/assets/demo-thumbnails/salon.svg",
-    href: "/projects/salon-demo/index.html",
   },
   {
     title: "Painter",
     category: "Trades",
     description: "Residential and commercial quote-driven demo for project photos, before-and-after proof, and estimate requests.",
     imageUrl: "/assets/demo-thumbnails/painter.svg",
-    href: "/projects/painter-demo/index.html",
   },
   {
     title: "Roofing / Contractor",
     category: "Trades",
     description: "Estimate-focused contractor layout for repairs, exterior services, homeowner trust, and project-detail capture.",
     imageUrl: "/assets/demo-thumbnails/roofing.svg",
-    href: "/projects/roofing-contractor-demo/index.html",
   },
   {
     title: "Cleaning Service",
     category: "Home Service",
     description: "Lead-capture demo for residential, commercial, deep-clean, recurring-cleaning, and one-time service requests.",
     imageUrl: "/assets/demo-thumbnails/cleaning.svg",
-    href: "/projects/cleaning-service-demo/index.html",
   },
   {
     title: "Mobile Detailing",
     category: "Auto Service",
     description: "Convenience-focused auto detailing demo for packages, booking, service area, and mobile-first quote flow.",
     imageUrl: "/assets/demo-thumbnails/detailing.svg",
-    href: "/projects/mobile-detailing-demo/index.html",
   },
   {
     title: "Photographer",
     category: "Creative",
     description: "Portfolio-focused demo for session inquiries, package clarity, image-forward trust, and visual storytelling.",
     imageUrl: "/assets/demo-thumbnails/photographer.svg",
-    href: "/projects/photographer-demo/index.html",
   },
 ];
 
 const pricing = [
   {
-    label: "For Auralis-built sites",
-    title: "Website Refresh",
+    label: "For existing stores",
+    title: "Store Refresh",
     price: "$250",
-    note: "Focused cleanup for websites originally built by Auralis Digital.",
-    items: ["Improve clarity", "Tighten calls to action", "Mobile polish"],
+    note: "Focused cleanup for Shopify stores originally set up by Auralis Digital.",
+    items: ["Catalog cleanup", "Collection reorganization", "Mobile polish"],
     featured: false,
     retainer: false,
   },
   {
     label: "Best start",
-    title: "Basic Website",
+    title: "Shopify Store Setup",
     price: "$500+",
-    note: "Professional starter site for a real business presence.",
-    items: ["Launch-ready structure", "Mobile-friendly layout", "Contact path"],
+    note: "Launch-ready Shopify store with products listed and checkout configured.",
+    items: ["Store setup and configuration", "Product catalog structure", "Checkout and fulfillment"],
     featured: true,
     retainer: false,
   },
   {
-    label: "Best for polish",
-    title: "Standard Website",
+    label: "Best for scale",
+    title: "Full E-commerce Launch",
     price: "$1,000+",
-    note: "More sections, stronger layout, trust signals, and conversion flow.",
-    items: ["More trust sections", "Stronger customer flow", "Local SEO setup"],
+    note: "Complete storefront with collections, Printify integration, SEO, and launch support.",
+    items: ["Collections and navigation", "Printify / POD integration", "SEO and go-live checklist"],
     featured: false,
     retainer: false,
   },
   {
     label: "Keep it current",
-    title: "Managed Hosting and Care",
+    title: "Store Care Plan",
     price: "$250/mo",
-    note: "Stress-free website management, hosting/deployment coordination, small updates, and priority support.",
-    items: ["Routine upkeep", "Hosting coordination", "Small content updates", "Priority support"],
+    note: "Ongoing Shopify store management — product updates, collection adjustments, and priority support.",
+    items: ["Product and catalog updates", "Collection maintenance", "Small store changes", "Priority support"],
     featured: false,
     retainer: true,
   },
 ];
 
 const serviceAreas = [
-  { label: "All service areas", href: "service-areas/" },
-  { label: "Belleville", href: "service-areas/belleville-websites.html" },
-  { label: "Ypsilanti", href: "service-areas/ypsilanti-websites.html" },
-  { label: "Ann Arbor", href: "service-areas/ann-arbor-websites.html" },
-  { label: "Detroit Metro", href: "service-areas/detroit-metro-websites.html" },
+  { label: "Belleville" },
+  { label: "Ypsilanti" },
+  { label: "Ann Arbor" },
+  { label: "Detroit Metro" },
+  { label: "Southeast Michigan" },
 ];
 
 const faqs = [
-  { q: "How fast can a site be built?", a: "Simple sites move quickly when your business info, services, and photos are ready." },
-  { q: "Do I need photos?", a: "Photos help, but the first version can start with strong layout and placeholder visuals." },
-  { q: "Can you refresh an existing site?", a: "Website Refresh is for Auralis-built sites. Third-party sites usually need a custom quote." },
-  { q: "What does the care plan include?", a: "Hosting coordination, routine upkeep, small content updates, and priority support." },
-  { q: "Do I handle my own hosting?", a: "By default, yes. Auralis can help configure and maintain it as part of a care plan." },
-  { q: "What areas do you serve?", a: "Southeast Michigan — Belleville, Ypsilanti, Ann Arbor, Detroit Metro, and surrounding areas." },
+  { q: "How fast can a store be set up?", a: "Simple stores move quickly when your products, photos, and brand details are ready." },
+  { q: "Do I need product photos?", a: "Photos help, but the first version can launch with supplier images or placeholder visuals." },
+  { q: "Can you update an existing Shopify store?", a: "Yes — store refreshes, catalog restructuring, and collection reorganization are available." },
+  { q: "What does the care plan include?", a: "Ongoing store maintenance, product updates, collection adjustments, and priority support." },
+  { q: "Do I need my own Shopify plan?", a: "Yes — you own and pay for the Shopify subscription. Auralis handles the setup and configuration." },
+  { q: "What areas do you serve?", a: "Shopify setup is available remotely. Local support in Southeast Michigan — Belleville, Ypsilanti, Ann Arbor, Detroit Metro." },
 ];
 
 const proofPoints = [
-  { stat: "Mobile-first", detail: "Built around phone visitors first — where local customers check before they call." },
-  { stat: "No surprise scope", detail: "Price and page count confirmed before work starts." },
-  { stat: "You own everything", detail: "Domain, hosting, and files stay yours. No lock-in." },
-  { stat: "Built for action", detail: "Every site makes it easy to call, book, or request a quote." },
+  { stat: "Mobile-first", detail: "Storefront optimized for phone shoppers — where most customers browse and buy." },
+  { stat: "No surprise scope", detail: "Scope and pricing confirmed before work starts." },
+  { stat: "You own everything", detail: "Your Shopify store, domain, and data stay yours. No lock-in." },
+  { stat: "Built to convert", detail: "Every store is structured to help visitors find products, add to cart, and check out." },
 ];
 
 const trustItems = [
-  "Built for local businesses",
-  "Clear communication",
-  "Simple process",
-  "Mobile-first",
-  "No confusing tech talk",
-  "Designed around calls, quotes, bookings, and messages",
+  "Handmade pieces crafted by the artist",
+  "Secure checkout through Shopify",
+  "Custom design available",
+  "Print-on-demand items made to order",
+  "3D printed items fulfilled by RJ Print",
+  "Shipping and returns linked in the footer",
 ];
 
 
@@ -292,32 +372,44 @@ function Reveal({ children, className }: { children: ReactNode; className?: stri
 
 const pageMeta: Record<AuralisPage, { title: string; description: string; canonicalPath: string }> = {
   home: {
-    title: "Auralis Digital — Creative Products, Custom Design & Website Services",
+    title: "Auralis Digital — Lucid Creations, Custom Design & Shopify Setup",
     description:
-      "Original sacred geometry and psychedelic art products, personalized custom designs, and small-business website services. Based in Southeast Michigan.",
+      "Auralis Digital is the creative hub behind the Lucid Creations Shopify shop, RJ Print (3D printed goods), custom design, and Shopify e-commerce setup. Based in Southeast Michigan.",
     canonicalPath: "/",
   },
   shop: {
-    title: "Products — Sacred Geometry, Psychedelic Art & Original Designs | Auralis Digital",
+    title: "Products — Handmade Art, Psychedelic Designs & Festival Accessories | Auralis Digital",
     description:
-      "Shop apparel, blankets, wall art, hats, journals, and home decor featuring sacred geometry, psychedelic art, and original designs. Checkout opens securely through Shopify.",
+      "Shop handmade pendants, wire wraps, resin art, psychedelic apparel, blankets, tapestries, and festival accessories. Checkout opens securely through Shopify.",
     canonicalPath: "/products",
   },
   "custom-design": {
-    title: "Custom Design Requests | Auralis Digital",
+    title: "Custom Work — Handmade Art, 3D Printing & Gift Bundles | Auralis Digital",
     description:
-      "Request a personalized design — pet portraits, photo-to-product concepts, gift ideas, symbolic artwork, and custom visuals for apparel, wall art, blankets, and accessories.",
+      "Request custom wire wraps, crystal pendants, resin art, 3D printed products, pet portraits, gift bundles, and personalized designs from Lucid Creations and RJ Print.",
     canonicalPath: "/custom-design",
   },
-  "web-design": {
-    title: "Website Design for Small Businesses | Auralis Digital",
+  collections: {
+    title: "Collections | Auralis Digital",
     description:
-      "Mobile-first website design for small businesses, local brands, and creators in Southeast Michigan. Contact forms, SEO setup, and ongoing support included.",
+      "Shop the Lucid Creations Shopify store — handmade jewelry, wearable art, wall art, resin pieces, accessories, and 3D printed goods by Auralis Digital.",
+    canonicalPath: "/collections",
+  },
+  "creator-shops": {
+    title: "Creator Shops | Auralis Digital",
+    description:
+      "Explore the Lucid Creations Shopify shop, RJ Print, and partnered creator storefronts under Auralis Digital.",
+    canonicalPath: "/creator-shops",
+  },
+  "web-design": {
+    title: "Custom Shopify Store Setup & E-commerce Launch | Auralis Digital",
+    description:
+      "Custom Shopify store setup, product catalog structure, Printify integration, collection organization, and e-commerce launch support for creators and small brands.",
     canonicalPath: "/web-design",
   },
   websites: {
-    title: "Website Design Examples | Auralis Digital",
-    description: "Browse example website builds and demo directions from Auralis Digital. See sample layouts for restaurants, lawn care, barbershops, contractors, and more.",
+    title: "Shopify Store & Website Examples | Auralis Digital",
+    description: "Browse example store setups and website builds from Auralis Digital. Sample layouts for e-commerce, restaurants, lawn care, barbershops, contractors, and more.",
     canonicalPath: "/web-design",
   },
   "pour-social": {
@@ -329,13 +421,13 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   "refund-policy": {
     title: "Refund Policy | Auralis Digital",
     description:
-      "Refund and support guidance for Auralis Digital product purchases, custom design requests, and website design work.",
+      "Refund and support guidance for Auralis Digital product purchases, custom design requests, and Shopify setup services.",
     canonicalPath: "/refund-policy",
   },
   "shipping-policy": {
     title: "Shipping Policy | Auralis Digital",
     description:
-      "Shipping and fulfillment guidance for Auralis Design products purchased through Shopify.",
+      "Shipping and fulfillment guidance for Lucid Creations products purchased through Shopify.",
     canonicalPath: "/shipping-policy",
   },
   "privacy-policy": {
@@ -347,7 +439,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   "terms-of-service": {
     title: "Terms of Service | Auralis Digital",
     description:
-      "Terms for Auralis Digital product browsing, Shopify checkout, custom design requests, and website design inquiries.",
+      "Terms for Auralis Digital product browsing, Shopify checkout, custom design requests, and Shopify setup inquiries.",
     canonicalPath: "/terms-of-service",
   },
 };
@@ -370,9 +462,9 @@ const policyPages = {
           "Custom design and website projects are reviewed before acceptance. Scope, pricing, timeline, revision limits, and payment terms should be confirmed before paid work begins.",
       },
       {
-        title: "Before public traffic",
+        title: "Handmade items",
         copy:
-          "Shopify-hosted refund settings should still be published and verified before serious product traffic is sent to Shopify checkout.",
+          "Handmade pieces are one-of-a-kind. If something arrives damaged or not as described, contact Auralis with photos and details so the issue can be reviewed.",
       },
     ],
   },
@@ -380,7 +472,7 @@ const policyPages = {
     eyebrow: "Shipping Policy",
     title: "Shipping and fulfillment expectations.",
     intro:
-      "Auralis Design products shown on this site open through Shopify when a visitor is ready to buy. Production and fulfillment are handled after purchase for made-to-order products.",
+      "Lucid Creations is the Shopify shop by Auralis Digital. Products open through Shopify when a visitor is ready to buy. Production and fulfillment are handled after purchase for made-to-order items.",
     sections: [
       {
         title: "Produced after purchase",
@@ -426,7 +518,7 @@ const policyPages = {
     eyebrow: "Terms of Service",
     title: "Using Auralis Digital.",
     intro:
-      "Auralis Digital is a creative brand website for products, custom design requests, and website design inquiries. It is not a custom checkout, cart, tax, or shipping calculator.",
+      "Auralis Digital is a creative brand website for products, custom design requests, and Shopify setup inquiries. It is not a custom checkout, cart, tax, or shipping calculator.",
     sections: [
       {
         title: "Product browsing",
@@ -585,8 +677,8 @@ function ProductCatalogGrid() {
     <div id="products-grid" className="product-catalog-section">
       <div className="section-heading compact">
         <span className="section-label"><Store aria-hidden="true" /> Lucid Creations</span>
-        <h2 id="shop-preview-title">Shop the Lucid Creations collection.</h2>
-        <p>Browse with photos, prices, and details. Checkout opens on Shopify.</p>
+        <h2 id="shop-preview-title">Shop Lucid Creations.</h2>
+        <p>The Shopify shop by Auralis Digital. Browse products, prices, and details — checkout opens securely on Shopify.</p>
       </div>
       <div className="cta-row mb-8">
         <Button variant="conversion" size="lg" asChild>
@@ -657,7 +749,7 @@ type FormStatus = "idle" | "submitting" | "success" | "error";
 
 function ContactForm() {
   const [form, setForm] = useState({
-    name: "", business: "", email: "", interest: "Custom design request",
+    name: "", business: "", email: "", interest: "Custom handmade art request",
     budget: "Not sure yet", timeline: "Not sure yet", details: "",
   });
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -714,25 +806,27 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-1">
       <label className={labelCls}>Your name
-        <input className={inputCls} value={form.name} onChange={set("name")} required autoComplete="name" />
+        <input id="contact-name" name="name" className={inputCls} value={form.name} onChange={set("name")} required autoComplete="name" />
       </label>
       <label className={labelCls}>Business / project name
-        <input className={inputCls} value={form.business} onChange={set("business")} autoComplete="organization" />
+        <input id="contact-business" name="business" className={inputCls} value={form.business} onChange={set("business")} autoComplete="organization" />
       </label>
       <label className={labelCls}>Email
-        <input className={inputCls} type="email" value={form.email} onChange={set("email")} required autoComplete="email" />
+        <input id="contact-email" name="email" className={inputCls} type="email" value={form.email} onChange={set("email")} required autoComplete="email" />
       </label>
       <label className={labelCls}>What are you interested in?
-        <select className={inputCls} value={form.interest} onChange={set("interest")}>
-          <option>Custom design request</option>
+        <select id="contact-interest" name="interest" className={inputCls} value={form.interest} onChange={set("interest")}>
+          <option>Custom handmade art request</option>
+          <option>Custom 3D print request</option>
+          <option>Gift bundle request</option>
           <option>Product question</option>
-          <option>Website design</option>
+          <option>Shopify / e-commerce setup</option>
           <option>General inquiry</option>
         </select>
       </label>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className={labelCls}>Budget range
-          <select className={inputCls} value={form.budget} onChange={set("budget")}>
+          <select id="contact-budget" name="budget" className={inputCls} value={form.budget} onChange={set("budget")}>
             <option>Not sure yet</option>
             <option>Under $50</option>
             <option>$50–$100</option>
@@ -743,7 +837,7 @@ function ContactForm() {
           </select>
         </label>
         <label className={labelCls}>Timeline
-          <select className={inputCls} value={form.timeline} onChange={set("timeline")}>
+          <select id="contact-timeline" name="timeline" className={inputCls} value={form.timeline} onChange={set("timeline")}>
             <option>Not sure yet</option>
             <option>As soon as possible</option>
             <option>This month</option>
@@ -752,13 +846,13 @@ function ContactForm() {
         </label>
       </div>
       <label className={labelCls}>Details
-        <textarea className={inputCls} rows={4} value={form.details} onChange={set("details")} placeholder="What do you need?" />
+        <textarea id="contact-details" name="details" className={inputCls} rows={4} value={form.details} onChange={set("details")} placeholder="What do you need?" />
       </label>
       {status === "error" && (
         <p className="text-sm text-red-500">Something went wrong. Please try again or email directly.</p>
       )}
       <Button type="submit" variant="conversion" size="xl" className="w-full" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending…" : FORMSPREE_ENDPOINT ? <>Send Request <ArrowRight aria-hidden="true" /></> : <>Prepare Project Email <ArrowRight aria-hidden="true" /></>}
+        {status === "submitting" ? "Sending…" : FORMSPREE_ENDPOINT ? <>Send Request <ArrowRight aria-hidden="true" /></> : <>Prepare Message <ArrowRight aria-hidden="true" /></>}
       </Button>
       <p className="pt-2 text-xs text-muted-foreground">
         {FORMSPREE_ENDPOINT
@@ -771,9 +865,10 @@ function ContactForm() {
 
 const NAV_LINKS = [
   { label: "Products", href: "/products" },
-  { label: "Website Design", href: "/web-design" },
-  { label: "Custom Design", href: "/custom-design" },
-  { label: "Pour Social", href: "/pour-social" },
+  { label: "Collections", href: "/collections" },
+  { label: "Creator Shops", href: "/creator-shops" },
+  { label: "Custom Work", href: "/custom-design" },
+  { label: "Shopify Setup", href: "/web-design" },
 ];
 
 const SECONDARY_NAV_LINKS = [
@@ -791,6 +886,8 @@ const POLICY_LINKS = [
 type AuralisPage =
   | "home"
   | "shop"
+  | "collections"
+  | "creator-shops"
   | "custom-design"
   | "web-design"
   | "websites"
@@ -806,6 +903,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
   const [mobileOpen, setMobileOpen] = useState(false);
   const isHome = page === "home";
   const isShop = page === "shop";
+  const isCollections = page === "collections";
+  const isCreatorShops = page === "creator-shops";
   const isCustomDesign = page === "custom-design";
   const isWebDesign = page === "web-design";
   const isWebsites = page === "websites";
@@ -964,79 +1063,20 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               height={240}
               decoding="async"
             />
-            <h1>Auralis Digital</h1>
+            <h1>The creative hub behind Lucid Creations, custom design, and more.</h1>
             <p className="hero-subhead">
-              Creative products, custom design, and website services in one place.
+              Handmade art, psychedelic apparel, festival products, custom design, and Shopify e-commerce setup — all from one hub.
             </p>
             <div className="cta-row centered">
               <Button variant="conversion" size="xl" asChild>
                 <a href="/products">Shop Products <ArrowRight aria-hidden="true" /></a>
               </Button>
               <Button variant="conversionOutline" size="xl" asChild>
-                <a href="/custom-design">Request Design</a>
+                <a href="/custom-design">Custom Design</a>
               </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* ── Offering tiles ─────────────────────────────── */}
-        <section className="content-section">
-          <div className="site-shell">
-            <div className="home-tiles">
-              <Reveal className="home-tile home-tile-wide">
-                <a href="/products" className="home-tile-inner">
-                  <div className="home-tile-img-row">
-                    {HOMEPAGE_TILE_SLUGS.map((slug) => {
-                      const p = shopProducts.find((x) => x.slug === slug);
-                      return p ? (
-                        <img key={slug} src={p.imageUrl} alt={p.altText} loading="lazy" decoding="async" width={400} height={400} />
-                      ) : null;
-                    })}
-                  </div>
-                  <div className="home-tile-body">
-                    <Store className="size-5 text-primary" aria-hidden="true" />
-                    <h3>Products</h3>
-                    <p>Sacred geometry, psychedelic art, and custom designs on apparel, blankets, wall art, and more.</p>
-                    <span className="home-tile-link">Shop Products <ArrowRight className="size-4" aria-hidden="true" /></span>
-                  </div>
-                </a>
-              </Reveal>
-              <Reveal className="home-tile">
-                <a href="/web-design" className="home-tile-inner">
-                  <img
-                    src="/assets/brand/web-design-banner.jpg"
-                    alt="Auralis Digital website design services"
-                    loading="lazy"
-                    decoding="async"
-                    width={600}
-                    height={375}
-                  />
-                  <div className="home-tile-body">
-                    <MonitorSmartphone className="size-5 text-primary" aria-hidden="true" />
-                    <h3>Website Design</h3>
-                    <p>Mobile-first websites for small businesses and local brands.</p>
-                    <span className="home-tile-link">Website Design <ArrowRight className="size-4" aria-hidden="true" /></span>
-                  </div>
-                </a>
-              </Reveal>
-              <Reveal className="home-tile">
-                <a href="/custom-design" className="home-tile-inner">
-                  <img
-                    src={CUSTOM_DESIGN_OFFERING_PREVIEW.imageUrl}
-                    alt={CUSTOM_DESIGN_OFFERING_PREVIEW.altText}
-                    loading="lazy"
-                    decoding="async"
-                    width={600}
-                    height={375}
-                  />
-                  <div className="home-tile-body">
-                    <Sparkles className="size-5 text-primary" aria-hidden="true" />
-                    <h3>Custom Design</h3>
-                    <p>Turn any idea, image, or theme into a personalized design.</p>
-                    <span className="home-tile-link">Request Design <ArrowRight className="size-4" aria-hidden="true" /></span>
-                  </div>
-                </a>
-              </Reveal>
+              <Button variant="conversionOutline" size="xl" asChild>
+                <a href="/web-design">Shopify Setup</a>
+              </Button>
             </div>
           </div>
         </section>
@@ -1045,8 +1085,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section className="section-band home-featured-section">
           <div className="site-shell">
             <Reveal className="section-heading compact">
-              <span className="section-label">Featured</span>
-              <h2>Popular products.</h2>
+              <span className="section-label"><Store aria-hidden="true" /> Lucid Creations</span>
+              <h2>Featured from the collection.</h2>
+              <p className="mt-4">Psychedelic apparel, woven blankets, tapestries, and accessories — made to order and checkout securely through Shopify.</p>
             </Reveal>
             <div className="home-featured-grid">
               {HOMEPAGE_FEATURED_SLUGS.map((slug) => {
@@ -1096,9 +1137,9 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 />
               </div>
               <div className="home-split-content">
-                <span className="section-label"><Sparkles className="size-4" aria-hidden="true" /> Custom Design</span>
-                <h2>Turn your idea into a real design.</h2>
-                <p>Send an image, phrase, symbol, or theme. Auralis reviews scope and confirms pricing before work begins.</p>
+                <span className="section-label"><Sparkles className="size-4" aria-hidden="true" /> Custom Work</span>
+                <h2>Turn your idea into something real.</h2>
+                <p>Handmade art, 3D printed products, gift bundles, or personalized designs — send the idea and Auralis reviews scope before work begins.</p>
                 <div>
                   <Button variant="conversion" size="lg" asChild>
                     <a href="/custom-design">Start a Request <ArrowRight aria-hidden="true" /></a>
@@ -1109,43 +1150,95 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
 
-        {/* ── Pour Social ────────────────────────────────── */}
+        {/* ── Website design ─────────────────────────────── */}
         <section className="section-band">
           <div className="site-shell">
-            <Reveal>
-              <div className="service-card flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex items-center gap-4">
-                  <div className="icon-tile mb-0"><Wine aria-hidden="true" /></div>
-                  <div>
-                    <h3 className="mb-0">Pour Social</h3>
-                    <p>Mobile BYOB bar service coming soon.</p>
-                  </div>
-                </div>
-                <div className="flex shrink-0 gap-3">
-                  <Button variant="conversion" size="sm" asChild>
-                    <a href="https://pour-social.vercel.app" target="_blank" rel="noopener noreferrer">Visit Pour Social</a>
+            <Reveal className="home-split">
+              <div className="home-split-content">
+                <span className="section-label"><Store className="size-4" aria-hidden="true" /> Shopify / E-commerce Setup</span>
+                <h2>Custom Shopify stores built to sell.</h2>
+                <p>Shopify store setup, product catalog structure, collection organization, Printify integration, mobile-first layout, and launch support — built for creators and small brands ready to sell online.</p>
+                <div className="cta-row">
+                  <Button variant="conversion" size="lg" asChild>
+                    <a href="/web-design">Start a Shopify Setup <ArrowRight aria-hidden="true" /></a>
                   </Button>
                 </div>
+              </div>
+              <div className="service-card">
+                <div className="icon-tile"><Store aria-hidden="true" /></div>
+                <h3>E-commerce launch support</h3>
+                <p>Shopify store, product listings, collections, checkout configuration, Printify fulfillment, domain setup, and go-live checklist — everything to launch a real online shop.</p>
               </div>
             </Reveal>
           </div>
         </section>
 
-        {/* ── About ──────────────────────────────────────── */}
-        <section id="about" className="content-section">
+        {/* ── Creator shops ─────────────────────────────── */}
+        <section id="creator-shops" className="section-band">
           <div className="site-shell">
-            <Reveal className="section-heading">
-              <h2>Auralis Digital</h2>
+            <Reveal className="section-heading compact">
+              <span className="section-label">Branches</span>
+              <h2>Product branches under Auralis Digital.</h2>
+              <p className="mt-4">Each branch has its own identity, products, and audience.</p>
+            </Reveal>
+            <div className="grid gap-5 sm:grid-cols-2">
+              {creatorShops.slice(0, 2).map((shop) => {
+                const Icon = shop.icon;
+                return (
+                  <Reveal key={shop.title}>
+                    <a href={shop.href} className="service-card block h-full text-foreground no-underline">
+                      <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                      <h3>{shop.title}</h3>
+                      <p>{shop.copy}</p>
+                      <span className="home-tile-link">View shop <ArrowRight className="size-4" aria-hidden="true" /></span>
+                    </a>
+                  </Reveal>
+                );
+              })}
+            </div>
+            <Reveal>
+              <div className="cta-row centered" style={{ marginTop: "1.5rem" }}>
+                <Button variant="conversionOutline" size="lg" asChild>
+                  <a href="/creator-shops">See All Creator Shops <ArrowRight aria-hidden="true" /></a>
+                </Button>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* ── Trust / About / Contact ───────────────────── */}
+        <section id="about" className="content-section trust-section">
+          <div className="site-shell trust-layout">
+            <Reveal className="section-heading compact">
+              <span className="section-label">About</span>
+              <h2>Built and managed by a real person.</h2>
               <p className="mt-4">
-                Auralis Digital is built and managed in Southeast Michigan.
-                What started as a personal creative outlet became a small business offering original products,
-                custom designs, and practical websites for local businesses and creators.
+                Auralis Digital is built by Christopher Daugherty in Southeast Michigan. Lucid Creations, RJ Print,
+                custom design, and Shopify e-commerce setup all live under one roof — with more branches on the way.
               </p>
               <p className="mt-3 text-muted-foreground/80">
-                Every product, design, and website is handled directly — no faceless team, no outsourced support.
-                If you have a question, you're talking to the person who built it.
+                Product checkout is handled securely through Shopify. For questions, requests, or Shopify setup inquiries — {EMAIL}.
               </p>
+              <div className="cta-row">
+                <Button variant="conversionOutline" size="lg" asChild>
+                  <a href={MAILTO}>Contact Auralis</a>
+                </Button>
+                <Button variant="conversionOutline" size="lg" asChild>
+                  <a href="/shipping-policy">Shipping Info</a>
+                </Button>
+                <Button variant="conversionOutline" size="lg" asChild>
+                  <a href="/refund-policy">Returns</a>
+                </Button>
+              </div>
             </Reveal>
+            <div className="trust-grid">
+              {trustItems.map((item) => (
+                <Reveal key={item} className="trust-pill">
+                  <CheckCircle2 aria-hidden="true" />
+                  <span>{item}</span>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -1154,13 +1247,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="final-cta">
               <h2>Ready to start?</h2>
-              <p>Browse products, request a custom design, or start a website project.</p>
+              <p>Shop the Lucid Creations catalog, request a custom design, or get help launching your Shopify store.</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="xl" asChild>
                   <a href="/products">Shop Products <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" asChild>
-                  <a href="/custom-design">Request Design</a>
+                  <a href="/custom-design">Custom Design</a>
+                </Button>
+                <Button variant="conversionOutline" size="xl" asChild>
+                  <a href="/web-design">Shopify Setup</a>
                 </Button>
               </div>
             </Reveal>
@@ -1187,8 +1283,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="shop" className="content-section shop-preview" aria-labelledby="shop-preview-title">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Auralis Design Products</h1>
-              <p className="mt-4">Sacred geometry, psychedelic art, and original designs — printed on demand.</p>
+              <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Lucid Creations Products</h1>
+              <p className="mt-4">Handmade art, psychedelic designs, and festival-inspired products — crafted by hand or printed on demand.</p>
             </Reveal>
             <ProductCatalogGrid />
             <Reveal className="shop-faq-panel">
@@ -1207,6 +1303,75 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           </div>
         </section>
         </>
+        )}
+
+        {isCollections && (
+        <section id="collections" className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <span className="section-label">Collections</span>
+              <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Shop by collection.</h1>
+              <p className="mt-4">Browse Lucid Creations product lanes: handmade jewelry, wearable art, wall art, resin pieces, accessories, and 3D printed goods.</p>
+            </Reveal>
+            <div className="service-grid">
+              {collectionCards.map((collection) => {
+                const Icon = collection.icon;
+                return (
+                  <Reveal key={collection.title}>
+                    <a href={collection.href} className="service-card block h-full text-foreground no-underline">
+                      <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                      <h3>{collection.title}</h3>
+                      <p>{collection.copy}</p>
+                      <span className="home-tile-link">Explore <ArrowRight className="size-4" aria-hidden="true" /></span>
+                    </a>
+                  </Reveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        )}
+
+        {isCreatorShops && (
+        <section id="creator-shops" className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading">
+              <span className="section-label">Creator Shops</span>
+              <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Creator shops inside the Auralis ecosystem.</h1>
+              <p className="mt-4">Explore Lucid Creations, RJ Print, and partnered creator storefronts.</p>
+            </Reveal>
+            <div className="service-grid">
+              {creatorShops.map((shop) => {
+                const Icon = shop.icon;
+                return (
+                  <Reveal key={shop.title}>
+                    <a href={shop.href} className="service-card block h-full text-foreground no-underline">
+                      <div className="icon-tile"><Icon aria-hidden="true" /></div>
+                      <h3>{shop.title}</h3>
+                      <p>{shop.copy}</p>
+                      <span className="home-tile-link">View shop <ArrowRight className="size-4" aria-hidden="true" /></span>
+                    </a>
+                  </Reveal>
+                );
+              })}
+            </div>
+            <Reveal className="shop-faq-panel mt-8">
+              <div className="section-heading compact">
+                <h2>How this works.</h2>
+              </div>
+              <div className="shop-faq-grid">
+                <div className="shop-faq-item">
+                  <h3>Products are the front door</h3>
+                  <p>Visitors can browse products first, then move into custom design or creator shop requests.</p>
+                </div>
+                <div className="shop-faq-item">
+                  <h3>RJ Print handles 3D print fulfillment</h3>
+                  <p>3D printed items, prototypes, signage, and promotional product ideas are fulfilled through RJ Print.</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
         )}
 
         {/* ── Pour Social (simple redirect page) ─────────── */}
@@ -1235,16 +1400,16 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="custom-design" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label"><Sparkles aria-hidden="true" /> Custom Design</span>
+              <span className="section-label"><Sparkles aria-hidden="true" /> Custom Work</span>
               <h2 className="mx-auto max-w-[22rem] sm:max-w-none">
-                Custom designs made personal.
+                Handmade art and one-of-one pieces.
               </h2>
               <p className="mx-auto mt-4 max-w-[24rem] sm:max-w-xl">
-                Turn a pet photo, favorite phrase, inside joke, or personal artwork concept into something made to wear, use, gift, or display.
+                Wire wraps, stone and crystal designs, 3D printed products, and curated gift bundles — made by hand or built to order.
               </p>
             </Reveal>
 
-            {/* ── Preview + "Great for" ──────────────────── */}
+            {/* ── Preview + intro ──────────────────────────── */}
             <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-2">
               <Reveal className="service-card min-w-0">
                 {customDesignPreview && (
@@ -1259,37 +1424,8 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   />
                 )}
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Show off your fur baby with a custom pillow, blanket, shirt, or printable design.
+                  Personalized pet portraits, symbolic artwork, and one-of-one designs turned into real products you can wear, display, or gift.
                 </p>
-              </Reveal>
-              <Reveal className="service-card min-w-0">
-                <div className="icon-tile"><Sparkles aria-hidden="true" /></div>
-                <h3>Great for</h3>
-                <div className="product-use-list mt-5">
-                  {customRequestTypes.map((type) => (
-                    <span key={type}>{type}</span>
-                  ))}
-                </div>
-              </Reveal>
-            </div>
-          </div>
-        </section>
-
-        {/* ── How it works ──────────────────────────────── */}
-        <section className="section-band">
-          <div className="site-shell">
-            <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-2">
-              <Reveal className="service-card min-w-0">
-                <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
-                <h3>How it works</h3>
-                <ul className="mt-5 space-y-3">
-                  {customProcess.map((step, index) => (
-                    <li key={step} className="flex items-center gap-3 text-sm font-medium text-muted-foreground">
-                      <span className="step-number !h-7 !w-7 !text-[0.65rem] shrink-0">0{index + 1}</span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
               </Reveal>
               <Reveal className="service-card min-w-0">
                 {CUSTOM_DESIGN_OFFERING_PREVIEW && (
@@ -1304,8 +1440,77 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   />
                 )}
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Perfect for gifts, pets, inside jokes, memorial pieces, events, or personal artwork.
+                  Great for festivals, gifts, memorial pieces, symbolic art, or something completely one-of-a-kind.
                 </p>
+              </Reveal>
+            </div>
+          </div>
+        </section>
+
+        {/* ── What you can request ─────────────────────── */}
+        <section className="section-band">
+          <div className="site-shell">
+            <Reveal className="section-heading compact">
+              <h2>What's available.</h2>
+              <p className="mt-4">Each piece is reviewed before pricing or production begins. More categories are coming as the collection grows.</p>
+            </Reveal>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {customRequestTypes.map((group) => (
+                <Reveal key={group.category} className="service-card">
+                  <div className="icon-tile">
+                    {group.icon === "sparkles" ? <Sparkles aria-hidden="true" /> : group.icon === "hammer" ? <Hammer aria-hidden="true" /> : <Star aria-hidden="true" />}
+                  </div>
+                  <h3>{group.category}</h3>
+                  <ul className="mt-4 space-y-2">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── How it works ──────────────────────────────── */}
+        <section className="content-section">
+          <div className="site-shell">
+            <Reveal className="section-heading compact">
+              <h2>How it works.</h2>
+            </Reveal>
+            <div className="mx-auto grid w-full max-w-[calc(100vw-2.5rem)] gap-5 lg:max-w-none lg:grid-cols-2">
+              <Reveal className="service-card min-w-0">
+                <div className="icon-tile"><ClipboardList aria-hidden="true" /></div>
+                <h3>The process</h3>
+                <ul className="mt-5 space-y-3">
+                  {customProcess.map((step, index) => (
+                    <li key={step} className="flex items-center gap-3 text-sm font-medium text-muted-foreground">
+                      <span className="step-number !h-7 !w-7 !text-[0.65rem] shrink-0">0{index + 1}</span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+              <Reveal className="service-card min-w-0">
+                <div className="icon-tile"><Store aria-hidden="true" /></div>
+                <h3>Where it's made</h3>
+                <ul className="mt-5 space-y-3">
+                  <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <Sparkles className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                    <span><strong className="text-foreground">Lucid Creations</strong> — the Shopify shop featuring handmade wire wraps, pendants, resin art, and psychedelic apparel</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <Hammer className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                    <span><strong className="text-foreground">RJ Print</strong> — custom 3D printed products, prototypes, signage, and promotional items</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <Star className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                    <span><strong className="text-foreground">Gift bundles</strong> — curated combinations of art, accessories, and custom pieces for any occasion</span>
+                  </li>
+                </ul>
               </Reveal>
             </div>
           </div>
@@ -1317,17 +1522,17 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="services" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <span className="section-label">Website Design</span>
-              <h2>Websites that help small businesses look credible and get contacted.</h2>
+              <span className="section-label">Shopify / E-commerce Setup</span>
+              <h2>Custom Shopify stores built to sell.</h2>
               <p className="mt-4">
-                Mobile-first. Clear offers. Simple contact flow.
+                Full e-commerce setup for creators, small brands, and entrepreneurs — Shopify store, product catalog, collections, Printify fulfillment, and launch support.
               </p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="xl" asChild>
-                  <a href="/websites">Browse Demos <ArrowRight aria-hidden="true" /></a>
+                  <a href="#contact">Start a Shopify Setup <ArrowRight aria-hidden="true" /></a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" asChild>
-                  <a href="#contact">Start a Request</a>
+                  <a href="/websites">Browse Demos</a>
                 </Button>
                 <a href="#pricing" className="text-sm font-medium text-primary hover:underline">
                   View Pricing
@@ -1337,13 +1542,54 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="web-design-banner">
               <img
                 src="/assets/brand/web-design-banner.jpg"
-                alt="Auralis Digital website design — custom websites, mobile responsive, SEO optimized, built to convert"
+                alt="Auralis Digital Shopify setup — custom stores, mobile responsive, SEO optimized, built to convert"
                 className="web-design-banner-img"
                 loading="lazy"
                 decoding="async"
                 width={1080}
                 height={1080}
               />
+            </Reveal>
+            <Reveal className="service-card mb-8 border-primary/20 bg-primary/5">
+              <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+                <div>
+                  <span className="section-label">E-commerce Launch Package</span>
+                  <h3 className="mb-4 text-2xl font-bold text-foreground">A complete Shopify store setup.</h3>
+                  <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                    Built for creators, small brands, and entrepreneurs who want a working online store without figuring out every platform alone.
+                  </p>
+                  <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                    This is more than a homepage. It is a full Shopify storefront — products listed, collections organized, checkout configured, fulfillment connected, and ready for real customers.
+                  </p>
+                  <p className="text-sm font-semibold leading-relaxed text-foreground">
+                    Outcome: you walk away with a live Shopify store that can showcase products, accept orders, connect to fulfillment, and give customers a clear place to buy.
+                  </p>
+                </div>
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-primary">Includes</h4>
+                    <ul className="space-y-2">
+                      {businessLaunchIncludes.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-primary">Client-paid items</h4>
+                    <ul className="space-y-2">
+                      {businessLaunchClientPaid.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </Reveal>
             <div className="service-grid">
               {services.map((service) => {
@@ -1367,16 +1613,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <h2>Example website builds.</h2>
               <p className="mt-4">
-                Click through to see layout, mobile flow, and contact paths.
+                Layout concepts, mobile flow, and contact paths built for real industries.
               </p>
             </Reveal>
             <div className="website-demo-grid">
               {websiteDemos.map((demo) => (
                 <Reveal key={demo.title}>
-                  <a
-                    href={demo.href}
-                    className="website-demo-card"
-                  >
+                  <div className="website-demo-card">
                     <img
                       src={demo.imageUrl}
                       alt={`${demo.title} website demo thumbnail`}
@@ -1390,30 +1633,11 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                       <span>{demo.category}</span>
                       <h3>{demo.title}</h3>
                       <p>{demo.description}</p>
-                      <strong>
-                        {demo.category === "Client Preview" ? "View website demo" : "View sample build"} <ArrowRight className="size-4" aria-hidden="true" />
-                      </strong>
                     </div>
-                  </a>
+                  </div>
                 </Reveal>
               ))}
             </div>
-            <Reveal>
-              <a
-                href={DEMO_LIBRARY_HREF}
-                className="service-card mt-8 flex flex-col gap-4 no-underline sm:flex-row sm:items-center sm:justify-between"
-              >
-                <div className="flex flex-col gap-2">
-                  <h3 className="mb-0">Industry Demo Library</h3>
-                  <p className="text-muted-foreground">
-                    Same examples in a compact static format.
-                  </p>
-                </div>
-                <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-primary">
-                  Open demo library <ArrowRight className="size-4" aria-hidden="true" />
-                </span>
-              </a>
-            </Reveal>
           </div>
         </section>
         )}
@@ -1452,7 +1676,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <Reveal key={step} className="process-step">
                   <span className="step-number">0{index + 1}</span>
                   <h3>{step}</h3>
-                  <p>{index === 0 ? "Understand the business and goals." : index === 1 ? "Map pages, content, and contact flows." : index === 2 ? "Build a polished mobile-first experience." : index === 3 ? "Refine with clear communication." : "Publish and launch."}</p>
+                  <p>{index === 0 ? "Understand your products, brand, and goals." : index === 1 ? "Map store structure, collections, and product catalog." : index === 2 ? "Build and configure the Shopify storefront." : index === 3 ? "Test orders, review, and refine." : "Go live and launch."}</p>
                 </Reveal>
               ))}
             </div>
@@ -1570,7 +1794,14 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <h2>Simple process, professional result.</h2>
             </Reveal>
             <div className="trust-grid">
-              {trustItems.map((item) => (
+              {[
+                "Full Shopify store setup",
+                "Product catalog and variant configuration",
+                "Printify / POD fulfillment integration",
+                "Mobile-optimized storefront",
+                "No surprise scope — pricing confirmed before work starts",
+                "You own your store, domain, and data",
+              ].map((item) => (
                 <Reveal key={item} className="trust-pill">
                   <CheckCircle2 aria-hidden="true" />
                   <span>{item}</span>
@@ -1593,13 +1824,12 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             </Reveal>
             <Reveal className="flex flex-wrap gap-3">
               {serviceAreas.map((area) => (
-                <a
+                <span
                   key={area.label}
-                  href={area.href}
-                  className="rounded-full border border-border/40 bg-card/40 px-4 py-2 text-sm font-medium text-foreground transition-colors duration-200 hover:border-primary/40 hover:text-primary"
+                  className="rounded-full border border-border/40 bg-card/40 px-4 py-2 text-sm font-medium text-foreground"
                 >
                   {area.label}
-                </a>
+                </span>
               ))}
             </Reveal>
           </div>
@@ -1630,15 +1860,15 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
         <section id="contact" className="content-section">
           <div className="site-shell">
             <Reveal className="section-heading">
-              <h2>{isCustomDesign ? "Start a custom design request." : "Start your website project."}</h2>
+              <h2>{isCustomDesign ? "Start your piece." : "Start your Shopify store setup."}</h2>
             </Reveal>
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
               <Reveal className="service-card">
-                <h3>{isCustomDesign ? "Send a design request" : "Send a project request"}</h3>
+                <h3>{isCustomDesign ? "Send your idea" : "Send a store setup request"}</h3>
                 <p className="mb-6 text-muted-foreground">
                   {isCustomDesign
-                    ? "Share the idea, timeline, and any constraints."
-                    : "Fill in the basics. Auralis reviews scope before starting."}
+                    ? "Share the idea, which branch it fits (handmade, 3D print, gift bundle), and any timeline or constraints."
+                    : "Share your products, brand, and what you need. Auralis reviews scope before starting."}
                 </p>
                 <ContactForm />
               </Reveal>
@@ -1657,7 +1887,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <p className="mt-2 text-sm text-muted-foreground">
                     {isCustomDesign
                       ? "Include the idea, intended use, timeline, and any constraints."
-                      : "Include your business name, current site or social page, and what action you want customers to take."}
+                      : "Include your brand name, what you sell, how many products, and whether you need Printify or other fulfillment integration."}
                   </p>
                 </Reveal>
               </div>
@@ -1672,17 +1902,17 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
           <div className="site-shell">
             <Reveal className="final-cta">
               <div className="icon-tile large">{isWebDesign ? <CalendarCheck aria-hidden="true" /> : <Sparkles aria-hidden="true" />}</div>
-              <h2>{isWebDesign ? "Ready to get started?" : "Ready to start?"}</h2>
-              <p>{isWebDesign ? "Request a quote or get a free website review." : "Browse products or start a custom design request."}</p>
+              <h2>{isWebDesign ? "Ready to launch your store?" : "Ready to start?"}</h2>
+              <p>{isWebDesign ? "Start a Shopify setup request or get a free store review." : "Browse products or send us your idea."}</p>
               <div className="cta-row centered">
                 <Button variant="conversion" size="xl" asChild>
                   <a href={isWebDesign ? "/web-design#contact" : "/custom-design"}>
-                    {isWebDesign ? "Get a Free Website Review" : "Start a Request"} <ArrowRight aria-hidden="true" />
+                    {isWebDesign ? "Start a Shopify Setup" : "Start a Request"} <ArrowRight aria-hidden="true" />
                   </a>
                 </Button>
                 <Button variant="conversionOutline" size="xl" asChild>
                   <a href={isWebDesign ? MAILTO : "/products"}>
-                    {isWebDesign ? "Request a Quote" : "Explore Products"}
+                    {isWebDesign ? "Get E-commerce Help" : "Explore Products"}
                   </a>
                 </Button>
               </div>
@@ -1708,7 +1938,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                   <span>AURALIS DIGITAL</span>
                 </a>
                 <p className="footer-tagline">
-                  Creative products, custom design, and website services.
+                  Creative products, custom design, and Shopify e-commerce setup.
                 </p>
               </div>
               <div>
