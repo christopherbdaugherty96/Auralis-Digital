@@ -19,21 +19,35 @@ const routes = [
   },
   {
     path: "/custom-design",
-    title: "Custom Design Requests | Auralis Digital",
+    title: "Custom Work — Handmade Art, 3D Printing & Gift Bundles | Auralis Digital",
     description:
-      "Request a personalized design — pet portraits, photo-to-product concepts, gift ideas, symbolic artwork, and custom visuals for apparel, wall art, blankets, and accessories.",
+      "Request custom wire wraps, crystal pendants, resin art, 3D printed products, pet portraits, gift bundles, and personalized designs from Lucid Creations and RJ Print.",
     canonicalPath: "/custom-design",
   },
   {
+    path: "/collections",
+    title: "Collections | Auralis Digital",
+    description:
+      "Shop the Lucid Creations Shopify store — handmade jewelry, wearable art, wall art, resin pieces, accessories, and 3D printed goods by Auralis Digital.",
+    canonicalPath: "/collections",
+  },
+  {
+    path: "/creator-shops",
+    title: "Creator Shops | Auralis Digital",
+    description:
+      "Explore the Lucid Creations Shopify shop, RJ Print, and partnered creator storefronts under Auralis Digital.",
+    canonicalPath: "/creator-shops",
+  },
+  {
     path: "/web-design",
-    title: "Website Design for Small Businesses | Auralis Digital",
-    description: "Mobile-first website design for small businesses, local brands, and creators in Southeast Michigan. Contact forms, SEO setup, and ongoing support included.",
+    title: "Custom Shopify Store Setup & E-commerce Launch | Auralis Digital",
+    description: "Custom Shopify store setup, product catalog structure, Printify integration, collection organization, and e-commerce launch support for creators and small brands.",
     canonicalPath: "/web-design",
   },
   {
     path: "/websites",
-    title: "Website Design Examples | Auralis Digital",
-    description: "Browse example website builds and demo directions from Auralis Digital. See sample layouts for restaurants, lawn care, barbershops, contractors, and more.",
+    title: "Shopify Store & Website Examples | Auralis Digital",
+    description: "Browse example store setups and website builds from Auralis Digital. Sample layouts for e-commerce, restaurants, lawn care, barbershops, contractors, and more.",
     canonicalPath: "/web-design",
   },
   {
