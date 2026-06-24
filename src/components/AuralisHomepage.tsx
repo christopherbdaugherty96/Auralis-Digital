@@ -126,25 +126,25 @@ const collectionCards = [
   {
     title: "Apparel",
     copy: "Wearable art, hats, shirts, and creator merch concepts.",
-    href: "/products",
+    href: "/products?category=T-Shirts",
     icon: Store,
   },
   {
     title: "Blankets",
     copy: "Soft statement pieces featuring original and custom artwork.",
-    href: "/products",
+    href: "/products?category=Blankets",
     icon: Sparkles,
   },
   {
     title: "Wall Art",
     copy: "Tapestries and visual pieces for rooms, studios, and creative spaces.",
-    href: "/products",
+    href: "/products?category=Wall Decor",
     icon: Paintbrush,
   },
   {
     title: "Accessories",
     copy: "Hats, journals, necklaces, and smaller products for everyday use.",
-    href: "/products",
+    href: "/products?category=Accessories",
     icon: Store,
   },
   {
@@ -673,7 +673,10 @@ const productCategories = [
 ];
 
 function ProductCatalogGrid() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState(() => {
+    const param = new URLSearchParams(window.location.search).get("category");
+    return param && productCategories.includes(param) ? param : "All";
+  });
   const filtered = activeCategory === "All" ? shopProducts : shopProducts.filter((p) => p.category === activeCategory);
 
   return (
