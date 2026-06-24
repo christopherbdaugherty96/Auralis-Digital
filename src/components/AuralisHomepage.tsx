@@ -44,7 +44,7 @@ const HOMEPAGE_FEATURED_SLUGS = [
 
 const CUSTOM_DESIGN_PREVIEW = {
   imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/252296532838227647_2048.jpg?v=1779946779",
-  altText: "Custom dog pillow — example of a personalized design",
+  altText: "Custom Dog pillow — example of a personalized design",
 };
 const CUSTOM_DESIGN_OFFERING_PREVIEW = {
   imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/2799150508494482362_2048.jpg?v=1779839428",
@@ -143,7 +143,7 @@ const collectionCards = [
   },
   {
     title: "Accessories",
-    copy: "Hats, journals, cards, and smaller products for everyday use.",
+    copy: "Hats, journals, necklaces, and smaller products for everyday use.",
     href: "/products",
     icon: Store,
   },
@@ -194,6 +194,7 @@ const websiteDemos = [
     category: "Product Showcase",
     description: "3D-printing shop preview with a browsable product catalog, custom-order concepts, policy pages, and a mobile-first storefront flow.",
     imageUrl: "/assets/demo-thumbnails/rj-print.svg",
+    href: "/projects/rj-print/",
   },
   {
     title: "Restaurant",
@@ -380,7 +381,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   shop: {
     title: "Products — Handmade Art, Psychedelic Designs & Festival Accessories | Auralis Digital",
     description:
-      "Shop handmade pendants, wire wraps, resin art, psychedelic apparel, blankets, tapestries, and festival accessories. Checkout opens securely through Shopify.",
+      "Shop psychedelic apparel, sacred geometry tapestries, woven blankets, hats, hoodies, and festival accessories from Lucid Creations. Checkout opens securely through Shopify.",
     canonicalPath: "/products",
   },
   "custom-design": {
@@ -392,7 +393,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   collections: {
     title: "Collections | Auralis Digital",
     description:
-      "Shop the Lucid Creations Shopify store — handmade jewelry, wearable art, wall art, resin pieces, accessories, and 3D printed goods by Auralis Digital.",
+      "Shop the Lucid Creations Shopify store — wearable art, wall art, accessories, and 3D printed goods by Auralis Digital. Handmade jewelry and resin pieces coming soon.",
     canonicalPath: "/collections",
   },
   "creator-shops": {
@@ -410,7 +411,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   websites: {
     title: "Shopify Store & Website Examples | Auralis Digital",
     description: "Browse example store setups and website builds from Auralis Digital. Sample layouts for e-commerce, restaurants, lawn care, barbershops, contractors, and more.",
-    canonicalPath: "/web-design",
+    canonicalPath: "/websites",
   },
   "pour-social": {
     title: "Pour Social — Mobile BYOB Bar Service | Auralis Digital",
@@ -648,12 +649,14 @@ function ProductCard({ product }: { product: ShopProduct }) {
 }
 
 const preferredProductCategoryOrder = [
-  "Apparel",
+  "T-Shirts",
+  "Hoodies",
+  "Sweatshirts",
   "Blankets",
   "Wall Decor",
   "Hats",
   "Home Decor",
-  "Jewelry & Accessories",
+  "Accessories",
   "Journals & Notebooks",
 ];
 
@@ -1311,7 +1314,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <span className="section-label">Collections</span>
               <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Shop by collection.</h1>
-              <p className="mt-4">Browse Lucid Creations product lanes: handmade jewelry, wearable art, wall art, resin pieces, accessories, and 3D printed goods.</p>
+              <p className="mt-4">Browse Lucid Creations product lanes: wearable art, wall art, accessories, and 3D printed goods. Handmade jewelry and resin pieces coming soon.</p>
             </Reveal>
             <div className="service-grid">
               {collectionCards.map((collection) => {
@@ -1617,9 +1620,13 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               </p>
             </Reveal>
             <div className="website-demo-grid">
-              {websiteDemos.map((demo) => (
+              {websiteDemos.map((demo) => {
+                const Wrapper = "href" in demo && demo.href
+                  ? (props: { children: ReactNode; className?: string }) => <a href={demo.href as string} className={props.className} target="_blank" rel="noopener noreferrer">{props.children}</a>
+                  : (props: { children: ReactNode; className?: string }) => <div className={props.className}>{props.children}</div>;
+                return (
                 <Reveal key={demo.title}>
-                  <div className="website-demo-card">
+                  <Wrapper className="website-demo-card">
                     <img
                       src={demo.imageUrl}
                       alt={`${demo.title} website demo thumbnail`}
@@ -1634,9 +1641,10 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                       <h3>{demo.title}</h3>
                       <p>{demo.description}</p>
                     </div>
-                  </div>
+                  </Wrapper>
                 </Reveal>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>

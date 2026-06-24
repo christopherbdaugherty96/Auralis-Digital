@@ -82,13 +82,13 @@ export const shopProducts: ShopProduct[] = [
     productType: "Home Decor",
     variantSummary: '26" x 36"',
     category: "Wall Decor",
-    slug: "copy-of-indoor-wall-tapestry",
+    slug: "cosmic-owl-tapestry",
     shortDescription: "A lightweight wall tapestry with crisp printing and hemmed edges for durability.",
     detailDescription:
       "A custom wall tapestry is a simple way to uplift a room’s aesthetics with a personal touch.\n\n.: 100% Polyester\n.: Lightweight and versatile, easy to hang, move, or fold for storage\n.: Multiple sizes\n.: Blanks sourced from China",
     imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/18285861230107040115_2048.jpg?v=1780000969",
-    shopifyProductUrl: "https://auralis-design.myshopify.com/products/copy-of-indoor-wall-tapestry",
-    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/copy-of-indoor-wall-tapestry"),
+    shopifyProductUrl: "https://auralis-design.myshopify.com/products/cosmic-owl-tapestry",
+    shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/cosmic-owl-tapestry"),
     altText: "Cosmic Owl Tapestry",
     highlights: ['26" x 36"', "Wall Decor", "Home Decor", "1 product photo"],
     specs: [
