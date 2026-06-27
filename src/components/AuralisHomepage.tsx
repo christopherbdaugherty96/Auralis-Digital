@@ -125,8 +125,8 @@ const concepts = [
 const collectionCards = [
   {
     title: "Apparel",
-    copy: "Wearable art, hats, shirts, and creator merch concepts.",
-    href: "/products?category=T-Shirts",
+    copy: "Wearable art — tees, hoodies, sweatshirts, and creator merch concepts.",
+    href: "/products?category=T-Shirts,Hoodies,Sweatshirts",
     icon: Store,
   },
   {
@@ -144,7 +144,7 @@ const collectionCards = [
   {
     title: "Accessories",
     copy: "Hats, journals, necklaces, and smaller products for everyday use.",
-    href: "/products?category=Accessories",
+    href: "/products?category=Hats,Accessories,Journals %26 Notebooks",
     icon: Store,
   },
   {
@@ -674,10 +674,19 @@ const productCategories = [
 
 function ProductCatalogGrid() {
   const [activeCategory, setActiveCategory] = useState(() => {
-    const param = new URLSearchParams(window.location.search).get("category");
-    return param && productCategories.includes(param) ? param : "All";
+    const params = new URLSearchParams(window.location.search);
+    const param = params.get("category");
+    if (!param) return "All";
+    if (productCategories.includes(param)) return param;
+    const multi = param.split(",").map((s) => s.trim());
+    if (multi.length > 1 && multi.every((c) => productCategories.includes(c))) return param;
+    return "All";
   });
-  const filtered = activeCategory === "All" ? shopProducts : shopProducts.filter((p) => p.category === activeCategory);
+  const filtered = activeCategory === "All"
+    ? shopProducts
+    : activeCategory.includes(",")
+      ? shopProducts.filter((p) => activeCategory.split(",").includes(p.category))
+      : shopProducts.filter((p) => p.category === activeCategory);
 
   return (
     <div id="products-grid" className="product-catalog-section">
