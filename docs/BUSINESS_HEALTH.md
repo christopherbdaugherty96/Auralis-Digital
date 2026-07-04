@@ -18,12 +18,12 @@ LEGAL / FORMATION
 □ Domain email (still auralisdigitaleco@gmail.com)
 
 COMMERCE CHANNELS
-✓ Online Store (auralisdigital.net + shop.auralisdigital.net)
-✓ Shop app
-✓ Google & YouTube (32/33 products; awaiting first review ~2026-07-08→10)
-△ TikTok (app installed; seller verification pending)
+✓ Online Store (auralisdigital.net + shop.auralisdigital.net; WELCOME10 live)
+✓ Shop app (33/33 — 6 missing new products backfilled 2026-07-04)
+✓ Google & YouTube (32/33; awaiting first review ~2026-07-08→10; shipping-info flag to clear)
+✓ Facebook & Instagram (32/33, hoodie excluded; Meta-side review status unverified)
+△ TikTok (app installed; parked pending publisher check + seller verification)
 □ Pinterest
-□ Facebook & Instagram
 □ Marketplaces (Amazon/eBay/Walmart — deliberately deferred)
 
 PRODUCTS (33 active)
