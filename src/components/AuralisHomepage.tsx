@@ -694,6 +694,9 @@ function ProductCatalogGrid() {
         <span className="section-label"><Store aria-hidden="true" /> Lucid Creations</span>
         <h2 id="shop-preview-title">Shop Lucid Creations.</h2>
         <p>The Shopify shop by Auralis Digital. Browse products, prices, and details — checkout opens securely on Shopify.</p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Made to order · Production usually 2–5 business days · Shipping usually 3–8 business days after production · Tracking sent by email
+        </p>
       </div>
       <div className="cta-row mb-8">
         <Button variant="conversion" size="lg" asChild>
