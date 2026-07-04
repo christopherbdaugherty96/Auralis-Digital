@@ -25,6 +25,7 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 |---|---|
 | `docs/MASTER_BUSINESS_STRUCTURE.md` | Source of truth for deciding whether a project, store, website, repo, or revenue channel belongs under Auralis Digital. |
 | `docs/BUSINESS_HEALTH.md` | One-screen living scorecard: revenue, legal, channels, product health, trust. Read this first. |
+| `docs/OPERATING_RHYTHM.md` | Weekly cadence (Mon ops / Tue–Thu creation / Fri marketing), three north-star metrics, and the no-fifth-branch rule. |
 | `docs/AURALIS_CURRENT_STATUS.md` | Canonical truth doc: what is real, what is missing, and what to do next. |
 | `docs/ROADMAP_EXECUTION_2026-05-14.md` | Current execution roadmap: public trust fixes, contact verification, Shopify readiness, custom design readiness, website design readiness, first sale/client, and proof. |
 | `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof and commerce readiness tracking. |
