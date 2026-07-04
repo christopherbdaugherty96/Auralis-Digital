@@ -44,7 +44,8 @@ Sorted by margin %. Promote = worth paid/organic push based on margin AND absolu
 ## Action notes
 
 - **Traffic winners:** Ying Yang / Trippy Hippy tees (best %), hooded sherpa blankets (best $), regular sherpa blankets and hoodies (both strong). Point Google/TikTok content at these.
-- **Reprice before promoting:** the three $21.99 tapestries and the dog pillow clear under $5 — and the dog pillow is the one product that has actually sold. Market tapestries commonly sell $28–40; a $27.99–29.99 reprice moves margin to ~35–40%. Note the tapestries carry "Bestsellers" tags but are the worst earners.
+- **Reprice before promoting:** the three $21.99 tapestries and the dog pillow clear under $5. Market tapestries commonly sell $28–40; a $27.99–29.99 reprice moves margin to ~35–40%. Note the tapestries carry "Bestsellers" tags but are the worst earners.
+- **Order #1001 context:** the Custom Dog Pillow sale was a custom/family order. Treat it as checkout/fulfillment proof (and a review opportunity), NOT as a representative margin benchmark for the public catalog. Track custom/family orders separately from storefront sales.
 - **Geometric Dad Cap** ($4.50 on a $24.99 cap): reprice toward $29.99 or drop from promotion entirely.
 - **"Depth" hoodie** at 28% on an $89.57 price is thin for a premium item — check whether the commissioned pricing was intentional.
 - Refresh this table after any reprice or new product: costs come from Shopify (`unitCost`), so the query is repeatable.

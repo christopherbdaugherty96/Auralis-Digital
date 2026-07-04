@@ -4,7 +4,8 @@ Updated: 2026-07-04 · One screen, verified facts only. Update marks when state 
 
 ```text
 REVENUE
-✓ First sale (#1001, 2026-05-28, $31.58, fulfilled)
+✓ First sale (#1001, 2026-05-28, $31.58, fulfilled — custom/family order:
+  checkout+fulfillment proof, not a margin or demand benchmark)
 □ 10 sales
 □ 100 sales
 
