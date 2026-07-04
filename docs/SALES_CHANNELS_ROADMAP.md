@@ -5,7 +5,7 @@ Store: Lucid Creations (shop.auralisdigital.net) — Shopify Basic, USD, US
 
 Goal: get the existing 31-product catalog in front of buyers on external platforms using free Shopify channel apps, in priority order, without breaking policy on any platform.
 
-## AGENT HANDOFF — Resume Here (updated 2026-07-03)
+## AGENT HANDOFF — Resume Here (updated 2026-07-04)
 
 Self-contained state for any agent (Claude or Codex) picking this up. Full history is in the Status Log at the bottom.
 
@@ -14,21 +14,23 @@ Key identifiers:
 - Google & YouTube publication: `gid://shopify/Publication/215417028708`
 - Google Merchant Center: `5818967427` (christopherbdaugherty@gmail.com)
 - Google Analytics: `G-60YE8LXXBX`
-- TikTok app: "TikTok Shop — SPL", US region; seller email `auralisdigitaleco@gmail.com`; target account `@lucid.creation`
-- Policy-excluded product: "Fuck society Heavy Blend™ Hooded Sweatshirt" (`gid://shopify/Product/8603469348964`) — keep OFF Google/TikTok/Pinterest/Meta, keep ON Online Store/Shop
+- TikTok publication: `gid://shopify/Publication/215481778276`; official app handle `tiktok-ads-2`; target account `@lucid.creation`
+- Policy-excluded product: "Fuck society Heavy Blend™ Hooded Sweatshirt" (`gid://shopify/Product/8603469348964`) — keep OFF Google/TikTok/Pinterest/Meta/ChatGPT, keep ON Online Store/Shop
 - Scheduled automation: `check-google-shopping-product-review-status` fires 2026-07-09 10:00 AM ET
 
 Current state:
-- GOOGLE (Phase 1): setup COMPLETE, in wait state. 31 products published (hoodie excluded), all syncs On, counters were 0 on 2026-07-03 (normal ingestion lag).
-- TIKTOK (Phase 2): app installed, NOT connected. No TikTok publication exists in Shopify yet. Blocked on owner: choose individual-vs-business seller registration, complete TikTok Shop verification for @lucid.creation.
-- PINTEREST (Phase 3) / META (Phase 4) / MARKETPLACES (Phase 5): not started.
+- GOOGLE (Phase 1): setup COMPLETE, in wait state. 32/33 products on channel (hoodie excluded), all syncs On; shipping-info/review status still needs follow-up.
+- META (Phase 4 done early): Facebook & Instagram publication exists; 32/33 products on channel (hoodie excluded). Meta-side Commerce Manager/Instagram Shopping approval still unverified.
+- CHATGPT: 32/33 products on channel (hoodie excluded). Passive AI shopping surface; no further setup known.
+- TIKTOK (Phase 2): official TikTok Inc. app installed; publication exists; 32/33 products on channel (hoodie excluded). SELLER CENTER IS PAUSED because TikTok handoff spins on `seller-us.tiktok.com/shopify_open_auth?...shop=undefined`; resume later from Shopify Admin → Apps → TikTok, not that spinner URL.
+- PINTEREST (Phase 3) / MARKETPLACES (Phase 5): not started.
 
 Next actions, in order:
 1. Owner: sanity-check synced shipping/delivery times in the Google & YouTube app against real POD timelines (production 2–5d + transit 3–8d).
 2. Anyone, by 2026-07-05: if Merchant Center counters still 0 total, treat as feed issue — inspect merchants.google.com account 5818967427 → Products → All products for feed errors.
 3. Anyone, 2026-07-08→10: check Google review results. Agent method: Admin API query on `product.feedback { summary details { app { title } messages { message } } }`; also Merchant Center UI. Fix/log any disapprovals.
-4. Owner: resume TikTok onboarding (seller verification). When done, a TikTok publication appears in `publications` query.
-5. Agent, after TikTok publication exists: verify all active products published to it; exclude the hoodie.
+4. Owner/Codex later: resume TikTok seller verification from Shopify Admin → Apps → TikTok only if ready to handle identity/tax/payout steps. Catalog side is already cleaned.
+5. Owner/Codex: refine Meta/Google/Shop customer-facing surfaces before starting Pinterest.
 
 API techniques that work here (Shopify MCP / Admin GraphQL):
 - List channels: `{ publications(first: 25) { edges { node { id name } } } }`
@@ -39,18 +41,22 @@ API techniques that work here (Shopify MCP / Admin GraphQL):
 
 Known data caveats (accepted, do not "fix" without owner ask): no GTINs on any variant (POD — expect limited-performance warnings only); all variant weights are the 0.22 lb Printify default (only matters if weight-based shipping is ever enabled); apparel may need Unisex/Adult gender/age attributes set in the Google app bulk editor if warnings appear; "Tripsitter" hat title is low-risk but flaggable.
 
-## Current State (verified 2026-07-03 via Shopify Admin API)
+## Current State (verified 2026-07-04 via Shopify Admin API)
 
-Products are published to only these channels:
+Products are published to these channels:
 
 | Channel | Status |
 |---|---|
-| Online Store | Live |
-| Shop (Shop app) | Live |
-| Point of Sale | Enabled, unused (keep for festival/market selling later) |
-| Microsoft Copilot | Auto-enabled by Shopify |
+| Online Store | Live, 33/33 |
+| Shop (Shop app) | Live, 33/33 |
+| Google & YouTube | Live in Shopify, 32/33; hoodie excluded; platform review/shipping status pending |
+| Facebook & Instagram | Live in Shopify, 32/33; hoodie excluded; Meta-side approval status unverified |
+| TikTok | Official app live in Shopify, 32/33; hoodie excluded; Seller Center verification paused on `shop=undefined` callback loop |
+| ChatGPT | Live/passive AI shopping surface, 32/33; hoodie excluded |
+| Microsoft Copilot | Auto-enabled by Shopify, 33/33 |
+| Point of Sale | Enabled, unused |
 
-No presence yet on Google, TikTok, Pinterest, Meta, or any marketplace.
+No presence yet on Pinterest or external marketplaces.
 
 ## Priority Order
 
@@ -118,6 +124,7 @@ Claude (via Shopify Admin API, after each app is installed):
 
 ## Status Log
 
+- 2026-07-04 (TikTok paused, catalog cleaned): uninstalled third-party "TikTok Shop — SPL"; installed official "TikTok" app by TikTok Inc. Shopify now has TikTok channel/publication (`gid://shopify/Publication/215481778276`, autoPublish=false). Verified via API: 32/33 products published, profanity hoodie excluded (`publishedOnPublication=false`). Seller Center handoff is PAUSED because TikTok's `shopify_open_auth` callback spins with `shop=undefined`; do not continue from that URL. Resume later from Shopify Admin → Apps → TikTok, and expect owner-only identity/tax/payout steps for TikTok Shop approval.
 - 2026-07-04 (Phase 4 done early — Facebook & Instagram live): Meta channel connected ahead of TikTok/Pinterest (publication gid://shopify/Publication/215478173796, autoPublish=false). Verified via API: 32/33 products published, profanity hoodie excluded. UNVERIFIED: Meta-side Instagram Shopping approval state — the embedded Meta setup screen renders blank in Shopify; check Commerce Manager directly for review/Business Manager steps. SAME GOTCHA as Google: new products need manual publish to this channel.
 - 2026-07-04 (Shop app gap found and fixed): all 6 products created since 2026-06-27 (Orivex tees ×2, Galactic Goddess Kimono, Lucid Mind Bucket Hat, "Depth" hoodie, Fuck society hoodie) were never published to the Shop app channel — same autoPublish=false trap. All 6 published via API; Shop now 33/33 (hoodie intentionally INCLUDED per cross-channel rules — excluded only from Google/TikTok/Pinterest/Meta). NOTE: relayed channel counts also showed "ChatGPT: 32" (AI shopping surface, not visible in the publications API) and "POS: 1" (unused, ignore).
 

@@ -1,6 +1,6 @@
 # Auralis Digital Active Execution
 
-Last updated: 2026-06-05
+Last updated: 2026-07-04
 
 ## Current Mode
 
@@ -57,6 +57,10 @@ These are reorder-only fixes with visible customer impact. Do not use image repl
 - [x] Policies
 - [x] Footer socials
 - [x] Sender email
+- [ ] Add Shopify footer email signup/newsletter section for `WELCOME10`.
+  - Headline: `Get 10% off your first order`
+  - Body: `Join the list for new drops, custom design ideas, and made-to-order updates. Use code WELCOME10 at checkout.`
+  - Button: `Get 10% Off`
 - [x] Product image cleanup
 - [x] Create or verify Lucid Creations collection.
 - [x] Create or verify RJ Print collection.
