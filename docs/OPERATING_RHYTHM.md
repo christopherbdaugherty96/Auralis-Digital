@@ -26,6 +26,18 @@ Maintenance stays contained to Monday. If it leaks into creation days, that's a 
 
 The branches reinforce each other — Lucid Creations (original art/products), RJ Print (in-house manufacturing), Auralis Digital (cash-flow services), and the agent tooling that lowers the cost of running all three. **Do not add a fifth branch until the existing four produce consistent results.**
 
+## Five override rules (adopted 2026-07-04)
+
+These override almost everything else, including the rest of this doc:
+
+1. **Every week produces something visible** to someone outside the business — a handmade piece, product video, customer photo, new listing, or completed order. A week whose only output is docs/scripts/planning was an internal week, not a growth week.
+2. **Automation must eliminate work forever.** Build only if it saves time every month for the next year. (Drift checker: qualifies. Catalog generator: qualifies. A sixth dashboard: does not.)
+3. **Protect the Lucid brand.** Each new product must make Lucid Creations feel more authentic; handmade work raises the perceived value of POD, never the reverse.
+4. **Agent tooling ("Nova") earns its features** — new capabilities only for problems actually hit while running the business, never because they're interesting.
+5. **Quarterly cleanup, not constant reorganizing.** Archive stale docs, remove obsolete scripts, delete dead branches, merge duplicate knowledge, refresh the scorecard — once per quarter (next: ~2026-10-01). The rest of the time, ship.
+
+**Tracking metric: hours spent creating.** A good week looks like ~12 creating / 2 maintaining / 2 marketing. If maintaining exceeds creating, the business stalls no matter how good the systems get.
+
 ## 90-day success definition (through ~2026-10-01)
 
 - More verified sales (baseline: 1)
