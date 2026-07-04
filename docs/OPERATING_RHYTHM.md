@@ -38,6 +38,8 @@ These override almost everything else, including the rest of this doc:
 
 **Tracking metric: hours spent creating.** A good week looks like ~12 creating / 2 maintaining / 2 marketing. If maintaining exceeds creating, the business stalls no matter how good the systems get.
 
+6. **Every Friday, close one business-risk loop before creating a new system.** The business has moved from setup risk (missing policies, broken catalog) to operating risk (account lockout, unknown margins, no review system, no email capture, channel dependency, product rights). Current open risk loops, best first: account security (2FA + recovery codes on both Google accounts), separate business bank account, review app (auto-request post-delivery), abandoned-checkout emails, unpushed commits.
+
 ## 90-day success definition (through ~2026-10-01)
 
 - More verified sales (baseline: 1)
