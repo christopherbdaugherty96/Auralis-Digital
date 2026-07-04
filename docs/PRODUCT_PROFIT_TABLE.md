@@ -35,11 +35,23 @@ Sorted by margin %. Promote = worth paid/organic push based on margin AND absolu
 | Micro or Macro T-Shirt | 25.00 | 15.75 | 8.23 | 33% | ok |
 | Tripsitter Bucket Hat | 24.99 | 16.29 | 7.68 | 31% | ok |
 | "Depth" Pullover Hoodie | 89.57 | 61.80 | 24.87 | 28% | reprice or ok |
-| Goddess Tapestry | 21.99 | 16.35 | 4.70 | 21% | NO — reprice first |
-| Math Equations Tapestry | 21.99 | 16.35 | 4.70 | 21% | NO — reprice first |
-| Inner Presence Tapestry | 21.99 | 16.35 | 4.70 | 21% | NO — reprice first |
-| Custom Dog Pillow | 21.99 | 16.34 | 4.71 | 21% | NO — reprice first |
-| Geometric Dad Cap | 24.99 | 19.47 | 4.50 | 18% | NO — worst margin |
+| Goddess Tapestry | 27.99 | 16.35 | 10.53 | 38% | yes (repriced 2026-07-04) |
+| Math Equations Tapestry | 27.99 | 16.35 | 10.53 | 38% | yes (repriced 2026-07-04) |
+| Inner Presence Tapestry | 27.99 | 16.35 | 10.53 | 38% | yes (repriced 2026-07-04) |
+| Custom Dog Pillow | 27.99 | 16.34 | 10.54 | 38% | yes (repriced 2026-07-04) |
+| Geometric Dad Cap | 29.99 | 19.47 | 9.35 | 31% | yes (repriced 2026-07-04) |
+
+## Repricing applied 2026-07-04 (via API, all variants)
+
+Every size tier of the five flagged products was under ~22% margin, so full ladders were repriced to ~35% post-fee margin:
+
+| Product | Old → New (by size) |
+|---|---|
+| Tapestries (all 3) | 26×36: 21.99→27.99 · 50×60: 32.00→38.99 · 68×80: 46.99→56.99 · 88×104: 61.99→74.99 |
+| Custom Dog Pillow | 14×14: 21.99→27.99 |
+| Geometric Dad Cap | all 11 colors: 24.99→29.99 (fits hat ladder: bucket 30.99, corduroy 31.99) |
+
+Consequences: Google feed picks the new prices up automatically via sync. The website's `shopCatalog.ts` now shows STALE prices for these products until the catalog generator lands — drift checker will flag them.
 
 ## Action notes
 
