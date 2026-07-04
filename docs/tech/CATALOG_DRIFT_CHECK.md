@@ -2,7 +2,7 @@
 
 Created: 2026-07-03
 
-Product truth is split across three surfaces: Shopify (source of truth), the hand-maintained website catalog at `src/data/shopCatalog.ts`, and external sales channels (Google Shopping, later TikTok/Pinterest). This check catches drift between the first two before it reaches visitors or shopping feeds.
+Product truth is split across three surfaces: Shopify (source of truth), the website catalog at `src/data/shopCatalog.ts` (now generated — see [CATALOG_GENERATOR.md](CATALOG_GENERATOR.md)), and external sales channels (Google Shopping, later TikTok/Pinterest). This check catches drift between the first two before it reaches visitors or shopping feeds.
 
 ## Run it
 
@@ -13,7 +13,8 @@ npm run check:catalog
 (or `node scripts/check-catalog-drift.mjs`)
 
 - Exit 0: no drift. Exit 1: drift found (issues listed). Exit 2: script/network error.
-- Read-only. It never modifies the catalog, the store, or anything else. Fixes are always manual and Shopify wins.
+- Read-only. It never modifies the catalog, the store, or anything else. Shopify wins; fix drift by running `npm run generate:catalog` (plus overrides edits if copy needs curating).
+- Products listed in `excludedHandles` in `src/data/shopCatalogOverrides.mjs` are deliberately absent from the site: the checker skips them instead of reporting "MISSING LOCALLY", and reports "EXCLUDED BUT PRESENT" if one appears in the catalog anyway.
 
 ## What it compares
 
@@ -36,4 +37,4 @@ Not covered: taxonomy category, descriptions, and images (not exposed by `produc
 - Before deploying site changes that touch `/products` pages.
 - Periodically while external channels (Google Shopping) are syndicating the catalog, since stale local data misrepresents what the store sells.
 
-First run (2026-07-03) found 12 issues: 4 local entries no longer live, 4 live products missing locally, 2 cosmetic `®` title diffs, 2 product-type diffs. See `scripts/check-catalog-drift.mjs` output for the current list.
+First run (2026-07-03) found 12 issues: 4 local entries no longer live, 4 live products missing locally, 2 cosmetic `®` title diffs, 2 product-type diffs. All resolved on 2026-07-04 by switching the catalog to generation (`npm run generate:catalog`); see [CATALOG_GENERATOR.md](CATALOG_GENERATOR.md).

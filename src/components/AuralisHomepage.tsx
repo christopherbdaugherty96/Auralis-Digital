@@ -652,6 +652,7 @@ const preferredProductCategoryOrder = [
   "T-Shirts",
   "Hoodies",
   "Sweatshirts",
+  "Apparel",
   "Blankets",
   "Wall Decor",
   "Hats",

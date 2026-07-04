@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check:catalog": "node scripts/check-catalog-drift.mjs"
+    "check:catalog": "node scripts/check-catalog-drift.mjs",
+    "generate:catalog": "node scripts/generate-shop-catalog.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

@@ -22,18 +22,18 @@ COMMERCE CHANNELS
 ✓ Shop app (33/33 — 6 missing new products backfilled 2026-07-04)
 ✓ Google & YouTube (32/33; awaiting first review ~2026-07-08→10; shipping-info flag to clear)
 ✓ Facebook & Instagram (32/33, hoodie excluded; Meta-side review status unverified)
-△ TikTok (app installed; parked pending publisher check + seller verification)
+✓ TikTok (official TikTok Inc. app installed; 32/33 published, hoodie excluded; Seller Center handoff paused on `shop=undefined` callback loop)
 □ Pinterest
 □ Marketplaces (Amazon/eBay/Walmart — deliberately deferred)
 
-PRODUCTS (33 active)
-△ Catalog drift: 12 issues open (npm run check:catalog; generator task in progress)
-△ Dead product links on website: 4
-△ Products missing from website: 4
+PRODUCTS (33 active; 32 on website — profanity hoodie excluded via overrides)
+✓ Catalog drift: 0 — site catalog now GENERATED from Shopify (npm run generate:catalog)
+✓ Dead product links on website: 0
+✓ Products missing from website: 0 (1 deliberate exclusion)
+✓ Vendor field consistent (fixed 2026-07-04)
 △ Products with <3 images: 2 (Sun of Life Tapestry, bucket hat)
-△ Vendor field inconsistent: 1 ("Fuck society" hoodie = Printify)
-△ Printify boilerplate in descriptions: multiple
-✓ Channel policy exclusions enforced (profanity hoodie off Google)
+△ Printify boilerplate: curated overrides cover most products; new products get derived copy until curated
+✓ Channel policy exclusions enforced (profanity hoodie off Google/Meta/TikTok/ChatGPT)
 
 TRUST / PROOF
 1 customer · 0 reviews · 0 testimonials · 0 published case studies

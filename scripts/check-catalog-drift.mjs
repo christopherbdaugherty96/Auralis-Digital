@@ -16,6 +16,7 @@
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { excludedHandles } from "../src/data/shopCatalogOverrides.mjs";
 
 const STORE_BASE = "https://auralis-design.myshopify.com";
 const CATALOG_PATH = path.join(
@@ -127,8 +128,20 @@ function compare(local, live) {
     }
   }
 
+  const excluded = new Set(excludedHandles.map(normalize));
   for (const product of live) {
-    if (!localHandles.has(normalize(product.handle))) {
+    const handle = normalize(product.handle);
+    if (excluded.has(handle)) {
+      if (localHandles.has(handle)) {
+        issues.push(
+          `EXCLUDED BUT PRESENT: "${product.title}" (handle "${product.handle}") is in excludedHandles yet still in shopCatalog.ts — regenerate the catalog`,
+        );
+      } else {
+        console.log(`  (excluded by overrides, not compared: "${product.title}")`);
+      }
+      continue;
+    }
+    if (!localHandles.has(handle)) {
       issues.push(
         `MISSING LOCALLY: "${product.title}" (handle "${product.handle}") is live on Shopify but absent from shopCatalog.ts`,
       );
@@ -152,7 +165,7 @@ try {
   console.log(`\nDrift found (${issues.length} issue${issues.length === 1 ? "" : "s"}):\n`);
   for (const issue of issues) console.log(`  - ${issue}`);
   console.log(
-    "\nShopify is the source of truth. Fix shopCatalog.ts by hand (or regenerate it); this script never writes.",
+    "\nShopify is the source of truth. Regenerate shopCatalog.ts with `npm run generate:catalog`; this script never writes.",
   );
   process.exit(1);
 } catch (error) {
