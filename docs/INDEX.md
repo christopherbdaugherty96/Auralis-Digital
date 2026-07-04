@@ -30,10 +30,8 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 | `docs/ROADMAP_EXECUTION_2026-05-14.md` | Current execution roadmap: public trust fixes, contact verification, Shopify readiness, custom design readiness, website design readiness, first sale/client, and proof. |
 | `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof and commerce readiness tracking. |
 | `docs/STATUS.md` | Short operational status snapshot. |
-| `docs/ROADMAP.md` | Older/general execution roadmap and priority order. Use the dated execution roadmap above for the current ordered workstream. |
 | `docs/SHOPIFY_LAUNCH_CHECKLIST.md` | Product/Shopify launch checklist before sending real traffic to product links. |
 | `docs/NEW_PRODUCT_CHECKLIST.md` | Per-product release checklist: data quality, channel publishing (NOT automatic), catalog sync, link test. |
-| `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
 | `docs/INDEX.md` | This map. |
 
 ## Business Structure And Revenue Planning
@@ -142,8 +140,8 @@ Do not create overlapping roadmap, status, or current-state documents.
 
 Update existing canonical docs before creating new tracking layers:
 
-1. `docs/AURALIS_CURRENT_STATUS.md`
-2. `docs/ROADMAP_EXECUTION_2026-05-14.md`
-3. `active/NEXT_STEPS_TODO.md`
-4. `docs/STATUS.md`
-5. `docs/ROADMAP.md`
+1. `docs/BUSINESS_HEALTH.md`
+2. `docs/AURALIS_CURRENT_STATUS.md`
+3. `docs/ROADMAP_EXECUTION_2026-05-14.md`
+4. `active/NEXT_STEPS_TODO.md`
+5. `docs/STATUS.md`

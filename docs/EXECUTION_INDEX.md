@@ -32,10 +32,10 @@ The product/shop surface exists publicly but is not considered fully commerce-ma
 
 Read first:
 
-1. `docs/AURALIS_CURRENT_STATUS.md`
-2. `active/NEXT_STEPS_TODO.md`
-3. `docs/STATUS.md`
-4. `docs/ROADMAP.md`
+1. `docs/BUSINESS_HEALTH.md`
+2. `docs/AURALIS_CURRENT_STATUS.md`
+3. `active/NEXT_STEPS_TODO.md`
+4. `docs/STATUS.md`
 
 These files define:
 

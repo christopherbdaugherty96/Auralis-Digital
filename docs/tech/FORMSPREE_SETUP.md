@@ -90,4 +90,4 @@ Do not remove the mailto fallback until the Formspree flow has been tested end t
 
 ## After Setup
 
-After live verification, update `active/NEXT_STEPS_TODO.md` and `docs/ROADMAP.md` only if the task is actually complete.
+After live verification, update `active/NEXT_STEPS_TODO.md` and `docs/STATUS.md` only if the task is actually complete.

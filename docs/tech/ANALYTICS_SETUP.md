@@ -44,4 +44,4 @@ Do not guess what is working when measurement can answer it.
 
 ## After Setup
 
-Update `docs/ROADMAP.md` and check off the analytics tasks.
+Update `docs/STATUS.md` and check off the analytics tasks.
