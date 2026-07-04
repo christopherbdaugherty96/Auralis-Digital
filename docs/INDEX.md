@@ -30,6 +30,7 @@ The product/shop surface exists publicly, but commerce readiness is still separa
 | `docs/STATUS.md` | Short operational status snapshot. |
 | `docs/ROADMAP.md` | Older/general execution roadmap and priority order. Use the dated execution roadmap above for the current ordered workstream. |
 | `docs/SHOPIFY_LAUNCH_CHECKLIST.md` | Product/Shopify launch checklist before sending real traffic to product links. |
+| `docs/NEW_PRODUCT_CHECKLIST.md` | Per-product release checklist: data quality, channel publishing (NOT automatic), catalog sync, link test. |
 | `docs/SPRINT_EXECUTION_48HR.md` | Active sprint checklist for lead capture and outreach. |
 | `docs/INDEX.md` | This map. |
 
@@ -43,6 +44,7 @@ Use these files for parent-business structure, ecommerce strategy, affiliate/dro
 | `docs/AURALIS_DIGITAL_UMBRELLA_STRUCTURE.md` | Defines Auralis Digital as the parent business umbrella and maps major branches. |
 | `docs/BUSINESS_MAP.md` | Quick map of website services, Lucid Creations, RJ Print, affiliate products, dropshipping, and future ventures. |
 | `docs/ECOMMERCE_STACK_PLAN.md` | Shopify-first stack plan covering Lucid Creations, RJ Print, Printify, dropshipping, reviews, email, and social traffic. |
+| `docs/SALES_CHANNELS_ROADMAP.md` | Sales channel expansion playbook: Google & YouTube, TikTok, Pinterest, Meta, marketplaces — install order, per-channel setup steps, and status log. |
 | `docs/AFFILIATE_DROPSHIPPING_PLAN.md` | Strategy and guardrails for affiliate recommendations and curated dropshipping tests. |
 | `docs/3_YEAR_VISION.md` | Lightweight three-year direction: prove the business, build repeatable revenue, then separate only what earns separation. |
 

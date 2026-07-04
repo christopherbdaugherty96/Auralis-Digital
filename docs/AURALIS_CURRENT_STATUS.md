@@ -1,8 +1,19 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-06-05
+Last updated: 2026-07-04
 
 This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
+
+## Verified Update 2026-07-04 (via Shopify Admin API)
+
+These facts supersede older claims below:
+
+- **First real product sale is COMPLETE.** Order #1001, 2026-05-28, $31.58, Custom Dog Polyester Square Pillow, paid AND fulfilled, real customer (not a test order). Commerce state is post-first-sale, not pre-revenue. Proof capture (review request, order screenshot) is still open.
+- **Shopify-hosted policies are PUBLISHED.** All five exist in Shopify: contact information, privacy, refund, shipping, terms of service.
+- **Store catalog:** 33 active products, 0 drafts, 0 archived.
+- **Sales channels are live beyond the website.** Google & YouTube channel connected (Merchant Center 5818967427, product sync on, awaiting first review); TikTok Shop app installed but seller verification incomplete. See `docs/SALES_CHANNELS_ROADMAP.md` (AGENT HANDOFF section) for channel truth.
+- **Known sync risk:** `src/data/shopCatalog.ts` drifts from Shopify; run `npm run check:catalog` (see `docs/tech/CATALOG_DRIFT_CHECK.md`). 12 drift issues were open as of 2026-07-03.
+- **New products do NOT auto-publish to the Google channel** — publish manually per `docs/NEW_PRODUCT_CHECKLIST.md`.
 
 ## Current Public Direction
 
@@ -126,12 +137,9 @@ The current active execution lane is Shopify storefront pre-launch validation wi
 
 The product surface exists technically, and local Auralis policy/support pages exist, but commerce readiness is not yet fully confirmed.
 
-Not yet confirmed in repo truth:
+Confirmed 2026-07-04: Shopify production checkout works end to end (order #1001 was paid and fulfilled by a real customer), and Shopify-hosted policies are published. Still not confirmed in repo truth:
 
-- Shopify production checkout readiness
-- Shopify payment/tax/shipping review
-- Shopify-hosted refund, shipping, and terms policy publishing or verification
-- full incognito add-to-cart/checkout test up to final payment confirmation
+- Shopify payment/tax/shipping settings review
 - production-partner test-order verification
 - fulfillment QA
 - refund/shipping workflow verification inside Shopify checkout
@@ -157,12 +165,12 @@ The product/shop surface should not be treated as a fully mature commerce operat
 5. Set up invoicing/payment processing.
 6. ~~Configure and verify the live contact-form backend.~~ Done 2026-05-16 (phone confirmed 2026-05-17).
 7. Verify the three-pillar live site flow on phone and desktop.
-8. Publish or verify Shopify-hosted refund, shipping, and terms policies.
-9. Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.
+8. ~~Publish or verify Shopify-hosted refund, shipping, and terms policies.~~ Done — verified 2026-07-04.
+9. ~~Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.~~ Superseded — a real customer completed checkout and was fulfilled (order #1001, 2026-05-28).
 10. Create or complete Google Business Profile.
 11. Start focused outreach or traffic for one branch at a time: products, custom design, or website design.
-12. Close one real sale or client engagement.
-13. Publish real proof only after permission or confirmation.
+12. ~~Close one real sale or client engagement.~~ First product sale done (order #1001). Still open for custom design and website design.
+13. Publish real proof only after permission or confirmation. ← NOW THE ACTIVE STEP: capture proof from order #1001 (review request, order screenshot).
 
 ## Do Not Do Right Now
 

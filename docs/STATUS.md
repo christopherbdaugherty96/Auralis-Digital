@@ -1,6 +1,8 @@
 # Auralis Digital Status
 
-Last updated: 2026-05-17
+Last updated: 2026-07-04
+
+> **Verified 2026-07-04:** First real product sale is complete (order #1001, 2026-05-28, $31.58, paid and fulfilled — real customer). Shopify-hosted policies (all five) are published. 33 active products. Google & YouTube sales channel is live (awaiting Google review); TikTok app installed, seller verification pending. Commerce state is post-first-sale. Details: `docs/AURALIS_CURRENT_STATUS.md` and `docs/SALES_CHANNELS_ROADMAP.md`.
 
 ## Current State
 
@@ -28,12 +30,12 @@ Website design remains active, but it is not the only core idea. Products and cu
 4. ~~Configure and verify the production contact-form backend.~~ Done 2026-05-16.
 5. Configure real payment/invoicing flow.
 6. Verify the live three-pillar navigation and inquiry flow on desktop and phone.
-7. Publish or verify Shopify-hosted refund, shipping, and terms policies.
-8. Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.
+7. ~~Publish or verify Shopify-hosted refund, shipping, and terms policies.~~ Done — verified 2026-07-04.
+8. ~~Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.~~ Superseded — real customer checkout completed and fulfilled (order #1001, 2026-05-28).
 9. Create or complete Google Business Profile.
 10. Start focused outreach or traffic for one lane at a time: products, custom design, or website design.
-11. Land one real sale or client engagement.
-12. Capture real proof only after permission or confirmation.
+11. ~~Land one real sale or client engagement.~~ First product sale done (order #1001). Still open for custom design and website design.
+12. Capture real proof only after permission or confirmation. ← ACTIVE: capture proof from order #1001.
 
 ## Website Status
 
@@ -58,9 +60,7 @@ Website design remains active, but it is not the only core idea. Products and cu
 - Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
 - Local Auralis policy/support pages exist for refund, shipping, privacy, and terms guidance.
 - Footer policy links point to local Auralis policy/support pages.
-- Commerce readiness is still not complete.
-- Shopify-hosted refund, shipping, and terms policies still need publishing or verification.
-- Incognito add-to-cart/checkout testing up to final payment confirmation still remains.
+- Commerce readiness verified 2026-07-04: Shopify-hosted policies are published, and a real paid + fulfilled customer order (#1001) proves the checkout and fulfillment path works.
 - Do not imply the shop/product surface is fully mature until checkout, policies, fulfillment, support, margins, and test-order flow are verified.
 
 ## Custom Design Status
