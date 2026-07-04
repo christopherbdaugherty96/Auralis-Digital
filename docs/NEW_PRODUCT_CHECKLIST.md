@@ -15,6 +15,7 @@ Run this every time a product is added (or significantly changed) in Shopify/Pri
 - [ ] **Shopify status:** Active
 - [ ] **Collections:** added to the right collections so site category cards pick it up
 - [ ] **Google & YouTube channel:** published (does NOT happen automatically) — admin Publishing card, or API `publishablePublish` with publication `gid://shopify/Publication/215417028708`
+- [ ] **Shipping rate guard:** if the product's first-item US shipping rate exceeds the Merchant Center flat rate (currently $13.99 if manual override is active), update Merchant Center shipping BEFORE publishing to Google — quoting below actual checkout shipping causes disapproval
 - [ ] **TikTok channel:** published, once the channel is live (Phase 2)
 - [ ] **Policy screen:** if the product has profanity or restricted content, EXCLUDE it from Google/TikTok/Pinterest/Meta (API: `publicationUpdate` + `publishablesToRemove`) and note it in `docs/SALES_CHANNELS_ROADMAP.md`
 - [ ] **Website catalog:** update `src/data/shopCatalog.ts` (until it is auto-generated), then run `npm run check:catalog` — must exit 0
