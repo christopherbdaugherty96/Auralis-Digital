@@ -697,6 +697,9 @@ function ProductCatalogGrid() {
         <p className="mt-3 text-sm text-muted-foreground">
           Made to order · Production usually 2–5 business days · Shipping usually 3–8 business days after production · Tracking sent by email
         </p>
+        <p className="mt-2 !text-sm font-semibold !text-accent">
+          10% off your first order — use code WELCOME10 at checkout.
+        </p>
       </div>
       <div className="cta-row mb-8">
         <Button variant="conversion" size="lg" asChild>
@@ -1106,6 +1109,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
               <span className="section-label"><Store aria-hidden="true" /> Lucid Creations</span>
               <h2>Featured from the collection.</h2>
               <p className="mt-4">Psychedelic apparel, woven blankets, tapestries, and accessories — made to order and checkout securely through Shopify.</p>
+              <p className="mt-2 !text-sm font-semibold !text-accent">10% off your first order — use code WELCOME10 at checkout.</p>
             </Reveal>
             <div className="home-featured-grid">
               {HOMEPAGE_FEATURED_SLUGS.map((slug) => {
