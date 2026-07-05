@@ -991,7 +991,7 @@ export const shopProducts: ShopProduct[] = [
     slug: "sun-of-life-hooded-sherpa-fleece-blanket",
     shortDescription: "A hooded sherpa fleece blanket with Sun of Life artwork and supremely soft polyester.",
     detailDescription: "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing\n.: Blank product sourced from China",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1542355155027848485_2048.jpg?v=1780113625",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17378005354909122438_2048.jpg?v=1780113626",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/sun-of-life-hooded-sherpa-fleece-blanket",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/sun-of-life-hooded-sherpa-fleece-blanket"),
     altText: "Sun of Life Hooded Sherpa Fleece Blanket",
@@ -1008,17 +1008,17 @@ export const shopProducts: ShopProduct[] = [
     photos: [
       {
         label: "Photo 1",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1542355155027848485_2048.jpg?v=1780113625",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17378005354909122438_2048.jpg?v=1780113626",
         altText: "Sun of Life Hooded Sherpa Fleece Blanket product photo 1",
       },
       {
         label: "Photo 2",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11241345068108034137_2048.jpg?v=1780113626",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/1542355155027848485_2048.jpg?v=1780113625",
         altText: "Sun of Life Hooded Sherpa Fleece Blanket product photo 2",
       },
       {
         label: "Photo 3",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17378005354909122438_2048.jpg?v=1780113626",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/11241345068108034137_2048.jpg?v=1780113626",
         altText: "Sun of Life Hooded Sherpa Fleece Blanket product photo 3",
       },
     ],
@@ -1216,7 +1216,7 @@ export const shopProducts: ShopProduct[] = [
     slug: "treehugger-hoodie",
     shortDescription: "An oversized unisex hoodie with Treehugger artwork and side seams for shape retention.",
     detailDescription: "A classic wardrobe staple with your own art.\n\n.: Unisex design with side seams for shape retention\n.: 70% Cotton, 30% Polyester (Light Oxford: 75/21/4 cotton/poly/viscose)\n.: 330 GSM heavyweight fabric\n.: Oversized fit\n.: Blank product sourced from Pakistan and Bangladesh",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5210941592382241377_2048.jpg?v=1780171886",
+    imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8425709701594728324_2048.jpg?v=1780171907",
     shopifyProductUrl: "https://auralis-design.myshopify.com/products/treehugger-hoodie",
     shopifyTrackingUrl: withShopifyTracking("https://auralis-design.myshopify.com/products/treehugger-hoodie"),
     altText: "Treehugger Hoodie",
@@ -1233,22 +1233,22 @@ export const shopProducts: ShopProduct[] = [
     photos: [
       {
         label: "Photo 1",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5210941592382241377_2048.jpg?v=1780171886",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8425709701594728324_2048.jpg?v=1780171907",
         altText: "Treehugger Hoodie product photo 1",
       },
       {
         label: "Photo 2",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9230148469592689450_2048.jpg?v=1780171894",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/5210941592382241377_2048.jpg?v=1780171886",
         altText: "Treehugger Hoodie product photo 2",
       },
       {
         label: "Photo 3",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17475576146577354131_2048.jpg?v=1780171902",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/9230148469592689450_2048.jpg?v=1780171894",
         altText: "Treehugger Hoodie product photo 3",
       },
       {
         label: "Photo 4",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/8425709701594728324_2048.jpg?v=1780171907",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0783/5769/2516/files/17475576146577354131_2048.jpg?v=1780171902",
         altText: "Treehugger Hoodie product photo 4",
       },
     ],
