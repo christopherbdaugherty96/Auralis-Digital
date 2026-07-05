@@ -36,12 +36,12 @@ export const productOverrides = {
   "trippy-hippy-vintage-corduroy-cap-embroidery": {
     shortDescription: "A vintage-inspired corduroy cap with embroidered eyelets and an adjustable strap buckle.",
     detailDescription:
-      "The Vintage Corduroy Cap combines retro charm with modern comfort.\n\n.: 100% cotton corduroy\n.: Unstructured, 6-panel, low-profile crown\n.: Cotton twill sweatband and taping\n.: Adjustable strap with a gold-colored metal buckle\n.: Blank product sourced from China and Vietnam",
+      "The Vintage Corduroy Cap combines retro charm with modern comfort.\n\n.: 100% cotton corduroy\n.: Unstructured, 6-panel, low-profile crown\n.: Cotton twill sweatband and taping\n.: Adjustable strap with a gold-colored metal buckle",
   },
   "tripsitter-bucket-hat-embroidery": {
     shortDescription: "A cotton twill bucket hat with sewn eyelets for breathability and three color options.",
     detailDescription:
-      "The embroidered bucket hat blends practicality, comfort, and style.\n\n.: 100% cotton twill\n.: 3 3/4\" (9.52 cm) crown\n.: 2 1/4\" (5.71 cm) brim\n.: Sewn eyelets for breathability\n.: One size fits most\n.: Blank product sourced from China and Vietnam",
+      "The embroidered bucket hat blends practicality, comfort, and style.\n\n.: 100% cotton twill\n.: 3 3/4\" (9.52 cm) crown\n.: 2 1/4\" (5.71 cm) brim\n.: Sewn eyelets for breathability\n.: One size fits most",
   },
   "zeus-journal-matte": {
     shortDescription: "A matte hardcover journal with a full wraparound print and 150 lined pages.",
@@ -51,7 +51,7 @@ export const productOverrides = {
   "zeus-sherpa-blanket": {
     shortDescription: "A super-soft sherpa blanket with a printed mink front and warm tan sherpa backing.",
     detailDescription:
-      "Keep it cozy all year round with this super-soft sherpa blanket.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print\n.: Blank product sourced from China",
+      "Keep it cozy all year round with this super-soft sherpa blanket.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
   },
   "zeus-woven-blanket": {
     shortDescription: "A 100% cotton woven blanket with colorful fringed edges and Zeus artwork.",
@@ -61,72 +61,72 @@ export const productOverrides = {
   "goddess-tapestry": {
     shortDescription: "A bold wall tapestry with goddess-inspired psychedelic artwork and hemmed edges.",
     detailDescription:
-      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available\n.: Blanks sourced from China",
+      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
   },
   "inner-presence-tapestry": {
     shortDescription: "An introspective wall tapestry with psychedelic visual flow and hemmed edges.",
     detailDescription:
-      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available\n.: Blanks sourced from China",
+      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
   },
   "math-equations-tapestry": {
     shortDescription: "A wall tapestry featuring math equation artwork with hemmed edges.",
     detailDescription:
-      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available\n.: Blanks sourced from China",
+      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
   },
   "micro-or-macro-nublend®-crewneck-sweatshirt": {
     shortDescription: "A pre-shrunk NuBlend fleece crewneck with pill-resistant fabric and a relaxed fit.",
     detailDescription:
-      "A staple sweatshirt for chilly summer evenings and warm winter layers.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband\n.: Blank product sourced from Honduras, Mexico, and USA",
+      "A staple sweatshirt for chilly summer evenings and warm winter layers.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband",
   },
   "micro-or-macro-t-shirt": {
     shortDescription: "A performance polyester tee with moisture-wicking fabric and a relaxed unisex cut.",
     detailDescription:
-      "A 100% polyester interlock performance tee perfect for all outdoor activities.\n\n.: Advanced moisture-wicking fabric\n.: Set-in sleeves, hemmed collar\n.: Unisex sizing\n.: Blank product sourced from Haiti, Honduras, Nicaragua, and USA",
+      "A 100% polyester interlock performance tee perfect for all outdoor activities.\n\n.: Advanced moisture-wicking fabric\n.: Set-in sleeves, hemmed collar\n.: Unisex sizing",
   },
   "micro-or-macro-v2-nublend®-crewneck-sweatshirt": {
     shortDescription: "A second colorway of the NuBlend fleece crewneck with pill-resistant fabric.",
     detailDescription:
-      "A staple sweatshirt for chilly summer evenings and warm winter layers.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband\n.: Blank product sourced from Honduras, Mexico, and USA",
+      "A staple sweatshirt for chilly summer evenings and warm winter layers.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband",
   },
   "woven-blanket": {
     shortDescription: "A commissioned woven blanket blending symbolic digital artwork with immersive visual texture.",
     detailDescription:
-      "A commissioned woven blanket featuring high-resolution symbolic artwork.\n\n.: 100% Cotton woven threads\n.: Colorful fringed edges\n.: Soft heavyweight feel\n.: Blanks sourced from China",
+      "A commissioned woven blanket featuring high-resolution symbolic artwork.\n\n.: 100% Cotton woven threads\n.: Colorful fringed edges\n.: Soft heavyweight feel",
   },
   "psychedelic-midweight-softstyle-fleece-hoodie": {
     shortDescription: "A soft midweight hoodie featuring immersive psychedelic artwork with cosmic-inspired energy.",
     detailDescription:
-      "A comfortable fleece hoodie with a unisex everyday fit.\n\n.: 80% Cotton, 20% Polyester (Oatmeal: 60% Cotton, 40% Polyester)\n.: Air jet yarn for softer feel and reduced pilling\n.: Double-lined hood\n.: Matching drawcord\n.: 100% Cotton face\n.: Blank product sourced from Bangladesh, Honduras, and Haiti",
+      "A comfortable fleece hoodie with a unisex everyday fit.\n\n.: 80% Cotton, 20% Polyester (Oatmeal: 60% Cotton, 40% Polyester)\n.: Air jet yarn for softer feel and reduced pilling\n.: Double-lined hood\n.: Matching drawcord\n.: 100% Cotton face",
   },
   "psychedelic-ying-yang-tan-sherpa-blanket": {
     shortDescription: "A super-soft sherpa blanket with psychedelic Ying Yang artwork and tan sherpa backing.",
     detailDescription:
-      "Keep it cozy all year round with this super-soft sherpa blanket.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print\n.: Blank product sourced from China",
+      "Keep it cozy all year round with this super-soft sherpa blanket.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
   },
   "psychedelic-ying-yang-heavy-cotton-tee": {
     shortDescription: "A premium heavy cotton tee with immersive Ying Yang artwork inspired by sacred geometry.",
     detailDescription:
-      "Immersive symbolic artwork inspired by sacred geometry, psychedelic visuals, and cosmic design.\n\n.: 100% cotton (Ash: 99/1 cotton/poly, Sport Grey: 90/10 cotton/poly)\n.: Preshrunk jersey knit\n.: Seamless double-needle collar\n.: Taped neck and shoulders\n.: Blank product sourced from Honduras, Haiti, Mexico, Nicaragua, and USA",
+      "Immersive symbolic artwork inspired by sacred geometry, psychedelic visuals, and cosmic design.\n\n.: 100% cotton (Ash: 99/1 cotton/poly, Sport Grey: 90/10 cotton/poly)\n.: Preshrunk jersey knit\n.: Seamless double-needle collar\n.: Taped neck and shoulders",
   },
   "psychedelic-ying-yang-woven-blanket": {
     shortDescription: "A woven statement blanket featuring psychedelic Ying Yang artwork and symbolic contrast.",
     detailDescription:
-      "A woven blanket with detailed artwork and colorful fringed edges.\n\n.: 100% Cotton woven threads\n.: Colorful fringed edges\n.: Soft decorative heavyweight feel\n.: Blanks sourced from China",
+      "A woven blanket with detailed artwork and colorful fringed edges.\n\n.: 100% Cotton woven threads\n.: Colorful fringed edges\n.: Soft decorative heavyweight feel",
   },
   "secret-owl-hooded-sherpa-fleece-blanket": {
     shortDescription: "A hooded sherpa fleece blanket with all-over owl artwork and supremely soft polyester.",
     detailDescription:
-      "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing\n.: Blank product sourced from China",
+      "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
   },
   "sid-girl-midweight-softstyle-fleece-hoodie": {
     shortDescription: "A durable midweight hoodie with an 80/20 cotton-poly blend and lined hood.",
     detailDescription:
-      "The Gildan SF500 is all about durability with a soft touch.\n\n.: 80/20 cotton-poly blend\n.: 100% cotton surface for printing\n.: Lined hood\n.: Double-needle stitching at shoulder, armhole, neck, and waistband\n.: Blank product sourced from Bangladesh, Honduras, and Haiti",
+      "The Gildan SF500 is all about durability with a soft touch.\n\n.: 80/20 cotton-poly blend\n.: 100% cotton surface for printing\n.: Lined hood\n.: Double-needle stitching at shoulder, armhole, neck, and waistband",
   },
   "sun-of-life-hooded-sherpa-fleece-blanket": {
     shortDescription: "A hooded sherpa fleece blanket with Sun of Life artwork and supremely soft polyester.",
     detailDescription:
-      "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing\n.: Blank product sourced from China",
+      "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
   },
   "spiral-notebook-ruled-line": {
     shortDescription: "A spiral-bound notebook with ruled line paper and a durable printed cover.",
@@ -136,27 +136,27 @@ export const productOverrides = {
   "oval-necklace": {
     shortDescription: "A symbolic pendant necklace inspired by sacred geometry and cosmic visual themes.",
     detailDescription:
-      "A lightweight wearable pendant with glossy symbolic artwork.\n\n.: Glossy printed pendant\n.: Silver-tone chain\n.: Lightweight design\n.: Minimalist wearable art\n.: Blank product sourced from China",
+      "A lightweight wearable pendant with glossy symbolic artwork.\n\n.: Glossy printed pendant\n.: Silver-tone chain\n.: Lightweight design\n.: Minimalist wearable art",
   },
   "sun-of-life-wall-tapestry": {
     shortDescription: "A bold symbolic tapestry inspired by sacred geometry, cosmic alignment, and immersive visual design.",
     detailDescription:
-      "A lightweight polyester wall tapestry with high-resolution edge-to-edge printing.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Easy to hang, move, or fold\n.: Blanks sourced from China",
+      "A lightweight polyester wall tapestry with high-resolution edge-to-edge printing.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Easy to hang, move, or fold",
   },
   "flower-of-the-sun-woven-blanket": {
     shortDescription: "A 100% cotton woven blanket with Sun of Life artwork and colorful fringed edges.",
     detailDescription:
-      "A cozy throw-sized woven blanket with colorful fringed edges.\n\n.: 100% Cotton\n.: Woven threads\n.: Colorful fringed edges\n.: Soft heavyweight feel\n.: Blanks sourced from China",
+      "A cozy throw-sized woven blanket with colorful fringed edges.\n\n.: 100% Cotton\n.: Woven threads\n.: Colorful fringed edges\n.: Soft heavyweight feel",
   },
   "treehugger-hoodie": {
     shortDescription: "An oversized unisex hoodie with Treehugger artwork and side seams for shape retention.",
     detailDescription:
-      "A classic wardrobe staple with your own art.\n\n.: Unisex design with side seams for shape retention\n.: 70% Cotton, 30% Polyester (Light Oxford: 75/21/4 cotton/poly/viscose)\n.: 330 GSM heavyweight fabric\n.: Oversized fit\n.: Blank product sourced from Pakistan and Bangladesh",
+      "A classic wardrobe staple with your own art.\n\n.: Unisex design with side seams for shape retention\n.: 70% Cotton, 30% Polyester (Light Oxford: 75/21/4 cotton/poly/viscose)\n.: 330 GSM heavyweight fabric\n.: Oversized fit",
   },
   "trippy-hippy-tee": {
     shortDescription: "A heavy cotton tee with Trippy Hippy artwork and a dependable everyday fit.",
     detailDescription:
-      "The Gildan 5000 heavy cotton tee is a dependable classic for everyday wear.\n\n.: 100% cotton, tightly knit 5.3 oz/yd² fabric\n.: Preshrunk jersey knit\n.: Seamless double-needle collar\n.: Taped neck and shoulders\n.: Blank product sourced from Honduras, Haiti, Mexico, Nicaragua, and USA",
+      "The Gildan 5000 heavy cotton tee is a dependable classic for everyday wear.\n\n.: 100% cotton, tightly knit 5.3 oz/yd² fabric\n.: Preshrunk jersey knit\n.: Seamless double-needle collar\n.: Taped neck and shoulders",
   },
   "orivex-luxury-tee": {
     shortDescription: "An exclusive commissioned tee with clean luxury branding and a bold monochrome look.",
