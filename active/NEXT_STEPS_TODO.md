@@ -61,7 +61,9 @@ These are reorder-only fixes with visible customer impact. Do not use image repl
   - Headline: `Get 10% off your first order`
   - Body: `Join the list for new drops, custom design ideas, and made-to-order updates. Use code WELCOME10 at checkout.`
   - Button: `Get 10% Off`
-- [ ] Complete Meta Business Suite account verification so Instagram/Facebook posts can be scheduled.
+- [ ] Complete Meta Business Suite account verification for `@auralis_digital_` so Instagram/Facebook posts can be scheduled.
+  - Decision: keep `@auralis_digital_` as the permanent Instagram Shopping / Meta commerce account.
+  - Do not migrate Meta commerce to `@lucid.creation` unless intentionally restarting account approval/review later.
 - [ ] Update `@auralis_digital_` bio to the current Lucid Creations / Auralis Digital storefront positioning.
   - Bio: `Auralis Digital Hub`
   - Line 2: `Lucid Creations shop + custom design`

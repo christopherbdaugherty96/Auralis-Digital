@@ -5,17 +5,19 @@ Status: Ready to execute after Meta account verification
 
 ## Current Account State
 
-Primary account for product posting: `@auralis_digital_`
+Primary and permanent Instagram commerce account: `@auralis_digital_`
 
 Why: this account is already connected in Meta Business Suite as `Auralis Digital Web Design , auralis_digital_`, has the existing audience, and publicly shows 22 posts with 1,108 followers. Use it as the umbrella storefront account for Lucid Creations products, custom design, and Auralis Digital services.
 
+Decision: keep `@auralis_digital_` as the Instagram Shopping / Meta commerce account. Do not verify one account and later migrate the shop to another unless there is a strong reason; product tagging and Commerce Manager approval attach to the approved professional account, so moving later means repeating the review and losing rollout momentum.
+
 Secondary handle: `@lucid.creation`
 
-Why: keep this as the clean future shop handle and TikTok/Instagram naming target, but do not make it the main product-posting account yet. It currently has no visible posts and a much smaller audience.
+Why: keep this as the clean TikTok/product identity, but do not make it the Instagram commerce account right now. It currently has no visible posts and a much smaller audience.
 
 ## Manual Blockers
 
-1. Meta Business Suite is blocking publishing with `Verification needed`. The owner must complete the verification prompt before posts can be scheduled.
+1. Meta Business Suite is blocking publishing with `Verification needed`. The owner must complete the verification prompt for `@auralis_digital_` before posts can be scheduled.
 2. Do not publish, schedule, or bulk-create posts without a final review of the images/captions in Meta Business Suite.
 3. Instagram Shopping approval is still unverified in Commerce Manager. Product tags may not be available until Meta approves the shop.
 
