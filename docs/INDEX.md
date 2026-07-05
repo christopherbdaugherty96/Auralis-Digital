@@ -45,6 +45,7 @@ Use these files for parent-business structure, ecommerce strategy, affiliate/dro
 | `docs/BUSINESS_MAP.md` | Quick map of website services, Lucid Creations, RJ Print, affiliate products, dropshipping, and future ventures. |
 | `docs/ECOMMERCE_STACK_PLAN.md` | Shopify-first stack plan covering Lucid Creations, RJ Print, Printify, dropshipping, reviews, email, and social traffic. |
 | `docs/SALES_CHANNELS_ROADMAP.md` | Sales channel expansion playbook: Google & YouTube, TikTok, Pinterest, Meta, marketplaces — install order, per-channel setup steps, and status log. |
+| `docs/marketing/INSTAGRAM_PRODUCT_ROLLOUT.md` | Instagram account positioning, Meta verification blockers, and the first 8-product caption rollout for `@auralis_digital_`. |
 | `docs/AFFILIATE_DROPSHIPPING_PLAN.md` | Strategy and guardrails for affiliate recommendations and curated dropshipping tests. |
 | `docs/3_YEAR_VISION.md` | Lightweight three-year direction: prove the business, build repeatable revenue, then separate only what earns separation. |
 

@@ -61,6 +61,14 @@ These are reorder-only fixes with visible customer impact. Do not use image repl
   - Headline: `Get 10% off your first order`
   - Body: `Join the list for new drops, custom design ideas, and made-to-order updates. Use code WELCOME10 at checkout.`
   - Button: `Get 10% Off`
+- [ ] Complete Meta Business Suite account verification so Instagram/Facebook posts can be scheduled.
+- [ ] Update `@auralis_digital_` bio to the current Lucid Creations / Auralis Digital storefront positioning.
+  - Bio: `Auralis Digital Hub`
+  - Line 2: `Lucid Creations shop + custom design`
+  - Line 3: `Made-to-order apparel, blankets & decor`
+  - Line 4: `10% off first order: WELCOME10`
+- [ ] Rename Instagram highlight groups from generic `Highlights` labels to clearer storefront labels: `Shop`, `Custom`, `Drops`, `Made to Order`.
+- [ ] Schedule the first 8 Instagram product posts from `docs/marketing/INSTAGRAM_PRODUCT_ROLLOUT.md` after Meta verification clears.
 - [x] Product image cleanup
 - [x] Create or verify Lucid Creations collection.
 - [x] Create or verify RJ Print collection.
