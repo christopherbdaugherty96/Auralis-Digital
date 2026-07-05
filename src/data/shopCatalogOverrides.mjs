@@ -189,6 +189,6 @@ export const shopFaqs = [
   },
   {
     q: "How fast will items ship?",
-    a: "Many items are produced and fulfilled after purchase, so timing can vary by product and destination.",
+    a: "Most items are made to order: production usually takes 2–5 business days, then shipping takes 3–8 business days. Tracking is emailed as soon as your order ships.",
   },
 ];

@@ -35,11 +35,11 @@ const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 const HOMEPAGE_FEATURED_SLUGS = [
   "psychedelic-ying-yang-heavy-cotton-tee",
   "psychedelic-midweight-softstyle-fleece-hoodie",
+  "sun-of-life-hooded-sherpa-fleece-blanket",
+  "zeus-sherpa-blanket",
   "sun-of-life-wall-tapestry",
-  "goddess-tapestry",
   "treehugger-hoodie",
   "trippy-hippy-tee",
-  "oval-necklace",
 ];
 
 const CUSTOM_DESIGN_PREVIEW = {
