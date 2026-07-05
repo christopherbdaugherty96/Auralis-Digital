@@ -32,7 +32,7 @@ PRODUCTS (33 active; 32 on website — profanity hoodie excluded via overrides)
 ✓ Products missing from website: 0 (1 deliberate exclusion)
 ✓ Vendor field consistent (fixed 2026-07-04)
 △ Products with <3 images: 2 (Sun of Life Tapestry, bucket hat)
-✓ Descriptions clean on Shopify + site for 32/33 ("Depth" pending owner fabric specs)
+✓ Descriptions clean on Shopify + site: 33/33 (Depth completed 2026-07-04 with Printify AOP specs)
 ✓ Channel policy exclusions enforced (profanity hoodie off Google/Meta/TikTok/ChatGPT)
 
 TRUST / PROOF
