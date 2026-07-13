@@ -74,7 +74,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Depth Pullover Hoodie",
-    price: "$89.57",
+    price: "$89.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "All Over Prints",
