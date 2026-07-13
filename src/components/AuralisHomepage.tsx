@@ -41,7 +41,7 @@ const HOMEPAGE_FEATURED_SLUGS = [
   "psychedelic-ying-yang-heavy-cotton-tee",
   "psychedelic-midweight-softstyle-fleece-hoodie",
   "sun-of-life-hooded-sherpa-fleece-blanket",
-  "zeus-sherpa-blanket",
+  "sacred-owl-sherpa-blanket",
   "treehugger-hoodie",
 ];
 

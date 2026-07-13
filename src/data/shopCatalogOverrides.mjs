@@ -43,18 +43,18 @@ export const productOverrides = {
     detailDescription:
       "The embroidered bucket hat blends practicality, comfort, and style.\n\n.: 100% cotton twill\n.: 3 3/4\" (9.52 cm) crown\n.: 2 1/4\" (5.71 cm) brim\n.: Sewn eyelets for breathability\n.: One size fits most",
   },
-  "zeus-journal-matte": {
+  "sacred-owl-journal-matte": {
     shortDescription: "A matte hardcover journal with a full wraparound print and 150 lined pages.",
     detailDescription:
-      "A sturdy matte hardcover journal designed for everyday writing.\n\n.: Full wraparound print\n.: 150 lined pages (75 sheets)\n.: Matte finish\n.: Casewrap binding\n.: Note: a 0.5\" x 0.5\" production barcode is visible on the back cover",
+      "A sturdy matte hardcover journal with wraparound Sacred Owl artwork, designed for everyday writing, sketching, and idea keeping.\n\n.: Full wraparound print\n.: 150 lined pages (75 sheets)\n.: Matte finish\n.: Casewrap binding\n.: Note: a 0.5\" x 0.5\" production barcode is visible on the back cover",
   },
-  "zeus-sherpa-blanket": {
+  "sacred-owl-sherpa-blanket": {
     shortDescription: "A super-soft sherpa blanket with a printed mink front and warm tan sherpa backing.",
     detailDescription:
-      "The Zeus Sherpa Blanket pairs mythic sacred-geometry artwork with a soft printed mink front and tan sherpa backing. It is a warm statement throw for couches, beds, reading corners, and rooms that need a bolder symbolic accent.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
+      "The Sacred Owl Sherpa Blanket pairs cosmic owl artwork and sacred geometry with a soft printed mink front and tan sherpa backing. It is a warm statement throw for couches, beds, reading corners, and rooms that need a bolder symbolic accent.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
   },
-  "zeus-woven-blanket": {
-    shortDescription: "A 100% cotton woven blanket with colorful fringed edges and Zeus artwork.",
+  "sacred-owl-woven-blanket": {
+    shortDescription: "A 100% cotton woven blanket with colorful fringed edges and Sacred Owl artwork.",
     detailDescription:
       "A cozy throw-sized woven blanket woven out of 100% cotton yarn with a colorful fringe edge.\n\n.: Material: 100% Cotton\n.: Colorful fringed edges\n.: Woven threads\n.: Available in 3 sizes\n.: Note: mockups do not fully showcase the final product",
   },
@@ -103,10 +103,10 @@ export const productOverrides = {
     detailDescription:
       "A woven blanket with detailed artwork and colorful fringed edges.\n\n.: 100% Cotton woven threads\n.: Colorful fringed edges\n.: Soft decorative heavyweight feel",
   },
-  "secret-owl-hooded-sherpa-fleece-blanket": {
+  "sacred-owl-hooded-sherpa-fleece-blanket": {
     shortDescription: "A hooded sherpa fleece blanket with all-over owl artwork and supremely soft polyester.",
     detailDescription:
-      "Secret Owl turns the hooded sherpa blanket into a wearable layer of owl artwork, soft fleece, and cream sherpa backing. It is built for couch nights, cold mornings, camp comfort, and anyone who wants blanket-level warmth without staying pinned in place.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
+      "Sacred Owl turns the hooded sherpa blanket into a wearable layer of owl artwork, soft fleece, and cream sherpa backing. It is built for couch nights, cold mornings, camp comfort, and anyone who wants blanket-level warmth without staying pinned in place.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
   },
   "sid-girl-midweight-softstyle-fleece-hoodie": {
     shortDescription: "A durable midweight hoodie with an 80/20 cotton-poly blend and lined hood.",

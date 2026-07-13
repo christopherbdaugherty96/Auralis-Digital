@@ -159,16 +159,16 @@ try {
   const issues = compare(local, live);
   if (issues.length === 0) {
     console.log("\nNo drift detected.");
-    process.exit(0);
+    process.exitCode = 0;
+  } else {
+    console.log(`\nDrift found (${issues.length} issue${issues.length === 1 ? "" : "s"}):\n`);
+    for (const issue of issues) console.log(`  - ${issue}`);
+    console.log(
+      "\nShopify is the source of truth. Regenerate shopCatalog.ts with `npm run generate:catalog`; this script never writes.",
+    );
+    process.exitCode = 1;
   }
-
-  console.log(`\nDrift found (${issues.length} issue${issues.length === 1 ? "" : "s"}):\n`);
-  for (const issue of issues) console.log(`  - ${issue}`);
-  console.log(
-    "\nShopify is the source of truth. Regenerate shopCatalog.ts with `npm run generate:catalog`; this script never writes.",
-  );
-  process.exit(1);
 } catch (error) {
   console.error(`Drift check failed: ${error.message}`);
-  process.exit(2);
+  process.exitCode = 2;
 }
