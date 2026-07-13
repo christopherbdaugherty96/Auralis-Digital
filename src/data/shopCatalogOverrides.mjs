@@ -51,7 +51,7 @@ export const productOverrides = {
   "zeus-sherpa-blanket": {
     shortDescription: "A super-soft sherpa blanket with a printed mink front and warm tan sherpa backing.",
     detailDescription:
-      "Keep it cozy all year round with this super-soft sherpa blanket.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
+      "The Zeus Sherpa Blanket pairs mythic sacred-geometry artwork with a soft printed mink front and tan sherpa backing. It is a warm statement throw for couches, beds, reading corners, and rooms that need a bolder symbolic accent.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
   },
   "zeus-woven-blanket": {
     shortDescription: "A 100% cotton woven blanket with colorful fringed edges and Zeus artwork.",
@@ -61,22 +61,22 @@ export const productOverrides = {
   "goddess-tapestry": {
     shortDescription: "A bold wall tapestry with goddess-inspired psychedelic artwork and hemmed edges.",
     detailDescription:
-      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
+      "A goddess-inspired wall tapestry built around bold psychedelic movement, saturated color, and a strong central figure. It works as a statement backdrop for bedrooms, studios, meditation corners, or creative spaces that need more visual energy.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
   },
   "inner-presence-tapestry": {
     shortDescription: "An introspective wall tapestry with psychedelic visual flow and hemmed edges.",
     detailDescription:
-      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
+      "Inner Presence is a more reflective tapestry design, made for rooms where the artwork should feel meditative without disappearing into the background. The piece brings flowing psychedelic texture to walls, altars, studios, and quiet creative spaces.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
   },
   "math-equations-tapestry": {
     shortDescription: "A wall tapestry featuring math equation artwork with hemmed edges.",
     detailDescription:
-      "A custom wall tapestry that uplifts any room with a personal touch.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
+      "A wall tapestry for people who like their decor a little cerebral. Math equation artwork gives the piece a study-room, studio, or science-minded backdrop feel while keeping the lightweight tapestry format easy to hang and move.\n\n.: 100% Polyester\n.: Hemmed edges for durability\n.: Lightweight and versatile\n.: Multiple sizes available",
   },
   "micro-or-macro-nublend®-crewneck-sweatshirt": {
     shortDescription: "A pre-shrunk NuBlend fleece crewneck with pill-resistant fabric and a relaxed fit.",
     detailDescription:
-      "A staple sweatshirt for chilly summer evenings and warm winter layers.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband",
+      "The original Micro or Macro crewneck keeps the question front and center on a dependable NuBlend fleece base. It is a clean layer for cooler festival nights, casual wear, and anyone who likes subtle psychedelic humor in the rotation.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband",
   },
   "micro-or-macro-t-shirt": {
     shortDescription: "A performance polyester tee with moisture-wicking fabric and a relaxed unisex cut.",
@@ -86,22 +86,12 @@ export const productOverrides = {
   "micro-or-macro-v2-nublend®-crewneck-sweatshirt": {
     shortDescription: "A second colorway of the NuBlend fleece crewneck with pill-resistant fabric.",
     detailDescription:
-      "A staple sweatshirt for chilly summer evenings and warm winter layers.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband",
-  },
-  "woven-blanket": {
-    shortDescription: "A commissioned woven blanket blending symbolic digital artwork with immersive visual texture.",
-    detailDescription:
-      "A commissioned woven blanket featuring high-resolution symbolic artwork.\n\n.: 100% Cotton woven threads\n.: Colorful fringed edges\n.: Soft heavyweight feel",
-  },
-  "psychedelic-midweight-softstyle-fleece-hoodie": {
-    shortDescription: "A soft midweight hoodie featuring immersive psychedelic artwork with cosmic-inspired energy.",
-    detailDescription:
-      "A comfortable fleece hoodie with a unisex everyday fit.\n\n.: 80% Cotton, 20% Polyester (Oatmeal: 60% Cotton, 40% Polyester)\n.: Air jet yarn for softer feel and reduced pilling\n.: Double-lined hood\n.: Matching drawcord\n.: 100% Cotton face",
+      "Micro or Macro V2 keeps the same cozy NuBlend crewneck base while shifting the artwork into a second visual lane. It is made for easy layering, colder outdoor sets, and everyday fits that still want a little festival energy.\n\n.: NuBlend® fleece — pre-shrunk, pill-resistant\n.: 50% Cotton, 50% Polyester\n.: Double-needle stitching\n.: Rib cuffs and waistband",
   },
   "psychedelic-ying-yang-tan-sherpa-blanket": {
     shortDescription: "A super-soft sherpa blanket with psychedelic Ying Yang artwork and tan sherpa backing.",
     detailDescription:
-      "Keep it cozy all year round with this super-soft sherpa blanket.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
+      "A soft sherpa blanket with psychedelic Ying Yang artwork on the printed mink front and a warm tan sherpa backing. The contrast-heavy design makes it a strong couch, bed, or lounge-piece accent while staying practical for everyday comfort.\n\n.: 100% polyester printed mink with ultra-soft tan sherpa backing\n.: One-sided print",
   },
   "psychedelic-ying-yang-heavy-cotton-tee": {
     shortDescription: "A premium heavy cotton tee with immersive Ying Yang artwork inspired by sacred geometry.",
@@ -116,7 +106,7 @@ export const productOverrides = {
   "secret-owl-hooded-sherpa-fleece-blanket": {
     shortDescription: "A hooded sherpa fleece blanket with all-over owl artwork and supremely soft polyester.",
     detailDescription:
-      "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
+      "Secret Owl turns the hooded sherpa blanket into a wearable layer of owl artwork, soft fleece, and cream sherpa backing. It is built for couch nights, cold mornings, camp comfort, and anyone who wants blanket-level warmth without staying pinned in place.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
   },
   "sid-girl-midweight-softstyle-fleece-hoodie": {
     shortDescription: "A durable midweight hoodie with an 80/20 cotton-poly blend and lined hood.",
@@ -126,7 +116,7 @@ export const productOverrides = {
   "sun-of-life-hooded-sherpa-fleece-blanket": {
     shortDescription: "A hooded sherpa fleece blanket with Sun of Life artwork and supremely soft polyester.",
     detailDescription:
-      "A hooded fleece blanket delivering fuzzy warmth and custom style.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
+      "Sun of Life brings sacred-geometry artwork to a hooded sherpa fleece blanket made for full-body warmth. The oversized wearable format works for lounging, travel days, outdoor hangs, and cold-weather festival comfort.\n\n.: 100% supremely soft polyester\n.: Hooded design for extra warmth\n.: All-over print\n.: Cream sherpa backing",
   },
   "spiral-notebook-ruled-line": {
     shortDescription: "A spiral-bound notebook with ruled line paper and a durable printed cover.",
@@ -157,12 +147,6 @@ export const productOverrides = {
     shortDescription: "A heavy cotton tee with Trippy Hippy artwork and a dependable everyday fit.",
     detailDescription:
       "The Gildan 5000 heavy cotton tee is a dependable classic for everyday wear.\n\n.: 100% cotton, tightly knit 5.3 oz/yd² fabric\n.: Preshrunk jersey knit\n.: Seamless double-needle collar\n.: Taped neck and shoulders",
-  },
-  "orivex-luxury-tee": {
-    shortDescription: "An exclusive commissioned tee with clean luxury branding and a bold monochrome look.",
-    detailDescription:
-      "Designed as an exclusive commissioned piece, the Orivex Luxury Tee combines clean luxury branding with a bold monochrome look. The design is sharp, minimal, and made to stand out with a refined streetwear feel.\n\nThis tee is built for everyday wear while keeping a premium branded appearance. The Orivex artwork gives it a polished, high-contrast look that works well as a statement piece or casual custom apparel.\n\n.: Exclusive commissioned Orivex artwork\n.: Comfortable everyday unisex fit\n.: Durable print made for repeated wear\n.: Available in 7 colors, S through 5XL",
-    extraSpecs: [{ label: "Commission", value: "Custom design for Orivex brand" }],
   },
   "orivex-oversized-acid-wash-tee": {
     shortDescription: "A premium oversized acid wash tee with bold commissioned Orivex artwork and a heavyweight streetwear feel.",

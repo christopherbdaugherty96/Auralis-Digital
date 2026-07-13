@@ -33,13 +33,14 @@ const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent("Auralis Inquiry")}
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || "";
 
 const HOMEPAGE_FEATURED_SLUGS = [
+  "sacred-owl-tapestry",
+  "tripsitter-v5-crewneck-sweatshirt",
+  "tripsitter-v3-classic-tee",
   "psychedelic-ying-yang-heavy-cotton-tee",
   "psychedelic-midweight-softstyle-fleece-hoodie",
   "sun-of-life-hooded-sherpa-fleece-blanket",
   "zeus-sherpa-blanket",
-  "sun-of-life-wall-tapestry",
   "treehugger-hoodie",
-  "trippy-hippy-tee",
 ];
 
 const CUSTOM_DESIGN_PREVIEW = {
@@ -124,41 +125,59 @@ const concepts = [
 
 const collectionCards = [
   {
-    title: "Apparel",
-    copy: "Wearable art — tees, hoodies, sweatshirts, and creator merch concepts.",
-    href: "/products?category=T-Shirts,Hoodies,Sweatshirts",
+    title: "T-Shirts",
+    copy: "Graphic tees, wearable art, and festival-ready apparel from Lucid Creations.",
+    href: "/products?category=T-Shirts",
     icon: Store,
+  },
+  {
+    title: "Hoodies & Sweatshirts",
+    copy: "Layered wearable art, pullovers, and crewnecks for colder festival nights.",
+    href: "/products?category=Hoodies%20%26%20Sweatshirts",
+    icon: Sparkles,
   },
   {
     title: "Blankets",
     copy: "Soft statement pieces featuring original and custom artwork.",
     href: "/products?category=Blankets",
-    icon: Sparkles,
-  },
-  {
-    title: "Wall Art",
-    copy: "Tapestries and visual pieces for rooms, studios, and creative spaces.",
-    href: "/products?category=Wall Decor",
     icon: Paintbrush,
   },
   {
-    title: "Accessories",
-    copy: "Hats, journals, necklaces, and smaller products for everyday use.",
-    href: "/products?category=Hats,Accessories,Journals %26 Notebooks",
+    title: "Tapestries",
+    copy: "Wall pieces for rooms, studios, meditation corners, and creative spaces.",
+    href: "/products?category=Tapestries",
     icon: Store,
   },
   {
-    title: "3D Prints",
-    copy: "Custom printed items, prototypes, signage, and practical product ideas.",
-    href: "/creator-shops",
+    title: "Hats",
+    copy: "Caps, bucket hats, and smaller wearable accessories.",
+    href: "/products?category=Hats",
     icon: Hammer,
+  },
+  {
+    title: "Pillows",
+    copy: "Decor pillows with Lucid Creations artwork for couches, beds, and studios.",
+    href: "/products?category=Pillows",
+    icon: Paintbrush,
+  },
+  {
+    title: "Journals & Paper Goods",
+    copy: "Notebooks, journals, and paper goods for sketches, notes, and daily rituals.",
+    href: "/products?category=Journals%20%26%20Paper%20Goods",
+    icon: Store,
+  },
+  {
+    title: "Accessories",
+    copy: "Smaller giftable pieces and everyday add-ons from the Lucid catalog.",
+    href: "/products?category=Accessories",
+    icon: Sparkles,
   },
 ];
 
 const creatorShops = [
   {
     title: "Lucid Creations",
-    copy: "The Shopify shop by Auralis Digital — psychedelic art, handmade pieces, festival-inspired designs, and select 3D printed goods.",
+    copy: "The Shopify shop by Auralis Digital — psychedelic apparel, tapestries, blankets, hats, journals, and festival-inspired designs.",
     href: "/products",
     icon: Sparkles,
   },
@@ -393,7 +412,7 @@ const pageMeta: Record<AuralisPage, { title: string; description: string; canoni
   collections: {
     title: "Collections | Auralis Digital",
     description:
-      "Shop the Lucid Creations Shopify store — wearable art, wall art, accessories, and 3D printed goods by Auralis Digital. Handmade jewelry and resin pieces coming soon.",
+      "Shop Lucid Creations product lanes by category: T-shirts, hoodies and sweatshirts, blankets, tapestries, hats, pillows, journals, and accessories.",
     canonicalPath: "/collections",
   },
   "creator-shops": {
@@ -650,15 +669,16 @@ function ProductCard({ product }: { product: ShopProduct }) {
 
 const preferredProductCategoryOrder = [
   "T-Shirts",
-  "Hoodies",
-  "Sweatshirts",
-  "Apparel",
+  "Hoodies & Sweatshirts",
   "Blankets",
-  "Wall Decor",
+  "Tapestries",
   "Hats",
-  "Home Decor",
+  "Pillows",
+  "Journals & Paper Goods",
   "Accessories",
-  "Journals & Notebooks",
+  "Wall Art",
+  "Best Sellers",
+  "Sacred Geometry Art",
 ];
 
 const productCategories = [
@@ -1334,7 +1354,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
             <Reveal className="section-heading">
               <span className="section-label">Collections</span>
               <h1 className="text-4xl font-extrabold text-foreground sm:text-5xl">Shop by collection.</h1>
-              <p className="mt-4">Browse Lucid Creations product lanes: wearable art, wall art, accessories, and 3D printed goods. Handmade jewelry and resin pieces coming soon.</p>
+              <p className="mt-4">Browse Lucid Creations product lanes by category: T-shirts, hoodies and sweatshirts, blankets, tapestries, hats, pillows, journals, and accessories.</p>
             </Reveal>
             <div className="service-grid">
               {collectionCards.map((collection) => {
@@ -1523,7 +1543,7 @@ export default function AuralisHomepage({ page = "home" }: { page?: AuralisPage 
                 <ul className="mt-5 space-y-3">
                   <li className="flex items-start gap-3 text-sm text-muted-foreground">
                     <Sparkles className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                    <span><strong className="text-foreground">Lucid Creations</strong> — the Shopify shop featuring handmade wire wraps, pendants, resin art, and psychedelic apparel</span>
+                    <span><strong className="text-foreground">Lucid Creations</strong> — the Shopify shop featuring psychedelic apparel, tapestries, blankets, hats, journals, and accessories</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm text-muted-foreground">
                     <Hammer className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />

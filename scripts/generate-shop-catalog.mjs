@@ -42,15 +42,16 @@ const MAX_PHOTOS = 4;
 // but gets logged so the owner can decide where it belongs.
 const KNOWN_CATEGORIES = [
   "T-Shirts",
-  "Hoodies",
-  "Sweatshirts",
+  "Hoodies & Sweatshirts",
   "Blankets",
-  "Wall Decor",
+  "Tapestries",
   "Hats",
-  "Home Decor",
+  "Pillows",
+  "Journals & Paper Goods",
   "Accessories",
-  "Journals & Notebooks",
-  "Apparel",
+  "Wall Art",
+  "Best Sellers",
+  "Sacred Geometry Art",
 ];
 
 async function fetchLiveProducts() {
@@ -66,7 +67,23 @@ async function fetchLiveProducts() {
     products.push(...body.products);
     if (body.products.length < 250) break;
   }
-  return products;
+
+  // The bulk products endpoint is enough for drift checks, but product detail
+  // JSON includes image alt text that the website should preserve.
+  return Promise.all(
+    products.map(async (product) => {
+      try {
+        const res = await fetch(`${STORE_BASE}/products/${product.handle}.json`, {
+          headers: { accept: "application/json" },
+        });
+        if (!res.ok) return product;
+        const body = await res.json();
+        return body.product ?? product;
+      } catch {
+        return product;
+      }
+    }),
+  );
 }
 
 const GARMENT_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"];
@@ -103,17 +120,18 @@ function deriveCategory(product) {
   const type = product.product_type;
   if (type === "Hats") return "Hats";
   if (type === "T-Shirt") return "T-Shirts";
-  if (type === "Hoodie") return "Hoodies";
-  if (type === "Sweatshirt") return "Sweatshirts";
-  if (type === "Paper products") return "Journals & Notebooks";
+  if (type === "Hoodie" || type === "Sweatshirt") return "Hoodies & Sweatshirts";
+  if (type === "Paper products") return "Journals & Paper Goods";
   if (type === "Accessories") return "Accessories";
-  if (title.includes("tapestry")) return "Wall Decor";
+  if (title.includes("tapestry")) return "Tapestries";
   if (title.includes("blanket")) return "Blankets";
-  if (title.includes("hoodie")) return "Hoodies";
+  if (title.includes("pillow")) return "Pillows";
+  if (title.includes("hoodie") || title.includes("sweatshirt")) return "Hoodies & Sweatshirts";
   if (title.includes("tee") || title.includes("t-shirt")) return "T-Shirts";
   if (title.includes("hat") || title.includes("cap")) return "Hats";
-  if (title.includes("robe") || title.includes("kimono")) return "Apparel";
-  return "Home Decor";
+  if (title.includes("journal") || title.includes("notebook")) return "Journals & Paper Goods";
+  if (title.includes("wall art") || title.includes("print")) return "Wall Art";
+  return "Accessories";
 }
 
 // Product-base noun for the review scope sentence, most specific match first.
@@ -190,15 +208,17 @@ function buildProduct(product) {
     .map((v) => Number.parseFloat(v.price))
     .filter(Number.isFinite);
   if (prices.length === 0) throw new Error(`No variant prices for "${handle}"`);
-  const images = (product.images ?? []).map((img) => img.src).filter(Boolean);
+  const images = (product.images ?? [])
+    .map((img) => ({ src: img.src, alt: img.alt }))
+    .filter((img) => Boolean(img.src));
   if (images.length === 0) throw new Error(`No images for "${handle}"`);
-  const bodyText = htmlToText(product.body_html);
-  const photos = images.slice(0, MAX_PHOTOS).map((src, i) => ({
-    label: `Photo ${i + 1}`,
-    imageUrl: src,
-    altText: `${title} product photo ${i + 1}`,
-  }));
   const category = override.category ?? deriveCategory(product);
+  const bodyText = htmlToText(product.body_html);
+  const photos = images.slice(0, MAX_PHOTOS).map((img, i) => ({
+    label: `Photo ${i + 1}`,
+    imageUrl: img.src,
+    altText: img.alt || `${title} ${category} photo ${i + 1}`,
+  }));
   const variantSummary = override.variantSummary ?? deriveVariantSummary(product);
   const productUrl = `${STORE_BASE}/products/${handle}`;
 
@@ -213,10 +233,10 @@ function buildProduct(product) {
     slug: handle,
     shortDescription: deriveShortDescription(bodyText),
     detailDescription: bodyText,
-    imageUrl: images[0],
+    imageUrl: images[0].src,
     shopifyProductUrl: productUrl,
     shopifyTrackingUrl: `${STORE_BASE}/products/${encodeURIComponent(handle)}`,
-    altText: title,
+    altText: images[0].alt || title,
     highlights: [
       variantSummary,
       category,

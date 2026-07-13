@@ -28,7 +28,7 @@ const routes = [
     path: "/collections",
     title: "Collections | Auralis Digital",
     description:
-      "Shop the Lucid Creations Shopify store — handmade jewelry, wearable art, wall art, resin pieces, accessories, and 3D printed goods by Auralis Digital.",
+      "Shop Lucid Creations product lanes by category: T-shirts, hoodies and sweatshirts, blankets, tapestries, hats, pillows, journals, and accessories.",
     canonicalPath: "/collections",
   },
   {
@@ -66,7 +66,7 @@ const routes = [
   {
     path: "/shipping-policy",
     title: "Shipping Policy | Auralis Digital",
-    description: "Shipping and fulfillment guidance for Auralis Design products purchased through Shopify.",
+    description: "Shipping and fulfillment guidance for Lucid Creations products purchased through Shopify.",
     canonicalPath: "/shipping-policy",
   },
   {
