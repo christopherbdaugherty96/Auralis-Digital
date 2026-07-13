@@ -932,7 +932,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Sacred Owl Tapestry",
-    price: "$27.25",
+    price: "$27.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "Home Decor",
@@ -1495,7 +1495,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Tripsitter v1 Classic Tee",
-    price: "$18.60",
+    price: "$24.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "T-Shirt",
@@ -1544,7 +1544,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Tripsitter v2 Classic Tee",
-    price: "$18.60",
+    price: "$24.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "T-Shirt",
@@ -1593,7 +1593,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Tripsitter v3 Classic Tee",
-    price: "$18.60",
+    price: "$24.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "T-Shirt",
@@ -1642,7 +1642,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Tripsitter v4 Classic Tee",
-    price: "$18.60",
+    price: "$24.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "T-Shirt",
@@ -1691,7 +1691,7 @@ export const shopProducts: ShopProduct[] = [
   },
   {
     title: "Tripsitter v5 Crewneck Sweatshirt",
-    price: "$33.58",
+    price: "$39.99",
     vendor: "Lucid Creations",
     shopifyVendor: "Lucid Creations",
     productType: "Sweatshirt",
