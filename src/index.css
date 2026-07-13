@@ -614,6 +614,18 @@ All colors MUST be HSL.
   /* ── Product catalog ────────────────────────────── */
   .shop-preview { @apply overflow-hidden; }
   .product-catalog-section { @apply mt-8; }
+  .product-catalog-tools { @apply mb-5 grid gap-3 md:grid-cols-[minmax(0,1fr)_16rem]; }
+  .product-search-field,
+  .product-sort-field {
+    @apply flex min-h-12 items-center gap-3 rounded-xl border border-primary/[0.12] bg-card/60 px-4 text-sm text-muted-foreground backdrop-blur-sm transition-all duration-200 focus-within:border-primary/35 focus-within:ring-2 focus-within:ring-primary/15;
+  }
+  .product-search-field input,
+  .product-sort-field select {
+    @apply min-w-0 flex-1 bg-transparent py-3 text-sm font-medium text-foreground outline-none;
+  }
+  .product-search-field input::placeholder { @apply text-muted-foreground/70; }
+  .product-sort-field select { @apply cursor-pointer; }
+  .product-sort-field option { color: hsl(220 35% 8%); }
   .product-category-tabs { @apply mb-8 flex gap-2 overflow-x-auto pb-2; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
   .product-category-tab {
     @apply shrink-0 rounded-full border border-primary/[0.08] bg-card/40 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-sm transition-all duration-200 hover:border-primary/25 hover:text-foreground;
@@ -622,7 +634,14 @@ All colors MUST be HSL.
     @apply border-accent/60 bg-accent/15 text-accent font-semibold;
     box-shadow: 0 0 14px -3px hsl(var(--accent) / 0.3);
   }
+  .product-result-count { @apply mb-4 text-sm font-semibold text-muted-foreground; }
   .product-catalog-grid { @apply grid gap-5 md:grid-cols-2 xl:grid-cols-3; }
+  .product-empty-state {
+    @apply rounded-2xl border border-primary/[0.12] bg-card/60 p-8 text-center backdrop-blur-sm;
+    box-shadow: 0 2px 10px -4px hsl(220 60% 3% / 0.5), inset 0 1px 0 0 hsl(var(--primary) / 0.07);
+  }
+  .product-empty-state h3 { @apply mb-2 text-xl font-semibold text-foreground; }
+  .product-empty-state p { @apply mx-auto mb-5 max-w-md text-sm text-muted-foreground; }
 
   /* ── Custom request types ───────────────────────── */
   .product-use-list { @apply grid gap-2 sm:grid-cols-2 lg:grid-cols-1; }
@@ -768,6 +787,14 @@ All colors MUST be HSL.
     .product-card h3 { font-size: 1.1rem; }
     .product-price { font-size: 1.5rem; }
     .product-catalog-section { margin-top: 2rem; }
+    .product-catalog-tools {
+      width: 100%;
+      max-width: calc(100vw - 40px);
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .product-search-field,
+    .product-sort-field { min-height: 46px; }
     .product-catalog-section,
     .product-catalog-grid,
     .product-card,

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useCallback, useState, type ReactNode, type FormEvent } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useCallback, useState, type ReactNode, type FormEvent } from "react";
 import {
   ArrowRight,
   CalendarCheck,
@@ -11,7 +11,9 @@ import {
   MessageSquareText,
   MonitorSmartphone,
   Paintbrush,
+  Search,
   SearchCheck,
+  SlidersHorizontal,
   Scissors,
   Sparkles,
   Star,
@@ -659,12 +661,40 @@ function ProductCard({ product }: { product: ShopProduct }) {
         className="product-button"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`View ${product.title} on Shopify`}
+        aria-label={`Choose options for ${product.title} on Shopify`}
       >
-        View on Shopify <ArrowRight className="size-4" aria-hidden="true" />
+        Choose Options <ArrowRight className="size-4" aria-hidden="true" />
       </a>
     </article>
   );
+}
+
+type ProductSortMode = "featured" | "price-asc" | "price-desc" | "title-asc" | "category-asc";
+
+const productSortOptions: Array<{ label: string; value: ProductSortMode }> = [
+  { label: "Featured", value: "featured" },
+  { label: "Price: low to high", value: "price-asc" },
+  { label: "Price: high to low", value: "price-desc" },
+  { label: "Name: A to Z", value: "title-asc" },
+  { label: "Category", value: "category-asc" },
+];
+
+const parseProductPrice = (price: string) => {
+  const value = Number.parseFloat(price.replace(/[^0-9.]/g, ""));
+  return Number.isFinite(value) ? value : Number.MAX_SAFE_INTEGER;
+};
+
+function productMatchesSearch(product: ShopProduct, query: string) {
+  if (!query) return true;
+  const searchable = [
+    product.title,
+    product.category,
+    product.variantSummary,
+    product.shortDescription,
+    product.productType,
+  ].join(" ").toLowerCase();
+
+  return searchable.includes(query);
 }
 
 const preferredProductCategoryOrder = [
@@ -703,11 +733,35 @@ function ProductCatalogGrid() {
     if (multi.length > 1 && multi.every((c) => productCategories.includes(c))) return param;
     return "All";
   });
-  const filtered = activeCategory === "All"
-    ? shopProducts
-    : activeCategory.includes(",")
-      ? shopProducts.filter((p) => activeCategory.split(",").includes(p.category))
-      : shopProducts.filter((p) => p.category === activeCategory);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortMode, setSortMode] = useState<ProductSortMode>("featured");
+  const deferredSearchQuery = useDeferredValue(searchQuery);
+  const normalizedSearchQuery = deferredSearchQuery.trim().toLowerCase();
+  const activeCategories = useMemo(
+    () => activeCategory.includes(",")
+      ? activeCategory.split(",").map((s) => s.trim())
+      : [activeCategory],
+    [activeCategory],
+  );
+  const searchedProducts = useMemo(
+    () => shopProducts.filter((product) => productMatchesSearch(product, normalizedSearchQuery)),
+    [normalizedSearchQuery],
+  );
+  const filtered = useMemo(() => {
+    const categoryFiltered = activeCategory === "All"
+      ? searchedProducts
+      : searchedProducts.filter((p) => activeCategories.includes(p.category));
+    const indexedProducts = new Map(shopProducts.map((product, index) => [product.slug, index]));
+
+    return [...categoryFiltered].sort((a, b) => {
+      if (sortMode === "price-asc") return parseProductPrice(a.price) - parseProductPrice(b.price);
+      if (sortMode === "price-desc") return parseProductPrice(b.price) - parseProductPrice(a.price);
+      if (sortMode === "title-asc") return a.title.localeCompare(b.title);
+      if (sortMode === "category-asc") return a.category.localeCompare(b.category) || a.title.localeCompare(b.title);
+      return (indexedProducts.get(a.slug) ?? 0) - (indexedProducts.get(b.slug) ?? 0);
+    });
+  }, [activeCategories, activeCategory, searchedProducts, sortMode]);
+  const resultLabel = filtered.length === 1 ? "1 product" : `${filtered.length} products`;
 
   return (
     <div id="products-grid" className="product-catalog-section">
@@ -727,9 +781,36 @@ function ProductCatalogGrid() {
           <a href="/custom-design">Request Custom Design <ArrowRight aria-hidden="true" /></a>
         </Button>
       </div>
+      <div className="product-catalog-tools" aria-label="Search and sort products">
+        <label className="product-search-field" htmlFor="product-search">
+          <Search className="size-4" aria-hidden="true" />
+          <span className="sr-only">Search products</span>
+          <input
+            id="product-search"
+            type="search"
+            value={searchQuery}
+            onChange={(event) => setSearchQuery(event.target.value)}
+            placeholder="Search products"
+            autoComplete="off"
+          />
+        </label>
+        <label className="product-sort-field" htmlFor="product-sort">
+          <SlidersHorizontal className="size-4" aria-hidden="true" />
+          <span className="sr-only">Sort products</span>
+          <select
+            id="product-sort"
+            value={sortMode}
+            onChange={(event) => setSortMode(event.target.value as ProductSortMode)}
+          >
+            {productSortOptions.map((option) => (
+              <option key={option.value} value={option.value}>{option.label}</option>
+            ))}
+          </select>
+        </label>
+      </div>
       <div className="product-category-tabs" aria-label="Filter by category">
         {productCategories.map((cat) => {
-          const count = cat === "All" ? shopProducts.length : shopProducts.filter((p) => p.category === cat).length;
+          const count = cat === "All" ? searchedProducts.length : searchedProducts.filter((p) => p.category === cat).length;
           return (
             <button
               key={cat}
@@ -743,11 +824,25 @@ function ProductCatalogGrid() {
           );
         })}
       </div>
-      <div className="product-catalog-grid">
-        {filtered.map((product) => (
-          <ProductCard key={product.slug} product={product} />
-        ))}
-      </div>
+      <p className="product-result-count" aria-live="polite">{resultLabel}</p>
+      {filtered.length > 0 ? (
+        <div className="product-catalog-grid">
+          {filtered.map((product) => (
+            <ProductCard key={product.slug} product={product} />
+          ))}
+        </div>
+      ) : (
+        <div className="product-empty-state" role="status">
+          <h3>No products found.</h3>
+          <p>Try a different search term or choose another category.</p>
+          <Button variant="conversionOutline" size="lg" onClick={() => {
+            setSearchQuery("");
+            setActiveCategory("All");
+          }}>
+            Clear filters
+          </Button>
+        </div>
+      )}
     </div>
   );
 }
