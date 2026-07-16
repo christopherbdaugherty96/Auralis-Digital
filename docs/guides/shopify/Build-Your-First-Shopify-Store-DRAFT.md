@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapter 1 + Chapter 1 worksheet + reviewer note only.
-Chapters 2-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-2 + their worksheets + reviewer note.
+Chapters 3-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapter 1, and the Chapter 1 worksheet. Chapters 2–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–2, and their worksheets. Chapters 3–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -245,6 +245,130 @@ _______________________________________________
 
 <!-- PAGE BREAK -->
 
+## Chapter 2 — Define the Customer and Offer
+
+### What you will complete
+
+By the end of this chapter, you will have three things: one clearly defined starting customer, one clear reason that customer may want what you sell, and one simple offer statement you can use to guide later store decisions. This is not a full marketing plan or a detailed customer persona — it is a short, working direction for the first version of your store.
+
+If you wrote a rough first-offer statement in Chapter 1, this chapter sharpens it by adding the specific customer and the reason they may want it.
+
+### Why this matters
+
+A store that tries to speak to everyone ends up speaking clearly to no one. When you know who your first customer is and why they would buy, every later decision gets easier: your store name, your product descriptions, your collections, and the words on your homepage all point in the same direction. Beginners often skip this step and then struggle to describe their own store. A single clear customer and offer prevents that.
+
+### Step-by-step instructions
+
+1. **Start with one likely customer.** Your business may serve several kinds of people over time, but the first version of your store needs one primary buyer to guide decisions. Name a real type of person, not "everyone." For example: festival and electronic-music fans who like psychedelic artwork; local homeowners who need lawn maintenance; small creators who need help launching a Shopify store; or parents buying personalized gifts. Skip demographics such as age or income unless they genuinely matter to what you sell. *Why it matters:* one clear customer gives the whole store a direction. *Done when:* you can name your starting customer in a short phrase.
+
+2. **Identify what that customer wants.** Write down the practical or emotional reason this customer might buy. Common reasons include solving a problem, saving time, expressing an identity or interest, giving a gift, improving convenience, getting access to a skill they do not have, or owning something distinctive. *Why it matters:* knowing the reason tells you how to describe the product later. *Done when:* you can state, in plain words, why this customer would buy.
+
+3. **Separate the product from the offer.** The product or service is what you are selling. The offer is that same product or service presented with a clear reason for a specific customer to choose it. For example — Product: a psychedelic tapestry. Offer: bold psychedelic wall art for festival and electronic-music fans who want their room to reflect their style. *Why it matters:* customers respond to an offer, not a bare product. *Done when:* you can state your product and your offer as two separate things.
+
+4. **Confirm the customer and product fit.** Check your pairing against four questions: Would this customer recognize that the product is for them? Does the product match something they want, need, value, or identify with? Can you explain the connection in one sentence? Is the customer reasonably reachable — through normal search, communities, local relationships, or future marketing? *Why it matters:* a product and customer that do not fit will be hard to sell no matter how good the store looks. *Done when:* you can answer yes to those questions, or you adjust the customer or product until you can.
+
+5. **Write the one-sentence offer statement.** Use this structure: "I sell [product or service] for [specific customer] who want [result, benefit, or experience]." For example: "I sell psychedelic apparel and home décor for festival and electronic-music fans who want their surroundings and clothing to reflect their style." Small variations are fine, but keep it to one sentence. *Why it matters:* one sentence forces clarity. *Done when:* you have a single offer statement written down.
+
+6. **Test the statement for clarity.** Read it back and check: Is the customer clear? Is the product or service clear? Is the reason to buy clear? Would a stranger understand it without extra explanation? Does it avoid vague words such as "quality," "solutions," "unique," or "for everyone," unless something concrete backs them up? *Why it matters:* a statement only helps if it is genuinely clear. *Done when:* your statement passes all of those checks.
+
+7. **Lock the starting direction.** Use this statement as a temporary decision tool for your store name, product descriptions, collections, homepage language, product photography, and future content. *Why it matters:* a shared direction keeps the whole store consistent. *Done when:* you have decided to use this statement to guide the next steps — knowing it can change once real customers give you feedback.
+
+### Real example: Lucid Creations
+
+Lucid Creations is a Shopify product store under Auralis Digital. Its audience is broadly aligned with psychedelic art, electronic music, festival culture, sacred geometry, and alternative design, and its products include apparel, blankets, tapestries, wall art, accessories, and related designs. It may later add handmade pieces and commissions.
+
+A working example of an offer statement for a store like this might be: "I sell psychedelic apparel and home décor for festival and electronic-music fans who want their surroundings and clothing to reflect their style." *(This is a working example for review, not final approved brand language.)*
+
+`[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]` — Christopher's own wording for Lucid's starting customer and offer, and the reasoning behind it. Do not claim proven demand, repeat customers, or sales results.
+
+### Common mistake
+
+Trying to sell to "everyone." When the customer is everyone, product descriptions become vague, the store design has no direction, collections feel disconnected, marketing gets harder, and visitors do not immediately see that the store is for them.
+
+**Instead:** choose one starting customer so the first version of the store is coherent. This does not permanently exclude anyone else — it simply gives the store a clear starting point.
+
+### Reality check
+
+You are not choosing your customer forever. You are choosing who the first version of the store should make immediate sense to.
+
+### Checklist
+
+- [ ] I selected one primary starting customer.
+- [ ] I identified why that customer may want what I sell.
+- [ ] I separated the product from the offer.
+- [ ] I wrote one clear offer statement.
+- [ ] A stranger can understand the statement without additional explanation.
+- [ ] I avoided claiming the offer is for everyone.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Would my intended customer recognize that this store is for them?
+- [ ] Is my offer clear enough to guide the next store decisions?
+
+### Tools and official links
+
+- Worksheet: **Customer and Offer Statement** (below)
+- `[ADD OFFICIAL SHOPIFY LINK]` — include only if an official Shopify resource directly supports identifying a target customer or defining a value proposition.
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Customer and Offer Statement
+
+Use this one-page worksheet to define your starting customer and offer. It works printed or completed on a screen.
+
+**My starting customer**
+
+Who are they?
+_______________________________________________
+
+What are they interested in, trying to do, or trying to solve?
+_______________________________________________
+
+What makes them a reasonable fit for what I sell?
+_______________________________________________
+
+**What I sell**
+
+Product or service:
+_______________________________________________
+
+One-sentence plain-English description:
+_______________________________________________
+
+**Why they may want it** (up to three reasons)
+
+1. _______________________________________________
+2. _______________________________________________
+3. _______________________________________________
+
+**Product versus offer**
+
+My product/service:
+_______________________________________________
+
+My offer:
+_______________________________________________
+
+**Offer statement builder**
+
+"I sell ________________ for ________________ who want ________________."
+
+**Clarity test**
+
+- [ ] The product or service is clear.
+- [ ] The customer is specific enough to picture.
+- [ ] The benefit, result, or experience is clear.
+- [ ] The sentence avoids vague filler.
+- [ ] A stranger could understand it quickly.
+
+**Final offer statement**
+
+_______________________________________________
+_______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -254,7 +378,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapter 1, and the Chapter 1 worksheet are the only drafted sections in this pass. Chapters 2–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 and 2, and their worksheets are the only drafted sections. Chapters 3–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -265,16 +389,18 @@ This note lists what the draft assumes and what it still needs. It is for the in
 ### Lucid Creations examples needed
 
 - Chapter 1: which products Lucid Creations launched with, why they were chosen, and what you would change today (no sales or performance figures).
+- Chapter 2: Christopher's own wording for Lucid Creations' starting customer and offer statement (placeholder `[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]`). The offer statement currently shown in Chapter 2 is a working example for review, not approved brand language.
 
 ### Screenshots needed
 
-- Chapter 1 does not require screenshots. Screenshot placeholders (`[INSERT SCREENSHOT]`) begin in later chapters (account creation, settings, product pages, checkout, and so on).
+- Chapters 1 and 2 do not require screenshots. Screenshot placeholders (`[INSERT SCREENSHOT]`) begin in later chapters (account creation, settings, product pages, checkout, and so on).
 
 ### Claims to verify
 
 - Confirm the list of product types Shopify supports matches how you want to present it.
+- Confirm the Lucid Creations positioning summary in Chapter 2 (psychedelic art, electronic music, festival culture, sacred geometry, alternative design; apparel, blankets, tapestries, wall art, accessories) matches how you want Lucid described.
 - Verify any Shopify-specific setting names against the current interface before publishing (flagged with `[VERIFY CURRENT SHOPIFY SETTING]` in later chapters).
 
 ### Scope check
 
-This draft stays within the locked scope: it decides what to sell without drifting into business formation, tax, marketing, or design. Printify is mentioned only as one future fulfillment option and is not taught. No new chapters were added. Recommended status for this pass: review Chapter 1, then approve to continue to Chapter 2.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer, without drifting into branding, market research, competitor analysis, surveys, social media, advertising, pricing, or multiple personas. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 2 were added. Recommended status for this pass: review Chapter 2, then approve to continue to Chapter 3.
