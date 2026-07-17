@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-2 + their worksheets + reviewer note.
-Chapters 3-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-3 + their worksheets + reviewer note.
+Chapters 4-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–2, and their worksheets. Chapters 3–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–3, and their worksheets. Chapters 4–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -369,6 +369,136 @@ _______________________________________________
 
 <!-- PAGE BREAK -->
 
+## Chapter 3 — Choose the Store Name
+
+### What you will complete
+
+By the end of this chapter, you will have one preferred store name, two usable backup names, and a completed basic availability check. You will also understand clearly that choosing a store name is not the same as legally registering a business or clearing a trademark.
+
+### Why this matters
+
+Your store name is the first thing most customers see, and it appears everywhere — your storefront, your domain, your email, your social profiles, and your invoices. A name that is clear, usable, and broad enough to grow saves you from confusing customers now and from expensive rebranding later. This chapter helps you make a practical naming decision; it is not a branding, trademark, or legal exercise.
+
+### Step-by-step instructions
+
+1. **Start from your offer.** Review the customer-and-offer statement you wrote in Chapter 2. Your name should fit what you sell, who it is for, the tone or style of the business, and the chance that your catalog grows later. *Why it matters:* a name that matches your offer feels right to the customer and guides the rest of the store. *Done when:* you can say, in a sentence, what your name needs to communicate.
+
+2. **Generate a short list.** Write down five to ten possible names. Try a few directions: descriptive names that say what you sell, suggestive or mood-based names that evoke a feeling, founder or personal names, invented words, or broad umbrella names. There is no single perfect formula — get quantity first, then judge. *Why it matters:* good names usually come from a pile of options, not the first idea. *Done when:* you have five to ten candidates written down.
+
+3. **Remove weak options.** Cross off names that are hard to spell, hard to say, too long, easily confused with another word, too narrow for likely future products, generic enough to blend in with competitors, or dependent on odd punctuation or spelling to make sense. *Why it matters:* a name people cannot spell or remember quietly costs you customers. *Done when:* only your stronger candidates remain.
+
+4. **Check that the name fits future growth.** For each remaining name ask: Would it still make sense if I add related products? Does it lock me into one product unnecessarily? Would it still work if I later add handmade, digital, or service offers? Is it broad enough to grow without becoming meaningless? A focused product name can be perfectly fine — the goal is to avoid *unnecessary* limits, not to force a vague corporate name. *Why it matters:* renaming after launch means redoing your domain, email, and profiles. *Done when:* your remaining names can survive reasonable growth.
+
+5. **Run a basic availability check.** This is a preliminary check, not legal clearance. Check Shopify store-name availability during account setup; a basic web search; domain availability; major social-platform username availability where relevant; your state business-name search as an informational check; and the USPTO trademark search as an informational check for obviously conflicting names. Do not try to interpret legal or trademark results — just note any conflicts. *Why it matters:* finding a clash now is far cheaper than after you launch. *Done when:* you have checked your top candidates and noted any obvious conflicts.
+
+6. **Choose one preferred name and two backups.** Pick your first choice, plus backup 1 and backup 2. Make the backups genuinely usable names — not slight misspellings of your first choice. *Why it matters:* if your first choice is taken or conflicts, you want real alternatives ready. *Done when:* you have three names ranked.
+
+7. **Write the name exactly as it should appear.** Lock the capitalization, spacing, punctuation, and singular-or-plural form. *Why it matters:* consistency across Shopify, your domain, email, social profiles, invoices, and future materials keeps you looking professional and findable. *Done when:* you have the exact written form of your name. (You will connect the domain and email in later steps — not here.)
+
+8. **Record what still needs legal confirmation.** Choosing a store name is not the same as registering a business or clearing a trademark. This guide helps you make a practical naming decision. Business registration, assumed names, trademarks, and legal clearance are separate steps that may require official searches or professional advice. *Why it matters:* knowing the boundary protects you from assuming a usable name is a legally cleared one. *Done when:* you have written down which legal checks, if any, you still intend to do.
+
+### Real example: Lucid Creations
+
+Lucid Creations is the Shopify product-store branch under Auralis Digital. The name supports art, apparel, home décor, handmade pieces, commissions, and related creative products — it is broader than any single product category, while still communicating a creative, imaginative identity. That breadth means the store can grow without the name working against it.
+
+`[INSERT LUCID CREATIONS NAMING EXAMPLE]` — why "Lucid Creations" was chosen, what other names were considered (if any), whether the name ever caused confusion, and what would be done differently today. Do not claim the name is legally protected, trademarked, or commercially proven.
+
+### Common mistake
+
+Choosing a name that describes only the first product. A store called "Custom Mushroom Tapestries" may feel perfect at launch, then become a problem if the owner later adds apparel, jewelry, prints, or commissions.
+
+**Instead:** be specific where it helps, but avoid *unnecessary* restriction. A name that boxes you into one product creates avoidable rebranding work down the road.
+
+### Reality check
+
+A good store name does not need to explain the entire business. It needs to be usable, memorable, and broad enough for the direction you realistically expect to take.
+
+### Checklist
+
+- [ ] I reviewed my offer statement before naming the store.
+- [ ] I created at least five possible names.
+- [ ] I removed names that are difficult, confusing, or too restrictive.
+- [ ] I completed a basic web, domain, and name-availability check.
+- [ ] I selected one preferred name and two backups.
+- [ ] I wrote the exact capitalization and spelling.
+- [ ] I understand that this is not legal or trademark clearance.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Does this name fit what I sell and the customer I chose?
+- [ ] Is the name usable without creating an obvious launch problem?
+
+### Tools and official links
+
+- Worksheet: **Store Name Shortlist** (below)
+- `[ADD OFFICIAL SHOPIFY LINK]`
+- `[ADD OFFICIAL STATE BUSINESS SEARCH LINK]`
+- `[ADD OFFICIAL USPTO SEARCH LINK]`
+- `[ADD OFFICIAL DOMAIN SEARCH LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Store Name Shortlist
+
+Use this one-page worksheet to choose your store name. It works printed or completed on a screen.
+
+**My offer statement** (from Chapter 2)
+_______________________________________________
+
+**Name ideas**
+
+| Name | Easy to spell? | Easy to say? | Fits the offer? | Broad enough to grow? | Availability checked? | Keep or remove? |
+|------|:---:|:---:|:---:|:---:|:---:|:---:|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Final three**
+
+Preferred name:
+_______________________________________________
+
+Backup name 1:
+_______________________________________________
+
+Backup name 2:
+_______________________________________________
+
+**Exact presentation**
+
+Exact capitalization: _______________________________________________
+
+Exact spacing: _______________________________________________
+
+Exact punctuation: _______________________________________________
+
+Domain idea: _______________________________________________
+
+Social username idea: _______________________________________________
+
+**Final check**
+
+- [ ] The name is understandable.
+- [ ] The name is not unnecessarily restrictive.
+- [ ] The name is reasonably memorable.
+- [ ] I completed a preliminary availability check.
+- [ ] I understand that legal registration and trademark clearance are separate.
+
+**Final store-name decision**
+
+My store name will be:
+_______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -378,29 +508,32 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 and 2, and their worksheets are the only drafted sections. Chapters 3–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 3, and their worksheets are the only drafted sections. Chapters 4–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
 - The last-updated date and copyright year (left as `[INSERT DATE]` and `[INSERT YEAR]`).
 - The Auralis Digital service link for the final conversion page (`[INSERT AURALIS DIGITAL SERVICE LINK]`).
 - Official Shopify URLs (left as `[ADD OFFICIAL SHOPIFY LINK]` rather than invented).
+- Official search links for Chapter 3, left as placeholders rather than invented: `[ADD OFFICIAL STATE BUSINESS SEARCH LINK]`, `[ADD OFFICIAL USPTO SEARCH LINK]`, `[ADD OFFICIAL DOMAIN SEARCH LINK]`.
 
 ### Lucid Creations examples needed
 
 - Chapter 1: which products Lucid Creations launched with, why they were chosen, and what you would change today (no sales or performance figures).
 - Chapter 2: Christopher's own wording for Lucid Creations' starting customer and offer statement (placeholder `[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]`). The offer statement currently shown in Chapter 2 is a working example for review, not approved brand language.
+- Chapter 3: why "Lucid Creations" was chosen, other names considered, whether the name ever caused confusion, and what would be done differently today (placeholder `[INSERT LUCID CREATIONS NAMING EXAMPLE]`). Do not claim the name is trademarked or legally protected.
 
 ### Screenshots needed
 
-- Chapters 1 and 2 do not require screenshots. Screenshot placeholders (`[INSERT SCREENSHOT]`) begin in later chapters (account creation, settings, product pages, checkout, and so on).
+- Chapters 1 through 3 do not require screenshots. Screenshot placeholders (`[INSERT SCREENSHOT]`) begin in later chapters (account creation, settings, product pages, checkout, and so on).
 
-### Claims to verify
+### Claims and links to verify
 
 - Confirm the list of product types Shopify supports matches how you want to present it.
 - Confirm the Lucid Creations positioning summary in Chapter 2 (psychedelic art, electronic music, festival culture, sacred geometry, alternative design; apparel, blankets, tapestries, wall art, accessories) matches how you want Lucid described.
 - Verify any Shopify-specific setting names against the current interface before publishing (flagged with `[VERIFY CURRENT SHOPIFY SETTING]` in later chapters).
+- Before publishing, replace the Chapter 3 official-search placeholders with verified current URLs (Shopify, state business search, USPTO trademark search, domain search). Do not hard-code any of these links until confirmed.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer, without drifting into branding, market research, competitor analysis, surveys, social media, advertising, pricing, or multiple personas. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 2 were added. Recommended status for this pass: review Chapter 2, then approve to continue to Chapter 3.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check — without drifting into branding, logos, trademark applications, LLC or assumed-name filings, EIN, domain DNS or connection, email setup, or SEO. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 3 were added. Recommended status for this pass: review Chapter 3, then approve to continue to Chapter 4.
