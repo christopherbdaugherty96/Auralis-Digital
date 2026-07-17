@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-5 + their worksheets + reviewer note.
-Chapters 6-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-6 + their worksheets + reviewer note.
+Chapters 7-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–5, and their worksheets. Chapters 6–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–6, and their worksheets. Chapters 7–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -884,6 +884,270 @@ Use this worksheet to organize your contact information. It works printed or on 
 
 <!-- PAGE BREAK -->
 
+## Chapter 6 — Configure Payments and Checkout
+
+### What you will complete
+
+By the end of this chapter, you will have selected an eligible payment provider, activated it (or clearly recorded what verification remains), understood the difference between a customer payment and a merchant payout, reviewed your checkout customer-information and order-processing settings, safely simulated a payment using an approved test method, turned test mode back off, recorded any blockers, and answered one question: can this store accept a payment safely? This chapter does not cover taxes, bookkeeping, accounting, chargeback or fraud management, international markets, shipping, fulfillment, products, policies, or full launch.
+
+### Why this matters
+
+Payments are where a store becomes a real business — and where mistakes cost real money. Activating a provider is not the same as being ready to take money: verification can be incomplete, test mode can be left on (which blocks live orders), the currency can be wrong, or checkout can ask for the wrong information. Working carefully here protects your customers, your payouts, and your private financial information.
+
+> ⚠ Safety note: enter payment, identity, and banking information only inside the official payment-provider interface. Never write bank account numbers, routing numbers, card numbers, security codes, tax IDs, government-ID details, or payment credentials into this guide, its worksheet, screenshots, sample data, or any shared file or repository.
+
+### Step-by-step instructions
+
+1. **Understand the payment flow.** The basic flow is: a customer submits an order at checkout; the selected provider authorizes or processes the payment; Shopify records the order and payment status; the provider captures the payment immediately or according to your capture method; funds become eligible for payout; and the provider sends the payout to your eligible payout account. A customer payment is not the same as a merchant payout — a successful order does not mean the money is immediately available in your bank. Payout timing can vary, and holds, reserves, verification reviews, refunds, disputes, weekends, banks, and regional rules can all affect availability. *Why it matters:* understanding this prevents cash-flow surprises. *Done when:* you can explain the difference between an order, a payment, a captured payment, and a payout.
+
+2. **Confirm country or regional eligibility.** Confirm your store's operating country or region; whether Shopify Payments is available there; which third-party providers are available; which business types or products may be restricted; which identity and business documents may be required; which payout-account types are eligible; and which currencies are supported. Shopify Payments availability and requirements depend on country or region — do not assume a United States setup. *Why it matters:* your location determines which payment paths even exist. *Done when:* you have confirmed at least one eligible payment path for your location and business type. (This is not legal advice about provider terms or prohibited-business rules.)
+   `[ADD OFFICIAL SHOPIFY PAYMENTS-AVAILABILITY LINK]` · `[ADD OFFICIAL SHOPIFY COUNTRY-REQUIREMENTS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+3. **Choose the primary payment provider.** Practical options: Shopify Payments (when eligible); a supported third-party provider; manual payment methods where appropriate; and additional wallet or accelerated-checkout methods when supported. Compare regional eligibility, supported customer payment methods, verification requirements, processing costs, any Shopify transaction-related charges, payout requirements, integration quality, refund handling, dispute handling, customer familiarity, and support availability. No provider is universally best, and this guide does not quote rates or fees. *Why it matters:* this choice shapes cost, payouts, and customer experience. *Done when:* you selected one primary provider and recorded why.
+
+4. **Prepare the required verification information privately.** Activating a provider can require your legal name, business type, business address, personal identity information, business registration where applicable, a product or service description, website or storefront information, bank or payout-account information, tax-related information where required, identity documents, and beneficial-owner or representative details. Enter this information only inside the provider's secure official interface — never in screenshots, worksheets, shared documents, chat messages, GitHub, or the published guide. Use accurate information, and do not attempt to bypass identity, banking, business, or product eligibility checks. *Why it matters:* verification protects you and is required to get paid. *Done when:* you know what information may be requested and where it must be entered safely.
+
+5. **Open the payment settings.** Locate Shopify's payment-provider settings. The screen may show Shopify Payments, third-party providers, supported payment methods, manual payment methods, payment-capture settings, payout or account-status information, and verification alerts — not every store sees the same sections. *Why it matters:* this is where every payment decision is made. *Done when:* you can locate the payment-settings area and identify the available provider options.
+   `[VERIFY CURRENT SHOPIFY SETTING]` · `[ADD OFFICIAL SHOPIFY PAYMENT-SETTINGS LINK]`
+   `[INSERT SCREENSHOT — Payments settings overview with every account and financial detail hidden]` *(Locate: the Payments settings overview. Hide: all account, payout, and financial details. All names, emails, addresses, orders, payment details, account identifiers, and financial information must be fictional, blank, or redacted. Capture date: record it. Note: Shopify's interface, provider requirements, and regional availability may change.)*
+
+6. **Activate the selected provider.** Select the provider, begin activation, review eligibility, enter required information directly in the secure provider interface, connect an eligible payout account, complete identity or business verification, review terms, submit the setup, record any pending verification or hold, and confirm the provider's status in Shopify. Do not follow exact bank-connection steps unless verified for your country, and never upload identity documents anywhere except the official provider interface. *Why it matters:* this is what actually lets you take money. *Done when:* the provider is active, or the exact remaining requirement is recorded.
+   `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — provider activation status with all identity, bank, business, and payout information hidden]` *(Locate: the provider activation-status area. Hide: all identity, bank, business, and payout information. All example data must be fictional, blank, or redacted. Capture date: record it. Note: the interface, provider requirements, and regional availability may change.)*
+
+7. **Confirm two-step authentication.** Shopify Payments currently requires two-step authentication, and payment or payout access must be protected. Confirm that two-step authentication remains active, recovery information is stored securely, the owner login is not shared, future users receive separate access, and account email access is secure. Do not display the authentication method, QR code, recovery code, phone number, or security-key details. *Why it matters:* your payment account controls money and must be secured. *Done when:* the payment account is protected by an active secure sign-in method.
+   `[ADD OFFICIAL SHOPIFY SECURITY LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+8. **Review the payout setup.** A payment provider needs an eligible destination for payouts, and requirements vary by provider and country. Store currency, customer payment currency, and payout currency can be different concepts, and payout timing is not guaranteed. Review payout status, schedule options, supported currency, account eligibility, and any verification hold. Record only the provider name, payout currency, general account type, setup status, whether verification is complete, and whether a hold or alert exists — do not record the bank name if privacy is a concern, and never record account or routing numbers. *Why it matters:* this is where your money actually lands. *Done when:* the payout destination is configured or the blocker is documented.
+   `[ADD OFFICIAL SHOPIFY PAYOUTS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — payout status with bank, currency, identity, and account details fully redacted]` *(Locate: the payout-status area. Hide: bank, currency, identity, and account details completely. All example data must be fictional, blank, or redacted. Capture date: record it. Note: the interface, provider requirements, and regional availability may change.)*
+
+9. **Review payment capture.** Authorization checks whether a payment can be approved; capture completes the charge. Some stores capture automatically; some workflows authorize first and capture later. The available choices and timing rules depend on provider and configuration, and manual capture creates operational responsibility and can fail if not completed correctly or before authorization expires. This guide does not recommend manual capture by default or give universal authorization-expiration periods. *Why it matters:* capture settings decide when and whether you actually receive funds. *Done when:* you know whether payments will be captured automatically or require action.
+   `[VERIFY CURRENT SHOPIFY SETTING]` · `[ADD OFFICIAL SHOPIFY PAYMENT-CAPTURE LINK]`
+
+10. **Review the checkout contact method.** Checkout can request customer contact information for order communication; options may include email, a phone number, email or phone, and order-update or notification preferences. Exact options vary by Shopify's current checkout model. Select a method you can support operationally. Do not enable marketing consent or subscriber collection here. *Why it matters:* you need a reliable way to reach customers about their orders. *Done when:* the checkout collects a usable contact method for order communication.
+    `[VERIFY CURRENT SHOPIFY SETTING]` · `[ADD OFFICIAL SHOPIFY CHECKOUT-SETTINGS LINK]`
+    `[INSERT SCREENSHOT — checkout contact-method settings using no real customer data]` *(Locate: the checkout contact-method settings. Hide/avoid: any real customer data. All example data must be fictional or blank. Capture date: record it. Note: the checkout model may change.)*
+
+11. **Review checkout customer-information requirements.** Review which customer fields are required, optional, hidden or unavailable, or automatically determined by shipping or payment needs. Fields may include full name, company name, address line 2, phone number, shipping-address information, and billing information. Requiring unnecessary fields creates friction; collecting too little can block fulfillment or communication; the correct requirement depends on your product and delivery method. This chapter does not cover B2B checkout or international localization. *Why it matters:* the right fields balance friction against fulfillment needs. *Done when:* you have selected only the customer information genuinely needed.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — checkout customer-information options with fictional or blank data only]` *(Locate: the checkout customer-information options. Use: fictional or blank data only. Capture date: record it. Note: the checkout model may change.)*
+
+12. **Review customer-account requirements.** Checkout may permit guest checkout, offer optional customer accounts, or require sign-in in some configurations. Requiring an account adds friction and should serve a clear operational purpose. This guide does not teach account customization or B2B accounts, and does not require customer accounts unless necessary. *Why it matters:* forcing accounts can cost you sales. *Done when:* you have made a deliberate guest/account decision. `[VERIFY CURRENT SHOPIFY SETTING]`
+
+13. **Review order-processing settings.** At a beginner level, review settings related to order fulfillment behavior, archiving orders, address handling, order-status communication, checkout completion behavior, and inventory consequences where visible. Do not configure shipping or fulfillment, and do not turn on automatic fulfillment unless you understand the consequences. Physical, print-on-demand, digital, and service products can require different order-processing behavior. *Why it matters:* automation you don't understand can mishandle real orders. *Done when:* no order-processing automation is active without a documented reason. `[VERIFY CURRENT SHOPIFY SETTING]`
+
+14. **Prepare for a safe payment test.** Approved testing paths: Shopify Payments test mode (when Shopify Payments is configured); Shopify Bogus Gateway (when appropriate); another provider's official sandbox or test mode (if supported); or a real transaction only as a last-resort test after understanding possible fees. A paid plan may be required to test a payment gateway. Test mode can prevent normal live orders. Disable automatic fulfillment apps or workflows before testing, do not buy shipping labels for test orders, use only Shopify- or provider-issued test details, and never use a real customer's payment information. Do not publish test card numbers in screenshots or the final guide unless Shopify's official documentation permits and the numbers are clearly identified as test-only — prefer linking to Shopify's current test-payment documentation instead of reproducing long lists of test numbers. *Why it matters:* unsafe testing can charge real money or expose data. *Done when:* you have chosen one safe test method and understand its restrictions.
+    `[ADD OFFICIAL SHOPIFY TEST-ORDER LINK]` · `[ADD OFFICIAL SHOPIFY PAYMENTS-TEST-MODE LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+15. **Enable test mode.** Confirm the provider setup is complete enough for testing; open the payment-provider settings; enable the provider's official test or sandbox mode; confirm the admin displays a visible test-mode indicator; confirm no live customers are using the store; and record the time testing began. *Why it matters:* test mode lets you simulate payments without real charges. *Done when:* a visible test-mode indicator is active.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — payment test-mode setting with all account details hidden]` *(Locate: the payment test-mode setting. Hide: all account details. All example data must be fictional, blank, or redacted. Capture date: record it. Note: the interface may change.)*
+
+16. **Run one successful simulated payment.** Open the storefront as a customer, add a test product to the cart, proceed to checkout, use fictional customer information, use only the official test-payment details for your selected provider, and complete checkout. Confirm the order appears in Shopify, the payment status indicates a test or simulated transaction, and no real payment was captured; review the confirmation page and the order notification email. Do not fulfill the test order or purchase a shipping label. *Why it matters:* this proves checkout works end to end without risk. *Done when:* a successful simulated order is recorded without a real charge.
+    `[INSERT SCREENSHOT — fictional test checkout with no real payment or customer information]` *(Locate: the checkout filled with fictional data. Use: no real payment or customer information. Capture date: record it. Note: the interface may change.)*
+    `[INSERT SCREENSHOT — Shopify test order showing a test or simulated payment status, fully redacted]` *(Locate: the test order in the admin showing a test/simulated status. Hide: all customer, payment, and financial detail. Capture date: record it. Note: the interface may change.)*
+
+17. **Run one failed simulated payment when supported.** Use the provider's official failed-payment test method where available. Check that the customer sees a useful failure message, no completed paid order is created, the store does not falsely mark the payment as successful, and you understand where failed-payment information appears. Do not reproduce test card numbers unless currently verified and necessary. *Why it matters:* you need to know a real decline behaves safely. *Done when:* you know what a failed payment looks like.
+
+18. **Turn test mode off.** This is mandatory. Return to the payment settings, disable test mode, save, confirm the test-mode banner or indicator is gone, confirm the intended live provider remains active, and record the completion time. Do not announce the store as ready until Chapter 11 performs the full customer-journey test. Leaving test mode enabled can prevent normal customer payments or normal live ordering. *Why it matters:* a store left in test mode cannot take real orders. *Done when:* test mode is off and the selected live provider is active or clearly pending.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — test mode disabled, with all provider and financial information hidden]` *(Locate: the payment settings showing test mode disabled. Hide: all provider and financial information. All example data must be fictional, blank, or redacted. Capture date: record it. Note: the interface may change.)*
+
+19. **Review visible checkout behavior.** Inspect checkout without completing another payment. Review the store name, customer contact method, required customer fields, available payment options, currency, order summary, shipping-related placeholders, the discount field (where available), privacy or policy links (where available), mobile usability, and any unexpected accelerated-checkout options. Do not configure theme branding or checkout extensibility, and do not finalize shipping or policies here. *Why it matters:* a final look catches obvious checkout problems early. *Done when:* you have recorded any checkout issues for later chapters.
+
+20. **Record payment and checkout blockers.** Create a blocker list for: provider verification pending; identity review pending; a bank or payout-account problem; an unsupported country or business type; a currency mismatch; a missing payment method; test mode still active; a checkout-field problem; a customer-contact issue; a payout hold or alert; a plan requirement; a provider fee question; manual-capture uncertainty; an unfinished shipping or tax dependency; a missing policy link; and other. Do not mark payment readiness complete while a material blocker remains. *Why it matters:* an unrecorded blocker becomes a failed real order. *Done when:* your blocker list is written and honest.
+
+### Real example: Lucid Creations
+
+Lucid Creations is a Shopify product store under Auralis Digital. It sells or plans to sell print-on-demand products, apparel, blankets, tapestries, accessories, home décor, handmade products, and commissions. Its checkout must support the customer information needed for physical-product delivery and customer communication, its payment configuration must use accurate business and payout information, its screenshots must exclude all identity, banking, payout, order, and customer data, and its payment testing must use a test mode or approved simulated method.
+
+`[INSERT LUCID CREATIONS PAYMENTS AND CHECKOUT EXAMPLE]` — which provider is used; why it was selected; which verification steps were required; whether setup was delayed; which checkout fields are required; whether guest checkout is allowed; whether payments capture automatically; which test method was used; what caused confusion; and what should remain private in the published guide. Do not invent the payment provider, payment methods, bank, payout currency, payout timing, processing rates, transaction fees, plan, verification status, account representative, business type, tax details, test-order result, or real checkout settings.
+
+### Common mistake
+
+Activating a payment provider and assuming the store is ready without testing checkout. The store may still have incomplete verification, test mode left on, the wrong currency, missing payment methods, unusable checkout fields, failed notification emails, payout-account errors, automatic-fulfillment risks, or customer-account friction.
+
+**Instead:** verify the provider, review checkout, run a simulated payment, disable test mode, and record blockers.
+
+### Reality check
+
+A payment provider showing as active is not enough. The store must complete a safe simulated checkout, record the order correctly, and return to live mode before this chapter is complete.
+
+### Checklist
+
+- [ ] I understand payment versus payout.
+- [ ] I confirmed provider availability for my country or region.
+- [ ] I confirmed my business type is eligible.
+- [ ] I selected a primary payment provider.
+- [ ] I entered verification and banking information only in the provider's secure interface.
+- [ ] I completed or recorded all verification requirements.
+- [ ] I confirmed two-step authentication is active.
+- [ ] I reviewed the payout setup without recording sensitive account details.
+- [ ] I reviewed automatic versus manual payment capture.
+- [ ] I selected the checkout contact method.
+- [ ] I reviewed required customer-information fields.
+- [ ] I made a deliberate guest/account decision.
+- [ ] I reviewed order-processing settings.
+- [ ] I selected an approved test method.
+- [ ] I enabled test mode.
+- [ ] I completed a successful simulated payment.
+- [ ] I reviewed a failed-payment simulation where supported.
+- [ ] I confirmed no real payment was captured.
+- [ ] I did not fulfill the test order or purchase a shipping label.
+- [ ] I disabled test mode.
+- [ ] I confirmed the intended live provider is active or its blocker is recorded.
+- [ ] I recorded all remaining payment and checkout blockers.
+- [ ] No real financial, identity, customer, or account information appears in this guide or worksheet.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Can the store accept a payment safely?
+- [ ] Is any verification, payout, test-mode, or checkout issue blocking me?
+
+### Tools and official links
+
+- Worksheet: **Payments and Checkout Readiness** (below)
+- `[ADD OFFICIAL SHOPIFY PAYMENTS OVERVIEW LINK]`
+- `[ADD OFFICIAL SHOPIFY PAYMENTS-AVAILABILITY LINK]`
+- `[ADD OFFICIAL SHOPIFY COUNTRY-REQUIREMENTS LINK]`
+- `[ADD OFFICIAL SHOPIFY PAYMENT-SETTINGS LINK]`
+- `[ADD OFFICIAL SHOPIFY SHOPIFY-PAYMENTS SETUP LINK]`
+- `[ADD OFFICIAL SHOPIFY SECURITY LINK]`
+- `[ADD OFFICIAL SHOPIFY PAYOUTS LINK]`
+- `[ADD OFFICIAL SHOPIFY PAYMENT-CAPTURE LINK]`
+- `[ADD OFFICIAL SHOPIFY CHECKOUT-SETTINGS LINK]`
+- `[ADD OFFICIAL SHOPIFY TEST-ORDER LINK]`
+- `[ADD OFFICIAL SHOPIFY PAYMENTS-TEST-MODE LINK]`
+- `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Payments and Checkout Readiness
+
+Use this worksheet to track payment and checkout readiness. It works printed or on a screen.
+
+> ⚠ Do not write bank account numbers, routing numbers, card numbers, security codes, tax IDs, government-ID details, payment credentials, recovery codes, customer information, or internal account URLs on this worksheet.
+
+**Payment-provider decision**
+
+| Provider option | Available in my region? | Supports my business? | Main customer payment methods | Verification required? | Fees checked directly? | Selected? | Notes |
+|---|:---:|:---:|---|:---:|:---:|:---:|---|
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+
+**Provider activation status**
+
+- Selected provider: _______________________________________________
+- Activation started? Yes / No
+- Verification complete? Yes / No / Pending
+- Identity review pending? Yes / No
+- Business review pending? Yes / No
+- Payout account connected? Yes / No
+- Provider status: _______________________________________________
+- Blocking alert: _______________________________________________
+- Date status was checked: _______________________________________________
+- Official source checked: _______________________________________________
+
+**Payment and payout map**
+
+- Store currency: _______________________________________________
+- Customer payment currency, if different: _______________________________________________
+- Payout currency: _______________________________________________
+- Payment-capture method: _______________________________________________
+- General payout-account type: _______________________________________________
+- Payout schedule reviewed? Yes / No
+- Hold or reserve displayed? Yes / No / Unknown
+- Payout alert displayed? Yes / No
+- Follow-up required: _______________________________________________
+
+**Checkout configuration**
+
+| Checkout setting | Selected value | Verified? | Reason | Follow-up? |
+|---|---|:---:|---|:---:|
+| Customer contact method |  |  |  |  |
+| Full name |  |  |  |  |
+| Company name |  |  |  |  |
+| Address line 2 |  |  |  |  |
+| Phone number |  |  |  |  |
+| Guest checkout |  |  |  |  |
+| Customer accounts |  |  |  |  |
+| Payment capture |  |  |  |  |
+| Order processing |  |  |  |  |
+| Order-status communication |  |  |  |  |
+| Other |  |  |  |  |
+
+**Test preparation**
+
+- [ ] Paid plan requirement confirmed
+- [ ] Approved test method selected
+- [ ] Official test instructions opened
+- [ ] No live customers using checkout
+- [ ] Automatic fulfillment disabled
+- [ ] Shipping-label purchase avoided
+- [ ] Fictional customer information prepared
+- [ ] No real card or customer data used
+- [ ] Test start time recorded
+
+**Successful test**
+
+- [ ] Test mode visibly active
+- [ ] Test product added to cart
+- [ ] Checkout completed
+- [ ] Successful simulated payment recorded
+- [ ] Test indicator visible on order
+- [ ] No real charge captured
+- [ ] Confirmation page reviewed
+- [ ] Notification email received
+- [ ] Order visible in Shopify admin
+- [ ] Test order not fulfilled
+- [ ] Shipping label not purchased
+
+**Failed-payment test**
+
+- [ ] Official failed-payment test method used
+- [ ] Failure message displayed
+- [ ] No false successful payment
+- [ ] Failed-payment record reviewed
+- [ ] Not supported or not applicable
+
+**Return to live mode**
+
+- [ ] Test mode disabled
+- [ ] Test banner removed
+- [ ] Intended live provider active
+- [ ] No payment alert remains
+- [ ] Completion time recorded
+
+**Blocker register**
+
+| Blocker | Severity | Owner | Next action | Due date | Resolved? |
+|---|:---:|---|---|---|:---:|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Final payment-readiness decision**
+
+- My store can accept a payment safely: Yes / No
+- My payment provider is: Active / Pending / Blocked
+- My payout setup is: Ready / Pending / Blocked
+- Test mode is off: Yes / No
+- If no or blocked, the issue is: _______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -893,7 +1157,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 5, and their worksheets are the only drafted sections. Chapters 6–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 6, and their worksheets are the only drafted sections. Chapters 7–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -903,6 +1167,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official search links for Chapter 3, left as placeholders rather than invented: `[ADD OFFICIAL STATE BUSINESS SEARCH LINK]`, `[ADD OFFICIAL USPTO SEARCH LINK]`, `[ADD OFFICIAL DOMAIN SEARCH LINK]`.
 - Official Shopify links for Chapter 4, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY ACCOUNT-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY INITIAL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY GENERAL-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PRICING LINK]`.
 - Official Shopify links for Chapter 5, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY STORE-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY EMAIL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY CONTACT-PAGE LINK]`, `[ADD OFFICIAL SHOPIFY PAGE-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY PRIVACY OR BUSINESS-INFORMATION LINK]`.
+- Official Shopify links for Chapter 6, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY PAYMENTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-AVAILABILITY LINK]`, `[ADD OFFICIAL SHOPIFY COUNTRY-REQUIREMENTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SHOPIFY-PAYMENTS SETUP LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PAYOUTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-CAPTURE LINK]`, `[ADD OFFICIAL SHOPIFY CHECKOUT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY TEST-ORDER LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-TEST-MODE LINK]`, `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]`.
 
 ### Lucid Creations examples needed
 
@@ -911,6 +1176,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 3: why "Lucid Creations" was chosen, other names considered, whether the name ever caused confusion, and what would be done differently today (placeholder `[INSERT LUCID CREATIONS NAMING EXAMPLE]`). Do not claim the name is trademarked or legally protected.
 - Chapter 4: which initial Shopify settings were selected, which setup decisions caused confusion, which apps (if any) were installed too early, what would be configured differently today, and which private details must be excluded from the published guide (placeholder `[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]`). Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or internal Shopify URLs.
 - Chapter 5: which email functions Lucid Creations uses, whether a phone number is public, whether a Contact page already exists, current About-page wording, the realistic response time, which address information is visible, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS BUSINESS AND CONTACT EXAMPLE]`). Do not invent a real support email, phone number, address, response time, contact-form result, customer message, or sender-domain configuration.
+- Chapter 6: which payment provider Lucid Creations uses and why, which verification steps were required, whether setup was delayed, which checkout fields are required, whether guest checkout is allowed, whether payments capture automatically, which test method was used, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS PAYMENTS AND CHECKOUT EXAMPLE]`). Do not invent the provider, payment methods, bank, payout currency, payout timing, processing rates, transaction fees, plan, verification status, account representative, business type, tax details, test-order result, or real checkout settings.
 
 ### Screenshots needed
 
@@ -930,6 +1196,17 @@ This note lists what the draft assumes and what it still needs. It is for the in
   - `[INSERT SCREENSHOT — About page editor using placeholder copy]`
   - `[INSERT SCREENSHOT — test contact submission using fictional information only]`
 - Chapter 5 privacy and redaction requirements: no real business address, phone number, email address, internal URL, customer information, or account detail may appear in the published guide. The Chapter 5 test-submission screenshot must use only fictional data. Reviewers must confirm the business-address exposure list (store contact details, policy pages, customer emails, packing slips, order documents, contact page, footer) reflects where the address actually appears in the current Shopify version.
+- Required Chapter 6 screenshots (each caption must state what to locate, which details to hide, that all names/emails/addresses/orders/payment details/account identifiers/financial information must be fictional/blank/redacted, the capture date, and that the interface, provider requirements, and regional availability may change):
+  - `[INSERT SCREENSHOT — Payments settings overview with every account and financial detail hidden]`
+  - `[INSERT SCREENSHOT — provider activation status with all identity, bank, business, and payout information hidden]`
+  - `[INSERT SCREENSHOT — payout status with bank, currency, identity, and account details fully redacted]`
+  - `[INSERT SCREENSHOT — checkout contact-method settings using no real customer data]`
+  - `[INSERT SCREENSHOT — checkout customer-information options with fictional or blank data only]`
+  - `[INSERT SCREENSHOT — payment test-mode setting with all account details hidden]`
+  - `[INSERT SCREENSHOT — fictional test checkout with no real payment or customer information]`
+  - `[INSERT SCREENSHOT — Shopify test order showing a test or simulated payment status, fully redacted]`
+  - `[INSERT SCREENSHOT — test mode disabled, with all provider and financial information hidden]`
+- Chapter 6 financial/identity/banking/payout/customer-data redaction rules: no real bank account or routing numbers, card numbers, security codes, tax IDs, government-ID details, payout account details, merchant/payment-provider credentials, API keys, recovery codes, account emails, customer payment data, customer names/addresses/orders, or internal Shopify URLs may appear anywhere in the guide, worksheet, screenshots, or repository. Verification and banking information must be entered only in the provider's secure official interface. Test payments must use only official test details; test card numbers must not be reproduced unless Shopify's current documentation permits and they are clearly labeled test-only (prefer linking to Shopify's test-payment documentation).
 
 ### Claims and links to verify
 
@@ -940,12 +1217,14 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 4 states two interface facts as current: core store defaults (store details, currency, measurement units, time zone) are under **Settings → General**, and two-step authentication is required to use Shopify Payments. Re-verify both — plus every exact field name and menu path — against the Shopify Help Center immediately before publication.
 - Do not publish Shopify plan names, prices, trial durations, promotional rates, staff-account limits, or transaction fees in Chapter 4 unless each item is verified immediately before publication (all currently left as `[VERIFY CURRENT SHOPIFY PLAN DETAILS]` / pricing placeholders).
 - Chapter 5 states these concepts as current and each must be re-verified against the Shopify Help Center before publication: Shopify separates the store/account email from the customer-facing sender email; the sender email is used for outgoing customer notifications and receives contact-form submissions; store contact details and the store address may appear publicly (storefront, policy pages, customer/marketing emails, packing slips, order documents); a customer-contact phone number may be optional; themes generally provide a built-in contact form applied to a page or page template; and a created Contact page must still be added to navigation later (Chapter 9). Verify exact field names, the store-email vs. sender-email wording, and current contact-form behavior.
+- Chapter 6 states these concepts as current and each must be re-verified (country-specifically where relevant) before publication: payment methods are managed from Shopify's Payments settings; customers can use only payment methods the merchant activates; Shopify Payments availability and requirements depend on country/region; Shopify Payments requires two-step authentication; activation can require identity, business, and banking verification; test mode and the Bogus Gateway can simulate transactions without capturing real payments; a paid plan is generally required to test a payment gateway; customers cannot place normal live orders while a provider is in test mode; test orders and simulated transactions do not appear in payouts or reports; test mode must be turned off after testing; real payment tests can incur processor fees, some of which may not be returned after a refund; and checkout customer-information fields are configurable but exact options/labels can change. Do NOT publish fees, payout timing, plan limits, trial terms, card rates, transaction charges, or provider availability without current country-specific verification. Verify Shopify Payments regional eligibility, payment-vs-payout wording, two-step-auth requirement, checkout customer-information options, payment-capture behavior, test-mode behavior, Bogus Gateway availability, the paid-plan testing requirement, test-order payout/report exclusion, and the real-transaction fee warning.
 
 ### Interface verification
 
 - Chapter 4 interface details were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Set up your business settings," `help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings`). Shopify's interface and requirements can change; re-verify before publishing and update this date. All other exact paths, field names, plan details, and links in Chapter 4 remain placeholders pending verification.
 - Chapter 5 concepts (store-email vs. sender-email roles; public visibility of store contact details and the store address on the storefront, policy pages, marketing emails, and packing slips) were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Manage store details," `help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details`). Re-verify before publishing and update this date. All exact field names, paths, contact-form/theme behavior, and links in Chapter 5 remain placeholders pending verification.
+- Chapter 6 concepts (Payments-settings management; country/region-dependent Shopify Payments availability and requirements; two-step-authentication requirement; test mode and Bogus Gateway simulating transactions without capturing real payments; test mode disabling normal live orders and needing to be turned off afterward; test orders excluded from payouts/reports; paid plan required to test a gateway; configurable checkout customer-information fields; real test transactions incurring possibly non-refundable fees) were checked against the Shopify Help Center on **2026-07-17** (source: Shopify Help Center, "Test Shopify Payments," `help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments`). Availability, requirements, supported methods, and payout rules are country- or region-dependent; re-verify country-specifically before publishing and update this date. All exact paths, field names, provider labels, fees, payout timing, plan details, and links in Chapter 6 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information — without drifting into payments, checkout, taxes, shipping, fulfillment, product creation, collections, navigation configuration, policy drafting, domain or DNS, email-domain authentication (SPF/DKIM/DMARC), professional email-provider setup, marketing or subscriber collection, helpdesk or chat implementation, phone-system recommendations, branding or theme customization, legal advice, test orders, or launch. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 5 were added. Recommended status for this pass: review Chapter 5, then approve to continue to Chapter 6.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers — without drifting into taxes, bookkeeping, accounting, chargeback/fraud management, fee comparison, processor recommendations, international markets or multi-currency, shipping, fulfillment, Printify, products, collections, navigation, policy drafting, domain/DNS, checkout branding/extensibility, B2B or POS, test-order fulfillment, shipping-label purchase, or launch. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 6 were added. Recommended status for this pass: review Chapter 6, then approve to continue to Chapter 7.
