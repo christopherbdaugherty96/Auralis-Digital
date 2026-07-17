@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-6 + their worksheets + reviewer note.
-Chapters 7-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-7 + their worksheets + reviewer note.
+Chapters 8-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–6, and their worksheets. Chapters 7–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–7, and their worksheets. Chapters 8–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -1148,6 +1148,255 @@ Use this worksheet to track payment and checkout readiness. It works printed or 
 
 <!-- PAGE BREAK -->
 
+## Chapter 7 — How Will Customers Receive What They Buy?
+
+### What you will complete
+
+By the end of this chapter, you will have assigned every starting product to a fulfillment method; identified who is responsible for production, storage, packing, shipping, digital delivery, or service delivery; identified the fulfillment location or app for each product type; understood who owns inventory; chosen your order-review and submission timing; identified who handles tracking and customer updates; documented a basic exception process; recorded any required fulfillment app; and answered one question: when an order arrives, who does what next? This chapter produces a workable fulfillment plan — not a fully configured shipping system. It does not set detailed shipping rates, taxes, products, policies, navigation, or launch.
+
+### Why this matters
+
+Customers judge a store by whether the right item arrives, on a reasonable timeline, with clear updates. Fulfillment is where that promise is kept or broken. Deciding now who produces, packs, ships, and communicates for each product — before orders start arriving — prevents the most common early failures: unfunded production charges, orders shipped by mistake, missing tracking, and confusing split deliveries. Connecting a fulfillment app does not remove your responsibility; it changes who does which part.
+
+### Step-by-step instructions
+
+1. **Identify the fulfillment method for each offer.** Return to the starting products you chose in Chapter 1. Assign each product or offer to one of five primary paths: (1) make and ship it yourself; (2) print on demand; (3) buy inventory and resell it; (4) deliver a digital product; (5) deliver a service or commission. A store can use more than one path, but every product must have one clearly assigned method. *Why it matters:* every later fulfillment decision depends on this assignment. *Done when:* every planned starting product has one primary fulfillment method.
+
+2. **Understand the five fulfillment paths.** Understand what each path makes you responsible for. *Make and ship it yourself:* you make or obtain the item, store it, check quality, pack it, arrange postage, add tracking where available, and handle delays, damage, returns, and questions (a good fit for wire wraps, resin pieces, pendants, artwork, and custom handmade products). *Print on demand:* a third-party provider produces the item after an order, packages it, and ships it, usually reporting status through the integration — but you still create and maintain the listing, choose products and providers, review quality, pay production and shipping costs, monitor orders, communicate with customers, handle issues per the provider's terms, and keep enough funding for production charges (Printify is used here as the example, not the universal provider). *Buy inventory and resell it:* you or a warehouse purchase inventory before orders, store it, track quantity, pack and ship, and handle unsold stock and shortages. *Digital product:* you create or license the file, use a secure delivery method, ensure no physical shipping is required, test the customer's download or access, and maintain file access and versions. *Service or commission:* you define what the buyer receives, collect required information, set communication and approval steps, deliver the work, and record when the order is complete. *Why it matters:* each path assigns different work to you. *Done when:* you can describe your responsibilities under each path you will use.
+
+3. **Map responsibility before configuring anything.** For each product, identify who is responsible for: production; inventory; quality control; packaging; shipping; digital delivery; scheduling; tracking; customer notification; delays; damage; reprints or replacements; refund decisions; return handling; and customer support. "The app handles it" is not a complete responsibility plan. *Why it matters:* unowned responsibilities become failed orders. *Done when:* every major fulfillment responsibility has an owner.
+
+4. **Identify fulfillment locations.** In Shopify, a location can represent a home or workshop, a retail location, a warehouse, a third-party logistics provider, a dropshipping service, a print-on-demand app, or another place or service that stocks or fulfills products. Inventory can be tracked separately by location, different products can be fulfilled from different locations, mixed orders might create separate fulfillments or shipments, and incorrect location assignments can create inventory and order-routing problems. Do not configure advanced order routing here. *Why it matters:* locations decide where each order is fulfilled from. *Done when:* you know which location or app will fulfill each product type.
+   `[ADD OFFICIAL SHOPIFY LOCATIONS LINK]` · `[ADD OFFICIAL SHOPIFY FULFILLMENT-SETUP LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — Shopify locations overview with every real address and app identifier hidden]` *(Locate: the locations overview. Hide: every real address and app identifier. All names, addresses, emails, orders, tracking numbers, products, provider details, account identifiers, payment methods, and operational information must be fictional, blank, or redacted. Capture date: record it. Note: Shopify, Printify, provider, carrier, status, and integration behavior may change.)*
+
+5. **Decide how inventory will be tracked.** Understand the difference between inventory physically owned and counted by you; inventory managed by a warehouse; inventory represented through a fulfillment app; print-on-demand products produced after purchase; and digital or service products that do not use physical stock the same way. Decide whether Shopify should track quantity, which location owns the quantity, whether selling after stock reaches zero is allowed, who updates inventory when stock changes, how handmade one-of-one items are handled, and how unavailable POD variants are handled. Do not configure product-level inventory yet — that is Chapter 8. *Why it matters:* the wrong inventory rule oversells or blocks sales. *Done when:* the inventory rule for each fulfillment path is documented.
+
+6. **Decide whether fulfillment is manual or app-managed.** Manual fulfillment: you review the order, prepare it, ship or deliver it, and mark it fulfilled when the work is complete. App-managed fulfillment: an authorized app or service receives the order information and updates fulfillment per its workflow. Automatic fulfillment can trigger work before you have reviewed an order; manual fulfillment gives more control but requires consistent action; custom, personalized, high-value, handmade, or commission orders may need manual review; and automatic behavior should be used only when the workflow is understood and tested. *Why it matters:* automation you don't understand can act before you're ready. *Done when:* each product type has a deliberate manual or app-managed decision.
+   `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — order-processing or fulfillment setting with all store and order details hidden]` *(Locate: the order-processing or fulfillment setting. Hide: all store and order details. All example data must be fictional, blank, or redacted. Capture date: record it. Note: the interface and integration behavior may change.)*
+
+7. **Understand the Printify money flow.** In order: (1) the customer pays your Shopify store; (2) Shopify and your payment provider process the customer payment; (3) the Shopify order is imported into Printify when the integration is operating correctly; (4) Printify submits the order per your approval settings; (5) Printify charges your linked payment method or Printify balance for production and shipping; (6) the Print Provider produces and ships the item; (7) tracking can sync back to Shopify when available. Shopify revenue does not automatically become Printify production funding; you need enough available funding to cover production; a customer payment and a Printify charge are separate transactions; a delayed or failed Printify payment can prevent production; and the exact timing and behavior must be reverified before publication. Do not quote production or shipping prices. *Why it matters:* running out of production funding stops orders. *Done when:* you can explain who charges whom and when.
+   `[ADD OFFICIAL PRINTIFY ORDER-FLOW LINK]` · `[ADD OFFICIAL PRINTIFY CHARGES LINK]` · `[VERIFY CURRENT PRINTIFY SETTING]`
+
+8. **Choose Printify order-approval timing.** Printify can provide manual or automatic order-submission behavior. Manual review is useful when products are customized, addresses need review, orders are high value, product availability changes, you want a correction window, or the workflow is new. Automatic submission is useful when products are standardized, the integration has been tested, funding is reliable, product and address data are stable, and you actively monitor exceptions. Once production begins, changes or cancellations might not be possible; exact approval choices and timing options can change; a Shopify fulfillment action can sometimes bypass or accelerate the expected Printify workflow; and you must understand the current integration behavior before enabling automation. Do not treat any default delay as a permanent fact. *Why it matters:* the wrong automation can send bad orders to production. *Done when:* you chose Manual or Automatic and recorded the reason.
+   `[ADD OFFICIAL PRINTIFY ORDER-APPROVAL LINK]` · `[VERIFY CURRENT PRINTIFY SETTING]`
+   `[INSERT SCREENSHOT — Printify order-approval settings with store, payment, and account information hidden]` *(Locate: the Printify order-approval settings. Hide: store, payment, and account information. All example data must be fictional, blank, or redacted. Capture date: record it. Note: Printify behavior and options may change.)*
+
+9. **Review Printify order and tracking behavior.** Monitor orders in both Shopify and Printify. Printify statuses can indicate waiting, production, issues, shipment, and delivery progress; tracking generally appears after shipment when the selected method supports it; multiple providers can create multiple shipments; some shipments may not include tracking; and a sync failure, canceled fulfillment request, product issue, address problem, payment problem, or stock issue can require manual action. Do not quote a guaranteed production or delivery time. *Why it matters:* unmonitored POD orders can fail silently. *Done when:* you know where to monitor a POD order and what requires attention.
+   `[ADD OFFICIAL PRINTIFY ORDER-STATUS LINK]` · `[ADD OFFICIAL PRINTIFY TRACKING LINK]` · `[VERIFY CURRENT PRINTIFY SETTING]`
+   `[INSERT SCREENSHOT — Printify order-status view using only fictional or fully redacted information]` *(Locate: the Printify order-status view. Use: only fictional or fully redacted information. All example data must be fictional, blank, or redacted. Capture date: record it. Note: Printify status and tracking behavior may change.)*
+
+10. **Plan self-fulfilled physical orders.** For products you make or stock, use a basic process: review the paid order; confirm item and quantity; check inventory; make or pick the item; perform quality control; package it; purchase or prepare the shipping label; ship or arrange pickup; add tracking where available; notify the customer; and record the order as fulfilled only when appropriate. Marking an order fulfilled does not physically ship it; tracking should correspond to the correct package; split shipments must be recorded accurately; and a product should not be marked fulfilled before the relevant fulfillment step is actually complete. Do not teach detailed label purchasing or carrier-rate selection. *Why it matters:* a consistent sequence prevents shipping mistakes. *Done when:* you have a written self-fulfillment sequence.
+    `[ADD OFFICIAL SHOPIFY SELF-FULFILLMENT LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+11. **Plan digital-product delivery.** Define the file or access delivered; the delivery method; whether delivery is automatic or manual; when access is sent; how access is tested; what happens if the link fails; whether updates are included; and how unauthorized sharing is handled operationally. Physical shipping should be disabled for a digital-only product, Shopify generally requires an app or delivery mechanism to provide download access, and the exact app choice is outside this chapter. *Why it matters:* a broken download becomes an instant refund. *Done when:* you have a defined digital-delivery path.
+    `[ADD OFFICIAL SHOPIFY DIGITAL-PRODUCT LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — digital-product shipping requirement setting with fictional product information]` *(Locate: the setting that marks a product as not requiring shipping. Use: fictional product information only. Capture date: record it. Note: the interface may change.)*
+
+12. **Plan service and commission delivery.** Document what starts the work; what information the customer must provide; whether approval is required; how revisions are handled operationally; how completed work is delivered; when the order is marked complete; how long you realistically need; and what happens when the customer does not respond. Do not draft legal terms, contracts, refund rules, or detailed commission policies. *Why it matters:* services fail from unclear steps, not bad work. *Done when:* the service or commission has a clear delivery sequence.
+
+13. **Plan mixed orders.** A single order can contain products with different fulfillment methods — for example a Printify shirt and a handmade pendant, two POD items from different providers, a physical item and a digital download, or a stocked item and a commission deposit. The order may arrive in separate packages or at different times, tracking may be separate, customer communication must explain separate delivery, Shopify may display multiple fulfillments, and you must not mark the entire order fulfilled when only one portion is complete. Do not configure split-shipping rates. *Why it matters:* mixed orders confuse customers unless communicated. *Done when:* you know how mixed orders will be handled and communicated.
+    `[INSERT SCREENSHOT — Shopify order showing separate fictional fulfillment sections, fully redacted]` *(Locate: an order with more than one fulfillment section. Hide: all customer, address, tracking, and order detail — use fictional data. Capture date: record it. Note: the interface may change.)*
+
+14. **Define the customer-update process.** For each fulfillment method, determine when the order confirmation is sent; when production begins; when the order is delayed; when tracking is sent; when part of an order ships; when the order is delivered digitally; when a commission needs customer approval; who answers status questions; and which system is the source of truth. Do not write complete notification templates. *Why it matters:* silence during fulfillment generates support tickets and disputes. *Done when:* each delivery path has a defined customer-update sequence.
+
+15. **Define the exception process.** Create a basic response path for: an invalid or incomplete address; a product unavailable; a variant unavailable; a production payment failure; a provider rejection; a production delay; a lost package; a damaged product; an incorrect product; missing tracking; a split shipment; a digital-link failure; a customer who failed to provide commission details; an order routed to the wrong location; a duplicate fulfillment action; and other. Do not promise a particular refund, reprint, or replacement outcome — policies governing refunds, returns, replacements, and cancellations are handled in Chapter 10. *Why it matters:* exceptions handled ad hoc become angry customers. *Done when:* you know what to check first and who must act when fulfillment fails.
+
+16. **Perform a dry-run walkthrough.** Do not place another payment order. Select one fictional order for each fulfillment path you plan to use and, verbally or on paper, walk through where the order appears; who receives it; who pays production costs; who creates or picks the item; who checks quality; who packages it; who ships or delivers it; who sends tracking or access; what status Shopify should show; and what happens if something fails. This is a planning dry run, not the full customer-journey test from Chapter 11. *Why it matters:* describing the chain out loud exposes gaps. *Done when:* you can describe the complete responsibility chain without guessing.
+
+17. **Record unfinished fulfillment setup.** Record — but do not complete here: detailed shipping rates; shipping zones; shipping profiles; package dimensions; carrier-calculated rates; free-shipping rules; estimated delivery displays; international shipping; customs information; product weights; product-specific inventory settings; product-level fulfillment assignments; policy language; return workflows; the full test order; and launch. Assign these to Chapter 8, Chapter 10, Chapter 11, Chapter 12, or a clearly identified later setup task. *Why it matters:* keeping these on a list prevents scope creep now and forgotten work later. *Done when:* your later-work list is written.
+
+### Real example: Lucid Creations
+
+Lucid Creations is a Shopify product store under Auralis Digital. It currently includes or plans to include print-on-demand apparel, blankets, tapestries, accessories, and wall art, plus handmade products and commissions. Printify is relevant to its print-on-demand products, while handmade wire wraps, resin pieces, pendants, and commissions require a different workflow from POD. A mixed order could involve more than one fulfillment source, and the merchant remains responsible for monitoring orders and communicating with customers. RJ Print is a separate 3D-printing branch and is not part of Lucid Creations' standard Printify workflow.
+
+`[INSERT LUCID CREATIONS FULFILLMENT AND DELIVERY EXAMPLE]` — which products Printify fulfills; which products are self-fulfilled; whether digital or service products are currently sold; the current Printify order-approval setting; who checks POD orders; who pays production charges; how handmade inventory is tracked; how mixed orders are communicated; what caused confusion; what would be configured differently; and what operational and account information must remain private. Do not invent the current Printify approval setting, production provider, linked funding method, shipping prices, production times, delivery times, tracking rate, failure rate, return rate, current inventory quantities, current locations, actual order history, customer information, or existing exception process.
+
+### Common mistake
+
+Assuming that connecting a fulfillment app means you no longer need to manage the order. You still need to monitor order import, product mapping, production payment, address problems, stock or variant problems, provider issues, tracking, split shipments, customer communication, and refund/replacement/return decisions.
+
+**Instead:** assign every responsibility and monitor both Shopify and the fulfillment provider.
+
+### Reality check
+
+A customer does not care which app, workshop, warehouse, or provider fulfills the order. The customer expects the correct item, clear updates, and a usable delivery process.
+
+### Checklist
+
+- [ ] I assigned every starting product to a fulfillment method.
+- [ ] I identified who produces or supplies each product.
+- [ ] I identified who owns or tracks inventory.
+- [ ] I identified the fulfillment location or app for each product.
+- [ ] I decided whether each workflow is manual or app-managed.
+- [ ] I understand the difference between Shopify customer payment and Printify production payment.
+- [ ] I selected a Printify order-approval approach where applicable.
+- [ ] I know where to monitor Printify orders and issues.
+- [ ] I documented my self-fulfillment process.
+- [ ] I documented digital delivery where applicable.
+- [ ] I documented service or commission delivery where applicable.
+- [ ] I planned for mixed orders and split shipments.
+- [ ] I defined when customers receive updates.
+- [ ] I created a basic exception process.
+- [ ] I completed a fictional dry-run walkthrough.
+- [ ] I recorded shipping-rate and product-level setup for later.
+- [ ] I can explain who does what after an order arrives.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Does every product have a clear delivery path?
+- [ ] When an order arrives, does everyone involved know what happens next?
+
+### Tools and official links
+
+- Worksheet: **Fulfillment and Delivery Plan** (below)
+- **Shopify:** `[ADD OFFICIAL SHOPIFY FULFILLMENT OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY FULFILLMENT-SETUP LINK]` · `[ADD OFFICIAL SHOPIFY LOCATIONS LINK]` · `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]` · `[ADD OFFICIAL SHOPIFY SELF-FULFILLMENT LINK]` · `[ADD OFFICIAL SHOPIFY APP-FULFILLMENT LINK]` · `[ADD OFFICIAL SHOPIFY DIGITAL-PRODUCT LINK]`
+- **Printify:** `[ADD OFFICIAL PRINTIFY SHOPIFY-INTEGRATION LINK]` · `[ADD OFFICIAL PRINTIFY ORDER-FLOW LINK]` · `[ADD OFFICIAL PRINTIFY ORDER-APPROVAL LINK]` · `[ADD OFFICIAL PRINTIFY CHARGES LINK]` · `[ADD OFFICIAL PRINTIFY ORDER-STATUS LINK]` · `[ADD OFFICIAL PRINTIFY TRACKING LINK]` · `[ADD OFFICIAL PRINTIFY SHIPPING-SETUP LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Fulfillment and Delivery Plan
+
+Use this worksheet to plan how each product reaches the customer. It works printed or on a screen.
+
+> ⚠ Do not record customer information, real order numbers, tracking numbers, payment methods, account identifiers, private addresses, provider credentials, or production-payment details on this worksheet.
+
+**Product fulfillment map**
+
+| Product or offer | Fulfillment path | Producer or supplier | Inventory owner | Fulfillment location or app | Manual or automatic? | Tracking available? | Customer delivery method | Notes |
+|---|---|---|---|---|:---:|:---:|---|---|
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+
+**Responsibility matrix**
+
+| Responsibility | Owner | System used | Trigger | Completion evidence | Backup owner or action |
+|---|---|---|---|---|---|
+| Order review |  |  |  |  |  |
+| Production |  |  |  |  |  |
+| Inventory update |  |  |  |  |  |
+| Quality control |  |  |  |  |  |
+| Packaging |  |  |  |  |  |
+| Shipping |  |  |  |  |  |
+| Digital delivery |  |  |  |  |  |
+| Tracking |  |  |  |  |  |
+| Customer notification |  |  |  |  |  |
+| Delay management |  |  |  |  |  |
+| Damage or error review |  |  |  |  |  |
+| Refund or replacement decision |  |  |  |  |  |
+| Return handling |  |  |  |  |  |
+| Customer support |  |  |  |  |  |
+
+**Printify setup decision**
+
+- Printify used? Yes / No
+- Connected Shopify store confirmed? Yes / No
+- Orders importing correctly? Yes / No / Not tested
+- Order approval: Manual / Automatic / Undecided
+- Reason for approval choice: _______________________________________________
+- Production funding method confirmed privately (do not record the method itself)? Yes / No
+- Order monitor: _______________________________________________
+- Tracking sync reviewed? Yes / No
+- Products fulfilled by Printify: _______________________________________________
+- Known blockers: _______________________________________________
+- Official documentation checked date: _______________________________________________
+
+**Self-fulfillment process** (do not include a private residential address)
+
+1. Review order
+2. Confirm inventory
+3. Make or pick product
+4. Quality check
+5. Package
+6. Prepare shipment
+7. Add tracking
+8. Notify customer
+9. Mark fulfilled
+10. Record exception if needed
+
+- Storage location: _______________________________________________
+- Packing responsibility: _______________________________________________
+- Shipment responsibility: _______________________________________________
+- Backup process: _______________________________________________
+
+**Digital and service delivery**
+
+| Offer | Physical shipping disabled? | Delivery method | Delivery timing | Customer information required | Completion point | Failure backup |
+|---|:---:|---|---|---|---|---|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Mixed-order plan**
+
+- Which products can ship separately? _______________________________________________
+- Who communicates split shipments? _______________________________________________
+- How separate tracking is handled: _______________________________________________
+- When partial fulfillment is acceptable: _______________________________________________
+- What must remain unfulfilled until completed: _______________________________________________
+- Customer message needed? Yes / No
+
+**Exception register**
+
+| Exception | First check | Responsible party | Customer update required? | Escalation path | Policy needed later? |
+|---|---|---|:---:|---|:---:|
+| Address problem |  |  |  |  |  |
+| Production payment failure |  |  |  |  |  |
+| Out-of-stock product or variant |  |  |  |  |  |
+| Provider issue |  |  |  |  |  |
+| Production delay |  |  |  |  |  |
+| Missing tracking |  |  |  |  |  |
+| Lost shipment |  |  |  |  |  |
+| Damage or incorrect item |  |  |  |  |  |
+| Digital-delivery failure |  |  |  |  |  |
+| Missing commission information |  |  |  |  |  |
+| Wrong fulfillment location |  |  |  |  |  |
+| Duplicate fulfillment action |  |  |  |  |  |
+| Other |  |  |  |  |  |
+
+**Dry-run walkthrough** — for each path you use (self-fulfilled physical, print-on-demand, resold inventory, digital, service or commission, mixed order), answer: Where does the order appear? Who reviews it? Who pays or funds fulfillment? Who produces or selects the item? Who verifies quality? Who ships or delivers it? Who sends the update? What marks completion? What can fail?
+
+_______________________________________________
+_______________________________________________
+_______________________________________________
+
+**Later setup list**
+
+| Deferred task | Planned chapter or stage | Owner | Blocking? | Notes |
+|---|---|---|:---:|---|
+| Shipping rates |  |  |  |  |
+| Shipping zones |  |  |  |  |
+| Shipping profiles |  |  |  |  |
+| Package dimensions |  |  |  |  |
+| Product weights |  |  |  |  |
+| Product inventory settings |  |  |  |  |
+| Product fulfillment assignments |  |  |  |  |
+| Customs information |  |  |  |  |
+| Estimated delivery display |  |  |  |  |
+| Policies |  |  |  |  |
+| Full test order |  |  |  |  |
+| Launch review |  |  |  |  |
+
+**Final fulfillment-readiness decision**
+
+- Every starting product has a clear fulfillment path: Yes / No
+- I can explain who does what after an order arrives: Yes / No
+- My main fulfillment blocker is: _______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -1157,7 +1406,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 6, and their worksheets are the only drafted sections. Chapters 7–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 7, and their worksheets are the only drafted sections. Chapters 8–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -1168,6 +1417,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official Shopify links for Chapter 4, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY ACCOUNT-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY INITIAL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY GENERAL-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PRICING LINK]`.
 - Official Shopify links for Chapter 5, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY STORE-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY EMAIL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY CONTACT-PAGE LINK]`, `[ADD OFFICIAL SHOPIFY PAGE-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY PRIVACY OR BUSINESS-INFORMATION LINK]`.
 - Official Shopify links for Chapter 6, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY PAYMENTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-AVAILABILITY LINK]`, `[ADD OFFICIAL SHOPIFY COUNTRY-REQUIREMENTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SHOPIFY-PAYMENTS SETUP LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PAYOUTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-CAPTURE LINK]`, `[ADD OFFICIAL SHOPIFY CHECKOUT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY TEST-ORDER LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-TEST-MODE LINK]`, `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]`.
+- Official links for Chapter 7, left as placeholders rather than invented — Shopify: `[ADD OFFICIAL SHOPIFY FULFILLMENT OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY FULFILLMENT-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY SELF-FULFILLMENT LINK]`, `[ADD OFFICIAL SHOPIFY APP-FULFILLMENT LINK]`, `[ADD OFFICIAL SHOPIFY DIGITAL-PRODUCT LINK]`; Printify: `[ADD OFFICIAL PRINTIFY SHOPIFY-INTEGRATION LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-FLOW LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-APPROVAL LINK]`, `[ADD OFFICIAL PRINTIFY CHARGES LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-STATUS LINK]`, `[ADD OFFICIAL PRINTIFY TRACKING LINK]`, `[ADD OFFICIAL PRINTIFY SHIPPING-SETUP LINK]`.
 
 ### Lucid Creations examples needed
 
@@ -1177,6 +1427,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 4: which initial Shopify settings were selected, which setup decisions caused confusion, which apps (if any) were installed too early, what would be configured differently today, and which private details must be excluded from the published guide (placeholder `[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]`). Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or internal Shopify URLs.
 - Chapter 5: which email functions Lucid Creations uses, whether a phone number is public, whether a Contact page already exists, current About-page wording, the realistic response time, which address information is visible, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS BUSINESS AND CONTACT EXAMPLE]`). Do not invent a real support email, phone number, address, response time, contact-form result, customer message, or sender-domain configuration.
 - Chapter 6: which payment provider Lucid Creations uses and why, which verification steps were required, whether setup was delayed, which checkout fields are required, whether guest checkout is allowed, whether payments capture automatically, which test method was used, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS PAYMENTS AND CHECKOUT EXAMPLE]`). Do not invent the provider, payment methods, bank, payout currency, payout timing, processing rates, transaction fees, plan, verification status, account representative, business type, tax details, test-order result, or real checkout settings.
+- Chapter 7: which products Printify fulfills, which are self-fulfilled, whether digital/service products are sold, the current Printify order-approval setting, who checks POD orders, who pays production charges, how handmade inventory is tracked, how mixed orders are communicated, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS FULFILLMENT AND DELIVERY EXAMPLE]`). Do not invent the current Printify approval setting, production provider, linked funding method, shipping/production/delivery times, tracking/failure/return rates, current inventory or locations, order history, customer information, or existing exception process. RJ Print is a separate 3D-printing branch and must not be presented as part of Lucid Creations' standard Printify workflow.
 
 ### Screenshots needed
 
@@ -1207,6 +1458,14 @@ This note lists what the draft assumes and what it still needs. It is for the in
   - `[INSERT SCREENSHOT — Shopify test order showing a test or simulated payment status, fully redacted]`
   - `[INSERT SCREENSHOT — test mode disabled, with all provider and financial information hidden]`
 - Chapter 6 financial/identity/banking/payout/customer-data redaction rules: no real bank account or routing numbers, card numbers, security codes, tax IDs, government-ID details, payout account details, merchant/payment-provider credentials, API keys, recovery codes, account emails, customer payment data, customer names/addresses/orders, or internal Shopify URLs may appear anywhere in the guide, worksheet, screenshots, or repository. Verification and banking information must be entered only in the provider's secure official interface. Test payments must use only official test details; test card numbers must not be reproduced unless Shopify's current documentation permits and they are clearly labeled test-only (prefer linking to Shopify's test-payment documentation).
+- Required Chapter 7 screenshots (each caption must state what to locate, which details to hide, that all names/addresses/emails/orders/tracking numbers/products/provider details/account identifiers/payment methods/operational information must be fictional/blank/redacted, the capture date, and that Shopify/Printify/provider/carrier/status/integration behavior may change):
+  - `[INSERT SCREENSHOT — Shopify locations overview with every real address and app identifier hidden]`
+  - `[INSERT SCREENSHOT — order-processing or fulfillment setting with all store and order details hidden]`
+  - `[INSERT SCREENSHOT — Printify order-approval settings with store, payment, and account information hidden]`
+  - `[INSERT SCREENSHOT — Printify order-status view using only fictional or fully redacted information]`
+  - `[INSERT SCREENSHOT — Shopify order showing separate fictional fulfillment sections, fully redacted]`
+  - `[INSERT SCREENSHOT — digital-product shipping requirement setting with fictional product information]`
+- Chapter 7 customer/order/tracking/payment/address/provider/account redaction rules: no real customer information, order numbers, tracking numbers, payment methods, account identifiers, private addresses, provider credentials, or production-payment details may appear anywhere in the guide, worksheet, screenshots, or repository. Detailed shipping-rate setup (rates, zones, profiles, package dimensions, carrier rates, customs) is deferred to Chapter 8 and later, and product-level fulfillment/inventory assignment is deferred to Chapter 8.
 
 ### Claims and links to verify
 
@@ -1218,13 +1477,15 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Do not publish Shopify plan names, prices, trial durations, promotional rates, staff-account limits, or transaction fees in Chapter 4 unless each item is verified immediately before publication (all currently left as `[VERIFY CURRENT SHOPIFY PLAN DETAILS]` / pricing placeholders).
 - Chapter 5 states these concepts as current and each must be re-verified against the Shopify Help Center before publication: Shopify separates the store/account email from the customer-facing sender email; the sender email is used for outgoing customer notifications and receives contact-form submissions; store contact details and the store address may appear publicly (storefront, policy pages, customer/marketing emails, packing slips, order documents); a customer-contact phone number may be optional; themes generally provide a built-in contact form applied to a page or page template; and a created Contact page must still be added to navigation later (Chapter 9). Verify exact field names, the store-email vs. sender-email wording, and current contact-form behavior.
 - Chapter 6 states these concepts as current and each must be re-verified (country-specifically where relevant) before publication: payment methods are managed from Shopify's Payments settings; customers can use only payment methods the merchant activates; Shopify Payments availability and requirements depend on country/region; Shopify Payments requires two-step authentication; activation can require identity, business, and banking verification; test mode and the Bogus Gateway can simulate transactions without capturing real payments; a paid plan is generally required to test a payment gateway; customers cannot place normal live orders while a provider is in test mode; test orders and simulated transactions do not appear in payouts or reports; test mode must be turned off after testing; real payment tests can incur processor fees, some of which may not be returned after a refund; and checkout customer-information fields are configurable but exact options/labels can change. Do NOT publish fees, payout timing, plan limits, trial terms, card rates, transaction charges, or provider availability without current country-specific verification. Verify Shopify Payments regional eligibility, payment-vs-payout wording, two-step-auth requirement, checkout customer-information options, payment-capture behavior, test-mode behavior, Bogus Gateway availability, the paid-plan testing requirement, test-order payout/report exclusion, and the real-transaction fee warning.
+- Chapter 7 states these concepts as current and each must be re-verified before publication. Shopify: fulfillment is preparing/packing/delivering an order after it is placed; a merchant can fulfill personally or use a third-party service; a location can be a physical place or a fulfillment app; inventory can be tracked separately across locations and apps; orders can be divided between locations; tracking can be added when an order is fulfilled; digital products and services should not require physical shipping; a digital-download product generally needs an app or delivery system; automatic fulfillment should not be enabled without understanding the consequences. Printify: it is one fulfillment option (not the default); orders from a connected Shopify store can be imported; imported orders are submitted to production per the merchant's Printify order-approval settings; Printify offers manual or automatic order-submission timing (exact options must be reverified); the merchant is charged for production and shipping when an order is submitted to production; the Shopify customer payment and the Printify production charge are separate transactions; tracking can sync back after shipment when available; some Print Providers or shipping methods might not provide tracking; multiple providers can create separate shipments and tracking numbers; a Shopify fulfillment-request action can affect the Printify workflow and must not be done casually. Verify the fulfillment-vs-shipping distinction, location/inventory behavior, self-fulfillment steps, digital-delivery requirement, the Printify customer-payment-vs-production-payment distinction, order-import behavior, approval-setting options, tracking behavior, and split-shipment behavior. Do NOT publish shipping rates, production times, delivery times, fees, or plan requirements without verification. Printify must be presented as one option, never as hands-off, risk-free, or automatic in every circumstance.
 
 ### Interface verification
 
 - Chapter 4 interface details were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Set up your business settings," `help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings`). Shopify's interface and requirements can change; re-verify before publishing and update this date. All other exact paths, field names, plan details, and links in Chapter 4 remain placeholders pending verification.
 - Chapter 5 concepts (store-email vs. sender-email roles; public visibility of store contact details and the store address on the storefront, policy pages, marketing emails, and packing slips) were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Manage store details," `help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details`). Re-verify before publishing and update this date. All exact field names, paths, contact-form/theme behavior, and links in Chapter 5 remain placeholders pending verification.
 - Chapter 6 concepts (Payments-settings management; country/region-dependent Shopify Payments availability and requirements; two-step-authentication requirement; test mode and Bogus Gateway simulating transactions without capturing real payments; test mode disabling normal live orders and needing to be turned off afterward; test orders excluded from payouts/reports; paid plan required to test a gateway; configurable checkout customer-information fields; real test transactions incurring possibly non-refundable fees) were checked against the Shopify Help Center on **2026-07-17** (source: Shopify Help Center, "Test Shopify Payments," `help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments`). Availability, requirements, supported methods, and payout rules are country- or region-dependent; re-verify country-specifically before publishing and update this date. All exact paths, field names, provider labels, fees, payout timing, plan details, and links in Chapter 6 remain placeholders pending verification.
+- Chapter 7 concepts were checked on **2026-07-17** against Shopify Help Center — "Fulfilling orders" (`help.shopify.com/en/manual/fulfillment/fulfilling-orders`), "Setting up locations" (`help.shopify.com/en/manual/fulfillment/setup/locations/setting-up-locations`), and "Selling services or digital products" (`help.shopify.com/en/manual/products/digital-service-product/selling-services-or-digital-products`) — and Printify Help Center — "Store details and order-approval settings" (`help.printify.com/hc/en-us/articles/4483625253265`) and "Check the status of an order" (`help.printify.com/hc/en-us/articles/4483625414673`). Fulfillment-app behavior, carrier/tracking availability, production timing, delivery timing, approval options, and charge timing are variable; re-verify against current Shopify and Printify documentation before publishing and update this date. All exact paths, field names, statuses, approval options, tracking behavior, fees, times, and links in Chapter 7 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers — without drifting into taxes, bookkeeping, accounting, chargeback/fraud management, fee comparison, processor recommendations, international markets or multi-currency, shipping, fulfillment, Printify, products, collections, navigation, policy drafting, domain/DNS, checkout branding/extensibility, B2B or POS, test-order fulfillment, shipping-label purchase, or launch. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 6 were added. Recommended status for this pass: review Chapter 6, then approve to continue to Chapter 7.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run — without drifting into detailed shipping-rate configuration, carrier-rate comparison, shipping-label pricing, packaging-supplier or dropshipping-supplier recommendations, customs, international shipping, taxes, bookkeeping, product creation/pricing/description/photography/mockups, Printify product design or provider/pricing comparison, wholesale sourcing, Amazon FBA, collections, navigation, policy/return/refund drafting, legal contracts or commission agreements, full test orders, or launch. Printify is presented as one of five fulfillment options (not the default) and is not over-taught. No chapters beyond Chapter 7 were added. Recommended status for this pass: review Chapter 7, then approve to continue to Chapter 8.
