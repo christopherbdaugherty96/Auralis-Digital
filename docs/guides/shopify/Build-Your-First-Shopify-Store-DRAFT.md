@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-7 + their worksheets + reviewer note.
-Chapters 8-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-8 + their worksheets + reviewer note.
+Chapters 9-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–7, and their worksheets. Chapters 8–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–8, and their worksheets. Chapters 9–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -1397,6 +1397,350 @@ _______________________________________________
 
 <!-- PAGE BREAK -->
 
+## Chapter 8 — Create the First Products
+
+### What you will complete
+
+By the end of this chapter, you will have created between one and five initial product records, each with a clear title, a factual description, appropriate media (or a recorded media blocker), alt text on relevant images, reviewed price and internal cost, variants only where customers genuinely need choices, documented SKU/barcode/inventory/location decisions, reviewed shipping/weight/fulfillment settings, reviewed category and internal organization fields, a deliberately chosen product status and sales-channel availability, a customer-facing preview, and a written list of remaining blockers. This chapter produces a small set of complete draft product records — not an entire catalog. It does not organize collections or navigation, configure detailed shipping rates, write policies, run the full customer journey, or launch the store.
+
+### Why this matters
+
+The product record is what the customer reads, sees, and buys. Getting the title, description, media, price, variants, inventory, fulfillment, and publishing controls to describe the same item helps the merchant present accurate products and makes later organizing and testing easier. One fully reviewed product is more useful in this chapter than many incomplete records.
+
+### Step-by-step instructions
+
+1. **Select the first products to build.** Return to your Chapter 1 product decisions, your Chapter 2 customer and offer statement, and your Chapter 7 fulfillment plan, and choose between one and five products. Prioritize products for which you already know what the product is, who it is for, how it reaches the customer, who fulfills it, what information the customer needs before buying, and whether choices such as size, color, material, or format are required. Do not default to the easiest product if it does not represent the actual business. *Why it matters:* this helps you focus on products that already have a clear customer and fulfillment path. *Done when:* you have a written first-product list and a fulfillment path for each.
+
+2. **Separate product types before building.** Label each selected product as a self-fulfilled physical product, a print-on-demand product, a purchased/resold physical product, a digital product, a service, or a commission/personalized product. Different types require different fields — a physical product needs shipping and fulfillment information, a digital product should not require physical shipping, a POD product might be created or synchronized through an app, a service needs a clear delivery and completion description, and a commission might need customer instructions and a manual-review process. *Why it matters:* the product type determines which fields are relevant. *Done when:* you know which fields apply to each selected product.
+
+3. **Open or create the product record.** Locate Shopify's product-management area and either create a new manual product, open an app-created product, open a synchronized Printify product, or duplicate a similar product only when you understand which details will copy. Keep new products in Draft while building and reviewing them unless there is a deliberate reason not to. Duplicating a product can also duplicate incorrect or outdated information, and app-created products should not be assumed complete. *Why it matters:* this provides a working record you can complete and review before it becomes public. *Done when:* a product record exists in Draft or another deliberately selected non-public state.
+   `[ADD OFFICIAL SHOPIFY ADD-PRODUCT LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-DETAILS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — blank or fictional Shopify product editor with all store identifiers hidden]` *(Locate: the product editor. Hide: all store identifiers. All product facts, prices, costs, SKUs, barcodes, quantities, locations, addresses, suppliers, provider details, account identifiers, and financial information must be fictional, blank, or fully redacted; no customer or real order data. Capture date: record it. Note: Shopify, Printify, app, channel, theme, taxonomy, inventory, variant, and publishing behavior may change.)*
+
+4. **Write a clear product title.** The title should identify the product concretely — usually what the product is, the defining design/style/material where relevant, and a meaningful distinguishing detail; include variant information only when it belongs in the title. Avoid vague titles ("Amazing Product"), keyword stuffing, repeating the store name unnecessarily, unsupported claims ("best," "perfect," "guaranteed," "premium"), putting every size or color in the title, or using internal production codes as the customer-facing title. Lead with concrete product types (for Lucid Creations: wire wrap, pendant, T-shirt, hoodie, blanket, tapestry, wall art, notebook, hat). *Why it matters:* a concrete title helps a customer recognize what the product is before opening the description. *Done when:* the title tells a customer what the product is without opening the description.
+
+5. **Write the factual product description.** Answer: what is it; what does the customer receive; what material/format/construction/production method matters; what size or dimensions matter; which options are available; how it is used/worn/displayed/downloaded/received; what variations can occur; who fulfills it; what care/handling/customer-supplied information is relevant; what is not included; and what the customer should understand before ordering. A useful structure: (1) one-sentence summary, (2) important features, (3) materials or format, (4) size or fit, (5) fulfillment/production note where relevant, (6) care/use note, (7) variation/commission note, (8) what the customer receives. Do not copy a provider description without reviewing it; do not invent materials, certifications, production methods, dimensions, delivery dates, or environmental/medical/safety/spiritual/performance claims; do not use "handmade" wording for POD products; do not describe mockups as photographs of the final item; do not promise exact color matching across screens and manufactured products; and do not draft policy terms inside the description. For spiritual, crystal, or sacred-geometry products, describe the design and cultural or artistic inspiration without promising healing, medical, psychological, or supernatural effects. *Why it matters:* the description gives the customer the factual information needed to decide and keeps unsupported claims out of the listing. *Done when:* the description is factual and contains no unsupported claims.
+   `[ADD OFFICIAL SHOPIFY PRODUCT-DESCRIPTION LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+6. **Review product-type disclosure.** Make the fulfillment nature clear where it materially affects the purchase — for example handmade/individually assembled, printed after ordering, produced by a third-party partner, digital download, service/consultation, personalized/commissioned, one-of-one, purchased inventory, or multiple-shipments-possible. Keep the disclosure factual and proportional; do not overuse "custom," "handmade," or "print on demand" as marketing labels. For Lucid Creations: POD items should not be presented as handmade by Lucid Creations; handmade wire wraps, resin work, and pendants should not be presented as mass-produced; commissions should identify what information the customer must provide; and RJ Print products should not be represented as Printify products. *Why it matters:* accurate disclosure makes the production or delivery model clear where it affects the purchase. *Done when:* the product's production or delivery model is not misleading.
+
+7. **Add and review product media.** Add only media you own, created, licensed, or are authorized to use. Media can include product photographs, provider mockups, detail images, scale/size references, lifestyle images, videos, and 3D models where supported. Identify each item as an actual product photograph, a representative mockup, a digital preview, a detail image, a scale reference, a variant image, a packaging image, or instructional media. The first media item generally serves as the featured media; a mockup must not imply a photographed physical sample exists when it does not; and product media in storefront-facing systems must not expose addresses, shipping labels, customer details, computer screens, account information, or identifying reflections. *Why it matters:* media determines what the customer sees and helps keep private information out of public media. *Done when:* each product has appropriate media or a clearly recorded media blocker.
+   `[ADD OFFICIAL SHOPIFY PRODUCT-MEDIA LINK]` · `[ADD OFFICIAL SHOPIFY FILE-SAFETY LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — product media area using fictional products and no private files or metadata]` *(Locate: the product media area. Hide: private files and metadata; use fictional products. All facts/prices/costs/SKUs/quantities/locations/addresses/suppliers/provider/account/financial info must be fictional, blank, or redacted; no customer or real order data. Capture date: record it. Note: behavior may change.)*
+
+8. **Select the featured media.** Choose the first/featured media deliberately and check whether it shows the product clearly, matches the correct product and variant, avoids misleading scale, avoids cropped text or design elements, works against the storefront background, contains no private information, does not display another brand without authorization, and represents what the customer will receive. *Why it matters:* the featured media determines the main image customers see across the storefront. *Done when:* the featured media accurately represents the product.
+
+9. **Add image alt text.** Alt text describes the meaningful visual content for assistive technology and can appear if media does not load. Write alt text that identifies the product; describes the visible design, material, color, or composition; distinguishes relevant variants; stays concise; avoids "image of" where unnecessary, keyword lists, claims not visible in the image, private information, and unrelated marketing copy. Examples: "Purple sacred-geometry tapestry with a centered Flower of Life design"; "Copper wire-wrapped oval labradorite pendant on a dark background"; "Black hoodie with multicolor psychedelic owl artwork on the front." *Why it matters:* alt text makes image content available to assistive technology and when media does not load. *Done when:* every meaningful product image has concise, accurate alt text.
+   `[ADD OFFICIAL SHOPIFY ALT-TEXT LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — product media alt-text editor using fictional product information]` *(Locate: the alt-text editor. Use: fictional product information. Capture date: record it. Note: the interface and any length guidance may change.)*
+
+10. **Set the selling price.** Price is what the customer is charged before taxes, shipping, discounts, and other adjustments, and it can be configured at the product or variant level depending on whether variants exist. Use a price you deliberately calculated — not a figure supplied by this guide — considering product/acquisition cost, POD production cost, packaging, labor, platform and payment costs, replacement/error allowance, uncharged fulfillment costs, overhead, required profit, and customer/market context. Do not provide an exact price, a universal markup, a promised margin, a claim that a price "will sell," or tax advice, and do not treat gross sale price as profit. *Why it matters:* price sets what the customer is charged and can be configured per product or per variant. *Done when:* every product or variant has a deliberate selling price recorded.
+    `[ADD OFFICIAL SHOPIFY PRODUCT-PRICING LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional product price and cost fields with no real financial information]` *(Locate: the price and cost fields. Use: fictional values only; no real financial information. Capture date: record it. Note: the interface may change.)*
+
+11. **Review cost per item.** Shopify can provide an internal cost field, where available, to help you record product cost. The cost field is not necessarily the complete cost of making and fulfilling the sale: POD production cost can differ by provider/product/size/color/destination or later changes; handmade cost can include materials and direct labor; resold cost can include acquisition and inbound costs; and digital/service costs require a different internal calculation. Do not place bank, card, payout, tax-ID, supplier-credential, or private financial information in the product record, and this guide does not teach bookkeeping or profit-and-loss accounting. *Why it matters:* the cost field records an internal value you control, separate from the complete cost of a sale. *Done when:* you have recorded an appropriate internal cost value or documented why it remains pending.
+
+12. **Use compare-at pricing cautiously.** A compare-at price can display a higher reference price alongside the selling price in supported storefront experiences; use it only when the pricing representation is accurate and lawful. Do not create a false sale by inventing an original price that was never genuinely used or supported, and remember that regional pricing and advertising requirements vary. This guide does not provide legal advice and does not require a compare-at price. *Why it matters:* compare-at pricing affects how a reference price is displayed and must represent an accurate, lawful comparison. *Done when:* the compare-at field is either accurately used or intentionally left blank.
+    `[ADD OFFICIAL SHOPIFY COMPARE-AT-PRICE LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+13. **Decide whether variants are needed.** Variants are appropriate when the customer selects meaningful options within one product — size, color, material, finish, format, style. Do not create variants for information the customer does not select, unrelated products, internal production notes, different products that need substantially different descriptions or media, or commission instructions better handled through an approved customization process. Each option combination can create a separate variant, combinations can multiply quickly, and exact option/variant limits must be reverified. *Why it matters:* this determines whether the product needs customer-selectable options at all. *Done when:* the product has only the customer-selectable variants it genuinely needs.
+    `[ADD OFFICIAL SHOPIFY VARIANTS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional variant options showing size and color with no real product or supplier data]` *(Locate: the variant options. Use: fictional size/color; no real product or supplier data. Capture date: record it. Note: option/variant limits and behavior may change.)*
+
+14. **Review every variant individually.** For each variant, review option values, price, compare-at price (if used), cost per item, SKU, barcode (if applicable), inventory tracking, quantity by location, continue-selling behavior, weight, physical-shipping requirement, country/region of origin (if relevant), HS code (if relevant and verified), fulfillment location or app, variant media, and sales-channel availability where supported. Do not enter invented customs information. *Why it matters:* reviewing each variant confirms it is correct rather than relying on copied defaults. *Done when:* every variant has been reviewed instead of relying blindly on copied defaults.
+
+15. **Create an internal SKU approach.** A SKU is an internal stock identifier, different from a barcode; Shopify does not require every merchant to use SKUs, but when used each SKU should identify one variant unambiguously with a consistent, maintainable format. A basic optional structure may combine product family, design, color, size, and version — for example, using fictional values only: `TEE-OWL-BLK-M`. This is an example format, not a Shopify requirement. Avoid using customer information, supplier credentials, secret codes, full cost information, personal initials where privacy matters, or a barcode value as though it were automatically a SKU. *Why it matters:* SKUs provide a consistent internal identifier for each variant when used. *Done when:* you have assigned unique SKUs or documented why SKUs are not currently needed.
+    `[ADD OFFICIAL SHOPIFY SKU LINK]`
+
+16. **Review barcode use.** A barcode and a SKU have different purposes. Do not invent a legitimate manufacturer barcode; resold products may already have valid barcodes; handmade, digital, service, or commission products might not require a barcode; and marketplace/retail barcode requirements are outside this chapter. *Why it matters:* keeping the barcode field accurate keeps it distinct from the SKU. *Done when:* the barcode field contains a legitimate value or remains intentionally blank.
+    `[ADD OFFICIAL SHOPIFY BARCODE LINK]`
+
+17. **Configure inventory tracking.** Using the fulfillment decisions from Chapter 7, determine for each product/variant whether Shopify tracks quantity, which location owns the quantity, the current available quantity, who updates it, whether the item is one-of-one, whether it can continue selling after reaching zero, whether an app manages availability, and whether inventory should remain untracked for the specific type. Self-fulfilled inventory usually needs deliberate quantity control; one-of-one handmade items require a quantity rule that does not permit unintended duplicate sales; resold inventory should match actual owned stock; POD inventory behavior can depend on the app and provider; digital/service capacity does not behave like physical inventory; and "continue selling when out of stock" should not be enabled without understanding how the product will still be supplied. *Why it matters:* this determines whether and how quantities are tracked and which location owns them. *Done when:* every product or variant has a deliberate inventory rule and location assignment.
+    `[ADD OFFICIAL SHOPIFY INVENTORY-SETUP LINK]` · `[ADD OFFICIAL SHOPIFY OUT-OF-STOCK LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional product inventory by location with all real quantities, addresses, and app identifiers hidden]` *(Locate: inventory by location. Hide: real quantities, addresses, and app identifiers. Use fictional data. Capture date: record it. Note: behavior may change.)*
+
+18. **Review physical-shipping requirements.** For each product/variant, determine whether it is a physical product that requires shipping. Physical products generally require a delivery path; digital products and services should not be marked as requiring physical shipping unless a physical item is actually included; commissions can be physical, digital, service-based, or mixed; and an incorrect shipping requirement can affect checkout and fulfillment. Do not configure shipping rates. *Why it matters:* the shipping requirement determines whether checkout and fulfillment treat the item as physical. *Done when:* each product's shipping requirement matches what the customer receives.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — physical-product shipping requirement using fictional product information]` *(Locate: the "this is a physical product / requires shipping" control. Use: fictional product information. Capture date: record it. Note: the interface may change.)*
+
+19. **Enter product or variant weight where relevant.** Weight can be used by shipping systems and can affect calculated delivery charges or carrier requirements; the value must represent the relevant sellable unit and packaging assumptions used by your shipping setup. A POD or fulfillment app can supply or manage weight data, but review the synchronized value; digital products and services generally do not need physical shipping weight; and this guide must not invent a product weight. Do not configure package dimensions, rates, or carrier services. *Why it matters:* weight provides data that shipping systems can use, without configuring the rate itself. *Done when:* every physical product or variant has an accurate weight or a documented blocker.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+
+20. **Review country of origin and HS-code fields.** Some international-shipping and customs workflows use country/region of origin and Harmonized System information; these values must be accurate, can differ by product/variant, and POD providers can supply relevant information that must still be verified. Do not guess, and detailed customs configuration remains outside this chapter. This guide does not provide an HS code for any product. *Why it matters:* this information affects international-shipping and customs workflows and must be accurate. *Done when:* required customs-related information is accurate or clearly recorded as pending verification.
+    `[ADD OFFICIAL SHOPIFY CUSTOMS-PRODUCT-INFORMATION LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+21. **Assign the fulfillment location or app.** Using Chapter 7, confirm which location or app fulfills each product/variant — for example a merchant workshop, a stored-inventory location, a warehouse, Printify or another POD app, a digital-delivery app, or a manual service workflow. A product assigned to the wrong location or app can be routed incorrectly; app-managed products should not be reassigned casually; product-level and variant-level assignments can differ; and the exact available controls depend on the current Shopify and app setup. *Why it matters:* this determines which location or app the product is routed to for fulfillment. *Done when:* every product and variant points to the intended fulfillment source.
+    `[VERIFY CURRENT SHOPIFY SETTING]` · `[VERIFY CURRENT PRINTIFY SETTING]`
+
+22. **Review category and internal organization fields.** Distinguish product category, product type, vendor, and tags (collections belong in Chapter 9). Product category is Shopify's standardized classification where applicable, and category selection can affect available attributes, metafields, tax-related behavior, channel requirements, or organization depending on Shopify's current system (this guide does not make a legal tax determination). Product type is a merchant-controlled internal grouping field where available. Vendor is the manufacturer, supplier, artist, brand, or internal business identity associated with the product — for Auralis Digital, Lucid Creations products should use a deliberate, consistent vendor convention, RJ Print should remain separately identifiable, and a third-party manufacturer or Print Provider should not automatically replace the customer-facing brand identity without a catalog decision. Tags are internal organizational labels; avoid many inconsistent near-duplicate tags. *Why it matters:* consistent organization fields organize the catalog internally and can affect available attributes and channel requirements. *Done when:* category, type, vendor, and tags follow one consistent internal system.
+    `[ADD OFFICIAL SHOPIFY PRODUCT-CATEGORY LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-TYPE LINK]` · `[ADD OFFICIAL SHOPIFY TAGS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional product organization fields with no private supplier or account information]` *(Locate: category/type/vendor/tags fields. Hide: private supplier or account information; use fictional data. Capture date: record it. Note: taxonomy may change.)*
+
+23. **Review search-engine listing fields without doing full SEO.** Shopify can provide a search-engine listing preview or related fields; review the page title, meta description, and URL handle for accurate, product-first wording, with no unsupported claims, no keyword lists, no unnecessary date or version in the URL, and no customer or internal information, and avoid changing the URL after publication without understanding redirect implications. Do not teach keyword research, promise search rankings, make SEO traffic claims, require changing the automatically generated values, or configure sitewide SEO. *Why it matters:* these fields affect how the product appears in search listings and storefront naming. *Done when:* the product's search listing accurately describes the product or is deliberately left for later review.
+    `[ADD OFFICIAL SHOPIFY PRODUCT-SEO LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+24. **Choose product status.** Current product-status options can include states such as Draft, Active, Archived, or other availability controls depending on Shopify's current interface and workflow. New products should normally remain Draft while incomplete; Archived is for products retained in the admin but no longer offered; Active should be selected only after you have reviewed the product record and channel availability; an app-created product should not be made Active solely because the app created it; and a product status is not the same as complete launch readiness. *Why it matters:* status determines whether and where the product can appear. *Done when:* each product has a deliberate status.
+    `[ADD OFFICIAL SHOPIFY PRODUCT-STATUS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional product status and publishing controls with store identifiers hidden]` *(Locate: status and publishing controls. Hide: store identifiers; use fictional data. Capture date: record it. Note: status options may change.)*
+
+25. **Review sales-channel availability.** A product can be available on selected sales channels or catalogs according to the store's current setup. Confirm whether the Online Store should display it, whether any other connected channel should receive it, whether all variants should be available, whether an app controls publishing, whether the product is still Draft, and whether publishing would expose unfinished media, description, pricing, or inventory. Do not configure Amazon, Walmart, eBay, POS, social commerce, or marketplace listings. *Why it matters:* channel availability determines which channels can display the product. *Done when:* the product is available only where you deliberately intend.
+    `[ADD OFFICIAL SHOPIFY PRODUCT-PUBLISHING LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+26. **Save and review the product record.** Save and inspect the product in the Shopify admin, checking title, description, media order, alt text, price, cost, compare-at price, variants, SKU, barcode, inventory, location, shipping requirement, weight, origin/HS information, fulfillment assignment, category, product type, vendor, tags, search listing, status, and channel availability. Saved changes can affect storefront display and reporting. *Why it matters:* this confirms the admin record is internally consistent. *Done when:* the admin record contains no obvious blanks, copied errors, contradictory settings, or unsupported claims.
+
+27. **Preview the customer-facing product page.** Review the product as a customer where the current theme and status allow, inspecting title readability, description formatting, featured media, image sequence, variant selectors, selected-variant media, price display, compare-at display, availability wording, shipping-related wording, product-type disclosure, mobile layout, placeholder text, broken media, internal notes accidentally exposed, and provider language that should not be public. Do not redesign the theme or run a payment or full customer-journey test. *Why it matters:* the preview shows the same information a customer would see. *Done when:* you have viewed the same product information a customer would see and recorded any correction.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — customer-facing fictional product page with no private store, supplier, or account information]` *(Locate: the storefront product page. Use: fictional data; no private store, supplier, or account information. Capture date: record it. Note: the theme may change.)*
+
+28. **Compare the product against the Chapter 1, 2, and 7 decisions.** Verify it is one of the intended starting products; serves the defined customer; its offer matches Chapter 2; its fulfillment path matches Chapter 7; its title and description match the actual product; its inventory rule matches its fulfillment model; its location or app assignment is correct; its product-type disclosure is accurate; its price and cost decisions are recorded; and its media represent what the customer receives. *Why it matters:* this confirms the product matches the decisions already made. *Done when:* the product record matches the business decisions already made.
+
+29. **Record blockers instead of publishing incomplete products.** Create a blocker list for issues such as a missing product photograph, an unreviewed mockup, missing alt text, unverified description facts, unknown material/dimensions, an undecided price, unknown cost, an incomplete variant, a SKU conflict, a barcode question, an unknown inventory quantity, an uncertain location assignment, an unknown weight, an unknown origin, a pending HS code, an unconnected fulfillment app, an unsynchronized POD product, a missing digital-delivery app, missing commission instructions, an uncertain status, uncertain channel availability, and other. A product with a material blocker should remain Draft; Draft status is an appropriate working state; and do not invent missing facts merely to complete the record. *Why it matters:* recording blockers keeps incomplete products in Draft and records what remains. *Done when:* every unresolved issue has an owner or next action.
+
+30. **Repeat the process for the remaining starting products.** Repeat the complete product-build process for the selected starting set, keeping title structure, description structure, media standards, alt-text style, SKU logic, vendor naming, tags, product status, and fulfillment assignment consistent. Do not require bulk import or CSV work for the initial products. *Why it matters:* repeating the process produces a consistent initial set of product records. *Done when:* between one and five initial product records are complete or deliberately held in Draft with documented blockers.
+
+### Creating products through Printify (one route among several)
+
+Printify is one product-creation route, not the universal route. The product can be designed and published or synchronized through Printify, which can create corresponding product and variant records in Shopify — but the resulting Shopify product must still be reviewed. Review the title, description, mockups, variant names, variant availability, prices, SKUs, weight, shipping requirement, fulfillment assignment, vendor, tags, product status, and channel availability. Do not assume provider defaults are customer-ready, and do not replace Printify-managed variant identifiers or fulfillment assignments without understanding the synchronization impact. This guide does not teach product design, provider comparison, Printify pricing strategy, or shipping-profile configuration. Use `[VERIFY CURRENT PRINTIFY SETTING]` for current Printify publishing and synchronization behavior.
+
+`[ADD OFFICIAL PRINTIFY PUBLISH-PRODUCT LINK]` · `[ADD OFFICIAL PRINTIFY EDIT-PUBLISHED-PRODUCT LINK]` · `[ADD OFFICIAL PRINTIFY PRODUCT-SYNC LINK]`
+`[INSERT SCREENSHOT — Printify-created fictional product record with provider, account, funding, and store information hidden]` *(Locate: a Printify-created product record in Shopify. Hide: provider, account, funding, and store information; use fictional data. Capture date: record it. Note: Printify publishing and synchronization behavior may change.)*
+
+### Real example: Lucid Creations
+
+Lucid Creations is a Shopify product store under Auralis Digital. It includes or plans to include POD apparel, hoodies, T-shirts, blankets, tapestries, hats, pillows, journals, accessories, wall art, handmade pieces, and commissions. Printify is relevant to the POD portion; handmade types include wire wraps (the first handmade category referenced), stone or crystal pendants, pinecone pendants, resin pieces, and related art. Customer-facing copy should lead with concrete product categories rather than repeatedly labeling everything "custom work." RJ Print remains a separate 3D-printing branch. Titles, descriptions, variants, images, and alt text must distinguish actual photographs from POD mockups; POD items must not be described as handmade by Lucid Creations; handmade pieces must not be presented as standardized POD inventory; and a mixed catalog can use different inventory and fulfillment rules.
+
+`[INSERT LUCID CREATIONS FIRST PRODUCT BUILD EXAMPLE]` — which first products to show; which are POD, handmade, or commissions; current titles and descriptions; actual materials and dimensions; the actual media type for each image; current variants; current prices and internal costs; current SKU convention; inventory rules; fulfillment locations or apps; shipping requirements and weights; vendor and tag conventions; current product status; current sales-channel availability; what caused confusion; and what should remain private or be removed from screenshots. Do not invent product prices, costs, margins, materials, dimensions, weights, current inventory, SKU values, barcodes, HS codes, countries of origin, the current Printify provider or synchronization status, current sales-channel availability, current product status, actual product photography, actual mockup approval, current alt text, customer reviews, sales results, conversion data, search rankings, or product claims.
+
+### Common mistake
+
+Creating a product record quickly and assuming that the app, supplier, or copied template filled every field correctly. Copied or synchronized products can contain generic titles, provider-written descriptions, unreviewed mockups, incorrect prices, unwanted variants, inconsistent option names, missing alt text, duplicate SKUs, incorrect inventory behavior, incorrect shipping requirements, wrong weight, wrong fulfillment assignment, inconsistent vendor or tags, and Active status before review.
+
+**Instead:** review every product and every variant against the actual item and the fulfillment plan.
+
+### Reality check
+
+A product is not complete merely because it exists in Shopify. The title, description, media, price, variants, inventory, fulfillment, and publishing controls must describe the same item.
+
+### Checklist
+
+- [ ] I selected between one and five starting products.
+- [ ] I identified each product's fulfillment type.
+- [ ] I created or opened each product record.
+- [ ] Each product has a concrete title.
+- [ ] Each description is factual and complete.
+- [ ] Product-type and fulfillment disclosures are accurate.
+- [ ] Every media item is authorized for use.
+- [ ] The featured media represents the product.
+- [ ] Meaningful images have concise alt text.
+- [ ] Every product or variant has a deliberate price.
+- [ ] Internal cost information is reviewed.
+- [ ] Compare-at pricing is accurate or blank.
+- [ ] Variants exist only where customers need choices.
+- [ ] Every variant was reviewed individually.
+- [ ] SKUs are unique where used.
+- [ ] Barcodes are legitimate or blank.
+- [ ] Inventory tracking is deliberate.
+- [ ] Quantities and locations are reviewed.
+- [ ] Out-of-stock behavior is deliberate.
+- [ ] Shipping requirements match the product.
+- [ ] Physical-product weights are accurate or recorded as blocked.
+- [ ] Origin and HS information are verified or pending.
+- [ ] Fulfillment assignments match Chapter 7.
+- [ ] Category, type, vendor, and tags are consistent.
+- [ ] Search-listing wording is accurate.
+- [ ] Product status is deliberate.
+- [ ] Sales-channel availability is deliberate.
+- [ ] I previewed the customer-facing product page.
+- [ ] I recorded all remaining blockers.
+- [ ] Chapter 9 collection and navigation work remains deferred.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Does each product record describe the item accurately?
+- [ ] Is every product complete enough to organize and test later?
+
+### Tools and official links
+
+- Worksheet: **First Product Build Sheet** (below)
+- **Shopify product creation:** `[ADD OFFICIAL SHOPIFY PRODUCTS OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY ADD-PRODUCT LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-DETAILS LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-DESCRIPTION LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-STATUS LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-PUBLISHING LINK]`
+- **Media and accessibility:** `[ADD OFFICIAL SHOPIFY PRODUCT-MEDIA LINK]` · `[ADD OFFICIAL SHOPIFY ALT-TEXT LINK]` · `[ADD OFFICIAL SHOPIFY FILE-SAFETY LINK]`
+- **Price and identifiers:** `[ADD OFFICIAL SHOPIFY PRODUCT-PRICING LINK]` · `[ADD OFFICIAL SHOPIFY COMPARE-AT-PRICE LINK]` · `[ADD OFFICIAL SHOPIFY SKU LINK]` · `[ADD OFFICIAL SHOPIFY BARCODE LINK]`
+- **Variants and inventory:** `[ADD OFFICIAL SHOPIFY VARIANTS LINK]` · `[ADD OFFICIAL SHOPIFY INVENTORY-SETUP LINK]` · `[ADD OFFICIAL SHOPIFY OUT-OF-STOCK LINK]` · `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`
+- **Product organization and shipping information:** `[ADD OFFICIAL SHOPIFY PRODUCT-CATEGORY LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-TYPE LINK]` · `[ADD OFFICIAL SHOPIFY TAGS LINK]` · `[ADD OFFICIAL SHOPIFY PRODUCT-SEO LINK]` · `[ADD OFFICIAL SHOPIFY CUSTOMS-PRODUCT-INFORMATION LINK]`
+- **Printify:** `[ADD OFFICIAL PRINTIFY PUBLISH-PRODUCT LINK]` · `[ADD OFFICIAL PRINTIFY EDIT-PUBLISHED-PRODUCT LINK]` · `[ADD OFFICIAL PRINTIFY PRODUCT-SYNC LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — First Product Build Sheet
+
+Use this worksheet to build and review each starting product. It works printed or on a screen.
+
+> ⚠ Do not record customer information, private supplier credentials, payment methods, account identifiers, residential addresses, tax IDs, government-ID details, private internal URLs, or confidential product-source information on this worksheet.
+
+**Starting-product list**
+
+| Product | Product type | Customer | Fulfillment path | Record created? | Current status | Main blocker |
+|---|---|---|---|:---:|---|---|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Product identity**
+
+- Working product title: _______________________________________________
+- Customer-facing product title: _______________________________________________
+- One-sentence summary: _______________________________________________
+- Product type: _______________________________________________
+- Production or delivery disclosure: _______________________________________________
+- What the customer receives: _______________________________________________
+- What is not included: _______________________________________________
+- Materials or format: _______________________________________________
+- Dimensions or size information: _______________________________________________
+- Care or use information: _______________________________________________
+- Required customer information: _______________________________________________
+- Facts still needing verification: _______________________________________________
+
+**Product-description planner**
+
+1. Product summary: _______________________________________________
+2. Main features: _______________________________________________
+3. Materials or format: _______________________________________________
+4. Size, fit, or dimensions: _______________________________________________
+5. Available options: _______________________________________________
+6. Production or fulfillment note: _______________________________________________
+7. Care or use note: _______________________________________________
+8. Natural variation or mockup disclosure: _______________________________________________
+9. What the customer receives: _______________________________________________
+10. Unsupported claims removed? Yes / No
+
+**Media register**
+
+| Media item | Photo/mockup/preview/video/3D? | Authorized? | Product/variant shown | Featured? | Alt text complete? | Private info checked? | Needs replacement? |
+|---|---|:---:|---|:---:|:---:|:---:|:---:|
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+
+**Pricing record**
+
+- Selling price: _______________________________________________
+- Compare-at price: _______________________________________________
+- Cost per item: _______________________________________________
+- Additional known direct costs: _______________________________________________
+- Pricing source or calculation date: _______________________________________________
+- Price verified? Yes / No
+- Compare-at use accurate? Yes / No / Not used
+- Pricing blocker: _______________________________________________
+
+> Do not treat selling price minus cost per item as complete profit.
+
+**Variant planner — identity and price**
+
+| Variant | Option values | Price | Cost | SKU | Barcode | Reviewed? |
+|---|---|---|---|---|---|:---:|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Variant planner — inventory and fulfillment**
+
+| Variant | Track quantity? | Quantity | Continue selling? | Location or app | Requires shipping? | Weight | Origin/HS verified? | Media assigned? | Reviewed? |
+|---|:---:|---|:---:|---|:---:|---|:---:|:---:|:---:|
+|  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |
+
+**SKU convention**
+
+- SKUs used? Yes / No
+- Format: _______________________________________________
+- Product-family code: __________  Design code: __________  Color code: __________  Size/format code: __________  Version code: __________
+- Duplicate check complete? Yes / No
+
+**Inventory and fulfillment**
+
+- Shopify tracks quantity? Yes / No
+- Inventory owner: _______________________________________________
+- Inventory location: _______________________________________________
+- Current quantity: _______________________________________________
+- One-of-one? Yes / No
+- Continue selling after zero? Yes / No
+- Managed by app? Yes / No
+- Fulfillment app or location: _______________________________________________
+- Shipping required? Yes / No
+- Weight verified? Yes / No
+- Country or region of origin verified? Yes / No / Not applicable
+- HS code verified? Yes / No / Not applicable
+- Fulfillment assignment reviewed? Yes / No
+
+**Organization fields**
+
+- Product category: _______________________________________________
+- Product type: _______________________________________________
+- Vendor: _______________________________________________
+- Tags: _______________________________________________
+- Naming convention followed? Yes / No
+- Duplicate or inconsistent tag check complete? Yes / No
+- Collection assignment: Deferred to Chapter 9
+
+**Publishing and visibility**
+
+- Product status: _______________________________________________
+- Online Store availability: _______________________________________________
+- Other channel availability: _______________________________________________
+- Variant availability reviewed? Yes / No
+- App-controlled publishing? Yes / No
+- Search listing reviewed? Yes / No
+- Customer-facing preview reviewed? Yes / No
+- Internal information exposed? Yes / No
+- Ready to organize in Chapter 9? Yes / No
+
+**Product blocker register**
+
+| Blocker | Product or variant | Severity | Owner | Next action | Source needed | Resolved? |
+|---|---|:---:|---|---|---|:---:|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Product review signoff**
+
+- Title accurate? Yes / No · Description factual? Yes / No · Media accurate? Yes / No · Alt text complete? Yes / No · Price deliberate? Yes / No · Variants correct? Yes / No · Inventory correct? Yes / No · Fulfillment correct? Yes / No · Shipping requirement correct? Yes / No · Status deliberate? Yes / No · Customer preview reviewed? Yes / No
+
+**Final product-readiness decision**
+
+- This product record accurately describes the item: Yes / No
+- This product is complete enough to organize and test later: Yes / No
+- This product should remain Draft: Yes / No
+- The main unresolved blocker is: _______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -1406,7 +1750,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 7, and their worksheets are the only drafted sections. Chapters 8–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 8, and their worksheets are the only drafted sections. Chapters 9–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -1418,6 +1762,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official Shopify links for Chapter 5, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY STORE-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY EMAIL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY CONTACT-PAGE LINK]`, `[ADD OFFICIAL SHOPIFY PAGE-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY PRIVACY OR BUSINESS-INFORMATION LINK]`.
 - Official Shopify links for Chapter 6, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY PAYMENTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-AVAILABILITY LINK]`, `[ADD OFFICIAL SHOPIFY COUNTRY-REQUIREMENTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SHOPIFY-PAYMENTS SETUP LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PAYOUTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-CAPTURE LINK]`, `[ADD OFFICIAL SHOPIFY CHECKOUT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY TEST-ORDER LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-TEST-MODE LINK]`, `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]`.
 - Official links for Chapter 7, left as placeholders rather than invented — Shopify: `[ADD OFFICIAL SHOPIFY FULFILLMENT OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY FULFILLMENT-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY SELF-FULFILLMENT LINK]`, `[ADD OFFICIAL SHOPIFY APP-FULFILLMENT LINK]`, `[ADD OFFICIAL SHOPIFY DIGITAL-PRODUCT LINK]`; Printify: `[ADD OFFICIAL PRINTIFY SHOPIFY-INTEGRATION LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-FLOW LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-APPROVAL LINK]`, `[ADD OFFICIAL PRINTIFY CHARGES LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-STATUS LINK]`, `[ADD OFFICIAL PRINTIFY TRACKING LINK]`, `[ADD OFFICIAL PRINTIFY SHIPPING-SETUP LINK]`.
+- Official links for Chapter 8, left as placeholders rather than invented — Shopify: `[ADD OFFICIAL SHOPIFY PRODUCTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY ADD-PRODUCT LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-DESCRIPTION LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-STATUS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-PUBLISHING LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-MEDIA LINK]`, `[ADD OFFICIAL SHOPIFY ALT-TEXT LINK]`, `[ADD OFFICIAL SHOPIFY FILE-SAFETY LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-PRICING LINK]`, `[ADD OFFICIAL SHOPIFY COMPARE-AT-PRICE LINK]`, `[ADD OFFICIAL SHOPIFY SKU LINK]`, `[ADD OFFICIAL SHOPIFY BARCODE LINK]`, `[ADD OFFICIAL SHOPIFY VARIANTS LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY OUT-OF-STOCK LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-CATEGORY LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-TYPE LINK]`, `[ADD OFFICIAL SHOPIFY TAGS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-SEO LINK]`, `[ADD OFFICIAL SHOPIFY CUSTOMS-PRODUCT-INFORMATION LINK]`; Printify: `[ADD OFFICIAL PRINTIFY PUBLISH-PRODUCT LINK]`, `[ADD OFFICIAL PRINTIFY EDIT-PUBLISHED-PRODUCT LINK]`, `[ADD OFFICIAL PRINTIFY PRODUCT-SYNC LINK]`.
 
 ### Lucid Creations examples needed
 
@@ -1428,6 +1773,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 5: which email functions Lucid Creations uses, whether a phone number is public, whether a Contact page already exists, current About-page wording, the realistic response time, which address information is visible, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS BUSINESS AND CONTACT EXAMPLE]`). Do not invent a real support email, phone number, address, response time, contact-form result, customer message, or sender-domain configuration.
 - Chapter 6: which payment provider Lucid Creations uses and why, which verification steps were required, whether setup was delayed, which checkout fields are required, whether guest checkout is allowed, whether payments capture automatically, which test method was used, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS PAYMENTS AND CHECKOUT EXAMPLE]`). Do not invent the provider, payment methods, bank, payout currency, payout timing, processing rates, transaction fees, plan, verification status, account representative, business type, tax details, test-order result, or real checkout settings.
 - Chapter 7: which products Printify fulfills, which are self-fulfilled, whether digital/service products are sold, the current Printify order-approval setting, who checks POD orders, who pays production charges, how handmade inventory is tracked, how mixed orders are communicated, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS FULFILLMENT AND DELIVERY EXAMPLE]`). Do not invent the current Printify approval setting, production provider, linked funding method, shipping/production/delivery times, tracking/failure/return rates, current inventory or locations, order history, customer information, or existing exception process. RJ Print is a separate 3D-printing branch and must not be presented as part of Lucid Creations' standard Printify workflow.
+- Chapter 8: which first products to show, which are POD/handmade/commissions, current titles/descriptions, actual materials/dimensions/media types, current variants, current prices/costs, SKU convention, inventory rules, fulfillment locations/apps, shipping requirements/weights, vendor/tag conventions, current product status, and current channel availability (placeholder `[INSERT LUCID CREATIONS FIRST PRODUCT BUILD EXAMPLE]`). Do not invent prices, costs, margins, materials, dimensions, weights, inventory, SKUs, barcodes, HS codes, countries of origin, the current Printify provider/sync status, channel availability, product status, product photography, mockup approval, alt text, reviews, sales/conversion data, search rankings, or product claims. POD items must not be described as handmade by Lucid Creations; handmade pieces must not be presented as standardized POD inventory; wire wraps are the first handmade category referenced; RJ Print stays separate.
 
 ### Screenshots needed
 
@@ -1466,6 +1812,19 @@ This note lists what the draft assumes and what it still needs. It is for the in
   - `[INSERT SCREENSHOT — Shopify order showing separate fictional fulfillment sections, fully redacted]`
   - `[INSERT SCREENSHOT — digital-product shipping requirement setting with fictional product information]`
 - Chapter 7 customer/order/tracking/payment/address/provider/account redaction rules: no real customer information, order numbers, tracking numbers, payment methods, account identifiers, private addresses, provider credentials, or production-payment details may appear anywhere in the guide, worksheet, screenshots, or repository. Detailed shipping-rate setup (rates, zones, profiles, package dimensions, carrier rates, customs) is deferred to Chapter 8 and later, and product-level fulfillment/inventory assignment is deferred to Chapter 8.
+- Required Chapter 8 screenshots (each caption must state what to locate, which details to hide, that all product facts/prices/costs/SKUs/barcodes/quantities/locations/addresses/suppliers/provider details/account identifiers/financial information must be fictional/blank/redacted, that no customer or real order data may appear, the capture date, and that Shopify/Printify/app/channel/theme/taxonomy/inventory/variant/publishing behavior may change):
+  - `[INSERT SCREENSHOT — blank or fictional Shopify product editor with all store identifiers hidden]`
+  - `[INSERT SCREENSHOT — product media area using fictional products and no private files or metadata]`
+  - `[INSERT SCREENSHOT — product media alt-text editor using fictional product information]`
+  - `[INSERT SCREENSHOT — fictional product price and cost fields with no real financial information]`
+  - `[INSERT SCREENSHOT — fictional variant options showing size and color with no real product or supplier data]`
+  - `[INSERT SCREENSHOT — fictional product inventory by location with all real quantities, addresses, and app identifiers hidden]`
+  - `[INSERT SCREENSHOT — physical-product shipping requirement using fictional product information]`
+  - `[INSERT SCREENSHOT — fictional product organization fields with no private supplier or account information]`
+  - `[INSERT SCREENSHOT — fictional product status and publishing controls with store identifiers hidden]`
+  - `[INSERT SCREENSHOT — customer-facing fictional product page with no private store, supplier, or account information]`
+  - `[INSERT SCREENSHOT — Printify-created fictional product record with provider, account, funding, and store information hidden]`
+- Chapter 8 product/supplier/pricing/cost/SKU/barcode/inventory/location/provider/account/financial redaction rules: no real product prices, costs, margins, SKUs, barcodes, quantities, inventory locations, supplier or provider credentials, account identifiers, funding details, customer data, or internal Shopify/Printify URLs may appear anywhere in the guide, worksheet, screenshots, or repository. All product facts (materials, dimensions, weights, origin, HS codes, media) must be real-verified before publication or shown as placeholders — never invented. Collections and navigation are deferred to Chapter 9; policies to Chapter 10; the full customer-journey test to Chapter 11; launch to Chapter 12.
 
 ### Claims and links to verify
 
@@ -1478,6 +1837,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 5 states these concepts as current and each must be re-verified against the Shopify Help Center before publication: Shopify separates the store/account email from the customer-facing sender email; the sender email is used for outgoing customer notifications and receives contact-form submissions; store contact details and the store address may appear publicly (storefront, policy pages, customer/marketing emails, packing slips, order documents); a customer-contact phone number may be optional; themes generally provide a built-in contact form applied to a page or page template; and a created Contact page must still be added to navigation later (Chapter 9). Verify exact field names, the store-email vs. sender-email wording, and current contact-form behavior.
 - Chapter 6 states these concepts as current and each must be re-verified (country-specifically where relevant) before publication: payment methods are managed from Shopify's Payments settings; customers can use only payment methods the merchant activates; Shopify Payments availability and requirements depend on country/region; Shopify Payments requires two-step authentication; activation can require identity, business, and banking verification; test mode and the Bogus Gateway can simulate transactions without capturing real payments; a paid plan is generally required to test a payment gateway; customers cannot place normal live orders while a provider is in test mode; test orders and simulated transactions do not appear in payouts or reports; test mode must be turned off after testing; real payment tests can incur processor fees, some of which may not be returned after a refund; and checkout customer-information fields are configurable but exact options/labels can change. Do NOT publish fees, payout timing, plan limits, trial terms, card rates, transaction charges, or provider availability without current country-specific verification. Verify Shopify Payments regional eligibility, payment-vs-payout wording, two-step-auth requirement, checkout customer-information options, payment-capture behavior, test-mode behavior, Bogus Gateway availability, the paid-plan testing requirement, test-order payout/report exclusion, and the real-transaction fee warning.
 - Chapter 7 states these concepts as current and each must be re-verified before publication. Shopify: fulfillment is preparing/packing/delivering an order after it is placed; a merchant can fulfill personally or use a third-party service; a location can be a physical place or a fulfillment app; inventory can be tracked separately across locations and apps; orders can be divided between locations; tracking can be added when an order is fulfilled; digital products and services should not require physical shipping; a digital-download product generally needs an app or delivery system; automatic fulfillment should not be enabled without understanding the consequences. Printify: it is one fulfillment option (not the default); orders from a connected Shopify store can be imported; imported orders are submitted to production per the merchant's Printify order-approval settings; Printify offers manual or automatic order-submission timing (exact options must be reverified); the merchant is charged for production and shipping when an order is submitted to production; the Shopify customer payment and the Printify production charge are separate transactions; tracking can sync back after shipment when available; some Print Providers or shipping methods might not provide tracking; multiple providers can create separate shipments and tracking numbers; a Shopify fulfillment-request action can affect the Printify workflow and must not be done casually. Verify the fulfillment-vs-shipping distinction, location/inventory behavior, self-fulfillment steps, digital-delivery requirement, the Printify customer-payment-vs-production-payment distinction, order-import behavior, approval-setting options, tracking behavior, and split-shipment behavior. Do NOT publish shipping rates, production times, delivery times, fees, or plan requirements without verification. Printify must be presented as one option, never as hands-off, risk-free, or automatic in every circumstance.
+- Chapter 8 states these concepts as current and each must be re-verified before publication: a Shopify product requires at least a title and price; other details (description, media, category, type, vendor, tags, variants, inventory, shipping information, search-engine information) can be added; with no variants, price/inventory/shipping can be managed at the product level; when variants are added, relevant price/inventory/shipping/SKU/barcode/location details are generally managed per variant; variants represent combinations of customer-selectable options; product media can include images, videos, and 3D models where supported, and the first media item generally acts as the featured media; alt text describes media for assistive technology and when media cannot load and should be concise (record Shopify's current alt-text length guidance here — approximately 125 characters recommended, up to 512 allowed as of the check — but do NOT hard-code it in the customer-facing chapter unless reverified immediately before publication); a SKU is an internal identifier distinct from a barcode and is optional but should be unique when used; inventory is generally tracked at the variant and location level; a product's physical-shipping requirement affects checkout and fulfillment; weight can affect shipping calculations but does not configure the rate itself; product status and channel availability determine whether/where a product appears (states can include Active, Draft, Archived, and — in some workflows — Unlisted, to be verified); and a Printify-published product can be created/synchronized through the app but the merchant must still review the resulting Shopify record. Verify product/variant field behavior, product-status and channel-availability behavior, current variant and media limits, product-category/taxonomy behavior, alt-text guidance and limits, inventory and location behavior, app-managed product synchronization behavior, and Printify publishing/synchronization behavior. Do NOT publish product/media/variant/file/import limits, prices, costs, margins, or plan requirements without current verification, and do not assume every plan/theme/channel/app/region has identical product behavior or that fields appear in the same order with and without variants.
 
 ### Interface verification
 
@@ -1485,7 +1845,8 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 5 concepts (store-email vs. sender-email roles; public visibility of store contact details and the store address on the storefront, policy pages, marketing emails, and packing slips) were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Manage store details," `help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details`). Re-verify before publishing and update this date. All exact field names, paths, contact-form/theme behavior, and links in Chapter 5 remain placeholders pending verification.
 - Chapter 6 concepts (Payments-settings management; country/region-dependent Shopify Payments availability and requirements; two-step-authentication requirement; test mode and Bogus Gateway simulating transactions without capturing real payments; test mode disabling normal live orders and needing to be turned off afterward; test orders excluded from payouts/reports; paid plan required to test a gateway; configurable checkout customer-information fields; real test transactions incurring possibly non-refundable fees) were checked against the Shopify Help Center on **2026-07-17** (source: Shopify Help Center, "Test Shopify Payments," `help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments`). Availability, requirements, supported methods, and payout rules are country- or region-dependent; re-verify country-specifically before publishing and update this date. All exact paths, field names, provider labels, fees, payout timing, plan details, and links in Chapter 6 remain placeholders pending verification.
 - Chapter 7 concepts were checked on **2026-07-17** against Shopify Help Center — "Fulfilling orders" (`help.shopify.com/en/manual/fulfillment/fulfilling-orders`), "Setting up locations" (`help.shopify.com/en/manual/fulfillment/setup/locations/setting-up-locations`), and "Selling services or digital products" (`help.shopify.com/en/manual/products/digital-service-product/selling-services-or-digital-products`) — and Printify Help Center — "Store details and order-approval settings" (`help.printify.com/hc/en-us/articles/4483625253265`) and "Check the status of an order" (`help.printify.com/hc/en-us/articles/4483625414673`). Fulfillment-app behavior, carrier/tracking availability, production timing, delivery timing, approval options, and charge timing are variable; re-verify against current Shopify and Printify documentation before publishing and update this date. All exact paths, field names, statuses, approval options, tracking behavior, fees, times, and links in Chapter 7 remain placeholders pending verification.
+- Chapter 8 concepts were checked on **2026-07-17** against Shopify Help Center — "Products" (`help.shopify.com/en/manual/products`), "Product details" (`help.shopify.com/en/manual/products/details`), "SKU" (`help.shopify.com/en/manual/products/details/sku`), "Product media" (`help.shopify.com/en/manual/products/product-media`), "Add alt text" (`help.shopify.com/en/manual/products/product-media/add-alt-text`), "Variants" (`help.shopify.com/en/manual/products/variants`), "Inventory setup" (`help.shopify.com/en/manual/products/inventory/setup`), and "Add and update products" (`help.shopify.com/en/manual/products/add-update-products`). Alt-text length guidance noted at check: approximately 125 characters recommended, up to 512 allowed — reverify before publication and do not hard-code in the customer-facing chapter until confirmed. Product-status options (Active/Draft/Archived, and Unlisted in some workflows), variant/media limits, category/taxonomy behavior, inventory/location behavior, and app-managed/Printify synchronization behavior can change; re-verify before publishing and update this date. All exact paths, field names, statuses, options, limits, and links in Chapter 8 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run — without drifting into detailed shipping-rate configuration, carrier-rate comparison, shipping-label pricing, packaging-supplier or dropshipping-supplier recommendations, customs, international shipping, taxes, bookkeeping, product creation/pricing/description/photography/mockups, Printify product design or provider/pricing comparison, wholesale sourcing, Amazon FBA, collections, navigation, policy/return/refund drafting, legal contracts or commission agreements, full test orders, or launch. Printify is presented as one of five fulfillment options (not the default) and is not over-taught. No chapters beyond Chapter 7 were added. Recommended status for this pass: review Chapter 7, then approve to continue to Chapter 8.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run. Chapter 8 creates one to five accurate product records — title, description, media, alt text, price, cost, compare-at, variants, SKU/barcode, inventory/location, shipping requirement, weight, origin/HS, fulfillment assignment, category/type/vendor/tags, product-SEO review, status, and channel availability — previews them as a customer, and records blockers, with Printify presented as one product-creation route among several. It does not drift into collections or navigation (Chapter 9), detailed shipping rates/zones/profiles/dimensions/carriers, tax setup or advice, policy/return/refund drafting (Chapter 10), full catalog migration or bulk CSV, detailed SEO/keyword research/ranking claims, theme redesign/coding/metafields/metaobjects/Functions, Printify design/provider/pricing comparison, wholesale, Amazon/Walmart/eBay, medical/crystal-healing/environmental/profit/margin claims, the full test order (Chapter 11), or launch (Chapter 12). Printify remains one of five fulfillment options and one product-creation route among several, not the default. No chapters beyond Chapter 8 were added. Recommended status for this pass: review Chapter 8, then approve to continue to Chapter 9.
