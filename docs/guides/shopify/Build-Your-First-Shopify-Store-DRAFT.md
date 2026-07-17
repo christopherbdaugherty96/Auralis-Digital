@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-4 + their worksheets + reviewer note.
-Chapters 5-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-5 + their worksheets + reviewer note.
+Chapters 6-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–4, and their worksheets. Chapters 5–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–5, and their worksheets. Chapters 6–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -678,6 +678,212 @@ Use this worksheet to record your setup. It works printed or on a screen. Do not
 
 <!-- PAGE BREAK -->
 
+## Chapter 5 — Add Business and Contact Information
+
+### What you will complete
+
+By the end of this chapter, you will have reviewed your business and store contact information, chosen a clear customer-facing way to reach you, understood the different email roles Shopify uses, created a basic Contact page and a basic About page, checked what customers can and cannot see, and recorded any advanced email or contact work for later. This chapter makes your store reachable and trustworthy — it does not set up payments, checkout, policies, navigation, or domain email.
+
+### Why this matters
+
+Customers buy from stores they can reach and trust. Clear contact information reduces confusion, refunds, and chargebacks, and it signals that a real business stands behind the store. At the same time, some of this information can appear publicly — on your storefront, policy pages, customer emails, and packing slips — so this chapter is as much about protecting your private information as it is about sharing the right contact details.
+
+### Step-by-step instructions
+
+1. **Separate the different information roles.** Several fields look similar but serve different purposes: your account or owner email; the store or Shopify-contact email; the customer-facing sender email; a public support email; your legal business name; your store or brand name; your business address; a customer-service phone number; and the contact-page form. One email address can technically fill more than one role, but understand each role before you decide. *Why it matters:* mixing these up is how private information ends up public. *Done when:* you can say which pieces of information are private, operational, customer-facing, or legally required.
+
+2. **Decide what customers should be able to see.** Choose which contact methods your store will publicly offer: a contact form; a support email; a phone number; a physical retail address (only if relevant); a mailing or business address where legally or operationally necessary; and a response-time expectation. A phone number is not automatically required just because a store exists, a home address should not be displayed casually, and some Shopify areas, policies, emails, and documents may expose stored business or contact information — so review every public location before launch. *Why it matters:* you set your privacy boundary here, before anything goes live. *Done when:* you have a written list of what will and will not be public.
+   > Business-address disclosure requirements vary by location and business type. Verify legal requirements separately.
+
+3. **Review the Shopify store contact details.** Review the current Shopify area used for store contact details — conceptually: store name, store contact email, customer-facing contact email, phone number (if used), business or store address, country or region, and legal entity or business information where applicable. Information saved here may be used in public-facing areas. *Why it matters:* this is the source of much of what customers and documents will display. *Done when:* you have reviewed each field and noted which are public.
+   `[VERIFY CURRENT SHOPIFY SETTING]` · `[ADD OFFICIAL SHOPIFY STORE-DETAILS LINK]`
+   `[INSERT SCREENSHOT — store contact details with all private information replaced or hidden]` *(Locate: the store contact-details area. Hide: every real email, phone number, and address — use fictional placeholders. All example names, emails, addresses, phone numbers, and messages must be fictional. Capture date: record it. Note: Shopify's interface may change.)*
+
+4. **Understand the store email.** The store or account-facing email is what Shopify uses to communicate with you, the store owner, and it may receive administrative exports or notifications depending on Shopify's current setup. Use an address you control, confirm you can access it, avoid an email account you might lose, keep it separate from public support if you prefer, and record its purpose privately. *Why it matters:* losing access to this address can lock you out of important store communication. *Done when:* your store email is an address you control and can access.
+   `[VERIFY CURRENT SHOPIFY SETTING]`
+
+5. **Set the sender email.** The sender email is customer-facing: under Shopify's current model it is used for outgoing store notifications and receives contact-form responses. Choose an address that you actively monitor, that looks appropriate to customers, that does not expose a personal email unnecessarily, that will remain available long term, and that you can later replace with a domain-based address. Domain authentication and deliverability configuration are separate technical steps not covered here. *Why it matters:* this is the address customers see and reply to. *Done when:* your sender email is set to an appropriate, monitored address.
+   `[VERIFY CURRENT SHOPIFY SETTING]` · `[ADD OFFICIAL SHOPIFY EMAIL-SETUP LINK]`
+   `[INSERT SCREENSHOT — sender email setting with the actual address hidden]` *(Locate: the sender-email field. Hide: the real address — use a fictional placeholder. All example addresses must be fictional. Capture date: record it. Note: the interface may change.)*
+   *(Recorded for later technical work, not this chapter: SPF, DKIM, DMARC, DNS records, email forwarding, and domain authentication.)*
+
+6. **Decide whether to display a phone number.** A customer-service phone number helps some businesses but is not appropriate for every beginner store. Consider whether you can answer, return calls, and keep business hours, and remember that a personal number should not be published without understanding the privacy consequences; a business line or voicemail system can be considered later. *Why it matters:* a published number you cannot support creates frustration and exposes your privacy. *Done when:* you have a clear Yes/No decision with the reason recorded.
+
+7. **Review the business address and privacy exposure.** Your business or store address may appear in several public or semi-public places, including policy pages, customer emails, packing slips or order documents, store contact details, required business disclosures, and other Shopify-generated documents. Review the address you entered, understand where Shopify displays it, avoid using false information, avoid publishing a home address without understanding the implications, consider a lawful business mailing option where appropriate, and verify local legal requirements independently. *Why it matters:* an address entered once can surface in many public places. *Done when:* you know exactly where your address appears and are comfortable with it.
+   `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — business address area with every address field fully redacted]` *(Locate: the business-address area. Hide: every address field completely. All example details must be fictional. Capture date: record it. Note: the interface may change.)*
+
+8. **Create a basic Contact page.** Open the store's page-management area, create a new Contact page, give it a clear title such as "Contact" or "Contact Us," add a short introductory message, set a realistic response-time expectation, apply the available contact-form page template or contact-form section, save the page, and test that the form appears. *Why it matters:* a contact form is the simplest reliable way for customers to reach you. *Done when:* a Contact page exists and its form appears.
+   `[VERIFY CURRENT SHOPIFY SETTING]` · `[ADD OFFICIAL SHOPIFY CONTACT-PAGE LINK]`
+   `[INSERT SCREENSHOT — Contact page editor with all store details hidden]` *(Locate: the page editor for the Contact page. Hide: any real store details — use placeholders. All example details must be fictional. Capture date: record it. Note: the interface may change.)*
+   `[INSERT SCREENSHOT — customer-facing Contact page using placeholder information]` *(Locate: the published Contact page as a visitor sees it. Use fictional placeholder information only. Capture date: record it. Note: the theme may change.)*
+   > The page is created in this chapter. It will be added to the store navigation in Chapter 9.
+
+9. **Write the Contact page message.** Keep the copy basic. It should communicate what customers may contact you about, which information they should include, the expected response timing, what not to send through the form (such as payment-card or sensitive personal information), and any relevant support boundaries. A simple template:
+   > "Contact us with questions about [products, orders, commissions, or services]. Include your order number when relevant. We normally respond within [realistic timeframe]. Do not send payment-card details or sensitive personal information through this form."
+
+   Do not promise instant or 24-hour support unless you can provide it. *Why it matters:* clear expectations prevent frustrated customers and unsafe messages. *Done when:* your Contact page has a clear, realistic message.
+
+10. **Create a basic About page.** An About page should answer what the store is, what it sells, who it serves, why it exists, who or what is behind it, and what customers should expect. Keep it aligned with Chapters 1–3 — use your product decision, your customer-and-offer statement, your store name, and a concise origin or purpose statement. This is not full brand storytelling or copywriting. *Why it matters:* a simple, honest About page builds trust with new customers. *Done when:* a basic About page exists and matches your earlier decisions.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — About page editor using placeholder copy]` *(Locate: the page editor for the About page. Use placeholder copy only; hide real store details. Capture date: record it. Note: the interface may change.)*
+
+11. **Review customer-facing consistency.** Compare your store name, contact email, sender name, contact-page title, about-page wording, phone decision, address exposure, and response-time promise. Check for old names, personal emails, typographical errors, conflicting contact methods, unrealistic response promises, private details appearing publicly, and placeholder text accidentally left visible. *Why it matters:* inconsistent or leaked information erodes trust and safety. *Done when:* all customer-facing information tells the same story and points to one clear support path.
+
+12. **Test the contact method.** Open the Contact page as a visitor, submit a test message, confirm it reaches the intended inbox, reply to the test, review the sender name and email shown, check spam or junk folders, confirm no private account details appear, and delete or label the test appropriately. Use fictional information only — do not use a real customer record, and do not run the full customer-journey test (that belongs in Chapter 11). *Why it matters:* an untested contact form may silently fail. *Done when:* a fictional test message reaches your inbox and you can reply.
+    `[INSERT SCREENSHOT — test contact submission using fictional information only]` *(Locate: the contact form filled with fictional data. Use only fictional names, emails, and messages. Capture date: record it. Note: the interface may change.)*
+
+13. **Record unfinished contact work.** Record — but do not complete here: domain-based email setup, sender-domain authentication, DNS records, email forwarding, advanced support inboxes, helpdesk software, chat tools, business phone systems, navigation placement, policy-page disclosures, and automated response systems. Note which later chapter or post-launch task will handle each where known. *Why it matters:* keeping these on a list prevents both scope creep now and forgotten work later. *Done when:* your later-work list is written.
+
+### Real example: Lucid Creations
+
+Lucid Creations is a Shopify product store under Auralis Digital. It serves customers interested in psychedelic art, festival culture, electronic music, sacred geometry, apparel, home décor, and related creative products, and it may later support handmade products and commissions. Its customer communication should make clear whether an inquiry concerns an order, a product, or a commission, and the store should avoid exposing private account or residential information.
+
+`[INSERT LUCID CREATIONS BUSINESS AND CONTACT EXAMPLE]` — which email functions are currently used; whether a phone number is public; whether a Contact page already exists; the current About-page wording; the realistic response time; which address information is visible; what caused confusion during setup; and what should remain private in the published guide. Do not invent a real support email, phone number, address, response time, contact-form result, customer message, or sender-domain configuration.
+
+### Common mistake
+
+Using the same personal information everywhere without checking where Shopify displays it. A beginner may enter a personal email, phone number, or home address during setup and later discover it appearing in customer emails, policy pages, contact details, packing slips, and store documents.
+
+**Instead:** separate your private account information from your customer-facing contact information, and inspect every public location before launch.
+
+### Reality check
+
+Customers need a clear way to reach the business. They do not need access to every piece of the owner's private information.
+
+### Checklist
+
+- [ ] I understand the difference between account, store, sender, and support email roles.
+- [ ] I selected the public contact methods the store will offer.
+- [ ] I reviewed the store contact details.
+- [ ] I confirmed access to the store or account email.
+- [ ] I selected and reviewed the sender email.
+- [ ] I decided whether to display a phone number.
+- [ ] I reviewed where the business address may appear.
+- [ ] I created a Contact page.
+- [ ] I added a realistic response-time expectation.
+- [ ] I created a basic About page.
+- [ ] I tested the contact form using fictional information.
+- [ ] I confirmed the test reached the intended inbox.
+- [ ] I checked that no private account details are publicly exposed.
+- [ ] I recorded advanced email and contact work for later.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Can a customer clearly contact the store?
+- [ ] Is any private or conflicting information visible?
+
+### Tools and official links
+
+- Worksheet: **Business and Contact Information** (below)
+- `[ADD OFFICIAL SHOPIFY STORE-DETAILS LINK]`
+- `[ADD OFFICIAL SHOPIFY EMAIL-SETUP LINK]`
+- `[ADD OFFICIAL SHOPIFY CONTACT-PAGE LINK]`
+- `[ADD OFFICIAL SHOPIFY PAGE-CREATION LINK]`
+- `[ADD OFFICIAL SHOPIFY PRIVACY OR BUSINESS-INFORMATION LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Business and Contact Information
+
+Use this worksheet to organize your contact information. It works printed or on a screen.
+
+> ⚠ Do not write passwords, recovery codes, authentication secrets, or sensitive internal URLs on this worksheet.
+
+**Information-role map**
+
+| Information type | Value selected | Private or public? | Where it is used | Verified? | Needs follow-up? |
+|---|---|:---:|---|:---:|:---:|
+| Account or owner email |  |  |  |  |  |
+| Store email |  |  |  |  |  |
+| Sender email |  |  |  |  |  |
+| Public support email |  |  |  |  |  |
+| Store name |  |  |  |  |  |
+| Legal business name |  |  |  |  |  |
+| Phone number |  |  |  |  |  |
+| Business address |  |  |  |  |  |
+| Contact form |  |  |  |  |  |
+| About page |  |  |  |  |  |
+
+**Public contact decision**
+
+- Contact form offered? Yes / No
+- Public support email offered? Yes / No
+- Phone number offered? Yes / No
+- Physical address shown? Yes / No / Legally required — verify
+- Expected response time: _______________________________________________
+- Support hours, if any: _______________________________________________
+- Order number requested for order questions? Yes / No
+- Commission inquiries accepted? Yes / No / Not applicable
+
+**Address exposure review**
+
+| Location | Address appears? | Reviewed? | Acceptable? | Follow-up required? |
+|---|:---:|:---:|:---:|:---:|
+| Store contact details |  |  |  |  |
+| Policy pages |  |  |  |  |
+| Customer emails |  |  |  |  |
+| Packing slips |  |  |  |  |
+| Order documents |  |  |  |  |
+| Contact page |  |  |  |  |
+| Footer |  |  |  |  |
+| Other |  |  |  |  |
+
+**Contact page draft**
+
+- Page title: _______________________________________________
+- Opening sentence: _______________________________________________
+- Types of questions accepted: _______________________________________________
+- Information customers should include: _______________________________________________
+- Response-time statement: _______________________________________________
+- Security warning: _______________________________________________
+- Closing sentence: _______________________________________________
+
+**About page draft**
+
+- Store name: _______________________________________________
+- What the store sells: _______________________________________________
+- Who it serves: _______________________________________________
+- Why it exists: _______________________________________________
+- Who or what is behind it: _______________________________________________
+- What customers should expect: _______________________________________________
+- Final short About paragraph: _______________________________________________
+
+**Contact-form test**
+
+- [ ] Contact page opens publicly
+- [ ] Form displays correctly
+- [ ] Test used fictional information
+- [ ] Test submission sent
+- [ ] Message received
+- [ ] Sender name reviewed
+- [ ] Reply tested
+- [ ] Spam folder checked
+- [ ] No private details exposed
+
+**Later technical work**
+
+| Task | Needed? | Planned timing | Notes |
+|---|:---:|---|---|
+| Domain-based email |  |  |  |
+| Sender-domain authentication |  |  |  |
+| DNS records |  |  |  |
+| Email forwarding |  |  |  |
+| Business phone |  |  |  |
+| Helpdesk |  |  |  |
+| Chat |  |  |  |
+| Automated response |  |  |  |
+| Navigation placement |  |  |  |
+| Policy review |  |  |  |
+
+**Final contact-readiness decision**
+
+- My store has a clear and safe customer-contact path: Yes / No
+- If no, the blocking issue is: _______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -687,7 +893,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 4, and their worksheets are the only drafted sections. Chapters 5–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 5, and their worksheets are the only drafted sections. Chapters 6–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -696,6 +902,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official Shopify URLs (left as `[ADD OFFICIAL SHOPIFY LINK]` rather than invented).
 - Official search links for Chapter 3, left as placeholders rather than invented: `[ADD OFFICIAL STATE BUSINESS SEARCH LINK]`, `[ADD OFFICIAL USPTO SEARCH LINK]`, `[ADD OFFICIAL DOMAIN SEARCH LINK]`.
 - Official Shopify links for Chapter 4, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY ACCOUNT-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY INITIAL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY GENERAL-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PRICING LINK]`.
+- Official Shopify links for Chapter 5, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY STORE-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY EMAIL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY CONTACT-PAGE LINK]`, `[ADD OFFICIAL SHOPIFY PAGE-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY PRIVACY OR BUSINESS-INFORMATION LINK]`.
 
 ### Lucid Creations examples needed
 
@@ -703,6 +910,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 2: Christopher's own wording for Lucid Creations' starting customer and offer statement (placeholder `[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]`). The offer statement currently shown in Chapter 2 is a working example for review, not approved brand language.
 - Chapter 3: why "Lucid Creations" was chosen, other names considered, whether the name ever caused confusion, and what would be done differently today (placeholder `[INSERT LUCID CREATIONS NAMING EXAMPLE]`). Do not claim the name is trademarked or legally protected.
 - Chapter 4: which initial Shopify settings were selected, which setup decisions caused confusion, which apps (if any) were installed too early, what would be configured differently today, and which private details must be excluded from the published guide (placeholder `[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]`). Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or internal Shopify URLs.
+- Chapter 5: which email functions Lucid Creations uses, whether a phone number is public, whether a Contact page already exists, current About-page wording, the realistic response time, which address information is visible, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS BUSINESS AND CONTACT EXAMPLE]`). Do not invent a real support email, phone number, address, response time, contact-form result, customer message, or sender-domain configuration.
 
 ### Screenshots needed
 
@@ -713,6 +921,15 @@ This note lists what the draft assumes and what it still needs. It is for the in
   - `[INSERT SCREENSHOT — time-zone, currency, and measurement settings]`
   - `[INSERT SCREENSHOT — account security page with all private details removed]`
 - Sensitive information that must be removed from every Chapter 4 screenshot: account and contact email addresses, personal names, phone numbers, full business address, the store's `myshopify.com` URL and any admin URLs, order and customer data, recovery codes, QR codes, and any authentication secrets.
+- Required Chapter 5 screenshots (each caption must state what to locate, which details to hide, that all example names/emails/addresses/phone numbers/messages must be fictional, the capture date, and that the interface may change):
+  - `[INSERT SCREENSHOT — store contact details with all private information replaced or hidden]`
+  - `[INSERT SCREENSHOT — sender email setting with the actual address hidden]`
+  - `[INSERT SCREENSHOT — business address area with every address field fully redacted]`
+  - `[INSERT SCREENSHOT — Contact page editor with all store details hidden]`
+  - `[INSERT SCREENSHOT — customer-facing Contact page using placeholder information]`
+  - `[INSERT SCREENSHOT — About page editor using placeholder copy]`
+  - `[INSERT SCREENSHOT — test contact submission using fictional information only]`
+- Chapter 5 privacy and redaction requirements: no real business address, phone number, email address, internal URL, customer information, or account detail may appear in the published guide. The Chapter 5 test-submission screenshot must use only fictional data. Reviewers must confirm the business-address exposure list (store contact details, policy pages, customer emails, packing slips, order documents, contact page, footer) reflects where the address actually appears in the current Shopify version.
 
 ### Claims and links to verify
 
@@ -722,11 +939,13 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Before publishing, replace the Chapter 3 official-search placeholders with verified current URLs (Shopify, state business search, USPTO trademark search, domain search). Do not hard-code any of these links until confirmed.
 - Chapter 4 states two interface facts as current: core store defaults (store details, currency, measurement units, time zone) are under **Settings → General**, and two-step authentication is required to use Shopify Payments. Re-verify both — plus every exact field name and menu path — against the Shopify Help Center immediately before publication.
 - Do not publish Shopify plan names, prices, trial durations, promotional rates, staff-account limits, or transaction fees in Chapter 4 unless each item is verified immediately before publication (all currently left as `[VERIFY CURRENT SHOPIFY PLAN DETAILS]` / pricing placeholders).
+- Chapter 5 states these concepts as current and each must be re-verified against the Shopify Help Center before publication: Shopify separates the store/account email from the customer-facing sender email; the sender email is used for outgoing customer notifications and receives contact-form submissions; store contact details and the store address may appear publicly (storefront, policy pages, customer/marketing emails, packing slips, order documents); a customer-contact phone number may be optional; themes generally provide a built-in contact form applied to a page or page template; and a created Contact page must still be added to navigation later (Chapter 9). Verify exact field names, the store-email vs. sender-email wording, and current contact-form behavior.
 
 ### Interface verification
 
 - Chapter 4 interface details were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Set up your business settings," `help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings`). Shopify's interface and requirements can change; re-verify before publishing and update this date. All other exact paths, field names, plan details, and links in Chapter 4 remain placeholders pending verification.
+- Chapter 5 concepts (store-email vs. sender-email roles; public visibility of store contact details and the store address on the storefront, policy pages, marketing emails, and packing slips) were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Manage store details," `help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details`). Re-verify before publishing and update this date. All exact field names, paths, contact-form/theme behavior, and links in Chapter 5 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks — without drifting into theme or storefront design, products, collections, navigation, customer-facing pages, payments, checkout, taxes, shipping, fulfillment, Printify, domain or DNS, email setup, policies, testing, launch, or staff-permission administration. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 4 were added. Recommended status for this pass: review Chapter 4, then approve to continue to Chapter 5.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information — without drifting into payments, checkout, taxes, shipping, fulfillment, product creation, collections, navigation configuration, policy drafting, domain or DNS, email-domain authentication (SPF/DKIM/DMARC), professional email-provider setup, marketing or subscriber collection, helpdesk or chat implementation, phone-system recommendations, branding or theme customization, legal advice, test orders, or launch. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 5 were added. Recommended status for this pass: review Chapter 5, then approve to continue to Chapter 6.
