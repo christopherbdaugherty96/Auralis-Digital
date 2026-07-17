@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-3 + their worksheets + reviewer note.
-Chapters 4-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-4 + their worksheets + reviewer note.
+Chapters 5-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–3, and their worksheets. Chapters 4–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–4, and their worksheets. Chapters 5–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -499,6 +499,185 @@ _______________________________________________
 
 <!-- PAGE BREAK -->
 
+## Chapter 4 — Open and Configure Shopify
+
+### What you will complete
+
+By the end of this chapter, you will have a Shopify account and store created, confirmed access to the Shopify admin, your core store defaults reviewed and set, account security turned on, a written record of the settings you chose, and a list of the settings that belong to later chapters. This chapter builds the store's foundation — not its storefront.
+
+### Why this matters
+
+The settings you choose now — currency, time zone, units, and account security — quietly affect everything that follows: how orders are timestamped, how money is counted, how products are measured, and how safe your store is. Getting the foundation right and secure before you add products saves you from confusing, hard-to-undo problems later. Creating the account is quick; configuring it correctly is the real work of this chapter.
+
+### Step-by-step instructions
+
+1. **Prepare the required information.** Before you open Shopify, have ready: your preferred store name and two backups from Chapter 3; an email address you control; a secure password (a password manager helps); a phone or authentication device; your operating country; your expected store currency; your local time zone; your preferred measurement and weight units; and a payment method for Shopify billing if it is required when you select a plan. You do *not* yet need an LLC, an EIN, a connected domain, finished product images, final policies, a logo, or a complete catalog — those come later. Being ready to *create* a store is not the same as being ready to *launch* one. *Why it matters:* having these on hand lets you finish setup in one sitting without guessing. *Done when:* you have this information gathered.
+
+2. **Create the Shopify account and store.** Go to Shopify through an official source, start account creation, and either sign in with an existing Shopify account or create a new one. Create the new store, enter your preferred store name, and use a backup if the first name is unavailable. Complete or skip the optional onboarding questions where Shopify allows, and continue until you reach the Shopify admin. Do not create multiple trial stores. *Why it matters:* this creates the store you will configure. *Done when:* you have reached the Shopify admin for your new store.
+   `[ADD OFFICIAL SHOPIFY ACCOUNT-CREATION LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — Shopify account creation or initial admin screen]` *(Locate: where account creation begins or where the admin first appears. Hide: any email address, personal name, and store URL. Capture on the day you publish. Note: Shopify's onboarding may change.)*
+
+3. **Identify the Shopify admin.** The Shopify admin is the private management area where you control the store. Get oriented with its major areas conceptually — a home or setup overview, Orders, Products, Customers, Content, Analytics or reporting, Marketing, Discounts, sales channels, Apps, and Settings. Exact labels may change, and you do not need to learn each section now. *Why it matters:* you need to be able to find your way back to Settings for the rest of this chapter. *Done when:* you can log in, open the correct store, and find Settings.
+   `[INSERT SCREENSHOT — Shopify admin navigation with sensitive information removed]` *(Locate: the main admin navigation. Hide: the store name and URL, any order or customer data, and the account email. Capture on publication day. Note: the layout may change.)*
+
+4. **Review the store identity and ownership details.** Review the store's foundational details — currently available fields such as store name, store contact email, the account or ownership email, a legal business name (if applicable), business address, country or region, a phone number (if requested), and the automatically assigned `myshopify.com` address. Understand that the Shopify account email, the store contact email, the customer-facing sender email, and legal business details can serve *different* purposes. Chapter 5 handles customer-facing business and contact information more fully. A temporary `myshopify.com` address is not the same as a connected custom domain, which comes later. Avoid exposing unnecessary personal information publicly. *Why it matters:* these fields identify and route communication for your store, and mixing them up causes confusion later. *Done when:* you have reviewed these details and know which ones you will refine in Chapter 5.
+   `[VERIFY CURRENT SHOPIFY SETTING]` *(beside exact field names and paths)*
+
+5. **Set the time zone.** Choose the time zone in which your business normally operates. In the current Shopify admin this lives under **Settings → General** *(verified against Shopify's Help Center — see the internal reviewer note for the date; use `[VERIFY CURRENT SHOPIFY SETTING]` if your admin differs)*. Your time zone affects order timestamps, reports, scheduled actions, recordkeeping, and how you interpret store activity. *Why it matters:* a wrong time zone quietly skews every timestamp and report. *Done when:* the store shows your correct local time zone.
+   `[INSERT SCREENSHOT — Settings area used for core store defaults]` *(Locate: the Settings → General area where store defaults are set. Hide: store name and URL, and any contact details. Capture on publication day. Note: the location and labels may change.)*
+
+6. **Set the store currency.** Your store currency is the primary currency the store uses; it should match the business's intended selling and accounting context. In the current admin it is set under **Settings → General** `[VERIFY CURRENT SHOPIFY SETTING]`. Changing it later can affect products, reports, payments, and market configuration, so choose carefully *before* you load the full catalog. This chapter does not cover international markets, currency conversion, multi-currency selling, foreign exchange, Shopify Payments configuration, or tax accounting — payment-provider details come in Chapter 6. *Why it matters:* currency is hard to change cleanly once products and orders exist. *Done when:* your store currency is set to your intended primary currency.
+
+7. **Set measurement and weight units.** Select the units you will actually use for products and shipping — metric versus imperial measurements, and your default weight unit. In the current admin these are under **Settings → General** `[VERIFY CURRENT SHOPIFY SETTING]`. Consistent units reduce product and shipping mistakes. This chapter does not configure shipping rates. *Why it matters:* mismatched units cause product-entry and shipping errors later. *Done when:* the selected units match how you will measure and enter products.
+   `[INSERT SCREENSHOT — time-zone, currency, and measurement settings]` *(Locate: the fields where time zone, currency, and units are set. Hide: store name and URL. Capture on publication day. Note: field locations may change.)*
+
+8. **Review language and regional preferences.** Review the account, admin, store, language, and regional preferences relevant to your setup. Keep these separate in your mind: the language used in the Shopify *admin*; the customer-facing *storefront* language; the store's country or region; currency; and time zone. This chapter does not cover translation, international markets, or localization. *Why it matters:* confusing admin language with storefront language leads to setup mistakes. *Done when:* you have reviewed these preferences and confirmed they match your setup.
+   `[VERIFY CURRENT SHOPIFY SETTING]` *(labels and locations may change)*
+
+9. **Secure the account.** Use a unique password; activate two-step authentication or another supported secure sign-in method; save your recovery codes somewhere secure; do not share the owner login; give future users their own access rather than sharing credentials; and confirm you can access the account email. Shopify states that two-step authentication is required to use Shopify Payments, so securing the account now also unblocks payments later — verify current requirements against Shopify's official documentation. *Why it matters:* your store holds customer data and money, so account security is not optional. *Done when:* a secure sign-in method is active and recovery information is stored safely. This guide does not go deep on staff permissions.
+   `[ADD OFFICIAL SHOPIFY SECURITY LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — account security page with all private details removed]` *(Locate: where two-step authentication is enabled. Hide: recovery codes, QR codes, phone numbers, email addresses, and any authentication secrets. Capture on publication day. Note: the interface may change.)*
+
+10. **Review the Shopify plan and billing boundary.** A store may begin in a trial or setup state depending on Shopify's current offer, and continued operation generally requires selecting an eligible plan. Review current official pricing and plan features directly through Shopify. App fees and transaction-related costs are separate considerations, the cheapest plan is not automatically the right one, and you should avoid paying for advanced features you do not currently need. *Why it matters:* choosing a plan blindly leads to overpaying or hitting limits mid-build. *Done when:* you understand your current plan or trial status and what continuing will cost.
+    `[ADD OFFICIAL SHOPIFY PRICING LINK]` · `[VERIFY CURRENT SHOPIFY PLAN DETAILS]`
+
+11. **Avoid unnecessary apps.** Beginners often install too many apps before understanding the store. Do not install an app just because it is recommended during onboarding. For each app, confirm the problem it solves, check whether Shopify already provides that function, and review recurring cost, permissions, compatibility, and what happens if you uninstall it. Keep the starting store as close to native Shopify as practical. Not all apps are bad — but each one should earn its place. *Why it matters:* extra apps add cost, complexity, and security surface before you even have products. *Done when:* either no additional apps are installed, or each installed app has a documented, necessary purpose.
+
+12. **Record unfinished setup items without completing them.** Make a "later chapters" list. Record — but do not complete here: customer-facing contact information (Chapter 5); payments and checkout (Chapter 6); fulfillment and delivery (Chapter 7); products (Chapter 8); collections and navigation (Chapter 9); policies (Chapter 10); testing (Chapter 11); and domain connection and launch actions (Chapter 12, where applicable). Shopify may display setup recommendations for these, but this guide completes them in a controlled order. *Why it matters:* doing setup tasks out of order creates conflicts and rework. *Done when:* your later-tasks list is written and you have resisted completing them early.
+
+### Real example: Lucid Creations
+
+Lucid Creations operates as a Shopify product store under Auralis Digital. Its setup supports print-on-demand products and may later support handmade items and commissions. Its configuration should use the business's actual operating time zone, currency, and measurement conventions, and its owner should keep secure control of the account and avoid unnecessary apps.
+
+`[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]` — which settings were selected; which setup decisions caused confusion; which apps, if any, were installed too early; what would be configured differently today; and which private details (account email, exact address, internal URLs, security method) must be excluded from the published guide. Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or any internal Shopify URL.
+
+### Common mistake
+
+Trying to complete every Shopify setup prompt immediately. Shopify may present many setup tasks, recommendations, sales channels, apps, and features at once. Completing everything without understanding the order can create conflicting settings, unnecessary subscriptions, duplicate tools, security gaps, and confusion about what is actually launch-critical.
+
+**Instead:** set the foundation first. Record the later tasks and complete them in the relevant chapter.
+
+### Reality check
+
+Creating the Shopify account is not the same as finishing the store. At the end of this chapter, the foundation should be correct even though the storefront is still incomplete.
+
+### Checklist
+
+- [ ] I created the Shopify account and store.
+- [ ] I can log in and reach the correct Shopify admin.
+- [ ] I reviewed the store identity and ownership details.
+- [ ] I selected the correct operating time zone.
+- [ ] I selected the intended store currency.
+- [ ] I selected the correct measurement and weight units.
+- [ ] I reviewed language and regional preferences.
+- [ ] I activated a secure sign-in method.
+- [ ] I securely stored recovery information.
+- [ ] I reviewed current plan and billing information through Shopify.
+- [ ] I avoided unnecessary apps.
+- [ ] I recorded unfinished setup items for later chapters.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Are the store defaults correct for how I will operate?
+- [ ] Is any account, security, or billing issue preventing me from continuing?
+
+### Tools and official links
+
+- Worksheet: **Initial Shopify Settings** (below)
+- `[ADD OFFICIAL SHOPIFY ACCOUNT-CREATION LINK]`
+- `[ADD OFFICIAL SHOPIFY INITIAL-SETUP LINK]`
+- `[ADD OFFICIAL SHOPIFY GENERAL-SETTINGS LINK]`
+- `[ADD OFFICIAL SHOPIFY SECURITY LINK]`
+- `[ADD OFFICIAL SHOPIFY PRICING LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Initial Shopify Settings
+
+Use this worksheet to record your setup. It works printed or on a screen. Do not write account passwords, recovery codes, or other secrets on it, and do not publish it.
+
+**Account and store**
+
+- Shopify account created? Yes / No
+- Store created? Yes / No
+- Preferred store name used: _______________________________________________
+- Backup name used (if any): _______________________________________________
+- Can I log in successfully? Yes / No
+- Can I reach the correct Shopify admin? Yes / No
+- Account email verified? Yes / No
+- Temporary `myshopify.com` address (record privately): _______________________________________________
+
+> ⚠ Do not publish account credentials, recovery codes, or sensitive store URLs anywhere.
+
+**Core store defaults**
+
+| Setting | Selected value | Verified? | Needs follow-up? | Notes |
+|---|---|:---:|:---:|---|
+| Store name |  |  |  |  |
+| Operating country or region |  |  |  |  |
+| Time zone |  |  |  |  |
+| Store currency |  |  |  |  |
+| Measurement system |  |  |  |  |
+| Default weight unit |  |  |  |  |
+| Admin language |  |  |  |  |
+| Storefront language |  |  |  |  |
+| Business or billing details reviewed |  |  |  |  |
+| Store contact details reviewed |  |  |  |  |
+
+**Security**
+
+- [ ] Unique password used
+- [ ] Two-step authentication or supported secure sign-in activated
+- [ ] Recovery codes saved securely
+- [ ] Account email access confirmed
+- [ ] Owner login not shared
+- [ ] No security information placed in screenshots or worksheets
+
+**Plan and billing review**
+
+- Current setup, trial, or plan status: _______________________________________________
+- Date official pricing was checked: _______________________________________________
+- Plan currently being considered: _______________________________________________
+- Billing method added? Yes / No
+- Recurring Shopify cost recorded: _______________________________________________
+- App charges currently active: _______________________________________________
+- Questions requiring follow-up: _______________________________________________
+
+> Plan prices, trial offers, limits, and fees change. Verify them directly with Shopify before making a purchase decision.
+
+**App review**
+
+| App | Problem it solves | Required now? | Recurring cost | Permissions reviewed? | Keep, remove, or reconsider |
+|---|---|:---:|---|:---:|---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Later-chapter list** (record, do not complete)
+
+- [ ] Contact information (Chapter 5)
+- [ ] Payments (Chapter 6)
+- [ ] Checkout (Chapter 6)
+- [ ] Fulfillment (Chapter 7)
+- [ ] Shipping (Chapter 7)
+- [ ] Products (Chapter 8)
+- [ ] Collections (Chapter 9)
+- [ ] Navigation (Chapter 9)
+- [ ] Policies (Chapter 10)
+- [ ] Testing (Chapter 11)
+- [ ] Domain (Chapter 12)
+- [ ] Launch (Chapter 12)
+
+**Final foundation decision**
+
+- My Shopify foundation is ready for the next chapter: Yes / No
+- If no, the blocking issue is: _______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -508,7 +687,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 3, and their worksheets are the only drafted sections. Chapters 4–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 4, and their worksheets are the only drafted sections. Chapters 5–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -516,16 +695,24 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The Auralis Digital service link for the final conversion page (`[INSERT AURALIS DIGITAL SERVICE LINK]`).
 - Official Shopify URLs (left as `[ADD OFFICIAL SHOPIFY LINK]` rather than invented).
 - Official search links for Chapter 3, left as placeholders rather than invented: `[ADD OFFICIAL STATE BUSINESS SEARCH LINK]`, `[ADD OFFICIAL USPTO SEARCH LINK]`, `[ADD OFFICIAL DOMAIN SEARCH LINK]`.
+- Official Shopify links for Chapter 4, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY ACCOUNT-CREATION LINK]`, `[ADD OFFICIAL SHOPIFY INITIAL-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY GENERAL-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PRICING LINK]`.
 
 ### Lucid Creations examples needed
 
 - Chapter 1: which products Lucid Creations launched with, why they were chosen, and what you would change today (no sales or performance figures).
 - Chapter 2: Christopher's own wording for Lucid Creations' starting customer and offer statement (placeholder `[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]`). The offer statement currently shown in Chapter 2 is a working example for review, not approved brand language.
 - Chapter 3: why "Lucid Creations" was chosen, other names considered, whether the name ever caused confusion, and what would be done differently today (placeholder `[INSERT LUCID CREATIONS NAMING EXAMPLE]`). Do not claim the name is trademarked or legally protected.
+- Chapter 4: which initial Shopify settings were selected, which setup decisions caused confusion, which apps (if any) were installed too early, what would be configured differently today, and which private details must be excluded from the published guide (placeholder `[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]`). Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or internal Shopify URLs.
 
 ### Screenshots needed
 
-- Chapters 1 through 3 do not require screenshots. Screenshot placeholders (`[INSERT SCREENSHOT]`) begin in later chapters (account creation, settings, product pages, checkout, and so on).
+- Chapters 1 through 3 do not require screenshots. Chapter 4 is the first chapter that needs them. Required Chapter 4 screenshots (each caption must state what to locate, the capture date, and that the interface may change):
+  - `[INSERT SCREENSHOT — Shopify account creation or initial admin screen]`
+  - `[INSERT SCREENSHOT — Shopify admin navigation with sensitive information removed]`
+  - `[INSERT SCREENSHOT — Settings area used for core store defaults]`
+  - `[INSERT SCREENSHOT — time-zone, currency, and measurement settings]`
+  - `[INSERT SCREENSHOT — account security page with all private details removed]`
+- Sensitive information that must be removed from every Chapter 4 screenshot: account and contact email addresses, personal names, phone numbers, full business address, the store's `myshopify.com` URL and any admin URLs, order and customer data, recovery codes, QR codes, and any authentication secrets.
 
 ### Claims and links to verify
 
@@ -533,7 +720,13 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Confirm the Lucid Creations positioning summary in Chapter 2 (psychedelic art, electronic music, festival culture, sacred geometry, alternative design; apparel, blankets, tapestries, wall art, accessories) matches how you want Lucid described.
 - Verify any Shopify-specific setting names against the current interface before publishing (flagged with `[VERIFY CURRENT SHOPIFY SETTING]` in later chapters).
 - Before publishing, replace the Chapter 3 official-search placeholders with verified current URLs (Shopify, state business search, USPTO trademark search, domain search). Do not hard-code any of these links until confirmed.
+- Chapter 4 states two interface facts as current: core store defaults (store details, currency, measurement units, time zone) are under **Settings → General**, and two-step authentication is required to use Shopify Payments. Re-verify both — plus every exact field name and menu path — against the Shopify Help Center immediately before publication.
+- Do not publish Shopify plan names, prices, trial durations, promotional rates, staff-account limits, or transaction fees in Chapter 4 unless each item is verified immediately before publication (all currently left as `[VERIFY CURRENT SHOPIFY PLAN DETAILS]` / pricing placeholders).
+
+### Interface verification
+
+- Chapter 4 interface details were checked against the Shopify Help Center on **2026-07-16** (source: Shopify Help Center, "Set up your business settings," `help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings`). Shopify's interface and requirements can change; re-verify before publishing and update this date. All other exact paths, field names, plan details, and links in Chapter 4 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check — without drifting into branding, logos, trademark applications, LLC or assumed-name filings, EIN, domain DNS or connection, email setup, or SEO. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 3 were added. Recommended status for this pass: review Chapter 3, then approve to continue to Chapter 4.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks — without drifting into theme or storefront design, products, collections, navigation, customer-facing pages, payments, checkout, taxes, shipping, fulfillment, Printify, domain or DNS, email setup, policies, testing, launch, or staff-permission administration. Printify is mentioned only as one future fulfillment option and is not taught. No chapters beyond Chapter 4 were added. Recommended status for this pass: review Chapter 4, then approve to continue to Chapter 5.
