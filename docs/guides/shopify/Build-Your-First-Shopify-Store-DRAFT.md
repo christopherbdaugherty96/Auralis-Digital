@@ -686,7 +686,7 @@ By the end of this chapter, you will have reviewed your business and store conta
 
 ### Why this matters
 
-Customers buy from stores they can reach and trust. Clear contact information reduces confusion, refunds, and chargebacks, and it signals that a real business stands behind the store. At the same time, some of this information can appear publicly — on your storefront, policy pages, customer emails, and packing slips — so this chapter is as much about protecting your private information as it is about sharing the right contact details.
+Customers buy from stores they can reach and trust. Clear contact information reduces confusion and shows customers how to reach the business when they need help. At the same time, some of this information can appear publicly — on your storefront, policy pages, customer emails, and packing slips — so this chapter is as much about protecting your private information as it is about sharing the right contact details.
 
 ### Step-by-step instructions
 
