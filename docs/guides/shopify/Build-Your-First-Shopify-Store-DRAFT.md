@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-10 + their worksheets + reviewer note.
-Chapters 11-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-11 + their worksheets + reviewer note.
+Chapter 12 is NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–10, and their worksheets. Chapters 11–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–11, and their worksheets. Chapter 12 and its worksheet remain pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -2361,6 +2361,483 @@ Use this worksheet to turn real business facts into reviewed policy decisions. I
 
 <!-- PAGE BREAK -->
 
+## Chapter 11 — Test the Full Customer Journey
+
+### What you will complete
+
+By the end of this chapter, you will have a written test plan; a safe payment-test method; a pre-test settings record; evidence from at least one complete storefront-to-order path where technically and operationally safe; successful and failed or incomplete scenarios where supported; reviews of navigation, product, variants, cart, checkout, delivery, tax presentation, policies, notifications, inventory, order records, fulfillment routing, desktop, mobile, and accessibility-oriented interaction; restored settings; safely handled test artifacts; a prioritized blocker register; and a decision about whether to proceed to Chapter 12. This chapter does not launch the store.
+
+### Why this matters
+
+Testing helps identify behavior under the scenarios tested. A successful order provides evidence for that path only; another product, location, device, payment method, app, customer state, or fulfillment route could behave differently. Testing does not confirm that the store is error-free, legally compliant, universally tax-correct, or ready to launch by itself.
+
+### Test-safety boundary
+
+Before enabling test mode, placing an order, changing automation, or processing fulfillment, determine whether the store is already accepting orders; whether live customers could be blocked; whether an app can submit, fulfill, email, print, purchase labels, deliver files, or send work to a provider; and whether inventory, discounts, analytics, customer records, or notifications will change. Use controlled test data, prevent real charges and fulfillment unless a real-transaction test is deliberately authorized, record every temporary change, and restore it afterward. Never purchase a shipping label, trigger Printify or RJ Print production, send uninvolved people messages, or expose live credentials or private order links.
+
+### Step-by-step instructions
+
+1. **Define the test scope.** List physical, POD, handmade, made-to-order, commission, digital, service, subscription, RJ Print, domestic, international, delivery, pickup, discount, guest, account, and other paths. Mark each Applicable now, Not applicable, Requires separate test, or Blocked. *Why it matters:* this identifies the journeys that exist. *Done when:* the path inventory is written.
+
+2. **Define pass, blocker, and observation.** A Pass matches the documented expectation for this scenario; a Blocker is a material pre-launch issue; an Observation is nonblocking. A pass does not mean compliant, universally correct, or error-free. *Why it matters:* consistent labels make results actionable. *Done when:* each result can be classified.
+
+3. **Create the test-data plan.** Use a controlled inbox for notification delivery; use `@example.com` only when delivery is irrelevant. Use an authorized, scenario-appropriate address for destination-dependent behavior, never another person's address, and redact it from published materials. Record test product, variant, quantity, destination, discount, payment route, label, and cleanup method. Never use real customer records or real card data in a simulated gateway. *Why it matters:* this separates testing from live customer activity. *Done when:* all test data and cleanup actions are deliberate.
+
+4. **Review live-operation risks.** Inspect current storefront access, providers, automatic fulfillment, Printify and other routing, digital delivery, email/SMS, Shopify Flow, inventory, fraud, label, tax, subscription, commission, webhook, and external integrations. Record what could trigger, what requires a controlled pause, who restores it, and how live customers might be affected. *Why it matters:* this helps prevent a test becoming a live event. *Done when:* safeguards and owners are recorded.
+
+5. **Choose the payment-test method.** Choose Shopify Payments test mode, Bogus Gateway, a supported third-party test mode, a deliberately authorized real transaction followed by cancellation/refund, or Separate test required. These methods differ. Shopify Payments test mode currently requires completed setup and a paid plan; reverify both. Test mode can alter available wallet, express, local, or other methods and can affect live customers. Real transactions can incur fees that are not returned. Never put real card data in a simulated gateway or test credentials in a live field. `[ADD OFFICIAL SHOPIFY TEST-ORDERS OVERVIEW LINK]` `[ADD OFFICIAL SHOPIFY PAYMENT-TEST-MODE LINK]` `[ADD OFFICIAL SHOPIFY PAYMENTS-TESTING LINK]` `[VERIFY CURRENT SHOPIFY SETTING]` *Why it matters:* this records what the selected route can represent. *Done when:* the route, limits, and live impact are documented.
+
+6. **Record the pre-test state.** Record payment mode/providers, automatic fulfillment, provider apps, notifications, inventory, product status, channel availability, discount usage, shipping, tax display, storefront access, and time. Do not capture credentials. *Why it matters:* this creates the restoration reference. *Done when:* the baseline is complete.
+
+`[INSERT SCREENSHOT — pre-test settings record]` *(Locate: the recorded baseline. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+7. **Review the storefront entry point.** Check page load, identity, announcement, navigation, CTA, placeholders, images, private details, privacy controls, desktop, and mobile without redesigning the homepage. *Why it matters:* this records the first customer-facing state. *Done when:* entry issues are recorded.
+
+`[INSERT SCREENSHOT — desktop storefront entry]` *(Locate: the desktop entry page. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+`[INSERT SCREENSHOT — mobile storefront entry]` *(Locate: the mobile entry page. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+8. **Follow navigation to the test product.** Use the Chapter 9 path; record menu, dropdown, collection, product, search, backtracking, labels, desktop, and mobile. One path does not prove every product is reachable. *Why it matters:* this tests the selected discovery path. *Done when:* the product is reached or failure recorded.
+
+9. **Review the collection page.** Check title, description, image, membership, card, price, availability, sorting, variant display, existing filters, empty state, and mobile layout without expanding Search and Discovery. *Why it matters:* this compares the plan with the storefront result. *Done when:* observations are recorded.
+
+`[INSERT SCREENSHOT — collection page]` *(Locate: the tested collection. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+10. **Review the product page.** Check title, description, media, mockup/photo distinction, inspectable alt text, price, compare-at price, variants, availability, quantity, delivery wording, fulfillment disclosure, product-type wording, policies, contact, mobile, and add-to-cart. Do not infer quality, compliance, accessibility conformance, or customer understanding. *Why it matters:* this compares the selected record with its presentation. *Done when:* differences are recorded.
+
+`[INSERT SCREENSHOT — product page]` *(Locate: the tested product page. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+11. **Test meaningful variants.** Sample default, another available, unavailable, and materially different price/image/SKU/inventory/shipping/location combinations where applicable. Do not require every combination when risk-based sampling is appropriate. *Why it matters:* this reveals variant-specific behavior. *Done when:* representative paths are recorded.
+
+`[INSERT SCREENSHOT — variant selection]` *(Locate: the tested variant state. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+12. **Review the cart.** Check product, variant, quantity, price, image, updates, removal, subtotal, notes, estimate text, policies, checkout control, drawer/page, and mobile behavior. *Why it matters:* this records whether the cart reflects the selection. *Done when:* cart behavior is recorded.
+
+`[INSERT SCREENSHOT — cart]` *(Locate: the tested cart. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+13. **Test existing discounts where applicable.** Check valid, invalid, expired, limited, restricted, automatic, combination, free-shipping, and first-order behavior only where configured. *Why it matters:* this tests documented discount behavior for the cart. *Done when:* applicable results are recorded.
+
+`[INSERT SCREENSHOT — discount result]` *(Locate: the tested discount message/result. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+14. **Review checkout contact and address fields.** Check contact method, accounts, guest checkout, consent, required/optional fields, validation, address behavior, mobile keyboard, privacy, and policies. *Why it matters:* this records presented information requirements. *Done when:* field behavior is recorded.
+
+`[INSERT SCREENSHOT — checkout contact and address]` *(Locate: the tested checkout fields. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+15. **Review delivery and shipping options.** Check available/missing methods, price, free-shipping condition, delivery, pickup, estimates, splits, mixed fulfillment, restrictions, international destination, and customs wording. Results vary by destination, cart, market, product, location, package assumptions, and app. *Why it matters:* this shows choices produced by this scenario. *Done when:* results are compared with expectations.
+
+`[INSERT SCREENSHOT — shipping and delivery options]` *(Locate: the displayed delivery choices. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+16. **Review tax presentation.** Record only what this checkout displays: included/added tax, line, exemptions where applicable, product/shipping treatment, region assumptions, and tax apps. This is not tax advice and does not confirm legal correctness. *Why it matters:* this records the tested presentation. *Done when:* results and questions are recorded.
+
+`[INSERT SCREENSHOT — tax presentation]` *(Locate: the displayed tax presentation. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+17. **Review policy access.** Open applicable return/refund, shipping, privacy, terms, subscription, and contact links; check destination, wording, mobile readability, back navigation, placeholders, and private information. *Why it matters:* this identifies whether visible links reach intended content. *Done when:* each applicable link is reviewed.
+
+`[INSERT SCREENSHOT — checkout policy links]` *(Locate: visible checkout policy links. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+18. **Run a successful-payment test.** For a simulated route, use current official credentials, verify the test indicator, and confirm no real capture. For a deliberately authorized real route, use controlled payment information, verify capture and cancellation/refund, and record unreturned fees. Never call a real transaction a simulation. Record payment/order status, confirmation, redacted identifier, messages, and downstream triggers. *Why it matters:* this provides evidence for one selected route. *Done when:* the result and downstream effects are recorded.
+
+`[INSERT SCREENSHOT — successful test-payment result]` *(Locate: the redacted success/test indicator. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+19. **Run a failed or incomplete payment test where supported.** Safely test decline, processing error, invalid field, gateway failure, or abandonment; review error, data handling, cart, retry, duplicate risk, abandoned checkout, notifications, and triggers. Do not simulate fraud or disputes outside documented safe mechanisms. *Why it matters:* this identifies failure communication and recording. *Done when:* one path is documented or marked unsupported.
+
+`[INSERT SCREENSHOT — failed-payment result]` *(Locate: the safe failure result. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+20. **Review the confirmation page.** Check redacted identifier, product, variant, quantity, prices, discount, shipping, tax, total, contact/address, policies, status link, app content, and mobile. *Why it matters:* this records immediate post-order information. *Done when:* observations are recorded.
+
+`[INSERT SCREENSHOT — order-confirmation page]` *(Locate: the redacted confirmation page. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+21. **Review customer notifications safely.** Classify each relevant order, payment, shipping, delivery, refund, cancellation, digital, commission, account, or SMS message as Triggered and received; Triggered but not received; Not triggered by the scenario; Unsupported by the selected test route; or Not applicable. Do not mark an untriggered notification as a failure unless the scenario should have triggered it. Do not create live events merely to generate messages. Review sender, reply route, facts, prices, links, contact, branding, placeholders, and unintended data; delivery is not guaranteed. *Why it matters:* this records triggered content safely. *Done when:* each applicable message is classified.
+
+`[INSERT SCREENSHOT — customer notification]` *(Locate: a safely triggered or previewed customer message. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+22. **Review staff notifications safely.** Apply the same Triggered and received; Triggered but not received; Not triggered by the scenario; Unsupported by the selected test route; or Not applicable classifications to new-order, payment, risk, fulfillment, cancellation, refund, app, push, and provider alerts. Do not create real provider, fulfillment, refund, or fraud events. Review recipients, former staff, duplicates, missing critical alerts, and test identification. *Why it matters:* this identifies internal recipients and systems. *Done when:* each applicable alert is classified.
+
+`[INSERT SCREENSHOT — staff notification]` *(Locate: a safely triggered or configured staff alert. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+23. **Review the Shopify order record.** Check test indicator, payment/fulfillment status, redacted customer/product facts, discounts, shipping, tax, timeline, notes, tags, risk where applicable, app activity, fulfillment orders, inventory location, and provider assignment. *Why it matters:* this records Shopify's internal representation, not proof of downstream success. *Done when:* differences and triggers are documented.
+
+`[INSERT SCREENSHOT — Shopify order record]` *(Locate: the redacted test order. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+24. **Review inventory effects.** Compare before/after quantity, committed/available stock, continue-selling, location, variant, app/provider management, and restock after safe cancellation. Do not alter real stock without recording it. *Why it matters:* this identifies the observed inventory effect. *Done when:* it is documented or not applicable.
+
+`[INSERT SCREENSHOT — inventory before and after]` *(Locate: the redacted comparison. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+25. **Review fulfillment assignment without execution.** Check location/service, Printify or other provider, RJ Print, manual, digital, commission, split, hold, automatic request, label prompt, and notification option. Do not buy a label, submit production, send a request, mark fulfilled for appearance, or trigger uncontrolled delivery. *Why it matters:* this identifies intended routing. *Done when:* routing is observed without live execution.
+
+`[INSERT SCREENSHOT — fulfillment assignment]` *(Locate: the redacted routing/assignment. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+26. **Review distinct fulfillment models.** Test or separately inspect POD provider assignment/trigger; handmade inventory/location; commission intake/approval; digital delivery; service scheduling; subscription where applicable; and RJ Print as a separate 3D-printing workflow with no Printify assumption. Do not force all paths into one order. *Why it matters:* this identifies model-specific behavior. *Done when:* each applicable model is tested, inspected, separately assigned, or blocked.
+
+27. **Review cancellation and refund safely.** Where appropriate, inspect cancellation, restock, full/partial/shipping refund, notifications, payment status, inventory, provider/app behavior, timeline, and deletion eligibility. Distinguish a simulated cancellation from a real refund; a real refund can be irreversible and fees might not return. Do not initiate one without deliberate authorization. `[ADD OFFICIAL SHOPIFY CANCEL-REFUND-DELETE LINK]` `[VERIFY CURRENT SHOPIFY SETTING]` *Why it matters:* this records the selected safe behavior. *Done when:* it is documented.
+
+`[INSERT SCREENSHOT — cancellation or refund result]` *(Locate: the safe redacted result. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+28. **Review order-status access.** Check link, verification, product, fulfillment, tracking, contact, policies, mobile, app content, and privacy. Never publish a reusable access link. *Why it matters:* this records what the tested customer can access. *Done when:* behavior is documented.
+
+`[INSERT SCREENSHOT — order-status page]` *(Locate: the redacted order-status page. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+29. **Test desktop and mobile separately.** Compare homepage, navigation, collection, product, variants, cart, checkout, errors, confirmation, policies, and status. Resizing one browser alone is not a complete mobile test. *Why it matters:* this identifies device-specific differences. *Done when:* observations are separate.
+
+30. **Perform an accessibility-oriented interaction review.** Without claiming conformance, review keyboard, focus, labels, errors, alternatives, headings, link/button purpose, contrast concerns, zoom, tap targets, screen-reader behavior where available, and captions/transcripts. This is not a formal accessibility audit or certification. *Why it matters:* this helps identify barriers. *Done when:* barriers are recorded for correction or professional review.
+
+31. **Test a mixed or high-risk cart where applicable.** Consider POD+handmade, physical+digital, multiple locations, discount exclusions, unavailable variants, domestic/international, commission+standard, or RJ Print+Lucid. Check shipping, splits, notifications, policies, expectations, and routing. *Why it matters:* this identifies interactions absent from a single-product order. *Done when:* a relevant scenario is tested or not applicable.
+
+32. **Review an incomplete journey.** Test one safe abandoned cart/checkout, invalid address/discount, unavailable destination, failed payment, out-of-stock variant, missing field, expired session, or back-button path; review errors, recovery, persistence, notification, retention, triggers, and duplicates. `[ADD OFFICIAL SHOPIFY ABANDONED-CHECKOUT LINK]` *Why it matters:* this identifies unsuccessful-path behavior. *Done when:* one path is documented.
+
+`[INSERT SCREENSHOT — abandoned or incomplete checkout]` *(Locate: the safe incomplete result. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+33. **Restore the pre-test state.** Compare Step 6 and restore payment mode/provider, fulfillment, apps, notifications, inventory, status, channels, discounts, shipping, access, and temporary data. Mark each Restored, Intentionally changed, or Blocked. *Why it matters:* this verifies temporary changes against the baseline. *Done when:* every change is classified.
+
+`[INSERT SCREENSHOT — restored test-mode and payment state]` *(Locate: the redacted restored state. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+34. **Clean up artifacts safely.** Review test orders/checkouts/customers, notifications, inventory, discounts, tags, provider/app/analytics events, screenshots, and exports. Do not assume deletion eligibility or delete blocker evidence. Reverify cancellation/archive/deletion rules and preserve minimum redacted evidence. *Why it matters:* this records retained and removed artifacts. *Done when:* cleanup is documented.
+
+35. **Build the blocker register.** Record stage, scenario, expected/observed, severity, impacts, owner, action, retest, and status. Suggested Critical includes real charge/production, exposed data, or blocked live checkout; High includes checkout/shipping/price/product/routing/policy failures; Medium includes recoverable notification/mobile/inventory issues; Low is cosmetic. Severity requires merchant judgment. *Why it matters:* this prioritizes correction. *Done when:* every material issue has an owner and action.
+
+`[INSERT SCREENSHOT — blocker register]` *(Locate: a fictional/redacted register. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+36. **Retest corrected blockers.** Reproduce original conditions, rerun the same path, record the new result and new issues, and update status. Say “retested successfully for this scenario,” never “permanently fixed.” *Why it matters:* this provides current evidence. *Done when:* corrected Critical/High items have evidence or remain open.
+
+`[INSERT SCREENSHOT — retest evidence]` *(Locate: fictional/redacted retest evidence. All business names, personal names, customer information, addresses, email addresses, phone numbers, order numbers, payment details, test credentials, card numbers, CVVs, expiry values, domains, URLs, product identifiers, SKUs, inventory quantities, tax values, shipping rates, discount codes, policy text, provider details, app identifiers, analytics identifiers, fulfillment locations, tracking information, and private operational details must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify paths, checkout fields, payment test modes, credentials, shipping options, tax displays, notifications, order statuses, inventory behavior, fulfillment routing, policy links, app behavior, and deletion behavior can change. Never expose live payment credentials or reusable test-order access links.)*
+
+37. **Make the Chapter 11 readiness decision.** Review open Critical/High blockers, complete and failed paths, notifications, safe routing, policies, desktop/mobile, restoration, model coverage, and tax/legal/accessibility/regional uncertainties. Choose Ready for Chapter 12, Ready with documented noncritical observations, or Not ready. This does not equal public launch. *Why it matters:* this informs the separate launch decision. *Done when:* the decision and evidence are recorded.
+
+### Real example: Lucid Creations
+
+Lucid Creations is the Shopify product-store branch under Auralis Digital and can include POD, handmade, and commission products; Printify is one POD route, while RJ Print is a separate 3D-printing branch. Its mixed fulfillment paths require separate routing evidence. Do not assume its current payment, shipping, tax, inventory, notification, policy, app, provider, or checkout configuration; place no real order, trigger no production, buy no label, expose no private information, and invent no result.
+
+`[INSERT LUCID CREATIONS FULL CUSTOMER JOURNEY TEST EXAMPLE]` — selected product/variant; controlled test method; live/private state; provider and automation state; Printify, handmade, commission, and RJ Print routing; destinations; discount; tax presentation; policies; notifications; order/inventory effects; desktop/mobile and failure-path observations; blockers; restoration; and redaction needs.
+
+### Common mistake
+
+Running one successful checkout and treating it as proof the whole store is ready. That can miss failed payments, invalid addresses, absent shipping, variant or mobile problems, mixed fulfillment, broken policies, notification errors, provider triggers, inventory mismatches, test mode left active, and regional or method differences. Test the highest-risk paths, record exact scenarios, restore settings, and retest material corrections.
+
+### Reality check
+
+A successful test order is evidence for one tested scenario. It does not establish that every product, payment method, destination, device, app, fulfillment route, or customer journey will behave the same way.
+
+### Checklist
+
+- [ ] I listed every applicable customer journey.
+- [ ] I defined pass, blocker, and observation.
+- [ ] I created safe test data.
+- [ ] I reviewed live-operation risks.
+- [ ] I selected a test-payment method.
+- [ ] I recorded the pre-test state.
+- [ ] I tested the storefront entry point.
+- [ ] I followed the navigation path to a product.
+- [ ] I reviewed the collection page.
+- [ ] I reviewed the product page.
+- [ ] I tested representative variants.
+- [ ] I reviewed the cart.
+- [ ] I tested existing discounts where applicable.
+- [ ] I reviewed checkout contact and address fields.
+- [ ] I reviewed delivery and shipping options.
+- [ ] I recorded tax presentation without treating it as tax advice.
+- [ ] I opened applicable policy links.
+- [ ] I ran a successful simulated-payment path where supported.
+- [ ] I reviewed a failed or incomplete payment path where supported.
+- [ ] I kept any deliberately authorized real-payment test separate from simulated testing.
+- [ ] I reviewed the confirmation page.
+- [ ] I reviewed customer notifications using Triggered / Not triggered / Unsupported classifications.
+- [ ] I reviewed staff notifications using Triggered / Not triggered / Unsupported classifications.
+- [ ] I reviewed the Shopify order record.
+- [ ] I reviewed inventory effects.
+- [ ] I reviewed fulfillment assignment without triggering real fulfillment.
+- [ ] I reviewed each applicable fulfillment model.
+- [ ] I reviewed cancellation/refund behavior safely where applicable.
+- [ ] I did not assume a refund returns transaction or processing fees.
+- [ ] I did not assume every test order can be deleted.
+- [ ] I reviewed order-status access.
+- [ ] I tested desktop and mobile separately.
+- [ ] I completed an accessibility-oriented interaction review.
+- [ ] I tested a relevant mixed or high-risk cart where applicable.
+- [ ] I tested an incomplete customer journey.
+- [ ] I restored temporary test settings.
+- [ ] I confirmed payment test mode was returned to the intended state.
+- [ ] I reviewed test artifacts.
+- [ ] I created a prioritized blocker register.
+- [ ] I retested corrected critical and high blockers.
+- [ ] I made a Chapter 11 readiness decision.
+- [ ] Launch remains deferred to Chapter 12.
+
+### Before you continue
+- Did I complete this step?
+- Did I safely test the highest-risk customer journeys?
+- Are all critical and high blockers resolved or clearly recorded?
+
+### Tools and official links
+
+`[ADD OFFICIAL SHOPIFY TEST-ORDERS OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY PROCESS-TEST-ORDER LINK]` · `[ADD OFFICIAL SHOPIFY PAYMENT-TEST-MODE LINK]` · `[ADD OFFICIAL SHOPIFY PAYMENTS-TESTING LINK]` · `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]` · `[ADD OFFICIAL SHOPIFY ORDER-PROCESSING LINK]` · `[ADD OFFICIAL SHOPIFY NOTIFICATIONS LINK]` · `[ADD OFFICIAL SHOPIFY STAFF-NOTIFICATIONS LINK]` · `[ADD OFFICIAL SHOPIFY INVENTORY-TEST LINK]` · `[ADD OFFICIAL SHOPIFY FULFILLMENT LINK]` · `[ADD OFFICIAL SHOPIFY ORDER-STATUS LINK]` · `[ADD OFFICIAL SHOPIFY CANCEL-REFUND-DELETE LINK]` · `[ADD OFFICIAL SHOPIFY ABANDONED-CHECKOUT LINK]` · `[ADD OFFICIAL SHOPIFY LAUNCH-CHECKLIST LINK]`
+
+### Worksheet: Pre-Launch Store Test
+
+> **Privacy warning:** Do not record real customer information, real payment information, reusable test credentials, private order-status links, residential addresses, access credentials, provider credentials, internal admin URLs, analytics identifiers, tax identifiers, or confidential operational information on this worksheet.
+
+**Test-scope register**
+
+| Journey | Applicable? | Product | Fulfillment model | Payment method | Destination | Device | Status | Blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+
+**Pre-test state register**
+
+| Setting/system | Before test | Change required? | Risk | Owner | Restoration method | Restored? |
+| --- | --- | --- | --- | --- | --- | --- |
+| Payment mode |  |  |  |  |  |  |
+| Payment provider |  |  |  |  |  |  |
+| Automatic fulfillment |  |  |  |  |  |  |
+| Printify/provider app |  |  |  |  |  |  |
+| Digital delivery |  |  |  |  |  |  |
+| Notifications |  |  |  |  |  |  |
+| Inventory |  |  |  |  |  |  |
+| Product status |  |  |  |  |  |  |
+| Channel availability |  |  |  |  |  |  |
+| Discount |  |  |  |  |  |  |
+| Shipping |  |  |  |  |  |  |
+| Tax |  |  |  |  |  |  |
+| Store access |  |  |  |  |  |  |
+| Other automation |  |  |  |  |  |  |
+
+**Test-data register**
+
+| Field | Fictional/test value | Where used | Private? | Screenshot-safe? | Cleanup action |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Storefront path test**
+
+| Stage | Expected result | Observed result | Desktop | Mobile | Pass/blocker/observation | Evidence | Next action |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Homepage |  |  |  |  |  |  |  |
+| Navigation |  |  |  |  |  |  |  |
+| Collection |  |  |  |  |  |  |  |
+| Product |  |  |  |  |  |  |  |
+| Variant |  |  |  |  |  |  |  |
+| Cart |  |  |  |  |  |  |  |
+| Checkout |  |  |  |  |  |  |  |
+| Policies |  |  |  |  |  |  |  |
+| Confirmation |  |  |  |  |  |  |  |
+| Order status |  |  |  |  |  |  |  |
+
+**Checkout test**
+
+| Scenario | Payment route | Shipping destination | Discount | Expected | Observed | Order created? | Notification result | Blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Successful simulated payment |  |  |  |  |  |  |  |  |
+| Deliberately authorized real payment, if used |  |  |  |  |  |  |  |  |
+| Declined payment |  |  |  |  |  |  |  |  |
+| Processing or gateway failure |  |  |  |  |  |  |  |  |
+| Invalid address |  |  |  |  |  |  |  |  |
+| Invalid discount |  |  |  |  |  |  |  |  |
+| Abandoned checkout |  |  |  |  |  |  |  |  |
+| Out-of-stock variant |  |  |  |  |  |  |  |  |
+| Mixed cart |  |  |  |  |  |  |  |  |
+| International destination |  |  |  |  |  |  |  |  |
+
+**Order-record review**
+
+| Check | Expected | Observed | Correct? | Blocker | Next action |
+| --- | --- | --- | --- | --- | --- |
+| Test indicator |  |  |  |  |  |
+| Payment status |  |  |  |  |  |
+| Fulfillment status |  |  |  |  |  |
+| Product/variant |  |  |  |  |  |
+| Price |  |  |  |  |  |
+| Discount |  |  |  |  |  |
+| Shipping |  |  |  |  |  |
+| Tax |  |  |  |  |  |
+| Timeline |  |  |  |  |  |
+| Inventory location |  |  |  |  |  |
+| Provider assignment |  |  |  |  |  |
+| App activity |  |  |  |  |  |
+
+**Notification review**
+
+Review classification: Triggered / Not triggered / Unsupported / Not applicable.
+
+| Notification | Recipient type | Review classification | Sender | Content correct? | Links work? | Private data exposed? | Blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Order confirmation |  |  |  |  |  |  |  |
+| Payment status |  |  |  |  |  |  |  |
+| Shipping confirmation |  |  |  |  |  |  |  |
+| Delivery update |  |  |  |  |  |  |  |
+| Refund |  |  |  |  |  |  |  |
+| Cancellation |  |  |  |  |  |  |  |
+| Digital delivery |  |  |  |  |  |  |  |
+| Commission acknowledgement |  |  |  |  |  |  |  |
+| Account notification |  |  |  |  |  |  |  |
+| SMS |  |  |  |  |  |  |  |
+| New-order staff notification |  |  |  |  |  |  |  |
+| Payment staff notification |  |  |  |  |  |  |  |
+| Fraud/risk notice |  |  |  |  |  |  |  |
+| Fulfillment request |  |  |  |  |  |  |  |
+| App/provider notification |  |  |  |  |  |  |  |
+
+**Inventory review**
+
+| Product/variant | Before | After order | After cancellation/refund | Location | App managed? | Expected? | Blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+
+**Fulfillment-path review**
+
+RJ Print is a separate 3D-printing route and is not Printify.
+
+| Product type | Intended route | Observed route | Automatic trigger? | Real action prevented? | Separate test needed? | Blocker |
+| --- | --- | --- | --- | --- | --- | --- |
+| POD |  |  |  |  |  |  |
+| Handmade |  |  |  |  |  |  |
+| Commission |  |  |  |  |  |  |
+| Digital |  |  |  |  |  |  |
+| Service |  |  |  |  |  |  |
+| Subscription |  |  |  |  |  |  |
+| RJ Print |  |  |  |  |  |  |
+| Mixed order |  |  |  |  |  |  |
+
+**Policy-link review**
+
+| Policy | Storefront | Cart | Checkout | Confirmation/order status | Desktop | Mobile | Blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Return/refund |  |  |  |  |  |  |  |
+| Shipping/delivery |  |  |  |  |  |  |  |
+| Privacy |  |  |  |  |  |  |  |
+| Terms of service |  |  |  |  |  |  |  |
+| Subscription, if applicable |  |  |  |  |  |  |  |
+| Contact route |  |  |  |  |  |  |  |
+
+**Accessibility-oriented review**
+
+This is an accessibility-oriented review, not a formal accessibility audit or certification.
+
+| Check | Desktop result | Mobile result | Barrier | Severity | Next action |
+| --- | --- | --- | --- | --- | --- |
+| Keyboard |  |  |  |  |  |
+| Focus |  |  |  |  |  |
+| Labels |  |  |  |  |  |
+| Errors |  |  |  |  |  |
+| Alt text |  |  |  |  |  |
+| Headings |  |  |  |  |  |
+| Link purpose |  |  |  |  |  |
+| Buttons |  |  |  |  |  |
+| Contrast concern |  |  |  |  |  |
+| Zoom |  |  |  |  |  |
+| Tap target |  |  |  |  |  |
+| Screen reader |  |  |  |  |  |
+
+**Test restoration register**
+
+| Setting | Pre-test state | Test state | Final state | Restored? | Verified by | Blocker |
+| --- | --- | --- | --- | --- | --- | --- |
+| Payment test mode |  |  |  |  |  |  |
+| Payment provider |  |  |  |  |  |  |
+| Automatic fulfillment |  |  |  |  |  |  |
+| Provider apps |  |  |  |  |  |  |
+| Digital delivery |  |  |  |  |  |  |
+| Notifications |  |  |  |  |  |  |
+| Inventory |  |  |  |  |  |  |
+| Product status |  |  |  |  |  |  |
+| Channel availability |  |  |  |  |  |  |
+| Discount |  |  |  |  |  |  |
+| Shipping |  |  |  |  |  |  |
+| Tax |  |  |  |  |  |  |
+| Store access |  |  |  |  |  |  |
+| Test customer/data |  |  |  |  |  |  |
+| Other automation |  |  |  |  |  |  |
+
+**Blocker register**
+
+| ID | Journey stage | Scenario | Expected | Observed | Severity | Customer impact | Operational impact | Owner | Next action | Retest? | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 |  |  |  |  |  |  |  |  |  |  |  |
+| 2 |  |  |  |  |  |  |  |  |  |  |  |
+| 3 |  |  |  |  |  |  |  |  |  |  |  |
+| 4 |  |  |  |  |  |  |  |  |  |  |  |
+| 5 |  |  |  |  |  |  |  |  |  |  |  |
+| 6 |  |  |  |  |  |  |  |  |  |  |  |
+| 7 |  |  |  |  |  |  |  |  |  |  |  |
+| 8 |  |  |  |  |  |  |  |  |  |  |  |
+| 9 |  |  |  |  |  |  |  |  |  |  |  |
+| 10 |  |  |  |  |  |  |  |  |  |  |  |
+| 11 |  |  |  |  |  |  |  |  |  |  |  |
+| 12 |  |  |  |  |  |  |  |  |  |  |  |
+| 13 |  |  |  |  |  |  |  |  |  |  |  |
+| 14 |  |  |  |  |  |  |  |  |  |  |  |
+| 15 |  |  |  |  |  |  |  |  |  |  |  |
+
+**Retest register**
+
+A successful retest means: **Retested successfully for this scenario.** Do not use permanently fixed.
+
+| Blocker ID | Original condition | Correction | Retest date | New result | New issue? | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Final readiness decision**
+
+- Complete checkout path tested: Yes / No / Blocked
+- Successful simulated-payment path tested: Yes / No / Unsupported
+- Deliberately authorized real-payment path used: Yes / No
+- Failed or incomplete path tested: Yes / No / Blocked
+- Notifications reviewed: Yes / No / Not applicable
+- Fulfillment routing reviewed safely: Yes / No
+- Inventory effects reviewed: Yes / No / Not applicable
+- Policies accessible: Yes / No
+- Desktop reviewed: Yes / No
+- Mobile reviewed: Yes / No
+- Accessibility-oriented review completed: Yes / No
+- Temporary settings restored: Yes / No
+- Payment test mode restored: Yes / No / Not used
+- Critical blockers open: Yes / No
+- High blockers open: Yes / No
+- Ready for Chapter 12: Yes / Yes with noncritical observations / No
+- Main unresolved customer-journey blocker: _____________________________________
+
+<!-- PAGE BREAK -->
+
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -2370,7 +2847,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 10, and their worksheets are the only drafted sections. Chapters 11–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 11, and their worksheets are drafted. Chapter 12 and its worksheet remain pending approval.
 
 ### Missing information
 
@@ -2385,6 +2862,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official links for Chapter 8, left as placeholders rather than invented — Shopify: `[ADD OFFICIAL SHOPIFY PRODUCTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY ADD-PRODUCT LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-DESCRIPTION LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-STATUS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-PUBLISHING LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-MEDIA LINK]`, `[ADD OFFICIAL SHOPIFY ALT-TEXT LINK]`, `[ADD OFFICIAL SHOPIFY FILE-SAFETY LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-PRICING LINK]`, `[ADD OFFICIAL SHOPIFY COMPARE-AT-PRICE LINK]`, `[ADD OFFICIAL SHOPIFY SKU LINK]`, `[ADD OFFICIAL SHOPIFY BARCODE LINK]`, `[ADD OFFICIAL SHOPIFY VARIANTS LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY OUT-OF-STOCK LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-CATEGORY LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-TYPE LINK]`, `[ADD OFFICIAL SHOPIFY TAGS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-SEO LINK]`, `[ADD OFFICIAL SHOPIFY CUSTOMS-PRODUCT-INFORMATION LINK]`; Printify: `[ADD OFFICIAL PRINTIFY PUBLISH-PRODUCT LINK]`, `[ADD OFFICIAL PRINTIFY EDIT-PUBLISHED-PRODUCT LINK]`, `[ADD OFFICIAL PRINTIFY PRODUCT-SYNC LINK]`.
 - Official Shopify links for Chapter 9, left as placeholders rather than invented — collections: `[ADD OFFICIAL SHOPIFY COLLECTIONS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-TYPES LINK]`, `[ADD OFFICIAL SHOPIFY CREATE-COLLECTION LINK]`, `[ADD OFFICIAL SHOPIFY MANUAL-COLLECTION LINK]`, `[ADD OFFICIAL SHOPIFY SMART-COLLECTION LINK]`, `[ADD OFFICIAL SHOPIFY SMART-COLLECTION-CONDITIONS LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-SORTING LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-AVAILABILITY LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-IMAGE LINK]`; navigation: `[ADD OFFICIAL SHOPIFY MENUS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY UNDERSTANDING-MENUS LINK]`, `[ADD OFFICIAL SHOPIFY EDIT-MENU LINK]`, `[ADD OFFICIAL SHOPIFY DROPDOWN-MENU LINK]`, `[ADD OFFICIAL SHOPIFY THEME-MENU LINK]`, `[ADD OFFICIAL SHOPIFY URL-REDIRECT LINK]`.
 - Official Shopify links for Chapter 10, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY ADD-STORE-POLICIES LINK]`, `[ADD OFFICIAL SHOPIFY RETURN-POLICY LINK]`, `[ADD OFFICIAL SHOPIFY RETURN-RULES LINK]`, `[ADD OFFICIAL SHOPIFY SHIPPING-POLICY LINK]`, `[ADD OFFICIAL SHOPIFY PRIVACY OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY CUSTOMER-PRIVACY LINK]`, `[ADD OFFICIAL SHOPIFY PRIVACY-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY TERMS-OF-SERVICE-POLICY LINK]`, `[ADD OFFICIAL SHOPIFY SUBSCRIPTION-POLICY LINK]`, `[ADD OFFICIAL SHOPIFY POLICY-MENU-LINK LINK]`, `[ADD OFFICIAL SHOPIFY CONSUMER-PROTECTION LINK]`.
+- Official Shopify links for Chapter 11 remain placeholders rather than invented: test orders, processing a test order, payment test mode, Shopify Payments testing, Bogus Gateway, order processing, customer/staff notifications, inventory effects, fulfillment, order status, cancellation/refund/deletion, abandoned checkout, and launch checklist.
 
 ### Lucid Creations examples needed
 
@@ -2398,6 +2876,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 8: which first products to show, which are POD/handmade/commissions, current titles/descriptions, actual materials/dimensions/media types, current variants, current prices/costs, SKU convention, inventory rules, fulfillment locations/apps, shipping requirements/weights, vendor/tag conventions, current product status, and current channel availability (placeholder `[INSERT LUCID CREATIONS FIRST PRODUCT BUILD EXAMPLE]`). Do not invent prices, costs, margins, materials, dimensions, weights, inventory, SKUs, barcodes, HS codes, countries of origin, the current Printify provider/sync status, channel availability, product status, product photography, mockup approval, alt text, reviews, sales/conversion data, search rankings, or product claims. POD items must not be described as handmade by Lucid Creations; handmade pieces must not be presented as standardized POD inventory; wire wraps are the first handmade category referenced; RJ Print stays separate.
 - Chapter 9: current collection titles, which are manual or smart, exact smart-collection conditions, current membership, empty/overlapping collections, sorting, images/descriptions, availability, current main-menu and footer-menu hierarchy, dropdown behavior, desktop/mobile behavior, and broken/unclear links (placeholder `[INSERT LUCID CREATIONS COLLECTION AND NAVIGATION EXAMPLE]`). Do not assume the current menu or collection state without evidence; do not invent collection conditions, membership, sorting, availability, or performance data. Best Sellers must not contain invented performance claims or products selected without a valid rule; Sacred Geometry Art can overlap other types (deliberate logic required); RJ Print stays a separate branch; Commissions stay separate from POD categories; handmade copy leads with "Wire Wraps."
 - Chapter 10: current published policies and Shopify-generated text; business/contact identity; public support email and an appropriate public return address; current return/cancellation decisions; shipping/processing facts; POD/handmade/commission workflows; damaged-item process; privacy tools/apps, cookie-banner status, data-sharing settings, analytics/marketing tools; current footer/checkout links; legal-review questions (placeholder `[INSERT LUCID CREATIONS POLICY EXAMPLE]`). Do not invent Lucid's return window, refund terms, processing/delivery times, address, provider-error policy, commission cancellation terms, or privacy practices; do not expose a residential address; do not present Printify's policy as automatically Lucid's customer policy; do not make crystal-healing/medical/legal/delivery/quality/refund/performance guarantees. Policies must distinguish POD, handmade, commission, and RJ Print (separate branch) workflows.
+- Chapter 11: selected product/variant; controlled test method; store access state; provider and automation state; Printify, handmade, commission, and RJ Print routing; destinations; discount; tax presentation; policies; notifications; order and inventory effects; desktop/mobile and failure-path observations; blockers; restoration; cleanup; and redaction requirements (placeholder `[INSERT LUCID CREATIONS FULL CUSTOMER JOURNEY TEST EXAMPLE]`). Do not invent results or trigger real charges, labels, fulfillment, Printify production, or RJ Print production.
 
 ### Screenshots needed
 
@@ -2464,6 +2943,27 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 9 product/collection/tag/vendor/price/inventory/URL/domain/account/customer/order/operational redaction rules: no real product names, collection conditions, prices, inventory data, tags, vendors, domains, internal admin URLs, account identifiers, customer data, order data, or private operational information may appear anywhere in the guide, worksheet, screenshots, or repository. Policies are deferred to Chapter 10; the full customer-journey test to Chapter 11; launch to Chapter 12.
 - Required Chapter 10 screenshots (13; each caption must state what to locate, which details to hide, that all business names/personal names/addresses/emails/phone numbers/domains/URLs/policy text/customer/order/payment/tax information/legal/app/analytics identifiers/regions/provider information/return locations/private operational details must be fictional/blank/fully redacted, the capture date, and that Shopify paths, policy labels, template contents, automated privacy behavior, return rules, menus, checkout links, themes, and regional controls can change): written-policy overview; return/refund policy editor; return-rules settings; shipping-policy editor; automated privacy-policy settings; cookie-banner settings; data-sharing opt-out settings; terms-of-service editor; public contact-information review; footer policy links; checkout policy links; desktop policy page; mobile policy page.
 - Chapter 10 redaction/legal rules: no real business names, personal names, addresses (never a residential address), emails, phone numbers, domains, internal admin URLs, policy text, customer/order/payment/tax data, legal/analytics/app identifiers, regions, provider information, or return locations may appear anywhere in the guide, worksheet, screenshots, or repository. The chapter provides a policy-planning workflow and is NOT legal advice; templates and automated privacy tools are starting points, not substitutes for legal review. The full customer-journey test is deferred to Chapter 11; launch to Chapter 12.
+- Required Chapter 11 screenshots: 26 inline screenshot subjects are embedded in the chapter for the full customer-journey test. Every screenshot must use fictional, blank, or fully redacted data, record its capture date, and carry a change-sensitive-interface warning. Subjects:
+  - Pre-test settings
+  - Desktop and mobile storefront entry
+  - Collection and product pages
+  - Variant selection
+  - Cart and discount result
+  - Checkout contact and address
+  - Shipping and tax presentation
+  - Checkout policy links
+  - Successful and failed payment results
+  - Confirmation page
+  - Customer and staff notifications
+  - Shopify order record
+  - Inventory before and after
+  - Fulfillment assignment
+  - Order-status page
+  - Cancellation and refund result
+  - Abandoned or incomplete checkout
+  - Restored payment and test-mode state
+  - Blocker register
+  - Retest evidence
 
 ### Claims and links to verify
 
@@ -2479,6 +2979,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 10 states these concepts as current and each must be re-verified before publication: Shopify provides a written-policy area under Settings → Policies; current written-policy types can include return/refund, privacy, terms of service, shipping, legal notice, and subscription policy; available templates and languages can vary; generated policy text is a template/starting point and the merchant remains responsible for reviewing and following it; published policies can appear through checkout policy links and storefront menus; return rules and the written return/refund policy are separate systems (configuring one does not automatically update the other); privacy settings can include a privacy policy, cookie banner, and data-sharing opt-out controls; automated privacy settings can update certain policy content as related settings change but are not a substitute for legal advice; privacy requirements depend on where the business operates, where customers are located, and how data is collected/used; public contact information, refund information, and fulfillment-timing information can be required under Shopify platform terms and applicable consumer-protection requirements; and saving policy text does not establish that the business can operationally follow it. **Legal boundary:** the chapter must never state that generated text is legally sufficient, that publishing ensures compliance, or that a policy protects the merchant from disputes/refunds/chargebacks/complaints/liability; must not decide which laws apply or give jurisdiction-specific conclusions; and must not invent return periods, cancellation rights, refund/processing/delivery timing, warranties, exclusions, fees, addresses, or contact details. Verify the Settings → Policies path, policy types, template/automated-privacy behavior, cookie-banner and data-sharing controls, the return-rules-vs-written-policy distinction, checkout/menu link behavior, language/regional availability, and any plan requirements or retention periods before publication.
 - Chapter 9 states these concepts as current and each must be re-verified before publication: Shopify supports manual collections and smart collections; a manual collection contains deliberately selected products; a smart collection uses conditions to include matching products automatically; smart conditions can evaluate product information such as title, type, vendor, category, tags, price, weight, and inventory where supported; conditions can use "all" or "any" logic where supported; tags used in conditions need consistent spelling/formatting; a collection includes complete products rather than selected variants, though variant information can still affect whether a whole product matches; collections can have titles, descriptions, images, product sorting, sales-channel availability, and search-listing information; a collection can exist without being linked in navigation; a menu item is a link to a destination (product, collection, page, blog, policy, account page, or external site); stores commonly include a main menu and footer menu; dropdown menus group nested links under a parent; footer menus might not support dropdown nesting; menu rendering depends on the theme; a resource generally must exist before a valid menu link to it can be created; deleting or changing linked resources can affect menu links; changing a published URL can require a redirect; and navigation should be tested on desktop and mobile. Current navigation management appears under Content → Menus (verify). Verify manual-vs-smart terminology, condition/operator behavior, all-vs-any logic, whole-product-vs-variant behavior, tag-condition behavior, sorting options, collection/menu availability interaction, theme dropdown/footer behavior, URL/redirect behavior, and any current plan requirements or system limits. Do NOT hard-code current collection, condition, nesting, or menu limits without verification, do not assume creating a collection adds it to a menu, and do not assume a menu link makes an unavailable collection publicly visible.
 - Chapter 8 states these concepts as current and each must be re-verified before publication: a Shopify product requires at least a title and price; other details (description, media, category, type, vendor, tags, variants, inventory, shipping information, search-engine information) can be added; with no variants, price/inventory/shipping can be managed at the product level; when variants are added, relevant price/inventory/shipping/SKU/barcode/location details are generally managed per variant; variants represent combinations of customer-selectable options; product media can include images, videos, and 3D models where supported, and the first media item generally acts as the featured media; alt text describes media for assistive technology and when media cannot load and should be concise (record Shopify's current alt-text length guidance here — approximately 125 characters recommended, up to 512 allowed as of the check — but do NOT hard-code it in the customer-facing chapter unless reverified immediately before publication); a SKU is an internal identifier distinct from a barcode and is optional but should be unique when used; inventory is generally tracked at the variant and location level; a product's physical-shipping requirement affects checkout and fulfillment; weight can affect shipping calculations but does not configure the rate itself; product status and channel availability determine whether/where a product appears (states can include Active, Draft, Archived, and — in some workflows — Unlisted, to be verified); and a Printify-published product can be created/synchronized through the app but the merchant must still review the resulting Shopify record. Verify product/variant field behavior, product-status and channel-availability behavior, current variant and media limits, product-category/taxonomy behavior, alt-text guidance and limits, inventory and location behavior, app-managed product synchronization behavior, and Printify publishing/synchronization behavior. Do NOT publish product/media/variant/file/import limits, prices, costs, margins, or plan requirements without current verification, and do not assume every plan/theme/channel/app/region has identical product behavior or that fields appear in the same order with and without variants.
+- Chapter 11 states these concepts as current, and each must be re-verified from current official Shopify documentation before publication: Shopify test-order methods; Shopify Payments test mode; the Bogus Gateway; third-party gateway test modes; the separation of simulated tests from deliberately authorized real-payment tests; possible nonrefundable real-transaction fees; live-customer effects while test mode is active; automatic fulfillment and provider-trigger risks; shipping-label purchase risks; customer and staff notification behavior; inventory effects; fulfillment assignment; order-status behavior; cancellation, refund, and deletion limitations; abandoned-checkout behavior; and payment-method and regional limitations. These details must be reverified from current official Shopify documentation before publication.
 
 ### Interface verification
 
@@ -2489,7 +2990,8 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 8 concepts were checked on **2026-07-17** against Shopify Help Center — "Products" (`help.shopify.com/en/manual/products`), "Product details" (`help.shopify.com/en/manual/products/details`), "SKU" (`help.shopify.com/en/manual/products/details/sku`), "Product media" (`help.shopify.com/en/manual/products/product-media`), "Add alt text" (`help.shopify.com/en/manual/products/product-media/add-alt-text`), "Variants" (`help.shopify.com/en/manual/products/variants`), "Inventory setup" (`help.shopify.com/en/manual/products/inventory/setup`), and "Add and update products" (`help.shopify.com/en/manual/products/add-update-products`). Alt-text length guidance noted at check: approximately 125 characters recommended, up to 512 allowed — reverify before publication and do not hard-code in the customer-facing chapter until confirmed. Product-status options (Active/Draft/Archived, and Unlisted in some workflows), variant/media limits, category/taxonomy behavior, inventory/location behavior, and app-managed/Printify synchronization behavior can change; re-verify before publishing and update this date. All exact paths, field names, statuses, options, limits, and links in Chapter 8 remain placeholders pending verification.
 - Chapter 10 concepts were checked on **2026-07-19** against Shopify Help Center — "Refund, privacy, and TOS statements" (`help.shopify.com/en/manual/checkout-settings/refund-privacy-tos`) and related policy/return-rules/customer-privacy pages. Settings → Policies path, policy types, template contents, automated-privacy behavior, cookie-banner and data-sharing controls, the return-rules-vs-written-policy distinction, checkout/menu link behavior, language/regional availability, retention periods, and plan requirements can change; re-verify before publishing and update this date. This chapter is not legal advice; templates and automated privacy tools are starting points, not substitutes for legal review. All exact paths, policy labels, template contents, regional controls, limits, and links in Chapter 10 remain placeholders pending verification.
 - Chapter 9 concepts were checked on **2026-07-18** against Shopify Help Center — "Collections" (`help.shopify.com/en/manual/products/collections`), "Automated collections / conditions" (`help.shopify.com/en/manual/products/collections/automated-collections/auto-create`), "Understanding navigation" (`help.shopify.com/en/manual/online-store/menus-and-links/understanding-navigation`), and "Menus and links" (`help.shopify.com/en/manual/online-store/menus-and-links`). Manual/smart terminology, condition behavior, whole-product-vs-variant matching, sorting options, collection/menu availability interaction, theme dropdown and footer behavior (footer menus might not support dropdown nesting), the Content → Menus admin path, URL/redirect behavior, and plan eligibility can change; re-verify before publishing and update this date. All exact paths, collection-type labels, condition operators, menu terminology, limits, and links in Chapter 9 remain placeholders pending verification.
+- Chapter 11 concepts were checked on 2026-07-19 against Shopify Help Center topics — processing test orders, testing Shopify Payments, the Bogus Gateway, order processing, customer notifications, staff notifications, inventory behavior, fulfillment, order status, cancellation/refund/deletion, and abandoned checkout. Official Shopify URLs remain placeholders rather than invented. Test-order methods, payment test-mode behavior, notification triggers, inventory effects, fulfillment routing, order-status access, cancellation/refund/deletion limits, abandoned-checkout behavior, and payment-method and regional availability can change; re-verify before publishing and update this date. All exact paths, field names, statuses, and links in Chapter 11 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run. Chapter 8 creates one to five accurate product records — title, description, media, alt text, price, cost, compare-at, variants, SKU/barcode, inventory/location, shipping requirement, weight, origin/HS, fulfillment assignment, category/type/vendor/tags, product-SEO review, status, and channel availability — previews them as a customer, and records blockers, with Printify presented as one product-creation route among several. It does not drift into collections or navigation (Chapter 9), detailed shipping rates/zones/profiles/dimensions/carriers, tax setup or advice, policy/return/refund drafting (Chapter 10), full catalog migration or bulk CSV, detailed SEO/keyword research/ranking claims, theme redesign/coding/metafields/metaobjects/Functions, Printify design/provider/pricing comparison, wholesale, Amazon/Walmart/eBay, medical/crystal-healing/environmental/profit/margin claims, the full test order (Chapter 11), or launch (Chapter 12). Printify remains one of five fulfillment options and one product-creation route among several, not the default. Chapter 9 groups the initial products into a small manual/smart collection structure, reviews collection names/descriptions/images/sorting/availability, builds or revises the main and footer menus (with dropdowns only where useful), tests every link and desktop/mobile navigation, and records blockers. Chapter 10 records the business facts each policy must reflect, turns them into reviewed return/refund, shipping, privacy, and terms drafts (plus commission/POD/digital/service/subscription topics where applicable), compares written wording against operational return rules and store-wide claims, reviews contact information and automated privacy settings, links published policies, opens checkout/storefront/desktop/mobile policy links, and records legal and operational blockers — as a policy-planning workflow that is explicitly NOT legal advice and does not run test orders, perform full compliance review, guarantee enforceability, or launch. It does not drift into the full customer-journey test (Chapter 11), launch (Chapter 12), theme redesign, or new store subsystems. No chapters beyond Chapter 10 were added. Recommended status for this pass: review Chapter 10, then approve to continue to Chapter 11.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run. Chapter 8 creates one to five accurate product records — title, description, media, alt text, price, cost, compare-at, variants, SKU/barcode, inventory/location, shipping requirement, weight, origin/HS, fulfillment assignment, category/type/vendor/tags, product-SEO review, status, and channel availability — previews them as a customer, and records blockers, with Printify presented as one product-creation route among several. It does not drift into collections or navigation (Chapter 9), detailed shipping rates/zones/profiles/dimensions/carriers, tax setup or advice, policy/return/refund drafting (Chapter 10), full catalog migration or bulk CSV, detailed SEO/keyword research/ranking claims, theme redesign/coding/metafields/metaobjects/Functions, Printify design/provider/pricing comparison, wholesale, Amazon/Walmart/eBay, medical/crystal-healing/environmental/profit/margin claims, the full test order (Chapter 11), or launch (Chapter 12). Printify remains one of five fulfillment options and one product-creation route among several, not the default. Chapter 9 groups the initial products into a small manual/smart collection structure, reviews collection names/descriptions/images/sorting/availability, builds or revises the main and footer menus (with dropdowns only where useful), tests every link and desktop/mobile navigation, and records blockers. Chapter 10 records the business facts each policy must reflect, turns them into reviewed return/refund, shipping, privacy, and terms drafts (plus commission/POD/digital/service/subscription topics where applicable), compares written wording against operational return rules and store-wide claims, reviews contact information and automated privacy settings, links published policies, opens checkout/storefront/desktop/mobile policy links, and records legal and operational blockers — as a policy-planning workflow that is explicitly NOT legal advice and does not run test orders, perform full compliance review, guarantee enforceability, or launch. It does not drift into the full customer-journey test (Chapter 11), launch (Chapter 12), theme redesign, or new store subsystems. Chapter 11 and its Pre-Launch Store Test worksheet were added. Chapter 12 remains undrafted. No launch actions, production changes, test orders, live payment changes, fulfillment actions, or external system changes were performed while drafting this chapter. Recommended status for this pass: review Chapter 11, then approve to continue to Chapter 12.
