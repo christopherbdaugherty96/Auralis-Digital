@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-8 + their worksheets + reviewer note.
-Chapters 9-12 are NOT drafted and must not be added without explicit approval.
+Draft status: front matter + TOC + Chapters 1-9 + their worksheets + reviewer note.
+Chapters 10-12 are NOT drafted and must not be added without explicit approval.
 -->
 
 # Build Your First Shopify Store
@@ -140,7 +140,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–8, and their worksheets. Chapters 9–12 and the remaining worksheets are pending approval to continue.
+> **Draft status:** This file contains the polished table of contents, all front matter, Chapters 1–9, and their worksheets. Chapters 10–12 and the remaining worksheets are pending approval to continue.
 
 <!-- PAGE BREAK -->
 
@@ -1741,6 +1741,337 @@ Use this worksheet to build and review each starting product. It works printed o
 
 <!-- PAGE BREAK -->
 
+## Chapter 9 — Organize Collections and Navigation
+
+### What you will complete
+
+By the end of this chapter, you will have a written catalog structure; each starting product assigned to at least one appropriate collection or intentionally left ungrouped; a deliberate manual-or-smart decision for each collection; reviewed collection names, descriptions, images, sorting, and availability; smart-collection conditions tested where used; a main menu created or revised; dropdown links only where useful; a footer-menu plan; every menu link tested; mobile navigation reviewed; a record of duplicate, vague, empty, or broken navigation items; and a clear answer to whether a customer can understand where to begin and reach each starting product without guessing. This chapter does not write policies, redesign the theme, configure advanced filters, run the complete customer journey, or launch the store.
+
+### Why this matters
+
+Chapter 8 created accurate product records; this chapter organizes them so a customer can find them. Collections group products for browsing, and menus connect those groups to the storefront. Doing this in a small, deliberate way — rather than creating many collections and links first — helps the merchant present a catalog a customer can understand.
+
+### Step-by-step instructions
+
+1. **Review the starting product set.** Return to Chapter 8 and list the one-to-five starting products, recording for each: product title, product type, fulfillment method, intended customer, whether it belongs with other products, whether it needs a direct menu link, and whether it should remain Draft. Do not organize products that contain unresolved material blockers as though they are ready for public navigation. *Why it matters:* this helps the merchant work only with products that are ready to organize. *Done when:* you have a current list of products eligible for organization.
+
+2. **Define the simplest useful catalog structure.** Group products by customer-understandable categories. Appropriate collection dimensions can include product type, use or purpose, material, format, design family, audience, fulfillment model where customer-relevant, seasonal grouping, or a new/featured grouping where accurately maintained. Avoid starting with internal department names, supplier codes, production-provider names, unexplained abbreviations, duplicate categories, extremely narrow one-product categories without a reason, categories based only on your internal workflow, or large numbers of overlapping collections. Collections should reflect how a customer understands the catalog, not merely how you store internal information. *Why it matters:* this helps organize the catalog the way a customer understands it. *Done when:* you have a small written set of proposed collections.
+
+3. **Separate customer-facing categories from internal fields.** Distinguish product category, product type, vendor, tags, collections, and menu labels. Product category/type/vendor/tags were reviewed in Chapter 8; collections group products for catalog presentation and management; menu labels are customer-facing links. These values can support one another but do not need identical wording — a tag is not automatically a collection, a collection is not automatically a menu link, and a menu link does not change the product's underlying category or type. *Why it matters:* this makes clear the role of each organizational layer. *Done when:* you can explain the role of each organizational layer.
+
+4. **Choose manual or smart for each collection.** A manual collection is one where you select products deliberately (useful when the collection is small, membership requires judgment, products are one-of-one, products change infrequently, the collection is curated, or the available product fields cannot express the intended rule reliably). A smart collection includes products that match conditions (useful when product fields are consistent, the rule can be expressed clearly, new matching products should be included automatically, you understand the condition logic, and membership will be monitored). Smart does not mean self-correcting: incorrect tags, types, vendors, categories, prices, inventory values, or condition logic can produce unexpected membership; manual collections require active maintenance; a collection type should not be chosen solely because it sounds more advanced; and current terminology and supported conditions must be verified. *Why it matters:* this determines how each collection's membership is maintained. *Done when:* every proposed collection has a documented Manual or Smart decision.
+   `[ADD OFFICIAL SHOPIFY COLLECTION-TYPES LINK]` · `[ADD OFFICIAL SHOPIFY MANUAL-COLLECTION LINK]` · `[ADD OFFICIAL SHOPIFY SMART-COLLECTION LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+5. **Create the first collection.** Create one collection at a time, reviewing collection title, description, collection image (if used), collection type, conditions or selected products, sort order, sales-channel availability, search-listing fields, and the theme preview where available. *Why it matters:* this provides one reviewed collection record before it is published. *Done when:* one collection record exists and remains unpublished or deliberately limited while being reviewed.
+   `[ADD OFFICIAL SHOPIFY CREATE-COLLECTION LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — fictional collection editor with product, store, supplier, and account information hidden]` *(Locate: the collection editor. Hide: product, store, supplier, and account information. All product names, collection conditions, prices, inventory data, tags, vendors, domains, URLs, suppliers, account identifiers, customer/order data, and private operational information must be fictional, blank, or fully redacted. Capture date: record it. Note: Shopify admin paths, collection terminology, condition behavior, menus, themes, dropdowns, publishing, and storefront display can change.)*
+
+6. **Write a clear collection title.** Use titles that identify what is grouped — concrete titles such as T-Shirts, Hoodies & Sweatshirts, Blankets, Tapestries, Hats, Pillows, Journals & Paper Goods, Accessories, Wall Art, Wire Wraps, or Commissions. Avoid vague titles ("Shop Stuff," "Miscellaneous," "Products," "Cool Items," "Category 1"), internal codes, unexplained abbreviations, and multiple collections with nearly identical titles. Not every collection needs the brand name. *Why it matters:* this helps a customer recognize what the collection contains. *Done when:* the title tells the customer what type of products the collection contains.
+
+7. **Write the collection description.** Use a short factual description that explains what products belong, what distinguishes the group, relevant production or fulfillment information, relevant variation, and what a customer can expect to browse. Do not repeat the collection title several times, invent product facts, promise delivery times, make sales or popularity claims, add policy terms, add keyword lists, describe POD products as handmade, or describe handmade items as standardized inventory. *Why it matters:* this informs the customer what the group contains. *Done when:* the description accurately describes its membership.
+
+8. **Add a collection image only when useful.** A collection image can represent the group where the theme supports it, and some themes can use product media or another fallback when no collection image exists. The image should represent the overall collection, not one misleading item; must be authorized and contain no customer, order, address, supplier, account, or private operational information; and should be reviewed on mobile and desktop. Exact theme treatment varies. *Why it matters:* this affects how the collection is represented where the theme uses an image. *Done when:* the collection has an appropriate image or a documented decision to leave it blank.
+   `[VERIFY CURRENT SHOPIFY SETTING]`
+   `[INSERT SCREENSHOT — fictional collection image area with no private files, metadata, supplier, or account information]` *(Locate: the collection image area. Hide: private files, metadata, supplier, and account information; use fictional data. Capture date: record it. Note: theme treatment may change.)*
+
+9. **Configure a manual collection.** For a manual collection, select only the intended products; confirm each product is the correct record; confirm Draft or unavailable products are handled deliberately; confirm unrelated variants are not treated as independently selectable collection items; and record who updates the collection when products change. Collections contain entire products, not individually selected variants. *Why it matters:* this determines which products belong to a manually curated collection. *Done when:* the manual collection contains only deliberately selected products.
+   `[ADD OFFICIAL SHOPIFY MANUAL-COLLECTION LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+10. **Configure a smart collection.** For a smart collection, select the condition field, select the operator, enter the condition value, decide whether products must match all or any conditions, preview the matching products, review unexpected inclusions, review missing products, correct the underlying product data or condition logic, and record the collection rule in plain English. Possible condition sources may include product title, variant title, product type, vendor, product category, tags, price, compare-at price, weight, inventory, and supported metafield values — but not every condition is available in every workflow. *Why it matters:* this determines which products a smart collection includes. *Done when:* the rule produces the intended current membership or has a documented blocker.
+    `[ADD OFFICIAL SHOPIFY SMART-COLLECTION-CONDITIONS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional smart-collection conditions and matching products with all product values and store identifiers redacted]` *(Locate: the conditions and matching-products area. Hide: all product values and store identifiers; use fictional data. Capture date: record it. Note: condition behavior and terminology may change.)*
+
+11. **Test exact and partial matching.** Exact-match and partial-match operators can produce different results; tag conditions can require exact tag values; inconsistent spaces, punctuation, singular/plural forms, or near-duplicate tags can affect membership; special-character behavior can vary; a condition based on a variant can include the entire product; "any" conditions broaden membership while "all" conditions narrow it; and exclusion conditions require careful review. Test at least one product that should match, one that should not, one with variants, and one with a missing or inconsistent field. *Why it matters:* this helps identify how exact and partial matching affect membership. *Done when:* you have reviewed both expected inclusion and expected exclusion.
+
+12. **Review whole-product versus variant behavior.** Collections contain products, not separately selected variants; a condition that matches one variant can cause the entire product to appear; collection cards might show the product generally rather than the exact matching variant; the theme might select featured product media rather than matching-variant media; and inventory conditions can behave according to whether any supported variant matches. *Why it matters:* this makes clear what a customer sees when a variant causes product inclusion. *Done when:* you understand what the customer will see when a variant causes product inclusion.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+
+13. **Review collection sorting.** Collection products can be sorted according to supported options or arranged manually where available. Decide whether sorting should prioritize manual order, product title, price, date, best-selling data where supported, or another currently available method. "Best selling" is a system-generated ordering concept, not a claim to invent in product copy; manual order requires maintenance; a sort option does not guarantee that a customer sees every product; and theme layout and product availability still affect presentation. *Why it matters:* this determines the order in which products are presented within supported options. *Done when:* each collection has a deliberate sort method.
+    `[ADD OFFICIAL SHOPIFY COLLECTION-SORTING LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+14. **Review collection availability.** Confirm which sales channels should display the collection, whether it should be publicly available yet, whether contained products are available on the same intended channel, whether the collection contains Draft/archived/unavailable/blocked products, whether future publishing is configured, and whether the theme includes a link or section that exposes it. Collection availability, product availability, and menu visibility are related but separate controls. *Why it matters:* this determines which channels can display the collection. *Done when:* the collection is available only through intended channels or remains deliberately hidden.
+    `[ADD OFFICIAL SHOPIFY COLLECTION-AVAILABILITY LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+15. **Repeat for the initial collection set.** Repeat the process for the proposed structure — without requiring a large number of collections — checking for empty collections, single-product collections without a reason, duplicate collections, overlapping collections, inconsistent names, incorrect smart conditions, missing products, unavailable products, placeholder descriptions, and unreviewed images. *Why it matters:* this helps identify empty, duplicate, or overlapping collections. *Done when:* you have a small reviewed collection set.
+
+16. **Plan the main navigation before editing it.** Create a written main-menu outline. A beginner structure can include Home, Shop, one or more primary product categories, Commissions or services where applicable, About, and Contact — these exact items are not required. The main menu should represent the most important customer destinations; not every collection needs a top-level link; not every product needs a direct menu link; the menu should not expose internal operational categories; and policy links can be added after Chapter 10. *Why it matters:* this helps organize the main menu before changing the live navigation. *Done when:* you have a written main-menu hierarchy before changing the live menu.
+
+17. **Understand menus and links.** A menu is a managed group of links, and a menu item points to a destination such as a product, collection, page, blog, policy, customer-account page, or external website where supported. The linked destination usually needs to exist first; menu placement depends on the theme; the same menu can display differently in different themes; and main and footer menus serve different purposes. *Why it matters:* this makes clear that navigation labels and destination resources are separate. *Done when:* you understand that navigation labels and destination resources are separate.
+    `[ADD OFFICIAL SHOPIFY MENUS OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY UNDERSTANDING-MENUS LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+18. **Open the menu-management area.** Locate the current Shopify menu-management area. Current documentation places it under **Content → Menus**, but this path is change-sensitive. *Why it matters:* this helps the merchant locate the main and footer menu records. *Done when:* you can locate the main and footer menu records.
+    `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — Shopify menu-management overview with store names, domains, account details, and private links hidden]` *(Locate: the menu-management overview. Hide: store names, domains, account details, and private links; use fictional data. Capture date: record it. Note: the admin path may change.)*
+
+19. **Build or revise the main menu.** For each item, enter a clear customer-facing label, select the intended Shopify resource where possible, avoid manually pasting an internal admin URL, confirm the destination, arrange the order, save, and test the link. Labels should be short, concrete, consistent, distinct, and written in customer language. Avoid "Click Here," "More," "Stuff," internal project names, duplicate Shop links, raw URLs, and extremely long labels. *Why it matters:* this provides deliberate main-menu links in a deliberate order. *Done when:* the main menu contains deliberate links in a deliberate order.
+    `[ADD OFFICIAL SHOPIFY EDIT-MENU LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional main-menu editor with all domains, internal URLs, store identifiers, and account details hidden]` *(Locate: the main-menu editor. Hide: all domains, internal URLs, store identifiers, and account details; use fictional data. Capture date: record it. Note: the interface may change.)*
+
+20. **Create dropdown navigation only where useful.** Dropdowns group related child links under a parent; the theme determines how dropdowns appear; excessive nesting can be difficult to use; the parent item might itself be clickable depending on configuration and theme; mobile presentation can differ from desktop; and footer menus might not support dropdown nesting. Use a parent label that describes the group, keep child labels concrete, test parent and child links, test mobile opening and closing behavior, avoid deeply nested structures, and avoid an empty parent that behaves unexpectedly. *Why it matters:* this helps organize related links where a dropdown improves clarity. *Done when:* dropdowns exist only where they improve the clarity of the hierarchy.
+    `[ADD OFFICIAL SHOPIFY DROPDOWN-MENU LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+    `[INSERT SCREENSHOT — fictional dropdown-menu hierarchy with all store identifiers and destinations redacted]` *(Locate: the dropdown-menu hierarchy. Hide: all store identifiers and destinations; use fictional data. Capture date: record it. Note: theme dropdown behavior may change.)*
+
+21. **Build or revise the footer menu.** The footer is appropriate for secondary information such as Contact, About, FAQ where it exists, Policies after Chapter 10, accessibility information where applicable, account links where appropriate, and other secondary pages. Do not create fake policy links or placeholder pages that appear finished. Footer nesting support can differ and currently might be limited. *Why it matters:* this provides secondary navigation to existing or clearly deferred destinations. *Done when:* the footer menu contains only existing or clearly deferred destinations.
+    `[INSERT SCREENSHOT — fictional footer-menu editor with policy placeholders clearly marked as not yet complete]` *(Locate: the footer-menu editor. Mark: policy placeholders as not yet complete; hide store identifiers; use fictional data. Capture date: record it. Note: footer nesting support may change.)*
+
+22. **Use direct product links selectively.** A main or promotional menu can link directly to a product when it is a primary offer, a one-product business, a time-specific featured destination, or the direct link serves a clear navigation purpose. Do not link every product directly from the main menu; collections are generally more maintainable for product groups. *Why it matters:* this determines when a direct product link is appropriate. *Done when:* direct product links are used only where deliberately justified.
+
+23. **Keep collection names and menu labels aligned.** A collection title and menu label can differ (the menu label can be shorter), but the relationship must still be understandable. Do not use a menu label that implies a broader or different catalog than the destination contains, and avoid several menu items pointing to the same destination without a reason. *Why it matters:* this helps keep menu labels aligned with their destinations. *Done when:* every menu label accurately describes its destination.
+
+24. **Review URL and redirect implications.** Product, collection, and page URLs can have handles; changing a published handle can affect existing links; Shopify can support redirects for changed URLs; internal admin URLs should never be used as customer menu destinations; deleted resources can affect linked menu items; and you should not change established handles casually. Do not configure a large redirect project. *Why it matters:* this helps identify URL changes that may require a redirect. *Done when:* you have recorded any URL change requiring a redirect or further review.
+    `[ADD OFFICIAL SHOPIFY URL-REDIRECT LINK]` · `[VERIFY CURRENT SHOPIFY SETTING]`
+
+25. **Perform a navigation-depth walkthrough.** There is no universal "three-click rule." Instead, for each starting product, begin at the homepage and record which top-level menu item is used, which dropdown or collection is selected, whether the product is visible, the number of navigation actions required, whether any label was unclear, whether you had to backtrack, whether search was required, and whether the product could not be reached. Fewer steps can be useful, but the correct depth depends on catalog size and structure; a short path with vague labels can be worse than a slightly longer clear path; the goal is understandable navigation, not an arbitrary click-count guarantee. *Why it matters:* this provides a documented path from the homepage to each product. *Done when:* every intended starting product has a documented path from the homepage.
+
+26. **Review desktop navigation.** Check the main-menu order, dropdown behavior, link destinations, collection titles, collection product membership, empty states, duplicate links, truncated labels, hover or click behavior, footer links, external links, and current-page indication where supported. Do not redesign the theme. *Why it matters:* this helps identify desktop navigation issues. *Done when:* desktop navigation issues are recorded.
+
+27. **Review mobile navigation.** Check that the menu opens and closes, top-level labels are readable, dropdowns expand, parent and child links behave as expected, labels do not wrap confusingly, products and collections can be reached, footer links are usable, no menu item is hidden behind another interface element, and back navigation remains understandable. *Why it matters:* this helps identify mobile navigation issues. *Done when:* mobile-specific issues are recorded.
+    `[INSERT SCREENSHOT — fictional mobile menu with store identity, account information, domains, and private links hidden]` *(Locate: the mobile menu. Hide: store identity, account information, domains, and private links; use fictional data. Capture date: record it. Note: theme mobile behavior may change.)*
+
+28. **Review broken, empty, and unavailable destinations.** Test every link and record any broken destination, empty collection, collection with unavailable products, Draft product linked publicly, archived product, placeholder page, external link error, duplicate destination, incorrect collection, wrong menu label, missing footer destination, and other. Saving a menu does not by itself establish that all links work. *Why it matters:* this helps identify broken, empty, unavailable, or placeholder destinations. *Done when:* every menu item has been opened and its destination reviewed.
+
+29. **Record deferred navigation work.** Record — but do not complete: policy links (after Chapter 10), full customer-path testing (Chapter 11), launch review (Chapter 12), advanced filters, search configuration, product recommendations, homepage merchandising, theme redesign, localization, international navigation, customer-account customization, blog strategy, and large redirect migration. *Why it matters:* this records deferred navigation work without expanding Chapter 9. *Done when:* deferred work is documented without expanding Chapter 9.
+
+30. **Make the collection and navigation decision.** Answer: Does each starting product belong to the correct collection? Are manual and smart collections behaving as intended? Does every main-menu label describe its destination? Can every starting product be reached from the homepage? Are desktop and mobile navigation usable? Are policy links correctly deferred? Are material blockers recorded? *Why it matters:* this informs whether the current structure is ready for policy work and later full testing. *Done when:* you can state whether the current structure is ready for policy work and later full testing.
+
+### Real example: Lucid Creations
+
+Lucid Creations is the Shopify product-store branch under Auralis Digital. A known catalog structure has top-level groups **Lucid Creations**, **Commissions**, and **RJ Print**, with Lucid Creations containing Hoodies & Sweatshirts, T-Shirts, Blankets, Tapestries, Hats, Pillows, Journals & Paper Goods, Accessories, Wall Art, Best Sellers, and Sacred Geometry Art. A known navigation structure is Home, Shop → Lucid Creations, Shop dropdown categories, Commissions, RJ Print, and Contact. RJ Print remains a separate 3D-printing branch; Commissions remain separate from ordinary POD categories; customer-facing handmade copy should lead with "Wire Wraps" rather than overusing "Custom Work"; POD and handmade products can share the store but require accurate grouping and descriptions; Best Sellers must not contain invented performance claims or products selected without a valid rule; Sacred Geometry Art can overlap other product types, so its collection logic must be deliberate; and a product can belong to more than one collection. Do not assume the current menu or collection state without evidence.
+
+`[INSERT LUCID CREATIONS COLLECTION AND NAVIGATION EXAMPLE]` — current collection titles; which collections are manual or smart; exact smart-collection conditions; current product membership; empty or overlapping collections; current sorting; current collection images and descriptions; current collection availability; current main-menu and footer-menu hierarchy; current dropdown behavior; current desktop and mobile behavior; broken or unclear links; what was confusing during setup; and which information must be redacted from screenshots.
+
+### Common mistake
+
+Creating many collections and menu links before deciding how the customer should understand the catalog. This can produce duplicate categories, empty collections, overlapping destinations, vague labels, smart conditions that include the wrong products, collections that exist but are not linked, menu links to unavailable resources, excessive dropdown nesting, different mobile and desktop behavior, and internal organizational language exposed to customers.
+
+**Instead:** create the smallest useful structure, test each destination, and expand only when the catalog requires it.
+
+### Reality check
+
+A collection is not useful merely because it exists, and a menu item is not useful merely because it was saved. The products, collection rules, labels, destinations, and storefront behavior must agree.
+
+### Checklist
+
+- [ ] I reviewed the starting product set.
+- [ ] I created a small customer-understandable collection plan.
+- [ ] I distinguished categories, types, vendors, tags, collections, and menu labels.
+- [ ] I chose Manual or Smart for each collection.
+- [ ] Each collection has a concrete title.
+- [ ] Each collection description is factual.
+- [ ] Collection images are authorized or intentionally omitted.
+- [ ] Manual collections contain the intended products.
+- [ ] Smart-collection rules were tested.
+- [ ] I tested products that should and should not match.
+- [ ] I reviewed whole-product versus variant behavior.
+- [ ] Collection sorting is deliberate.
+- [ ] Collection availability is deliberate.
+- [ ] Empty and duplicate collections were reviewed.
+- [ ] I created a written main-menu hierarchy.
+- [ ] Main-menu labels are concrete.
+- [ ] Dropdowns are used only where useful.
+- [ ] Footer links are deliberate.
+- [ ] Direct product links are used selectively.
+- [ ] Menu labels describe their destinations.
+- [ ] URL changes and redirect needs are recorded.
+- [ ] Every starting product has a documented homepage path.
+- [ ] Desktop navigation was reviewed.
+- [ ] Mobile navigation was reviewed.
+- [ ] Every menu link was opened and tested.
+- [ ] Broken, empty, unavailable, and placeholder destinations were recorded.
+- [ ] Policies remain deferred to Chapter 10.
+- [ ] Full customer-journey testing remains deferred to Chapter 11.
+- [ ] Launch remains deferred to Chapter 12.
+
+### Before you continue
+
+- [ ] Did I complete this step?
+- [ ] Can a customer understand the main product groups?
+- [ ] Can every starting product be reached without guessing?
+
+### Tools and official links
+
+- Worksheet: **Collection and Navigation Map** (below)
+- **Collections:** `[ADD OFFICIAL SHOPIFY COLLECTIONS OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY COLLECTION-TYPES LINK]` · `[ADD OFFICIAL SHOPIFY CREATE-COLLECTION LINK]` · `[ADD OFFICIAL SHOPIFY MANUAL-COLLECTION LINK]` · `[ADD OFFICIAL SHOPIFY SMART-COLLECTION LINK]` · `[ADD OFFICIAL SHOPIFY SMART-COLLECTION-CONDITIONS LINK]` · `[ADD OFFICIAL SHOPIFY COLLECTION-SORTING LINK]` · `[ADD OFFICIAL SHOPIFY COLLECTION-AVAILABILITY LINK]` · `[ADD OFFICIAL SHOPIFY COLLECTION-IMAGE LINK]`
+- **Navigation:** `[ADD OFFICIAL SHOPIFY MENUS OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY UNDERSTANDING-MENUS LINK]` · `[ADD OFFICIAL SHOPIFY EDIT-MENU LINK]` · `[ADD OFFICIAL SHOPIFY DROPDOWN-MENU LINK]` · `[ADD OFFICIAL SHOPIFY THEME-MENU LINK]` · `[ADD OFFICIAL SHOPIFY URL-REDIRECT LINK]`
+
+<!-- PAGE BREAK -->
+
+### Worksheet — Collection and Navigation Map
+
+Use this worksheet to plan and review your collections and navigation. It works printed or on a screen.
+
+> ⚠ Do not record customer information, order information, private supplier details, account identifiers, internal admin URLs, private domains, access credentials, residential addresses, or confidential catalog rules on this worksheet.
+
+**Starting-product map**
+
+| Product | Product type | Status | Intended collection | Direct menu link? | Blocker |
+|---|---|---|---|:---:|---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Collection plan**
+
+| Collection title | Customer purpose | Manual or Smart | Membership rule | Sort method | Channel availability | Menu link planned? | Blocker |
+|---|---|:---:|---|---|---|:---:|---|
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+
+**Smart-collection condition register**
+
+| Collection | Condition field | Operator | Value | All or Any? | Expected included | Expected excluded | Actual result | Correction needed? |
+|---|---|---|---|:---:|---|---|---|:---:|
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+
+**Manual-collection register**
+
+| Collection | Included products | Product status reviewed? | Availability reviewed? | Maintainer | Update trigger | Blocker |
+|---|---|:---:|:---:|---|---|---|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Collection-quality review**
+
+- Title concrete? Yes / No
+- Description factual? Yes / No
+- Image authorized? Yes / No / None
+- Empty collection? Yes / No
+- Duplicate collection? Yes / No
+- Overlap intentional? Yes / No
+- Sorting deliberate? Yes / No
+- Availability deliberate? Yes / No
+- Mobile reviewed? Yes / No
+- Desktop reviewed? Yes / No
+
+**Main-menu hierarchy**
+
+| Level | Menu label | Destination type | Destination | Parent item | Order | Tested? | Blocker |
+|---|---|---|---|---|:---:|:---:|---|
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+
+**Footer-menu hierarchy**
+
+| Menu label | Destination | Exists now? | Deferred chapter | Tested? | Blocker |
+|---|---|:---:|---|:---:|---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Product-path test**
+
+| Starting product | Homepage entry | Next destination | Collection | Reached? | Nav actions | Unclear label? | Backtracking? | Correction |
+|---|---|---|---|:---:|:---:|:---:|:---:|---|
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+
+**Desktop / mobile review**
+
+| Check | Desktop result | Mobile result | Issue | Next action |
+|---|---|---|---|---|
+| Main menu opens |  |  |  |  |
+| Dropdown opens |  |  |  |  |
+| Parent link works |  |  |  |  |
+| Child links work |  |  |  |  |
+| Collection loads |  |  |  |  |
+| Product reachable |  |  |  |  |
+| Labels readable |  |  |  |  |
+| Footer links work |  |  |  |  |
+| External links work |  |  |  |  |
+| Back navigation understandable |  |  |  |  |
+
+**Broken-link and blocker register**
+
+| Issue | Menu or collection | Destination | Severity | Owner | Next action | Resolved? |
+|---|---|---|:---:|---|---|:---:|
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |
+
+**Deferred-work register**
+
+- [ ] Policies — Chapter 10
+- [ ] Full customer-journey test — Chapter 11
+- [ ] Launch review — Chapter 12
+- [ ] Advanced filtering
+- [ ] Search configuration
+- [ ] Product recommendations
+- [ ] Homepage merchandising
+- [ ] Theme redesign
+- [ ] Localization
+- [ ] Large redirect migration
+
+**Final organization decision**
+
+- Every starting product is assigned correctly: Yes / No
+- Every starting product can be reached from the homepage: Yes / No
+- Desktop and mobile navigation were reviewed: Yes / No
+- The current structure is ready for Chapter 10 policy work: Yes / No
+- The main unresolved organization blocker is: _______________________________________________
+
+<!-- PAGE BREAK -->
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -1750,7 +2081,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The guide is sold as a digital product (PDF) to individual buyers.
 - Lucid Creations is an active Shopify store under Auralis Digital selling print-on-demand products; handmade products and commissions may be added later.
 - The reader has a computer and can sign up for Shopify on their own.
-- Front matter, the table of contents, Chapters 1 through 8, and their worksheets are the only drafted sections. Chapters 9–12 and the remaining worksheets are pending approval to continue.
+- Front matter, the table of contents, Chapters 1 through 9, and their worksheets are the only drafted sections. Chapters 10–12 and the remaining worksheets are pending approval to continue.
 
 ### Missing information
 
@@ -1763,6 +2094,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official Shopify links for Chapter 6, left as placeholders rather than invented: `[ADD OFFICIAL SHOPIFY PAYMENTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-AVAILABILITY LINK]`, `[ADD OFFICIAL SHOPIFY COUNTRY-REQUIREMENTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY SHOPIFY-PAYMENTS SETUP LINK]`, `[ADD OFFICIAL SHOPIFY SECURITY LINK]`, `[ADD OFFICIAL SHOPIFY PAYOUTS LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENT-CAPTURE LINK]`, `[ADD OFFICIAL SHOPIFY CHECKOUT-SETTINGS LINK]`, `[ADD OFFICIAL SHOPIFY TEST-ORDER LINK]`, `[ADD OFFICIAL SHOPIFY PAYMENTS-TEST-MODE LINK]`, `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]`.
 - Official links for Chapter 7, left as placeholders rather than invented — Shopify: `[ADD OFFICIAL SHOPIFY FULFILLMENT OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY FULFILLMENT-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY SELF-FULFILLMENT LINK]`, `[ADD OFFICIAL SHOPIFY APP-FULFILLMENT LINK]`, `[ADD OFFICIAL SHOPIFY DIGITAL-PRODUCT LINK]`; Printify: `[ADD OFFICIAL PRINTIFY SHOPIFY-INTEGRATION LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-FLOW LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-APPROVAL LINK]`, `[ADD OFFICIAL PRINTIFY CHARGES LINK]`, `[ADD OFFICIAL PRINTIFY ORDER-STATUS LINK]`, `[ADD OFFICIAL PRINTIFY TRACKING LINK]`, `[ADD OFFICIAL PRINTIFY SHIPPING-SETUP LINK]`.
 - Official links for Chapter 8, left as placeholders rather than invented — Shopify: `[ADD OFFICIAL SHOPIFY PRODUCTS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY ADD-PRODUCT LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-DETAILS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-DESCRIPTION LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-STATUS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-PUBLISHING LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-MEDIA LINK]`, `[ADD OFFICIAL SHOPIFY ALT-TEXT LINK]`, `[ADD OFFICIAL SHOPIFY FILE-SAFETY LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-PRICING LINK]`, `[ADD OFFICIAL SHOPIFY COMPARE-AT-PRICE LINK]`, `[ADD OFFICIAL SHOPIFY SKU LINK]`, `[ADD OFFICIAL SHOPIFY BARCODE LINK]`, `[ADD OFFICIAL SHOPIFY VARIANTS LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-SETUP LINK]`, `[ADD OFFICIAL SHOPIFY OUT-OF-STOCK LINK]`, `[ADD OFFICIAL SHOPIFY INVENTORY-LOCATIONS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-CATEGORY LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-TYPE LINK]`, `[ADD OFFICIAL SHOPIFY TAGS LINK]`, `[ADD OFFICIAL SHOPIFY PRODUCT-SEO LINK]`, `[ADD OFFICIAL SHOPIFY CUSTOMS-PRODUCT-INFORMATION LINK]`; Printify: `[ADD OFFICIAL PRINTIFY PUBLISH-PRODUCT LINK]`, `[ADD OFFICIAL PRINTIFY EDIT-PUBLISHED-PRODUCT LINK]`, `[ADD OFFICIAL PRINTIFY PRODUCT-SYNC LINK]`.
+- Official Shopify links for Chapter 9, left as placeholders rather than invented — collections: `[ADD OFFICIAL SHOPIFY COLLECTIONS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-TYPES LINK]`, `[ADD OFFICIAL SHOPIFY CREATE-COLLECTION LINK]`, `[ADD OFFICIAL SHOPIFY MANUAL-COLLECTION LINK]`, `[ADD OFFICIAL SHOPIFY SMART-COLLECTION LINK]`, `[ADD OFFICIAL SHOPIFY SMART-COLLECTION-CONDITIONS LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-SORTING LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-AVAILABILITY LINK]`, `[ADD OFFICIAL SHOPIFY COLLECTION-IMAGE LINK]`; navigation: `[ADD OFFICIAL SHOPIFY MENUS OVERVIEW LINK]`, `[ADD OFFICIAL SHOPIFY UNDERSTANDING-MENUS LINK]`, `[ADD OFFICIAL SHOPIFY EDIT-MENU LINK]`, `[ADD OFFICIAL SHOPIFY DROPDOWN-MENU LINK]`, `[ADD OFFICIAL SHOPIFY THEME-MENU LINK]`, `[ADD OFFICIAL SHOPIFY URL-REDIRECT LINK]`.
 
 ### Lucid Creations examples needed
 
@@ -1774,6 +2106,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 6: which payment provider Lucid Creations uses and why, which verification steps were required, whether setup was delayed, which checkout fields are required, whether guest checkout is allowed, whether payments capture automatically, which test method was used, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS PAYMENTS AND CHECKOUT EXAMPLE]`). Do not invent the provider, payment methods, bank, payout currency, payout timing, processing rates, transaction fees, plan, verification status, account representative, business type, tax details, test-order result, or real checkout settings.
 - Chapter 7: which products Printify fulfills, which are self-fulfilled, whether digital/service products are sold, the current Printify order-approval setting, who checks POD orders, who pays production charges, how handmade inventory is tracked, how mixed orders are communicated, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS FULFILLMENT AND DELIVERY EXAMPLE]`). Do not invent the current Printify approval setting, production provider, linked funding method, shipping/production/delivery times, tracking/failure/return rates, current inventory or locations, order history, customer information, or existing exception process. RJ Print is a separate 3D-printing branch and must not be presented as part of Lucid Creations' standard Printify workflow.
 - Chapter 8: which first products to show, which are POD/handmade/commissions, current titles/descriptions, actual materials/dimensions/media types, current variants, current prices/costs, SKU convention, inventory rules, fulfillment locations/apps, shipping requirements/weights, vendor/tag conventions, current product status, and current channel availability (placeholder `[INSERT LUCID CREATIONS FIRST PRODUCT BUILD EXAMPLE]`). Do not invent prices, costs, margins, materials, dimensions, weights, inventory, SKUs, barcodes, HS codes, countries of origin, the current Printify provider/sync status, channel availability, product status, product photography, mockup approval, alt text, reviews, sales/conversion data, search rankings, or product claims. POD items must not be described as handmade by Lucid Creations; handmade pieces must not be presented as standardized POD inventory; wire wraps are the first handmade category referenced; RJ Print stays separate.
+- Chapter 9: current collection titles, which are manual or smart, exact smart-collection conditions, current membership, empty/overlapping collections, sorting, images/descriptions, availability, current main-menu and footer-menu hierarchy, dropdown behavior, desktop/mobile behavior, and broken/unclear links (placeholder `[INSERT LUCID CREATIONS COLLECTION AND NAVIGATION EXAMPLE]`). Do not assume the current menu or collection state without evidence; do not invent collection conditions, membership, sorting, availability, or performance data. Best Sellers must not contain invented performance claims or products selected without a valid rule; Sacred Geometry Art can overlap other types (deliberate logic required); RJ Print stays a separate branch; Commissions stay separate from POD categories; handmade copy leads with "Wire Wraps."
 
 ### Screenshots needed
 
@@ -1825,6 +2158,19 @@ This note lists what the draft assumes and what it still needs. It is for the in
   - `[INSERT SCREENSHOT — customer-facing fictional product page with no private store, supplier, or account information]`
   - `[INSERT SCREENSHOT — Printify-created fictional product record with provider, account, funding, and store information hidden]`
 - Chapter 8 product/supplier/pricing/cost/SKU/barcode/inventory/location/provider/account/financial redaction rules: no real product prices, costs, margins, SKUs, barcodes, quantities, inventory locations, supplier or provider credentials, account identifiers, funding details, customer data, or internal Shopify/Printify URLs may appear anywhere in the guide, worksheet, screenshots, or repository. All product facts (materials, dimensions, weights, origin, HS codes, media) must be real-verified before publication or shown as placeholders — never invented. Collections and navigation are deferred to Chapter 9; policies to Chapter 10; the full customer-journey test to Chapter 11; launch to Chapter 12.
+- Required Chapter 9 screenshots (each caption must state what to locate, which details to hide, that all product names/collection conditions/prices/inventory data/tags/vendors/domains/URLs/suppliers/account identifiers/customer data/order data/private operational information must be fictional/blank/fully redacted, the capture date, and that Shopify admin paths, collection terminology, condition behavior, menus, themes, dropdowns, publishing, and storefront display can change):
+  - `[INSERT SCREENSHOT — fictional collection editor with product, store, supplier, and account information hidden]`
+  - `[INSERT SCREENSHOT — fictional collection image area with no private files, metadata, supplier, or account information]`
+  - `[INSERT SCREENSHOT — fictional smart-collection conditions and matching products with all product values and store identifiers redacted]`
+  - `[INSERT SCREENSHOT — fictional collection sort and sales-channel availability settings with all store information hidden]`
+  - `[INSERT SCREENSHOT — Shopify menu-management overview with store names, domains, account details, and private links hidden]`
+  - `[INSERT SCREENSHOT — fictional main-menu editor with all domains, internal URLs, store identifiers, and account details hidden]`
+  - `[INSERT SCREENSHOT — fictional dropdown-menu hierarchy with all store identifiers and destinations redacted]`
+  - `[INSERT SCREENSHOT — fictional footer-menu editor with policy placeholders clearly marked as not yet complete]`
+  - `[INSERT SCREENSHOT — fictional desktop storefront navigation with no private store or account information]`
+  - `[INSERT SCREENSHOT — fictional mobile menu with store identity, account information, domains, and private links hidden]`
+  - `[INSERT SCREENSHOT — fictional collection storefront page with product facts and store identifiers redacted]`
+- Chapter 9 product/collection/tag/vendor/price/inventory/URL/domain/account/customer/order/operational redaction rules: no real product names, collection conditions, prices, inventory data, tags, vendors, domains, internal admin URLs, account identifiers, customer data, order data, or private operational information may appear anywhere in the guide, worksheet, screenshots, or repository. Policies are deferred to Chapter 10; the full customer-journey test to Chapter 11; launch to Chapter 12.
 
 ### Claims and links to verify
 
@@ -1837,6 +2183,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 5 states these concepts as current and each must be re-verified against the Shopify Help Center before publication: Shopify separates the store/account email from the customer-facing sender email; the sender email is used for outgoing customer notifications and receives contact-form submissions; store contact details and the store address may appear publicly (storefront, policy pages, customer/marketing emails, packing slips, order documents); a customer-contact phone number may be optional; themes generally provide a built-in contact form applied to a page or page template; and a created Contact page must still be added to navigation later (Chapter 9). Verify exact field names, the store-email vs. sender-email wording, and current contact-form behavior.
 - Chapter 6 states these concepts as current and each must be re-verified (country-specifically where relevant) before publication: payment methods are managed from Shopify's Payments settings; customers can use only payment methods the merchant activates; Shopify Payments availability and requirements depend on country/region; Shopify Payments requires two-step authentication; activation can require identity, business, and banking verification; test mode and the Bogus Gateway can simulate transactions without capturing real payments; a paid plan is generally required to test a payment gateway; customers cannot place normal live orders while a provider is in test mode; test orders and simulated transactions do not appear in payouts or reports; test mode must be turned off after testing; real payment tests can incur processor fees, some of which may not be returned after a refund; and checkout customer-information fields are configurable but exact options/labels can change. Do NOT publish fees, payout timing, plan limits, trial terms, card rates, transaction charges, or provider availability without current country-specific verification. Verify Shopify Payments regional eligibility, payment-vs-payout wording, two-step-auth requirement, checkout customer-information options, payment-capture behavior, test-mode behavior, Bogus Gateway availability, the paid-plan testing requirement, test-order payout/report exclusion, and the real-transaction fee warning.
 - Chapter 7 states these concepts as current and each must be re-verified before publication. Shopify: fulfillment is preparing/packing/delivering an order after it is placed; a merchant can fulfill personally or use a third-party service; a location can be a physical place or a fulfillment app; inventory can be tracked separately across locations and apps; orders can be divided between locations; tracking can be added when an order is fulfilled; digital products and services should not require physical shipping; a digital-download product generally needs an app or delivery system; automatic fulfillment should not be enabled without understanding the consequences. Printify: it is one fulfillment option (not the default); orders from a connected Shopify store can be imported; imported orders are submitted to production per the merchant's Printify order-approval settings; Printify offers manual or automatic order-submission timing (exact options must be reverified); the merchant is charged for production and shipping when an order is submitted to production; the Shopify customer payment and the Printify production charge are separate transactions; tracking can sync back after shipment when available; some Print Providers or shipping methods might not provide tracking; multiple providers can create separate shipments and tracking numbers; a Shopify fulfillment-request action can affect the Printify workflow and must not be done casually. Verify the fulfillment-vs-shipping distinction, location/inventory behavior, self-fulfillment steps, digital-delivery requirement, the Printify customer-payment-vs-production-payment distinction, order-import behavior, approval-setting options, tracking behavior, and split-shipment behavior. Do NOT publish shipping rates, production times, delivery times, fees, or plan requirements without verification. Printify must be presented as one option, never as hands-off, risk-free, or automatic in every circumstance.
+- Chapter 9 states these concepts as current and each must be re-verified before publication: Shopify supports manual collections and smart collections; a manual collection contains deliberately selected products; a smart collection uses conditions to include matching products automatically; smart conditions can evaluate product information such as title, type, vendor, category, tags, price, weight, and inventory where supported; conditions can use "all" or "any" logic where supported; tags used in conditions need consistent spelling/formatting; a collection includes complete products rather than selected variants, though variant information can still affect whether a whole product matches; collections can have titles, descriptions, images, product sorting, sales-channel availability, and search-listing information; a collection can exist without being linked in navigation; a menu item is a link to a destination (product, collection, page, blog, policy, account page, or external site); stores commonly include a main menu and footer menu; dropdown menus group nested links under a parent; footer menus might not support dropdown nesting; menu rendering depends on the theme; a resource generally must exist before a valid menu link to it can be created; deleting or changing linked resources can affect menu links; changing a published URL can require a redirect; and navigation should be tested on desktop and mobile. Current navigation management appears under Content → Menus (verify). Verify manual-vs-smart terminology, condition/operator behavior, all-vs-any logic, whole-product-vs-variant behavior, tag-condition behavior, sorting options, collection/menu availability interaction, theme dropdown/footer behavior, URL/redirect behavior, and any current plan requirements or system limits. Do NOT hard-code current collection, condition, nesting, or menu limits without verification, do not assume creating a collection adds it to a menu, and do not assume a menu link makes an unavailable collection publicly visible.
 - Chapter 8 states these concepts as current and each must be re-verified before publication: a Shopify product requires at least a title and price; other details (description, media, category, type, vendor, tags, variants, inventory, shipping information, search-engine information) can be added; with no variants, price/inventory/shipping can be managed at the product level; when variants are added, relevant price/inventory/shipping/SKU/barcode/location details are generally managed per variant; variants represent combinations of customer-selectable options; product media can include images, videos, and 3D models where supported, and the first media item generally acts as the featured media; alt text describes media for assistive technology and when media cannot load and should be concise (record Shopify's current alt-text length guidance here — approximately 125 characters recommended, up to 512 allowed as of the check — but do NOT hard-code it in the customer-facing chapter unless reverified immediately before publication); a SKU is an internal identifier distinct from a barcode and is optional but should be unique when used; inventory is generally tracked at the variant and location level; a product's physical-shipping requirement affects checkout and fulfillment; weight can affect shipping calculations but does not configure the rate itself; product status and channel availability determine whether/where a product appears (states can include Active, Draft, Archived, and — in some workflows — Unlisted, to be verified); and a Printify-published product can be created/synchronized through the app but the merchant must still review the resulting Shopify record. Verify product/variant field behavior, product-status and channel-availability behavior, current variant and media limits, product-category/taxonomy behavior, alt-text guidance and limits, inventory and location behavior, app-managed product synchronization behavior, and Printify publishing/synchronization behavior. Do NOT publish product/media/variant/file/import limits, prices, costs, margins, or plan requirements without current verification, and do not assume every plan/theme/channel/app/region has identical product behavior or that fields appear in the same order with and without variants.
 
 ### Interface verification
@@ -1846,7 +2193,8 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 6 concepts (Payments-settings management; country/region-dependent Shopify Payments availability and requirements; two-step-authentication requirement; test mode and Bogus Gateway simulating transactions without capturing real payments; test mode disabling normal live orders and needing to be turned off afterward; test orders excluded from payouts/reports; paid plan required to test a gateway; configurable checkout customer-information fields; real test transactions incurring possibly non-refundable fees) were checked against the Shopify Help Center on **2026-07-17** (source: Shopify Help Center, "Test Shopify Payments," `help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments`). Availability, requirements, supported methods, and payout rules are country- or region-dependent; re-verify country-specifically before publishing and update this date. All exact paths, field names, provider labels, fees, payout timing, plan details, and links in Chapter 6 remain placeholders pending verification.
 - Chapter 7 concepts were checked on **2026-07-17** against Shopify Help Center — "Fulfilling orders" (`help.shopify.com/en/manual/fulfillment/fulfilling-orders`), "Setting up locations" (`help.shopify.com/en/manual/fulfillment/setup/locations/setting-up-locations`), and "Selling services or digital products" (`help.shopify.com/en/manual/products/digital-service-product/selling-services-or-digital-products`) — and Printify Help Center — "Store details and order-approval settings" (`help.printify.com/hc/en-us/articles/4483625253265`) and "Check the status of an order" (`help.printify.com/hc/en-us/articles/4483625414673`). Fulfillment-app behavior, carrier/tracking availability, production timing, delivery timing, approval options, and charge timing are variable; re-verify against current Shopify and Printify documentation before publishing and update this date. All exact paths, field names, statuses, approval options, tracking behavior, fees, times, and links in Chapter 7 remain placeholders pending verification.
 - Chapter 8 concepts were checked on **2026-07-17** against Shopify Help Center — "Products" (`help.shopify.com/en/manual/products`), "Product details" (`help.shopify.com/en/manual/products/details`), "SKU" (`help.shopify.com/en/manual/products/details/sku`), "Product media" (`help.shopify.com/en/manual/products/product-media`), "Add alt text" (`help.shopify.com/en/manual/products/product-media/add-alt-text`), "Variants" (`help.shopify.com/en/manual/products/variants`), "Inventory setup" (`help.shopify.com/en/manual/products/inventory/setup`), and "Add and update products" (`help.shopify.com/en/manual/products/add-update-products`). Alt-text length guidance noted at check: approximately 125 characters recommended, up to 512 allowed — reverify before publication and do not hard-code in the customer-facing chapter until confirmed. Product-status options (Active/Draft/Archived, and Unlisted in some workflows), variant/media limits, category/taxonomy behavior, inventory/location behavior, and app-managed/Printify synchronization behavior can change; re-verify before publishing and update this date. All exact paths, field names, statuses, options, limits, and links in Chapter 8 remain placeholders pending verification.
+- Chapter 9 concepts were checked on **2026-07-18** against Shopify Help Center — "Collections" (`help.shopify.com/en/manual/products/collections`), "Automated collections / conditions" (`help.shopify.com/en/manual/products/collections/automated-collections/auto-create`), "Understanding navigation" (`help.shopify.com/en/manual/online-store/menus-and-links/understanding-navigation`), and "Menus and links" (`help.shopify.com/en/manual/online-store/menus-and-links`). Manual/smart terminology, condition behavior, whole-product-vs-variant matching, sorting options, collection/menu availability interaction, theme dropdown and footer behavior (footer menus might not support dropdown nesting), the Content → Menus admin path, URL/redirect behavior, and plan eligibility can change; re-verify before publishing and update this date. All exact paths, collection-type labels, condition operators, menu terminology, limits, and links in Chapter 9 remain placeholders pending verification.
 
 ### Scope check
 
-This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run. Chapter 8 creates one to five accurate product records — title, description, media, alt text, price, cost, compare-at, variants, SKU/barcode, inventory/location, shipping requirement, weight, origin/HS, fulfillment assignment, category/type/vendor/tags, product-SEO review, status, and channel availability — previews them as a customer, and records blockers, with Printify presented as one product-creation route among several. It does not drift into collections or navigation (Chapter 9), detailed shipping rates/zones/profiles/dimensions/carriers, tax setup or advice, policy/return/refund drafting (Chapter 10), full catalog migration or bulk CSV, detailed SEO/keyword research/ranking claims, theme redesign/coding/metafields/metaobjects/Functions, Printify design/provider/pricing comparison, wholesale, Amazon/Walmart/eBay, medical/crystal-healing/environmental/profit/margin claims, the full test order (Chapter 11), or launch (Chapter 12). Printify remains one of five fulfillment options and one product-creation route among several, not the default. No chapters beyond Chapter 8 were added. Recommended status for this pass: review Chapter 8, then approve to continue to Chapter 9.
+This draft stays within the locked scope. Chapter 1 decides what to sell; Chapter 2 defines one starting customer and a one-sentence offer; Chapter 3 chooses a usable store name with a preliminary availability check; Chapter 4 creates the store, configures core defaults (currency, time zone, units), secures the account, reviews the plan/billing boundary, and records later tasks; Chapter 5 reviews business and contact information, distinguishes the email roles, creates basic Contact and About pages, tests the contact path, and protects private information. Chapter 6 selects and activates an eligible payment provider, distinguishes customer payments from merchant payouts, reviews checkout and order-processing settings, safely simulates payments in test mode, turns test mode off, and records blockers. Chapter 7 assigns every product to one of five fulfillment paths, maps responsibility for each fulfillment step, identifies locations/inventory ownership, chooses order-review timing, plans self-fulfilled/POD/digital/service/mixed delivery, documents an exception process, and performs a paper dry run. Chapter 8 creates one to five accurate product records — title, description, media, alt text, price, cost, compare-at, variants, SKU/barcode, inventory/location, shipping requirement, weight, origin/HS, fulfillment assignment, category/type/vendor/tags, product-SEO review, status, and channel availability — previews them as a customer, and records blockers, with Printify presented as one product-creation route among several. It does not drift into collections or navigation (Chapter 9), detailed shipping rates/zones/profiles/dimensions/carriers, tax setup or advice, policy/return/refund drafting (Chapter 10), full catalog migration or bulk CSV, detailed SEO/keyword research/ranking claims, theme redesign/coding/metafields/metaobjects/Functions, Printify design/provider/pricing comparison, wholesale, Amazon/Walmart/eBay, medical/crystal-healing/environmental/profit/margin claims, the full test order (Chapter 11), or launch (Chapter 12). Printify remains one of five fulfillment options and one product-creation route among several, not the default. Chapter 9 groups the initial products into a small manual/smart collection structure, reviews collection names/descriptions/images/sorting/availability, builds or revises the main and footer menus (with dropdowns only where useful), tests every link and desktop/mobile navigation, and records blockers — without drifting into policy drafting (Chapter 10), homepage or theme redesign, custom Liquid/metafields/metaobjects, Search & Discovery or advanced filters, product recommendations, detailed SEO/keyword/ranking claims, blog strategy, localization/markets/international navigation, domain setup, checkout/taxes/shipping rates, product creation/editing, Printify setup, the full customer-journey test (Chapter 11), or launch (Chapter 12). No chapters beyond Chapter 9 were added. Recommended status for this pass: review Chapter 9, then approve to continue to Chapter 10.
