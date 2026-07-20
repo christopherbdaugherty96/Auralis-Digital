@@ -671,6 +671,10 @@ Your store name is the first thing most customers see, and it appears everywhere
 
 5. **Run a basic availability check.** This is a preliminary check, not legal clearance. Check Shopify store-name availability during account setup; a basic web search; domain availability; major social-platform username availability where relevant; your state business-name search as an informational check; and the USPTO trademark search as an informational check for obviously conflicting names. Do not try to interpret legal or trademark results — just note any conflicts. *Why it matters:* finding a clash now is far cheaper than after you launch. *Done when:* you have checked your top candidates and noted any obvious conflicts.
 
+   Use the SBA state selector to locate the appropriate state agency, then search that agency’s official business registry.
+
+   Search Shopify for domain availability. A domain being available does not establish that the business name or trademark is legally available.
+
 6. **Choose one preferred name and two backups.** Pick your first choice, plus backup 1 and backup 2. Make the backups genuinely usable names — not slight misspellings of your first choice. *Why it matters:* if your first choice is taken or conflicts, you want real alternatives ready. *Done when:* you have three names ranked.
 
 7. **Write the name exactly as it should appear.** Lock the capitalization, spacing, punctuation, and singular-or-plural form. *Why it matters:* consistency across Shopify, your domain, email, social profiles, invoices, and future materials keeps you looking professional and findable. *Done when:* you have the exact written form of your name. (You will connect the domain and email in later steps — not here.)
@@ -3639,7 +3643,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The full-book finalization pass is in progress.
 - Visual QA is pending.
 - Real screenshots are pending.
-- Official URLs are pending.
+- Official URLs were verified and inserted on 2026-07-20; pre-publication link re-verification remains pending.
 - The Auralis Digital service URL is pending.
 - Real Lucid Creations examples are pending.
 - Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list and the optional "How to Use Claude Code or Codex With This Guide" section; the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
@@ -3651,6 +3655,100 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official platform links (Shopify Help Center, Printify, USPTO, the SBA state-registry directory, and Shopify domain search) were verified against current official pages on 2026-07-20 and inserted throughout Chapters 1–12 as labeled hyperlinks (217 occurrences). The generic "what to sell / unique selling proposition / brand name" link resolves to a different Shopify blog article for Chapters 1, 2, and 3. No URLs were invented; the full occurrence-level mapping is retained in the finalization working notes. Re-verify all links before publication in case pages move.
 - Chapter 12 still needs Lucid Creations' actual launch status, actual domain, actual payment live state, actual product/publication state, actual fulfillment safeguards, actual first-order workflow, actual basic analytics, and actual launch issues, plus the actual Auralis Digital service URL (`[INSERT AURALIS DIGITAL SERVICE LINK]`), the final copyright year, and the final last-updated date. Do not invent any of these.
 - The Codex and Claude Code setup links were resolved to the current OpenAI and Anthropic getting-started pages and inserted as hyperlinks; the installation methods remain to be confirmed (`[VERIFY CURRENT CODEX INSTALLATION METHOD]`, `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`). No specific tool prices, confirmed free-tier availability, or fixed plan requirements are stated. Current pricing, plan availability, installation methods, and account requirements must be verified before publication.
+
+### Official link verification record
+
+The following 87 distinct official targets were verified against current official pages on 2026-07-20. The occurrence-level external mapping (217 placements) remains the source for all placements; this table records the distinct page titles and URLs as approved. Re-verify each link before publication in case pages move.
+
+| Source | Official page title | Full URL | Verified date |
+| --- | --- | --- | --- |
+| Shopify | Account security best practices | https://help.shopify.com/en/manual/privacy-and-security/account-security/account-security-best-practices | 2026-07-20 |
+| Shopify | Activating a payment gateway in test mode | https://help.shopify.com/en/manual/checkout-settings/test-orders/payments-test-mode | 2026-07-20 |
+| Shopify | Add a Contact Us page to your store | https://help.shopify.com/en/manual/online-store/themes/customizing-themes/common-customizations/add-contact-page | 2026-07-20 |
+| Shopify | Add alt text | https://help.shopify.com/en/manual/products/product-media/add-alt-text | 2026-07-20 |
+| Shopify | Add and update products | https://help.shopify.com/en/manual/products/add-update-products | 2026-07-20 |
+| Shopify | Add drop-down menus | https://help.shopify.com/en/manual/online-store/menus-and-links/drop-down-menus | 2026-07-20 |
+| Shopify | Add, edit, or delete pages | https://help.shopify.com/en/manual/online-store/pages | 2026-07-20 |
+| Shopify | Adding a domain to Shopify | https://help.shopify.com/en/manual/domains/add-a-domain | 2026-07-20 |
+| Shopify | Adding store policies | https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos | 2026-07-20 |
+| Shopify | Analytics | https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/overview-dashboard | 2026-07-20 |
+| Shopify | Analytics discrepancies | https://help.shopify.com/en/manual/reports-and-analytics/discrepancies | 2026-07-20 |
+| Shopify | Automated (smart) collections | https://help.shopify.com/en/manual/products/collections/automated-collections/auto-create | 2026-07-20 |
+| Shopify | Buy a Domain Name — Shopify | https://www.shopify.com/domains | 2026-07-20 |
+| Shopify | Canceling orders | https://help.shopify.com/en/manual/fulfillment/managing-orders/canceling-orders | 2026-07-20 |
+| Shopify | Change how products are ordered in a collection | https://help.shopify.com/en/manual/products/collections/order-products-in-a-collection | 2026-07-20 |
+| Shopify | Changing the domain type and target | https://help.shopify.com/en/manual/domains/domain-type | 2026-07-20 |
+| Shopify | Checkout settings | https://help.shopify.com/en/manual/checkout-settings | 2026-07-20 |
+| Shopify | Choosing the right plan | https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/choosing-a-plan | 2026-07-20 |
+| Shopify | Collections | https://help.shopify.com/en/manual/products/collections | 2026-07-20 |
+| Shopify | Configuring customer privacy settings | https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings | 2026-07-20 |
+| Shopify | Configuring Shopify Payments | https://help.shopify.com/en/manual/payments/shopify-payments/configuring-shopify-payments | 2026-07-20 |
+| Shopify | Consumer protection laws | https://help.shopify.com/en/manual/compliance/legal/consumer-protection | 2026-07-20 |
+| Shopify | Creating and managing URL redirects | https://help.shopify.com/en/manual/online-store/menus-and-links/url-redirect | 2026-07-20 |
+| Shopify | Domains | https://help.shopify.com/en/manual/domains | 2026-07-20 |
+| Shopify | Fraud analysis | https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis | 2026-07-20 |
+| Shopify | Fulfilling orders | https://help.shopify.com/en/manual/fulfillment/fulfilling-orders | 2026-07-20 |
+| Shopify | Fulfillment | https://help.shopify.com/en/manual/fulfillment | 2026-07-20 |
+| Shopify | Fulfillment setup | https://help.shopify.com/en/manual/fulfillment/setup | 2026-07-20 |
+| Shopify | General checklist for starting a new Shopify store | https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/new-to-shopify-checklists/general-checklist | 2026-07-20 |
+| Shopify | How To Name Your Brand: Types of Names and How To Choose One | https://www.shopify.com/blog/how-to-name-your-brand | 2026-07-20 |
+| Shopify | Introduction to Shopify — initial setup | https://help.shopify.com/en/manual/intro-to-shopify/initial-setup | 2026-07-20 |
+| Shopify | Live View | https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/live-view | 2026-07-20 |
+| Shopify | Manage store details | https://help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details | 2026-07-20 |
+| Shopify | Managing customer privacy settings | https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings | 2026-07-20 |
+| Shopify | Managing inventory across locations | https://help.shopify.com/en/manual/products/inventory/manage-inventory-locations | 2026-07-20 |
+| Shopify | Managing orders | https://help.shopify.com/en/manual/fulfillment/managing-orders | 2026-07-20 |
+| Shopify | Manual collections | https://help.shopify.com/en/manual/products/collections/manual-shopify-collections | 2026-07-20 |
+| Shopify | Menus and links | https://help.shopify.com/en/manual/online-store/menus-and-links | 2026-07-20 |
+| Shopify | Password page | https://help.shopify.com/en/manual/online-store/themes/password-page | 2026-07-20 |
+| Shopify | Payment authorization and capture | https://help.shopify.com/en/manual/payments/payment-authorization | 2026-07-20 |
+| Shopify | Payments | https://help.shopify.com/en/manual/payments | 2026-07-20 |
+| Shopify | Placing a test order | https://help.shopify.com/en/manual/checkout-settings/test-orders | 2026-07-20 |
+| Shopify | Preparing your store for launch | https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-prepare-for-launch | 2026-07-20 |
+| Shopify | Privacy | https://help.shopify.com/en/manual/privacy-and-security/privacy | 2026-07-20 |
+| Shopify | Processing a test order | https://help.shopify.com/en/manual/checkout-settings/test-orders/processing-test-order | 2026-07-20 |
+| Shopify | Product category | https://help.shopify.com/en/manual/products/details/product-category | 2026-07-20 |
+| Shopify | Product details | https://help.shopify.com/en/manual/products/details | 2026-07-20 |
+| Shopify | Product media | https://help.shopify.com/en/manual/products/product-media | 2026-07-20 |
+| Shopify | Products | https://help.shopify.com/en/manual/products | 2026-07-20 |
+| Shopify | Recover abandoned checkouts | https://help.shopify.com/en/manual/orders/abandoned-checkouts | 2026-07-20 |
+| Shopify | Search engine optimization (SEO) | https://help.shopify.com/en/manual/promoting-marketing/seo | 2026-07-20 |
+| Shopify | Securing your account with two-step authentication | https://help.shopify.com/en/manual/your-account/logging-in/two-step-authentication | 2026-07-20 |
+| Shopify | Selling services or digital products | https://help.shopify.com/en/manual/products/digital-service-product/selling-services-or-digital-products | 2026-07-20 |
+| Shopify | Set up inventory tracking | https://help.shopify.com/en/manual/products/inventory/setup | 2026-07-20 |
+| Shopify | Set up return rules | https://help.shopify.com/en/manual/orders/refunds-returns/return-rules | 2026-07-20 |
+| Shopify | Set up your business settings | https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings | 2026-07-20 |
+| Shopify | Setting up customer notifications | https://help.shopify.com/en/manual/fulfillment/setup/notifications/customer-notifications | 2026-07-20 |
+| Shopify | Setting up locations | https://help.shopify.com/en/manual/fulfillment/setup/locations/setting-up-locations | 2026-07-20 |
+| Shopify | Setting up new order email notifications | https://help.shopify.com/en/manual/fulfillment/setup/notifications/order-notifications | 2026-07-20 |
+| Shopify | Setting up your email | https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-your-email | 2026-07-20 |
+| Shopify | Shopify Help Center — contact support | https://help.shopify.com/en/support | 2026-07-20 |
+| Shopify | Shopify Payments | https://help.shopify.com/en/manual/payments/shopify-payments | 2026-07-20 |
+| Shopify | Shopify Payments payouts | https://help.shopify.com/en/manual/payments/shopify-payments/payouts | 2026-07-20 |
+| Shopify | Shopify Payments requirements | https://help.shopify.com/en/manual/payments/shopify-payments/requirements | 2026-07-20 |
+| Shopify | Shopify pricing | https://www.shopify.com/pricing | 2026-07-20 |
+| Shopify | SKU (stock keeping unit) | https://help.shopify.com/en/manual/products/details/sku | 2026-07-20 |
+| Shopify | Testing Shopify Payments | https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments | 2026-07-20 |
+| Shopify | Understanding navigation | https://help.shopify.com/en/manual/online-store/menus-and-links/understanding-navigation | 2026-07-20 |
+| Shopify | Unique Selling Proposition: How to Write One | https://www.shopify.com/blog/unique-selling-proposition | 2026-07-20 |
+| Shopify | Uploading and managing files | https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads | 2026-07-20 |
+| Shopify | Using a fulfillment service | https://help.shopify.com/en/manual/fulfillment/fulfillment-services | 2026-07-20 |
+| Shopify | Variants | https://help.shopify.com/en/manual/products/variants | 2026-07-20 |
+| Shopify | What To Sell on Shopify: 18 Profitable Ideas | https://www.shopify.com/blog/12-things-to-sell-on-shopify-other-than-products | 2026-07-20 |
+| Printify | How can I check the status of an order? | https://help.printify.com/hc/en-us/articles/4483625414673-How-can-I-check-the-status-of-an-order | 2026-07-20 |
+| Printify | How can I connect my Shopify store? | https://help.printify.com/hc/en-us/articles/4483630095505-How-can-I-connect-my-Shopify-store | 2026-07-20 |
+| Printify | How can I create a product with Printify? | https://help.printify.com/hc/en-us/articles/4483644382865-How-can-I-create-a-product-with-Printify | 2026-07-20 |
+| Printify | How can I edit an existing product? | https://help.printify.com/hc/en-us/articles/4483630354961-How-can-I-edit-an-existing-product | 2026-07-20 |
+| Printify | How do I set up shipping with Shopify? | https://help.printify.com/hc/en-us/articles/19421332555665-How-do-I-set-up-shipping-with-Shopify | 2026-07-20 |
+| Printify | How do I set up store details and order approval settings? | https://help.printify.com/hc/en-us/articles/4483625253265-How-do-I-set-up-store-details-and-order-approval-settings | 2026-07-20 |
+| Printify | How do I use selective publishing on my sales channels? | https://help.printify.com/hc/en-us/articles/4483629961489-How-do-I-use-selective-publishing-on-my-sales-channels | 2026-07-20 |
+| Printify | How will Printify charge me? | https://help.printify.com/hc/en-us/articles/4483626302609-How-will-Printify-charge-me | 2026-07-20 |
+| Printify | What does the status of my order mean? | https://help.printify.com/hc/en-us/articles/15076632315665-What-does-the-status-of-my-order-mean | 2026-07-20 |
+| Printify | What happens when an order comes in? | https://help.printify.com/hc/en-us/articles/4483638068241-What-happens-when-an-order-comes-in | 2026-07-20 |
+| OpenAI | Get started with Codex | https://openai.com/codex/get-started/ | 2026-07-20 |
+| Anthropic | Set up Claude Code | https://docs.anthropic.com/en/docs/claude-code/getting-started | 2026-07-20 |
+| USPTO | Search our trademark database | https://www.uspto.gov/trademarks/search | 2026-07-20 |
+| SBA | Register your business (SBA) | https://www.sba.gov/business-guide/launch-your-business/register-your-business | 2026-07-20 |
 
 ### Lucid Creations examples needed
 
