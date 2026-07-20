@@ -103,7 +103,7 @@ Before you start, here is a quick, scannable list of what you actually need — 
 ### Recommended
 
 - **Shopify mobile app** — *Recommended.* Lets you monitor and manage products, orders, and notifications from a phone (merchant administration). It complements, but does not replace, building on a computer. Cost: free option may be available. When: once the store exists.
-- **Custom domain** — *Recommended.* A branded web address. Shopify already gives you a working store address without one, so this is not required for a first functional store. Cost: paid plan may be required. When: when you want a branded address.
+- **Custom domain** — *Recommended.* A branded web address. Shopify already gives you a working store address without one, so this is not required for a first functional store. Cost: an additional domain-registration or renewal cost may apply. When: when you want a branded address.
 - **Canva** — *Recommended.* Helps you make product graphics, banners, and simple branding images. Cost: free option may be available. When: when preparing product images or branding.
 - **Google Drive (or another organized cloud-storage system)** — *Recommended.* Keeps product notes, images, worksheets, and backups organized in one place. Cost: free option may be available. When: from the start, for organization and backups.
 - **Password manager** — *Recommended.* Helps you keep store, email, provider, and domain logins secure. Cost: free option may be available. When: as soon as you create accounts.
@@ -360,7 +360,7 @@ Use fictional or redacted information in prompts and screenshots.
 
 **The core rule: one authoritative source, one CANONICAL project order, one active task, and one explicit stop condition.**
 
-A separate companion guide covers the advanced AI workflow — a fuller prompt library, review methods, and record-keeping — for readers who want to go further. For this guide, the steps above are enough.
+A planned separate companion guide will cover the advanced AI workflow — including a fuller prompt library, review methods, and record-keeping — for readers who want to go further. For this guide, the steps above are enough.
 
 ## A Note About Shopify Interface Changes
 
@@ -3677,7 +3677,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The reader has a computer and can sign up for Shopify on their own.
 - Chapters 1 through 12 and all worksheets are drafted.
 - The guide is not publication-ready.
-- Full-book finalization is pending.
+- The full-book finalization pass is in progress.
 - Visual QA is pending.
 - Real screenshots are pending.
 - Official URLs are pending.
@@ -3701,7 +3701,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official Shopify links for Chapter 11 remain placeholders rather than invented: test orders, processing a test order, payment test mode, Shopify Payments testing, Bogus Gateway, order processing, customer/staff notifications, inventory effects, fulfillment, order status, cancellation/refund/deletion, abandoned checkout, and launch checklist.
 - Official Shopify links for Chapter 12 remain placeholders rather than invented: prepare for launch, general launch checklist, remove password, plan and launch, account security, payment live mode, payment settings, domains overview, connect domain, primary domain, URL redirect, managing orders, fraud analysis, analytics overview, Live View, report discrepancies, and support.
 - Chapter 12 still needs Lucid Creations' actual launch status, actual domain, actual payment live state, actual product/publication state, actual fulfillment safeguards, actual first-order workflow, actual basic analytics, and actual launch issues, plus the actual Auralis Digital service URL (`[INSERT AURALIS DIGITAL SERVICE LINK]`), the final copyright year, and the final last-updated date. Do not invent any of these.
-- The Codex and Claude Code setup links and installation methods remain placeholders (`[ADD OFFICIAL OPENAI CODEX SETUP LINK]`, `[ADD OFFICIAL CLAUDE CODE SETUP LINK]`, `[VERIFY CURRENT CODEX INSTALLATION METHOD]`, `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`). No tool pricing, plan availability, or free tier is stated; all must be verified before publication.
+- The Codex and Claude Code setup links and installation methods remain placeholders (`[ADD OFFICIAL OPENAI CODEX SETUP LINK]`, `[ADD OFFICIAL CLAUDE CODE SETUP LINK]`, `[VERIFY CURRENT CODEX INSTALLATION METHOD]`, `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`). No specific tool prices, confirmed free-tier availability, or fixed plan requirements are stated. Current pricing, plan availability, installation methods, and account requirements must be verified before publication.
 
 ### Lucid Creations examples needed
 
