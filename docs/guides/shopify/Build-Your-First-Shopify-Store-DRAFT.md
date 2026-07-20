@@ -2850,7 +2850,7 @@ A successful test order is evidence for one tested scenario. It does not establi
 
 `[ADD OFFICIAL SHOPIFY TEST-ORDERS OVERVIEW LINK]` · `[ADD OFFICIAL SHOPIFY PROCESS-TEST-ORDER LINK]` · `[ADD OFFICIAL SHOPIFY PAYMENT-TEST-MODE LINK]` · `[ADD OFFICIAL SHOPIFY PAYMENTS-TESTING LINK]` · `[ADD OFFICIAL SHOPIFY BOGUS-GATEWAY LINK]` · `[ADD OFFICIAL SHOPIFY ORDER-PROCESSING LINK]` · `[ADD OFFICIAL SHOPIFY NOTIFICATIONS LINK]` · `[ADD OFFICIAL SHOPIFY STAFF-NOTIFICATIONS LINK]` · `[ADD OFFICIAL SHOPIFY INVENTORY-TEST LINK]` · `[ADD OFFICIAL SHOPIFY FULFILLMENT LINK]` · `[ADD OFFICIAL SHOPIFY ORDER-STATUS LINK]` · `[ADD OFFICIAL SHOPIFY CANCEL-REFUND-DELETE LINK]` · `[ADD OFFICIAL SHOPIFY ABANDONED-CHECKOUT LINK]` · `[ADD OFFICIAL SHOPIFY LAUNCH-CHECKLIST LINK]`
 
-### Worksheet: Pre-Launch Store Test
+### Worksheet — Pre-Launch Store Test
 
 > **Privacy warning:** Do not record real customer information, real payment information, reusable test credentials, private order-status links, residential addresses, access credentials, provider credentials, internal admin URLs, analytics identifiers, tax identifiers, or confidential operational information on this worksheet.
 
