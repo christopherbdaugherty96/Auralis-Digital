@@ -1,8 +1,8 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter + TOC + Chapters 1-12 + their worksheets + reviewer note. All twelve chapters and their worksheets are drafted.
-Full-book finalization remains pending; the guide is NOT publication-ready. The mandatory next phase is the separate full-book finalization pass.
+Draft status: front matter (incl. Quick Start + optional AI-assistant sections) + TOC + Chapters 1-12 + their worksheets + reviewer note. All twelve chapters and their worksheets are drafted.
+The full-book finalization pass is IN PROGRESS; the guide is NOT publication-ready.
 -->
 
 # Build Your First Shopify Store
@@ -69,11 +69,11 @@ To keep this guide focused and finishable, it deliberately leaves some things ou
 - Social-media strategy or content.
 - Email marketing.
 - Graphic design or Canva.
-- GitHub, software development, or automation.
+- Software development, Git or GitHub administration, custom coding, or automation.
 - Selling on Amazon, Etsy, or other marketplaces.
 - Advanced analytics or large-scale business growth.
 
-These are real and important topics. They are simply not what this guide is for. Where one of them touches your store setup, the guide will mention it briefly and point you to an official source or a future guide, instead of turning a short note into a full lesson.
+These are real and important topics. They are simply not what this guide is for. Where one of them touches your store setup, the guide will mention it briefly and point you to an official source or a future guide, instead of turning a short note into a full lesson. This guide does include one brief, optional introduction to using Claude Code or Codex to organize, inspect, draft, and review your project files — but not software development, Git or GitHub administration, custom coding, or automation.
 
 The scope rule for this entire guide is one sentence: **This guide gets your store live.**
 
@@ -88,6 +88,279 @@ Work through the chapters in order. Each one builds on the one before it.
 - Fill in the worksheets. They turn ideas into decisions you can act on.
 
 You do not have to complete the whole guide in one sitting. You do need to complete each chapter fully before you rely on the next one.
+
+## What You Need—and What You Do Not Need Yet
+
+Before you start, here is a quick, scannable list of what you actually need — and what you can add later. The rule for this whole list: **do not buy or install a tool until you can identify the specific job it needs to perform.** Each item shows a status, a one-line purpose, whether it can add a cost, and when to consider it. Prices change, so confirm current pricing yourself before buying anything.
+
+### Required now
+
+- **Shopify** — *Required now.* The platform that runs your storefront, products, checkout, orders, and store administration. Cost: paid plan may be required. When: before you begin building.
+- **An email account you control** — *Required now.* Used for your store account, notifications, and support messages; a paid business-domain email can be added later. Cost: free option may be available. When: before you create the store.
+- **Computer with a reliable internet connection** — *Required now.* The main tool for building and configuring the store. Cost: no additional paid tool necessarily required. When: before you begin.
+- **Payment setup** — *Required before accepting online payments.* Activating Shopify Payments or another eligible provider so customers can pay. You can create and configure the store first, and some manual-payment or nonstandard business models differ. Cost: cost depends on selected provider or plan. When: before your store accepts live payments.
+
+### Recommended
+
+- **Shopify mobile app** — *Recommended.* Lets you monitor and manage products, orders, and notifications from a phone (merchant administration). It complements, but does not replace, building on a computer. Cost: free option may be available. When: once the store exists.
+- **Custom domain** — *Recommended.* A branded web address. Shopify already gives you a working store address without one, so this is not required for a first functional store. Cost: paid plan may be required. When: when you want a branded address.
+- **Canva** — *Recommended.* Helps you make product graphics, banners, and simple branding images. Cost: free option may be available. When: when preparing product images or branding.
+- **Google Drive (or another organized cloud-storage system)** — *Recommended.* Keeps product notes, images, worksheets, and backups organized in one place. Cost: free option may be available. When: from the start, for organization and backups.
+- **Password manager** — *Recommended.* Helps you keep store, email, provider, and domain logins secure. Cost: free option may be available. When: as soon as you create accounts.
+- **Authenticator app** — *Recommended.* Supports two-step authentication on important accounts. Cost: no additional paid tool necessarily required. When: when you set up account security.
+
+### Only if your business needs it
+
+- **Printify** — *Only if your business needs it.* Creates and fulfills print-on-demand products and connects with Shopify. Only relevant if you sell print-on-demand. Cost: cost depends on selected provider or plan. When: only if you sell POD.
+- **Digital-delivery app** — *Only if your business needs it.* Sends files or downloads after purchase. Only for digital products. Cost: paid plan may be required. When: only if you sell digital downloads.
+- **Booking or appointment app** — *Only if your business needs it.* Handles appointments or service bookings. Only for services. Cost: paid plan may be required. When: only if you sell services.
+- **Subscription app** — *Only if your business needs it.* Manages recurring product or service billing. Only for subscriptions. Cost: paid plan may be required. When: only if you sell subscriptions.
+- **Additional shipping or tracking tools** — *Only if your business needs it.* Extra shipping or tracking features beyond Shopify's built-in setup. Cost: cost depends on selected provider or plan. When: only if your shipping needs go beyond the basics.
+
+### Optional AI and project workflow
+
+- **ChatGPT** — *Optional or later.* Can help you plan, track decisions, write task briefs, and compare AI reports. Cost: free option may be available. When: optional, if you want AI planning help.
+- **Codex** — *Optional or later.* An AI coding agent that can read, organize, draft, and review project files. Cost: paid plan may be required. When: optional, advanced.
+- **Claude Code** — *Optional or later.* An AI coding agent that can draft, edit, review, and audit project files. Cost: paid plan may be required. When: optional, advanced.
+- **GitHub** — *Optional or later.* Stores project files and version history and supports file review. It is not a Shopify requirement. Cost: free option may be available. When: optional, if you want version history and review.
+- **Lovable** — *Optional or later.* An AI builder for full applications. Not required for a standard Shopify storefront; consider it only for a separate application, custom interface, or project outside Shopify's normal store-building tools. Cost: paid plan may be required. When: only for projects outside a standard Shopify store.
+
+### Optional marketing and sales channels
+
+These are later tools, not steps this guide teaches. Marketing strategy is outside the scope of this guide.
+
+- **Shop app / Shop sales channel** — *Optional or later.* Shopify's customer-facing shopping and order-tracking experience. Cost: no additional paid tool necessarily required. When: optional, after core setup.
+- **Instagram, Facebook, and Meta Business Suite** — *Optional or later.* Places to share content and manage a business presence together. This guide does not teach social-media strategy. Cost: free option may be available. When: optional, when you plan marketing.
+- **Google & YouTube Shopify app and Google Merchant Center** — *Optional or later.* Connect eligible products to Google's shopping surfaces; approval and visibility follow Google's own requirements. Cost: no additional paid tool necessarily required. When: optional, after core setup.
+- **Pinterest, TikTok, and YouTube** — *Optional or later.* Additional places to share product and brand content. Cost: free option may be available. When: optional, depending on your marketing plan.
+- **Optional video-creation or YouTube tools** — *Optional or later.* Tools for making or editing short videos, depending on your marketing plan. Cost: cost depends on selected provider or plan. When: optional, if video is part of your marketing.
+
+> **Tools used in the Auralis Digital workflow:** Auralis Digital uses Shopify, Printify, ChatGPT, Codex, Claude Code, GitHub, Canva, Google services, and selected social platforms to plan, build, review, document, and market its projects. You do not need the entire stack to complete this guide. Start with the tools required for your business model and add others only when they solve a defined need.
+
+## Optional: How to Use Claude Code or Codex With This Guide
+
+This section is optional. You can build and launch a Shopify store using this guide without any AI tools. If you do want help, Claude Code and Codex are AI assistants that can help you organize, draft, inspect, and review the files for your store project. They do not replace your judgment, current official information, or your control over live business actions. This guide does not teach coding, Git or GitHub administration, or automation — only how to point one of these tools at your project and work with it safely.
+
+### What these tools can help with
+
+Claude Code or Codex can help you:
+
+- Read and organize project files
+- Draft product information
+- Review documents
+- Create checklists
+- Identify missing information
+- Compare versions
+- Check whether unrelated content changed
+- Help troubleshoot technical problems
+- Prepare proposed changes for your review
+
+ChatGPT can help you:
+
+- Maintain the larger project plan
+- Build prompts and task briefs
+- Track decisions
+- Compare reports from different AI tools
+- Turn review findings into the next instruction
+
+You do not need both. Neither is required to build a Shopify store, and one coding agent is enough. These subscriptions are optional, not required Shopify expenses. You remain responsible for approving anything that touches a live account, money, customers, publishing, payments, domains, or fulfillment.
+
+### A simple five-step workflow
+
+1. **Create and organize the project folder.** Put your notes, approved descriptions, store plans, worksheets, images, CSV files, policy drafts, and AI handoff notes inside it. Do not put passwords or customer records in this folder. Then open it in Claude Code or Codex; installation methods and plans change, so use the current official instructions: `[ADD OFFICIAL OPENAI CODEX SETUP LINK]`, `[ADD OFFICIAL CLAUDE CODE SETUP LINK]`, `[VERIFY CURRENT CODEX INSTALLATION METHOD]`, and `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`.
+2. **Define the authoritative source and CANONICAL Project Order.** Decide which file or system holds the approved truth, and write down the project's canonical order — the human-approved sequence and current state — so the AI follows your order instead of guessing what comes next (see "Use a CANONICAL Project Order" below).
+3. **Ask Claude Code or Codex to inspect before editing.** Tell it which file is authoritative and ask it to inspect and summarize before changing anything.
+4. **Send the result for an independent AI review.** You can have one tool draft and the other review, use one tool for both stages with a separate review prompt, or use ChatGPT to reconcile the reports. The pattern — create, then review independently, then you approve — matters more than which tool does which part.
+5. **Approve consequential actions yourself.** You decide what publishes, changes the live store, removes password protection, activates payments, modifies a domain, spends money, triggers fulfillment, sends customer communication, changes inventory, or commits and uploads work.
+
+### Use a CANONICAL Project Order
+
+CANONICAL means the human-approved order and current truth of the project. When you give the AI a canonical order, it follows your sequence instead of guessing what comes next, reopening finished work, or skipping ahead. Fill one in and keep it with your project:
+
+```text
+CANONICAL PROJECT ORDER
+
+Project:
+[PROJECT NAME]
+
+Current phase:
+[CURRENT PHASE]
+
+Authoritative source:
+[FILE, DOCUMENT, OR SYSTEM THAT CONTAINS THE APPROVED TRUTH]
+
+Completed and locked:
+1. [COMPLETED ITEM]
+2. [COMPLETED ITEM]
+
+Active task:
+1. [CURRENT TASK]
+
+Next allowed task:
+1. [WHAT COMES NEXT AFTER APPROVAL]
+
+Deferred:
+1. [WORK THAT MUST NOT START YET]
+2. [WORK RESERVED FOR A LATER PHASE]
+
+Do not:
+- Reopen completed work without evidence of a defect
+- Skip ahead
+- Perform deferred work
+- Change the authoritative source indirectly
+- Publish, launch, purchase, commit, push, or modify an external system without approval
+
+Stop condition:
+[EXACT POINT WHERE THE AI MUST STOP]
+```
+
+If the AI thinks the canonical order is wrong, it may say so — but it must not silently change the order. It should report the conflict and wait for your decision.
+
+### Prompts you can reuse
+
+**Starting inspection prompt:**
+
+```text
+Review this project before making any changes.
+
+My objective:
+[DESCRIBE THE SHOPIFY TASK]
+
+Source of truth:
+[NAME THE AUTHORITATIVE FILE]
+
+First:
+1. Read the relevant files.
+2. Summarize what is already complete.
+3. Identify missing information.
+4. Identify anything that needs current official verification.
+5. Propose the next actions.
+
+Do not:
+- Invent business facts
+- Change Shopify
+- Publish products
+- Spend money
+- Change payment settings
+- Change domains
+- Trigger fulfillment
+- Commit, push, or upload anything
+
+Stop after the review.
+```
+
+**Independent-review prompt (for the second AI):**
+
+```text
+Independently review this work.
+
+Do not assume the first AI is correct.
+
+Check for:
+- Invented facts
+- Missing requirements
+- Contradictions
+- Changes to approved content
+- Privacy risks
+- Unsupported Shopify claims
+- Scope drift
+
+Return:
+1. What passed
+2. Required corrections
+3. Questions requiring my decision
+
+Do not make external changes.
+```
+
+**Reusable handoff template:**
+
+```text
+PROJECT:
+[PROJECT NAME]
+
+OBJECTIVE:
+[EXACT RESULT]
+
+CURRENT STATE:
+[WHAT IS ALREADY COMPLETE]
+
+SOURCE OF TRUTH:
+[AUTHORITATIVE FILE OR RECORD]
+
+CANONICAL ORDER:
+[PASTE THE APPROVED PROJECT ORDER]
+
+CURRENT POSITION:
+[STATE WHICH STEP IS ACTIVE]
+
+LOCKED WORK:
+[STATE WHAT MUST NOT BE REWRITTEN]
+
+NEXT ALLOWED ACTION:
+[STATE WHAT MAY HAPPEN AFTER THIS TASK PASSES]
+
+FACTS TO PRESERVE:
+- [FACT]
+- [FACT]
+
+DO NOT:
+- Invent information
+- Change unrelated work
+- Modify external systems
+
+TASK:
+[EXACT WORK REQUESTED]
+
+VERIFY:
+- Files changed
+- Missing information
+- Unsupported claims
+- Privacy exposure
+- Unrelated changes
+
+STOP:
+Prepare the work and report the results. Do not publish, launch,
+purchase, fulfill, commit, push, or modify an external account.
+```
+
+### Never give an AI
+
+- Passwords
+- Recovery codes
+- Payment credentials
+- Bank or payout details
+- Customer records
+- Identity documents
+- Private Shopify admin links
+- Reusable checkout or order-status links
+- API secrets
+- Provider credentials
+- Domain verification secrets
+
+Use fictional or redacted information in prompts and screenshots.
+
+### Before accepting AI work
+
+- Did it read the correct source?
+- Did it invent facts?
+- Did it change unrelated content?
+- Are Shopify claims current?
+- Is private information exposed?
+- Did another review identify problems?
+- Can the change be reversed?
+- Has the AI stopped before external action?
+- Does the result match the actual business?
+
+### A few habits that help
+
+- Ask the AI to list exactly which files or sections it changed, compare the result with your approved version, and verify the required text or structure directly. Do not accept work only because the AI says it finished.
+- Choose one authoritative source. When one file is generated from another, edit the source and regenerate the output rather than keeping two separate versions by hand.
+- AI conversations can lose or compress earlier context. Keep important facts, decisions, constraints, and approved instructions in your project files or a written task brief rather than relying only on the AI's memory.
+
+**The core rule: one authoritative source, one CANONICAL project order, one active task, and one explicit stop condition.**
+
+A separate companion guide covers the advanced AI workflow — a fuller prompt library, review methods, and record-keeping — for readers who want to go further. For this guide, the steps above are enough.
 
 ## A Note About Shopify Interface Changes
 
@@ -107,6 +380,8 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 - What You Will Have at the End
 - What This Guide Does Not Cover
 - How to Use This Guide
+- What You Need—and What You Do Not Need Yet
+- Optional: How to Use Claude Code or Codex With This Guide
 - A Note About Shopify Interface Changes
 
 **Chapters**
@@ -145,7 +420,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** This file contains all front matter, the table of contents, Chapters 1–12, and their worksheets. All chapters are drafted; full-book finalization remains pending and the guide is not yet publication-ready.
+> **Draft status:** All twelve chapters and their worksheets are drafted, plus the Quick Start and optional AI-assistant front-matter sections. The full-book finalization pass is in progress; the guide is not yet publication-ready.
 
 <!-- PAGE BREAK -->
 
@@ -3408,6 +3683,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official URLs are pending.
 - The Auralis Digital service URL is pending.
 - Real Lucid Creations examples are pending.
+- Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list and the optional "How to Use Claude Code or Codex With This Guide" section; the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
 
 ### Missing information
 
@@ -3425,6 +3701,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official Shopify links for Chapter 11 remain placeholders rather than invented: test orders, processing a test order, payment test mode, Shopify Payments testing, Bogus Gateway, order processing, customer/staff notifications, inventory effects, fulfillment, order status, cancellation/refund/deletion, abandoned checkout, and launch checklist.
 - Official Shopify links for Chapter 12 remain placeholders rather than invented: prepare for launch, general launch checklist, remove password, plan and launch, account security, payment live mode, payment settings, domains overview, connect domain, primary domain, URL redirect, managing orders, fraud analysis, analytics overview, Live View, report discrepancies, and support.
 - Chapter 12 still needs Lucid Creations' actual launch status, actual domain, actual payment live state, actual product/publication state, actual fulfillment safeguards, actual first-order workflow, actual basic analytics, and actual launch issues, plus the actual Auralis Digital service URL (`[INSERT AURALIS DIGITAL SERVICE LINK]`), the final copyright year, and the final last-updated date. Do not invent any of these.
+- The Codex and Claude Code setup links and installation methods remain placeholders (`[ADD OFFICIAL OPENAI CODEX SETUP LINK]`, `[ADD OFFICIAL CLAUDE CODE SETUP LINK]`, `[VERIFY CURRENT CODEX INSTALLATION METHOD]`, `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`). No tool pricing, plan availability, or free tier is stated; all must be verified before publication.
 
 ### Lucid Creations examples needed
 
@@ -3571,6 +3848,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapter 8 states these concepts as current and each must be re-verified before publication: a Shopify product requires at least a title and price; other details (description, media, category, type, vendor, tags, variants, inventory, shipping information, search-engine information) can be added; with no variants, price/inventory/shipping can be managed at the product level; when variants are added, relevant price/inventory/shipping/SKU/barcode/location details are generally managed per variant; variants represent combinations of customer-selectable options; product media can include images, videos, and 3D models where supported, and the first media item generally acts as the featured media; alt text describes media for assistive technology and when media cannot load and should be concise (record Shopify's current alt-text length guidance here — approximately 125 characters recommended, up to 512 allowed as of the check — but do NOT hard-code it in the customer-facing chapter unless reverified immediately before publication); a SKU is an internal identifier distinct from a barcode and is optional but should be unique when used; inventory is generally tracked at the variant and location level; a product's physical-shipping requirement affects checkout and fulfillment; weight can affect shipping calculations but does not configure the rate itself; product status and channel availability determine whether/where a product appears (states can include Active, Draft, Archived, and — in some workflows — Unlisted, to be verified); and a Printify-published product can be created/synchronized through the app but the merchant must still review the resulting Shopify record. Verify product/variant field behavior, product-status and channel-availability behavior, current variant and media limits, product-category/taxonomy behavior, alt-text guidance and limits, inventory and location behavior, app-managed product synchronization behavior, and Printify publishing/synchronization behavior. Do NOT publish product/media/variant/file/import limits, prices, costs, margins, or plan requirements without current verification, and do not assume every plan/theme/channel/app/region has identical product behavior or that fields appear in the same order with and without variants.
 - Chapter 11 states these concepts as current, and each must be re-verified from current official Shopify documentation before publication: Shopify test-order methods; Shopify Payments test mode; the Bogus Gateway; third-party gateway test modes; the separation of simulated tests from deliberately authorized real-payment tests; possible nonrefundable real-transaction fees; live-customer effects while test mode is active; automatic fulfillment and provider-trigger risks; shipping-label purchase risks; customer and staff notification behavior; inventory effects; fulfillment assignment; order-status behavior; cancellation, refund, and deletion limitations; abandoned-checkout behavior; and payment-method and regional limitations. These details must be reverified from current official Shopify documentation before publication.
 - Chapter 12 states these concepts as current, and each must be re-verified from current official Shopify documentation before publication: launch preparation; password and public-access behavior; the plan requirement that can apply before removing password protection during a trial; the payment live state; domain connection; primary-domain behavior; redirect behavior; analytics availability; analytics delays and discrepancies; the effect of merchant and test traffic; fraud analysis and its limits; first-order review; and support routes. These details must be reverified from current official Shopify documentation before publication.
+- The Quick Start tool descriptions state current concepts that must be re-verified before publication and kept neutral: the Shopify mobile app is merchant administration while the Shop app / Shop channel is the customer-facing shopping and order experience; Printify is print-on-demand only; a custom domain is recommended, not required for a first functional Shopify address; ChatGPT, Codex, Claude Code, GitHub, and Lovable subscriptions are optional (not Shopify requirements) and Lovable is not needed for a standard storefront; no tool pricing or free tier is promised; and the marketing, social, and analytics tools are listed only as optional later pointers, consistent with "What This Guide Does Not Cover."
 
 ### Interface verification
 
