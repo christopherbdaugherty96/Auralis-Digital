@@ -194,7 +194,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 **Appendix**
 
-- Appendix — Optional: Using Claude Code or Codex (Advanced Bonus)
+- Appendix — Optional: Using Claude Code or Codex to Organize Your Store Project
 
 *(Page numbers are added during final formatting.)*
 
@@ -3407,11 +3407,11 @@ If the link above is not active in your copy, use this address: `[INSERT AURALIS
 
 <!-- PAGE BREAK -->
 
-## Appendix — Optional: Using Claude Code or Codex (Advanced Bonus)
+## Appendix — Optional: Using Claude Code or Codex to Organize Your Store Project
 
-This appendix is an optional bonus for readers who want to use an AI coding assistant to help organize, draft, inspect, and review their project files. You do not need any of it to build or launch your Shopify store — Chapters 1 through 12 are complete on their own. It lives here, after the main guide, so the course itself stays focused on Shopify.
+This appendix is optional. Chapters 1 through 12 contain the complete Shopify course, and you do not need this section to build or launch your store. Continue only if you want an AI tool to help organize, draft, inspect, or review your project files.
 
-This section is optional. You can build and launch a Shopify store using this guide without any AI tools. If you do want help, Claude Code and Codex are AI assistants that can help you organize, draft, inspect, and review the files for your store project. They do not replace your judgment, current official information, or your control over live business actions. This guide does not teach coding, Git or GitHub administration, or automation — only how to point one of these tools at your project and work with it safely.
+Claude Code and Codex can work with files, but they are not required Shopify tools. You do not need coding experience to complete the main guide, and this appendix does not teach software development, Git or GitHub administration, custom coding, or automation. These tools do not replace your judgment, current official information, or your control over live business actions.
 
 ### What these tools can help with
 
@@ -3651,7 +3651,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official URLs were verified and inserted on 2026-07-20; pre-publication link re-verification remains pending.
 - The Auralis Digital service URL is pending.
 - Real Lucid Creations examples are pending.
-- Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list ; the optional "How to Use Claude Code or Codex" material was moved out of front matter into an Optional Advanced Appendix after Chapter 12 (so the main course begins with Shopify); the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
+- Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list; the optional "How to Use Claude Code or Codex" material was moved out of front matter into an Optional Advanced Appendix after Chapter 12 (so the main course begins with Shopify); the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
 
 ### Missing information
 
