@@ -460,6 +460,12 @@ By the end of this chapter, you will have one preferred store name, two usable b
 
 Your store name is the first thing most customers see, and it appears everywhere — your storefront, your domain, your email, your social profiles, and your invoices. A name that is clear, usable, and broad enough to grow saves you from confusing customers now and from expensive rebranding later. This chapter helps you make a practical naming decision; it is not a branding, trademark, or legal exercise.
 
+**Diagram: Store name, domain, email, and social profiles**
+
+![A central box labeled Store name connects by separate arrows to three boxes — Domain, Email address, and Social profiles — showing they are separate systems. A note states that a domain being available does not establish legal business-name or trademark availability.](assets/diagrams/name-domain-email-social.png)
+
+*Your store name, domain, email, and social handles can share the same words, but each is a separate system you set up on its own.*
+
 ### Step-by-step instructions
 
 1. **Start from your offer.** Review the customer-and-offer statement you wrote in Chapter 2. Your name should fit what you sell, who it is for, the tone or style of the business, and the chance that your catalog grows later. *Why it matters:* a name that matches your offer feels right to the customer and guides the rest of the store. *Done when:* you can say, in a sentence, what your name needs to communicate.
@@ -594,6 +600,12 @@ By the end of this chapter, you will have a Shopify account and store created, c
 ### Why this matters
 
 The settings you choose now — currency, time zone, units, and account security — quietly affect everything that follows: how orders are timestamped, how money is counted, how products are measured, and how safe your store is. Getting the foundation right and secure before you add products saves you from confusing, hard-to-undo problems later. Creating the account is quick; configuring it correctly is the real work of this chapter.
+
+**Diagram: Storefront versus Shopify admin**
+
+![Two columns. A Customer arrow points to a Storefront box (browse products, add to cart, check out, read policies). A Merchant arrow points to a Shopify admin box (settings, products and orders, payments and payouts, policies). A note says customers never see the admin.](assets/diagrams/storefront-vs-admin.png)
+
+*Customers use the storefront; you manage settings, products, orders, and payments in the Shopify admin — two views of the same store.*
 
 ### Step-by-step instructions
 
@@ -982,6 +994,12 @@ Payments are where a store becomes a real business — and where mistakes cost r
 
 1. **Understand the payment flow.** The basic flow is: a customer submits an order at checkout; the selected provider authorizes or processes the payment; Shopify records the order and payment status; the provider captures the payment immediately or according to your capture method; funds become eligible for payout; and the provider sends the payout to your eligible payout account. A customer payment is not the same as a merchant payout (a payout is the money the provider later transfers to your bank account) — a successful order does not mean the money is immediately available in your bank. Payout timing can vary, and holds, reserves, verification reviews, refunds, disputes, weekends, banks, and regional rules can all affect availability. *Why it matters:* understanding this prevents cash-flow surprises. *Done when:* you can explain the difference between an order, a payment, a captured payment, and a payout.
 
+**Diagram: Customer payment and order flow**
+
+![A left-to-right flow: Customer places an order, then Checkout, then Payment provider, then Shopify order record. A separate dashed arrow labeled Payout, a later transfer, runs down from Payment provider to a Merchant bank account box. A note says a completed order does not put money in your bank right away.](assets/diagrams/payment-order-flow.png)
+
+*An order flows from checkout to the payment provider to the Shopify order record; the payout to your bank is a separate, later transfer.*
+
 2. **Confirm country or regional eligibility.** Confirm your store's operating country or region; whether Shopify Payments is available there; which third-party providers are available; which business types or products may be restricted; which identity and business documents may be required; which payout-account types are eligible; and which currencies are supported. Shopify Payments availability and requirements depend on country or region — do not assume a United States setup. *Why it matters:* your location determines which payment paths even exist. *Done when:* you have confirmed at least one eligible payment path for your location and business type. (This is not legal advice about provider terms or prohibited-business rules.)
    [Shopify — Check Shopify Payments availability](https://help.shopify.com/en/manual/payments/shopify-payments) · [Shopify — Check payment requirements](https://help.shopify.com/en/manual/payments/shopify-payments/requirements) · `[VERIFY CURRENT SHOPIFY SETTING]`
 
@@ -1252,6 +1270,12 @@ Customers judge a store by whether the right item arrives, on a reasonable timel
 1. **Identify the fulfillment method for each offer.** Return to the starting products you chose in Chapter 1. Assign each product or offer to one of five primary paths: (1) make and ship it yourself; (2) print on demand; (3) buy inventory and resell it; (4) deliver a digital product; (5) deliver a service or commission. A store can use more than one path, but every product must have one clearly assigned method. *Why it matters:* every later fulfillment decision depends on this assignment. *Done when:* every planned starting product has one primary fulfillment method.
 
 2. **Understand the five fulfillment paths.** Fulfillment is everything involved in getting a purchase to the customer — preparing, packing, and shipping a physical item, or delivering a digital one. Understand what each path makes you responsible for. *Make and ship it yourself:* you make or obtain the item, store it, check quality, pack it, arrange postage, add tracking where available, and handle delays, damage, returns, and questions (a good fit for wire wraps, resin pieces, pendants, artwork, and custom handmade products). *Print on demand:* a third-party provider produces the item after an order, packages it, and ships it, usually reporting status through the integration — but you still create and maintain the listing, choose products and providers, review quality, pay production and shipping costs, monitor orders, communicate with customers, handle issues per the provider's terms, and keep enough funding for production charges (Printify is used here as the example, not the universal provider). *Buy inventory and resell it:* you or a warehouse purchase inventory before orders, store it, track quantity, pack and ship, and handle unsold stock and shortages. *Digital product:* you create or license the file, use a secure delivery method, ensure no physical shipping is required, test the customer's download or access, and maintain file access and versions. *Service or commission:* you define what the buyer receives, collect required information, set communication and approval steps, deliver the work, and record when the order is complete. *Why it matters:* each path assigns different work to you. *Done when:* you can describe your responsibilities under each path you will use.
+
+**Diagram: Three common fulfillment paths**
+
+![An Order placed box branches to three boxes: Self-fulfilled physical product (you keep stock, pack, and ship), Print-on-demand such as Printify (partner prints and ships, you are charged per order), and Digital product (no physical shipping, delivered as a download). A note says these are three common examples and Chapter 7 also covers resale, services, and commissions.](assets/diagrams/fulfillment-paths.png)
+
+*Three common ways an order reaches the customer — self-fulfilled physical, print-on-demand, and digital. Chapter 7 also covers resale, services, and commissions.*
 
 3. **Map responsibility before configuring anything.** For each product, identify who is responsible for: production; inventory; quality control; packaging; shipping; digital delivery; scheduling; tracking; customer notification; delays; damage; reprints or replacements; refund decisions; return handling; and customer support. "The app handles it" is not a complete responsibility plan. *Why it matters:* assigning an owner makes it clear who must act at each stage of fulfillment. *Done when:* every major fulfillment responsibility has an owner.
 
@@ -2474,6 +2498,12 @@ Testing helps identify behavior under the scenarios tested. A successful order p
 ### Test-safety boundary
 
 Before enabling test mode, placing an order, changing automation, or processing fulfillment, determine whether the store is already accepting orders; whether live customers could be blocked; whether an app can submit, fulfill, email, print, purchase labels, deliver files, or send work to a provider; and whether inventory, discounts, analytics, customer records, or notifications will change. Use controlled test data, prevent real charges and fulfillment unless a real-transaction test is deliberately authorized, record every temporary change, and restore it afterward. Never purchase a shipping label, trigger Printify or RJ Print production, send uninvolved people messages, or expose live credentials or private order links.
+
+**Diagram: Simulated test mode versus live mode**
+
+![Two columns. Simulated test mode: no real payment, prevent real production, inventory or notifications may change, repeat only with safeguards. Live mode: real payment and fees, inventory can change, notifications or fulfillment can trigger, not safe to repeat casually. A note says a deliberately authorized real-payment test is separate, uses live mode, can incur fees, and must not be treated as part of the safe-to-repeat path.](assets/diagrams/test-mode-vs-live.png)
+
+*An official simulated payment does not move real money, but inventory, notifications, and automation can still change. Prevent real production and use controlled recipients. Live mode can cause real charges and downstream actions.*
 
 ### Step-by-step instructions
 
