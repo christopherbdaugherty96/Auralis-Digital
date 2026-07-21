@@ -73,7 +73,7 @@ To keep this guide focused and finishable, it deliberately leaves some things ou
 - Selling on Amazon, Etsy, or other marketplaces.
 - Advanced analytics or large-scale business growth.
 
-These are real and important topics. They are simply not what this guide is for. Where one of them touches your store setup, the guide will mention it briefly and point you to an official source or a future guide, instead of turning a short note into a full lesson. This guide does include one brief, optional introduction to using Claude Code or Codex to organize, inspect, draft, and review your project files — but not software development, Git or GitHub administration, custom coding, or automation.
+These are real and important topics. They are simply not what this guide is for. Where one of them touches your store setup, the guide will mention it briefly and point you to an official source or a future guide, instead of turning a short note into a full lesson. This guide does include one brief, optional appendix (after Chapter 12) on using Claude Code or Codex to organize, inspect, draft, and review your project files — but not software development, Git or GitHub administration, custom coding, or automation.
 
 The scope rule for this entire guide is one sentence: **This guide gets your store live.**
 
@@ -137,231 +137,6 @@ These are later tools, not steps this guide teaches. Marketing strategy is outsi
 
 > **Tools used in the Auralis Digital workflow:** Auralis Digital uses Shopify, Printify, ChatGPT, Codex, Claude Code, GitHub, Canva, Google services, and selected social platforms to plan, build, review, document, and market its projects. You do not need the entire stack to complete this guide. Start with the tools required for your business model and add others only when they solve a defined need.
 
-## Optional: How to Use Claude Code or Codex With This Guide
-
-This section is optional. You can build and launch a Shopify store using this guide without any AI tools. If you do want help, Claude Code and Codex are AI assistants that can help you organize, draft, inspect, and review the files for your store project. They do not replace your judgment, current official information, or your control over live business actions. This guide does not teach coding, Git or GitHub administration, or automation — only how to point one of these tools at your project and work with it safely.
-
-### What these tools can help with
-
-Claude Code or Codex can help you:
-
-- Read and organize project files
-- Draft product information
-- Review documents
-- Create checklists
-- Identify missing information
-- Compare versions
-- Check whether unrelated content changed
-- Help troubleshoot technical problems
-- Prepare proposed changes for your review
-
-ChatGPT can help you:
-
-- Maintain the larger project plan
-- Build prompts and task briefs
-- Track decisions
-- Compare reports from different AI tools
-- Turn review findings into the next instruction
-
-You do not need both. Neither is required to build a Shopify store, and one coding agent is enough. These subscriptions are optional, not required Shopify expenses. You remain responsible for approving anything that touches a live account, money, customers, publishing, payments, domains, or fulfillment.
-
-### A simple five-step workflow
-
-1. **Create and organize the project folder.** Put your notes, approved descriptions, store plans, worksheets, images, CSV files, policy drafts, and AI handoff notes inside it. Do not put passwords or customer records in this folder. Then open it in Claude Code or Codex; installation methods and plans change, so use the current official instructions: [OpenAI — Set up Codex](https://openai.com/codex/get-started/), [Anthropic — Set up Claude Code](https://docs.anthropic.com/en/docs/claude-code/getting-started), `[VERIFY CURRENT CODEX INSTALLATION METHOD]`, and `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`.
-2. **Define the authoritative source and CANONICAL Project Order.** Decide which file or system holds the approved truth, and write down the project's canonical order — the human-approved sequence and current state — so the AI follows your order instead of guessing what comes next (see "Use a CANONICAL Project Order" below).
-3. **Ask Claude Code or Codex to inspect before editing.** Tell it which file is authoritative and ask it to inspect and summarize before changing anything.
-4. **Send the result for an independent AI review.** You can have one tool draft and the other review, use one tool for both stages with a separate review prompt, or use ChatGPT to reconcile the reports. The pattern — create, then review independently, then you approve — matters more than which tool does which part.
-5. **Approve consequential actions yourself.** You decide what publishes, changes the live store, removes password protection, activates payments, modifies a domain, spends money, triggers fulfillment, sends customer communication, changes inventory, or commits and uploads work.
-
-### Use a CANONICAL Project Order
-
-CANONICAL means the human-approved order and current truth of the project. When you give the AI a canonical order, it follows your sequence instead of guessing what comes next, reopening finished work, or skipping ahead. Fill one in and keep it with your project:
-
-```text
-CANONICAL PROJECT ORDER
-
-Project:
-[PROJECT NAME]
-
-Current phase:
-[CURRENT PHASE]
-
-Authoritative source:
-[FILE, DOCUMENT, OR SYSTEM THAT CONTAINS THE APPROVED TRUTH]
-
-Completed and locked:
-1. [COMPLETED ITEM]
-2. [COMPLETED ITEM]
-
-Active task:
-1. [CURRENT TASK]
-
-Next allowed task:
-1. [WHAT COMES NEXT AFTER APPROVAL]
-
-Deferred:
-1. [WORK THAT MUST NOT START YET]
-2. [WORK RESERVED FOR A LATER PHASE]
-
-Do not:
-- Reopen completed work without evidence of a defect
-- Skip ahead
-- Perform deferred work
-- Change the authoritative source indirectly
-- Publish, launch, purchase, commit, push, or modify an external system without approval
-
-Stop condition:
-[EXACT POINT WHERE THE AI MUST STOP]
-```
-
-If the AI thinks the canonical order is wrong, it may say so — but it must not silently change the order. It should report the conflict and wait for your decision.
-
-### Prompts you can reuse
-
-**Starting inspection prompt:**
-
-```text
-Review this project before making any changes.
-
-My objective:
-[DESCRIBE THE SHOPIFY TASK]
-
-Source of truth:
-[NAME THE AUTHORITATIVE FILE]
-
-First:
-1. Read the relevant files.
-2. Summarize what is already complete.
-3. Identify missing information.
-4. Identify anything that needs current official verification.
-5. Propose the next actions.
-
-Do not:
-- Invent business facts
-- Change Shopify
-- Publish products
-- Spend money
-- Change payment settings
-- Change domains
-- Trigger fulfillment
-- Commit, push, or upload anything
-
-Stop after the review.
-```
-
-**Independent-review prompt (for the second AI):**
-
-```text
-Independently review this work.
-
-Do not assume the first AI is correct.
-
-Check for:
-- Invented facts
-- Missing requirements
-- Contradictions
-- Changes to approved content
-- Privacy risks
-- Unsupported Shopify claims
-- Scope drift
-
-Return:
-1. What passed
-2. Required corrections
-3. Questions requiring my decision
-
-Do not make external changes.
-```
-
-**Reusable handoff template:**
-
-```text
-PROJECT:
-[PROJECT NAME]
-
-OBJECTIVE:
-[EXACT RESULT]
-
-CURRENT STATE:
-[WHAT IS ALREADY COMPLETE]
-
-SOURCE OF TRUTH:
-[AUTHORITATIVE FILE OR RECORD]
-
-CANONICAL ORDER:
-[PASTE THE APPROVED PROJECT ORDER]
-
-CURRENT POSITION:
-[STATE WHICH STEP IS ACTIVE]
-
-LOCKED WORK:
-[STATE WHAT MUST NOT BE REWRITTEN]
-
-NEXT ALLOWED ACTION:
-[STATE WHAT MAY HAPPEN AFTER THIS TASK PASSES]
-
-FACTS TO PRESERVE:
-- [FACT]
-- [FACT]
-
-DO NOT:
-- Invent information
-- Change unrelated work
-- Modify external systems
-
-TASK:
-[EXACT WORK REQUESTED]
-
-VERIFY:
-- Files changed
-- Missing information
-- Unsupported claims
-- Privacy exposure
-- Unrelated changes
-
-STOP:
-Prepare the work and report the results. Do not publish, launch,
-purchase, fulfill, commit, push, or modify an external account.
-```
-
-### Never give an AI
-
-- Passwords
-- Recovery codes
-- Payment credentials
-- Bank or payout details
-- Customer records
-- Identity documents
-- Private Shopify admin links
-- Reusable checkout or order-status links
-- API secrets
-- Provider credentials
-- Domain verification secrets
-
-Use fictional or redacted information in prompts and screenshots.
-
-### Before accepting AI work
-
-- Did it read the correct source?
-- Did it invent facts?
-- Did it change unrelated content?
-- Are Shopify claims current?
-- Is private information exposed?
-- Did another review identify problems?
-- Can the change be reversed?
-- Has the AI stopped before external action?
-- Does the result match the actual business?
-
-### A few habits that help
-
-- Ask the AI to list exactly which files or sections it changed, compare the result with your approved version, and verify the required text or structure directly. Do not accept work only because the AI says it finished.
-- Choose one authoritative source. When one file is generated from another, edit the source and regenerate the output rather than keeping two separate versions by hand.
-- AI conversations can lose or compress earlier context. Keep important facts, decisions, constraints, and approved instructions in your project files or a written task brief rather than relying only on the AI's memory.
-
-**The core rule: one authoritative source, one CANONICAL project order, one active task, and one explicit stop condition.**
-
-A planned separate companion guide will cover the advanced AI workflow — including a fuller prompt library, review methods, and record-keeping — for readers who want to go further. For this guide, the steps above are enough.
-
 ## A Note About Shopify Interface Changes
 
 Shopify updates its software regularly. Buttons move, menus get renamed, and screens change over time. Because of that, this guide focuses on the underlying logic of each step — what you are trying to accomplish and where that setting generally lives — rather than depending only on the exact position of a button.
@@ -381,7 +156,6 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 - What This Guide Does Not Cover
 - How to Use This Guide
 - What You Need—and What You Do Not Need Yet
-- Optional: How to Use Claude Code or Codex With This Guide
 - A Note About Shopify Interface Changes
 
 **Chapters**
@@ -418,9 +192,13 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 - Started Building but Got Stuck?
 
+**Appendix**
+
+- Appendix — Optional: Using Claude Code or Codex to Organize Your Store Project
+
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** All twelve chapters and their worksheets are drafted, plus the Quick Start and optional AI-assistant front-matter sections. The full-book finalization pass is in progress; the guide is not yet publication-ready.
+> **Draft status:** All twelve chapters and their worksheets are drafted, plus the Quick Start front-matter section and an optional AI-assistant appendix after Chapter 12. The full-book finalization pass is in progress; the guide is not yet publication-ready.
 
 <!-- PAGE BREAK -->
 
@@ -3629,6 +3407,233 @@ If the link above is not active in your copy, use this address: `[INSERT AURALIS
 
 <!-- PAGE BREAK -->
 
+## Appendix — Optional: Using Claude Code or Codex to Organize Your Store Project
+
+This appendix is optional. Chapters 1 through 12 contain the complete Shopify course, and you do not need this section to build or launch your store. Continue only if you want an AI tool to help organize, draft, inspect, or review your project files.
+
+Claude Code and Codex can work with files, but they are not required Shopify tools. You do not need coding experience to complete the main guide, and this appendix does not teach software development, Git or GitHub administration, custom coding, or automation. These tools do not replace your judgment, current official information, or your control over live business actions.
+
+### What these tools can help with
+
+Claude Code or Codex can help you:
+
+- Read and organize project files
+- Draft product information
+- Review documents
+- Create checklists
+- Identify missing information
+- Compare versions
+- Check whether unrelated content changed
+- Help troubleshoot technical problems
+- Prepare proposed changes for your review
+
+ChatGPT can help you:
+
+- Maintain the larger project plan
+- Build prompts and task briefs
+- Track decisions
+- Compare reports from different AI tools
+- Turn review findings into the next instruction
+
+You do not need both. Neither is required to build a Shopify store, and one coding agent is enough. These subscriptions are optional, not required Shopify expenses. You remain responsible for approving anything that touches a live account, money, customers, publishing, payments, domains, or fulfillment.
+
+### A simple five-step workflow
+
+1. **Create and organize the project folder.** Put your notes, approved descriptions, store plans, worksheets, images, CSV files, policy drafts, and AI handoff notes inside it. Do not put passwords or customer records in this folder. Then open it in Claude Code or Codex; installation methods and plans change, so use the current official instructions: [OpenAI — Set up Codex](https://openai.com/codex/get-started/), [Anthropic — Set up Claude Code](https://docs.anthropic.com/en/docs/claude-code/getting-started), `[VERIFY CURRENT CODEX INSTALLATION METHOD]`, and `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`.
+2. **Define the authoritative source and CANONICAL Project Order.** Decide which file or system holds the approved truth, and write down the project's canonical order — the human-approved sequence and current state — so the AI follows your order instead of guessing what comes next (see "Use a CANONICAL Project Order" below).
+3. **Ask Claude Code or Codex to inspect before editing.** Tell it which file is authoritative and ask it to inspect and summarize before changing anything.
+4. **Send the result for an independent AI review.** You can have one tool draft and the other review, use one tool for both stages with a separate review prompt, or use ChatGPT to reconcile the reports. The pattern — create, then review independently, then you approve — matters more than which tool does which part.
+5. **Approve consequential actions yourself.** You decide what publishes, changes the live store, removes password protection, activates payments, modifies a domain, spends money, triggers fulfillment, sends customer communication, changes inventory, or commits and uploads work.
+
+### Use a CANONICAL Project Order
+
+CANONICAL means the human-approved order and current truth of the project. When you give the AI a canonical order, it follows your sequence instead of guessing what comes next, reopening finished work, or skipping ahead. Fill one in and keep it with your project:
+
+```text
+CANONICAL PROJECT ORDER
+
+Project:
+[PROJECT NAME]
+
+Current phase:
+[CURRENT PHASE]
+
+Authoritative source:
+[FILE, DOCUMENT, OR SYSTEM THAT CONTAINS THE APPROVED TRUTH]
+
+Completed and locked:
+1. [COMPLETED ITEM]
+2. [COMPLETED ITEM]
+
+Active task:
+1. [CURRENT TASK]
+
+Next allowed task:
+1. [WHAT COMES NEXT AFTER APPROVAL]
+
+Deferred:
+1. [WORK THAT MUST NOT START YET]
+2. [WORK RESERVED FOR A LATER PHASE]
+
+Do not:
+- Reopen completed work without evidence of a defect
+- Skip ahead
+- Perform deferred work
+- Change the authoritative source indirectly
+- Publish, launch, purchase, commit, push, or modify an external system without approval
+
+Stop condition:
+[EXACT POINT WHERE THE AI MUST STOP]
+```
+
+If the AI thinks the canonical order is wrong, it may say so — but it must not silently change the order. It should report the conflict and wait for your decision.
+
+### Prompts you can reuse
+
+**Starting inspection prompt:**
+
+```text
+Review this project before making any changes.
+
+My objective:
+[DESCRIBE THE SHOPIFY TASK]
+
+Source of truth:
+[NAME THE AUTHORITATIVE FILE]
+
+First:
+1. Read the relevant files.
+2. Summarize what is already complete.
+3. Identify missing information.
+4. Identify anything that needs current official verification.
+5. Propose the next actions.
+
+Do not:
+- Invent business facts
+- Change Shopify
+- Publish products
+- Spend money
+- Change payment settings
+- Change domains
+- Trigger fulfillment
+- Commit, push, or upload anything
+
+Stop after the review.
+```
+
+**Independent-review prompt (for the second AI):**
+
+```text
+Independently review this work.
+
+Do not assume the first AI is correct.
+
+Check for:
+- Invented facts
+- Missing requirements
+- Contradictions
+- Changes to approved content
+- Privacy risks
+- Unsupported Shopify claims
+- Scope drift
+
+Return:
+1. What passed
+2. Required corrections
+3. Questions requiring my decision
+
+Do not make external changes.
+```
+
+**Reusable handoff template:**
+
+```text
+PROJECT:
+[PROJECT NAME]
+
+OBJECTIVE:
+[EXACT RESULT]
+
+CURRENT STATE:
+[WHAT IS ALREADY COMPLETE]
+
+SOURCE OF TRUTH:
+[AUTHORITATIVE FILE OR RECORD]
+
+CANONICAL ORDER:
+[PASTE THE APPROVED PROJECT ORDER]
+
+CURRENT POSITION:
+[STATE WHICH STEP IS ACTIVE]
+
+LOCKED WORK:
+[STATE WHAT MUST NOT BE REWRITTEN]
+
+NEXT ALLOWED ACTION:
+[STATE WHAT MAY HAPPEN AFTER THIS TASK PASSES]
+
+FACTS TO PRESERVE:
+- [FACT]
+- [FACT]
+
+DO NOT:
+- Invent information
+- Change unrelated work
+- Modify external systems
+
+TASK:
+[EXACT WORK REQUESTED]
+
+VERIFY:
+- Files changed
+- Missing information
+- Unsupported claims
+- Privacy exposure
+- Unrelated changes
+
+STOP:
+Prepare the work and report the results. Do not publish, launch,
+purchase, fulfill, commit, push, or modify an external account.
+```
+
+### Never give an AI
+
+- Passwords
+- Recovery codes
+- Payment credentials
+- Bank or payout details
+- Customer records
+- Identity documents
+- Private Shopify admin links
+- Reusable checkout or order-status links
+- API secrets
+- Provider credentials
+- Domain verification secrets
+
+Use fictional or redacted information in prompts and screenshots.
+
+### Before accepting AI work
+
+- Did it read the correct source?
+- Did it invent facts?
+- Did it change unrelated content?
+- Are Shopify claims current?
+- Is private information exposed?
+- Did another review identify problems?
+- Can the change be reversed?
+- Has the AI stopped before external action?
+- Does the result match the actual business?
+
+### A few habits that help
+
+- Ask the AI to list exactly which files or sections it changed, compare the result with your approved version, and verify the required text or structure directly. Do not accept work only because the AI says it finished.
+- Choose one authoritative source. When one file is generated from another, edit the source and regenerate the output rather than keeping two separate versions by hand.
+- AI conversations can lose or compress earlier context. Keep important facts, decisions, constraints, and approved instructions in your project files or a written task brief rather than relying only on the AI's memory.
+
+**The core rule: one authoritative source, one CANONICAL project order, one active task, and one explicit stop condition.**
+
+A planned separate companion guide will cover the advanced AI workflow — including a fuller prompt library, review methods, and record-keeping — for readers who want to go further. For this guide, the steps above are enough.
+
 ## Internal Reviewer Note (remove before publishing)
 
 This note lists what the draft assumes and what it still needs. It is for the internal review process, not for the buyer.
@@ -3646,7 +3651,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Official URLs were verified and inserted on 2026-07-20; pre-publication link re-verification remains pending.
 - The Auralis Digital service URL is pending.
 - Real Lucid Creations examples are pending.
-- Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list and the optional "How to Use Claude Code or Codex With This Guide" section; the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
+- Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list; the optional "How to Use Claude Code or Codex" material was moved out of front matter into an Optional Advanced Appendix after Chapter 12 (so the main course begins with Shopify); the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
 
 ### Missing information
 
