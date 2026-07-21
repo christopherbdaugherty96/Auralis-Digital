@@ -1,7 +1,7 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter (incl. Quick Start + optional AI-assistant sections) + TOC + Chapters 1-12 + their worksheets + reviewer note. All twelve chapters and their worksheets are drafted.
+Draft status: front matter, including Quick Start, plus the TOC, Chapters 1–12 and their worksheets, the optional AI-assistant appendix, and the reviewer note. All twelve chapters and their worksheets are drafted.
 The full-book finalization pass is IN PROGRESS; the guide is NOT publication-ready.
 -->
 
@@ -53,7 +53,7 @@ By the end of this guide, you will have a functioning, launch-ready Shopify stor
 - Business and contact information customers can see and trust.
 - The essential store policies (refund, shipping, and privacy).
 - A working payment method.
-- A checkout you have tested yourself with a real test order.
+- A checkout you have tested using an official test method.
 - A live storefront that the public can visit.
 
 That is the single result this guide is built to deliver. Everything in it points at that one outcome.
