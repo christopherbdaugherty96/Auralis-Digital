@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" font-family="Arial, 'DejaVu Sans', Helvetica, sans-serif">
+  <rect x="0" y="0" width="1800" height="1000" fill="#FFFFFF"/>
+
+  <text x="900" y="70" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">Simulated test mode is safe to repeat; live mode is real</text>
+
+  <!-- simulated -->
+  <rect x="120" y="150" width="740" height="560" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="490" y="225" font-size="38" font-weight="bold" text-anchor="middle" fill="#000000">Simulated test mode</text>
+  <line x1="180" y1="260" x2="800" y2="260" stroke="#CCCCCC" stroke-width="2"/>
+  <text x="490" y="340" font-size="32" text-anchor="middle" fill="#000000">No real payment</text>
+  <text x="490" y="420" font-size="32" text-anchor="middle" fill="#000000">No real production</text>
+  <text x="490" y="500" font-size="32" text-anchor="middle" fill="#000000">No customer notifications</text>
+  <rect x="180" y="560" width="620" height="110" rx="14" fill="#EEEEEE" stroke="#000000" stroke-width="3"/>
+  <text x="490" y="628" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Safe to repeat</text>
+
+  <!-- live -->
+  <rect x="940" y="150" width="740" height="560" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="1310" y="225" font-size="38" font-weight="bold" text-anchor="middle" fill="#000000">Live mode</text>
+  <line x1="1000" y1="260" x2="1620" y2="260" stroke="#CCCCCC" stroke-width="2"/>
+  <text x="1310" y="340" font-size="32" text-anchor="middle" fill="#000000">Real payment and fees</text>
+  <text x="1310" y="420" font-size="32" text-anchor="middle" fill="#000000">Possible inventory changes</text>
+  <text x="1310" y="500" font-size="32" text-anchor="middle" fill="#000000">Notifications and fulfillment</text>
+  <rect x="1000" y="560" width="620" height="110" rx="14" fill="#EEEEEE" stroke="#000000" stroke-width="3"/>
+  <text x="1310" y="628" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Not safe to repeat casually</text>
+
+  <!-- note -->
+  <rect x="120" y="770" width="1560" height="180" rx="16" fill="#EEEEEE" stroke="#000000" stroke-width="4"/>
+  <text x="900" y="835" font-size="30" font-weight="bold" text-anchor="middle" fill="#000000">A deliberately authorized real-payment test is separate.</text>
+  <text x="900" y="885" font-size="28" text-anchor="middle" fill="#000000">It uses live mode, can incur fees, and must not be treated as</text>
+  <text x="900" y="925" font-size="28" text-anchor="middle" fill="#000000">part of the safe-to-repeat path.</text>
+</svg>

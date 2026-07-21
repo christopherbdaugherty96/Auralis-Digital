@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" font-family="Arial, 'DejaVu Sans', Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 z" fill="#000000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1800" height="1000" fill="#FFFFFF"/>
+
+  <text x="900" y="70" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">An order is recorded now; the payout arrives later</text>
+
+  <!-- top flow row: 4 boxes -->
+  <g stroke="#000000" stroke-width="5" fill="#FFFFFF">
+    <rect x="70"   y="190" width="360" height="150" rx="16"/>
+    <rect x="510"  y="190" width="360" height="150" rx="16"/>
+    <rect x="950"  y="190" width="360" height="150" rx="16"/>
+    <rect x="1390" y="190" width="360" height="150" rx="16"/>
+  </g>
+  <text x="250"  y="255" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Customer</text>
+  <text x="250"  y="298" font-size="25" text-anchor="middle" fill="#333333">places an order</text>
+  <text x="690"  y="255" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Checkout</text>
+  <text x="690"  y="298" font-size="25" text-anchor="middle" fill="#333333">enters payment</text>
+  <text x="1130" y="248" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Payment</text>
+  <text x="1130" y="288" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">provider</text>
+  <text x="1570" y="248" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Shopify</text>
+  <text x="1570" y="288" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">order record</text>
+
+  <path d="M430,265  L510,265"  fill="none" stroke="#000000" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M870,265  L950,265"  fill="none" stroke="#000000" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1310,265 L1390,265" fill="none" stroke="#000000" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- payout: separate later transfer -->
+  <path d="M1130,340 L1130,600" fill="none" stroke="#000000" stroke-width="5" stroke-dasharray="14 10" marker-end="url(#arrow)"/>
+  <text x="1170" y="480" font-size="28" font-weight="bold" text-anchor="start" fill="#000000">Payout</text>
+  <text x="1170" y="520" font-size="26" text-anchor="start" fill="#333333">a separate, later transfer</text>
+
+  <rect x="810" y="610" width="640" height="150" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="1130" y="675" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Merchant bank account</text>
+  <text x="1130" y="720" font-size="25" text-anchor="middle" fill="#333333">funds arrive after a delay</text>
+
+  <!-- note -->
+  <rect x="70" y="840" width="1680" height="110" rx="16" fill="#EEEEEE" stroke="#000000" stroke-width="4"/>
+  <text x="910" y="905" font-size="30" font-weight="bold" text-anchor="middle" fill="#000000">A completed order does not put money in your bank right away.</text>
+</svg>

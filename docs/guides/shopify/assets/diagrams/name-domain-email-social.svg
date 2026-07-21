@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" font-family="Arial, 'DejaVu Sans', Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11 z" fill="#000000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1800" height="1000" fill="#FFFFFF"/>
+
+  <text x="900" y="70" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">Four separate systems that can share the same words</text>
+
+  <!-- central: store name -->
+  <rect x="120" y="380" width="440" height="200" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="340" y="465" font-size="38" font-weight="bold" text-anchor="middle" fill="#000000">Store name</text>
+  <text x="340" y="515" font-size="28" text-anchor="middle" fill="#333333">what you call the store</text>
+
+  <!-- three systems -->
+  <rect x="1080" y="170" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="1380" y="235" font-size="34" font-weight="bold" text-anchor="middle" fill="#000000">Domain</text>
+  <text x="1380" y="280" font-size="27" text-anchor="middle" fill="#333333">your web address</text>
+
+  <rect x="1080" y="405" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="1380" y="470" font-size="34" font-weight="bold" text-anchor="middle" fill="#000000">Email address</text>
+  <text x="1380" y="515" font-size="27" text-anchor="middle" fill="#333333">for account and messages</text>
+
+  <rect x="1080" y="640" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+  <text x="1380" y="705" font-size="34" font-weight="bold" text-anchor="middle" fill="#000000">Social profiles</text>
+  <text x="1380" y="750" font-size="27" text-anchor="middle" fill="#333333">handles you create</text>
+
+  <!-- connectors -->
+  <path d="M560,455 C 800,455 840,245 1080,245" fill="none" stroke="#000000" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M560,480 L1080,480" fill="none" stroke="#000000" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M560,505 C 800,505 840,715 1080,715" fill="none" stroke="#000000" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- warning box -->
+  <rect x="120" y="850" width="1560" height="110" rx="16" fill="#EEEEEE" stroke="#000000" stroke-width="4"/>
+  <text x="900" y="915" font-size="30" font-weight="bold" text-anchor="middle" fill="#000000">A domain being available does not establish legal business-name or trademark availability.</text>
+</svg>
