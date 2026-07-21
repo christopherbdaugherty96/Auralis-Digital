@@ -2501,9 +2501,9 @@ Before enabling test mode, placing an order, changing automation, or processing 
 
 **Diagram: Simulated test mode versus live mode**
 
-![Two columns. Simulated test mode: no real payment, no real production, no customer notifications — safe to repeat. Live mode: real payment and fees, possible inventory changes, notifications and fulfillment — not safe to repeat casually. A note says a deliberately authorized real-payment test is separate, uses live mode, can incur fees, and must not be treated as part of the safe-to-repeat path.](assets/diagrams/test-mode-vs-live.png)
+![Two columns. Simulated test mode: no real payment, prevent real production, inventory or notifications may change, repeat only with safeguards. Live mode: real payment and fees, inventory can change, notifications or fulfillment can trigger, not safe to repeat casually. A note says a deliberately authorized real-payment test is separate, uses live mode, can incur fees, and must not be treated as part of the safe-to-repeat path.](assets/diagrams/test-mode-vs-live.png)
 
-*Simulated test mode has no real payment or production and is safe to repeat; live mode is real. A deliberately authorized real-payment test is separate and can incur fees.*
+*An official simulated payment does not move real money, but inventory, notifications, and automation can still change. Prevent real production and use controlled recipients. Live mode can cause real charges and downstream actions.*
 
 ### Step-by-step instructions
 
