@@ -251,7 +251,9 @@ You cannot build a store around a vague idea. Every later step — your store na
 
 Lucid Creations is a Shopify store under Auralis Digital. It sells print-on-demand products built around a specific artistic style, rather than trying to sell every kind of product at once. That focus makes the store easier to describe and to browse.
 
-`[INSERT LUCID CREATIONS EXAMPLE]` — the specific products Lucid Creations launched with, why those were chosen, and what you would do differently today. Keep this practical, and do not include sales figures, traffic, or customer results.
+No reliable record is available for this guide of the exact products included in Lucid Creations’ original launch, so this example does not name a specific launch lineup. That missing record is itself a useful lesson: before publishing a new store, document the first three to five products, why each one was selected, and how each one will be fulfilled.
+
+As of July 2026, Lucid Creations had grown into a broader catalog spanning several product categories. Starting again, the better approach would be to launch with a smaller, clearly documented group of finished products and place the remaining ideas on a separate “not yet” list. This would make the first version of the store easier to explain, organize, test, and improve.
 
 ### Common mistake
 
@@ -356,9 +358,9 @@ A store that tries to speak to everyone ends up speaking clearly to no one. When
 
 Lucid Creations is a Shopify product store under Auralis Digital. Its audience is broadly aligned with psychedelic art, electronic music, festival culture, sacred geometry, and alternative design, and its products include apparel, blankets, tapestries, wall art, accessories, and related designs. It may later add handmade pieces and commissions.
 
-A working example of an offer statement for a store like this might be: "I sell psychedelic apparel and home décor for festival and electronic-music fans who want their surroundings and clothing to reflect their style." *(This is a working example for review, not final approved brand language.)*
+Lucid Creations is aimed at people who are drawn to festival-inspired attire, a moderate hippie style, sacred geometry, psychedelic imagery, and expressive artwork. The starting customer is someone who wants clothing, décor, accessories, or handmade art that reflects those visual interests.
 
-`[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]` — Christopher's own wording for Lucid's starting customer and offer, and the reasoning behind it. Do not claim proven demand, repeat customers, or sales results.
+The offer is based on the creator’s own artistic style rather than an attempt to follow every trend. Lucid Creations currently expresses that style through print-on-demand products and wire wraps, with room to add other handmade pieces and creative work as new ideas are developed.
 
 ### Common mistake
 
@@ -492,7 +494,11 @@ Your store name is the first thing most customers see, and it appears everywhere
 
 Lucid Creations is the Shopify product-store branch under Auralis Digital. The name supports art, apparel, home décor, handmade pieces, commissions, and related creative products — it is broader than any single product category, while still communicating a creative, imaginative identity. That breadth means the store can grow without the name working against it.
 
-`[INSERT LUCID CREATIONS NAMING EXAMPLE]` — why "Lucid Creations" was chosen, what other names were considered (if any), whether the name ever caused confusion, and what would be done differently today. Do not claim the name is legally protected, trademarked, or commercially proven.
+Lucid Creations was the name intended from the start for the art shop; it was not selected from a recorded shortlist of alternatives. Auralis Digital was established later as the central business hub under which Lucid Creations operates.
+
+Because the two names serve different purposes — Auralis Digital as the broader business umbrella and Lucid Creations as the art shop — the distinction has required clarification during business and brand planning. No reliable record shows that customers were confused by the name.
+
+This chapter still recommends creating a shortlist even when you feel confident about one name. Writing down alternatives and completing basic availability checks can identify problems before the name is attached to a domain, email address, and social profiles. Choosing a practical store name is also not the same as receiving legal clearance. Lucid Creations is used here as a working store name, with no claim that it is trademarked, legally protected, or commercially proven.
 
 ### Common mistake
 
@@ -647,7 +653,11 @@ The settings you choose now — currency, time zone, units, and account security
 
 Lucid Creations operates as a Shopify product store under Auralis Digital. Its setup supports print-on-demand products and may later support handmade items and commissions. Its configuration should use the business's actual operating time zone, currency, and measurement conventions, and its owner should keep secure control of the account and avoid unnecessary apps.
 
-`[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]` — which settings were selected; which setup decisions caused confusion; which apps, if any, were installed too early; what would be configured differently today; and which private details (account email, exact address, internal URLs, security method) must be excluded from the published guide. Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or any internal Shopify URL.
+No reliable written record is available for this guide of Lucid Creations’ original Shopify setup decisions — which steps caused confusion, which settings were later changed, or whether any apps were installed before they were needed. This example therefore does not reconstruct that history.
+
+The missing record is the practical lesson: use the Initial Shopify Settings worksheet to document each core setting, why it was selected, and the purpose of every app installed. That record gives you a reliable reference when reviewing or changing the store later.
+
+As of July 2026, the store was configured to use US dollars, the America/Detroit time zone, pounds as its weight unit, and prices without tax included. These were point-in-time settings, not permanent facts. They illustrate the type of foundational decisions this chapter asks the reader to review and record deliberately.
 
 ### Common mistake
 
@@ -3860,10 +3870,10 @@ The following 87 distinct official targets were verified against current officia
 
 ### Lucid Creations examples needed
 
-- Chapter 1: which products Lucid Creations launched with, why they were chosen, and what you would change today (no sales or performance figures).
-- Chapter 2: Christopher's own wording for Lucid Creations' starting customer and offer statement (placeholder `[INSERT LUCID CREATIONS CUSTOMER AND OFFER EXAMPLE]`). The offer statement currently shown in Chapter 2 is a working example for review, not approved brand language.
-- Chapter 3: why "Lucid Creations" was chosen, other names considered, whether the name ever caused confusion, and what would be done differently today (placeholder `[INSERT LUCID CREATIONS NAMING EXAMPLE]`). Do not claim the name is trademarked or legally protected.
-- Chapter 4: which initial Shopify settings were selected, which setup decisions caused confusion, which apps (if any) were installed too early, what would be configured differently today, and which private details must be excluded from the published guide (placeholder `[INSERT LUCID CREATIONS INITIAL SHOPIFY SETUP EXAMPLE]`). Do not invent the plan, billing cost, trial terms, currency, time zone, address, security method, app list, account email, or internal Shopify URLs.
+- Chapter 1 example: INSERTED 2026-07-21 (Batch 1).
+- Chapter 2 example: INSERTED 2026-07-21 (Batch 1).
+- Chapter 3 example: INSERTED 2026-07-21 (Batch 1).
+- Chapter 4 example: INSERTED 2026-07-21 (Batch 1).
 - Chapter 5: which email functions Lucid Creations uses, whether a phone number is public, whether a Contact page already exists, current About-page wording, the realistic response time, which address information is visible, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS BUSINESS AND CONTACT EXAMPLE]`). Do not invent a real support email, phone number, address, response time, contact-form result, customer message, or sender-domain configuration.
 - Chapter 6: which payment provider Lucid Creations uses and why, which verification steps were required, whether setup was delayed, which checkout fields are required, whether guest checkout is allowed, whether payments capture automatically, which test method was used, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS PAYMENTS AND CHECKOUT EXAMPLE]`). Do not invent the provider, payment methods, bank, payout currency, payout timing, processing rates, transaction fees, plan, verification status, account representative, business type, tax details, test-order result, or real checkout settings.
 - Chapter 7: which products Printify fulfills, which are self-fulfilled, whether digital/service products are sold, the current Printify order-approval setting, who checks POD orders, who pays production charges, how handmade inventory is tracked, how mixed orders are communicated, what caused confusion, and what must stay private (placeholder `[INSERT LUCID CREATIONS FULFILLMENT AND DELIVERY EXAMPLE]`). Do not invent the current Printify approval setting, production provider, linked funding method, shipping/production/delivery times, tracking/failure/return rates, current inventory or locations, order history, customer information, or existing exception process. RJ Print is a separate 3D-printing branch and must not be presented as part of Lucid Creations' standard Printify workflow.
