@@ -3552,9 +3552,9 @@ To make the first message useful, note your current store status, which chapters
 
 Please do **not** send passwords, recovery codes, payment credentials, bank information, customer data, private admin links, identity documents, or provider credentials. None of those are needed to start a conversation, and they should never be sent through an ordinary intake message.
 
-**Start a Shopify Setup** → `[INSERT AURALIS DIGITAL SERVICE LINK]`
+**Start a Shopify Setup** → [www.auralisdigital.net/web-design](https://www.auralisdigital.net/web-design)
 
-If the link above is not active in your copy, use this address: `[INSERT AURALIS DIGITAL SERVICE LINK]`
+If the link above is not active in your copy, use this address: https://www.auralisdigital.net/web-design
 
 **Where else to get help**
 
@@ -3818,9 +3818,9 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Beginner-accessibility pass (Unit B, 2026-07-21): added a plain-language orientation passage to each of the 12 chapters; first-use definitions for the 12 locked jargon terms (variant, SKU, barcode, alt text, payout, payment gateway, payment capture, two-step authentication, fulfillment, redirect, HS code, DNS) plus a Quick Start micro-gloss for two-step authentication; recoverability notes on reversible settings; safe-retry notes tied to the official Shopify test method; stop-and-verify notes before consequential actions (identity and banking, provider activation, real charges, automatic fulfillment, product publication, public launch); and one dense step (Chapter 6 provider activation) restructured into labeled sub-blocks with all operational content preserved. No official links, link decisions, verification table, or the pricing and installation verification markers were changed.
 
 - The last-updated date and copyright year (left as `[INSERT DATE]` and `[INSERT YEAR]`).
-- The Auralis Digital service link for the final conversion page (`[INSERT AURALIS DIGITAL SERVICE LINK]`).
+- The Auralis Digital service link for the final conversion page was resolved to the verified Shopify / E-commerce Setup service page (https://www.auralisdigital.net/web-design) and inserted on 2026-07-22.
 - Official platform links (Shopify Help Center, Printify, USPTO, the SBA state-registry directory, and Shopify domain search) were verified against current official pages on 2026-07-20 and inserted throughout Chapters 1–12 as labeled hyperlinks (217 occurrences). The generic "what to sell / unique selling proposition / brand name" link resolves to a different Shopify blog article for Chapters 1, 2, and 3. No URLs were invented; the full occurrence-level mapping is retained in the finalization working notes. Re-verify all links before publication in case pages move.
-- Chapter 12 still needs Lucid Creations' actual launch status, actual domain, actual payment live state, actual product/publication state, actual fulfillment safeguards, actual first-order workflow, actual basic analytics, and actual launch issues, plus the actual Auralis Digital service URL (`[INSERT AURALIS DIGITAL SERVICE LINK]`), the final copyright year, and the final last-updated date. Do not invent any of these.
+- Chapter 12 still needs Lucid Creations' actual launch status, actual domain, actual payment live state, actual product/publication state, actual fulfillment safeguards, actual first-order workflow, actual basic analytics, and actual launch issues, plus the now-resolved Auralis Digital service link (https://www.auralisdigital.net/web-design), the final copyright year, and the final last-updated date. Do not invent any of these.
 - The Codex and Claude Code setup links were resolved to the current OpenAI and Anthropic getting-started pages and inserted as hyperlinks; the installation methods remain to be confirmed (`[VERIFY CURRENT CODEX INSTALLATION METHOD]`, `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`). No specific tool prices, confirmed free-tier availability, or fixed plan requirements are stated. Current pricing, plan availability, installation methods, and account requirements must be verified before publication.
 
 ### Official link verification record
