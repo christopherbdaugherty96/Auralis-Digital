@@ -356,11 +356,13 @@ A store that tries to speak to everyone ends up speaking clearly to no one. When
 
 ### Real example: Lucid Creations
 
-Lucid Creations is a Shopify product store under Auralis Digital. Its audience is broadly aligned with psychedelic art, electronic music, festival culture, sacred geometry, and alternative design, and its products include apparel, blankets, tapestries, wall art, accessories, and related designs. It may later add handmade pieces and commissions.
+Lucid Creations is a Shopify product store under Auralis Digital. Its audience is broadly aligned with psychedelic art, electronic music, festival culture, sacred geometry, and alternative design, and its products include apparel, blankets, tapestries, wall art, accessories, and related designs. It also develops handmade work such as wire wraps, with room to add more handmade pieces and commissions.
 
 Lucid Creations is aimed at people who are drawn to festival-inspired attire, a moderate hippie style, sacred geometry, psychedelic imagery, and expressive artwork. The starting customer is someone who wants clothing, décor, accessories, or handmade art that reflects those visual interests.
 
 The offer is based on the creator’s own artistic style rather than an attempt to follow every trend. Lucid Creations currently expresses that style through print-on-demand products and wire wraps, with room to add other handmade pieces and creative work as new ideas are developed.
+
+In one sentence: I sell festival-inspired, psychedelic, and sacred-geometry art — across print-on-demand products and handmade pieces such as wire wraps — for people who want clothing, décor, and accessories that reflect their own creative style.
 
 ### Common mistake
 
@@ -651,7 +653,7 @@ The settings you choose now — currency, time zone, units, and account security
 
 ### Real example: Lucid Creations
 
-Lucid Creations operates as a Shopify product store under Auralis Digital. Its setup supports print-on-demand products and may later support handmade items and commissions. Its configuration should use the business's actual operating time zone, currency, and measurement conventions, and its owner should keep secure control of the account and avoid unnecessary apps.
+Lucid Creations operates as a Shopify product store under Auralis Digital. Its setup supports print-on-demand products as well as handmade work such as wire wraps, with room to extend to further handmade items and commissions. Its configuration should use the business's actual operating time zone, currency, and measurement conventions, and its owner should keep secure control of the account and avoid unnecessary apps.
 
 No reliable written record is available for this guide of Lucid Creations’ original Shopify setup decisions — which steps caused confusion, which settings were later changed, or whether any apps were installed before they were needed. This example therefore does not reconstruct that history.
 
