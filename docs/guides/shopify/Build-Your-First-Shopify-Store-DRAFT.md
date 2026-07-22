@@ -3809,8 +3809,8 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Visual QA is pending.
 - Real screenshots are pending.
 - Official URLs were verified and inserted on 2026-07-20; pre-publication link re-verification remains pending.
-- The Auralis Digital service URL is pending.
-- Real Lucid Creations examples are pending.
+- The Auralis Digital service link was verified and inserted on 2026-07-22 (the Shopify / E-commerce Setup service page).
+- All 12 Lucid Creations worked examples are complete (inserted via PRs #56–#58).
 - Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list; the optional "How to Use Claude Code or Codex" material was moved out of front matter into an Optional Advanced Appendix after Chapter 12 (so the main course begins with Shopify); the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
 
 ### Missing information
@@ -3820,7 +3820,7 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - The last-updated date and copyright year (left as `[INSERT DATE]` and `[INSERT YEAR]`).
 - The Auralis Digital service link for the final conversion page was resolved to the verified Shopify / E-commerce Setup service page (https://www.auralisdigital.net/web-design) and inserted on 2026-07-22.
 - Official platform links (Shopify Help Center, Printify, USPTO, the SBA state-registry directory, and Shopify domain search) were verified against current official pages on 2026-07-20 and inserted throughout Chapters 1–12 as labeled hyperlinks (217 occurrences). The generic "what to sell / unique selling proposition / brand name" link resolves to a different Shopify blog article for Chapters 1, 2, and 3. No URLs were invented; the full occurrence-level mapping is retained in the finalization working notes. Re-verify all links before publication in case pages move.
-- Chapter 12 still needs Lucid Creations' actual launch status, actual domain, actual payment live state, actual product/publication state, actual fulfillment safeguards, actual first-order workflow, actual basic analytics, and actual launch issues, plus the now-resolved Auralis Digital service link (https://www.auralisdigital.net/web-design), the final copyright year, and the final last-updated date. Do not invent any of these.
+- Chapter 12’s worked example and service link are resolved. The remaining Chapter 12 publication items are the final copyright year and the final last-updated date. Actual launch or results data may be added only if later verified, but it is not required for the approved example.
 - The Codex and Claude Code setup links were resolved to the current OpenAI and Anthropic getting-started pages and inserted as hyperlinks; the installation methods remain to be confirmed (`[VERIFY CURRENT CODEX INSTALLATION METHOD]`, `[VERIFY CURRENT CLAUDE CODE INSTALLATION METHOD]`). No specific tool prices, confirmed free-tier availability, or fixed plan requirements are stated. Current pricing, plan availability, installation methods, and account requirements must be verified before publication.
 
 ### Official link verification record
