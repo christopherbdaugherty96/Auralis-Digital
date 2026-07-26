@@ -1,7 +1,7 @@
 <!--
 SOURCE OF TRUTH for the "Build Your First Shopify Store" guide.
 This Markdown file is authoritative. The matching .docx is generated from this content.
-Draft status: front matter, including Quick Start, plus the TOC, Chapters 1–12 and their worksheets, the optional AI-assistant appendix, and the reviewer note. All twelve chapters and their worksheets are drafted.
+Draft status: front matter, including the six-phase Quick-Start Launch Path, plus the TOC, Chapters 1–12 and their worksheets, the optional AI-assistant appendix, and the reviewer note. The Quick-Start architecture and all twelve chapters and worksheets are drafted.
 The full-book finalization pass is IN PROGRESS; the guide is NOT publication-ready.
 -->
 
@@ -162,6 +162,682 @@ If a screen in this guide does not match exactly what you see, look for the same
 
 This guide shows a last-updated date on the cover. Where a specific setting is likely to change, you will see a note like `[VERIFY CURRENT SHOPIFY SETTING]` so you know to confirm it against the current version of Shopify.
 
+## Quick-Start Launch Path
+
+This Quick-Start is the shortest route through this guide to a basic functional Shopify store. It gives you six phases to move from a clear offer to a deliberate launch decision without requiring you to read every detailed explanation first. It does not replace the **Complete Shopify Workbook** in Chapters 1 through 12. The workbook contains the worksheets, business-model-specific details, troubleshooting paths, fuller safety checks, and alternative routes you will need when your setup is more complicated.
+
+Use the Quick-Start when you are building a straightforward first version of a store and want to know what must happen next. Move into the Complete Workbook whenever a phase points you there or whenever your store includes print-on-demand (POD), handmade work, commissions, digital delivery, subscriptions, international selling, complex inventory, several fulfillment locations, mixed orders, unusual payment requirements, or policies that need deeper review. Do not force a complicated business into a simplified instruction.
+
+You remain responsible for every live action and every fact entered into the store. That includes accuracy, money, publishing, payments, domains, fulfillment, customer communication, privacy, and compliance. Shopify and connected apps change their interfaces and requirements, so use the labeled official links to confirm current paths, labels, eligibility, and behavior before acting. A link supports the lesson; it does not make the decision for you.
+
+Protect private information throughout this path. Do not put passwords, recovery codes, payment credentials, customer records, banking information, payout details, identity documents, private admin links, reusable checkout links, or reusable order-status links in a worksheet, screenshot, AI chat, repository, or shared document. Enter required identity, banking, and payment information only in the official secure interface that is requesting it. Record a safe status such as “provider verification pending,” not the private information itself.
+
+The Quick-Start deliberately uses a small screenshot plan. A screenshot should help you recognize a consequential screen, not substitute for current official instructions. Any screenshot placeholder must be captured close to publication, labeled with its capture date, and use fictional, blank, or fully redacted information. If the official page and a short explanation are enough, use those instead.
+
+### How to use the six phases
+
+Complete the phases in order. At the end of each phase, compare your result with the stated phase outcome. If the result is incomplete, record the blocker instead of pretending it is done. A blocker is a specific condition that prevents a safe next step, such as an unverified payment account, a missing product image, an unresolved fulfillment route, or a policy that does not match how the business operates.
+
+Keep one short launch record as you work. It can be a private document that contains decisions and statuses but no credentials or customer data. Record:
+
+- The store name and intended offer.
+- The products included at launch and the ideas deferred.
+- The fulfillment route for each launch product.
+- The owner of payment, fulfillment, and customer-contact tasks.
+- Consequential settings you changed temporarily.
+- Blockers, next actions, and review dates.
+- The final go/no-go decision and the reason for it.
+
+Do not interpret “quick” as “careless.” The path is shorter because it removes optional depth, not because it removes payment, fulfillment, privacy, testing, or launch safeguards.
+
+### Phase 1 — Choose the offer
+
+**Purpose:** Decide what the first version of the store will sell, describe it clearly, and choose a usable working name.
+
+A first store is easier to finish when it begins with one clear offer. That can be one product, one service, or a small launch catalog of three to five related items. You are not deciding everything the business may ever sell. You are deciding what you can accurately describe, deliver, and support now.
+
+#### 1. Choose a manageable launch offer
+
+Write down the products or services you could realistically offer now. For each one, identify how it would be produced or delivered: self-fulfilled physical inventory, handmade or made-to-order work, POD, a digital file, a service, a commission, or another documented route. Do not group unlike routes together simply because they appear in the same store. A POD shirt is produced by a provider; a handmade wire wrap is produced individually; a commission depends on an agreed scope; and an RJ Print item follows a separate 3D-printing workflow. Those differences will matter when you set inventory, delivery expectations, policies, and fulfillment.
+
+Remove any idea that you cannot yet produce, source, describe, price, or deliver responsibly. From the remaining ideas, choose one offer or a small group of no more than five launch products. A larger catalog can wait. The goal is to finish a coherent first version, not to fill every possible category.
+
+For every launch item, write one plain sentence that answers:
+
+- What is it?
+- Who is it for?
+- What does the customer receive?
+- How will it be delivered or fulfilled?
+
+Avoid unsupported words such as “best,” “guaranteed,” “premium,” or “perfect.” Do not make medical, healing, environmental, delivery, income, ranking, or performance claims unless you have appropriate evidence and the claim is lawful and accurate. Do not describe a POD item as handmade. If the product information is not yet known, record the missing fact instead of guessing.
+
+Create a short **not yet** list for products, features, and channels you are deliberately postponing. This is not a failure list. It protects the launch from uncontrolled expansion. Items can move into the store later after the first version is complete and tested.
+
+This condensed decision follows Chapter 1, especially Steps 3–7: classify the delivery method, confirm that the idea is realistic, select a small starting offer, describe it in one sentence, and decide what is outside the launch.
+
+#### 2. Write one clear offer statement
+
+Choose one likely starting customer—not a detailed fictional persona, but a recognizable kind of buyer. Identify the practical or emotional reason that person may want the offer. Then complete this sentence:
+
+> I sell [product or service] for [specific customer] who want [result, benefit, or experience].
+
+Keep the statement factual. It should name the offer, the customer, and the reason to buy without promising an outcome you cannot support. Read it as if you had never heard of the business. If the sentence needs a long explanation, simplify it.
+
+Use this statement as a decision filter. A product, page, collection, or message belongs in the first launch only when it supports the offer or is required to operate the store safely. The statement can change later when real customer information supports a better direction; it is not a permanent marketing promise.
+
+This is the minimal route through Chapter 2, Steps 1–6. Use its worksheet if the customer and benefit are still unclear. You do not need a long persona exercise to continue.
+
+#### 3. Choose a usable working store name
+
+Generate a short list of names based on the offer. Remove names that are hard to spell, too close to an unrelated business, misleading about the product, or so narrow that they cannot support reasonable growth. Choose one preferred name. Keep one or two backups privately if the preferred name is unavailable during account creation; you do not need a long naming project.
+
+Run a preliminary availability check before committing:
+
+- Search the name normally and look for confusingly similar businesses.
+- Check whether a suitable domain appears available if you intend to use one.
+- Check relevant social names only if those channels are part of the near-term plan.
+- Check official business-name and trademark sources appropriate to your location and risk.
+
+A store name, legal business name, trademark, domain, email address, and social handle are separate things. Availability in one system does not prove availability in another. A Shopify store name also does not provide legal clearance. Record any legal or registration question that still requires an official source or qualified professional.
+
+Write the selected name exactly as it should appear, including capitalization and spacing. Use the same spelling during setup so you do not create avoidable inconsistencies across the store.
+
+This follows Chapter 3, Steps 1–8, with the Quick-Start emphasis on one preferred name, a basic availability check, exact spelling, and an honest record of anything still requiring legal confirmation.
+
+#### Phase 1 check
+
+Continue only when you have:
+
+- One clear offer or a launch catalog of no more than five manageable items.
+- A one-sentence offer statement.
+- One usable working store name.
+- A short not-yet list.
+- A known fulfillment category for every launch item, even if the detailed setup is pending.
+
+**Go deeper in the Complete Workbook:**
+
+- Chapter 1, Steps 1–7, and the **What Am I Selling?** worksheet for a fuller product-choice exercise.
+- Chapter 2, Steps 1–7, and the **Customer and Offer Statement** worksheet for customer/offer fit.
+- Chapter 3, Steps 2–8, and the **Store Name Shortlist** worksheet for backups, availability checks, and unresolved legal questions.
+
+### Phase 2 — Open and secure Shopify
+
+**Purpose:** Create the correct Shopify store, locate the private admin, review essential defaults, and secure account access.
+
+This phase establishes the operating foundation. It does not finish the storefront, activate every feature, install every suggested app, or make the store public. Shopify may show onboarding prompts, recommendations, and optional tools. Treat them as options, not as a required order of work.
+
+#### 1. Prepare before account creation
+
+Have the following ready:
+
+- The exact store name and a backup if needed.
+- An email account you control.
+- A strong unique password stored in a password manager.
+- A phone or authentication device.
+- The business’s operating country or region.
+- The intended primary store currency.
+- The business’s normal time zone.
+- The measurement and weight units you will use.
+- A payment method for Shopify billing if the selected plan requires it.
+
+You do not need a custom domain, full catalog, final logo, finished policies, or every app before creating the store. You do need to understand who should own the account and how access will be recovered. Do not create the store under an account that the business cannot control later.
+
+#### 2. Create the store and identify the admin
+
+Use Shopify’s official setup material to begin:
+
+- [Shopify — Initial store setup](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup)
+
+Sign in to the intended account or create the account, then create the new store. Complete or skip optional onboarding questions where Shopify permits. Stop when you reach the private Shopify admin for the correct store.
+
+The **admin** is the private management area used for settings, products, orders, payments, policies, apps, analytics, and sales channels. It is not the customer storefront. Customers should never receive a private admin URL or be given account access merely to view the store.
+
+`[INSERT SCREENSHOT — Quick-Start Shopify admin orientation]` *(Show the main admin navigation using a fictional or fully redacted store. Hide the store name, URL, email, account identity, orders, customers, and private links. Record the capture date.)*
+
+Current navigation and onboarding labels can change. The result you need is stable: you can sign in, select the correct store, recognize the private admin, and find Settings.
+
+This is the short route through Chapter 4, Steps 1–3.
+
+#### 3. Review identity and core settings
+
+Open the area Shopify currently uses for store details and general defaults. Use current official guidance rather than relying on an old screenshot:
+
+- [Shopify — Set up business settings](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings)
+- [Shopify — Manage store details](https://help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details)
+
+Review the store name, store contact information, account ownership, operating country or region, and the automatically assigned Shopify address. Some fields are private account information; others may appear in notifications, policies, packing documents, or customer-facing pages. Phase 4 handles the public contact route. For now, confirm that you recognize each role and do not expose a residential address or private email unnecessarily.
+
+`[INSERT SCREENSHOT — Quick-Start core Settings or General area]` *(Show only the current area used for time zone, currency, and measurement defaults. Use fictional or fully redacted values and record the capture date.)*
+
+Review three defaults carefully:
+
+1. **Time zone.** Set the zone in which the business normally operates. It affects timestamps, reports, scheduled actions, and how you interpret activity.
+2. **Store currency.** Choose the intended primary currency before loading the full catalog or taking orders. Currency can affect products, reports, payments, and market configuration and may be difficult to change cleanly later.
+3. **Measurement and weight units.** Use the units that match how products and shipping information will be prepared.
+
+Also review language or regional preferences, but do not expand this phase into international markets or multi-currency configuration. If the business needs those, record the requirement and use the Complete Workbook plus current official documentation.
+
+This condenses Chapter 4, Steps 4–8.
+
+#### 4. Secure the account
+
+Enable two-step authentication for the account and protect recovery options. Two-step authentication adds a second sign-in check beyond the password. Use an authenticator or another currently supported method appropriate to the account, store recovery codes safely, and confirm that the business will not lose access if one device is unavailable.
+
+- [Shopify — Account security best practices](https://help.shopify.com/en/manual/privacy-and-security/account-security/account-security-best-practices)
+
+Do not paste recovery codes into a worksheet, repository, screenshot, AI conversation, or shared launch record. Record only that two-step authentication is enabled and who owns recovery responsibility.
+
+Review the plan and billing boundary through Shopify’s current official information:
+
+- [Shopify — Choose a plan](https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/choosing-a-plan)
+
+Do not rely on a price, trial period, feature, or eligibility statement copied from this guide. Plans change. Confirm the current terms before agreeing to a cost or taking an action that requires a paid plan. Record the selected plan or a blocker without recording billing details.
+
+Avoid installing suggested apps unless each app has a defined job in the launch. An unnecessary app can add cost, permissions, settings, or operational behavior. The shortest route uses Shopify’s core features and only the fulfillment or delivery tool required by the offer.
+
+Finish by listing incomplete setup rather than trying to solve it out of order—for example: public contact page, payment activation, product entry, policy review, domain, or fulfillment app. Those items belong to later phases.
+
+This follows Chapter 4, Steps 9–12.
+
+#### Phase 2 check
+
+Continue only when:
+
+- You can sign in to the correct store and reach its admin.
+- Store ownership and recovery responsibility are understood.
+- Time zone, primary currency, and measurement units have been reviewed.
+- Two-step authentication is enabled or a security blocker is recorded.
+- Plan or billing restrictions are understood or recorded.
+- Optional prompts and apps have not pulled the setup out of sequence.
+
+**Go deeper in the Complete Workbook:**
+
+- Chapter 4, Steps 1–4, for account preparation, admin orientation, and identity fields.
+- Chapter 4, Steps 5–8, for time zone, currency, units, language, and regional settings.
+- Chapter 4, Steps 9–12, and the **Initial Shopify Settings** worksheet for security, plans, apps, and unfinished setup.
+
+### Phase 3 — Add the product and fulfillment method
+
+**Purpose:** Document how the customer will receive the offer and create at least one accurate product record.
+
+Do not build every possible fulfillment model. Choose the route used by the launch product and configure only what that route needs. A product should remain in Draft while material information is missing.
+
+#### 1. Document one fulfillment route per product
+
+For each launch item, choose the applicable route:
+
+- **Self-fulfilled physical product:** the business owns or makes the item, stores it, packs it, purchases or arranges shipping, sends tracking where applicable, and handles exceptions.
+- **Print-on-demand:** a provider produces and ships the item after the order reaches the provider under the store’s configured approval rules. The merchant remains responsible for product accuracy, customer promises, funding, monitoring, and support.
+- **Digital product:** no physical shipment is required, but a reliable delivery method, file-access process, and customer-support path are required.
+- **Service or commission:** delivery depends on scope, scheduling, customer-supplied information, approval, and completion terms rather than a standard shipment.
+- **Another documented route:** identify who owns inventory, accepts the order, produces or supplies the item, communicates with the customer, and resolves a failure.
+
+Keep routes distinct. Printify is one optional POD route, not a requirement for Shopify. RJ Print is a separate 3D-printing workflow and should not be treated as Lucid Creations’ normal Printify route. Handmade items require individual production and inventory decisions; they are not standardized POD stock.
+
+For the chosen route, write:
+
+- Who owns or produces the item.
+- Whether Shopify tracks a quantity.
+- Which location or app is responsible.
+- What starts production or delivery.
+- Whether approval is manual or automated.
+- Who pays the provider or shipping cost.
+- Who sends customer updates.
+- What happens when payment, address, inventory, production, delivery, or customer information has a problem.
+
+Do not trigger production while documenting the route. If you use Printify, read its current official order-approval and order-status guidance before enabling automation:
+
+- [Printify — Store details and order-approval settings](https://help.printify.com/hc/en-us/articles/4483625253265-How-do-I-set-up-store-details-and-order-approval-settings)
+- [Printify — Check the status of an order](https://help.printify.com/hc/en-us/articles/4483625414673-How-can-I-check-the-status-of-an-order)
+
+The exact behavior and charge timing can change. Confirm them in official documentation and the live account before relying on them.
+
+This is the minimal route through Chapter 7, Steps 1–6 and the one applicable route among Steps 7–13. Use Steps 14–17 to define updates, exceptions, a dry run, and blockers when the route is not straightforward.
+
+#### 2. Create the first product record
+
+Open Shopify’s current product area and create a product:
+
+- [Shopify — Add and update products](https://help.shopify.com/en/manual/products/add-update-products)
+- [Shopify — Product details](https://help.shopify.com/en/manual/products/details)
+
+`[INSERT SCREENSHOT — Quick-Start product editor]` *(Show a blank or fictional product editor. Hide store identifiers, supplier information, costs, inventory, app identifiers, files, metadata, and private account information. Record the capture date.)*
+
+Build one complete record before repeating the process:
+
+1. **Title.** State concretely what the product is. Use the meaningful product type and a distinguishing detail. Do not use unsupported quality or popularity claims.
+2. **Description.** Explain what the customer receives, relevant material or format, available choices, size or dimensions where needed, how it is used or delivered, production or fulfillment facts the customer should know, meaningful variation, and what is not included. Use factual wording.
+3. **Media.** Use only images you own or are authorized to use. Do not treat a mockup as proof of the final manufactured item. Add concise alt text that explains the relevant image content for a person using a screen reader.
+4. **Price.** Enter the intended selling price only after reviewing costs and obligations. Do not copy a provider price without deciding the customer price. Avoid deceptive compare-at pricing.
+5. **Options.** Add only choices the customer genuinely selects, such as size or color. If options create variants, review each meaningful combination.
+
+For POD products, identify the production route accurately. For handmade products, disclose meaningful variation without treating each piece as standardized inventory. For services or commissions, define what the listed purchase includes and what information or approval is required. For digital items, make clear that the customer receives a file or access rather than physical shipping.
+
+The core product record follows Chapter 8, Steps 1–10 and Step 13. Use Step 14 only for the variant fields that apply to the product. Advanced SKU, barcode, customs, HS-code, and location work remains in the Complete Workbook.
+
+#### 3. Review inventory, shipping, fulfillment, and publication state
+
+Decide whether Shopify should track quantity for this product. If the item is one-of-one or limited handmade stock, configure a quantity rule that prevents duplicate sales. If an app manages POD availability, confirm the current app behavior rather than entering invented quantities. A digital product or service may not behave like physical inventory, but capacity or availability may still need a separate control.
+
+Confirm whether the product requires physical shipping. Physical items normally need the shipping requirement enabled; digital products and many services generally do not. An incorrect setting can create a checkout that requests shipping unnecessarily or fails to collect information needed for delivery.
+
+Assign the intended location or fulfillment app. Confirm that the assignment matches the route documented above. Do not assume connecting an app automatically makes every product safe to publish or fulfill.
+
+Choose the product state deliberately:
+
+- Keep it **Draft** when price, description, media, inventory, fulfillment, delivery, or policy information is materially incomplete.
+- Make it available to the intended sales channel only after the record has been reviewed.
+- Confirm that publishing will not expose unfinished information.
+
+`[INSERT SCREENSHOT — Quick-Start product status and channel availability]` *(Show fictional product status and publication controls with all store, channel, product, supplier, app, and account identifiers removed. Record the capture date.)*
+
+Preview the customer-facing product page. Check title, media, description, price, options, availability, delivery wording, and links. Read it as a customer who has no access to internal notes. If the page cannot answer what the item is, what the customer selects, what they receive, and how it is delivered, return the product to Draft.
+
+This follows Chapter 8, Steps 17–18, 21, and 24–29.
+
+#### Phase 3 check
+
+Continue only when:
+
+- At least one product record is complete or held safely in Draft with a specific blocker.
+- The title and description are factual.
+- Media is authorized and reviewed.
+- Price and required options are present.
+- Inventory behavior is deliberate.
+- Physical-shipping behavior matches the product.
+- The fulfillment route and responsible location or app are documented.
+- Product status and channel availability are deliberate.
+
+**Go deeper in the Complete Workbook:**
+
+- Chapter 7, Steps 1–6, for fulfillment ownership, locations, inventory, and manual versus app-managed fulfillment.
+- Chapter 7, Steps 7–9, for Printify funding, approval, order, and tracking behavior.
+- Chapter 7, Steps 10–17, for self-fulfilled, digital, service, commission, mixed-order, customer-update, and exception paths.
+- Chapter 8, Steps 3–12, for product content, media, alt text, price, cost, and compare-at price.
+- Chapter 8, Steps 13–17, for complex variants, SKUs, barcodes, and inventory.
+- Chapter 8, Steps 18–23, for shipping, weight, customs, fulfillment assignment, organization, and search-listing fields.
+- Chapter 8, Steps 24–30, and the **First Product Build Sheet** for publication, preview, blockers, and additional products.
+
+### Phase 4 — Add customer-facing essentials
+
+**Purpose:** Give customers a safe contact route, make launch products easy to reach, and publish policies that match actual operations.
+
+This phase creates the minimum usable storefront structure. A one-product store does not need a complex collection system. A small store does need a clear path to the product, contact information, and applicable policies.
+
+#### 1. Create a public contact route
+
+First distinguish private account information from information customers should see. The Shopify account email, store contact email, sender email, public support email, legal business details, and return address can serve different purposes. Do not publish a residential address, personal phone number, or private account email merely because Shopify stores that value somewhere.
+
+Review current store-detail guidance:
+
+- [Shopify — Manage store details](https://help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details)
+
+Create a basic Contact page or another reliable public support route. State how customers should contact the business and what information they should include, without asking them to send passwords, full payment information, identity documents, or other unnecessary sensitive data. Do not promise a response time the business cannot maintain.
+
+Test the route with fictional information sent to an inbox controlled by the business. Confirm that the message arrives, the sender identity is understandable, and the reply path works. Do not expose the test address or message in screenshots.
+
+Review visible business identity across the store, notification sender, Contact page, footer, and policies. The exact wording does not need to be identical everywhere, but it should not conflict.
+
+This follows Chapter 5, Steps 1–9 and 11–13. Use Chapter 5, Step 10, for an About page if the store needs one; an elaborate brand story is not required for the minimum launch.
+
+#### 2. Build the simplest useful navigation
+
+List the customer destinations required for launch:
+
+- Home or storefront entry.
+- Each launch product, or one useful Shop/collection destination.
+- Contact.
+- Applicable policy pages.
+
+Create a collection only when it helps the customer browse. A single-product store can link directly to the product. A store with several closely related launch products may benefit from one clear collection. Do not create empty categories or multiple overlapping collections to make the store look larger.
+
+If a collection is useful, give it a concrete customer-facing name, a factual short description, and only the intended products. Do not claim that a collection is “Best Sellers” without a valid rule or documented sales basis. Shopify’s best-selling sort behavior is not proof that the business can make a popularity claim.
+
+Plan the main menu before editing. Use short labels that tell customers where a link goes. Add dropdowns only when they reduce confusion; a small store usually needs a flat menu. Add policy destinations to the footer or another appropriate location. Then test every link on desktop and mobile.
+
+- [Shopify — Understanding navigation](https://help.shopify.com/en/manual/online-store/menus-and-links/understanding-navigation)
+- [Shopify — Menus and links](https://help.shopify.com/en/manual/online-store/menus-and-links)
+
+`[INSERT SCREENSHOT — Quick-Start main-menu editor]` *(Show a fictional simple menu with domains, internal URLs, store identity, account details, and unpublished destinations removed. Record the capture date.)*
+
+Current menu labels and paths can change. The required result is a customer path that reaches every launch product, Contact page, and applicable policy without broken, empty, private, or unavailable destinations.
+
+This condenses Chapter 9, Steps 1–5 for an optional collection and Steps 16–30 for navigation planning, editing, desktop/mobile review, broken destinations, and the final decision.
+
+#### 3. Review and publish applicable policies
+
+Before drafting policies, write the operational facts they must reflect: product types, fulfillment routes, processing responsibilities, return handling, refund decisions, cancellations, digital delivery, commissions or personalization, customer contact, privacy practices, and any third-party production route.
+
+Use Shopify’s available templates as a starting point, then review and revise the policies so they match the store’s actual products, fulfillment, returns, contact information, and privacy practices.
+
+Do not publish standard generated text without reading it. A template does not know the business’s actual return address, product exceptions, production process, delivery promises, cancellation boundary, or legal obligations. Automated privacy controls and policy text also need to match the store’s apps, tracking, customer information, and location. This guide is educational and does not replace legal advice.
+
+Review Shopify’s current policy material:
+
+- [Shopify — Refund, privacy, and terms statements](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)
+
+`[INSERT SCREENSHOT — Quick-Start policy settings]` *(Show a fictional policy area with all business, contact, address, account, and policy-specific sensitive information removed. Record the capture date.)*
+
+At minimum, identify whether the store needs reviewed return/refund, shipping/delivery, privacy, terms, and contact information. The exact required policies depend on the business and location. A service, commission, digital product, subscription, POD product, handmade item, or RJ Print product can require different wording. Do not force all of them into one generic promise.
+
+Compare policies with the actual product descriptions, checkout presentation, fulfillment process, and public contact route. Remove conflicts. For example, the shipping policy should not promise a delivery time the fulfillment process cannot support; a return policy should not contradict operational return rules; a POD provider’s merchant terms are not automatically the store’s customer policy.
+
+Save and publish only reviewed policies. Add customer-facing links and test them on desktop, mobile, and the checkout path where Shopify presents them. Record a legal or operational blocker instead of publishing wording the business cannot follow.
+
+This follows Chapter 10, Steps 1–5, 6–13 as applicable, Steps 14–17 for business-model-specific terms, and Steps 18–25 for line-by-line review, consistency, publishing, link testing, blockers, and readiness.
+
+#### Phase 4 check
+
+Continue only when:
+
+- Customers have a tested contact route.
+- Private information is not exposed unintentionally.
+- Every launch product is reachable through a simple working path.
+- A collection exists only if it improves browsing.
+- Main and footer navigation contain no broken or empty launch links.
+- Applicable policies have been reviewed against real operations and published.
+- Policy and contact links work on desktop and mobile.
+
+**Go deeper in the Complete Workbook:**
+
+- Chapter 5, Steps 1–7, for email, phone, address, and privacy roles.
+- Chapter 5, Steps 8–13, and the **Business and Contact Information** worksheet for Contact/About pages, testing, consistency, and blockers.
+- Chapter 9, Steps 1–15, for manual and smart collections, conditions, sorting, and availability.
+- Chapter 9, Steps 16–30, and the **Collection and Navigation Map** worksheet for menus, dropdowns, links, redirects, and desktop/mobile testing.
+- Chapter 10, Steps 1–13, for core policy facts, templates, returns, shipping, privacy, terms, and contact.
+- Chapter 10, Steps 14–25, and the **Store Policy Decision Sheet** for commissions, POD, digital products, subscriptions, consistency, publishing, and readiness.
+
+### Phase 5 — Configure and test payments
+
+**Purpose:** Select an eligible payment path, review checkout essentials, run a controlled simulated payment test, and restore the intended state.
+
+Payments combine customer money, private identity information, provider eligibility, fees, payouts, checkout behavior, orders, notifications, inventory, and fulfillment. A short path must keep these boundaries clear.
+
+#### 1. Select and activate an eligible provider
+
+Understand the flow: the customer submits payment at checkout; a payment provider processes it; Shopify records the order; and the provider later sends an eligible payout to the merchant’s configured destination. A completed test order is not a real payout, and a real customer payment does not necessarily reach the bank immediately.
+
+Check Shopify’s current payment information and country or regional availability through official sources:
+
+- [Shopify — Payments](https://help.shopify.com/en/manual/payments)
+- [Shopify — Shopify Payments availability](https://help.shopify.com/en/manual/payments/shopify-payments)
+
+Choose the eligible provider the business intends to use. Confirm current requirements, supported methods, fees, payout behavior, and plan restrictions before activation. Do not assume Shopify Payments is available in every country or that every provider behaves the same way.
+
+Prepare required identity, business, tax, ownership, phone, address, and banking information privately. Enter it only in the provider’s official secure interface. Do not store copies in the course worksheet, screenshot plan, repository, AI chat, or launch record. Record only a safe status: not started, pending, active, restricted, or blocked.
+
+Confirm two-step authentication before activating a provider when required. Review payout status and the intended destination privately. Never capture a screenshot containing account numbers, routing numbers, identity documents, verification codes, balances, payout amounts, or private provider identifiers.
+
+This follows Chapter 6, Steps 1–8. If eligibility or verification is unresolved, record the blocker and do not pretend the payment path is active.
+
+#### 2. Review essential checkout behavior
+
+Review the current settings for:
+
+- Payment capture.
+- Customer contact method.
+- Required customer information.
+- Customer-account requirements.
+- Order processing.
+- Automatic fulfillment or app behavior.
+
+Use the minimum information needed to complete and support the order. Do not require unnecessary customer data. Confirm that the checkout collects the address or delivery information required by the product type. A digital item or service may need different information from a physical shipment.
+
+Before testing, identify every possible consequence:
+
+- Could a live customer be blocked while test mode is enabled?
+- Could an app submit a POD or RJ Print order?
+- Could Shopify or an app mark an order fulfilled?
+- Could a shipping label be purchased?
+- Could a digital file be sent?
+- Could inventory change?
+- Could customer or staff notifications be sent?
+- Could a discount, analytics record, or abandoned checkout be created?
+
+Disable or control real-world actions for the simulated test. Record every temporary change and its original value so it can be restored.
+
+This condenses Chapter 6, Steps 9–14 and Chapter 11, Steps 3–6.
+
+#### 3. Run one controlled simulated test
+
+Use a current official simulated method supported by the selected Shopify payment setup:
+
+- [Shopify — Test Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments)
+- [Shopify — Place a test order](https://help.shopify.com/en/manual/checkout-settings/test-orders)
+
+Simulated testing and deliberately authorized real-payment testing are different:
+
+- A **simulated test** uses the official test method and test data. It should not move real money.
+- A **deliberately authorized real transaction** uses live payment rails, can incur fees or operational consequences, and is outside this minimum path unless the business explicitly approves it.
+- Fulfillment or production is a separate action. A payment result does not authorize printing, shipping, label purchase, digital delivery, or customer communication.
+
+Never use real card data in a simulated gateway. Never use a real customer identity. Use fictional test information and, when notification delivery must be checked, a merchant-controlled inbox under a fictional test identity.
+
+Enable the official test method only after recording the pre-test state and controlling connected actions.
+
+`[INSERT SCREENSHOT — Quick-Start payment test-mode control]` *(Show only the current simulated-test control using fictional or fully redacted provider information. Hide account, identity, banking, payout, balance, credential, and store details. Record the capture date.)*
+
+Run a small test using one reviewed product:
+
+1. Open the storefront as a customer.
+2. Add the intended product and variant to the cart.
+3. Confirm title, price, quantity, and delivery wording.
+4. Enter fictional customer and address information suitable for the test.
+5. Review shipping or delivery choices.
+6. Open policy links.
+7. Use the official simulated payment data.
+8. Submit the simulated payment.
+9. Confirm the result is clearly a test or simulated order.
+
+`[INSERT SCREENSHOT — Quick-Start successful simulated test-order result]` *(Show a redacted result that is unmistakably a test. Hide names, addresses, email, order numbers, checkout/order-status links, payment/provider details, product identifiers, prices, inventory, and private URLs. Record the capture date.)*
+
+Do not purchase a shipping label, trigger Printify or RJ Print production, send messages to uninvolved people, or mark an order fulfilled for appearance. Inspect the Shopify order record and intended fulfillment assignment without executing a real action.
+
+If the official method supports a failed or incomplete result safely, test it only when useful. A successful controlled test is the minimum Quick-Start requirement.
+
+#### 4. Restore and record the intended state
+
+Turn test mode off or restore the payment configuration to the intended post-test state. Restore any fulfillment, notification, inventory, discount, or app setting changed for the test. Confirm the final state directly; do not rely on memory.
+
+Review the storefront checkout entry again. Do not place a real order. Confirm only that the path is available or document why it is blocked.
+
+Record:
+
+- Test method and date.
+- Product/path tested.
+- Successful test result or blocker.
+- Any observed notification, inventory, or order-record effect.
+- The restored payment state.
+- The restored fulfillment/app state.
+- Remaining payment or checkout blockers.
+
+This follows Chapter 6, Steps 15–20 and the minimum safe path in Chapter 11, Steps 18, 20, 23–25, and 33–35.
+
+#### Phase 5 check
+
+Continue only when:
+
+- An eligible payment provider is active or the blocker is documented.
+- Private verification information stayed inside official secure interfaces.
+- Essential checkout fields and order-processing behavior were reviewed.
+- Real fulfillment and production actions were controlled.
+- One official simulated test succeeded where supported, or a specific test blocker is recorded.
+- Test mode and every temporary setting were restored to the intended state.
+- No real card data, production, label purchase, or uninvolved-person communication was used.
+
+**Go deeper in the Complete Workbook:**
+
+- Chapter 6, Steps 1–8, for provider eligibility, activation, authentication, and payouts.
+- Chapter 6, Steps 9–14, for capture, checkout information, accounts, order processing, and test preparation.
+- Chapter 6, Steps 15–20, and the **Payments and Checkout Readiness** worksheet for simulated testing, restoration, visible checkout, and blockers.
+- Chapter 11, Steps 1–6, for test scope, definitions, test data, live-operation risks, method selection, and pre-test state.
+- Chapter 11, Steps 18–28, for payment results, notifications, order records, inventory, fulfillment, cancellation/refund, and order-status review.
+- Chapter 11, Steps 33–37, for restoration, cleanup, blockers, retesting, and the readiness decision.
+
+### Phase 6 — Launch and verify
+
+**Purpose:** Carry forward blockers, make a deliberate go/no-go decision, control public access, verify the store from a clean session, and prepare for the first real order.
+
+Launch means making the intended storefront accessible. It does not prove sales, traffic, profit, ranking, trust, platform approval, legal compliance, or business success. A store may also be intentionally held at no-go while a critical blocker is resolved.
+
+#### 1. Build the final decision record
+
+Bring forward every unresolved blocker from the first five phases. Classify each as:
+
+- **Blocking:** unsafe or impossible to launch around, such as no eligible payment path for a store that requires online payment, an unknown fulfillment route, exposed private information, missing material product facts, broken checkout entry, or policies that materially conflict with operations.
+- **Nonblocking but scheduled:** a bounded improvement that does not make the current launch unsafe or misleading.
+- **Not applicable:** genuinely outside the launch scope.
+
+Define exactly what is being launched: the Online Store, named products, intended collections, the applicable market, and any included delivery or sales channel. Mark other products, markets, subscriptions, services, commissions, POD items, handmade work, RJ Print items, pickup, local delivery, or apps as included, deferred, blocked, already live, or not applicable. Making the Online Store public does not automatically make every product, market, channel, or app ready.
+
+Assign:
+
+- Launch owner.
+- Backup contact.
+- Planned date, time, and time zone.
+- Immediate observation period.
+- First-order reviewer.
+- Fulfillment owner.
+- Customer-contact owner.
+- Technical or provider escalation route.
+- Next formal review date.
+
+Record the pre-launch state without credentials: payment mode, provider status, public-access/password state, primary domain, product status, channel availability, fulfillment assignments, policy links, contact route, open blockers, and timestamp.
+
+This follows Chapter 12, Steps 1–4.
+
+#### 2. Confirm the launch-critical state
+
+Confirm directly:
+
+- Administrative ownership and two-step authentication.
+- Current plan state and any public-access restriction.
+- Intended payment live/test state.
+- Public business and contact information.
+- Launch product status and channel availability.
+- Inventory and fulfillment readiness.
+- Shipping/delivery and policy presentation.
+- Domain and primary-domain decision, if a custom domain is used.
+- Broken-link and redirect risks.
+- Desktop and mobile preview.
+- Public-information privacy.
+
+Use current official guidance for launch and public access:
+
+- [Shopify — Preparing your store for launch](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-prepare-for-launch)
+- [Shopify — Password page](https://help.shopify.com/en/manual/online-store/themes/password-page)
+- [Shopify — Domains](https://help.shopify.com/en/manual/domains)
+
+`[INSERT SCREENSHOT — Quick-Start store password or public-access control]` *(Show the current public-access control with store, domain, plan, account, and private URL details removed. Record the capture date.)*
+
+Current paths, plan requirements, domain states, and access labels can change. The required outcome is an explicit decision about who can access the storefront and what action changes that state.
+
+Do not remove password protection or change public access while payments, fulfillment, material product information, policies, or privacy remain blocking. Do not connect or edit DNS merely to complete a checklist. If the store uses the provided Shopify address for its first functional version, a custom domain can remain a documented later task.
+
+This condenses Chapter 12, Steps 5–15.
+
+#### 3. Make the go/no-go decision
+
+Choose:
+
+- **Go:** launch-critical checks pass, remaining items are deliberately nonblocking, and the owner authorizes the public action.
+- **No-go:** one or more critical checks fail or evidence is missing.
+- **Already live, controlled review:** the storefront is already accessible, so do not repeat a “launch” action; perform the verification and record the current state.
+
+Write the decision, timestamp, owner, blockers, and reason. Do not use a successful simulated order by itself as proof that the store is ready. A test does not confirm every product, fulfillment route, policy, public link, domain, or live payment condition.
+
+If the decision is no-go, select one bounded next action—such as complete provider verification, correct fulfillment assignment, replace an unauthorized image, fix a broken policy link, or remove exposed private information. Assign an owner and review date. The Quick-Start can finish in a documented no-go state; it should not encourage a launch around a critical problem.
+
+This follows Chapter 12, Step 16.
+
+#### 4. Make the storefront public only when approved
+
+For an approved go decision, use Shopify’s current control to make only the intended storefront public. Do not change unrelated markets, payment providers, domains, apps, products, or sales channels at the same time. Record the exact action and time.
+
+Then open the public storefront in a clean browser session where you are not relying on admin access, cached preview permissions, or a private link.
+
+`[INSERT SCREENSHOT — Quick-Start public storefront confirmation]` *(Show the public storefront using only approved public information. Do not expose admin URLs, preview links, checkout links, customer data, analytics, internal identifiers, or unpublished products. Record the capture date.)*
+
+Confirm:
+
+1. The expected public address opens.
+2. The intended homepage or storefront entry appears.
+3. The launch product can be reached through navigation.
+4. The correct product and variant can be added to the cart.
+5. The cart displays the expected item, price, and quantity.
+6. Checkout entry opens, without placing a real order.
+7. Contact and applicable policy links open.
+8. Mobile and desktop paths are understandable.
+9. Broken or old URLs behave as intended where redirects are required.
+10. No private, draft, test, or internal information is visible.
+
+Do not complete a real order merely to finish this path. “No live order yet” is a valid state.
+
+This follows Chapter 12, Steps 17–21 and the focused storefront portions of Chapter 11, Steps 7–17 and 29–30.
+
+#### 5. Prepare for the first live order
+
+Before customer money or fulfillment arrives, assign responsibility for:
+
+- Reviewing payment status and fraud/risk indicators.
+- Confirming customer contact and delivery information.
+- Checking the purchased product and variant.
+- Confirming inventory or production availability.
+- Approving a POD provider where applicable.
+- Handling handmade, commission, digital, service, or RJ Print work through its own route.
+- Purchasing a shipping label when appropriate.
+- Sending customer communication.
+- Handling cancellation, refund, address, payment, production, or delivery problems.
+- Recording and escalating an issue.
+
+Fraud analysis is an input, not a guarantee. A paid order should not be sent automatically into an unreviewed production route merely because Shopify recorded it.
+
+Record the next review date. At that review, check actual orders if any, operational problems, contact messages, fulfillment status, broken paths, and a small set of basic analytics without overinterpreting early or test traffic. If no order has arrived, record “no live order yet.” Do not invent success from visits, a Best Sellers label, or a short observation window.
+
+Choose one bounded improvement after the launch check: fix a specific confusing label, complete one deferred product, improve one product image, resolve one documented blocker, or request scoped professional help. Do not restart the entire store because the first version is not perfect.
+
+This follows Chapter 12, Steps 22–29.
+
+#### Phase 6 check
+
+The Quick-Start is complete when:
+
+- The launch decision is explicit.
+- Payment and public-access states are confirmed.
+- An approved public store has been checked from a clean session, or a no-go blocker is documented.
+- Product, cart, checkout-entry, contact, and policy paths have been checked.
+- First-order responsibilities are assigned.
+- Remaining blockers and the next review date are recorded.
+- One bounded next action is selected.
+
+**Go deeper in the Complete Workbook:**
+
+- Chapter 11, Steps 7–17, for the storefront, navigation, collection, product, cart, checkout, delivery, tax, and policy path.
+- Chapter 11, Steps 29–37, and the **Pre-Launch Store Test** worksheet for desktop/mobile, accessibility, difficult carts, restoration, blockers, retesting, and readiness.
+- Chapter 12, Steps 1–16, for launch scope, ownership, account, catalog, fulfillment, payments, domain, privacy, previews, and go/no-go.
+- Chapter 12, Steps 17–29, and the **Final Launch Checklist** for public access, smoke testing, first-order readiness, basic results review, follow-up, and help.
+
+### Quick-Start completion checklist
+
+- [ ] One clear offer or manageable launch catalog is selected.
+- [ ] One usable store name is selected.
+- [ ] Shopify account and correct admin access are confirmed.
+- [ ] Time zone, currency, and measurement units are reviewed.
+- [ ] Account security and recovery responsibility are confirmed.
+- [ ] At least one accurate product record is complete.
+- [ ] The fulfillment route and owner are documented.
+- [ ] A public contact route is accessible and tested.
+- [ ] Navigation reaches every launch product and required page.
+- [ ] Applicable policies are reviewed against operations and published.
+- [ ] An eligible payment provider is active, or its blocker is documented.
+- [ ] An official simulated payment test is completed where supported.
+- [ ] Test mode and temporary settings are restored to the intended state.
+- [ ] The public-access decision and launch scope are documented.
+- [ ] The product, cart, and checkout-entry path are checked.
+- [ ] First-order payment, fulfillment, and customer-contact responsibilities are assigned.
+- [ ] Critical blockers and one bounded next action are recorded.
+- [ ] The next review date is recorded.
+
 <!-- PAGE BREAK -->
 
 ## Table of Contents
@@ -174,6 +850,13 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 - How to Use This Guide
 - What You Need—and What You Do Not Need Yet
 - A Note About Shopify Interface Changes
+- Quick-Start Launch Path
+  - Phase 1 — Choose the offer
+  - Phase 2 — Open and secure Shopify
+  - Phase 3 — Add the product and fulfillment method
+  - Phase 4 — Add customer-facing essentials
+  - Phase 5 — Configure and test payments
+  - Phase 6 — Launch and verify
 
 **Chapters**
 
@@ -215,7 +898,7 @@ This guide shows a last-updated date on the cover. Where a specific setting is l
 
 *(Page numbers are added during final formatting.)*
 
-> **Draft status:** All twelve chapters and their worksheets are drafted, plus the Quick Start front-matter section and an optional AI-assistant appendix after Chapter 12. The full-book finalization pass is in progress; the guide is not yet publication-ready.
+> **Draft status:** The six-phase Quick-Start Launch Path, all twelve Complete Workbook chapters and their worksheets, and the optional AI-assistant appendix are drafted. Current verification, screenshot production, visual QA, publication metadata, internal-note removal, and final approval remain pending; the guide is not publication-ready.
 
 <!-- PAGE BREAK -->
 
@@ -3806,12 +4489,13 @@ This note lists what the draft assumes and what it still needs. It is for the in
 - Chapters 1 through 12 and all worksheets are drafted.
 - The guide is not publication-ready.
 - The full-book finalization pass is in progress.
+- The six-phase Quick-Start Launch Path was added as the customer-facing short route; it preserves the existing twelve-chapter Complete Workbook as the detailed reference layer.
 - Visual QA is pending.
 - Real screenshots are pending.
 - Official URLs were verified and inserted on 2026-07-20; pre-publication link re-verification remains pending.
 - The Auralis Digital service link was verified and inserted on 2026-07-22 (the Shopify / E-commerce Setup service page).
 - All 12 Lucid Creations worked examples are complete (inserted via PRs #56–#58).
-- Front matter now also includes the "What You Need—and What You Do Not Need Yet" Quick Start list; the optional "How to Use Claude Code or Codex" material was moved out of front matter into an Optional Advanced Appendix after Chapter 12 (so the main course begins with Shopify); the "What This Guide Does Not Cover" note was clarified so the optional AI introduction does not contradict the no-coding / no-Git-administration scope. The full-book finalization pass is in progress.
+- Front matter now includes the six-phase Quick-Start Launch Path and the "What You Need—and What You Do Not Need Yet" orientation list; the optional "How to Use Claude Code or Codex" material remains in an Optional Advanced Appendix after Chapter 12 (so the main course begins with Shopify). The Quick-Start architecture is complete, but current verification, screenshot reduction and capture, full visual QA, publication metadata, removal of this note, and final approval remain pending.
 
 ### Missing information
 
@@ -4082,4 +4766,4 @@ This draft stays within the locked scope. Chapter 1 decides what to sell; Chapte
 
 ### Post-Chapter-12 full-book finalization (next phase — not performed in this pass)
 
-The drafting phase is complete. Before publication, the separate full-book finalization pass must include: cross-chapter editorial consistency; worksheet-name consistency; a table-of-contents review; a front-matter claim review; pre-publication re-verification of the inserted official links; replacement or approval of Lucid Creations examples; approval and insertion of the Auralis Digital service link; screenshot production; screenshot redaction review; screenshot capture dates; interface re-verification; full Word visual QA; wide-table QA; page-break QA; header/footer QA; PDF export; PDF visual QA; link testing; an accessibility-oriented document review; final metadata; the final copyright year and date; removal of this Internal Reviewer Note; and final publication approval. The official-link replacement and verification-record unit is complete. The remaining tasks listed above have not yet been completed.
+The drafting phase is complete, including the six-phase Quick-Start architecture. Before publication, the separate full-book finalization pass must still include: cross-chapter editorial consistency; worksheet-name consistency; a table-of-contents review; a front-matter claim review; pre-publication re-verification of the inserted official links; final approval of Lucid Creations positioning; screenshot reduction and production; screenshot redaction review; screenshot capture dates; interface re-verification; full Word visual QA; wide-table QA; page-break QA; header/footer QA; PDF export; PDF visual QA; link testing; an accessibility-oriented document review; final metadata; the final copyright year and date; removal of this Internal Reviewer Note; and final publication approval. The Quick-Start architecture, official-link replacement, all twelve Lucid Creations examples, and the Auralis Digital service-link insertion are complete. The remaining tasks listed above have not yet been completed.
