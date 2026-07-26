@@ -387,8 +387,8 @@ For the chosen route, write:
 
 Do not trigger production while documenting the route. If you use Printify, read its current official order-approval and order-status guidance before enabling automation:
 
-- [Printify — Store details and order-approval settings](https://help.printify.com/hc/en-us/articles/4483625253265)
-- [Printify — Check the status of an order](https://help.printify.com/hc/en-us/articles/4483625414673)
+- [Printify — Store details and order-approval settings](https://help.printify.com/hc/en-us/articles/4483625253265-How-do-I-set-up-store-details-and-order-approval-settings)
+- [Printify — Check the status of an order](https://help.printify.com/hc/en-us/articles/4483625414673-How-can-I-check-the-status-of-an-order)
 
 The exact behavior and charge timing can change. Confirm them in official documentation and the live account before relying on them.
 
@@ -413,7 +413,7 @@ Build one complete record before repeating the process:
 
 For POD products, identify the production route accurately. For handmade products, disclose meaningful variation without treating each piece as standardized inventory. For services or commissions, define what the listed purchase includes and what information or approval is required. For digital items, make clear that the customer receives a file or access rather than physical shipping.
 
-The core record follows Chapter 8, Steps 1–14. The Quick-Start intentionally does not require a full SKU system, barcodes, complex locations, customs fields, HS codes, or advanced variant management.
+The core product record follows Chapter 8, Steps 1–10 and Step 13. Use Step 14 only for the variant fields that apply to the product. Advanced SKU, barcode, customs, HS-code, and location work remains in the Complete Workbook.
 
 #### 3. Review inventory, shipping, fulfillment, and publication state
 
@@ -560,7 +560,7 @@ Understand the flow: the customer submits payment at checkout; a payment provide
 Check Shopify’s current payment information and country or regional availability through official sources:
 
 - [Shopify — Payments](https://help.shopify.com/en/manual/payments)
-- [Shopify — Shopify Payments availability](https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries)
+- [Shopify — Shopify Payments availability](https://help.shopify.com/en/manual/payments/shopify-payments)
 
 Choose the eligible provider the business intends to use. Confirm current requirements, supported methods, fees, payout behavior, and plan restrictions before activation. Do not assume Shopify Payments is available in every country or that every provider behaves the same way.
 
