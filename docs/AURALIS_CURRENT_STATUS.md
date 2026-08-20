@@ -1,48 +1,118 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-07-04
+Last updated: 2026-08-20
 
-This is the canonical truth layer for Auralis Digital. If another document disagrees with this one, update or archive the older document.
+This is the canonical operational truth layer for Auralis Digital. Strategic direction is governed by [`AURALIS_DIRECTION_LOCK_2026-08-20.md`](../AURALIS_DIRECTION_LOCK_2026-08-20.md). If an older document conflicts with that lock, treat the older positioning as legacy until it is updated or archived.
 
-## Verified Update 2026-07-04 (via Shopify Admin API)
+## Direction Lock — 2026-08-20
 
-These facts supersede older claims below:
+Auralis Digital is now the umbrella creative ecosystem for original visual art, independent music discovery, artist collaboration, creative products, and commerce.
 
-- **First real product sale is COMPLETE.** Order #1001, 2026-05-28, $31.58, Custom Dog Polyester Square Pillow, paid AND fulfilled, real customer (not a test order). Commerce state is post-first-sale, not pre-revenue. Proof capture (review request, order screenshot) is still open.
-- **Shopify-hosted policies are PUBLISHED.** All five exist in Shopify: contact information, privacy, refund, shipping, terms of service.
-- **Store catalog:** 33 active products, 0 drafts, 0 archived.
-- **Sales channels are live beyond the website.** Google & YouTube channel connected (Merchant Center 5818967427, product sync on, awaiting first review); TikTok Shop app installed but seller verification incomplete. See `docs/SALES_CHANNELS_ROADMAP.md` (AGENT HANDOFF section) for channel truth.
-- **Known sync risk:** `src/data/shopCatalog.ts` drifts from Shopify; run `npm run check:catalog` (see `docs/tech/CATALOG_DRIFT_CHECK.md`). 12 drift issues were open as of 2026-07-03.
-- **New products do NOT auto-publish to the Google channel** — publish manually per `docs/NEW_PRODUCT_CHECKLIST.md`.
+Website creation, Shopify setup, website refresh packages, generic client website builds, third-party website audit/rebuild offers, and managed website-care plans are **retired as core public service offers** unless explicitly reopened by a later strategic decision.
 
-## Current Public Direction
+Shopify remains allowed as commerce infrastructure for checkout, product management, merch, creative-product sales, and artist collaboration products.
 
-Auralis Digital currently contains four related public surfaces:
+Current public-direction model:
 
-1. **Lucid Creations products**
-   - current art/POD/custom-design-aligned product catalog and product photos
-   - apparel, blankets, pillows, wall art, home decor, and related art-based creations
-   - local Auralis product/support policy pages
-   - Shopify checkout links
-   - made-to-order production guidance without public production-partner branding
+1. **Lucid Creations**
+   - psychedelic / sacred-geometry / visionary visual art
+   - visualizers and artist artwork
+   - prints, tapestries, apparel, and related creative products
+   - visual identity for the music experience
 
-2. **RJ Print products**
-   - 3D printed product line inside the Auralis ecosystem
-   - koozies, wallets, lamps, clocks, chapstick holders, accessories, and custom 3D prints
-   - dedicated collection/page structure while staying in the same Shopify store for now
+2. **Live Music Platform**
+   - independent artist discovery
+   - explicit non-exclusive permission model
+   - coherent DJ-style programming
+   - original music-reactive visuals
+   - artist attribution and direct links
+   - future listener interaction
 
-3. **Custom / personalized design requests**
-   - personal artwork ideas
-   - image, phrase, symbol, or theme-based requests
-   - product concept requests for gifts, apparel, wall art, mugs, blankets, journals, canvas, and related formats
+3. **Shop / Commerce**
+   - Lucid Creations products
+   - RJ Print products where still supported
+   - artist collaboration products
+   - merch and other approved creative products
+   - Shopify remains the commerce backend where useful
 
-4. **Website design services**
-   - local-business and creator website design
-   - website refreshes for Auralis-built sites
-   - third-party website audit/rebuild consultation path
-   - managed hosting and care support
+4. **Custom Creative Work**
+   - commissioned artwork
+   - artist visualizers
+   - visual assets
+   - related creative commissions
 
-The current product/store structure should use one Shopify store with separate customer-facing collections/paths:
+Recommended public navigation:
+
+```text
+Home
+Music
+Lucid Creations
+Shop
+Custom Work
+About
+```
+
+`Live Music Platform` remains a distinct Auralis product/subsite rather than a Shopify collection or separate company at this stage.
+
+## Verified Commerce Truth — 2026-07-04
+
+These facts remain valid unless later evidence supersedes them:
+
+- **First real product sale is COMPLETE.** Order #1001, 2026-05-28, $31.58, Custom Dog Polyester Square Pillow, paid and fulfilled, real customer.
+- **Shopify-hosted policies are published.** Contact information, privacy, refund, shipping, and terms of service exist in Shopify.
+- **Store catalog:** 33 active products, 0 drafts, 0 archived at the time of verification.
+- **Google & YouTube channel** was connected with product sync on and awaiting first review.
+- **TikTok Shop** app was installed but seller verification was incomplete.
+- `src/data/shopCatalog.ts` had known drift risk against Shopify; use `npm run check:catalog` and `docs/tech/CATALOG_DRIFT_CHECK.md` before relying on catalog parity.
+- New products did not automatically publish to the Google channel and required manual channel publication.
+
+These commerce facts do not restore the retired website-service business model.
+
+## Current Brand / Product Structure
+
+```text
+Auralis Digital
+├── Lucid Creations
+├── Live Music Platform
+├── Shop / Commerce
+├── Custom Creative Work
+└── RJ Print (commerce/product branch where still active)
+```
+
+Lucid Creations should remain the visual-art / creative-studio identity. The final consumer-facing name of the music platform remains unresolved.
+
+The preferred music relationship is:
+
+```text
+Music platform / discovery brand
+          ↓
+Visuals by Lucid Creations
+```
+
+## Current Site / Repo Reality
+
+The live website and repository still contain legacy website-service routes, copy, pricing, outreach material, and operating documents. Those artifacts are implementation debt and must not be interpreted as current strategic intent.
+
+Known legacy surfaces include, but are not limited to:
+
+- `/web-design`
+- `/websites`
+- website-build pricing
+- website refresh / audit-rebuild offers
+- managed hosting and care-plan positioning
+- website-service lead scripts
+- website-client onboarding templates
+- website-service roadmap tasks
+
+When implementation resumes, these should be removed, archived, or clearly marked legacy according to the direction lock.
+
+Do not delete reusable technical documentation merely because it was created during the website-service phase. Deployment, forms, metadata, React/Vite, GitHub Pages, Shopify, and other technical docs may remain useful if they describe infrastructure rather than a retired service offer.
+
+## Current Commerce Surface
+
+The product/shop surface remains valid.
+
+Current model:
 
 ```text
 Shop
@@ -50,165 +120,117 @@ Shop
 `-- RJ Print
 ```
 
-Do not create a second Shopify store for RJ Print yet. A separate RJ Print store is a later option only if the product line grows enough to justify separate policies, analytics, domain/storefront work, and maintenance.
+Use one Shopify store for now unless later evidence justifies separation.
 
-Pour Social has its own route (`/pour-social`) as an external service brand. There is no standalone About page; `/about` redirects to `/#about`. Custom Design pricing tiers were intentionally removed from the public site.
+Shopify remains the checkout, payment, order, and product-management source of truth where it is still in use. The Auralis public site may present product information and route customers into Shopify checkout.
 
-Current execution priority is:
+Commerce readiness should still be verified before treating the shop as fully mature, including:
 
-```text
-sacred-geometry storefront truth -> strongest 3-5 product focus -> homepage/collection curation -> checkout/policy verification -> small organic product test -> analytics review -> first real product sale or proof
-```
-
-The current active execution lane is Shopify storefront pre-launch validation with clearer collection separation between Lucid Creations and RJ Print. Products, custom design, and website design are all first-class parts of the public direction.
-
-## What Is Real Right Now
-
-- Auralis Digital has a live public website.
-- The repo uses a Vite/React frontend with GitHub Pages deployment.
-- The source supports public routes for:
-  - `/`
-  - `/products`
-  - `/shop` as a products alias
-  - `/custom-design`
-  - `/web-design`
-  - `/websites`
-  - `/refund-policy`
-  - `/shipping-policy`
-  - `/privacy-policy`
-  - `/terms-of-service`
-  - `/pour-social`
-  - `/about` (redirects to `/#about`)
-- The homepage is intended to act as a brand gateway for Products, Custom Design, and Website Design instead of a product catalog.
-- Product/shop catalog data currently lives in `src/data/shopCatalog.ts` (30 products across 7 categories: Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks).
-- Shopify is currently framed as the checkout/payment/order source of truth.
-- One Shopify store should remain the current admin/checkout/policy/email/analytics system.
-- Product browsing should separate Lucid Creations from RJ Print through collections/pages instead of separate Shopify stores right now.
-- Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
-- Auralis Digital local policy/support pages exist for refund, shipping, privacy, and terms guidance.
-- Footer policy links point to local Auralis policy/support pages.
-- Route-specific static metadata generation is implemented through `scripts/generate-route-pages.mjs` for main public routes and policy routes.
-- The website-design offer is defined:
-  - local business websites
-  - refreshes for Auralis-built sites
-  - lead capture
-  - ongoing website care
-  - third-party website audit/rebuild consultation path
-- Starting website-design pricing exists:
-  - $250 refresh for Auralis-built sites
-  - $150-$300 third-party website audit/rebuild consultation
-  - $500+ basic website
-  - $1,000+ standard website
-  - custom quote for larger or third-party site work
-  - $250/month managed hosting and care
-- The repo contains a usable business operating system:
-  - lead tracking and outreach in `leads/`
-  - intake, delivery, handoff, proof, and care plan docs in `onboarding/`
-  - website and deployment docs in `docs/tech/`
-  - internal build workflow in `docs/internal/AURALIS_SITE_STUDIO.md`
-- Portfolio/demo work should be treated as sample builds unless tied to a real delivered client.
-
-## Legal and Business Formation Gaps
-
-- LLC filing with Michigan is not confirmed in this repo.
-- EIN is not confirmed.
-- Business bank account is not confirmed.
-- Signed client contracts are not confirmed.
-- Payment processing or invoicing setup is not confirmed.
-
-## Online Trust Gaps
-
-- Production contact form is live via Formspree (receipt-confirmed 2026-05-16).
-- Temporary contact email is `auralisdigitaleco@gmail.com`.
-- Domain email such as `hello@auralisdigital.net` is still needed.
-- Google Business Profile is not confirmed.
-- Real testimonials or reviews are not confirmed.
-- Real delivered client case studies are not confirmed.
-- Physical or service address policy is not confirmed.
-- Phone test submission confirmed 2026-05-17.
-
-## Website-Service Operational Gaps
-
-- No completed end-to-end website client delivery is confirmed.
-- Scope, revision, payment, and handoff docs exist, but have not yet been tested against a real engagement.
-- The first signed website agreement, first website payment, first delivery, and first testimonial are still unconfirmed.
-
-## Product / Commerce Operational Gaps
-
-The product surface exists technically, and local Auralis policy/support pages exist, but commerce readiness is not yet fully confirmed.
-
-Confirmed 2026-07-04: Shopify production checkout works end to end (order #1001 was paid and fulfilled by a real customer), and Shopify-hosted policies are published. Still not confirmed in repo truth:
-
-- Shopify payment/tax/shipping settings review
-- production-partner test-order verification
+- checkout and product links
+- policy links
+- payment / tax / shipping settings
 - fulfillment QA
-- refund/shipping workflow verification inside Shopify checkout
-- support-email workflow
-- product-margin review
-- artwork/product-rights workflow
+- margin review
+- support workflow
+- artwork and product-rights provenance
 
-The product/shop surface should not be treated as a fully mature commerce operation until these are validated.
+## Custom Creative Work
 
-## Custom Design Operational Gaps
+Custom creative work remains aligned with the new direction when it supports the creative ecosystem.
 
-- No completed custom/personalized design request is confirmed in repo truth.
-- Public Custom Design pricing tiers were intentionally removed. Pricing is handled per-request.
-- Revision, file-transfer, usage-rights, and delivery workflow still need real-world validation.
-- Custom requests should be reviewed before acceptance, especially when they involve copyrighted characters, logos, unclear usage rights, offensive content, or work that cannot be produced cleanly.
+Examples:
+
+- commissioned artwork
+- sacred geometry / psychedelic / symbolic designs
+- artist artwork
+- music visualizers
+- visual assets
+- custom 3D print requests where RJ Print remains active
+
+Generic website creation is not part of this lane.
+
+## Live Music Platform
+
+The music platform is now part of the Auralis ecosystem strategy.
+
+Current locked concept:
+
+> Independent artist discovery + explicit non-exclusive permission + coherent DJ-style programming + original music-reactive visuals + continuous live distribution + artist attribution/direct links + future listener interaction.
+
+The livestream is the first distribution surface, not the whole product.
+
+The detailed product strategy remains in the separate `live-music-platform` repository. Auralis should integrate it as a product/subsite without duplicating that repository's implementation doctrine here.
+
+## Legal / Business Formation Gaps
+
+The following items are still not confirmed in this repo and should not be assumed complete:
+
+- Michigan LLC filing
+- EIN
+- business bank account
+- domain email
+- public business address / service-area policy
+
+Website-client contracts and website-service payment workflows are no longer current priorities because that service line is retired.
+
+## Trust / Operations Gaps
+
+- Production contact form was confirmed live through Formspree.
+- Temporary contact email remains `auralisdigitaleco@gmail.com` until a domain email is active.
+- Google Business Profile is not confirmed.
+- Real testimonials/reviews remain limited.
+- Product and custom-work proof should only be published with real evidence/permission.
 
 ## Priority Order
 
-1. Confirm LLC filing with Michigan.
-2. Obtain EIN.
-3. Open a business bank account.
-4. Keep using `auralisdigitaleco@gmail.com` temporarily until domain email is active.
-5. Set up invoicing/payment processing.
-6. ~~Configure and verify the live contact-form backend.~~ Done 2026-05-16 (phone confirmed 2026-05-17).
-7. Verify the three-pillar live site flow on phone and desktop.
-8. ~~Publish or verify Shopify-hosted refund, shipping, and terms policies.~~ Done — verified 2026-07-04.
-9. ~~Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.~~ Superseded — a real customer completed checkout and was fulfilled (order #1001, 2026-05-28).
-10. Create or complete Google Business Profile.
-11. Start focused outreach or traffic for one branch at a time: products, custom design, or website design.
-12. ~~Close one real sale or client engagement.~~ First product sale done (order #1001). Still open for custom design and website design.
-13. Publish real proof only after permission or confirmation. ← NOW THE ACTIVE STEP: capture proof from order #1001 (review request, order screenshot).
+Current strategic execution order:
+
+1. Preserve business/contact trust basics.
+2. Update the live Auralis site to match the locked creative-ecosystem direction.
+3. Remove or retire website-service positioning, pricing, navigation, and calls to action.
+4. Elevate Lucid Creations as the visual-art identity.
+5. Add the Music surface / route for the Live Music Platform.
+6. Keep Shopify functioning as commerce infrastructure where useful.
+7. Keep Shop and aligned custom creative-work paths operational.
+8. Audit legacy website-service docs, leads, pricing, and onboarding files before reusing them.
+9. Resume product / creative execution only after the public surface matches current strategy.
 
 ## Do Not Do Right Now
 
+- Do not reintroduce Shopify setup or website creation as core services.
+- Do not keep public website-service pricing active by inertia.
+- Do not run website-design outreach from legacy lead files.
+- Do not treat legacy routes/docs as current strategic truth.
 - Do not fake testimonials, reviews, client logos, sales, urgency, discounts, or case studies.
-- Do not relabel sample builds as client work.
-- Do not keep creating overlapping status documents.
-- Do not edit `gh-pages` manually or merge it into `main`.
-- Do not treat copied static HTML as stale without checking the deployment workflow.
-- Do not offer the standard Website Refresh for websites Auralis did not originally build. Third-party sites should start with an audit, rebuild, migration, or custom quote.
-- Do not imply the product/shop surface is fully mature until Shopify checkout, fulfillment, policy, and support readiness are verified.
-- Do not add custom checkout, cart, payment, Shopify Admin API, or production-partner API logic to the public site without a separate implementation review.
-- Do not create a second Shopify store for RJ Print until the product line has enough demand to justify the extra maintenance.
+- Do not relabel sample work as delivered client work.
+- Do not treat the Shopify/product surface as fully mature until operational readiness is verified.
+- Do not create a second Shopify store for RJ Print without demand-based justification.
+- Do not force a final music-platform brand name before execution provides evidence.
 
-## Current Repo and Deployment Truth
+## Current Repo / Deployment Truth
 
-- `main` is current.
-- `gh-pages` should remain.
 - `main` is the source of truth for code and documentation.
-- GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
-- `gh-pages` is generated deployment output.
-- Static HTML under copied folders such as `website/`, `projects/`, and `service-areas/` is active deployment input.
-- Route-specific static metadata is generated during deployment by `scripts/generate-route-pages.mjs`.
-- The repo currently contains both React/Vite routes and copied static deployment inputs.
-- See `docs/tech/DEPLOYMENT_TRUTH.md` before changing hosting, deployment, or static HTML files.
+- `gh-pages` is generated deployment output and should not be edited manually.
+- GitHub Actions builds from `main` and publishes deployment output to `gh-pages`.
+- The repository contains React/Vite routes plus static deployment inputs.
+- Review `docs/tech/DEPLOYMENT_TRUTH.md` before changing hosting or deployment behavior.
 
 ## Next Concrete Action
 
-Use `active/NEXT_STEPS_TODO.md` as the active execution checklist.
+Use `active/NEXT_STEPS_TODO.md` only after confirming it is aligned with the 2026-08-20 direction lock.
 
-Current correct sequence:
+The immediate correct sequence is:
 
-1. finish business/contact trust setup
-2. keep one Shopify store while separating Lucid Creations and RJ Print collections/pages
-3. keep catalog synchronized with Shopify
-4. verify product/category rendering after product additions
-5. improve product copy/images where needed
-6. verify Shopify checkout, policy links, and payment/tax/shipping settings
-7. run small organic product test around sacred-geometry/psychedelic direction
-8. complete one real sale or engagement
-9. collect real proof only after permission or confirmation
-10. continue Website Design page polish separately
+```text
+strategy lock
+    ↓
+truth-sync canonical docs
+    ↓
+retire legacy website-service public positioning
+    ↓
+update navigation/copy
+    ↓
+add Music surface
+    ↓
+resume creative + commerce execution
+```
