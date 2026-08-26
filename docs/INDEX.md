@@ -1,148 +1,211 @@
 # Auralis Digital Document Index
 
-Last updated: 2026-06-05
+Last updated: 2026-08-26
 
-This is the navigation layer for the repo. Use it to find the current source of truth before creating or editing another document.
+This is the repository navigation layer. It does **not** set strategy by itself.
 
-Auralis Digital currently contains four related public surfaces:
+## Start Here — Current Authority
 
-1. Lucid Creations products
-2. RJ Print products
-3. custom / personalized design requests
-4. website design services
+Read these first, in order:
 
-Current execution priority is:
+| Priority | File | Role |
+|---:|---|---|
+| 1 | `AURALIS_DIRECTION_LOCK_2026-08-26.md` | Strategic + commercial authority. |
+| 2 | `docs/AURALIS_CURRENT_STATUS.md` | Canonical operational truth. |
+| 3 | `active/NEXT_STEPS_TODO.md` | Current executable checklist. |
+| 4 | `README.md` | Short repo orientation. |
+| 5 | `docs/STATUS.md` | Short current snapshot. |
+
+When a live platform fact changes outside Git, current Shopify / deployed-site / payment / form state may supersede an old factual snapshot. It does not silently change strategic authority.
+
+## Current Operating Model
 
 ```text
-business setup -> trust setup -> inquiry flow -> products/custom design/web design clarity -> first real sale or client -> proof
+Auralis Digital
+├── Primary cash engine
+│   └── focused small-business digital-presence service
+├── Owned commerce
+│   └── Lucid Creations
+├── Scalable digital products
+│   ├── Shopify + Printify workbook / course
+│   └── Lucid Visuals
+├── Supplemental
+│   └── aligned custom creative work
+└── Protected / long-horizon
+    ├── NovaLIS / OpenClaw
+    ├── Live Music Platform
+    └── media / YouTube / news concepts
 ```
 
-The product/shop surface exists publicly, but commerce readiness is still separately tracked and should not be overstated. Custom design and website design are also active public directions, but neither should be presented as more mature than the current delivery/proof state supports.
+Outside the current active sprint: RJ Print, Pour Social, ShortCut Lawn Care, Buyer Advocate, ATH Service, active wholesale / affiliate sourcing, LastStopShop activation, and unrelated new ventures.
 
-## Start Here
+## Current Execution
 
-| File | Purpose |
-|---|---|
-| `docs/MASTER_BUSINESS_STRUCTURE.md` | Source of truth for deciding whether a project, store, website, repo, or revenue channel belongs under Auralis Digital. |
-| `docs/BUSINESS_HEALTH.md` | One-screen living scorecard: revenue, legal, channels, product health, trust. Read this first. |
-| `docs/OPERATING_RHYTHM.md` | Weekly cadence (Mon ops / Tue–Thu creation / Fri marketing), three north-star metrics, and the no-fifth-branch rule. |
-| `docs/AURALIS_CURRENT_STATUS.md` | Canonical truth doc: what is real, what is missing, and what to do next. |
-| `docs/ROADMAP_EXECUTION_2026-05-14.md` | Current execution roadmap: public trust fixes, contact verification, Shopify readiness, custom design readiness, website design readiness, first sale/client, and proof. |
-| `active/NEXT_STEPS_TODO.md` | Active execution checklist: business setup to first proof and commerce readiness tracking. |
-| `docs/STATUS.md` | Short operational status snapshot. |
-| `docs/SHOPIFY_LAUNCH_CHECKLIST.md` | Product/Shopify launch checklist before sending real traffic to product links. |
-| `docs/NEW_PRODUCT_CHECKLIST.md` | Per-product release checklist: data quality, channel publishing (NOT automatic), catalog sync, link test. |
-| `docs/INDEX.md` | This map. |
+Use:
 
-## Business Structure And Revenue Planning
+- `active/NEXT_STEPS_TODO.md` — active sequence and checkboxes;
+- `docs/EXECUTION_INDEX.md` — supporting workflow / folder map;
+- `docs/AURALIS_CURRENT_STATUS.md` — current facts, boundaries, and known drift.
 
-Use these files for parent-business structure, ecommerce strategy, affiliate/dropshipping strategy, and long-term direction.
+Current sequence:
 
-| File | Purpose |
-|---|---|
-| `docs/MASTER_BUSINESS_STRUCTURE.md` | Main decision layer for where future projects, websites, Shopify stores, repos, and revenue channels belong. |
-| `docs/AURALIS_DIGITAL_UMBRELLA_STRUCTURE.md` | Defines Auralis Digital as the parent business umbrella and maps major branches. |
-| `docs/BUSINESS_MAP.md` | Quick map of website services, Lucid Creations, RJ Print, affiliate products, dropshipping, and future ventures. |
-| `docs/ECOMMERCE_STACK_PLAN.md` | Shopify-first stack plan covering Lucid Creations, RJ Print, Printify, dropshipping, reviews, email, and social traffic. |
-| `docs/SALES_CHANNELS_ROADMAP.md` | Sales channel expansion playbook: Google & YouTube, TikTok, Pinterest, Meta, marketplaces — install order, per-channel setup steps, and status log. |
-| `docs/marketing/INSTAGRAM_PRODUCT_ROLLOUT.md` | Instagram account positioning, Meta verification blockers, and the first 8-product caption rollout for `@auralis_digital_`. |
-| `docs/AFFILIATE_DROPSHIPPING_PLAN.md` | Strategy and guardrails for affiliate recommendations and curated dropshipping tests. |
-| `docs/3_YEAR_VISION.md` | Lightweight three-year direction: prove the business, build repeatable revenue, then separate only what earns separation. |
+```text
+commercial website refactor
+→ transaction + administrative readiness
+→ one core offer
+→ first 100 qualified prospects
+→ outreach + follow-up
+→ customer #1 → #2 → #3
+→ optimize from evidence
+```
 
-## RJ Print Planning
-
-Folder: `projects/rj-print/docs/`
-
-RJ Print-specific planning lives with the RJ Print project because it is specific to that product line.
-
-| File | Purpose |
-|---|---|
-| `projects/rj-print/docs/RJ_PRINT_BRAND_PLAN.md` | RJ Print role, brand position, and relationship to Auralis Digital. |
-| `projects/rj-print/docs/RJ_PRINT_PRODUCT_CATEGORIES.md` | Starter product categories, fit criteria, and early avoid list. |
-| `projects/rj-print/docs/RJ_PRINT_PRICING_STRATEGY.md` | Pricing factors, margin guardrails, and custom quote rules. |
-| `projects/rj-print/docs/RJ_PRINT_FULFILLMENT_WORKFLOW.md` | Order, production, quality check, packaging, and customer communication workflow. |
-
-## Current Public Direction
-
-Auralis Digital currently contains four related public surfaces:
-
-1. Lucid Creations products
-2. RJ Print products
-3. Custom / personalized design requests
-4. Website design services
-
-The homepage should act as a brand gateway. Product browsing should split into Lucid Creations and RJ Print paths while checkout remains in one Shopify store. Custom requests belong on `/custom-design`, and website services belong on `/web-design`.
-
-## Current Highest-ROI Workstream
-
-Use `docs/ROADMAP_EXECUTION_2026-05-14.md` for the current ordered workstream:
-
-1. Verify contact/Formspree flow.
-2. Verify Shopify policies and checkout.
-3. Confirm live social preview cache after deploy with Facebook Sharing Debugger.
-4. Run live phone QA on `/products`, `/custom-design`, `/web-design`, and contact flow.
-5. Pick one execution lane.
-6. Get one real sale/client/request.
-7. Capture real proof.
-
-## Sales and Lead Generation
-
-Folder: `leads/`
-
-Use these files to find, qualify, contact, follow up with, and close prospects.
-
-## Client Operations and Delivery
-
-Folder: `onboarding/`
-
-Use these files after a lead is interested, once a project is quoted, and during delivery, handoff, and retention.
-
-## Website and Technical Work
+## Website / Technical Reference
 
 Folder: `docs/tech/`
 
-Use these files for website edits, launch readiness, form/backend setup, deployment notes, and technical tracking.
+Useful current infrastructure reference includes:
 
-Key deployment truth:
+- `docs/tech/DEPLOYMENT_TRUTH.md`
+- `docs/tech/FORMSPREE_SETUP.md`
+- `docs/tech/CATALOG_DRIFT_CHECK.md`
+- `docs/tech/CATALOG_GENERATOR.md`
+- `docs/tech/WEBSITE_BUILD_WORKFLOW.md`
+- `docs/tech/KNOWN_SITE_TODOS.md`
 
-- `main` is the source of truth.
-- GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
-- `gh-pages` is generated deployment output.
-- Static folders such as `website/`, `projects/`, and `service-areas/` may still be active deployment input.
-- Do not edit `gh-pages` manually or merge it into `main`.
+Technical docs may remain valid even when their old marketing / service context has changed. Read them for infrastructure, not strategic authority.
 
-## Internal Build System
+Deployment rules remain:
+
+- `main` is source truth;
+- GitHub Actions builds from `main`;
+- `gh-pages` is generated deployment output;
+- do not edit `gh-pages` manually;
+- static folders can still be deployment input and must not be deleted casually.
+
+## Sales / Lead Generation
+
+Folder: `leads/`
+
+The folder contains useful historical and reusable material for prospecting, pricing, objections, proposals, quotes, and follow-up.
+
+**Review before use.** Older leads, geography, prices, niche offers, scripts, and service descriptions may predate the 2026-08-26 lock.
+
+Current acquisition authority comes from:
+
+- `active/NEXT_STEPS_TODO.md`;
+- current Battle Creek / Southwest Michigan prospect list when created;
+- current approved Business Digital Front Door scope / pricing.
+
+Do not blindly execute old Belleville / Southeast Michigan lead files as the current market plan.
+
+## Client Operations / Delivery
+
+Folder: `onboarding/`
+
+This folder contains reusable intake, proposal, revision, delivery, proof, handoff, hosting/domain, and care-plan material.
+
+These are **implementation assets**, not automatic current offers. Review pricing, scope, care-plan promises, timelines, ownership terms, and legal language against the current lock before sending anything to a client.
+
+## Shopify + Printify Workbook
+
+Primary source:
+
+- `docs/guides/shopify/Build-Your-First-Shopify-Store-DRAFT.md`
+
+Generated artifact:
+
+- `docs/guides/shopify/Build-Your-First-Shopify-Store-DRAFT.docx`
+
+Current source already contains the six-phase Quick-Start, Chapters 1–12, 12 worksheets, and optional appendix. It is still explicitly **not publication-ready**.
+
+Use `docs/AURALIS_CURRENT_STATUS.md` and `active/NEXT_STEPS_TODO.md` for current finalization requirements.
+
+## Lucid Visuals
+
+Use:
+
+- `docs/LUCID_VISUALS_REVENUE_ENGINE_2026-08-26.md`
+- live Shopify product state for current listing facts.
+
+The product-specific plan is subordinate to the current Auralis lock and the actual verified customer files.
+
+## Lucid Creations / Commerce
+
+Useful reference:
+
+- `docs/NEW_PRODUCT_CHECKLIST.md`
+- `docs/SHOPIFY_LAUNCH_CHECKLIST.md`
+- `docs/SALES_CHANNELS_ROADMAP.md`
+- `docs/marketing/`
+- `src/data/shopCatalog.ts`
+- catalog generation / drift scripts.
+
+Older catalog counts and channel statuses are dated snapshots. Use live Shopify state for current claims.
+
+Current doctrine is **distribution / conversion evidence before broad catalog expansion**.
+
+## Portfolio / Website Examples
+
+Folder: `projects/`
+
+Useful B2B examples include Patterson, roofing / contractor, painter, cleaning, detailing, restaurant, salon, barbershop, maintenance, photography, and other demos.
+
+Rules:
+
+- demo / concept / preview must remain honestly labeled;
+- do not present a sample as delivered client work;
+- curate a small number of strong examples on the public Work surface;
+- historical project folders do not imply that the underlying venture is currently active.
+
+## Internal Systems
 
 Folder: `docs/internal/`
 
-These files describe the current internal operating workflow, intake direction, and site-production process.
+These are internal build / intake / workflow references. Review before reactivating old assumptions.
 
-## Active Work Areas
+## Historical / Superseded Strategy
 
-| Folder | Purpose |
+The following are historical or subordinate when they conflict with the current lock:
+
+- `AURALIS_DIRECTION_LOCK_2026-08-20.md` — explicitly marked historical;
+- `active/current_14_day_drop.md` — old product sprint, not current master execution;
+- `docs/ROADMAP_EXECUTION_2026-05-14.md` — dated roadmap;
+- `docs/MASTER_BUSINESS_STRUCTURE.md` — older structure reference unless updated;
+- `docs/BUSINESS_MAP.md` — older structure reference unless updated;
+- `docs/AURALIS_DIGITAL_UMBRELLA_STRUCTURE.md` — historical umbrella framing where conflicting;
+- `docs/AFFILIATE_DROPSHIPPING_PLAN.md` — preserved reference, inactive lane;
+- older lead lists / regional SEO service-area files;
+- all material in `docs/archive/`.
+
+Historical material may explain why something was built. It does not outrank current authority.
+
+## Folder Map
+
+| Folder | Current use |
 |---|---|
-| `active/` | Current active business/project work. |
-| `clients/` | Client-specific materials. |
-| `projects/` | Project work and examples. |
-| `website/` | Website-related source or static materials outside the Vite app. |
-| `src/` | Vite/React website source. |
+| `active/` | Current execution files; only explicitly current files should drive work. |
+| `clients/` | Client-specific or historical client materials. |
+| `projects/` | Demos, projects, preserved implementation assets. |
+| `leads/` | Reusable sales material; review for current scope/geography/pricing before use. |
+| `onboarding/` | Reusable client operations; review before sending externally. |
+| `docs/tech/` | Technical infrastructure / deployment reference. |
+| `docs/internal/` | Internal workflow reference. |
+| `docs/marketing/` | Commerce/content references, subject to current product doctrine. |
+| `docs/archive/` | Historical only. |
+| `src/` | React/Vite source. |
 | `public/` | Public static assets. |
-| `scripts/` | Build/deploy helper scripts. |
-
-## Archive
-
-Folder: `docs/archive/`
-
-Historical documents live here. They may explain past decisions, but they do not override the current canonical truth docs.
+| `scripts/` | Build / generation / checking tools. |
 
 ## Rule
 
-Do not create overlapping roadmap, status, or current-state documents.
+Do not create another competing “current state,” “master strategy,” or “next steps” file without an explicit need.
 
-Update existing canonical docs before creating new tracking layers:
+Update the existing authority chain instead:
 
-1. `docs/BUSINESS_HEALTH.md`
-2. `docs/AURALIS_CURRENT_STATUS.md`
-3. `docs/ROADMAP_EXECUTION_2026-05-14.md`
-4. `active/NEXT_STEPS_TODO.md`
-5. `docs/STATUS.md`
+```text
+Direction Lock
+→ Canonical Current Status
+→ Active Next Steps
+→ product / implementation docs
+→ historical reference
+```
