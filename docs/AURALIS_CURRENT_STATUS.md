@@ -1,211 +1,302 @@
 # Auralis Digital Current Status
 
-Last updated: 2026-08-20
+Last updated: 2026-08-26
 
-This is the canonical operational truth layer for Auralis Digital. Strategic direction is governed by [`AURALIS_DIRECTION_LOCK_2026-08-20.md`](../AURALIS_DIRECTION_LOCK_2026-08-20.md). If an older document conflicts with that lock, treat the older positioning as legacy until it is updated or archived.
+This is the canonical operational truth layer for Auralis Digital.
 
-## Direction Lock — 2026-08-20
+Strategic direction is governed by [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](../AURALIS_DIRECTION_LOCK_2026-08-26.md). That lock supersedes the 2026-08-20 direction where the two conflict.
 
-Auralis Digital is now the umbrella creative ecosystem for original visual art, independent music discovery, artist collaboration, creative products, and commerce.
+## Current Mode
 
-Website creation, Shopify setup, website refresh packages, generic client website builds, third-party website audit/rebuild offers, and managed website-care plans are **retired as core public service offers** unless explicitly reopened by a later strategic decision.
+Auralis is operating in a **revenue-first validation phase**.
 
-Shopify remains allowed as commerce infrastructure for checkout, product management, merch, creative-product sales, and artist collaboration products.
+Near-term targets:
 
-Current public-direction model:
+- collect at least **$1,000 in external business revenue** during the first validated 30-day sales sprint;
+- build toward approximately **$4,000/month in repeatable business revenue by 2026-12-31**.
 
-1. **Lucid Creations**
-   - psychedelic / sacred-geometry / visionary visual art
-   - visualizers and artist artwork
-   - prints, tapestries, apparel, and related creative products
-   - visual identity for the music experience
+These are targets, not guarantees.
 
-2. **Live Music Platform**
-   - independent artist discovery
-   - explicit non-exclusive permission model
-   - coherent DJ-style programming
-   - original music-reactive visuals
-   - artist attribution and direct links
-   - future listener interaction
+The primary missing capability is a repeatable customer-acquisition loop, not additional product or repository creation.
 
-3. **Shop / Commerce**
-   - Lucid Creations products
-   - RJ Print products where still supported
-   - artist collaboration products
-   - merch and other approved creative products
-   - Shopify remains the commerce backend where useful
-
-4. **Custom Creative Work**
-   - commissioned artwork
-   - artist visualizers
-   - visual assets
-   - related creative commissions
-
-Recommended public navigation:
-
-```text
-Home
-Music
-Lucid Creations
-Shop
-Custom Work
-About
-```
-
-`Live Music Platform` remains a distinct Auralis product/subsite rather than a Shopify collection or separate company at this stage.
-
-## Verified Commerce Truth — 2026-07-04
-
-These facts remain valid unless later evidence supersedes them:
-
-- **First real product sale is COMPLETE.** Order #1001, 2026-05-28, $31.58, Custom Dog Polyester Square Pillow, paid and fulfilled, real customer.
-- **Shopify-hosted policies are published.** Contact information, privacy, refund, shipping, and terms of service exist in Shopify.
-- **Store catalog:** 33 active products, 0 drafts, 0 archived at the time of verification.
-- **Google & YouTube channel** was connected with product sync on and awaiting first review.
-- **TikTok Shop** app was installed but seller verification was incomplete.
-- `src/data/shopCatalog.ts` had known drift risk against Shopify; use `npm run check:catalog` and `docs/tech/CATALOG_DRIFT_CHECK.md` before relying on catalog parity.
-- New products did not automatically publish to the Google channel and required manual channel publication.
-
-These commerce facts do not restore the retired website-service business model.
-
-## Current Brand / Product Structure
+## Active Operating Structure
 
 ```text
 Auralis Digital
-├── Lucid Creations
-├── Live Music Platform
-├── Shop / Commerce
-├── Custom Creative Work
-└── RJ Print (commerce/product branch where still active)
+├── Primary cash engine
+│   └── focused small-business digital-presence service
+├── Owned commerce
+│   └── Lucid Creations
+├── Scalable digital products
+│   ├── Shopify + Printify workbook / course
+│   └── Lucid Visuals
+├── Supplemental revenue
+│   └── aligned custom creative work
+└── Protected / long-horizon
+    ├── NovaLIS / OpenClaw
+    ├── Live Music Platform
+    └── media / YouTube / news concepts
 ```
 
-Lucid Creations should remain the visual-art / creative-studio identity. The final consumer-facing name of the music platform remains unresolved.
+## Primary Cash Engine — Auralis Small-Business Service
 
-The preferred music relationship is:
+The 2026-08-20 decision that retired website services is explicitly superseded in a narrow way.
+
+Auralis is **not** returning to a generic web-design or Shopify agency model.
+
+Approved public positioning:
+
+> **Auralis Digital is an independent digital studio helping small businesses build practical, mobile-first websites and customer-contact flows focused on calls, bookings, quote requests, and trust.**
+
+Approved primary offer direction:
+
+### Business Digital Front Door
+
+Working starting price: approximately **$995**.
+
+Typical scope:
+
+- mobile-first business website;
+- clear services and service-area information;
+- click-to-call and quote / contact flow;
+- review, gallery, and trust sections;
+- basic metadata / local-search fundamentals;
+- analytics where appropriate;
+- launch QA.
+
+Optional recurring layers:
+
+- **Website Care:** starting around **$129/month**;
+- **Managed Digital Presence:** starting around **$349/month**.
+
+Pricing remains a market-test hypothesis and should change only from real sales and delivery evidence.
+
+## Website / Public Surface Truth
+
+The current deployed website still reflects older positioning and has not yet been refactored to the 2026-08-26 lock.
+
+Known stale public themes include:
+
+- Shopify-setup-first positioning;
+- multiple competing homepage identities;
+- old creator-shop / branch clutter;
+- stale geography;
+- old metadata / structured data / sitemap entries;
+- old navigation that prioritizes products / creator shops over Business Services and Work.
+
+The required action is a **bounded commercial refactor**, not a rebuild.
+
+Recommended primary navigation:
 
 ```text
-Music platform / discovery brand
-          ↓
-Visuals by Lucid Creations
+Business Services
+Work
+Lucid Creations
+About
+Contact
 ```
 
-## Current Site / Repo Reality
+Recommended homepage hierarchy:
 
-The live website and repository still contain legacy website-service routes, copy, pricing, outreach material, and operating documents. Those artifacts are implementation debt and must not be interpreted as current strategic intent.
+1. small-business value proposition;
+2. request a short website / digital-presence review;
+3. see selected work;
+4. one clear service offer;
+5. process / ownership / trust;
+6. founder accountability;
+7. Lucid Creations as a secondary owned commerce brand;
+8. contact / review request.
 
-Known legacy surfaces include, but are not limited to:
+Update visible copy and supporting metadata together.
 
-- `/web-design`
-- `/websites`
-- website-build pricing
-- website refresh / audit-rebuild offers
-- managed hosting and care-plan positioning
-- website-service lead scripts
-- website-client onboarding templates
-- website-service roadmap tasks
+## Transaction Readiness
 
-When implementation resumes, these should be removed, archived, or clearly marked legacy according to the direction lock.
+Before serious paid outreach, Auralis should have:
 
-Do not delete reusable technical documentation merely because it was created during the website-service phase. Deployment, forms, metadata, React/Vite, GitHub Pages, Shopify, and other technical docs may remain useful if they describe infrastructure rather than a retired service offer.
+- clear service page;
+- professional domain email when available;
+- business phone / professional voicemail if used;
+- honest selected portfolio examples;
+- short review template;
+- proposal template;
+- service agreement;
+- invoice / payment workflow;
+- deposit / payment policy;
+- onboarding questionnaire;
+- revision / launch rules;
+- founder/operator identity.
 
-## Current Commerce Surface
+Do not fake a team or agency scale.
 
-The product/shop surface remains valid.
+## Sales Execution
 
-Current model:
+Initial sales loop:
 
 ```text
-Shop
-|-- Lucid Creations
-`-- RJ Print
+qualified prospect
+    ↓
+personalized contact
+    ↓
+short specific review
+    ↓
+conversation
+    ↓
+written proposal
+    ↓
+agreement + payment/deposit
+    ↓
+delivery
+    ↓
+launch / handoff
+    ↓
+real testimonial/review if earned
+    ↓
+referral
 ```
 
-Use one Shopify store for now unless later evidence justifies separation.
+Initial market test:
 
-Shopify remains the checkout, payment, order, and product-management source of truth where it is still in use. The Auralis public site may present product information and route customers into Shopify checkout.
+- first **100 qualified prospects**;
+- approximately **15–20 qualified outreach attempts per weekday** during the sprint;
+- use targeted phone, email, contact forms, referrals, and selective in-person outreach;
+- follow up rather than judging the offer from a single attempt;
+- diagnose after roughly **75–100 qualified contacts**.
 
-Commerce readiness should still be verified before treating the shop as fully mature, including:
+Interpretation:
 
-- checkout and product links
-- policy links
-- payment / tax / shipping settings
-- fulfillment QA
-- margin review
-- support workflow
-- artwork and product-rights provenance
+- low response -> targeting/message problem;
+- responses but few conversations -> value proposition problem;
+- conversations but no closes -> trust/pricing/proposal problem;
+- sales -> repeat and optimize.
+
+## Lucid Creations
+
+Lucid remains active as the owned commerce asset.
+
+Current operating rule:
+
+- keep the existing store and catalog functioning;
+- stop broad undifferentiated catalog expansion;
+- focus distribution on existing stronger products / families and personalization opportunities;
+- treat customer acquisition / distribution as the current commerce constraint;
+- let real demand decide which products receive additional creative work.
+
+Printify remains fulfillment infrastructure, not the strategy engine.
+
+## Lucid Visuals
+
+Lucid Visuals is an active digital-product experiment.
+
+Immediate requirement:
+
+- finish digital-delivery setup;
+- complete checkout / delivery QA;
+- publish Vol. 1 only after delivery is verified;
+- seek external purchases before creating a large pack catalog.
+
+Validation ladder:
+
+```text
+3 external purchases
+→ 10 external purchases
+→ identify repeatable acquisition source
+→ $250/month
+→ $500/month
+→ $1,000/month
+```
+
+## Shopify + Printify Workbook / Course
+
+The existing workbook / course material is a real monetizable asset.
+
+Current decision:
+
+- finish rather than rewrite;
+- verify current Shopify / Printify instructions;
+- remove stale draft / reviewer markers;
+- use only purposeful screenshots;
+- add a short Quick-Start navigation layer over the existing material;
+- include honest real-store / Lucid lessons where useful;
+- visually QA the customer artifact;
+- test-sell the workbook before investing in a large recorded course.
+
+Working launch pricing:
+
+- beta / founding workbook: around **$19**;
+- mature workbook after feedback / polish: approximately **$29–$39**.
+
+Do not use unsupported income claims.
 
 ## Custom Creative Work
 
-Custom creative work remains aligned with the new direction when it supports the creative ecosystem.
+Aligned custom creative work remains available as supplemental revenue when properly scoped and profitable.
 
-Examples:
+It is not the main acquisition engine.
 
-- commissioned artwork
-- sacred geometry / psychedelic / symbolic designs
-- artist artwork
-- music visualizers
-- visual assets
-- custom 3D print requests where RJ Print remains active
+## NovaLIS / OpenClaw
 
-Generic website creation is not part of this lane.
+Nova remains a protected long-horizon technical asset.
 
-## Live Music Platform
+Do not force commercial pricing, hosted-service promises, support obligations, installer burden, or other premature productization solely to satisfy the current Auralis revenue target.
 
-The music platform is now part of the Auralis ecosystem strategy.
+## Live Music Platform + Media
 
-Current locked concept:
+Preserve the work, but freeze major expansion during the revenue sprint unless new external evidence justifies activation.
 
-> Independent artist discovery + explicit non-exclusive permission + coherent DJ-style programming + original music-reactive visuals + continuous live distribution + artist attribution/direct links + future listener interaction.
+## Explicitly Outside the Active Portfolio
 
-The livestream is the first distribution surface, not the whole product.
+Do not treat these as active priorities in the current operating plan:
 
-The detailed product strategy remains in the separate `live-music-platform` repository. Auralis should integrate it as a product/subsite without duplicating that repository's implementation doctrine here.
+- RJ Print;
+- Pour Social;
+- ShortCut Lawn Care;
+- Buyer Advocate;
+- ATH Service;
+- wholesale / affiliate sourcing as an active lane;
+- LastStopShop as a newly activated commerce business;
+- new unrelated ventures created during the sprint.
 
-## Legal / Business Formation Gaps
+Historical repositories may remain preserved.
 
-The following items are still not confirmed in this repo and should not be assumed complete:
+## Time Allocation
 
-- Michigan LLC filing
-- EIN
-- business bank account
-- domain email
-- public business address / service-area policy
+Until the first $1,000 of validated external business revenue:
 
-Website-client contracts and website-service payment workflows are no longer current priorities because that service line is retired.
+- approximately **70%** -> acquisition / sales / follow-up;
+- approximately **20%** -> directly monetizable finishing / fulfillment;
+- approximately **10%** -> maintenance of owned or long-horizon assets.
 
-## Trust / Operations Gaps
+## Weekly Scorecard
 
-- Production contact form was confirmed live through Formspree.
-- Temporary contact email remains `auralisdigitaleco@gmail.com` until a domain email is active.
-- Google Business Profile is not confirmed.
-- Real testimonials/reviews remain limited.
-- Product and custom-work proof should only be published with real evidence/permission.
+Track:
 
-## Priority Order
-
-Current strategic execution order:
-
-1. Preserve business/contact trust basics.
-2. Update the live Auralis site to match the locked creative-ecosystem direction.
-3. Remove or retire website-service positioning, pricing, navigation, and calls to action.
-4. Elevate Lucid Creations as the visual-art identity.
-5. Add the Music surface / route for the Live Music Platform.
-6. Keep Shopify functioning as commerce infrastructure where useful.
-7. Keep Shop and aligned custom creative-work paths operational.
-8. Audit legacy website-service docs, leads, pricing, and onboarding files before reusing them.
-9. Resume product / creative execution only after the public surface matches current strategy.
+- qualified prospects contacted;
+- responses;
+- conversations / meetings;
+- reviews / audits delivered;
+- proposals;
+- deals closed;
+- cash collected;
+- recurring revenue;
+- fulfillment hours;
+- workbook units sold;
+- Lucid / Lucid Visuals units sold;
+- Shopify traffic and conversion behavior;
+- acquisition source.
 
 ## Do Not Do Right Now
 
-- Do not reintroduce Shopify setup or website creation as core services.
-- Do not keep public website-service pricing active by inertia.
-- Do not run website-design outreach from legacy lead files.
-- Do not treat legacy routes/docs as current strategic truth.
-- Do not fake testimonials, reviews, client logos, sales, urgency, discounts, or case studies.
-- Do not relabel sample work as delivered client work.
-- Do not treat the Shopify/product surface as fully mature until operational readiness is verified.
-- Do not create a second Shopify store for RJ Print without demand-based justification.
-- Do not force a final music-platform brand name before execution provides evidence.
+- Do not start a new company.
+- Do not create a major new repo without direct paid-delivery need.
+- Do not rebuild the Auralis site from scratch.
+- Do not add a large new POD batch.
+- Do not spend weeks filming a course before workbook validation.
+- Do not prematurely commercialize Nova.
+- Do not make the music/media build the current priority.
+- Do not make a large wholesale inventory bet.
+- Do not use paid ads to compensate for an unvalidated offer.
+- Do not fabricate proof, testimonials, team size, urgency, or results.
+- Do not rewrite strategy without new evidence.
 
 ## Current Repo / Deployment Truth
 
@@ -217,20 +308,28 @@ Current strategic execution order:
 
 ## Next Concrete Action
 
-Use `active/NEXT_STEPS_TODO.md` only after confirming it is aligned with the 2026-08-20 direction lock.
+Use [`active/NEXT_STEPS_TODO.md`](../active/NEXT_STEPS_TODO.md) as the execution checklist only when it is aligned with the 2026-08-26 lock.
 
-The immediate correct sequence is:
+Immediate sequence:
 
 ```text
-strategy lock
+truth-sync docs
     ↓
-truth-sync canonical docs
+bounded commercial website refactor
     ↓
-retire legacy website-service public positioning
+transaction-readiness stack
     ↓
-update navigation/copy
+finalize one core service offer
     ↓
-add Music surface
+first 100 qualified prospects
     ↓
-resume creative + commerce execution
+outreach + follow-up
+    ↓
+customer #1
+    ↓
+customer #2
+    ↓
+customer #3
+    ↓
+optimize from evidence
 ```
