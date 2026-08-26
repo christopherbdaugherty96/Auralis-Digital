@@ -8,17 +8,43 @@ This document supersedes `AURALIS_DIRECTION_LOCK_2026-08-20.md` wherever the two
 
 The August 20 lock correctly retired broad website / Shopify-service positioning for the creative-ecosystem strategy that existed at that time. The operating objective has since changed: Auralis needs a focused near-term cash engine while preserving its owned creative and technical assets.
 
-This is an explicit reopening of **one narrow small-business digital-presence service lane**. It is **not** a return to a generic web-design, Shopify-consulting, or full-service marketing agency model.
+This explicitly reopens **one narrow small-business digital-presence service lane**. It is **not** a return to a generic web-design, Shopify-consulting, or full-service marketing agency model.
 
 For implementation truth, use [`docs/AURALIS_CURRENT_STATUS.md`](docs/AURALIS_CURRENT_STATUS.md). For the executable checklist, use [`active/NEXT_STEPS_TODO.md`](active/NEXT_STEPS_TODO.md).
 
-## Revenue Objective
+## Revenue Objective + Measurement Contract
 
-Primary commercial targets:
+### 30-day validation window
 
-- **First validated 30-day sales sprint:** collect at least **$1,000 in external business revenue**.
-- **By 2026-12-31:** build toward approximately **$4,000/month in repeatable business revenue**.
-- These are targets, not guarantees or forecasts.
+The first validation window is fixed:
+
+- **starts:** 2026-08-26;
+- **ends:** 2026-09-25;
+- **target:** at least **$1,000 in validated external business revenue** collected during that window.
+
+Do not silently restart or extend this window to protect the target. If execution slips, record the slip and diagnose it.
+
+### What counts as validated external business revenue
+
+Count customer revenue attributable to the active Auralis portfolio when it is paid by an arm's-length external customer.
+
+For the operating scorecard, use **net collected sales before COGS / operating expenses**:
+
+- include service fees and product / digital-product net sales;
+- subtract discounts, refunds, reversals, and chargebacks;
+- exclude sales tax;
+- exclude pass-through shipping reimbursements where separately identifiable;
+- exclude owner contributions, transfers between the owner's own accounts, test orders, intentionally arranged household / family checkout tests, employment wages, loans, grants, and other non-customer cash.
+
+Historical family / test transactions may prove that checkout or fulfillment works, but they do **not** satisfy the external-demand gate.
+
+### December target
+
+By **2026-12-31**, build toward at least **$4,000 of validated external business revenue in a rolling 30-day period**, with identifiable acquisition / sales channels that can reasonably be repeated.
+
+This is **not required to be pure MRR**. A healthy mix may contain project revenue, recurring care, digital products, Lucid commerce, and aligned custom work.
+
+These are targets, not guarantees or forecasts.
 
 The immediate priority is external demand evidence: paying customers, successful delivery, real approved testimonials / reviews, referrals, repeat purchases, and measured conversion behavior.
 
@@ -64,7 +90,7 @@ Auralis should not pretend to be a large agency. Founder / operator accountabili
 
 ### Approved Primary Offer
 
-The approved primary lane is a standardized **Business Digital Front Door** style service.
+The approved primary lane is a standardized **Business Digital Front Door** service.
 
 Typical scope may include:
 
@@ -112,6 +138,21 @@ Current acquisition hypothesis:
 - prioritize real operating businesses with evidence of customer demand but weak / outdated online presentation.
 
 This niche is a test, not a permanent restriction on Auralis.
+
+### Qualified-prospect definition
+
+A prospect counts toward the first 100 only when all of the following are true:
+
+1. it appears to be a real operating business;
+2. it fits the current market / niche test or is an equally strong adjacent exception;
+3. there is evidence of underlying customer demand or ongoing operation;
+4. a specific website / digital-presence problem can be identified;
+5. there is a legitimate contact path;
+6. the prospect is not a duplicate.
+
+Track **unique qualified prospects** separately from total outreach touches / follow-ups.
+
+The funnel diagnosis gate of ~75–100 applies to **unique qualified prospects contacted at least once**, not inflated touch counts.
 
 ## Public Website Direction
 
@@ -181,11 +222,12 @@ referral
 
 Initial market test:
 
-- build the first **100 qualified prospects**;
-- target roughly **15–20 qualified outreach attempts per weekday** during the active sprint;
+- build the first **100 unique qualified prospects**;
+- target roughly **15–20 qualified outreach touches per weekday** once outreach is active;
+- track new prospects contacted and follow-up touches separately;
 - use targeted phone, email, contact forms, referrals, and selective in-person outreach;
 - use disciplined follow-up;
-- diagnose the funnel after approximately **75–100 qualified contacts**.
+- diagnose the funnel after approximately **75–100 unique qualified prospects have been contacted at least once**.
 
 Diagnostic rules:
 
@@ -198,24 +240,37 @@ Do not abandon the offer after a trivial sample. Do not repeat a broken offer in
 
 ## Legitimacy + Transaction Readiness
 
-Before serious paid outreach, Auralis should have a minimum professional transaction stack:
+Auralis must look **small, real, and professional**, not artificially large.
+
+Minimum credibility stack:
 
 - clear service page;
-- domain email when possible;
+- honest selected work examples;
+- clear founder / operator identity;
+- professional domain email when operationally available;
 - business phone / professional voicemail if used;
-- honest portfolio examples;
 - short review template;
 - proposal template;
 - service agreement;
 - invoice / payment workflow;
 - deposit / payment policy;
 - onboarding questionnaire;
-- revision and launch rules;
-- clear founder / operator identity.
+- revision and launch rules.
+
+Use the confirmed legal / contracting identity on agreements and invoices. Do not represent `LLC`, formation status, address, insurance, or other legal / business facts publicly until verified.
 
 Business / administrative items that are not independently confirmed must remain marked **unverified**, including entity filing, EIN, dedicated business banking, bookkeeping setup, public address / service-area policy, Google Business Profile status, domain email, and insurance decisions where relevant.
 
-Auralis should look small and professional, not artificially large.
+Administrative setup must not become an indefinite excuse to delay prospecting. Complete the items required to quote, contract, accept payment, and deliver safely; continue non-blocking administrative cleanup in parallel.
+
+### Outreach-start gate
+
+The website / credibility refactor is a **bounded setup gate**, not a pretext for another long build cycle.
+
+- Target active outbound outreach **no later than 2026-09-02**.
+- Start sooner if the minimum credible stack is ready.
+- A real blocking legal, payment, or delivery defect may justify delay, but the blocker must be documented explicitly.
+- Non-blocking polish does not justify postponing outreach.
 
 ## Lucid Creations
 
@@ -247,8 +302,8 @@ Immediate rule:
 Validation ladder:
 
 ```text
-3 external purchases
-→ 10 external purchases
+3 unrelated / non-test external purchases
+→ 10 unrelated / non-test external purchases
 → identify repeatable acquisition source
 → $250/month
 → $500/month
@@ -280,6 +335,8 @@ Working market-test pricing:
 - founding / beta workbook: around **$19**;
 - mature workbook after feedback / polish: approximately **$29–$39**;
 - full recorded course only after external demand supports the work.
+
+The first demand gate is **10 unrelated / non-test external buyers**.
 
 Do not use unsupported income claims or guru-style promises.
 
@@ -318,23 +375,27 @@ Until the first $1,000 of validated external business revenue:
 - approximately **20%** -> directly monetizable finishing / fulfillment work;
 - approximately **10%** -> maintenance of owned or long-horizon assets.
 
-Website refactor, workbook finalization, and Lucid Visuals QA belong in the 20% lane only insofar as they directly enable sale. They must not indefinitely consume the acquisition lane.
+Measure this primarily on a **weekly basis once outreach is active**. The short initial setup gate may temporarily consume more than 20%, but it ends when the minimum credible sales stack is ready and should not extend past the 2026-09-02 outreach-start target without an explicit blocker.
+
+Website refactor, workbook finalization, and Lucid Visuals QA belong in the finishing lane only insofar as they directly enable sale. They must not indefinitely consume the acquisition lane.
 
 ## Weekly Scorecard
 
 Track at minimum:
 
-- qualified prospects contacted;
+- unique qualified prospects added;
+- unique qualified prospects contacted;
+- total outreach touches / follow-ups;
 - responses;
 - conversations / meetings;
 - reviews / audits delivered;
 - proposals sent;
 - deals closed;
-- cash collected;
+- validated external revenue collected;
 - recurring monthly revenue;
 - fulfillment hours;
-- workbook units sold;
-- Lucid / Lucid Visuals units sold;
+- workbook external buyers / units sold;
+- Lucid / Lucid Visuals external buyers / units sold;
 - Shopify traffic and conversion funnel;
 - acquisition source.
 
@@ -384,11 +445,11 @@ A live platform fact can supersede an old factual snapshot. It does not silently
 ## Immediate Execution Order
 
 ```text
-1. bounded commercial website refactor
-2. transaction + administrative readiness
+1. bounded commercial website + credibility refactor
+2. transaction readiness for quoting / contracting / payment
 3. finalize one core service offer
-4. build first 100 qualified prospects
-5. start outreach + follow-up
+4. build first 100 unique qualified prospects
+5. start outreach + follow-up no later than 2026-09-02 unless explicitly blocked
 6. close and deliver customer #1
 7. repeat through customer #3
 8. optimize from evidence
@@ -400,6 +461,7 @@ Parallel but subordinate:
 finalize / test-sell existing Shopify workbook
 + synchronize / QA / launch Lucid Visuals
 + maintain Lucid Creations
++ continue non-blocking administrative verification
 ```
 
 ## Lock Rule
