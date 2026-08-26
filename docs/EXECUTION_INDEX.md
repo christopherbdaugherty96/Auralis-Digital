@@ -1,57 +1,53 @@
 # Auralis Digital Execution Index
 
-Last updated: 2026-05-13
+Last updated: 2026-08-26
 
 ## Purpose
 
-This document defines the practical execution order for the repo.
-
-Use this before creating new roadmap docs, status docs, cleanup passes, or feature work.
-
-The goal is to keep the repo operationally coherent while moving toward:
-
-```text
-business setup -> trust setup -> lead capture -> outreach -> first client -> proof -> retention
-```
-
-Auralis currently contains three main public surfaces, plus Pour Social as a separate service route:
-
-1. Auralis Design products (catalog + Shopify checkout)
-2. Custom / personalized design requests
-3. Website design services
-
-Pour Social has its own route (`/pour-social`) as an external service brand.
-
-The product/shop surface exists publicly but is not considered fully commerce-mature until commerce readiness is verified.
-
----
-
-# Canonical Order Of Operations
-
-## 1. Current Truth
+This document maps practical execution resources. It is **not** the primary strategy or current-state authority.
 
 Read first:
 
-1. `docs/BUSINESS_HEALTH.md`
+1. `AURALIS_DIRECTION_LOCK_2026-08-26.md`
 2. `docs/AURALIS_CURRENT_STATUS.md`
 3. `active/NEXT_STEPS_TODO.md`
-4. `docs/STATUS.md`
 
-These files define:
+Current operating sequence:
 
-- what is real
-- what is missing
-- what is blocked
-- what is unverified
-- what should happen next
+```text
+commercial website refactor
+→ transaction + administrative readiness
+→ finalize one core service offer
+→ first 100 qualified prospects
+→ outreach + follow-up
+→ customer #1
+→ customer #2
+→ customer #3
+→ optimize from evidence
+```
+
+Parallel but subordinate:
+
+```text
+finalize/test-sell existing Shopify workbook
++ verify/synchronize/launch Lucid Visuals
++ maintain Lucid Creations
+```
+
+## 1. Current Truth
+
+Use:
+
+- `AURALIS_DIRECTION_LOCK_2026-08-26.md` — strategy / commercial authority;
+- `docs/AURALIS_CURRENT_STATUS.md` — operational truth;
+- `active/NEXT_STEPS_TODO.md` — executable checklist;
+- `docs/STATUS.md` — short snapshot only.
 
 Do not create duplicate current-state docs.
 
----
-
 ## 2. Deployment Truth
 
-Before touching deployment, hosting, static folders, or GitHub Pages:
+Before touching hosting, route generation, static folders, GitHub Pages, or deployment:
 
 Read:
 
@@ -59,141 +55,206 @@ Read:
 
 Rules:
 
-- `main` is source truth.
-- `gh-pages` is generated deployment output.
-- Do not edit `gh-pages` manually.
-- Do not merge `gh-pages` into `main`.
-- Do not delete static folders unless deployment workflow confirms they are unused.
+- `main` is source truth;
+- `gh-pages` is generated output;
+- do not edit `gh-pages` manually;
+- do not merge generated deployment output into source;
+- do not delete static folders until the deployment workflow proves they are unused.
 
----
+## 3. Commercial Website Refactor
 
-## 3. Contact / Lead Capture
+Primary current website task is a **bounded commercial refactor**, not a rebuild.
 
-Before outreach:
+Update:
 
-Read:
+- homepage positioning;
+- navigation;
+- Business Services surface;
+- Work / portfolio hierarchy;
+- founder / trust positioning;
+- Battle Creek / Southwest Michigan geography;
+- metadata / structured data / sitemap / policies;
+- removed venture references;
+- contact paths.
 
-- `docs/tech/FORMSPREE_SETUP.md`
-- `docs/tech/NEXT_STEP_FORM_BACKEND.md`
+Useful technical references may include:
 
-Verify:
+- `docs/tech/WEBSITE_BUILD_WORKFLOW.md`;
+- `docs/tech/KNOWN_SITE_TODOS.md`;
+- `docs/tech/FORMSPREE_SETUP.md`;
+- current React/Vite source in `src/`.
 
-- `VITE_CONTACT_EMAIL`
-- `VITE_FORMSPREE_ENDPOINT`
-- Formspree flow
-- mailto fallback
-- desktop test
-- phone test
+Do not let old marketing copy or old service-area pages override the new lock.
 
-Trust and contact reliability matter more than additional polish.
+## 4. Transaction + Administrative Readiness
 
----
+Customer-facing minimum stack:
 
-## 4. Outreach Execution
+- domain email when available;
+- business phone / voicemail if used;
+- 3-point review template;
+- proposal;
+- service agreement;
+- invoice / payment workflow;
+- deposit policy;
+- onboarding;
+- revision limits;
+- launch / handoff checklist;
+- working contact form.
 
-Once contact flow works:
+Administrative truth to verify rather than assume:
 
-Use:
+- Michigan entity / LLC status;
+- EIN;
+- dedicated business bank account;
+- bookkeeping workflow;
+- public business address / service-area policy;
+- Google Business Profile;
+- insurance decision where relevant.
 
-- `leads/LEADS_ACTIVE_OUTREACH.csv`
-- `leads/OUTREACH_SCRIPTS.md`
-- `leads/OUTREACH_PACKET.md`
-- `leads/FOLLOW_UP_SYSTEM.md`
+## 5. Sales / Outreach
 
-Priority:
+Folder: `leads/`
 
-```text
-conversation -> quote -> close -> deliver
-```
+Useful assets exist for:
 
-Do not spend weeks polishing before real outreach begins.
+- lead tracking;
+- cold call / email structure;
+- objection handling;
+- follow-up;
+- proposals / quotes;
+- pricing references;
+- referrals.
 
----
+**Review every old file before use.** Many predate the current Battle Creek / Southwest Michigan focus, current offer, and current pricing.
 
-## 5. Client Intake And Delivery
+Current acquisition test:
 
-After a real lead responds:
+- first 100 qualified prospects;
+- contractors / home and local service businesses first;
+- ~15–20 qualified touches per weekday during active sprint;
+- follow-up;
+- diagnose after ~75–100 contacts.
 
-Use:
+Use a simple tracker before building a custom CRM.
 
-- `onboarding/CLIENT_INTAKE_QUESTIONNAIRE.md`
-- `leads/QUOTE_AND_SCOPE_TEMPLATE.md`
-- `leads/PROPOSAL_TEMPLATE.md`
-- `onboarding/FIRST_CLIENT_DELIVERY_CHECKLIST.md`
-- `onboarding/CLIENT_HANDOFF_CHECKLIST.md`
+## 6. Client Intake + Delivery
 
-Goal:
+Folder: `onboarding/`
 
-Deliver one complete real engagement cleanly.
+Reusable assets include:
 
----
+- `CLIENT_INTAKE_QUESTIONNAIRE.md`;
+- `CLIENT_INTAKE_TEMPLATE.md`;
+- `FIRST_CLIENT_DELIVERY_CHECKLIST.md`;
+- `CLIENT_WEBSITE_DELIVERY_MASTER_CHECKLIST.md`;
+- `CLIENT_HANDOFF_CHECKLIST.md`;
+- `REVISION_POLICY.md`;
+- `CLIENT_PROOF_WORKFLOW.md`;
+- `CASE_STUDY_TEMPLATE.md`;
+- website-care references.
 
-## 6. Proof And Retention
+Before external use, reconcile scope, pricing, timeline, ownership, revision, maintenance, and legal wording with the current approved offer.
+
+## 7. Proof + Referral
 
 After successful delivery:
 
+- obtain permission before publishing client work;
+- request a real testimonial / review when earned;
+- ask for one referral;
+- create a case study only from facts you can substantiate.
+
+No fake reviews, logos, conversion metrics, client history, or urgency.
+
+## 8. Shopify + Printify Workbook
+
+Primary source:
+
+- `docs/guides/shopify/Build-Your-First-Shopify-Store-DRAFT.md`
+
+Current source already has the six-phase Quick-Start, Chapters 1–12, all worksheets, and optional appendix.
+
+Do not create another Quick-Start.
+
+Current finalization work is tracked in `active/NEXT_STEPS_TODO.md` and includes current-platform verification, screenshot reduction / capture, legacy service upsell cleanup, RJ Print example generalization, metadata / price synchronization, Word/PDF QA, link QA, and test-sale readiness.
+
+## 9. Lucid Visuals
+
 Use:
 
-- `onboarding/CLIENT_PROOF_WORKFLOW.md`
-- `onboarding/CASE_STUDY_TEMPLATE.md`
-- `onboarding/WEBSITE_CARE_PLAN_CLIENT_OPTIONS.md`
+- `docs/LUCID_VISUALS_REVENUE_ENGINE_2026-08-26.md`;
+- live Shopify product state;
+- actual verified customer files.
 
-Rules:
+Do not publish Vol. 1 until listing, asset, license, and digital delivery agree.
 
-- No fake testimonials.
-- No fake reviews.
-- No fake client logos.
-- No fake case studies.
-- Demo/sample work must remain clearly labeled.
+Do not expand into a large pack catalog before external purchase evidence.
 
----
+## 10. Lucid Creations / Commerce
 
-## 7. Product / Commerce Verification
+Commerce remains active but secondary to the immediate Auralis cash-engine sales work.
 
-The shop/product surface is secondary until verified.
+Current rule:
 
-Before treating commerce as production-ready:
+- maintain store;
+- focus distribution;
+- no broad undifferentiated SKU expansion;
+- use live Shopify state for current product / order claims;
+- let sales evidence determine product work.
 
-Verify:
+Useful references:
 
-- Shopify checkout
-- policy links
-- tax/shipping settings
-- Printify fulfillment
-- support email
-- product margins
-- artwork/product-rights workflow
-- real test order
+- `docs/NEW_PRODUCT_CHECKLIST.md`;
+- `docs/SHOPIFY_LAUNCH_CHECKLIST.md`;
+- `docs/marketing/`;
+- catalog drift / generation tooling.
 
-Primary tracking:
+## 11. Protected / Frozen Assets
 
-- `active/NEXT_STEPS_TODO.md`
+NovaLIS / OpenClaw:
 
----
+- preserve technical roadmap;
+- no forced commercialization to satisfy the current revenue sprint.
 
-## 8. Repo Cleanup And Drift Control
+Live Music Platform / media:
 
-Before deleting branches, folders, docs, or workflows:
+- preserve work;
+- freeze major expansion unless new external evidence explicitly justifies activation.
 
-Confirm:
+## 12. Explicitly Inactive Current Lanes
 
-- branch is truly merged
-- branch is not only ahead because of squash history
-- folder is not deployment input
-- doc is not canonical
+Do not route current execution into:
 
-Avoid endless cleanup loops.
+- RJ Print;
+- Pour Social;
+- ShortCut Lawn Care;
+- Buyer Advocate;
+- ATH Service;
+- active wholesale / affiliate sourcing;
+- LastStopShop activation;
+- unrelated new ventures.
 
----
+Old folders can remain for provenance / reuse.
 
-# Operational Priority
+## 13. Repo Cleanup + Drift Control
+
+Before deleting or rewriting old material:
+
+- determine whether it is deployment input;
+- determine whether it contains reusable technical / client-operation material;
+- mark it historical / review-before-use if that is sufficient;
+- avoid broad cleanup that does not improve sales or delivery.
+
+## Operational Rule
 
 If unsure what to do next:
 
-1. Fix trust/contact issues.
-2. Start outreach.
-3. Deliver work.
-4. Capture proof.
-5. Improve systems afterward.
+1. finish the bounded website / trust refactor;
+2. become transaction-ready;
+3. start qualified outreach;
+4. close and deliver;
+5. capture proof / referral;
+6. improve systems from evidence.
 
 Do not mistake documentation activity for business progress.
