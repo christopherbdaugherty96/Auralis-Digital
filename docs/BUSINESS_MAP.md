@@ -1,82 +1,104 @@
-# Business Map
+# Auralis Digital Business Map
 
-Last updated: 2026-06-05
+Last updated: 2026-08-26
 
-This map shows how the major Auralis Digital business areas relate to each other.
+This is a quick structural map. Strategic authority remains `AURALIS_DIRECTION_LOCK_2026-08-26.md` and operational truth remains `AURALIS_CURRENT_STATUS.md`.
 
-## Auralis Digital
+## Current Map
 
-Parent business and operating hub.
+```text
+Auralis Digital
+├── Primary Cash Engine
+│   └── Small-Business Digital Presence
+│       ├── Business Digital Front Door
+│       ├── optional Website Care
+│       └── optional Managed Digital Presence
+│
+├── Owned Commerce
+│   └── Lucid Creations
+│       ├── existing physical / POD catalog
+│       ├── personalization / custom opportunities
+│       └── distribution + conversion testing
+│
+├── Scalable Digital Products
+│   ├── Build Your First Shopify Store workbook / course
+│   └── Lucid Visuals digital assets
+│
+├── Supplemental Revenue
+│   └── aligned Custom Creative Work
+│
+└── Protected Long-Horizon Assets
+    ├── NovaLIS / OpenClaw
+    ├── Live Music Platform
+    └── media / YouTube / news concepts
+```
 
-Responsibilities:
+## Primary Cash Engine
 
-- public brand direction
-- website services
-- ecommerce planning
-- product strategy
-- marketing systems
-- business operations
-- documentation source of truth
+Auralis currently sells one narrow small-business digital-presence lane rather than acting as a generic full-service agency.
 
-## Website Services
+Working offer hypotheses:
 
-Revenue path for client websites and support.
+- Business Digital Front Door: ~`$995` starting;
+- Website Care: ~`$129/month`;
+- Managed Digital Presence: ~`$349/month`.
 
-Includes:
+Initial acquisition test:
 
-- website builds
-- website refreshes
-- third-party website audits
-- rebuild consultations
-- managed hosting and care
-- demo/sample portfolio work
+- Battle Creek / Southwest Michigan first;
+- contractors and home / local service businesses first;
+- remote delivery available.
 
 ## Lucid Creations
 
-Product path for artwork, symbolic design, sacred geometry, psychedelic art, apparel, blankets, pillows, wall art, home decor, POD products, and custom design-aligned products.
+Lucid Creations remains the owned creative-commerce brand.
 
-Shopify remains the commerce backend.
+Current rule:
 
-Current customer-facing structure:
+- maintain existing catalog;
+- focus distribution and conversion;
+- do not broadly expand SKU count without evidence;
+- use Printify as fulfillment infrastructure, not the idea engine.
+
+## Digital Products
+
+### Shopify + Printify Workbook
+
+Substantially built. Current work is finalization / verification / sale-readiness, not another rewrite.
+
+### Lucid Visuals
+
+Active experiment. Vol. 1 must have exact product-file / listing / license / delivery agreement before publication. Expansion waits for external purchase evidence.
+
+## Custom Creative Work
+
+Available as supplemental revenue when profitable, rights-safe, and clearly scoped.
+
+## NovaLIS / OpenClaw
+
+Protected technical asset. Do not force near-term commercialization for the revenue sprint.
+
+## Live Music + Media
+
+Preserved but major expansion is frozen during the current revenue sprint unless external evidence justifies activation.
+
+## Explicitly Inactive / Removed From Current Portfolio
+
+- RJ Print
+- Pour Social
+- ShortCut Lawn Care
+- Buyer Advocate
+- ATH Service
+- active wholesale / affiliate sourcing
+- LastStopShop activation
+- unrelated new ventures
+
+Old repositories, folders, and educational references may remain preserved without implying current execution priority.
+
+## Core Rule
 
 ```text
-Shop
-`-- Lucid Creations
+asset exists ≠ active business priority
 ```
 
-## RJ Print
-
-In-house 3D print product line.
-
-Primary strengths:
-
-- custom products
-- in-house margin control
-- made-to-order workflow
-- giftable items
-- creator and home decor products
-
-Current customer-facing structure:
-
-```text
-Shop
-`-- RJ Print
-```
-
-RJ Print should stay in the same Shopify store for now, separated by collection/page. A separate Shopify store is a later option only after the line proves enough demand.
-
-## Affiliate Products
-
-Recommendation-based revenue channel.
-
-Best used for tools, supplies, software, and products Auralis can recommend without directly stocking or fulfilling.
-
-## Dropshipping
-
-Curated product testing layer.
-
-Use carefully and keep it brand-aligned.
-
-## Future Ventures
-
-Ideas such as NovaLIS or other future projects should remain mapped under Auralis Digital until they need independent structure.
+A lane earns increased priority through external evidence: payment, qualified demand, repeat purchase / usage, referral behavior, or measured conversion.
