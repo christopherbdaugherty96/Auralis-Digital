@@ -2,97 +2,60 @@
 
 ## Status
 
-**LOCKED STRATEGIC DIRECTION**
+**HISTORICAL — SUPERSEDED WHERE CONFLICTING**
 
-This document supersedes older public-positioning assumptions that treated website creation / Shopify setup as a core Auralis Digital service offer.
+This file records the strategic decision made on **2026-08-20**. It is retained for provenance and historical reasoning.
 
-Do not reintroduce those service lines without new execution evidence and an explicit strategic decision.
+It is **not the current execution authority**.
 
-## Core decision
+Current strategic authority is:
 
-Auralis Digital will no longer position itself primarily as a website-design, Shopify-setup, or general e-commerce implementation service business.
+- [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](AURALIS_DIRECTION_LOCK_2026-08-26.md)
+- [`docs/AURALIS_CURRENT_STATUS.md`](docs/AURALIS_CURRENT_STATUS.md)
+- [`active/NEXT_STEPS_TODO.md`](active/NEXT_STEPS_TODO.md)
 
-Shopify may remain in use as commerce infrastructure where useful, but Shopify setup and website creation are no longer products/services Auralis Digital should sell as core offers.
+The 2026-08-26 lock explicitly reopens one narrow small-business digital-presence service lane as the near-term Auralis cash engine. Therefore the August 20 instructions below that say not to reintroduce website / local-business services are historical and must not be executed where they conflict with the newer lock.
 
-## New role of Auralis Digital
+## Historical decision preserved
 
-Auralis Digital is the parent creative ecosystem / umbrella brand.
+On 2026-08-20, Auralis Digital was intentionally repositioned away from website-design / Shopify-setup services and toward a creative-ecosystem model centered on:
 
-Its purpose is to connect original visual art, independent music discovery, artist collaboration, creative products, and digital commerce under one coherent identity.
+- Lucid Creations as the visual-art / creative identity;
+- a Live Music Platform as an Auralis product / subsite;
+- Shop / Commerce using Shopify as infrastructure;
+- Custom Creative Work aligned with visual art / artist collaboration.
 
-Recommended public framing:
-
-> Auralis Digital is a creative digital ecosystem focused on original visual art, independent music discovery, artist collaboration, and commerce.
-
-## Brand / product structure
+At that time, the preferred structure was:
 
 ```text
 Auralis Digital
 ├── Lucid Creations
-│   ├── psychedelic / sacred-geometry visual art
-│   ├── visualizers
-│   ├── artist artwork / commissions
-│   ├── prints / tapestries / apparel / related products
-│   └── visual identity for the music experience
-│
 ├── Live Music Platform
-│   ├── independent artist discovery
-│   ├── permission-based music catalog
-│   ├── continuous DJ-style programming
-│   ├── music-reactive visuals
-│   ├── artist attribution and direct links
-│   └── future likes / follows / timestamped comments / discovery features
-│
 ├── Shop / Commerce
-│   ├── Lucid Creations products
-│   ├── artist collaboration products
-│   ├── merch
-│   └── other approved creative products
-│
 └── Custom Creative Work
-    ├── commissioned artwork
-    ├── artist visualizers
-    ├── visual assets
-    └── related creative commissions
 ```
 
-## Lucid Creations
+The August 20 lock treated Shopify as commerce infrastructure rather than a service identity and retired broad public offers such as:
 
-Lucid Creations should remain the visual-art / creative-studio identity inside the Auralis ecosystem.
+- Shopify setup services;
+- website creation services;
+- website refresh packages;
+- generic client website builds;
+- general local-business web-design positioning;
+- managed website care plans tied to that model.
 
-It should not be forced to become the final consumer-facing name of the music platform.
+It also established these still-useful principles that remain valid unless they conflict with the 2026-08-26 lock:
 
-Recommended relationship:
+- Lucid Creations remains an Auralis visual-art / creative identity.
+- Shopify can remain commerce infrastructure.
+- The Live Music Platform remains a distinct Auralis product / subsite rather than a Shopify collection or separate company by default.
+- Artist-permission truth, attribution, and creative-rights boundaries must be preserved.
+- Do not invent proof, testimonials, customer results, or platform readiness.
+- Do not let old repository artifacts silently define current strategy.
 
-```text
-Music platform / discovery brand
-          ↓
-Visuals by Lucid Creations
-```
+## Historical public-navigation concept
 
-This gives Lucid Creations a durable role across:
-
-- original sacred geometry,
-- psychedelic / visionary art,
-- live visuals,
-- artist visualizers,
-- album / track artwork,
-- commissions,
-- merch / prints derived from visual work.
-
-## Live Music Platform relationship
-
-The Live Music Platform should operate as a distinct Auralis Digital product/subsite, not merely as a Shopify collection and not as a separate company at this stage.
-
-The current locked platform idea is:
-
-> Independent artist discovery + explicit non-exclusive permission + coherent DJ-style programming + original music-reactive visuals + continuous live distribution + artist attribution / direct links + future listener interaction.
-
-The livestream is the first distribution surface, not the entire product.
-
-## Website / information architecture direction
-
-Recommended Auralis Digital navigation:
+The August 20 strategy proposed:
 
 ```text
 Home
@@ -103,106 +66,50 @@ Custom Work
 About
 ```
 
-The music experience may initially live as an Auralis subsite or route and later move to a dedicated branded domain if traction justifies it.
-
-Possible future structure:
+That navigation is no longer current authority. The 2026-08-26 lock currently prefers:
 
 ```text
-auralisdigital.net
-├── /music
-├── /lucid-creations
-├── /shop
-├── /custom-work
-└── /about
+Business Services
+Work
+Lucid Creations
+About
+Contact
 ```
 
-or eventually:
+## Historical music-platform relationship
+
+The historical relationship remains useful context:
 
 ```text
-music.auralisdigital.net
+Music platform / discovery brand
+          ↓
+Visuals by Lucid Creations
 ```
 
-The actual real-time music product should not be constrained by Shopify if its interaction and application requirements outgrow the storefront.
+The music-platform implementation remains preserved but is currently a protected / frozen long-horizon asset during the revenue sprint unless new external evidence justifies activation.
 
-## Shopify role
+## Historical commerce principle
 
-Shopify is infrastructure, not the service identity.
-
-Allowed use:
-
-- checkout,
-- commerce backend,
-- product management,
-- merch,
-- creative-product sales,
-- artist collaboration products.
-
-Remove / retire as public core offers:
-
-- Shopify setup services,
-- website creation services,
-- website refresh packages,
-- generic client website builds,
-- general local-business web-design positioning,
-- managed website care plans tied to that service model unless separately re-approved later.
-
-## Commerce loop
-
-Auralis should use attention generated by its creative surfaces rather than lead with unrelated agency services.
+The August 20 doctrine preferred a creative flywheel:
 
 ```text
-Artist joins music platform
+artist joins / participates
       ↓
-Featured with Lucid Creations visuals
+featured with Lucid visuals
       ↓
-Audience discovers artist / Auralis
+audience discovers artist / Auralis
       ↓
-Artist links / collaboration / visualizer interest
+artist links / collaboration / visualizer interest
       ↓
-Shop / merch / visual products / commissions
+shop / merch / visual products / commissions
 ```
 
-This is the preferred internal flywheel.
+This remains a potentially useful long-term thesis, but it no longer outranks the current near-term revenue-first acquisition plan.
 
-## What must change on the existing Auralis surface
+## Archive rule
 
-The current repository and public site still contain legacy website-design positioning.
+Use this file to understand **why** Auralis temporarily retired website services on 2026-08-20.
 
-Required cleanup when implementation resumes:
+Do **not** use it to determine what Auralis should execute now.
 
-1. Remove website-design service positioning from the homepage and primary navigation.
-2. Remove or archive website-build pricing packages.
-3. Remove website-refresh and audit/rebuild offers.
-4. Remove managed website-care-plan positioning unless intentionally repurposed later.
-5. Rewrite public copy around the creative ecosystem model.
-6. Elevate Lucid Creations as the visual-art identity.
-7. Add a Music surface / route for the live music platform.
-8. Keep Shopify as the commerce backend where useful, without marketing Shopify setup as a service.
-9. Preserve the Shop and custom creative-work paths where they align with the new direction.
-10. Audit old docs, lead-generation files, pricing docs, and outreach scripts for stale website-service assumptions before reactivating them.
-
-## What is not decided yet
-
-Do not force decisions on these items until execution provides evidence:
-
-- final consumer-facing name of the music platform,
-- whether the music platform eventually gets its own domain,
-- monetization model for the music platform,
-- first-party social/comment implementation,
-- custom artist CRM timing,
-- whether all current product/shop branches remain equally important long term.
-
-## Lock rule
-
-This document is the strategic surface-level direction for Auralis Digital as of 2026-08-20.
-
-Future work should treat the following as fixed unless explicitly reopened:
-
-- Auralis Digital is the umbrella creative ecosystem.
-- Website creation / Shopify setup are removed as core service offers.
-- Shopify may remain as commerce infrastructure.
-- Lucid Creations is the visual-art / creative identity.
-- The Live Music Platform belongs inside the Auralis ecosystem as a distinct product/subsite.
-- Commerce should support the creative ecosystem rather than define the company as a web-development agency.
-
-Implementation work should update existing site copy, navigation, pricing, roadmap/status docs, and operating materials to match this direction before new service expansion is considered.
+Where any statement in this historical file conflicts with `AURALIS_DIRECTION_LOCK_2026-08-26.md`, the **2026-08-26 lock wins**.
