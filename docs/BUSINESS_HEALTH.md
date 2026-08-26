@@ -1,48 +1,99 @@
 # Business Health Scorecard
 
-Updated: 2026-07-04 · One screen, verified facts only. Update marks when state changes; keep this under a page. Narrative lives in `AURALIS_CURRENT_STATUS.md`; channel detail in `SALES_CHANNELS_ROADMAP.md`.
+Updated: 2026-08-26
+
+This is a compact health snapshot. Narrative truth lives in `AURALIS_CURRENT_STATUS.md`; strategy lives in `../AURALIS_DIRECTION_LOCK_2026-08-26.md`.
 
 ```text
-REVENUE
-✓ First sale (#1001, 2026-05-28, $31.58, fulfilled — custom/family order:
-  checkout+fulfillment proof, not a margin or demand benchmark)
-□ First non-family sale from public traffic  ← THE commercial milestone
-□ 10 sales
-□ 100 sales
+REVENUE / DEMAND
+✓ First real retained product sale historically verified (#1001, 2026-05-28)
+□ $1,000+ external revenue in current validated 30-day sprint  ← PRIMARY COMMERCIAL GATE
+□ First Auralis small-business service customer
+□ Three Auralis service customers
+□ 10 external Shopify-workbook buyers
+□ 3 external Lucid Visuals buyers
+□ 10 external Lucid Visuals buyers
+□ ~4,000/month repeatable business revenue by 2026-12-31 target
 
-LEGAL / FORMATION
-✓ Shopify policies (all 5 published)
-□ LLC filing confirmed
-□ EIN
-□ Business bank account
-□ Domain email (still auralisdigitaleco@gmail.com)
+AURALIS SALES ENGINE
+□ Public site refactored to current Business Digital Front Door positioning
+□ Domain email verified
+□ Business phone / voicemail verified if used
+□ Proposal finalized
+□ Service agreement finalized
+□ Invoice / payment workflow finalized
+□ Deposit policy finalized
+□ Onboarding + revision + launch/handoff rules finalized
+□ First 100 qualified prospects built
+□ Outreach started
+□ Funnel diagnosis completed after ~75–100 qualified contacts
 
-COMMERCE CHANNELS
-✓ Online Store (auralisdigital.net + shop.auralisdigital.net; WELCOME10 live)
-✓ Shop app (33/33 — 6 missing new products backfilled 2026-07-04)
-✓ Google & YouTube (32/33; awaiting first review ~2026-07-08→10; shipping-info flag to clear)
-✓ Facebook & Instagram (32/33, hoodie excluded; Meta-side review status unverified)
-✓ TikTok (official TikTok Inc. app installed; 32/33 published, hoodie excluded; Seller Center handoff paused on `shop=undefined` callback loop)
-□ Pinterest
-□ Marketplaces (Amazon/eBay/Walmart — deliberately deferred)
+ADMIN / FORMATION — VERIFY, DO NOT ASSUME
+□ Michigan entity / LLC status confirmed
+□ EIN confirmed
+□ Dedicated business bank account confirmed
+□ Bookkeeping / accounting workflow confirmed
+□ Public address / service-area policy decided
+□ Google Business Profile state confirmed
+□ Business-insurance decision made where relevant
 
-PRODUCTS (33 active; 32 on website — profanity hoodie excluded via overrides)
-✓ Catalog drift: 0 — site catalog now GENERATED from Shopify (npm run generate:catalog)
-✓ Dead product links on website: 0
-✓ Products missing from website: 0 (1 deliberate exclusion)
-✓ Vendor field consistent (fixed 2026-07-04)
-△ Products with <3 images: 2 (Sun of Life Tapestry, bucket hat)
-✓ Descriptions clean on Shopify + site: 33/33 (Depth completed 2026-07-04 with Printify AOP specs)
-✓ Channel policy exclusions enforced (profanity hoodie off Google/Meta/TikTok/ChatGPT)
+WEBSITE / TRUST
+✓ Live Auralis site exists
+✓ React/Vite + GitHub Pages deployment infrastructure exists
+✓ Formspree infrastructure exists
+△ Current public positioning is stale vs 2026-08-26 lock
+△ Old geography / branch / service / metadata surfaces remain implementation debt
+□ Commercial refactor deployed
+□ Desktop + phone prospect/contact flow re-verified after refactor
+□ Selected Work proof curated and honestly labeled
+□ First real service testimonial / review earned and permissioned
 
-TRUST / PROOF
-1 customer · 0 reviews · 0 testimonials · 0 published case studies
-□ Proof captured from order #1001  ← highest-leverage open item
-□ Google Business Profile
+LUCID CREATIONS
+✓ Store + fulfillment stack exist
+✓ First retained product order historically verified
+△ Demand remains weak / insufficiently validated for broad catalog expansion
+→ Current rule: distribution + conversion evidence before more SKU creation
 
-OPS DISCIPLINE
-✓ Truth docs match verified reality (2026-07-04)
-✓ New-product release checklist exists
-✓ Drift checker in CI-able form (manual for now)
-Rule: commit = checkpoint, push = release (main auto-deploys)
+LUCID VISUALS
+✓ Product 001 exists in Shopify
+✓ Current Shopify state: DRAFT, $6.99
+△ Listing spec conflicts with later upgraded-package plan
+□ Exact final customer ZIP verified
+□ Listing + file + license synchronized
+□ Digital delivery configured
+□ End-to-end checkout + download test passed
+□ Product published
+□ 3 external purchases
+□ 10 external purchases
+
+SHOPIFY + PRINTIFY WORKBOOK
+✓ Six-phase Quick-Start exists
+✓ Chapters 1–12 exist
+✓ All 12 worksheets exist
+✓ Optional appendix exists
+△ Full-book finalization still in progress
+△ Current draft contains old $10 cover price
+△ Legacy generic Shopify-service upsell remains
+△ RJ Print appears in educational examples despite being inactive
+□ Current Shopify / Printify behavior re-verified
+□ Screenshot set reduced / captured / redacted
+□ Legacy upsell + RJ Print references reconciled
+□ Final metadata + Word/PDF + link QA complete
+□ Test-sale artifact approved
+□ First 10 external buyers
+
+PROTECTED / FROZEN
+✓ NovaLIS / OpenClaw preserved; no forced commercialization
+✓ Live Music / media preserved; major expansion frozen during sprint
+
+EXPLICITLY INACTIVE
+RJ Print · Pour Social · ShortCut · Buyer Advocate · ATH · active wholesale/affiliate lane · LastStopShop activation · unrelated new ventures
+
+DISCIPLINE
+✓ 2026-08-26 direction lock is strategic authority
+✓ Canonical status + active TODO aligned
+✓ Older 2026-08-20 lock marked historical
+✓ Lucid Visuals plan aligned to current lock
+Rule: live evidence beats old factual snapshots; explicit dated lock controls strategy.
+Rule: asset built ≠ active priority; external demand earns priority.
 ```
