@@ -4,34 +4,36 @@
 
 **LOCKED STRATEGIC + REVENUE DIRECTION**
 
-This document supersedes `AURALIS_DIRECTION_LOCK_2026-08-20.md` where the two conflict.
+This document supersedes `AURALIS_DIRECTION_LOCK_2026-08-20.md` wherever the two conflict.
 
-The 2026-08-20 lock correctly retired broad website / Shopify-service positioning for the creative-ecosystem strategy that existed at that time. The operating objective has since changed: Auralis now needs a focused near-term cash engine while preserving its owned creative and technical assets.
+The August 20 lock correctly retired broad website / Shopify-service positioning for the creative-ecosystem strategy that existed at that time. The operating objective has since changed: Auralis needs a focused near-term cash engine while preserving its owned creative and technical assets.
 
 This is an explicit reopening of **one narrow small-business digital-presence service lane**. It is **not** a return to a generic web-design, Shopify-consulting, or full-service marketing agency model.
 
-## Revenue objective
+For implementation truth, use [`docs/AURALIS_CURRENT_STATUS.md`](docs/AURALIS_CURRENT_STATUS.md). For the executable checklist, use [`active/NEXT_STEPS_TODO.md`](active/NEXT_STEPS_TODO.md).
+
+## Revenue Objective
 
 Primary commercial targets:
 
 - **First validated 30-day sales sprint:** collect at least **$1,000 in external business revenue**.
 - **By 2026-12-31:** build toward approximately **$4,000/month in repeatable business revenue**.
-- Prefer a buffer above the target when possible; do not treat any forecast as guaranteed.
+- These are targets, not guarantees or forecasts.
 
-The immediate priority is external demand evidence: paying customers, successful delivery, testimonials/reviews when real and approved, referrals, repeat purchases, and measured sales behavior.
+The immediate priority is external demand evidence: paying customers, successful delivery, real approved testimonials / reviews, referrals, repeat purchases, and measured conversion behavior.
 
-## Core operating model
+## Core Operating Model
 
 ```text
 Auralis Digital
-├── Cash engine
+├── Primary cash engine
 │   └── focused small-business digital-presence service
 ├── Owned commerce
 │   └── Lucid Creations
 ├── Scalable digital products
-│   ├── Shopify + Printify workbook / course product
-│   └── Lucid Visuals digital assets
-├── Supplemental
+│   ├── Shopify + Printify workbook / course
+│   └── Lucid Visuals
+├── Supplemental revenue
 │   └── aligned custom creative work
 └── Protected long-horizon assets
     ├── NovaLIS / OpenClaw
@@ -39,17 +41,30 @@ Auralis Digital
     └── media / YouTube / news concepts
 ```
 
-## Auralis service identity
+Explicitly outside the current active portfolio:
 
-Recommended public positioning:
+- RJ Print;
+- Pour Social;
+- ShortCut Lawn Care;
+- Buyer Advocate;
+- ATH Service;
+- wholesale / affiliate sourcing as an active lane;
+- LastStopShop as a newly activated commerce business;
+- unrelated new ventures created during the sprint.
+
+Historical repositories and references may remain preserved. Preservation is not execution priority.
+
+## Auralis Service Identity
+
+Approved public positioning:
 
 > **Auralis Digital is an independent digital studio helping small businesses build practical, mobile-first websites and customer-contact flows focused on calls, bookings, quote requests, and trust.**
 
-Auralis should not pretend to be a large agency. Founder/operator accountability is part of the trust model.
+Auralis should not pretend to be a large agency. Founder / operator accountability is part of the trust model.
 
-### Narrow approved service lane
+### Approved Primary Offer
 
-The approved primary offer is a standardized **Business Digital Front Door** style service.
+The approved primary lane is a standardized **Business Digital Front Door** style service.
 
 Typical scope may include:
 
@@ -68,9 +83,9 @@ Current working price hypotheses:
 - **Website Care:** starting around **$129/month**;
 - **Managed Digital Presence:** starting around **$349/month**.
 
-These are market-test starting points, not permanent doctrine. Change them only from real sales evidence, delivery economics, or explicit strategic review.
+These are market-test starting points, not permanent doctrine. Change them only from real sales evidence, delivery economics, or an explicit strategic review.
 
-### Explicit service boundaries
+### Service Boundaries
 
 Do not drift into unlimited bundles of:
 
@@ -81,13 +96,26 @@ Do not drift into unlimited bundles of:
 - full social-media management;
 - broad email marketing;
 - complex CRM implementation;
-- unsupported ranking or revenue guarantees.
+- unsupported ranking, lead, or revenue guarantees.
 
 Scope must be written before paid work begins.
 
-## Public website direction
+## Initial Acquisition Test
 
-`auralisdigital.net` should be commercially refactored, not rebuilt from scratch.
+The first sales test should be narrower than the full theoretical market.
+
+Current acquisition hypothesis:
+
+- **market:** Battle Creek / Southwest Michigan first, with remote delivery still available;
+- **first niche cluster:** contractors and home / local service businesses where one additional job can economically justify the project;
+- examples include landscaping, painting, cleaning, roofing, handyman / maintenance, mobile detailing, and similar service businesses;
+- prioritize real operating businesses with evidence of customer demand but weak / outdated online presentation.
+
+This niche is a test, not a permanent restriction on Auralis.
+
+## Public Website Direction
+
+`auralisdigital.net` should be commercially refactored, **not rebuilt from scratch**.
 
 Recommended primary navigation:
 
@@ -101,31 +129,29 @@ Contact
 
 Recommended homepage hierarchy:
 
-1. Clear small-business value proposition.
-2. Primary CTA: request a short website / digital-presence review.
-3. Secondary CTA: see work.
-4. Selected portfolio proof.
-5. One clear service offer and starting price.
-6. Process / ownership / trust points.
-7. Founder accountability.
-8. Lucid Creations as an owned secondary commerce brand.
-9. Contact / review request.
+1. clear small-business value proposition;
+2. primary CTA: request a short 3-point website / digital-presence review;
+3. secondary CTA: see selected work;
+4. selected portfolio proof;
+5. one clear service offer and starting price;
+6. process / ownership / trust points;
+7. founder accountability;
+8. Lucid Creations as an owned secondary commerce brand;
+9. contact / review request.
 
-Remove or demote public clutter that makes a business prospect decode unrelated ventures before understanding the offer.
+Required cleanup:
 
-### Public cleanup required
+- replace Shopify-setup-first positioning with the approved service;
+- curate the existing website-demo / Work surface around a few strong examples;
+- honestly distinguish concepts / demos / previews from delivered client work;
+- remove excluded venture references from the primary public experience;
+- update stale geography;
+- update title, metadata, OpenGraph, Twitter metadata, structured data, sitemap, policies, and contact copy together;
+- use a professional domain email when operationally available;
+- add a professional business phone / voicemail path if used for local B2B acquisition;
+- never fabricate testimonials, logos, conversion numbers, urgency, team size, or results.
 
-- Replace Shopify-setup-first positioning with the approved small-business digital-presence offer.
-- Curate `/websites` or successor `Work` surface around a few strong examples / case-study-style explanations.
-- Remove retired / excluded venture references from primary public surfaces.
-- Update title, meta description, OpenGraph, Twitter metadata, structured data, sitemap, policies, and contact copy to match the current operating truth.
-- Update geographic copy to the actual current service market; remote work may remain available.
-- Use a professional domain email when operationally available.
-- Add a professional business phone / voicemail path if used for local B2B acquisition.
-- Never present a concept/demo as delivered client work.
-- Never fabricate testimonials, client logos, conversion numbers, urgency, or results.
-
-## Sales doctrine
+## Sales Doctrine
 
 The primary business bottleneck is customer acquisition, not additional product or repository creation.
 
@@ -153,26 +179,24 @@ real testimonial or review when earned
 referral
 ```
 
-Initial acquisition focus should favor small service businesses where one incremental customer/job can economically justify the project.
+Initial market test:
 
-### Initial market test
-
-- Build the first **100 qualified prospects**.
-- Target roughly **15–20 qualified outreach attempts per weekday** during the active sprint.
-- Use targeted phone, email, contact-form, referral, and selective in-person outreach as appropriate.
-- Do not rely on one contact attempt; use disciplined follow-up.
-- Diagnose the funnel after roughly **75–100 qualified contacts**.
+- build the first **100 qualified prospects**;
+- target roughly **15–20 qualified outreach attempts per weekday** during the active sprint;
+- use targeted phone, email, contact forms, referrals, and selective in-person outreach;
+- use disciplined follow-up;
+- diagnose the funnel after approximately **75–100 qualified contacts**.
 
 Diagnostic rules:
 
 - very low response -> targeting / first-message problem;
 - responses but few conversations -> value-proposition problem;
 - conversations but no sales -> proof / trust / pricing / proposal problem;
-- sales -> improve and repeat the exact working path.
+- sales -> improve and repeat the working path.
 
-Do not abandon the offer after a trivial sample. Do not continue a broken offer indefinitely without diagnosis.
+Do not abandon the offer after a trivial sample. Do not repeat a broken offer indefinitely without diagnosis.
 
-## Legitimacy / transaction readiness
+## Legitimacy + Transaction Readiness
 
 Before serious paid outreach, Auralis should have a minimum professional transaction stack:
 
@@ -187,7 +211,9 @@ Before serious paid outreach, Auralis should have a minimum professional transac
 - deposit / payment policy;
 - onboarding questionnaire;
 - revision and launch rules;
-- clear founder/operator identity.
+- clear founder / operator identity.
+
+Business / administrative items that are not independently confirmed must remain marked **unverified**, including entity filing, EIN, dedicated business banking, bookkeeping setup, public address / service-area policy, Google Business Profile status, domain email, and insurance decisions where relevant.
 
 Auralis should look small and professional, not artificially large.
 
@@ -212,9 +238,10 @@ Lucid Visuals is an approved active digital-product experiment.
 
 Immediate rule:
 
+- synchronize the listing to the **actual final customer asset** before publication;
 - finish digital-delivery setup and end-to-end checkout / delivery QA for Vol. 1;
-- publish only when delivery is verified;
-- seek stranger purchases before producing a large catalog of additional packs;
+- publish only when listing, customer file, license, and delivery behavior agree;
+- seek external purchases before producing a large catalog of additional packs;
 - expand adjacent packs / bundles only from repeat demand or strong audience evidence.
 
 Validation ladder:
@@ -228,18 +255,25 @@ Validation ladder:
 → $1,000/month
 ```
 
-## Shopify + Printify workbook / course
+Product-specific plans written before this lock are subordinate to current live Shopify state, the verified final customer files, and this lock.
 
-The existing workbook / course material is a real monetizable asset and should be finished rather than rewritten from zero.
+## Shopify + Printify Workbook / Course
+
+The existing workbook / course material is a real monetizable asset and should be **finalized rather than rewritten from zero**.
+
+Current source already contains the six-phase **Quick-Start Launch Path**, Chapters 1–12, all 12 worksheets, and the optional appendix. Therefore **do not create a second Quick-Start**.
 
 Approved launch strategy:
 
-1. verify current Shopify / Printify instructions and remove stale draft markers;
-2. use only purposeful screenshots rather than an unnecessarily large screenshot burden;
-3. create a short Quick-Start navigation layer over the existing detailed chapters;
-4. include honest real-store / Lucid lessons where useful;
-5. visually QA the finished customer artifact;
-6. test-sell the workbook before investing in a large recorded video course.
+1. review and compress the existing Quick-Start where useful;
+2. verify current Shopify / Printify instructions and time-sensitive official links / behavior;
+3. remove stale draft / reviewer material only after its unresolved items are safely dispositioned;
+4. reduce the screenshot burden to purposeful screenshots and capture/redact them close to publication;
+5. remove or replace legacy commercialization language that markets generic `Shopify / E-commerce Setup` as an Auralis service;
+6. remove or generalize RJ Print-specific educational examples where they imply RJ Print is an active current Auralis branch;
+7. synchronize publication metadata and any hard-coded workbook price with the actual launch decision;
+8. visually QA the final Word/PDF customer artifact and test all customer-facing links;
+9. test-sell the workbook before investing in a large recorded video course.
 
 Working market-test pricing:
 
@@ -249,7 +283,7 @@ Working market-test pricing:
 
 Do not use unsupported income claims or guru-style promises.
 
-## Custom creative work
+## Custom Creative Work
 
 Aligned custom creative work remains available as supplemental revenue when profitable and properly scoped.
 
@@ -259,49 +293,34 @@ It is not the primary acquisition engine.
 
 Nova remains a protected long-horizon technical asset.
 
-Do not force Nova into near-term monetization simply to satisfy the current revenue target.
+Do not force Nova into near-term monetization solely to satisfy the current revenue target.
 
 Avoid premature obligations around:
 
 - public subscription pricing;
 - broad customer support;
 - installer / onboarding burden;
-- security / privacy commitments beyond current product readiness;
 - hosted service promises;
+- security / privacy commitments beyond actual readiness;
 - commercialization that disrupts the technical roadmap.
 
-## Live Music Platform + media
+## Live Music Platform + Media
 
-Preserve the work, but freeze major expansion during the revenue sprint unless new external evidence justifies activation.
+Preserve the work, but freeze major expansion during the revenue sprint unless new external evidence explicitly justifies activation.
 
-The long-term media thesis may connect independent music, Lucid visualizers, animated explainers, YouTube, AI/technology content, and news/explainer formats. It does not receive priority over customer acquisition now.
+The long-term media thesis may connect independent music, Lucid visualizers, animated explainers, YouTube, AI / technology content, and news / explainer formats. It does not receive priority over customer acquisition now.
 
-## Explicitly excluded from the active portfolio
-
-Do not treat the following as active priorities in the current Auralis revenue plan:
-
-- RJ Print;
-- Pour Social;
-- ShortCut Lawn Care;
-- Buyer Advocate;
-- ATH Service;
-- wholesale / affiliate sourcing as an active lane;
-- LastStopShop as a new active commerce business;
-- new unrelated ventures created during the sprint.
-
-Historical repositories may remain preserved. Preservation does not equal execution priority.
-
-## Time-allocation rule
+## Time Allocation
 
 Until the first $1,000 of validated external business revenue:
 
 - approximately **70%** of focused business time -> acquisition / sales / follow-up;
 - approximately **20%** -> directly monetizable finishing / fulfillment work;
-- approximately **10%** -> maintenance of long-horizon or owned assets.
+- approximately **10%** -> maintenance of owned or long-horizon assets.
 
-Adjust only from real commercial evidence.
+Website refactor, workbook finalization, and Lucid Visuals QA belong in the 20% lane only insofar as they directly enable sale. They must not indefinitely consume the acquisition lane.
 
-## Weekly scorecard
+## Weekly Scorecard
 
 Track at minimum:
 
@@ -321,13 +340,14 @@ Track at minimum:
 
 Progress is measured primarily through external demand, not files, features, SKUs, repositories, or documentation volume.
 
-## Do not do right now
+## Do Not Do Right Now
 
 - Do not start a new company.
 - Do not create a major new repo unless directly required for paid delivery.
 - Do not rebuild Auralis from zero.
 - Do not create a large new POD batch.
-- Do not spend weeks filming the course before validating the workbook.
+- Do not recreate the already-drafted Quick-Start.
+- Do not spend weeks filming the course before workbook validation.
 - Do not prematurely commercialize Nova.
 - Do not make a major music / media build the current priority.
 - Do not make a large wholesale inventory bet.
@@ -335,7 +355,7 @@ Progress is measured primarily through external demand, not files, features, SKU
 - Do not fabricate proof.
 - Do not continuously rewrite strategy without new evidence.
 
-## Decision rule
+## Decision Rule
 
 Nothing is promoted from **asset** to **active business priority** merely because it is built.
 
@@ -348,24 +368,41 @@ Promotion requires external evidence such as:
 - referral behavior;
 - measured conversion.
 
-## Immediate execution order
+## Source-of-Truth Hierarchy
+
+When information conflicts, use this order:
+
+1. this dated lock for strategic / commercial authority;
+2. `docs/AURALIS_CURRENT_STATUS.md` for current operational truth;
+3. `active/NEXT_STEPS_TODO.md` for executable work;
+4. current live platform state for changing Shopify / deployed-site / payment / form facts;
+5. product-specific docs for implementation detail when consistent with 1–4;
+6. older locks, audits, and plans as historical evidence only where superseded.
+
+A live platform fact can supersede an old factual snapshot. It does not silently change strategic authority; strategic changes require an explicit dated decision.
+
+## Immediate Execution Order
 
 ```text
-1. truth-sync canonical Auralis docs to this lock
-2. perform bounded commercial website refactor
-3. finish transaction-readiness stack
-4. finalize one core service offer
-5. build first 100 qualified prospects
-6. start outreach + follow-up
-7. close and deliver customer #1
-8. repeat through customer #3
-9. finish/test-sell Shopify + Printify workbook without slowing sales
-10. launch Lucid Visuals after delivery QA
-11. review evidence weekly
-12. change strategy only when evidence warrants it
+1. bounded commercial website refactor
+2. transaction + administrative readiness
+3. finalize one core service offer
+4. build first 100 qualified prospects
+5. start outreach + follow-up
+6. close and deliver customer #1
+7. repeat through customer #3
+8. optimize from evidence
 ```
 
-## Lock rule
+Parallel but subordinate:
+
+```text
+finalize / test-sell existing Shopify workbook
++ synchronize / QA / launch Lucid Visuals
++ maintain Lucid Creations
+```
+
+## Lock Rule
 
 This document is the strategic and commercial source of truth for Auralis Digital as of **2026-08-26**.
 
