@@ -4,7 +4,7 @@ Auralis Digital is currently operating in a **revenue-first validation phase** w
 
 Strategic direction is locked by [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](AURALIS_DIRECTION_LOCK_2026-08-26.md). Canonical operational truth lives in [`docs/AURALIS_CURRENT_STATUS.md`](docs/AURALIS_CURRENT_STATUS.md), and active execution lives in [`active/NEXT_STEPS_TODO.md`](active/NEXT_STEPS_TODO.md).
 
-The 2026-08-26 lock supersedes the 2026-08-20 direction where they conflict.
+The 2026-08-26 lock supersedes the 2026-08-20 direction wherever they conflict.
 
 ## Current Operating Structure
 
@@ -52,7 +52,13 @@ Working offer direction:
 - **Website Care:** starting around **$129/month**;
 - **Managed Digital Presence:** starting around **$349/month**.
 
-Pricing and scope are market-test starting points and should change only from real sales / delivery evidence or an explicit strategic review.
+Pricing and scope are market-test starting points and should change only from real sales / delivery evidence or explicit strategic review.
+
+Initial acquisition test:
+
+- **Battle Creek / Southwest Michigan first**, with remote delivery available;
+- first niche cluster: contractors and home / local service businesses where one additional job can justify the website cost;
+- this niche is an acquisition test, not a permanent restriction on Auralis.
 
 ## Live Website
 
@@ -71,7 +77,15 @@ About
 Contact
 ```
 
-Do not rebuild the website from zero. Reuse the existing React/Vite implementation and refactor positioning, hierarchy, service content, portfolio presentation, metadata, sitemap, policies, and contact paths.
+Do not rebuild the website from zero. Reuse the existing React/Vite implementation and refactor positioning, hierarchy, service content, portfolio presentation, metadata, sitemap, policies, geography, and contact paths.
+
+## Business / Transaction Readiness
+
+Do not assume business-administration items are complete merely because the public brand exists.
+
+Current operational docs require verification of items such as entity / LLC status, EIN, dedicated business banking, bookkeeping workflow, domain email, public address / service-area policy, Google Business Profile, and insurance decisions where relevant.
+
+The customer-facing sales stack should include a real service page, honest work examples, domain email when available, business phone / voicemail if used, proposal, service agreement, invoice / payment workflow, onboarding, revision boundaries, and launch / handoff rules.
 
 ## Lucid Creations
 
@@ -85,31 +99,44 @@ Current operating rule:
 - let actual sales and conversion evidence determine what receives more work;
 - keep Printify as fulfillment infrastructure rather than the idea engine.
 
+Use live Shopify state for current catalog / product claims rather than relying on old snapshots.
+
 ## Lucid Visuals
 
 Lucid Visuals is an active digital-product experiment.
 
 Immediate objective:
 
+- verify the exact final customer asset;
+- synchronize the Shopify listing to that asset;
 - finish digital-delivery setup and checkout / delivery QA;
-- launch Vol. 1 only after delivery is verified;
+- launch Vol. 1 only when listing, file, license, and delivery behavior agree;
 - seek external purchases before building a large catalog of additional packs.
+
+Older Lucid Visuals implementation notes are subordinate to the 2026-08-26 lock and verified current product files / live Shopify state.
 
 ## Shopify + Printify Workbook / Course
 
 The existing course/workbook is a real monetizable asset.
 
+Current source already contains the **six-phase Quick-Start Launch Path**, Chapters 1–12, all 12 worksheets, and the optional appendix. Do not create a second Quick-Start.
+
 Current decision:
 
-- finish rather than rewrite;
-- verify current Shopify / Printify instructions;
-- remove stale draft markers;
-- use only purposeful screenshots;
-- add a short Quick-Start layer over the existing detailed material;
-- visually QA the customer artifact;
+- finalize rather than rewrite;
+- review / compress the existing Quick-Start where useful;
+- verify current Shopify / Printify instructions and time-sensitive links / behavior;
+- reduce screenshot burden to purposeful screenshots;
+- remove stale reviewer / draft material after resolution;
+- remove or replace legacy generic Shopify-service upsell language;
+- generalize / relabel RJ Print-specific educational examples because RJ Print is not an active current Auralis priority;
+- synchronize publication metadata and price;
+- visually QA the final customer artifact;
 - test-sell the workbook before building a large recorded course.
 
-Working test price: around **$19** initially, with a possible **$29–$39** mature workbook price after feedback / polish.
+Working test price: around **$19** initially, with a possible **$29–$39** mature workbook price after evidence / polish.
+
+The current draft still contains an older hard-coded `$10` cover price; that is implementation debt, not the current launch-pricing decision.
 
 Do not use unsupported income claims.
 
@@ -136,14 +163,16 @@ Do not treat these as active priorities in the current revenue plan:
 - LastStopShop as a newly activated commerce business;
 - unrelated new ventures.
 
-Historical repositories may remain preserved.
+Historical repositories / educational references may remain preserved. Preservation is not execution priority.
 
 ## Current Execution Priority
 
 ```text
 commercial website refactor
     ↓
-transaction-ready sales stack
+transaction + administrative readiness
+    ↓
+finalize one core service offer
     ↓
 first 100 qualified prospects
     ↓
@@ -161,8 +190,8 @@ optimize from evidence
 Parallel but subordinate:
 
 ```text
-finish/test-sell Shopify workbook
-+ finish/launch Lucid Visuals
+finalize/test-sell existing Shopify workbook
++ verify/synchronize/launch Lucid Visuals
 + maintain Lucid Creations
 ```
 
@@ -172,6 +201,7 @@ finish/test-sell Shopify workbook
 - Do not create major new repos without direct paid-delivery need.
 - Do not rebuild Auralis from scratch.
 - Do not create a large new POD batch.
+- Do not recreate the already-drafted Quick-Start.
 - Do not spend weeks filming a course before workbook validation.
 - Do not prematurely commercialize Nova.
 - Do not use paid ads as a substitute for an unvalidated offer.
@@ -180,12 +210,13 @@ finish/test-sell Shopify workbook
 
 Progress is measured primarily through **external demand, customers, cash collected, repeat purchases, referrals, and conversion evidence** — not documentation volume, repo count, feature count, or SKU count.
 
-## Authoritative Documents
+## Source-of-Truth Order
 
-Start here:
-
-- [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](AURALIS_DIRECTION_LOCK_2026-08-26.md)
-- [`docs/AURALIS_CURRENT_STATUS.md`](docs/AURALIS_CURRENT_STATUS.md)
-- [`active/NEXT_STEPS_TODO.md`](active/NEXT_STEPS_TODO.md)
+1. [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](AURALIS_DIRECTION_LOCK_2026-08-26.md) — strategy / commercial authority.
+2. [`docs/AURALIS_CURRENT_STATUS.md`](docs/AURALIS_CURRENT_STATUS.md) — canonical operational truth.
+3. [`active/NEXT_STEPS_TODO.md`](active/NEXT_STEPS_TODO.md) — executable checklist.
+4. Current live platforms — changing Shopify / deployed-site / payment / form facts.
+5. Product-specific docs — implementation detail when consistent with 1–4.
+6. Older dated locks / audits / plans — historical evidence only where superseded.
 
 The older [`AURALIS_DIRECTION_LOCK_2026-08-20.md`](AURALIS_DIRECTION_LOCK_2026-08-20.md) remains historical context only where it conflicts with the newer lock.
