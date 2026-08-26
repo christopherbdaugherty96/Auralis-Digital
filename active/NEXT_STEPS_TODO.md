@@ -2,17 +2,20 @@
 
 Last updated: 2026-08-26
 
-## Current Mode
+Strategy: [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](../AURALIS_DIRECTION_LOCK_2026-08-26.md)  
+Operational truth: [`docs/AURALIS_CURRENT_STATUS.md`](../docs/AURALIS_CURRENT_STATUS.md)
 
-Strategy is locked by [`AURALIS_DIRECTION_LOCK_2026-08-26.md`](../AURALIS_DIRECTION_LOCK_2026-08-26.md).
-Canonical operational truth lives in [`docs/AURALIS_CURRENT_STATUS.md`](../docs/AURALIS_CURRENT_STATUS.md).
+## Current Mode
 
 Auralis is in a **revenue-first validation phase**.
 
-Near-term targets:
+Fixed validation window:
 
-- first validated 30-day sales sprint -> **$1,000+ external business revenue collected**;
-- by 2026-12-31 -> build toward **~$4,000/month repeatable business revenue**.
+- **2026-08-26 through 2026-09-25**;
+- target: **$1,000+ validated external business revenue** collected;
+- December target: at least **$4,000 validated external business revenue in a rolling 30-day period by 2026-12-31**, from channels that can reasonably be repeated.
+
+Use the lock's measurement contract. In short: count arm's-length customer sales / fees net of discounts, refunds, reversals, and chargebacks; exclude tax, identifiable pass-through shipping, owner transfers, test / household-family checkout tests, wages, loans, grants, and other non-customer cash.
 
 The main constraint is customer acquisition, not more product / repo creation.
 
@@ -20,60 +23,66 @@ The main constraint is customer acquisition, not more product / repo creation.
 
 1. **Auralis small-business digital-presence service** — primary cash engine.
 2. **Shopify + Printify workbook** — finalize and test-sell existing material.
-3. **Lucid Visuals** — synchronize product truth, finish delivery QA, and launch Vol. 1.
-4. **Lucid Creations** — keep active; focus distribution, not catalog expansion.
+3. **Lucid Visuals** — synchronize product truth, finish delivery QA, launch Vol. 1.
+4. **Lucid Creations** — maintain; focus distribution, not catalog expansion.
 5. **Custom creative work** — supplemental, properly scoped opportunities only.
 6. **NovaLIS / OpenClaw** — protected long-horizon technical asset.
-7. **Live Music / media** — preserve but freeze major expansion during sprint.
+7. **Live Music / media** — preserve; freeze major expansion during sprint.
 
-## Phase 1 — Commercial Website Refactor
+## Phase 1 — Bounded Commercial Website + Credibility Refactor
+
+Target: make Auralis credible enough to sell without starting another long build cycle.
 
 - [ ] Replace Shopify-setup-first public positioning with the small-business digital-presence offer.
 - [ ] Rewrite homepage hero around calls, bookings, quote requests, trust, and mobile-first usability.
 - [ ] Change primary navigation to: Business Services / Work / Lucid Creations / About / Contact.
 - [ ] Curate Work around a small number of strong, honestly labeled examples.
 - [ ] Feature Patterson appropriately as business-specific preview / proof without overstating delivery state.
-- [ ] Remove retired / excluded venture references from primary public surfaces.
-- [ ] Remove old creator-shop / branch clutter from the prospect path.
-- [ ] Remove current public RJ Print / Pour Social / LastStopShop activation framing.
-- [ ] Update geography to Battle Creek / Southwest Michigan first, while keeping remote delivery available.
-- [ ] Update title, meta description, OpenGraph, Twitter metadata, structured data, sitemap, and policy copy.
+- [ ] Remove RJ Print / Pour Social / LastStopShop activation framing and other excluded-venture clutter from primary public surfaces.
+- [ ] Update geography to Battle Creek / Southwest Michigan first while retaining remote delivery.
+- [ ] Update title, meta description, OpenGraph, Twitter metadata, structured data, sitemap, policy copy, and contact copy together.
 - [ ] Keep Lucid Creations as a secondary owned commerce brand, not the primary B2B homepage story.
 - [ ] Confirm desktop + mobile prospect paths are clear.
 - [ ] Do not rebuild the site from zero.
 
-## Phase 2 — Transaction + Administrative Readiness
+## Phase 2 — Minimum Transaction Readiness
 
-### Customer-facing transaction stack
+### Customer-facing stack
 
 - [ ] Activate / verify professional domain email.
-- [ ] Replace the production-facing Gmail fallback once domain email is proven.
-- [ ] Add / verify business phone and professional voicemail if used for outreach.
+- [ ] Replace production-facing Gmail fallback once domain email is proven.
+- [ ] Add / verify business phone + professional voicemail if used for outreach.
 - [ ] Finalize 3-point website / digital-presence review template.
 - [ ] Finalize proposal template.
-- [ ] Finalize service agreement.
+- [ ] Finalize service agreement using the confirmed legal / contracting identity.
 - [ ] Finalize invoice / payment workflow.
 - [ ] Define deposit / payment policy.
 - [ ] Finalize onboarding questionnaire.
 - [ ] Define revision limits.
 - [ ] Define launch / handoff checklist.
-- [ ] Confirm Formspree / contact path works end to end on desktop and phone.
+- [ ] Confirm Formspree / contact path works end to end on desktop + phone.
 - [ ] Do not fabricate testimonials, team size, results, urgency, or case studies.
 
 ### Administrative verification
 
-Do not assume these are complete merely because Auralis has a website / brand.
+Do not claim these as complete until confirmed:
 
-- [ ] Confirm Michigan LLC / entity filing status.
-- [ ] Confirm EIN status.
-- [ ] Confirm dedicated business bank-account status.
-- [ ] Confirm bookkeeping / accounting workflow for client + product revenue.
-- [ ] Decide public business address / service-area policy.
-- [ ] Confirm Google Business Profile status and fit for the service model.
-- [ ] Decide whether business insurance is appropriate / required for current client work.
-- [ ] Confirm all public claims about formation / location before publishing them.
+- [ ] Michigan entity / LLC status.
+- [ ] EIN status.
+- [ ] Dedicated business bank-account status.
+- [ ] Bookkeeping / accounting workflow.
+- [ ] Public business address / service-area policy.
+- [ ] Google Business Profile status and fit.
+- [ ] Business-insurance decision where relevant.
+- [ ] Public formation / location claims.
 
-Resolve what is required before relying on these items for contracting, payment, legal, tax, or public trust claims. Do not turn administrative setup into an indefinite sales blocker.
+Complete anything required to quote, contract, accept payment, and deliver safely. Continue non-blocking administrative cleanup in parallel; do not let it indefinitely postpone sales.
+
+### Outreach-start gate
+
+- [ ] Begin active outbound **no later than 2026-09-02**, or sooner when the minimum credible stack is ready.
+- [ ] If delayed by a real legal / payment / delivery blocker, document the blocker explicitly.
+- [ ] Do not delay outreach for non-blocking polish.
 
 ## Phase 3 — Finalize One Core Offer
 
@@ -102,33 +111,36 @@ Optional layers:
 - [ ] Confirm exclusions.
 - [ ] Confirm price + payment structure.
 - [ ] Confirm delivery-time expectation.
-- [ ] Confirm what the client must provide.
+- [ ] Confirm client inputs required.
 - [ ] Confirm revision boundary.
 - [ ] Define recurring-plan value concretely.
-- [ ] Do not include unlimited revisions, paid ads, deep SEO guarantees, full social management, or custom-app work in the base package.
+- [ ] Keep unlimited revisions, paid ads, deep SEO guarantees, full social management, and custom-app work out of the base package.
 
-## Phase 4 — First 100 Qualified Prospects
+## Phase 4 — First 100 Unique Qualified Prospects
 
-Initial acquisition test:
+Initial test:
 
 - **market:** Battle Creek / Southwest Michigan first;
-- **first niche cluster:** contractors and home / local service businesses where one additional job can justify the website cost;
+- **cluster:** contractors and home / local service businesses where one additional job can justify the project;
 - examples: landscaping, painters, cleaners, roofers, handyman / maintenance, mobile detailing, and similar services.
 
-- [ ] Build first 100 qualified prospects.
-- [ ] Track business, website, contact route, issue found, date contacted, next follow-up, response, conversation, proposal, status, and value.
-- [ ] Prioritize real operating businesses with weak / outdated online presentation.
+A prospect counts toward the first 100 only if it appears to be a real operating business, fits the test or is a strong adjacent exception, shows evidence of ongoing demand / operation, has a specific digital-presence problem, has a legitimate contact path, and is not a duplicate.
+
+- [ ] Build first 100 **unique qualified prospects**.
+- [ ] Track business, website, contact route, issue found, date first contacted, next follow-up, response, conversation, proposal, status, and value.
+- [ ] Track **unique prospects** separately from total touches / follow-ups.
 - [ ] Prefer businesses with real demand / reviews over businesses with no evidence of an underlying customer base.
 - [ ] Do not build custom mockups before interest justifies the work.
 - [ ] Use a simple spreadsheet / CRM table first; do not build a custom CRM.
 
 ## Phase 5 — Outreach + Follow-Up
 
-Target during active sprint:
+Once outreach starts:
 
-- approximately **15–20 qualified outreach attempts per weekday**;
-- targeted phone, email, contact form, referral, and selective in-person outreach;
-- disciplined follow-up.
+- target approximately **15–20 qualified outreach touches per weekday**;
+- track new prospects contacted separately from follow-up touches;
+- use targeted phone, email, contact form, referral, and selective in-person outreach;
+- follow up systematically.
 
 ```text
 prospect
@@ -146,7 +158,7 @@ prospect
 - [ ] Start outreach.
 - [ ] Follow up rather than judging demand from one attempt.
 - [ ] Track conversion at each stage.
-- [ ] Diagnose after ~75–100 qualified contacts.
+- [ ] Diagnose after **~75–100 unique qualified prospects have been contacted at least once**.
 - [ ] Increase audit / mockup effort only as prospect interest increases.
 
 Diagnostic rules:
@@ -171,57 +183,51 @@ Diagnostic rules:
 
 The workbook is substantially built. **Do not restart it and do not recreate the Quick-Start.**
 
-Current `main` already contains:
+Already on `main`:
 
-- the six-phase Quick-Start Launch Path;
-- Chapters 1–12;
-- all 12 worksheets;
-- optional AI-assistant appendix;
-- Internal Reviewer Note;
-- explicit `NOT publication-ready` / finalization-in-progress status.
+- [x] Six-phase Quick-Start Launch Path.
+- [x] Chapters 1–12.
+- [x] All 12 worksheets.
+- [x] Optional AI-assistant appendix.
 
-### Finalization tasks
+Remaining:
 
-- [x] Draft six-phase Quick-Start architecture.
-- [x] Draft Chapters 1–12 + all worksheets.
 - [ ] Verify current Shopify / Printify instructions and time-sensitive official links / behavior.
-- [ ] Remove stale verification / draft / reviewer markers from the customer artifact only after they are resolved.
+- [ ] Resolve stale verification / draft / reviewer markers before removing them from the customer artifact.
 - [ ] Reduce screenshot burden to purposeful screenshots.
 - [ ] Capture / redact retained screenshots close to publication.
 - [ ] Review / compress the existing Quick-Start; do not write a second one.
 - [ ] Update honest Lucid examples where current evidence warrants it.
-- [ ] Remove / replace legacy Auralis `Shopify / E-commerce Setup` upsell so it does not conflict with the narrow 2026-08-26 service strategy.
-- [ ] Replace RJ Print brand-specific educational examples with generic separate-fulfillment / 3D-print examples, or label them explicitly historical; RJ Print is not an active Auralis priority.
-- [ ] Resolve hard-coded manuscript price: current draft says **$10** while current market-test hypothesis is **~$19 founding / beta**. Prefer storefront-controlled pricing or synchronize the manuscript at publication.
+- [ ] Remove / replace legacy generic `Shopify / E-commerce Setup` upsell language.
+- [ ] Replace RJ Print brand-specific examples with generic separate-fulfillment / 3D-print examples, or label them explicitly historical.
+- [ ] Resolve hard-coded **$10** manuscript price; current test hypothesis is **~$19 founding / beta**. Prefer storefront-controlled pricing or synchronize at publication.
 - [ ] Fill publication date / copyright year.
 - [ ] Regenerate final customer artifact.
 - [ ] Complete Word/PDF visual QA, link QA, metadata QA, and final approval.
-- [ ] Test-sell at approximately **$19 founding / beta price**.
-- [ ] Target first **10 external buyers** before committing to a large recorded video course.
+- [ ] Test-sell at approximately **$19** founding / beta price.
+- [ ] Reach first **10 unrelated / non-test external buyers** before committing to a large recorded video course.
 - [ ] Mature price may move toward **$29–$39** after evidence / polish.
 - [ ] Do not use unsupported income claims.
 
 ## Lucid Visuals
 
-Current live Shopify product truth: Vol. 1 remains **DRAFT** at **$6.99**. The current Shopify description still reflects the original lower-resolution specification, while the later execution plan describes an upgraded **1920×1080 / 30fps** customer package.
+Current Shopify product truth: Vol. 1 remains **DRAFT** at **$6.99**. The Shopify description reflects the earlier lower-resolution specification while later planning describes an upgraded **1920×1080 / 30fps** package.
 
-Do not publish until that conflict is resolved against the actual customer ZIP.
+Do not publish until the actual customer ZIP resolves that conflict.
 
-- [ ] Verify the exact final customer ZIP and actual included media specs.
+- [ ] Verify exact final customer ZIP + included media specs.
 - [ ] Synchronize Shopify description / public copy to the actual customer file.
-- [ ] Keep the current handle and SKU unless an explicit reason requires changing them.
+- [ ] Keep current handle + SKU unless there is an explicit reason to change them.
 - [ ] Configure / verify automatic digital delivery.
-- [ ] Attach the exact verified customer ZIP.
+- [ ] Attach exact verified customer ZIP.
 - [ ] Confirm no inappropriate physical shipping behavior.
-- [ ] Confirm the license included in the download matches listing claims.
+- [ ] Confirm included license matches listing claims.
 - [ ] Run controlled end-to-end checkout + delivery test.
-- [ ] Verify the downloaded file opens and matches the listing.
+- [ ] Verify downloaded file opens and matches listing.
 - [ ] Publish only after listing + file + license + delivery agree.
-- [ ] Seek first 3 external purchases.
-- [ ] Seek first 10 external purchases.
+- [ ] Reach first **3 unrelated / non-test external purchases**.
+- [ ] Reach first **10 unrelated / non-test external purchases**.
 - [ ] Do not build a large pack catalog before demand evidence.
-
-The older Lucid Visuals revenue-engine document contains a pre-2026-08-26 statement prohibiting local-business services and an earlier 720p/12fps product specification. Where those conflict with the current Auralis lock or verified final product files, treat them as superseded historical implementation notes.
 
 ## Lucid Creations
 
@@ -232,7 +238,7 @@ The older Lucid Visuals revenue-engine document contains a pre-2026-08-26 statem
 - [ ] Track sessions, product views, add-to-cart, checkout, orders, net sales, refunds, and source.
 - [ ] Let demand decide which products receive more work.
 - [ ] Keep Printify as fulfillment infrastructure, not the idea engine.
-- [ ] Use live Shopify state rather than old catalog-count snapshots when making current claims.
+- [ ] Use live Shopify state rather than old catalog-count snapshots for current claims.
 
 ## Custom Creative Work
 
@@ -243,19 +249,13 @@ The older Lucid Visuals revenue-engine document contains a pre-2026-08-26 statem
 
 ## Protected / Frozen
 
-### NovaLIS / OpenClaw
+**NovaLIS / OpenClaw:** preserve technical roadmap; no forced near-term commercialization.
 
-- Preserve technical roadmap.
-- Do not force near-term commercial pricing / support / hosting obligations.
-
-### Live Music Platform / YouTube / news / media
-
-- Preserve existing work.
-- Freeze major expansion during the revenue sprint unless external evidence explicitly justifies activation.
+**Live Music Platform / YouTube / news / media:** preserve existing work; freeze major expansion during the revenue sprint unless external evidence explicitly justifies activation.
 
 ## Explicitly Outside Current Active Portfolio
 
-Do not reactivate as part of this revenue sprint:
+Do not reactivate during this sprint:
 
 - RJ Print;
 - Pour Social;
@@ -270,28 +270,32 @@ Repositories / historical references may remain preserved. Preservation is not e
 
 ## Time Allocation Until First $1,000
 
+Once outreach is active, measure allocation primarily by week:
+
 - **~70%** acquisition / sales / follow-up;
 - **~20%** directly monetizable finishing / fulfillment;
 - **~10%** owned-asset / long-horizon maintenance.
 
-The website refactor, workbook finalization, and Lucid Visuals QA belong in the 20% lane only insofar as they directly enable sale. They must not indefinitely consume the 70% acquisition lane.
+The initial setup gate may temporarily consume more than 20%, but it should end when the minimum credible sales stack is ready and should not extend past the **2026-09-02 outreach-start target** without an explicit blocker.
 
 ## Weekly Scorecard
 
-Every week record:
+Track:
 
-- qualified prospects contacted;
+- unique qualified prospects added;
+- unique qualified prospects contacted;
+- total outreach touches / follow-ups;
 - responses;
 - conversations / meetings;
 - reviews / audits delivered;
 - proposals sent;
 - deals closed;
-- cash collected;
+- validated external revenue collected;
 - recurring revenue;
 - fulfillment hours;
-- workbook units sold;
-- Lucid Visuals units sold;
-- Lucid physical / custom units sold;
+- workbook external buyers / units sold;
+- Lucid Visuals external buyers / units sold;
+- Lucid physical / custom external buyers / units sold;
 - Shopify traffic / conversion behavior;
 - acquisition source.
 
@@ -304,7 +308,7 @@ Every week record:
 - Do not recreate the already-drafted Quick-Start.
 - Do not spend weeks filming the course before workbook validation.
 - Do not prematurely commercialize Nova.
-- Do not make the music/media build the current priority.
+- Do not make music/media the current priority.
 - Do not make a large wholesale inventory bet.
 - Do not use paid ads as a substitute for an unvalidated offer.
 - Do not fake testimonials, reviews, team size, urgency, conversion numbers, or client history.
@@ -316,27 +320,23 @@ Every week record:
 2. `docs/AURALIS_CURRENT_STATUS.md` — canonical operational truth.
 3. This file — current executable checklist.
 4. Live platforms — current Shopify / deployed-site / payment / form facts.
-5. Product-specific docs — implementation detail when consistent with items 1–4.
+5. Product-specific docs — implementation detail when consistent with 1–4.
 6. Older locks / audits / plans — historical evidence only where superseded.
 
-## Next Concrete Action
+## Immediate Sequence
 
 ```text
-commercial website refactor
+bounded commercial website + credibility refactor
     ↓
-transaction + administrative readiness
+minimum transaction readiness
     ↓
 finalize one core service offer
     ↓
-first 100 qualified prospects
+build first 100 unique qualified prospects
     ↓
-outreach + follow-up
+start outreach by 2026-09-02 unless explicitly blocked
     ↓
-customer #1
-    ↓
-customer #2
-    ↓
-customer #3
+customer #1 → #2 → #3
     ↓
 optimize from evidence
 ```
@@ -347,4 +347,5 @@ Parallel but subordinate:
 finalize / test-sell existing Shopify workbook
 + verify / synchronize / launch Lucid Visuals
 + maintain Lucid Creations
++ continue non-blocking administrative verification
 ```
