@@ -1,318 +1,264 @@
 # Lucid Visuals Revenue Engine
 
 Date: 2026-08-26
-Status: ACTIVE EXPERIMENT
+Status: **ACTIVE EXPERIMENT — SUBORDINATE TO AURALIS REVENUE SPRINT**
 Owner ecosystem: Auralis Digital / Lucid Creations
+
+## Authority
+
+This product plan is governed by [`../AURALIS_DIRECTION_LOCK_2026-08-26.md`](../AURALIS_DIRECTION_LOCK_2026-08-26.md) and [`AURALIS_CURRENT_STATUS.md`](AURALIS_CURRENT_STATUS.md).
+
+Earlier wording in this document that prohibited local-business services was based on the superseded 2026-08-20 Auralis direction and is no longer current authority.
+
+Lucid Visuals remains active, but it is **secondary to the Auralis small-business cash engine** during the first $1,000 revenue sprint.
 
 ## Decision
 
-Build a low-capital digital-asset revenue engine under **Lucid Creations**, beginning with downloadable VJ / music-visualizer loop packs.
+Maintain a low-capital digital-asset experiment under **Lucid Creations**, beginning with downloadable VJ / music-visualizer loop packs.
 
-This is not a pivot away from the 2026-08-20 Auralis direction lock. It directly supports the locked creative ecosystem:
+Current role:
 
-- Lucid Creations = visual-art / creative-studio identity.
-- Live Music Platform = distribution, artist discovery, and proof surface.
-- Shopify = checkout / commerce infrastructure.
-- Printify / POD = downstream merchandising only after visual demand is proven.
+- validate whether strangers will pay for reusable Lucid visual assets;
+- use existing creative work rather than creating inventory-heavy physical products;
+- keep marginal fulfillment cost low;
+- generate distribution content from the same assets;
+- expand only when external demand justifies it.
 
-Do not reintroduce Shopify setup, generic website creation, or local-business web services.
+Lucid Visuals is **not** responsible for carrying the near-term $1,000 Auralis revenue target by itself.
 
-## Why this lane
-
-The existing physical catalog proves the store and fulfillment stack exist, but current commerce does not yet show sustained demand. The next constraint is distribution and product-market evidence, not more undifferentiated physical SKUs.
-
-Digital visual assets are the best current fit because they:
-
-- use existing Lucid Creations visual direction;
-- have no unit inventory or shipping cost;
-- can be created repeatedly with AI + procedural tools + human QA;
-- can be demonstrated through short-form video and the future music platform;
-- can later generate derivative Printify/POD products only when a visual proves demand;
-- can be sold repeatedly after creation with near-zero marginal fulfillment work.
-
-## Product 001 — Created 2026-08-26
+## Product 001 — Current Truth
 
 **Lucid Visuals VJ Loop Starter Pack — Vol. 1**
 
-Launch price target: **$6.99**
+Current Shopify product:
 
-Contents:
+- status: **DRAFT**;
+- price: **$6.99**;
+- vendor: **Lucid Creations**;
+- product type: **Digital Visual Assets**;
+- handle: `lucid-visuals-vj-loop-starter-pack-vol-1`;
+- SKU: `LC-VJ-VOL1-001`.
 
-- 5 seamless motion loops
-- H.264 MP4
-- 1280x720
-- 12 fps
-- 4 seconds each
-- 5 PNG poster frames
-- standard commercial-use license for rendered productions
-- loop families: Hypnotic Tunnel, Sacred Geometry, Liquid Mandala, Cosmic Eye, Neon Kaleidoscope
+### Specification drift that must be resolved before publication
 
-Shopify state: DRAFT until automatic digital-delivery is configured and tested.
+The current Shopify listing still describes the original package as:
 
-## Product ladder
+- 5 H.264 MP4 loops;
+- 1280×720;
+- 12 fps;
+- 4 seconds each;
+- 5 matching PNG poster frames;
+- commercial-use license for rendered productions;
+- loop families: Hypnotic Tunnel, Sacred Geometry, Liquid Mandala, Cosmic Eye, Neon Kaleidoscope.
 
-### Entry
+A later execution plan documents an upgraded target customer package at **1920×1080 / 30fps**.
 
-- Free sampler: 1 loop or heavily limited sampler
-- Starter packs: 5-6 loops at $5-$9
+Do **not** treat the upgraded specification as verified merely because the plan exists.
 
-### Core
+Before publishing Product 001:
 
-- 8-12 loop themed packs: $12-$19
-- coherent genre packs: psychedelic, ambient, techno, sacred geometry, cosmic, festival
+1. inspect / verify the exact final customer ZIP;
+2. confirm the actual resolution, frame rate, duration, codecs, included poster frames, and license files;
+3. synchronize the Shopify product description to the actual files;
+4. keep the existing handle and SKU unless there is an explicit reason to change them;
+5. attach the exact verified customer ZIP to the digital-delivery system;
+6. confirm the product does not require physical shipping;
+7. perform a controlled checkout / delivery test;
+8. download the delivered file and verify integrity;
+9. confirm the listing, download contents, and license agree;
+10. publish only after all of the above pass.
 
-### Bundle
+## Validation Ladder
 
-- 3-pack bundles: $24-$39
-- seasonal / performance bundles: $29-$49
+Do not expand the catalog based on enthusiasm alone.
 
-### Future recurring layer
+```text
+Product 001 delivery verified
+→ Product 001 published
+→ first 3 external purchases
+→ first 10 external purchases
+→ identify a repeatable acquisition source
+→ $250/month
+→ $500/month
+→ $1,000/month
+```
 
-Only after repeat demand exists:
+### Expansion rule
 
-- monthly Lucid Visuals drop
-- creator/VJ membership
-- artist visualizer templates
-- commissioned artist visual packs
+- **0 external purchases:** improve traffic quality, presentation, offer, or delivery confidence before building more packs.
+- **1–2 external purchases:** continue testing Product 001 and learn why those buyers purchased.
+- **3+ external purchases:** one adjacent pack may be justified if demand / engagement indicates a clear visual family.
+- **10+ external purchases:** bundles and a small focused product line become reasonable tests.
+- subscriptions / memberships require repeat-purchase evidence; do not launch recurring billing merely because it is theoretically attractive.
 
-Do not launch a subscription before repeat purchases prove that customers want recurring drops.
+The old target of creating one new pack every week is **not current doctrine before validation**.
 
-## Weekly production loop
+## Distribution Loop
 
-Target: **one new sellable pack per week** once the workflow is stable.
+Use the existing product to create multiple acquisition assets rather than continuously creating new products.
 
-1. Research current VJ / DJ / music-visual trends.
-2. Generate 8-12 candidate loops.
-3. Human QA for visual quality, seams, compression, rights, and duplication.
-4. Select 5-10 strong assets.
-5. Export customer files and poster frames.
-6. Build preview reel.
-7. Write listing copy and license.
-8. Create Shopify draft.
-9. Attach digital-delivery files.
-10. Publish only after checkout + delivery test passes.
-11. Cut 5-10 short promotional clips from the same pack.
-12. Track sessions, add-to-cart, checkout, conversion, refund, and sales data.
+Potential surfaces:
 
-## Daily distribution loop
+- TikTok;
+- Instagram Reels;
+- YouTube Shorts;
+- Pinterest;
+- relevant creator / VJ / DJ communities where self-promotion is permitted;
+- future Live Music Platform clips when that platform is active.
 
-The production asset should create multiple pieces of distribution content rather than requiring new creative work every day.
+Useful content types:
 
-Daily target once a pack is live:
+- loop preview;
+- multi-loop compilation;
+- free sample demonstration;
+- practical “how this looks in a visualizer / stream” demonstration;
+- behind-the-scenes creation / QA;
+- artist / DJ use example when real and permissioned.
 
-- 1 short visual clip posted or scheduled
-- 1 direct product CTA
-- 1 audience interaction / creator outreach action
-- 1 analytics check
+Do not spam communities or misrepresent promotional posts as organic recommendations.
 
-Primary content surfaces:
+## Free Sample
 
-- TikTok
-- Instagram Reels
-- YouTube Shorts
-- Pinterest
-- future Live Music Platform clips
+A free sample can be used as an acquisition test if it does not materially slow the primary Auralis sales sprint.
 
-Do not buy broad ads simply to compensate for weak organic response.
+Requirements:
 
-## Sales-goal ladder
+- clearly licensed;
+- easy to access;
+- no accidental exposure of paid-pack files;
+- tagged / linked so traffic can be measured;
+- does not require building a large new funnel before Product 001 delivery works.
 
-These are **targets, not forecasts or guarantees**.
-
-### Validation phase — first 30 days
-
-- Daily: average 0.5 paid orders/day by the end of the phase
-- Weekly: 3-5 paid orders/week
-- Monthly: 15-25 paid orders
-- Primary objective: prove that a stranger will repeatedly buy a digital visual asset
-
-### Repeatability phase — months 2-3
-
-- Daily: 2-4 paid orders/day
-- Weekly: 15-25 paid orders/week
-- Monthly: 60-100 paid orders
-- Expand catalog toward 8-12 focused packs
-- Begin bundles only after individual products show demand
-
-### Scale phase
-
-Use a blended gross AOV target around $12-$15 through packs + bundles.
-
-Approximate gross-order requirements at $12 blended AOV:
-
-- $500/month = ~42 orders
-- $1,000/month = ~84 orders
-- $2,000/month = ~167 orders
-- $3,000/month = ~250 orders
-
-Do not treat these as guaranteed timelines. The operator should optimize conversion and catalog quality before raising spend.
-
-## Budget / prepaid-card governor
-
-The AI/operator must never treat a funded prepaid card as permission for uncontrolled spending.
-
-### Stage A — before 3 external paid sales
-
-Maximum experiment budget: **$0-$50 total**.
-
-Allowed uses:
-
-- essential digital-delivery setup if a free route is unavailable
-- one marketplace listing test
-- very small creative/tool cost with direct product impact
-
-No paid ads yet unless explicitly approved as a bounded test.
-
-### Stage B — after 3 external paid sales
-
-Maximum paid-traffic test:
-
-- $5/day
-- 7 days
-- one product / one audience / one creative variable at a time
-
-Stop and review if there is no credible conversion signal.
-
-### Stage C — after 10+ external paid sales
-
-Advertising/reinvestment cap:
-
-- maximum 20% of trailing 7-day gross revenue unless explicitly approved otherwise
-- never allow automated spend to exceed the prepaid-card balance or the written daily cap
-
-The operator may recommend a larger budget but must not silently widen authority.
-
-## AI operator responsibilities
-
-An AI operator can perform or prepare:
-
-- trend and competitor research
-- product ideation
-- procedural/AI asset generation
-- packaging
-- cover art
-- listing drafts
-- titles, tags, descriptions, licenses
-- short-form promotional variants
-- sales analytics summaries
-- daily/weekly/monthly goal tracking
-- budget recommendations
-- A/B-test recommendations
-- catalog pruning recommendations
-
-Human approval remains required for:
-
-- increasing spending authority
-- publishing anything with unresolved rights/provenance
-- major pricing changes outside approved ranges
-- new subscriptions/tool commitments
-- irreversible platform/account actions
-
-## Analytics dashboard
+## Analytics
 
 Track at minimum:
 
-- sessions
-- source/referrer
-- product-page views
-- add-to-cart rate
-- reached-checkout rate
-- completed-checkout rate
-- conversion rate
-- orders
-- gross sales
-- net sales
-- refunds/reversals
-- AOV
-- revenue per visitor
-- revenue per pack
-- content views / clicks per promotional clip
+- sessions;
+- source / referrer;
+- product-page views;
+- add-to-cart;
+- reached checkout;
+- completed checkout;
+- conversion rate;
+- orders;
+- gross sales;
+- net sales;
+- refunds / reversals;
+- AOV;
+- revenue per visitor;
+- content views / clicks by promotional clip.
 
-### Weekly decision rules
+Decision rules:
 
-- High views + low clicks -> creative/CTA problem.
-- Clicks + low add-to-cart -> product/price/positioning problem.
-- Add-to-cart + low checkout -> checkout/trust/delivery problem.
-- Sales + low margin -> price/channel-fee problem.
-- Repeat sales -> build adjacent pack/bundle.
-- Zero evidence -> do not solve by adding more unrelated POD products.
+- high views + low clicks -> creative / CTA problem;
+- clicks + low add-to-cart -> product / price / positioning problem;
+- add-to-cart + low checkout -> checkout / trust / delivery problem;
+- sales + weak economics -> price / fee / channel problem;
+- repeat sales -> test an adjacent pack / bundle;
+- no evidence -> do not solve by adding many unrelated products.
 
-## Printify / POD role
+## Budget Governor
 
-Printify becomes a **derivative monetization layer**, not the first test.
+A funded card is not permission for uncontrolled spending.
 
-Promote a visual into POD only when one of these is true:
+### Before 3 external paid sales
+
+Default paid-acquisition budget: **$0**.
+
+Allow only explicitly approved essential costs directly required to make Product 001 sale-ready, such as a digital-delivery tool if no adequate free route exists.
+
+### After 3 external paid sales
+
+A bounded paid-traffic test may be considered only with explicit approval, for example:
+
+- one platform;
+- one product;
+- one audience / creative hypothesis;
+- small fixed cap;
+- clear stop condition.
+
+### After 10+ external paid sales
+
+Reinvestment can be reviewed from actual gross / net revenue and CAC evidence. Do not auto-expand spend authority.
+
+## Printify / POD Role
+
+Printify remains a **derivative fulfillment layer**, not the Lucid Visuals strategy engine.
+
+A visual may be considered for a physical derivative when:
 
 - the digital pack sells repeatedly;
-- a poster frame/clip generates materially higher engagement than the rest;
-- customers explicitly request physical versions;
-- an artist collaboration provides a specific merch opportunity.
+- one visual generates materially stronger engagement;
+- customers explicitly request a physical version;
+- an artist collaboration creates a specific merch opportunity.
 
-Then test the winning visual on a small number of physical formats. Do not create 20+ derivative SKUs before demand exists.
+Do not generate a large physical SKU tree from an unproven visual.
 
-## Live Music Platform synergy
+## Live Music Platform Synergy
 
-The Live Music Platform can become the best long-term distribution and proof surface for Lucid Visuals.
+The Live Music Platform remains a protected long-horizon Auralis asset during the current revenue sprint.
 
-Potential loop:
+Potential future loop:
 
-1. authorized independent track
-2. Lucid Visuals scene / loop treatment
-3. publish authorized audiovisual feature
-4. credit/link artist
-5. clip best visual moments into shorts
-6. link Lucid visual pack when appropriate
-7. measure which visual families hold attention
-8. turn proven visual families into future packs
+```text
+authorized independent track
+→ Lucid visual treatment
+→ permissioned audiovisual feature
+→ artist attribution / direct link
+→ short clips
+→ audience signal
+→ future visual-pack / commission insight
+```
 
-The music platform remains a distinct product. Do not compromise artist permission truth to sell visual assets.
+Do not activate major music-platform work simply to promote Product 001, and do not compromise artist permission truth for product marketing.
 
-## Channel priority
+## AI / Operator Boundary
 
-1. Shopify — owned checkout, existing store, primary brand home.
-2. Short-form social — distribution and testing.
-3. Gumroad — optional secondary digital marketplace after Shopify delivery is working.
-4. Etsy — optional discovery experiment when there are several polished packs and listing economics justify it.
-5. Printify/POD — only for demand-proven derivatives.
+AI may help prepare:
 
-## 30-day execution target
+- trend / competitor research;
+- visual concepts;
+- candidate asset generation;
+- packaging drafts;
+- cover / promo variants;
+- listing copy;
+- title / tag suggestions;
+- license drafts for review;
+- analytics summaries;
+- test recommendations.
 
-By day 30, aim to have:
+Human review / approval remains required for:
 
-- digital delivery configured and tested
-- Product 001 live
-- 3-4 total packs live
-- one free/sample acquisition asset
-- 20+ short promotional clips produced from existing assets
-- source-tagged traffic data
-- at least 15 paid-order target for validation
-- documented learnings on which visual family, price, and traffic source works best
+- unresolved rights / provenance;
+- spend authority;
+- publication of inaccurate product specifications;
+- material pricing changes outside approved experiments;
+- new paid subscriptions / tools;
+- irreversible account actions.
 
-If the sales target is missed, preserve the assets and data, diagnose the funnel, and revise the offer. Do not hide failure with vanity metrics.
+## Immediate Next Actions
 
-## Relationship to employment income
+```text
+1. verify actual final Product 001 customer ZIP
+2. synchronize Shopify listing to actual asset
+3. configure digital delivery
+4. attach exact customer file
+5. test checkout + delivery + file integrity
+6. publish Product 001
+7. distribute existing promo / sample assets
+8. seek first 3 external purchases
+9. seek first 10 external purchases
+10. expand only from evidence
+```
 
-This engine is intended to become a scalable second income stream. It should not be treated as guaranteed near-term replacement income.
+## Non-Goals
 
-Keep active employment/job-search income as the cash floor until the digital engine demonstrates sustained recurring revenue across multiple months.
-
-## Immediate next actions
-
-1. Install/configure a Shopify digital-download delivery solution.
-2. Attach the Product 001 ZIP.
-3. Test a full $0/test checkout or controlled purchase path and verify delivery.
-4. Publish Product 001.
-5. Create one free sample clip.
-6. Produce the first 5 short promotional posts.
-7. Build Vol. 2 from the best-performing visual family.
-8. Review analytics after the first 100 targeted sessions.
-
-## Non-goals
-
-- no get-rich-quick claims
-- no uncontrolled ad spend
-- no mass generation of low-quality AI products
-- no fake reviews or demand
-- no rights shortcuts
-- no inventory purchases before evidence
-- no reactivation of retired website-service positioning
+- no get-rich-quick claims;
+- no unsupported sales forecasts;
+- no uncontrolled ad spend;
+- no mass generation of low-quality AI packs;
+- no fake reviews / demand;
+- no rights shortcuts;
+- no large physical inventory or POD expansion before evidence;
+- no large Lucid Visuals catalog before Product 001 validation;
+- no conflict with the primary Auralis customer-acquisition sprint.
