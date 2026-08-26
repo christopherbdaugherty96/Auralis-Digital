@@ -14,12 +14,14 @@ Read in this order:
 
 Auralis Digital is in a **revenue-first validation phase**.
 
-Targets:
+Fixed first validation window:
 
-- **$1,000+ external business revenue collected** in the first validated 30-day sales sprint;
-- build toward **~$4,000/month repeatable business revenue by 2026-12-31**.
+- **2026-08-26 through 2026-09-25**;
+- target: **$1,000+ validated external business revenue collected**.
 
-These are targets, not guarantees.
+By **2026-12-31**, target at least **$4,000 of validated external business revenue in a rolling 30-day period** from channels that can reasonably be repeated. This is not required to be pure MRR.
+
+Use the lock's revenue definition. Historical family / test orders can prove checkout or fulfillment, but they do not satisfy the current external-demand gate.
 
 ## Active Structure
 
@@ -67,13 +69,15 @@ Initial acquisition test:
 
 - Battle Creek / Southwest Michigan first;
 - contractors and home / local service businesses first;
-- remote delivery remains available.
+- remote delivery remains available;
+- first sample: **100 unique qualified prospects**;
+- diagnose after ~75–100 unique qualified prospects have been contacted at least once.
 
 ## Website Status
 
 The public site is live, but its commercial positioning is still stale relative to the August 26 lock.
 
-Required next website action: **bounded commercial refactor, not rebuild**.
+Required action: **bounded commercial refactor, not rebuild**.
 
 Known debt includes old Shopify-first positioning, old branch / creator-shop references, stale geography, old navigation, metadata, structured data, sitemap, policy copy, and service-area pages.
 
@@ -86,6 +90,8 @@ Lucid Creations
 About
 Contact
 ```
+
+Target active outbound outreach **no later than 2026-09-02**, or sooner when the minimum credible sales stack is ready. Non-blocking polish does not justify postponing outreach.
 
 ## Transaction Readiness
 
@@ -109,13 +115,13 @@ Still requires verification / completion as applicable:
 - Google Business Profile;
 - insurance decision where relevant.
 
-Do not represent unverified administrative items as complete.
+Do not represent unverified administrative items as complete. Use the confirmed legal / contracting identity on agreements and invoices.
 
 ## Commerce Truth
 
 Historical verified checkpoint from 2026-07-04:
 
-- first real retained product sale was complete: Order #1001, 2026-05-28, paid and fulfilled;
+- first retained product sale was complete: Order #1001, 2026-05-28, paid and fulfilled;
 - Shopify-hosted policies were published;
 - 33 active products at that checkpoint;
 - channel state was documented at that time.
@@ -128,15 +134,15 @@ Lucid Creations remains active, but the current doctrine is **distribution over 
 
 Vol. 1 is still a Shopify **DRAFT** at $6.99.
 
-Before publication, verify the exact final customer ZIP and synchronize the listing to the real delivered asset. The live listing still reflects the earlier 720p / 12fps specification while a later plan describes an upgraded 1080p / 30fps package.
+Before publication, verify the exact final customer ZIP and synchronize the listing to the delivered asset. Do not publish until listing + customer file + license + delivery behavior agree.
 
-Do not publish until listing + customer file + license + delivery behavior agree.
+Demand gates: **3**, then **10 unrelated / non-test external purchases**.
 
 ## Shopify + Printify Workbook
 
 The workbook is substantially built and already contains:
 
-- the six-phase Quick-Start;
+- six-phase Quick-Start;
 - Chapters 1–12;
 - all 12 worksheets;
 - optional appendix.
@@ -145,19 +151,19 @@ It is **not publication-ready**.
 
 Remaining work includes current-platform verification, screenshot reduction / capture, final QA, metadata, reviewer-note cleanup, legacy Shopify-service upsell cleanup, RJ Print example cleanup / generalization, and price synchronization.
 
-Current launch hypothesis: **~$19 founding / beta**, then potentially **$29–$39** after evidence / polish. The draft's old `$10` cover price is implementation debt.
+Current launch hypothesis: **~$19 founding / beta**, potentially **$29–$39** after evidence / polish. The draft's old `$10` cover price is implementation debt.
+
+Demand gate before a large recorded course: **10 unrelated / non-test external buyers**.
 
 ## Current Execution Sequence
 
 ```text
-commercial website refactor
-→ transaction + administrative readiness
+bounded commercial website + credibility refactor
+→ minimum transaction readiness
 → finalize one core offer
-→ first 100 qualified prospects
-→ outreach + follow-up
-→ customer #1
-→ customer #2
-→ customer #3
+→ build first 100 unique qualified prospects
+→ start outreach by 2026-09-02 unless explicitly blocked
+→ customer #1 → #2 → #3
 → optimize from evidence
 ```
 
@@ -167,6 +173,7 @@ Parallel but subordinate:
 finalize/test-sell workbook
 + verify/synchronize/launch Lucid Visuals
 + maintain Lucid Creations
++ continue non-blocking administrative verification
 ```
 
 ## Operating Rule
