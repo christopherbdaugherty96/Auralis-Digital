@@ -1,138 +1,74 @@
-# CURRENT 14-DAY DROP
+# CURRENT 14-DAY DROP — HISTORICAL PRODUCT SPRINT
 
-Status: Pre-launch / storefront preparation
+Status: **INACTIVE / SUPERSEDED AS CURRENT EXECUTION**
 
-Last updated: 2026-05-19
+Original sprint last updated: 2026-05-19  
+Status clarified: 2026-08-26
 
-## Active Campaign
+This file preserves the May 2026 Lucid Creations product-validation sprint for historical evidence.
 
-SPRINT_01 — Sacred Geometry / Psychedelic Product Focus
+It is **not the current Auralis execution plan** despite remaining under `active/`.
 
-## Direction Correction
+Current authority:
 
-The previous Operator Series / Before Sunrise / blue-collar direction is no longer active.
+1. `AURALIS_DIRECTION_LOCK_2026-08-26.md`
+2. `docs/AURALIS_CURRENT_STATUS.md`
+3. `active/NEXT_STEPS_TODO.md`
 
-Do not use these as active Auralis product truth:
+Current business priority is Auralis customer acquisition, with Lucid Creations maintained as an owned commerce asset and distribution / conversion testing prioritized over broad catalog expansion.
 
-- Operator Series
-- Before Sunrise
-- Lawn & Power
-- Garage & Mechanic
-- Independent Builder
-- blue-collar operator positioning
-- workwear-first identity
-- lawn care / mechanic / pressure-washing audience targeting
+## Historical Sprint
 
-Current storefront truth is documented in:
+The May campaign tested a Sacred Geometry / Psychedelic product focus and intentionally retired an earlier blue-collar / Operator-Series direction.
 
-- `docs/marketing/STOREFRONT_IDENTITY_AND_SHOPIFY_TRUTH_2026-05-19.md`
+Historical themes included:
 
-## Sprint 01 Product Focus
+- sacred geometry;
+- psychedelic / symbolic / cosmic art;
+- selected apparel, blankets, wall decor, hats, home decor, jewelry / accessories, journals / notebooks;
+- visual-first organic content;
+- honest non-hype positioning.
 
-Use Christopher's personal sacred-geometry, psychedelic, symbolic, and cosmic design language for the first focused test.
+Historical product candidates included Sun of Life, Zeus, Tripsitter, Micro or Macro, TreeHugger, custom dog pillow, and other catalog items that existed at that point.
 
-The website catalog now contains 30 products across 7 categories (Apparel, Blankets, Wall Decor, Hats, Home Decor, Jewelry & Accessories, Journals & Notebooks). Select the strongest 3-5 for focused campaign testing from the full catalog in `src/data/shopCatalog.ts`.
+## Historical Audience Hypothesis
 
-Previous candidate list (may still be valid but should be re-evaluated against the full 30-product catalog):
+- sacred-geometry / symbolic-art buyers;
+- psychedelic / cosmic visual fans;
+- room / studio / dorm / creative-space decoration;
+- gift buyers;
+- people interested in custom symbolic artwork.
 
-1. Sun of Life Wall Tapestry
-2. Sun of Life Woven Blanket
-3. Sun of Life Notebook - Ruled Line
-4. Zeus Journal Matte
-5. Zeus Woven Blanket or Zeus Sherpa Blanket
+This remains useful creative context for Lucid but is not a current demand claim.
 
-New products added since the original list include tapestries (Inner Presence, Math Equations, Goddess), apparel (Micro or Macro series, TreeHugger, Sid Girl hoodie), hats (Geometric Dad Cap, Trippy Hippy, Tripsitter), and a custom dog pillow. Any of these may be stronger campaign leads.
+## Historical Guardrails That Still Apply
 
-## Primary Audience
+- no fake scarcity;
+- no fake sales / proof;
+- no unsupported spiritual / medical effects;
+- no generic AI-merch positioning;
+- verify product economics before scaling;
+- track actual traffic / conversion before claiming signal.
 
-- people who like sacred geometry and symbolic art
-- psychedelic art and cosmic visual fans
-- people decorating rooms, studios, dorms, meditation corners, or creative spaces
-- gift buyers looking for personal or symbolic designs
-- creators who want custom symbolic artwork
-- people interested in journals, wall art, blankets, mugs, apparel, and accessories with meaning-driven visuals
+## Historical Baseline
 
-## Campaign Identity
+The original file recorded a 2026-05-19 analytics checkpoint of:
 
-Campaign name options:
+- 42 sessions in the prior 30 days;
+- 1 add-to-cart session;
+- 1 checkout-reached session;
+- 0 completed checkouts;
+- 0% conversion rate.
 
-- Cosmic Balance
-- Sun of Life
-- Sacred Geometry Drop
-- Psychedelic Symbols
-- Auralis Symbolic Art
+That is a dated snapshot only. Later commerce evidence exists, including a real retained order. Use live Shopify analytics for current decisions.
 
-Brand tone:
+## Current Lucid Rule
 
-- visual-first
-- symbolic
-- colorful
-- cosmic
-- personal
-- art-led
-- calm but striking
-- honest and non-hype
+```text
+maintain existing catalog
+→ distribute stronger existing products / personalization
+→ measure traffic + conversion + orders
+→ increase product work only when demand earns it
+```
 
-Avoid:
-
-- blue-collar operator branding
-- workwear-first identity
-- fake hustle language
-- generic AI merch language
-- fake scarcity
-- unverified sales or proof claims
-- claiming spiritual effects or guaranteed transformation
-
-## Content Direction
-
-Use visual, design-led posts:
-
-- raw artwork close-up
-- product mockup
-- room or lifestyle context
-- short caption
-- clear shop/request CTA
-
-Short captions only:
-
-- Cosmic balance, made physical.
-- Sacred geometry for your space.
-- Psychedelic color. Symbolic form.
-- A new design from Auralis.
-- Made for rooms, rituals, and creative corners.
-- Request a custom symbolic design.
-
-## Pre-Launch Requirements
-
-Before serious product traffic:
-
-- [ ] select the first 3-5 sacred-geometry / psychedelic products to test
-- [ ] confirm product titles, images, prices, and descriptions match the corrected direction
-- [ ] create or upload collection/banner visuals for the corrected direction
-- [ ] curate homepage/storefront around the selected symbolic-art campaign
-- [ ] verify Shopify checkout flow
-- [ ] verify Shopify policy links
-- [ ] review margins after production, shipping, taxes, and fees
-- [ ] verify product quality through samples or careful self-check before heavy promotion
-- [ ] prepare 7-day organic content around the corrected campaign
-- [ ] log posts/results in the trackers before claiming signal
-
-## Analytics Baseline
-
-Last checked 2026-05-19:
-
-- 42 sessions in last 30 days
-- 1 add-to-cart session
-- 1 checkout-reached session
-- 0 completed checkouts
-- 0% conversion rate
-
-Interpretation: insufficient validation signal. Do not scale ads or product volume yet.
-
-## Midpoint Review
-
-Pending.
-
-## Final Review
-
-Pending.
+Do not restart this exact 14-day sprint merely because this historical file exists.
