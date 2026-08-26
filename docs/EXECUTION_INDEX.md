@@ -12,17 +12,21 @@ Read first:
 2. `docs/AURALIS_CURRENT_STATUS.md`
 3. `active/NEXT_STEPS_TODO.md`
 
+Current fixed validation window:
+
+- **2026-08-26 -> 2026-09-25**;
+- target: **$1,000+ validated external business revenue**;
+- active outbound target: **no later than 2026-09-02**, unless a real legal / payment / delivery blocker is documented.
+
 Current operating sequence:
 
 ```text
-commercial website refactor
-→ transaction + administrative readiness
+bounded commercial website + credibility refactor
+→ minimum transaction readiness
 → finalize one core service offer
-→ first 100 qualified prospects
-→ outreach + follow-up
-→ customer #1
-→ customer #2
-→ customer #3
+→ build first 100 unique qualified prospects
+→ start outreach + follow-up
+→ customer #1 → #2 → #3
 → optimize from evidence
 ```
 
@@ -32,6 +36,7 @@ Parallel but subordinate:
 finalize/test-sell existing Shopify workbook
 + verify/synchronize/launch Lucid Visuals
 + maintain Lucid Creations
++ continue non-blocking administrative verification
 ```
 
 ## 1. Current Truth
@@ -49,9 +54,7 @@ Do not create duplicate current-state docs.
 
 Before touching hosting, route generation, static folders, GitHub Pages, or deployment:
 
-Read:
-
-- `docs/tech/DEPLOYMENT_TRUTH.md`
+Read `docs/tech/DEPLOYMENT_TRUTH.md`.
 
 Rules:
 
@@ -63,7 +66,7 @@ Rules:
 
 ## 3. Commercial Website Refactor
 
-Primary current website task is a **bounded commercial refactor**, not a rebuild.
+Primary website task is a **bounded commercial refactor**, not a rebuild.
 
 Update:
 
@@ -74,17 +77,17 @@ Update:
 - founder / trust positioning;
 - Battle Creek / Southwest Michigan geography;
 - metadata / structured data / sitemap / policies;
-- removed venture references;
+- inactive venture references;
 - contact paths.
 
-Useful technical references may include:
+Useful technical references:
 
 - `docs/tech/WEBSITE_BUILD_WORKFLOW.md`;
 - `docs/tech/KNOWN_SITE_TODOS.md`;
 - `docs/tech/FORMSPREE_SETUP.md`;
 - current React/Vite source in `src/`.
 
-Do not let old marketing copy or old service-area pages override the new lock.
+Do not let old marketing copy or old service-area pages override the current lock.
 
 ## 4. Transaction + Administrative Readiness
 
@@ -92,6 +95,7 @@ Customer-facing minimum stack:
 
 - domain email when available;
 - business phone / voicemail if used;
+- founder / operator identity;
 - 3-point review template;
 - proposal;
 - service agreement;
@@ -101,6 +105,8 @@ Customer-facing minimum stack:
 - revision limits;
 - launch / handoff checklist;
 - working contact form.
+
+Use the confirmed legal / contracting identity on agreements and invoices.
 
 Administrative truth to verify rather than assume:
 
@@ -112,29 +118,25 @@ Administrative truth to verify rather than assume:
 - Google Business Profile;
 - insurance decision where relevant.
 
+Complete blocking items needed to quote, contract, accept payment, and deliver safely. Continue non-blocking items in parallel.
+
 ## 5. Sales / Outreach
 
 Folder: `leads/`
 
-Useful assets exist for:
+Useful assets exist for lead tracking, cold call / email structure, objection handling, follow-up, proposals / quotes, pricing references, and referrals.
 
-- lead tracking;
-- cold call / email structure;
-- objection handling;
-- follow-up;
-- proposals / quotes;
-- pricing references;
-- referrals.
-
-**Review every old file before use.** Many predate the current Battle Creek / Southwest Michigan focus, current offer, and current pricing.
+**Review every old file before use.** Many predate the current Battle Creek / Southwest Michigan focus, offer, and pricing.
 
 Current acquisition test:
 
-- first 100 qualified prospects;
+- first **100 unique qualified prospects**;
 - contractors / home and local service businesses first;
-- ~15–20 qualified touches per weekday during active sprint;
-- follow-up;
-- diagnose after ~75–100 contacts.
+- approximately **15–20 qualified outreach touches per weekday** once active;
+- track unique prospects separately from touches / follow-ups;
+- diagnose after **~75–100 unique qualified prospects have been contacted at least once**.
+
+A qualified prospect should appear to be a real operating business, fit the current test or a strong adjacent exception, show ongoing demand / operation, have a specific digital-presence problem, have a legitimate contact path, and not be a duplicate.
 
 Use a simple tracker before building a custom CRM.
 
@@ -163,7 +165,7 @@ After successful delivery:
 - obtain permission before publishing client work;
 - request a real testimonial / review when earned;
 - ask for one referral;
-- create a case study only from facts you can substantiate.
+- create case studies only from facts that can be substantiated.
 
 No fake reviews, logos, conversion metrics, client history, or urgency.
 
@@ -177,7 +179,9 @@ Current source already has the six-phase Quick-Start, Chapters 1–12, all works
 
 Do not create another Quick-Start.
 
-Current finalization work is tracked in `active/NEXT_STEPS_TODO.md` and includes current-platform verification, screenshot reduction / capture, legacy service upsell cleanup, RJ Print example generalization, metadata / price synchronization, Word/PDF QA, link QA, and test-sale readiness.
+Finalization work is tracked in `active/NEXT_STEPS_TODO.md` and includes current-platform verification, screenshot reduction / capture, legacy service-upsell cleanup, RJ Print example generalization, metadata / price synchronization, Word/PDF QA, link QA, and test-sale readiness.
+
+Demand gate before a large recorded course: **10 unrelated / non-test external buyers**.
 
 ## 9. Lucid Visuals
 
@@ -189,7 +193,9 @@ Use:
 
 Do not publish Vol. 1 until listing, asset, license, and digital delivery agree.
 
-Do not expand into a large pack catalog before external purchase evidence.
+Demand gates: **3**, then **10 unrelated / non-test external purchases**.
+
+Do not expand into a large pack catalog before purchase evidence.
 
 ## 10. Lucid Creations / Commerce
 
@@ -250,9 +256,9 @@ Before deleting or rewriting old material:
 
 If unsure what to do next:
 
-1. finish the bounded website / trust refactor;
-2. become transaction-ready;
-3. start qualified outreach;
+1. finish the bounded website / credibility refactor;
+2. become minimally transaction-ready;
+3. start qualified outreach by 2026-09-02 unless explicitly blocked;
 4. close and deliver;
 5. capture proof / referral;
 6. improve systems from evidence.
