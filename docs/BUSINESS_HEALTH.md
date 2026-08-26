@@ -2,18 +2,28 @@
 
 Updated: 2026-08-26
 
-This is a compact health snapshot. Narrative truth lives in `AURALIS_CURRENT_STATUS.md`; strategy lives in `../AURALIS_DIRECTION_LOCK_2026-08-26.md`.
+Compact health snapshot only. Strategy lives in `../AURALIS_DIRECTION_LOCK_2026-08-26.md`; narrative operational truth lives in `AURALIS_CURRENT_STATUS.md`; execution lives in `../active/NEXT_STEPS_TODO.md`.
 
 ```text
 REVENUE / DEMAND
-✓ First real retained product sale historically verified (#1001, 2026-05-28)
-□ $1,000+ external revenue in current validated 30-day sprint  ← PRIMARY COMMERCIAL GATE
+WINDOW: 2026-08-26 -> 2026-09-25
+TARGET: $1,000+ validated external business revenue collected
+
+Validated external revenue = arm's-length customer sales / fees, net of discounts,
+refunds, reversals, and chargebacks; exclude tax, separately identifiable pass-through
+shipping, owner transfers, test / household-family checkout tests, wages, loans, grants,
+and other non-customer cash.
+
+✓ First retained product sale historically verified (#1001, 2026-05-28)
+  -> checkout / fulfillment proof only; does not satisfy current external-demand gate
+□ $1,000+ validated external revenue in current fixed 30-day window  ← PRIMARY GATE
 □ First Auralis small-business service customer
 □ Three Auralis service customers
-□ 10 external Shopify-workbook buyers
-□ 3 external Lucid Visuals buyers
-□ 10 external Lucid Visuals buyers
-□ ~4,000/month repeatable business revenue by 2026-12-31 target
+□ 10 unrelated / non-test Shopify-workbook buyers
+□ 3 unrelated / non-test Lucid Visuals buyers
+□ 10 unrelated / non-test Lucid Visuals buyers
+□ $4,000+ validated external revenue in one rolling 30-day period by 2026-12-31
+  from channels that can reasonably be repeated
 
 AURALIS SALES ENGINE
 □ Public site refactored to current Business Digital Front Door positioning
@@ -24,9 +34,16 @@ AURALIS SALES ENGINE
 □ Invoice / payment workflow finalized
 □ Deposit policy finalized
 □ Onboarding + revision + launch/handoff rules finalized
-□ First 100 qualified prospects built
-□ Outreach started
-□ Funnel diagnosis completed after ~75–100 qualified contacts
+□ First 100 UNIQUE qualified prospects built
+□ Active outbound started by 2026-09-02 unless explicitly blocked
+□ ~75–100 unique qualified prospects contacted at least once
+□ Funnel diagnosis completed
+
+QUALIFIED PROSPECT RULE
+Must appear to be a real operating business; fit the current market/niche test or be a
+strong adjacent exception; show underlying demand / operation; have a specific digital-
+presence problem; have a legitimate contact path; and not be a duplicate.
+Track unique prospects separately from total touches / follow-ups.
 
 ADMIN / FORMATION — VERIFY, DO NOT ASSUME
 □ Michigan entity / LLC status confirmed
@@ -41,7 +58,7 @@ WEBSITE / TRUST
 ✓ Live Auralis site exists
 ✓ React/Vite + GitHub Pages deployment infrastructure exists
 ✓ Formspree infrastructure exists
-△ Current public positioning is stale vs 2026-08-26 lock
+△ Public positioning remains stale vs 2026-08-26 lock until refactor deploys
 △ Old geography / branch / service / metadata surfaces remain implementation debt
 □ Commercial refactor deployed
 □ Desktop + phone prospect/contact flow re-verified after refactor
@@ -51,8 +68,8 @@ WEBSITE / TRUST
 LUCID CREATIONS
 ✓ Store + fulfillment stack exist
 ✓ First retained product order historically verified
-△ Demand remains weak / insufficiently validated for broad catalog expansion
-→ Current rule: distribution + conversion evidence before more SKU creation
+△ Demand remains insufficiently validated for broad catalog expansion
+→ Rule: distribution + conversion evidence before more SKU creation
 
 LUCID VISUALS
 ✓ Product 001 exists in Shopify
@@ -63,8 +80,8 @@ LUCID VISUALS
 □ Digital delivery configured
 □ End-to-end checkout + download test passed
 □ Product published
-□ 3 external purchases
-□ 10 external purchases
+□ 3 unrelated / non-test external purchases
+□ 10 unrelated / non-test external purchases
 
 SHOPIFY + PRINTIFY WORKBOOK
 ✓ Six-phase Quick-Start exists
@@ -80,7 +97,7 @@ SHOPIFY + PRINTIFY WORKBOOK
 □ Legacy upsell + RJ Print references reconciled
 □ Final metadata + Word/PDF + link QA complete
 □ Test-sale artifact approved
-□ First 10 external buyers
+□ First 10 unrelated / non-test external buyers
 
 PROTECTED / FROZEN
 ✓ NovaLIS / OpenClaw preserved; no forced commercialization
@@ -90,10 +107,10 @@ EXPLICITLY INACTIVE
 RJ Print · Pour Social · ShortCut · Buyer Advocate · ATH · active wholesale/affiliate lane · LastStopShop activation · unrelated new ventures
 
 DISCIPLINE
-✓ 2026-08-26 direction lock is strategic authority
-✓ Canonical status + active TODO aligned
-✓ Older 2026-08-20 lock marked historical
-✓ Lucid Visuals plan aligned to current lock
-Rule: live evidence beats old factual snapshots; explicit dated lock controls strategy.
-Rule: asset built ≠ active priority; external demand earns priority.
+✓ 2026-08-26 lock is strategic authority
+✓ 30-day window + revenue definition are fixed
+✓ Canonical status + active TODO aligned to the same operating model
+✓ Older 2026-08-20 lock is historical where conflicting
+✓ Asset built ≠ active priority; external demand earns priority
+✓ Non-blocking polish does not justify delaying outreach
 ```
