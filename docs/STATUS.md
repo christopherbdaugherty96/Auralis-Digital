@@ -1,96 +1,176 @@
 # Auralis Digital Status
 
-Last updated: 2026-07-04
+Last updated: 2026-08-26
 
-> **Verified 2026-07-04:** First real product sale is complete (order #1001, 2026-05-28, $31.58, paid and fulfilled — real customer). Shopify-hosted policies (all five) are published. 33 active products. Google & YouTube sales channel is live (awaiting Google review); TikTok app installed, seller verification pending. Commerce state is post-first-sale. Details: `docs/AURALIS_CURRENT_STATUS.md` and `docs/SALES_CHANNELS_ROADMAP.md`.
+This is a **short status snapshot**, not the primary authority.
 
-## Current State
+Read in this order:
 
-Auralis Digital has a live public website and a React/Vite source base deployed through GitHub Pages.
+1. [`../AURALIS_DIRECTION_LOCK_2026-08-26.md`](../AURALIS_DIRECTION_LOCK_2026-08-26.md) — strategic / commercial authority.
+2. [`AURALIS_CURRENT_STATUS.md`](AURALIS_CURRENT_STATUS.md) — canonical operational truth.
+3. [`../active/NEXT_STEPS_TODO.md`](../active/NEXT_STEPS_TODO.md) — executable checklist.
 
-The repo now contains three related public surfaces:
+## Current Mode
 
-1. **Auralis Design products** - product catalog pages, Shopify checkout links, and local Auralis policy/support pages.
-2. **Custom / personalized design requests** - inquiry flow for image, phrase, symbol, theme, gift, product concept, apparel, wall art, and related custom design requests.
-3. **Website design services** - websites for local businesses, creators, and small brands, plus refreshes for Auralis-built sites and third-party audit/rebuild consultation.
+Auralis Digital is in a **revenue-first validation phase**.
 
-The active business priority is now three-pillar execution:
+Targets:
+
+- **$1,000+ external business revenue collected** in the first validated 30-day sales sprint;
+- build toward **~$4,000/month repeatable business revenue by 2026-12-31**.
+
+These are targets, not guarantees.
+
+## Active Structure
 
 ```text
-business setup -> trust setup -> inquiry flow -> products/custom design/web design clarity -> first real sale or client -> proof
+Auralis Digital
+├── Primary cash engine
+│   └── focused small-business digital-presence service
+├── Owned commerce
+│   └── Lucid Creations
+├── Scalable digital products
+│   ├── Shopify + Printify workbook / course
+│   └── Lucid Visuals
+├── Supplemental
+│   └── aligned custom creative work
+└── Protected / long-horizon
+    ├── NovaLIS / OpenClaw
+    ├── Live Music Platform
+    └── media / YouTube / news concepts
 ```
 
-Website design remains active, but it is not the only core idea. Products and custom design requests are also first-class public surfaces.
+Explicitly outside the active revenue sprint:
 
-## Current Focus
+- RJ Print;
+- Pour Social;
+- ShortCut Lawn Care;
+- Buyer Advocate;
+- ATH Service;
+- wholesale / affiliate sourcing as an active lane;
+- LastStopShop activation;
+- unrelated new ventures.
 
-1. Confirm LLC filing with Michigan and obtain EIN.
-2. Open a business bank account.
-3. Keep `auralisdigitaleco@gmail.com` as the temporary contact email until `hello@auralisdigital.net` or another domain email is active.
-4. ~~Configure and verify the production contact-form backend.~~ Done 2026-05-16.
-5. Configure real payment/invoicing flow.
-6. Verify the live three-pillar navigation and inquiry flow on desktop and phone.
-7. ~~Publish or verify Shopify-hosted refund, shipping, and terms policies.~~ Done — verified 2026-07-04.
-8. ~~Run an incognito Shopify add-to-cart/checkout test up to final payment confirmation.~~ Superseded — real customer checkout completed and fulfilled (order #1001, 2026-05-28).
-9. Create or complete Google Business Profile.
-10. Start focused outreach or traffic for one lane at a time: products, custom design, or website design.
-11. ~~Land one real sale or client engagement.~~ First product sale done (order #1001). Still open for custom design and website design.
-12. Capture real proof only after permission or confirmation. ← ACTIVE: capture proof from order #1001.
+## Primary Cash Engine
+
+Approved public positioning:
+
+> **Auralis Digital is an independent digital studio helping small businesses build practical, mobile-first websites and customer-contact flows focused on calls, bookings, quote requests, and trust.**
+
+Working offer hypotheses:
+
+- Business Digital Front Door: **~$995 starting**;
+- Website Care: **~$129/month**;
+- Managed Digital Presence: **~$349/month**.
+
+Initial acquisition test:
+
+- Battle Creek / Southwest Michigan first;
+- contractors and home / local service businesses first;
+- remote delivery remains available.
 
 ## Website Status
 
-- Live website exists.
-- `main` is the source of truth for source code and documentation.
-- GitHub Actions builds `main` and publishes `dist/` to `gh-pages`.
-- `gh-pages` is generated deployment output and must not be edited manually or merged into `main`.
-- Static folders such as `website/`, `projects/`, and `service-areas/` may be active deployment input because the deploy workflow copies selected static files into `dist/`.
-- Route-specific static metadata generation is implemented through `scripts/generate-route-pages.mjs`.
-- Public routes include `/products`, `/shop`, `/custom-design`, `/web-design`, `/websites`, and local policy/support routes.
-- Lead capture backend is live via Formspree (desktop confirmed 2026-05-16, phone
-  confirmed 2026-05-17).
-- Temporary public contact email is `auralisdigitaleco@gmail.com`; move away from Gmail only after domain email sends/receives correctly.
-- Portfolio proof must remain clearly labeled as sample/demo work until real client work exists.
-- Website Refresh is limited to Auralis-built sites. Third-party sites should start with an audit, rebuild, migration, or custom quote.
+The public site is live, but its commercial positioning is still stale relative to the August 26 lock.
 
-## Product / Commerce Status
+Required next website action: **bounded commercial refactor, not rebuild**.
 
-- Product catalog data lives in `src/data/shopCatalog.ts`.
-- Auralis Digital displays products and product details.
-- Shopify is framed as the checkout, payment, order, and product source of truth.
-- Public product/support copy now describes made-to-order production without exposing production-partner branding as customer-facing copy.
-- Local Auralis policy/support pages exist for refund, shipping, privacy, and terms guidance.
-- Footer policy links point to local Auralis policy/support pages.
-- Commerce readiness verified 2026-07-04: Shopify-hosted policies are published, and a real paid + fulfilled customer order (#1001) proves the checkout and fulfillment path works.
-- Do not imply the shop/product surface is fully mature until checkout, policies, fulfillment, support, margins, and test-order flow are verified.
+Known debt includes old Shopify-first positioning, old branch / creator-shop references, stale geography, old navigation, metadata, structured data, sitemap, policy copy, and service-area pages.
 
-## Custom Design Status
+Recommended primary navigation:
 
-- Custom design has a public route and inquiry positioning.
-- No completed custom/personalized design engagement is confirmed in repo truth.
-- Pricing, revision limits, file-transfer workflow, usage rights, and delivery expectations still need real-world validation.
-- Custom requests should be reviewed before acceptance, especially for copyrighted characters, logos, unclear rights, offensive content, or requests that cannot be produced cleanly.
+```text
+Business Services
+Work
+Lucid Creations
+About
+Contact
+```
 
-## Open Repo Follow-Ups
+## Transaction Readiness
 
-- Issue #9: review whether the third-party website audit offer is fully implemented across listed docs and source references before closing.
-- Issue #3: revise or close because React/Vite and direct route support are now present; remaining concern is live deployment verification, not initial import.
-- Issue #2: re-check against the active React/Vite source before editing old `index.html` assumptions.
-- Issue #1: keep low priority until trust setup, contact backend, checkout verification, and first proof are handled.
+Still requires verification / completion as applicable:
+
+- domain email;
+- business phone / voicemail if used;
+- proposal;
+- service agreement;
+- invoice / payment workflow;
+- deposit policy;
+- onboarding;
+- revision limits;
+- launch / handoff rules;
+- Formspree desktop + phone end-to-end confirmation after refactor;
+- Michigan entity / LLC status;
+- EIN;
+- dedicated business banking;
+- bookkeeping workflow;
+- public address / service-area policy;
+- Google Business Profile;
+- insurance decision where relevant.
+
+Do not represent unverified administrative items as complete.
+
+## Commerce Truth
+
+Historical verified checkpoint from 2026-07-04:
+
+- first real retained product sale was complete: Order #1001, 2026-05-28, paid and fulfilled;
+- Shopify-hosted policies were published;
+- 33 active products at that checkpoint;
+- channel state was documented at that time.
+
+Use **live Shopify state** for current catalog / order / channel claims. Old counts are snapshots, not today's truth.
+
+Lucid Creations remains active, but the current doctrine is **distribution over catalog expansion**.
+
+## Lucid Visuals
+
+Vol. 1 is still a Shopify **DRAFT** at $6.99.
+
+Before publication, verify the exact final customer ZIP and synchronize the listing to the real delivered asset. The live listing still reflects the earlier 720p / 12fps specification while a later plan describes an upgraded 1080p / 30fps package.
+
+Do not publish until listing + customer file + license + delivery behavior agree.
+
+## Shopify + Printify Workbook
+
+The workbook is substantially built and already contains:
+
+- the six-phase Quick-Start;
+- Chapters 1–12;
+- all 12 worksheets;
+- optional appendix.
+
+It is **not publication-ready**.
+
+Remaining work includes current-platform verification, screenshot reduction / capture, final QA, metadata, reviewer-note cleanup, legacy Shopify-service upsell cleanup, RJ Print example cleanup / generalization, and price synchronization.
+
+Current launch hypothesis: **~$19 founding / beta**, then potentially **$29–$39** after evidence / polish. The draft's old `$10` cover price is implementation debt.
+
+## Current Execution Sequence
+
+```text
+commercial website refactor
+→ transaction + administrative readiness
+→ finalize one core offer
+→ first 100 qualified prospects
+→ outreach + follow-up
+→ customer #1
+→ customer #2
+→ customer #3
+→ optimize from evidence
+```
+
+Parallel but subordinate:
+
+```text
+finalize/test-sell workbook
++ verify/synchronize/launch Lucid Visuals
++ maintain Lucid Creations
+```
 
 ## Operating Rule
 
-Do not create more polish work unless it directly supports one of these outcomes:
+The next meaningful win is **external demand**, not another broad build cycle.
 
-- business setup
-- trust
-- inquiry flow
-- product readiness
-- custom design readiness
-- website design sales/delivery
-- closing
-- delivery
-- proof
-- retention
-- verified commerce readiness
-
-The next win is not another broad document pass. The next win is a verified contact path, verified Shopify checkout path, and one real sale or client engagement.
+Do not treat old roadmaps, product counts, branches, or sprint files as current authority when they conflict with the August 26 lock and canonical status.
